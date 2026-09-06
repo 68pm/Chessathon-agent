@@ -1,0 +1,17 @@
+{
+  "seed": 20260909,
+  "initial_policy": "candidates/classical-witty-magnus-v1/models/player-policy.npz",
+  "architecture": [935, 64, 32, 1],
+  "epochs": 6,
+  "learning_rate": 0.0002,
+  "batch_size": 32,
+  "training_positions_per_epoch": 1024,
+  "puzzle_recipe_counts": {"ordinary": 614, "new_puzzles": 256, "train_failure_replay": 154},
+  "teacher": "Stockfish 19, offline only; Threads1 Hash32, full strength",
+  "verification_nodes_per_pass": [80000, 320000],
+  "selection": "Minimum 0.6*broad-validation CE + 0.4*puzzle-validation CE; untouched puzzle test excluded until checkpoints frozen",
+  "pilot_scope": "320 accepted positions before considering scale; no automatic expansion to10000",
+  "matches": {"base_ms": 30000, "increment_ms": 300, "games_against_baseline": 8, "games_against_control": 8},
+  "adoption": "Require better held-out tactics/blunder measures and no direct-match regression; small gains remain provisional. Preserve prior versions.",
+  "runtime": "Unchanged classical search, policy10cp and optional selective Alien15cp. Value network unchanged; task targets never relabel chess game outcomes."
+}

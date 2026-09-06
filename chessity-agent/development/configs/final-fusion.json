@@ -1,0 +1,17 @@
+{
+  "base_ms": 120000,
+  "increment_ms": 500,
+  "ply_cap": 600,
+  "workers": 2,
+  "comparison": "Six preserved/candidate agents, one colour-reversed opening pair per opponent pairing: 30 games total, 10 per agent. Fixed before results.",
+  "rated_settings": [2000, 2200],
+  "rated_pairs_per_setting": 6,
+  "selection": "Highest total comparison score; exact ties use the declared preference order. A small local comparison is not proof of strongest possible play.",
+  "tie_preference": ["fusion-root", "fusion-hybrid", "puzzle", "magnus", "value-300k", "classical"],
+  "policy_model": "candidates/puzzle-mixed-v1/models/player-policy.npz",
+  "value_model": "models/value-300k.npz",
+  "fusion_root": {"policy_cp": 15, "root_value_cp": 5, "alien_cp": 15},
+  "fusion_hybrid": {"neural_leaf_fraction": 0.2, "policy_cp": 10, "alien_cp": 15},
+  "scope": "Combine compatible previously trained value and policy networks with original classical search. The policy retains player imitation, phase sampling and verified puzzle learning. No averaging incompatible tensors, no third-party network, no forced Alien sacrifice.",
+  "read_only": "Final runtime audit blocks file creation/deletion/rename/directory creation, networking and subprocesses; new entrypoints disable bytecode caching."
+}

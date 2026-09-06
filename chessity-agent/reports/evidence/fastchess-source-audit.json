@@ -1,0 +1,73 @@
+{
+  "pack": {
+    "archive": "C:\\Users\\disea\\Downloads\\Hikaru-Gotham-120plus0p5-Training-Pack.zip",
+    "archive_sha256": "b9dff3547afdbfc6d91ce4aa1cb4d44833fc50abee2045b8894ad8b557c63360",
+    "files": {
+      "AGENT_PROMPT.md": {
+        "bytes": 17175,
+        "sha256": "7805e31ec3b551377725b276a858d5697cdf3285183e243be5b95ce4d5ab4f23"
+      },
+      "README.md": {
+        "bytes": 4419,
+        "sha256": "9b5114babf4e2e88ae3a46975446b11ef3ba88507085e4a25c45006026e2a8f1"
+      },
+      "games.csv": {
+        "bytes": 401613,
+        "sha256": "090404789ed1eba9e5da04ec0667ba99e3230bf1c6856379f3b9577786bf047d"
+      },
+      "games.pgn": {
+        "bytes": 6486455,
+        "sha256": "840d16c3d8f1ca4b61d8cdd3b27ad2fd4adc57853e2dc9c5591232af68cdb416"
+      },
+      "manifest.json": {
+        "bytes": 2487,
+        "sha256": "1af11f984ddf30d4da6a82e0446b5f80204105e7130624454fcbab0cb21f707b"
+      },
+      "opening-reference.tsv": {
+        "bytes": 160856,
+        "sha256": "c6885896e3f2edf065ec6d8d98068a0cae5ff73a0f29d687992949948ea861ef"
+      },
+      "player-decisions.jsonl": {
+        "bytes": 47564079,
+        "sha256": "8c37b63ea9719bc6fd6afd44bd49400219e043dce3dc5036e297333476d547fe"
+      }
+    },
+    "scope": "User-supplied data. All source chess and labels require project verification; no bundled code executed."
+  },
+  "games_replayed": 2135,
+  "decisions_checked": 93786,
+  "recorded_clocks_checked": 93786,
+  "players": {
+    "hikaru": 1063,
+    "gothamchess": 1072
+  },
+  "time_controls": {
+    "180": 1029,
+    "300": 55,
+    "60": 1040,
+    "180+1": 11
+  },
+  "exact_target_clock_games": 0,
+  "legal_opening_lines": 556,
+  "prior_board_keys": 400039,
+  "prior_game_ids": 51958,
+  "exclusions": {
+    "cross_split_board": 7315,
+    "within_split_duplicate": 2114,
+    "previous_source_game": 67,
+    "previous_board": 747
+  },
+  "candidate_splits": {
+    "train": 6400,
+    "validation": 512,
+    "test": 512
+  },
+  "graph_candidates_by_family": {
+    "caro_kann": 599,
+    "italian": 139,
+    "queens_gambit": 435,
+    "qgd": 344,
+    "fallback": 27965
+  },
+  "remaining_limitations": "Whole supplied games and legal branches keep their provisional split. Exact/mirrored boards shared across splits or earlier datasets are removed from the fresh assessment pool. Opening graph is train-only and avoids earlier held-out boards. Original 300k value data lacks recoverable game IDs; related positions, familiar opening families and unknown teacher-data overlap cannot be completely excluded."
+}

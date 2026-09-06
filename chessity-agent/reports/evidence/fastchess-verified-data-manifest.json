@@ -1,0 +1,111 @@
+{
+  "config": {
+    "seed": 20260910,
+    "base_ms": 120000,
+    "increment_ms": 500,
+    "ply_cap": 600,
+    "workers": 2,
+    "pack": "data/hikaru-gotham-pack",
+    "initial_policy": "candidates/puzzle-mixed-v1/models/player-policy.npz",
+    "value_model": "models/value-300k.npz",
+    "human_verified_targets": {
+      "train": 2000,
+      "validation": 128,
+      "test": 128
+    },
+    "graph_nodes": {
+      "italian": 100,
+      "caro_kann": 100,
+      "qgd": 100,
+      "queens_gambit": 40,
+      "fallback": 48
+    },
+    "teacher_nodes": [
+      80000,
+      320000
+    ],
+    "max_verification_attempts": 9000,
+    "max_error_pairs": 100,
+    "epochs": 8,
+    "examples_per_epoch": 4096,
+    "batch_size": 32,
+    "learning_rate": 0.00015,
+    "mixture_counts": {
+      "broad": 2458,
+      "verified_bundle_and_graph": 1024,
+      "verified_error_replay": 614
+    },
+    "validation_weights": {
+      "broad": 0.6,
+      "bundle": 0.25,
+      "puzzle": 0.15
+    },
+    "production_test_positions": 48,
+    "test_clocks_ms": [
+      10000,
+      2500,
+      800
+    ],
+    "equal_node_positions": 48,
+    "equal_node_budget": 1500,
+    "comparison_pairs": {
+      "previous_best": 6,
+      "matched_control": 4,
+      "static_clock": 4
+    },
+    "rated_settings": [
+      1700,
+      2000,
+      2200
+    ],
+    "rated_pairs_per_setting": 4,
+    "promotion": "Promote the adaptive candidate only if its paired-opening bootstrap 95% lower score bound exceeds 0.5 against the preserved best, score is at least 0.5 against matched control and static-clock ablation, and it has no illegal/crash/init/time failures. Otherwise retain the preserved best. Test results never enter replay or checkpoint selection.",
+    "architecture": "Existing 935-64-32-1 policy, classical node evaluation, bounded 10cp policy preference, optional 15cp Alien preference. Value network remains preserved in prior fusion candidates; do not average incompatible weights.",
+    "opening_lookup": "Graph is offline training only. No teacher move/evaluation lookup is shipped. Book-on/off is therefore inapplicable to the new graph; the existing hand-written optional Alien hint remains identical in control and candidates.",
+    "scope": "Pilot, not a GM-strength claim. Current baseline has no independently calibrated human/site Elo. Exact clock tests are fresh and separate from observational human clocks. No paid resources or video transcription."
+  },
+  "config_sha256": "0eeddb20d08e384441f87f781e81132a744d309fe8a52f9a629135e822a3063d",
+  "verified_sha256": "55d4539a6d5232d14fca95f9e9228fd9190e249ca5703904da1594cb3c145074",
+  "graph_sha256": "34a2ffc2cef88ead8d7178d948c0a71eda9d155ef0540b039437d945df150b04",
+  "source_audit_sha256": "24e6d780727e4cd2e79b9efd70afbef7283802ed7abedc6ddd09109ea1fe1eaf",
+  "human_positions": {
+    "train": 2000,
+    "validation": 128,
+    "test": 128
+  },
+  "graph_nodes": {
+    "caro_kann": 100,
+    "italian": 100,
+    "queens_gambit": 40,
+    "qgd": 100,
+    "fallback": 48
+  },
+  "error_pairs": 37,
+  "total_positions": 2681,
+  "splits": {
+    "train": 2425,
+    "validation": 128,
+    "test": 128
+  },
+  "phases": {
+    "middlegame": 446,
+    "endgame": 551,
+    "transition": 412,
+    "opening": 722,
+    "early_middlegame": 550
+  },
+  "confidence": {
+    "engine_supported": 2673,
+    "exact": 8
+  },
+  "observed_human_moves_accepted": 1842,
+  "observed_human_moves_replaced": 414,
+  "teacher_sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0",
+  "seconds": 5833.3505936,
+  "attempts": 3681,
+  "quarantined": 624,
+  "cross_split_duplicate_boards": 0,
+  "cross_split_families": 0,
+  "all_legal_analysis_pvs_replayed": true,
+  "scope": "Two-budget approximate engine labels except exhaustively verified short mates. No teacher lookup ships; no human timing or puzzle reward is fitted into the game-value network."
+}

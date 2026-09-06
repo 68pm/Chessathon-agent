@@ -1,0 +1,25 @@
+{
+  "seed": 20260907,
+  "initial_policy": "candidates/classical-witty-magnus-v1/models/player-policy.npz",
+  "architecture": [935, 64, 32, 1],
+  "train_positions_per_recipe": 8192,
+  "validation_positions_shared": 1024,
+  "epochs": 3,
+  "learning_rate": 0.0001,
+  "batch_size": 128,
+  "recipes": ["control", "curriculum"],
+  "runtime_changes": "None. Existing bounded policy and selective Alien search retained.",
+  "match_protocol": {
+    "base_ms": 30000,
+    "increment_ms": 300,
+    "workers": 2,
+    "games_against_control": 8,
+    "games_against_frozen_v1": 8,
+    "games_per_uci_setting": 4,
+    "madchess_levels": [1500, 1700, 1900],
+    "stockfish_levels": [1700],
+    "fixed_before_results": true
+  },
+  "decision_rule": "Do not automatically promote on this small pilot. Report phase-wise validation, exact-technique diagnostics and all fixed matches; reject evidence of regression, otherwise classify an apparent gain as provisional pending larger independent matches.",
+  "known_limit": "No claim to train all prose themes or solve endgames. Stage categories are heuristic. FEN policy lacks full repetition history. Current root policy is disabled in low-phase endgames, check and strongly imbalanced positions. Search remains responsible there."
+}
