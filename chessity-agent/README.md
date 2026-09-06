@@ -6,6 +6,8 @@ Best tested package in this session: **v1.14** — Classical/Witty/Magnus policy
 
 [The latest fast-chess report](reports/FASTCHESS_PILOT_RESULTS.md) contains the promotion decision and fresh 1700/2000/2200 tests. The preceding fusion report preserves the earlier six-agent comparison and 2000/2200 tests. These final sessions use 120+0.5. Opponent settings are not an official human or website rating.
 
+[Three-phase progress](reports/THREEPHASE_PROGRESS.md): baseline tests at 2200/2400/2600 are complete; experimental v1.24 is being evaluated. The recommended upload remains v1.14.
+
 ## Read-only runtime and repository access
 
 The final package was tested with file creation, deletion, renaming and directory creation blocked. Runtime inference needs no file writes, network access or subprocesses. Training tools are separate and intentionally write checkpoints. GitHub public visitors can read and download this repository; editing it requires repository write permission. No collaborator or public write grants are added by this publication.
@@ -38,6 +40,7 @@ The final package was tested with file creation, deletion, renaming and director
 | [v1.21](versions/v1.21/chessity-agent-v1.21.zip) | Fast-chess pilot matched broad-data control | control ablation |
 | [v1.22](versions/v1.22/chessity-agent-v1.22.zip) | Hikaru/Gotham verified policy with original clock controller | clock ablation |
 | [v1.23](versions/v1.23/chessity-agent-v1.23.zip) | Hikaru/Gotham verified policy with adaptive 120+0.5 controller | see measured pilot promotion decision |
+| [v1.24](versions/v1.24/chessity-agent-v1.24.zip) | Three-phase PVS search candidate | experimental; full comparison and final rated tests pending |
 
 Source and weights for each archive are retained beside it. Neural weights were trained locally; no third-party chess engine or pretrained chess network ships in the agent ZIPs. Offline verifier and opponent engines are development tools only. Code was developed with AI assistance. Downloaded player histories and external engine executables are not published here.
 

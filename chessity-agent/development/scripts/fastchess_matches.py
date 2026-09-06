@@ -62,7 +62,8 @@ def score_summary(rows):
 def run_game(job, config, out):
     if (ROOT / "STOP_BENCHMARK").exists():
         raise InterruptedError("STOP_BENCHMARK requested")
-    board = chess.Board()
+    candidate_path = ROOT / job["candidate_path"] if "candidate_path" in job else CANDIDATE
+    board = chess.Board(job["start_fen"]) if "start_fen" in job else chess.Board()
     for uci in job["opening"]:
         board.push_uci(uci)
     # Curated starting positions carry no history before the game begins, identically for both colours.
@@ -79,7 +80,7 @@ def run_game(job, config, out):
         for colour in [True, False]:
             tick = time.perf_counter()
             if colour == candidate_colour or "opponent_path" in job:
-                folder = CANDIDATE if colour == candidate_colour else ROOT / job["opponent_path"]
+                folder = candidate_path if colour == candidate_colour else ROOT / job["opponent_path"]
                 agents[colour] = local(folder)
                 try:
                     agents[colour].start(90)
@@ -150,8 +151,8 @@ def run_game(job, config, out):
     score = 0.5 if winner is None else float(winner == candidate_colour)
     opponent_name = job.get("opponent_path", f"Stockfish 19 UCI_Elo {job.get('elo')}")
     game.headers.update(Event="Chessity fast-chess verified pilot", Site="Local offline", TimeControl="120+0.5",
-        White=CANDIDATE.name if candidate_colour else opponent_name,
-        Black=opponent_name if candidate_colour else CANDIDATE.name,
+        White=candidate_path.name if candidate_colour else opponent_name,
+        Black=opponent_name if candidate_colour else candidate_path.name,
         Result="1/2-1/2" if winner is None else "1-0" if winner else "0-1", Termination=termination,
         OpeningSetupUCI=" ".join(job["opening"]), Round=str(job["id"]))
     host_end = host_cpu_sample()

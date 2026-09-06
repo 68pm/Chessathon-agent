@@ -20,6 +20,7 @@ def main():
     p.add_argument("--root-value", action="store_true")
     p.add_argument("--root-value-cp", type=int, default=5)
     p.add_argument("--adaptive-time", action="store_true")
+    p.add_argument("--search-mode", choices=["original", "pvs"], default="original")
     p.add_argument("--out", type=Path, required=True)
     a = p.parse_args()
     if a.root_value and (a.mode != "classical" or not a.player_policy):
@@ -46,6 +47,7 @@ def main():
                 "alien_cp": a.alien_cp,
                 **({"root_value": True, "root_value_cp": a.root_value_cp} if a.root_value else {}),
                 **({"adaptive_time": True} if a.adaptive_time else {}),
+                **({"search_mode": a.search_mode} if a.search_mode != "original" else {}),
             }
         )
     )

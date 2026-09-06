@@ -1,0 +1,68 @@
+{
+  "status": "prepared_not_teacher_verified",
+  "games": 1838,
+  "grouped_components": 843,
+  "largest_group": 40,
+  "split_games": {
+    "train": 1581,
+    "validation": 150,
+    "test": 107
+  },
+  "public_worked_case_games_forced_to_development": 54,
+  "prior_board_keys_excluded": 407160,
+  "recognized_previous_game_ids": 1,
+  "exclusions": {
+    "supplied_cross_split_board": 17103,
+    "previously_exposed_exact_or_mirrored_board": 1428,
+    "early_opening_prefix_policy": 2571,
+    "recognized_previous_source_game": 66,
+    "regrouped_cross_split_exact_or_mirror": 728,
+    "within_split_duplicate": 2427
+  },
+  "candidates": {
+    "test:endgame": 120,
+    "test:middlegame": 120,
+    "test:opening": 120,
+    "test:transition": 120,
+    "train:endgame": 240,
+    "train:middlegame": 240,
+    "train:opening": 240,
+    "train:transition": 240,
+    "validation:endgame": 120,
+    "validation:middlegame": 120,
+    "validation:opening": 120,
+    "validation:transition": 120
+  },
+  "player_candidate_counts": {
+    "Nakamura": 142,
+    "Shirov": 126,
+    "Kosteniuk": 122,
+    "Ivanchuk": 265,
+    "Karpov": 161,
+    "Kasparov": 141,
+    "Alekhine": 158,
+    "Topalov": 98,
+    "Polgar": 71,
+    "Capablanca": 36,
+    "Kramnik": 115,
+    "Anand": 112,
+    "Morozevich": 156,
+    "Adams": 113,
+    "Rubinstein": 21,
+    "Smyslov": 12,
+    "Aronian": 42,
+    "Carlsen": 29
+  },
+  "same_event_groups": 541,
+  "long_32ply_prefix_groups": 1771,
+  "cross_split_canonical_board_overlap": 0,
+  "cross_split_recorded_family_overlap": 0,
+  "candidate_sha256": "fbc6a6a86661d58f92774040a06831d9d1e0822af317891660a00cf2cd34098f",
+  "limits": [
+    "Event grouping uses normalized supplied event/site/year and may miss aliases or combine unrelated events.",
+    "Whole games, identical long opening prefixes, and recorded events are grouped; tactical/semantic near-duplicates cannot be ruled out.",
+    "Opening plies 1-12 are excluded rather than linking all games through the initial position.",
+    "Earlier 300k source-game IDs and some historic metadata are not recoverable; only recognized IDs and exact/mirrored exposed boards can be excluded.",
+    "Phase labels and source Elo/time controls remain factual or heuristic metadata, never inference inputs."
+  ]
+}

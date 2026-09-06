@@ -1,0 +1,23 @@
+{
+  "session": "threephase-pilot-20260906",
+  "seed": 20260916,
+  "baseline": "candidates/classical-witty-magnus-v1",
+  "baseline_zip_sha256": "6d287209c28bba520a21ef49261af99543a167fb192ce15513102c883c503a56",
+  "previous_newest": "candidates/fastchess-adaptive-v1",
+  "base_ms": 120000,
+  "increment_ms": 500,
+  "ply_cap": 600,
+  "workers": 2,
+  "rated_settings": [2200, 2400, 2600],
+  "baseline_pairs_per_setting": 2,
+  "development_pairs_per_candidate": 4,
+  "confirmation_pairs": 8,
+  "previous_newest_pairs": 4,
+  "final_pairs_per_setting": 6,
+  "maximum_implementation_candidates": 2,
+  "teacher_nodes": [80000, 320000],
+  "phase_diagnostic_targets": {"train": 192, "validation": 96, "test": 96},
+  "maximum_teacher_attempts": 1000,
+  "no_win_hunting": "Finish the fixed rated schedule even if a 2600 win occurs; do not add games simply to obtain one.",
+  "promotion": "Validation selects at most one implementation candidate. Fresh confirmation must have colour-pair bootstrap 95% lower score bound above 0.5 versus the baseline, score at least 0.5 versus previous newest, and no candidate runtime failure. Otherwise retain baseline."
+}

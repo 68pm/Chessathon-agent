@@ -18,6 +18,8 @@ from engine.time_manager import allocate
 _root = Path(__file__).resolve().parent
 _config_path = _root / "runtime.json"
 _config = json.loads(_config_path.read_text()) if _config_path.exists() else {}
+if _config.get("search_mode") == "pvs":
+    from engine.advanced_search import Search
 _mode = _config.get("mode", "classical")
 _opening = None
 _selective_opening = _config.get("opening_style") == "alien-selective"

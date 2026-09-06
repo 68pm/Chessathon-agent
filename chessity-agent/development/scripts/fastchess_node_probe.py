@@ -23,7 +23,9 @@ def main():
     import chess
 
     import agent
-    from engine.search import Search, SearchTimeout, position_key
+    from engine.search import SearchTimeout, position_key
+
+    Search = type(agent._search)
 
     if args.disable_opening:
         agent._opening = None

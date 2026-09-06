@@ -26,7 +26,7 @@ def audit_game(row, config):
 
     game = chess.pgn.read_game(io.StringIO(row["pgn"]))
     assert game and not game.errors and game.headers["TimeControl"] == "120+0.5"
-    board = chess.Board()
+    board = chess.Board(row.get("start_fen", chess.STARTING_FEN))
     for uci in row["opening"]:
         board.push_uci(uci)
     assert game.board().fen() == board.fen()
