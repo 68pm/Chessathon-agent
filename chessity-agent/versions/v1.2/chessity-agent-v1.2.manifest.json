@@ -1,0 +1,26 @@
+{
+  "sha256": "ab43d8cdee2c19e911443222e62ecf504a5c6c8f854bbd292a7ec99cbb7cdf14",
+  "zip_bytes": 393742,
+  "uncompressed_bytes": 434387,
+  "files": [
+    "agent.py",
+    "runtime.json",
+    "engine/__init__.py",
+    "engine/evaluation.py",
+    "engine/features.py",
+    "engine/move_ordering.py",
+    "engine/neural.py",
+    "engine/search.py",
+    "engine/time_manager.py",
+    "engine/transposition.py",
+    "models/value.npz"
+  ],
+  "mode": {
+    "mode": "hybrid",
+    "style_tolerance": 0
+  },
+  "runtime_dependencies": [
+    "chess==1.11.2",
+    "numpy==2.5.2"
+  ]
+}
