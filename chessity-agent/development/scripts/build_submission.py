@@ -12,8 +12,12 @@ from pathlib import Path
 def build(root, out):
     config = json.loads((root / "runtime.json").read_text())
     files = [root / "agent.py", root / "runtime.json"]
+    if config.get("elementary_tables"):
+        files += sorted((root / "tables").glob("*.rtbw"))
+        files += sorted((root / "tables").glob("*.rtbz"))
+        files += [root / "tables/SOURCE.txt", root / "tables/manifest.json"]
     files += sorted((root / "engine").glob("*.py"))
-    if config["mode"] == "classical" and not config.get("root_value"):
+    if config["mode"] == "classical" and not config.get("root_value") and not config.get("residual_value"):
         excluded = {"neural.py"} if config.get("player_policy") else {"features.py", "neural.py"}
         files = [f for f in files if f.name not in excluded]
     else:
@@ -25,6 +29,8 @@ def build(root, out):
     else:
         files = [f for f in files if f.name != "player_policy.py"]
     allowed = set(sys.stdlib_module_names) | {"chess", "numpy", "engine"}
+    if config.get("compiled_search"):
+        allowed.add("numba")
     for f in files:
         if f.suffix == ".py":
             tree = ast.parse(f.read_text())
@@ -59,9 +65,9 @@ def build(root, out):
         "runtime_dependencies": ["chess==1.11.2"]
         + (
             []
-            if config["mode"] == "classical" and not config.get("player_policy")
+            if config["mode"] == "classical" and not config.get("player_policy") and not config.get("compiled_search")
             else ["numpy==2.5.2"]
-        ),
+        ) + (["numba==0.67.0"] if config.get("compiled_search") else []),
     }
     out.with_suffix(".manifest.json").write_text(json.dumps(report, indent=2))
     return report

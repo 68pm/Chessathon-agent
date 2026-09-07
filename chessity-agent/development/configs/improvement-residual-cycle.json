@@ -1,0 +1,18 @@
+{
+  "output": "runs/improvement-loop-20260907/cycle-02",
+  "hypothesis": "A compact learned correction to the classical evaluator, actually used at every leaf, improves the compiled engine. The exact same search with residual disabled is the matched control. Static validation improvement alone does not establish strength.",
+  "budget": "Eight development comparison games, then four games each against 2400 and 2600. Fixed 120+0.5. No training during these matches. Requires further independent confirmation before promotion.",
+  "wait_for": ["runs/improvement-loop-20260907/cycle-01/rated-compiled-search-v2/results.json"],
+  "stages": [
+    {
+      "name": "residual-comparison",
+      "module": "scripts.improvement_matches",
+      "arguments": ["--candidate", "candidates/compiled-residual-v1", "--opponent", "candidates/compiled-search-v2", "--stage", "comparison", "--pairs", "4", "--offset", "4", "--cycle", "cycle-02"]
+    },
+    {
+      "name": "residual-rated",
+      "module": "scripts.improvement_matches",
+      "arguments": ["--candidate", "candidates/compiled-residual-v1", "--stage", "rated", "--pairs", "2", "--offset", "4", "--cycle", "cycle-02"]
+    }
+  ]
+}
