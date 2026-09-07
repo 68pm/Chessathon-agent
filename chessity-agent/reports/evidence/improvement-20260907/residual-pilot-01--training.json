@@ -1,0 +1,107 @@
+{
+  "status": "complete",
+  "architecture": "768 sparse piece-square inputs, 32 clipped-ReLU hidden, one residual value output",
+  "initialisation": "original random weights; zero output at epoch zero",
+  "seed": 2026090714,
+  "source_code_sha256": "38552b04fce613fa1eec4b4268e16c95980d3a10e9de524f3f6d15786a03a895",
+  "source_dataset_sha256": "a1ee5965271bd1aacf57c8c010bb2a63a9dfa746bea94f7d63612f4a57ad8daa",
+  "dataset_sha256": "152f48407046f7bcf29c964eb7d636cf52ed66b2f385fadc3fbb6bbe18c4c9f5",
+  "model_sha256": "bd27a042e617a7e6fdd7019443833bfeed60d87bfaa0ec8a026a717ee7e512fd",
+  "epochs": [
+    {
+      "epoch": 1,
+      "validation_capped_mse_cp": {
+        "0.0": 91758.140625,
+        "0.25": 86973.671875,
+        "0.5": 83186.15625,
+        "1.0": 78670.875
+      }
+    },
+    {
+      "epoch": 2,
+      "validation_capped_mse_cp": {
+        "0.0": 91758.140625,
+        "0.25": 86386.40625,
+        "0.5": 82113.0390625,
+        "1.0": 76969.1484375
+      }
+    },
+    {
+      "epoch": 3,
+      "validation_capped_mse_cp": {
+        "0.0": 91758.140625,
+        "0.25": 86073.1875,
+        "0.5": 81588.8828125,
+        "1.0": 76344.40625
+      }
+    },
+    {
+      "epoch": 4,
+      "validation_capped_mse_cp": {
+        "0.0": 91758.140625,
+        "0.25": 85429.6484375,
+        "0.5": 80566.640625,
+        "1.0": 75388.71875
+      }
+    },
+    {
+      "epoch": 5,
+      "validation_capped_mse_cp": {
+        "0.0": 91758.140625,
+        "0.25": 84790.65625,
+        "0.5": 79614.109375,
+        "1.0": 74787.2109375
+      }
+    },
+    {
+      "epoch": 6,
+      "validation_capped_mse_cp": {
+        "0.0": 91758.140625,
+        "0.25": 85027.4140625,
+        "0.5": 79912.609375,
+        "1.0": 74714.7734375
+      }
+    },
+    {
+      "epoch": 7,
+      "validation_capped_mse_cp": {
+        "0.0": 91758.140625,
+        "0.25": 84245.234375,
+        "0.5": 78740.2421875,
+        "1.0": 73951.5546875
+      }
+    },
+    {
+      "epoch": 8,
+      "validation_capped_mse_cp": {
+        "0.0": 91758.140625,
+        "0.25": 84836.9765625,
+        "0.5": 79551.875,
+        "1.0": 74044.0625
+      }
+    },
+    {
+      "epoch": 9,
+      "validation_capped_mse_cp": {
+        "0.0": 91758.140625,
+        "0.25": 84613.34375,
+        "0.5": 79229.4765625,
+        "1.0": 73960.625
+      }
+    },
+    {
+      "epoch": 10,
+      "validation_capped_mse_cp": {
+        "0.0": 91758.140625,
+        "0.25": 84915.1171875,
+        "0.5": 79643.078125,
+        "1.0": 74053.6953125
+      }
+    }
+  ],
+  "selected_epoch": 7,
+  "value_blend": 1.0,
+  "classical_validation_capped_mse_cp": 91758.140625,
+  "best_validation_capped_mse_cp": 73951.5546875,
+  "no_strength_claim": "Static validation gate only. Requires speed, held-out move quality and frozen paired matches before promotion. This is supervised residual learning, not reinforcement learning."
+}

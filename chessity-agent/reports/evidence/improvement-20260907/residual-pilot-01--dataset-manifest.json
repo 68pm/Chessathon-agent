@@ -1,0 +1,12 @@
+{
+  "source": "runs\\unattended-20260905-away\\data-300000\\dataset.npz",
+  "source_sha256": "a1ee5965271bd1aacf57c8c010bb2a63a9dfa746bea94f7d63612f4a57ad8daa",
+  "source_licence": "CC0 https://database.lichess.org/",
+  "seed": 2026090714,
+  "train": 30074,
+  "validation": 4000,
+  "supplemental_available": 75,
+  "learning_target": "clipped teacher-minus-classical residual in 200cp units",
+  "limitations": "Older PGN annotation teacher versions/depths uncontrolled. ECO grouping plus exact/mirror exclusion reduces leakage; semantic overlap remains possible. Validation is a diagnostic, not a rating test. Supplemental verification uses actual history, while this static network cannot represent repetition history.",
+  "public_export_note": "Raw training-position rows retained locally; provenance, counts and hashes published."
+}

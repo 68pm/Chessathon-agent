@@ -8,6 +8,10 @@ The phase and elite-learning experiments are complete. The final outcome candida
 
 [Full delivery](reports/DELIVERY.md) · [Elite learning and rewards](reports/ELITE_LEARNING_RESULTS.md) · [Phase search results](reports/THREEPHASE_RESULTS.md)
 
+The new improvement programme is active. Original compiled search scored 8W/0D/0L against v1.14 in development, 1W/1D/2L at nominal 2400 and 0W/1D/3L at nominal 2600. The newly trained leaf network tied its compiled control 2W/4D/2L, then scored 1W/0D/3L at 2400 and 0W/0D/4L at 2600. Independent confirmation of the faster classical build is in progress. **Consistent 2600 strength has not been achieved.** These settings are not calibrated human/site Elo.
+
+[Search findings](reports/IMPROVEMENT_CYCLE_01.md) · [Learning critique](reports/IMPROVEMENT_CYCLE_02.md) · [Fixed confirmation plan](reports/IMPROVEMENT_CONFIRMATION_01.md)
+
 ## Read-only runtime and repository access
 
 The selected package passed blocked file-creation, deletion, renaming and directory-creation checks. Inference requires no writes, network or subprocess. Training tools write their own checkpoints. Public visitors can read and download; edits require repository write permission. No collaborator or public write grants were added.

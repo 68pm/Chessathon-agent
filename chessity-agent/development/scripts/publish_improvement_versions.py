@@ -102,6 +102,7 @@ def reports(repo):
         shutil.copy2(source, public / 'reports' / source.name)
     for source in (ROOT / 'docs/evidence/improvement-20260907').glob('*.json'):
         target = public / 'reports/evidence/improvement-20260907' / source.name
+        target.parent.mkdir(parents=True, exist_ok=True)
         data = json.loads(source.read_text(encoding='utf-8'))
         if source.name.endswith('dataset-manifest.json'):
             data.pop('rows', None)

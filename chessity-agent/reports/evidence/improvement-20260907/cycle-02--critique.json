@@ -1,0 +1,63 @@
+{
+  "status": "complete",
+  "candidate": "candidates/compiled-residual-v1",
+  "comparison_opponent": "candidates/compiled-search-v2",
+  "comparison": {
+    "incumbent": {
+      "games": 8,
+      "wins": 2,
+      "draws": 4,
+      "losses": 2,
+      "score": 0.5,
+      "completed_pairs": 4,
+      "pair_bootstrap_95": [
+        0.25,
+        0.75
+      ],
+      "terminations": {
+        "threefold_repetition": 4,
+        "checkmate": 4
+      },
+      "candidate_failures": 0
+    }
+  },
+  "rated": {
+    "stockfish:2400": {
+      "games": 4,
+      "wins": 1,
+      "draws": 0,
+      "losses": 3,
+      "score": 0.25,
+      "completed_pairs": 2,
+      "pair_bootstrap_95": [
+        0.0,
+        0.5
+      ],
+      "terminations": {
+        "checkmate": 4
+      },
+      "candidate_failures": 0
+    },
+    "stockfish:2600": {
+      "games": 4,
+      "wins": 0,
+      "draws": 0,
+      "losses": 4,
+      "score": 0.0,
+      "completed_pairs": 2,
+      "pair_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "terminations": {
+        "checkmate": 4
+      },
+      "candidate_failures": 0
+    }
+  },
+  "audited_games": 16,
+  "candidate_promoted": false,
+  "goal_achieved": false,
+  "conclusion": "Static validation improved, but matched comparison tied. No demonstrated playing-strength gain. Preserve checkpoint and use the faster classical candidate in independent confirmation.",
+  "next_hypothesis": "Verify played-versus-preferred successor value targets from newly audited own errors; at most16 pairs, after frozen confirmation. Review labels before fitting."
+}

@@ -1,0 +1,69 @@
+{
+  "status": "complete",
+  "hypothesis": "Original compiled move generation/search with the same classical evaluation and existing root policy materially improves calculation.",
+  "candidate": "candidates/compiled-search-v2",
+  "comparison_opponent": "candidates/classical-witty-magnus-v1",
+  "comparison": {
+    "incumbent": {
+      "games": 8,
+      "wins": 8,
+      "draws": 0,
+      "losses": 0,
+      "score": 1.0,
+      "completed_pairs": 4,
+      "pair_bootstrap_95": [
+        1.0,
+        1.0
+      ],
+      "terminations": {
+        "checkmate": 8
+      },
+      "candidate_failures": 0
+    }
+  },
+  "rated": {
+    "stockfish:2400": {
+      "games": 4,
+      "wins": 1,
+      "draws": 1,
+      "losses": 2,
+      "score": 0.375,
+      "completed_pairs": 2,
+      "pair_bootstrap_95": [
+        0.25,
+        0.5
+      ],
+      "terminations": {
+        "checkmate": 3,
+        "threefold_repetition": 1
+      },
+      "candidate_failures": 0
+    },
+    "stockfish:2600": {
+      "games": 4,
+      "wins": 0,
+      "draws": 1,
+      "losses": 3,
+      "score": 0.125,
+      "completed_pairs": 2,
+      "pair_bootstrap_95": [
+        0.0,
+        0.25
+      ],
+      "terminations": {
+        "checkmate": 3,
+        "threefold_repetition": 1
+      },
+      "candidate_failures": 0
+    }
+  },
+  "conclusion": "Strong development gain versus v1.14 (8W0D0L), but 2600 target not reached. Independent confirmation still required before replacing official best.",
+  "next_steps": [
+    "Finish frozen matched residual-evaluator experiment; validation MSE improvement is not a strength result.",
+    "Audit new rated losses after the frozen schedules finish; turn verified critical corrections into the next training set.",
+    "Measure incremental evaluation to reduce the observed neural cost without changing weights.",
+    "Use verified elementary tablebase conversion and new held-out-ECO starting positions in later confirmation."
+  ],
+  "goal_achieved": false,
+  "official_best": "v1.14"
+}
