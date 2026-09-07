@@ -487,8 +487,12 @@ def search(board, state, depth, alpha, beta, ply, qdepth, hashes, hlen, context,
     slot = int(key & np.uint64(len(ttkey) - 1))
     hint = 0
     original_alpha = alpha
-    if not quiescence and ttkey[slot] == key and ttcontext[slot] == context and ttdata[slot, 4] == state[3]:
+    # Board identity is sufficient for a move-order hint, which can only match
+    # a generated move and still passes legality checks. Scores remain history-
+    # and halfmove-specific; never relax the bound condition below.
+    if not quiescence and ttkey[slot] == key:
         hint = ttdata[slot, 3]
+    if not quiescence and ttkey[slot] == key and ttcontext[slot] == context and ttdata[slot, 4] == state[3]:
         if ttdata[slot, 0] >= depth:
             value = ttdata[slot, 1]
             value = value - ply if value > 29000 else value + ply if value < -29000 else value

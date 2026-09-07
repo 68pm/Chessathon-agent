@@ -1,6 +1,7 @@
 """Differential legality, perft, evaluation parity and terminal behaviour."""
 
 import random
+import time
 
 import chess
 import numpy as np
@@ -149,6 +150,7 @@ def test_incremental_accumulators_restore_and_match_full_sum():
             old = core.make(b, s, move)
             core.update_accumulator(accumulator, w, move, old, 1)
             assert np.allclose(accumulator, core.build_accumulator(b, w, bias), atol=1e-10)
+
             assert abs(core.evaluate_accumulator(b, s, output, 1.0, False, accumulator)
                        - core.evaluate(b, s, w, bias, output, 1.0, False)) <= 1
             core.update_accumulator(accumulator, w, move, old, -1)
@@ -162,3 +164,35 @@ def test_incremental_accumulators_restore_and_match_full_sum():
             old = core.make(b, s, move)
             core.update_accumulator(accumulator, w, move, old, 1)
             assert np.allclose(accumulator, core.build_accumulator(b, w, bias), atol=1e-10)
+
+
+@pytest.mark.parametrize('wrong_context,wrong_clock,illegal_hint', [
+    (True, False, False), (False, True, False), (True, True, False),
+    (True, False, True), (False, False, False),
+])
+def test_transposition_hint_cannot_import_a_foreign_history_score(wrong_context, wrong_clock, illegal_hint):
+    search = CompiledSearch()
+    search.warmup()
+    position = chess.Board('7k/8/5KQ1/8/8/8/8/8 w - - 8 1')
+    board, state = arrays(position)
+    saved, saved_state = board.copy(), state.copy()
+    # Match root_iteration's uint64 context. A Python signed int would create a
+    # different Numba signature with lossy mixed signed/unsigned comparisons.
+    key = np.uint64(core.position_hash(board, state))
+    hashes = np.zeros(800, dtype=np.uint64)
+    hashes[0] = key
+    slot = int(key) & (len(search.ttkey) - 1)
+    search.ttkey[slot] = key
+    search.ttcontext[slot] = np.uint64(int(key) ^ int(wrong_context))
+    hint = 123456789 if illegal_hint else core.legal_moves(board, state)[-1]
+    # Deliberately wrong exact score: a foreign context must not import it.
+    search.ttdata[slot] = [20, 12345, 0, hint, state[3] + int(wrong_clock)]
+    control = np.array([0, 0, 100000], dtype=np.int64)
+    accumulator = core.build_accumulator(board, search.weights, search.bias)
+    score = core.search(board, state, 2, -31000, 31000, 0, 0, hashes, 1, key,
+                        search.ttkey, search.ttcontext, search.ttdata, search.killers,
+                        search.history, control, time.perf_counter() + 30,
+                        search.weights, search.bias, search.output, 0.0, False, False, accumulator)
+    assert score == (29999 if wrong_context or wrong_clock else 12345)
+    assert np.array_equal(board, saved) and np.array_equal(state, saved_state)
+    assert control[1] == 0

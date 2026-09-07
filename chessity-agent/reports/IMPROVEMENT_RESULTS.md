@@ -16,6 +16,19 @@ The improvement comes from our original compiled search, faster quiescence termi
 
 Strict read-only/no-network/no-subprocess inference passed, including table probes. Initialization was 28.80s and peak measured memory 229.6MB. Only original Python source and own weights plus attributed permitted table data ship; compilation occurs in memory. The prior full suite passed 108 tests, and four additional successor-data tests passed separately.
 
-ZIP SHA-256: `e4b66bd0f5a16418a49119c0547a818c3bb79a3c9e209b3eca7210907e072f63`. All 42 historical versions through v1.41 remain available. No competition upload or repository write-access grant was performed.
+ZIP SHA-256: `e4b66bd0f5a16418a49119c0547a818c3bb79a3c9e209b3eca7210907e072f63`. All 45 chronological versions through v1.44 remain available. No competition upload or repository write-access grant was performed.
 
-Next: analyse the rated games and verify played-versus-preferred successor targets before another bounded learning experiment. Once used for development, these rated opening groups must not be reused as fresh confirmation. The full-project backup is refreshed separately.
+Later experimental v1.42 achieved a verified checkmate win against nominal2600:
+its complete four-game result was1W/2D/1L. It scored2W/0D/2L at nominal2400 and
+1W/5D/2L against v1.41, so it was not promoted. This is a development milestone,
+not a rating or consistency claim. The winning PGN and all losses are published
+with the [cycle03 critique](IMPROVEMENT_CYCLE_03.md).
+
+The v1.43 table experiment fixed a measured conversion in drills but no ordinary
+game reached its added coverage; its comparison also failed to establish a gain.
+The v1.44 isolated move-order experiment passed correctness and efficiency gates
+and is now playing its fixed development screen. Eight verified successor pairs
+from recent audits are retained for future targeted replay; no new fit is claimed.
+See [cycle05](IMPROVEMENT_CYCLE_05.md). Exposed positions/groups remain development
+data and cannot become fresh confirmation. The full-project backup is a separate
+earlier snapshot; the current source and evidence are preserved in Git.

@@ -21,11 +21,12 @@ BUILDS = [
     ('compiled-qsearch-endgames-v1', 'Efficient compiled search with endgame tables', 'independent confirmation in progress; not yet promoted', 'compiled-qsearch-endgames-v1-readonly.json'),
     ('compiled-reductions-v1', 'Conservative late quiet move reductions', '1W5D2L versus v1.41 in development; rated screen continuing; not promoted', 'compiled-reductions-v1-readonly.json'),
     ('compiled-rook-bishop-v1', 'Verified rook-bishop conversion tables', 'conversion and read-only checks passed; ordinary matches queued; not promoted', 'compiled-rook-bishop-v1-readonly.json'),
+    ('compiled-transposition-hints-v1', 'History-safe transposition move ordering', 'correctness, diagnostic and read-only gates passed; fixed development matches running; not promoted', 'compiled-transposition-hints-v1-readonly.json'),
 ]
 
 
 def add_build(repo, index):
-    assert 35 <= index <= 43
+    assert 35 <= index <= 44
     public = repo / 'chessity-agent'
     registry = json.loads((public / 'versions.json').read_text(encoding='utf-8'))
     assert len(registry['versions']) == index

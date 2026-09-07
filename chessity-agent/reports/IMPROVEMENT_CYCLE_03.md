@@ -52,6 +52,21 @@ v1.41 remains selected during this development experiment.
 
 The eight-game comparison is complete: **1W/5D/2L**, score43.75%, no runtime
 failures. This provides no evidence to promote the reduction flag despite its
-better diagnostic depth. Its fixed rated schedule and subsequent error/label audit
-continue; partial rated scores will not determine a stronger-version claim. The
-frozen build is archived publicly as experimental **v1.42**.
+better diagnostic depth. The frozen build is archived publicly as experimental
+**v1.42**.
+
+The complete rated screen scored **2W/0D/2L at nominal2400** and **1W/2D/1L at
+nominal2600**. Game5, with White after the exposed Ruy Lopez setup, ended in a
+verified checkmate win over Stockfish19 configured with UCI_LimitStrength=true,
+UCI_Elo=2600, one thread, and both120+0.5 clocks. All16 games were independently
+replayed with source/clock/outcome checks and no runtime failures. This is the
+first ordinary nominal2600 victory in this improvement programme, not a calibrated
+rating or evidence of consistent wins. The complete tiny sample includes the loss.
+
+The error audit found5 stable >=200cp errors in304 own moves;38 rows had mate
+scores requiring separate interpretation. The successor pilot accepted4 of5 pairs,
+adding8 endpoints. This remains development data. Several errors occurred with
+33–75 seconds remaining, so spending more opening-data or broad-fit budget would
+not directly address the calculation failures. The next isolated search experiment
+will reuse board-matching move hints while retaining history-specific score bounds.
+No promotion: the incumbent comparison still gives no gain. v1.41 remains selected.

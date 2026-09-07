@@ -8,7 +8,7 @@
 
 [Search findings](reports/IMPROVEMENT_CYCLE_01.md) · [Learning critique](reports/IMPROVEMENT_CYCLE_02.md) · [Historical elite results](reports/ELITE_LEARNING_RESULTS.md)
 
-Experimental v1.42 scored 1W/5D/2L against v1.41; its fixed rated screen continues. Experimental v1.43 fixes a measured rook-bishop conversion and has ordinary matches queued. Neither is promoted. [Search experiment](reports/IMPROVEMENT_CYCLE_03.md) · [Verified endgame data](reports/IMPROVEMENT_ENDGAME_TARGET.md) · [Queued regression plan](reports/IMPROVEMENT_CYCLE_04.md).
+Experimental v1.42 achieved a verified nominal2600 checkmate win, finishing1W/2D/1L, but its1W/5D/2L comparison against v1.41 did not justify promotion. The table experiment v1.43 is also unpromoted. Experimental v1.44 passed correctness and efficiency gates; its fixed matches are running. [2600 win and full critique](reports/IMPROVEMENT_CYCLE_03.md) · [Winning PGN](reports/evidence/improvement-20260907/v1.42-vs-nominal2600-win.pgn) · [Next experiment](reports/IMPROVEMENT_CYCLE_05.md).
 
 ## Read-only runtime and repository access
 
@@ -60,8 +60,8 @@ The selected package passed blocked file-creation, deletion, renaming and direct
 | [v1.39](versions/v1.39/chessity-agent-v1.39.zip) | Incremental residual evaluation | numerical and read-only checks passed; no ordinary matches |
 | [v1.40](versions/v1.40/chessity-agent-v1.40.zip) | Efficient quiescence terminal checks | fixed-node parity and read-only checks passed; no ordinary matches |
 | [v1.41](versions/v1.41/chessity-agent-v1.41.zip) | Efficient compiled search with endgame tables | selected after independent 23W/1D/0L confirmation versus v1.14; consistent 2600 target not reached |
-| [v1.42](versions/v1.42/chessity-agent-v1.42.zip) | Conservative late quiet move reductions | 1W5D2L versus v1.41 in development; rated screen continuing; not promoted |
-| [v1.43](versions/v1.43/chessity-agent-v1.43.zip) | Verified rook-bishop conversion tables | conversion and read-only checks passed; ordinary matches queued; not promoted |
+| [v1.42](versions/v1.42/chessity-agent-v1.42.zip) | Conservative late quiet move reductions | 1W5D2L versus v1.41; 2W0D2L at nominal2400; 1W2D1L at nominal2600; not promoted |
+| [v1.43](versions/v1.43/chessity-agent-v1.43.zip) | Verified rook-bishop conversion tables | 3W1D4L versus v1.41; 1W2D1L at nominal2400; 0W2D2L at nominal2600; not promoted |
 | [v1.44](versions/v1.44/chessity-agent-v1.44.zip) | History-safe transposition move ordering | correctness, diagnostic and read-only gates passed; fixed development matches running; not promoted |
 
 All 45 versions are retained in development order with version tags. Source and own trained weights beside each ZIP match its bytes. v1.35 is a failed preflight preserved for audit and should not be uploaded. New experimental versions are not automatically recommended. Downloaded raw player histories and external engine executables are excluded.

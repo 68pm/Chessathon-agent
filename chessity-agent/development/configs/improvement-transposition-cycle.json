@@ -1,0 +1,21 @@
+{
+  "output": "runs/improvement-loop-20260907/cycle-05",
+  "wait_for": ["runs/improvement-loop-20260907/cycle-04/controller.json", "runs/improvement-loop-20260907/cycle-05/probe-gate.json"],
+  "stages": [
+    {
+      "name": "transposition-comparison",
+      "module": "scripts.improvement_matches",
+      "arguments": ["--candidate", "candidates/compiled-transposition-hints-v1", "--opponent", "candidates/compiled-qsearch-endgames-v1", "--stage", "comparison", "--pairs", "4", "--offset", "0", "--cycle", "cycle-05"]
+    },
+    {
+      "name": "transposition-rated",
+      "module": "scripts.improvement_matches",
+      "arguments": ["--candidate", "candidates/compiled-transposition-hints-v1", "--stage", "rated", "--pairs", "2", "--offset", "0", "--cycle", "cycle-05"]
+    },
+    {
+      "name": "transposition-error-audit",
+      "module": "scripts.improvement_audit",
+      "arguments": ["--source", "runs/improvement-loop-20260907/cycle-05/rated-compiled-transposition-hints-v1/results.json", "--out", "runs/improvement-loop-20260907/cycle-05/rated-error-audit"]
+    }
+  ]
+}

@@ -27,6 +27,15 @@ extend it to chase a win. Review scope-specific conversion evidence and ordinary
 outcomes before deciding a fresh confirmation or a further engineering cycle.
 v1.41 remains the upload recommendation while this runs.
 
+Completed result:3W/1D/4L versus v1.41,1W/2D/1L at nominal2400 and0W/2D/2L at
+nominal2600. All16 games were replayed with frozen-source, move, clock and outcome
+checks; no runtime failures. The rated audit found11 stable >=200cp errors in449
+own moves. No positions in these16 games produced an additional four/five-piece
+table decision, so this small ordinary screen did not test the new material coverage
+and does not establish that it caused a strength loss. The conversion drills remain
+useful component evidence. Do not promote the build from these match results.
+Keep v1.41 selected and proceed to the isolated search experiment in cycle05.
+
 Next potential search hypothesis, not implemented: a board-matching transposition
 entry can order an already generated legal move even when its repetition context
 differs. Reusing its score/bounds must continue to require the current history and

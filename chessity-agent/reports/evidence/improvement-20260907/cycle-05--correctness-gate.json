@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "positions": 16,
+  "completed_depth": 4,
+  "score_matches": 16,
+  "control_nodes": 510336,
+  "candidate_nodes": 515273,
+  "core_tests": "21 passed in24.22s",
+  "test_harness_note": "The initial direct-call test accidentally supplied a signed Python context, unlike the actual uint64 root_iteration path. It was corrected to match runtime types; all five poisoned-score cases now pass. No runtime code was changed to accommodate that test.",
+  "scope": "Equal-depth development parity; no throughput/strength improvement inferred."
+}
