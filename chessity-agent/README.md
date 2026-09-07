@@ -14,7 +14,7 @@ Experimental v1.42 achieved one nominal2600 checkmate win but did not beat the i
 
 The subsequent [incremental-hash pilot](reports/IMPROVEMENT_CYCLE_08.md) passed fixed-node correctness but missed its speed gate. No new release or matches followed; v1.41 remains selected. Both nominal2400/2600 opponents remain active until independent winning consistency supports their specified replacements.
 
-The [256-game independent consistency study](reports/IMPROVEMENT_CONSISTENCY_STATUS.md) of frozen v1.41 is now running against nominal2400 and2600. Both levels remain in the pool pending the complete results and audit. No training runs alongside these matches.
+The [first consistency study](reports/IMPROVEMENT_CONSISTENCY_STATUS.md) was interrupted before either opening game completed. Zero results are claimed; registered attempts1/2 are invalid and both opponent levels remain active. v1.41 remains the recommended upload.
 
 ## Read-only runtime and repository access
 

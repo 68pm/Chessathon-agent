@@ -1,0 +1,23 @@
+{
+  "status": "interrupted",
+  "stage": "fixed_matches",
+  "pid": 7832,
+  "started_utc": "2026-09-07T16:46:43.361270+00:00",
+  "completed_games": 0,
+  "total_games": 256,
+  "report": "runs\\improvement-loop-20260907\\consistency-01\\results.json",
+  "interruption": {
+    "status": "interrupted",
+    "observed_utc": "2026-09-07T17:01:39.413029+00:00",
+    "completed_games": 0,
+    "unfinished_game_ids": [
+      1,
+      2
+    ],
+    "original_controller_pid": 7832,
+    "wrapper_pid": 27340,
+    "evidence": "Both recorded processes absent; no Stockfish child processes remain. Last move snapshots16:49:59UTC; controller still claimed running and stderr empty.",
+    "cause": "Unknown external process termination; no outcome can be assigned to unfinished games.",
+    "decision": "Invalid for consistency qualification. Preserve all artifacts and consume registered attempts1/2; use a new registered study with new groups and a service-owned launch."
+  }
+}
