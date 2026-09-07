@@ -102,3 +102,20 @@ Its56.25% score and four opening pairs are insufficient for promotion; the paire
 bootstrap interval is37.5%–75%. The rated schedule and its audit continue unchanged.
 The new phase report will run automatically after that audit, with no new teacher
 calls. Subsequent tests follow the user's fixed-strength consistency/pool rules.
+
+
+Completed result: **2W/5D/1L versus v1.41,2W/1D/1L at nominal2400, and0W/1D/3L
+at nominal2600.** All16 completed games passed independent schedule, source, teacher,
+legal-move, clock, increment and outcome audits with no runtime failures. Preserve
+the interruption disclosure above; the screen is development evidence only.
+The rated audit found8 stable >=200cp errors in555 own moves and65 mate-scored
+decisions. All four losses ended in the endgame; first verified losing transitions
+were middlegame in three and unresolved in one. The phase report added five review
+references, with no new teacher analysis or fitting.
+
+No promotion or pool retirement. The narrow, uncertain incumbent comparison and
+absence of2600 wins do not justify calling this stronger or consistent. Preserve
+the calibrated network as an experiment. Do not try another blend or unchanged fit.
+The next iteration prioritises engine-code diagnosis of useful threat calculation
+and conversion; effective learning and targeted data remain explicit secondary
+reviews. Use the fixed-strength pool runner for future development schedules.

@@ -41,7 +41,8 @@ weight. On six selected failure positions it reduced independently checked mean
 move regret at both80k/320k teacher budgets; only800k new teacher nodes were needed
 by reusing identical analyses. It still missed the bishop-trapping threat and
 repeated four original errors. Read-only inference passed. Its fixed16-game screen
-against v1.41 and nominal2400/2600 is running. An external process interruption
+finished2W/5D/1L against v1.41,2W/1D/1L against nominal2400 and0W/1D/3L against
+nominal2600. All16 completed games passed independent audits; no promotion. An external process interruption
 left one completed draw; that result and unfinished snapshots were preserved,
 and the unchanged remaining schedule resumed. See [cycle07](IMPROVEMENT_CYCLE_07.md).
 No promotion follows from the selected diagnostic, and consistent2600 is unmet.
@@ -50,8 +51,8 @@ Exposed positions/groups remain development data and cannot become fresh
 confirmation. The full-project backup is a separate earlier snapshot; current
 source and evidence are preserved in Git.
 
-The [phase diagnosis](IMPROVEMENT_PHASE_DIAGNOSIS.md) reuses32 completed games and
-1,614 audited own moves. Four of v1.41's five2600 losses ended in the endgame, but
+The [phase diagnosis](IMPROVEMENT_PHASE_DIAGNOSIS.md) reuses40 completed games and
+2,169 audited own moves. Four of v1.41's five2600 losses ended in the endgame, but
 the first verified losing transition was middlegame in two, endgame in one and
 unresolved in two. Threat calculation and conversion both remain priorities.
 Future iterations review code, descendant-position learning and targeted data in

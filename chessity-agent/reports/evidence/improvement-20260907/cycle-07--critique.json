@@ -1,0 +1,118 @@
+{
+  "status": "complete",
+  "candidate": "v1.47",
+  "recommended": false,
+  "selected": "v1.41",
+  "comparison": "2W/5D/1L",
+  "nominal2400": "2W/1D/1L",
+  "nominal2600": "0W/1D/3L",
+  "audited_games": 16,
+  "source_sha256": {
+    "cycle-07/comparison-compiled-paired-quarter-v1/results.json": "4e40f4a498199af7b5b975860ae4b34f4276f147f975958d44ec79e80e08fc1d",
+    "cycle-07/rated-compiled-paired-quarter-v1/results.json": "a3fef47f847fae4c280e59866cac9ac6b950ca97846fde826667c1713a0905d7"
+  },
+  "rated_large_errors": 8,
+  "rated_own_moves": 555,
+  "rated_mate_scored": 65,
+  "phase_groups": {
+    "stockfish:2400": {
+      "games": 4,
+      "wins": 2,
+      "draws": 1,
+      "losses": 1,
+      "loss_first_warning_phase": {
+        "opening": 0,
+        "middlegame": 1,
+        "endgame": 0,
+        "unresolved": 0
+      },
+      "loss_first_losing_transition_phase": {
+        "opening": 0,
+        "middlegame": 1,
+        "endgame": 0,
+        "unresolved": 0
+      },
+      "loss_terminal_phase": {
+        "endgame": 1
+      },
+      "nonwin_first_squandered_advantage_phase": {
+        "opening": 0,
+        "middlegame": 0,
+        "endgame": 0,
+        "unresolved": 2
+      },
+      "phase_exposure": {
+        "opening": {
+          "own_moves": 34,
+          "large_cp_errors": 0,
+          "mate_scored": 0,
+          "large_errors_per_100_observed_moves": 0.0
+        },
+        "middlegame": {
+          "own_moves": 64,
+          "large_cp_errors": 2,
+          "mate_scored": 0,
+          "large_errors_per_100_observed_moves": 3.125
+        },
+        "endgame": {
+          "own_moves": 103,
+          "large_cp_errors": 2,
+          "mate_scored": 20,
+          "large_errors_per_100_observed_moves": 1.941747572815534
+        }
+      }
+    },
+    "stockfish:2600": {
+      "games": 4,
+      "wins": 0,
+      "draws": 1,
+      "losses": 3,
+      "loss_first_warning_phase": {
+        "opening": 0,
+        "middlegame": 2,
+        "endgame": 0,
+        "unresolved": 1
+      },
+      "loss_first_losing_transition_phase": {
+        "opening": 0,
+        "middlegame": 2,
+        "endgame": 0,
+        "unresolved": 1
+      },
+      "loss_terminal_phase": {
+        "endgame": 3
+      },
+      "nonwin_first_squandered_advantage_phase": {
+        "opening": 0,
+        "middlegame": 0,
+        "endgame": 0,
+        "unresolved": 4
+      },
+      "phase_exposure": {
+        "opening": {
+          "own_moves": 34,
+          "large_cp_errors": 1,
+          "mate_scored": 0,
+          "large_errors_per_100_observed_moves": 2.9411764705882355
+        },
+        "middlegame": {
+          "own_moves": 100,
+          "large_cp_errors": 2,
+          "mate_scored": 10,
+          "large_errors_per_100_observed_moves": 2.0
+        },
+        "endgame": {
+          "own_moves": 220,
+          "large_cp_errors": 1,
+          "mate_scored": 35,
+          "large_errors_per_100_observed_moves": 0.45454545454545453
+        }
+      }
+    }
+  },
+  "interruption": "Preserved completed game2 and disclosed unfinished attempts; resumed same frozen development schedule. No interrupted outcome imputed. Not fresh confirmation.",
+  "independent_audit": "All16 completed games passed independent schedule, source, teacher, legality, clock, increment and outcome audits without runtime failures.",
+  "decision": "No promotion or opponent retirement. The tiny56.25% incumbent comparison is uncertain and the candidate has no2600 win. Do not try another blend or unchanged fit. Next iteration prioritises engine-code diagnosis of threat calculation and conversion using the first-deterioration phase evidence.",
+  "pool": "Active2400/2600, focus2400. Only independent consistency can replace2400 with2800 and2600 with3000.",
+  "limitation": "Exposed/interrupted development, not a calibrated Elo, consistency proof, or matched causal blunder-rate comparison."
+}

@@ -24,10 +24,15 @@ above50% in each block. Split an attempt-adjusted alpha budget across the blocks
 record unsuccessful attempts too. This larger cost is incurred only after promising
 fixed development screens. Source, clock, outcome and freshness audits are required.
 scripts/improvement_consistency.py implements the statistical component; it cannot
-certify freshness or change the pool by itself. Two tests passed for small/drawn
+certify freshness or change the pool by itself. Three tests passed for small/drawn
 screens, repeated groups, mixed candidates, runtime failures and stricter bounds
 on later attempts. Record the attempt before starting either block, including an
 unsuccessful attempt in the cumulative alpha allocation.
+Future development cycles use scripts/improvement_pool_matches.py, which snapshots
+the current pool and rejects retired or duplicate levels. An explicit subset such
+as `--levels 2400` focuses a declared screen without retiring the other active level.
+The separate runner leaves all existing frozen match sources unchanged. No new
+ordinary games were launched merely to test this scheduling logic.
 Higher settings remain nominal engine handicaps. No further replacement above3000
 has been specified. Reaching2600 remains a reportable milestone, followed by the
 user-authorised pool progression rather than an automatic pause before those checks.
@@ -74,7 +79,7 @@ repair or a better learning target is warranted before fetching external materia
 
 ## Initial measured result
 
-Reused32 completed games and1,614 audited own moves with no new teacher nodes.
+Reused40 completed games and2,169 audited own moves with no new teacher nodes.
 Source positions, full history, move, colour, game outcome and clock all matched.
 Four tests cover phase boundaries, already-lost positions, mate/unstable scores and
 the distinction between an early warning and a later endgame finish. All passed.
@@ -88,6 +93,8 @@ Lost games, classified by the first verified warning:
 | v1.46 / nominal2400 | 2 | 0 | 2 | 0 | 0 |
 | v1.46 / nominal2600 | 2 | 1 | 1 | 0 | 0 |
 | v1.46 / v1.41 | 5 | 1 | 2 | 1 | 1 |
+| v1.47 / nominal2400 | 1 | 0 | 1 | 0 | 0 |
+| v1.47 / nominal2600 | 3 | 0 | 2 | 0 | 1 |
 
 For v1.41 against2600, four of five losses ended in the endgame, but the first
 verified losing transition was middlegame in two, endgame in one and unresolved
@@ -102,8 +109,10 @@ does not establish a strong opening repertoire. Keep phase exposure, uncertain
 mate-scored decisions and unresolved games visible. Do not combine versions into
 one strength claim or infer that later endgame errors are the only weakness.
 
-Twenty references to first warnings and squandered advantages are queued for review
-across the three reports; they are not20 newly accepted or necessarily independent
+Twenty-five references to first warnings and squandered advantages are queued for review
+across the four reports; they are not25 newly accepted or necessarily independent
 training examples. Current engineering priority remains useful threat calculation
 and reliable conversion. Learning/data changes follow diagnosis and successor
-verification. v1.47's same report is queued after its frozen rated audit completes.
+verification. v1.47's report completed after its rated audit. All four of its losses ended in the
+endgame, but the first verified losing transition was middlegame in three and
+unresolved in one. Neither active opponent level has met the consistency gate.
