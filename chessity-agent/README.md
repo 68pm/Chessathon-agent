@@ -1,12 +1,12 @@
 # chessity-agent
 
-**Best verified upload: v1.14 â€” Classical/Witty/Magnus policy.**
+**Best verified upload: v1.14 — Classical/Witty/Magnus policy.**
 
 [Download the competition ZIP](latest/chessity-agent.zip). Upload the agent ZIP directly.
 
 The phase and elite-learning experiments are complete. The final outcome candidate v1.33 scored **1W/1D/14L at 2400** and **0W/5D/11L at 2600**, and lost its direct comparison against v1.14. Highest individual winning setting: 2400. Consistent 2400/2600 wins were not achieved. All tests use 120+0.5; nominal engine settings are not a human/site Elo.
 
-[Full delivery](reports/DELIVERY.md) Â· [Elite learning and rewards](reports/ELITE_LEARNING_RESULTS.md) Â· [Phase search results](reports/THREEPHASE_RESULTS.md)
+[Full delivery](reports/DELIVERY.md) · [Elite learning and rewards](reports/ELITE_LEARNING_RESULTS.md) · [Phase search results](reports/THREEPHASE_RESULTS.md)
 
 ## Read-only runtime and repository access
 
@@ -52,5 +52,6 @@ The selected package passed blocked file-creation, deletion, renaming and direct
 | [v1.33](versions/v1.33/chessity-agent-v1.33.zip) | Elite outcome-guided policy after training game 8 | final outcome candidate; not promoted after fresh comparisons |
 | [v1.34](versions/v1.34/chessity-agent-v1.34.zip) | Elite teacher-only matched control | matched teacher-only ablation; not independently promoted |
 | [v1.35](versions/v1.35/chessity-agent-v1.35.zip) | Original compiled search preflight | failed Windows import preflight; archival only; do not upload |
+| [v1.36](versions/v1.36/chessity-agent-v1.36.zip) | Original compiled classical search | 8W0D0L versus v1.14 in development; not independently promoted |
 
-All 36 versions are retained in development order with version tags. Source and own trained weights beside each ZIP match its bytes. v1.35 is a failed preflight preserved for audit and should not be uploaded. New experimental versions are not automatically recommended. Downloaded raw player histories and external engine executables are excluded.
+All 37 versions are retained in development order with version tags. Source and own trained weights beside each ZIP match its bytes. v1.35 is a failed preflight preserved for audit and should not be uploaded. New experimental versions are not automatically recommended. Downloaded raw player histories and external engine executables are excluded.
