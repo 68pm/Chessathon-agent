@@ -1,6 +1,6 @@
 # chessity-agent v1.46
 
-**Experimental; not promoted.** matched learning and runtime gates passed; fixed24-game screen running; not promoted.
+**Experimental; not promoted.** 2W3D3L versus v1.45; 1W2D5L versus v1.41; 1W1D2L at nominal2400; 0W2D2L at nominal2600; not promoted.
 
 Archive and source bytes are preserved. The selected upload remains v1.41. [Results and limitations](../../reports/IMPROVEMENT_RESULTS.md).
 

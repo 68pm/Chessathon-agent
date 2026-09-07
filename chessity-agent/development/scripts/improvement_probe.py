@@ -15,12 +15,16 @@ def main():
     parser.add_argument('--seconds', type=float, default=1.0)
     parser.add_argument('--nodes', type=int)
     parser.add_argument('--max-depth', type=int, default=64)
+    parser.add_argument('--value-blend', type=float, choices=(0., .25, .5, 1.))
     parser.add_argument('--include-mate-transitions', action='store_true')
     args = parser.parse_args()
     sys.path.insert(0, str(args.candidate.resolve()))
     import chess
 
     import agent
+
+    if args.value_blend is not None:
+        agent._search.blend = args.value_blend
 
     rows = [json.loads(line) for line in args.audit.read_text().splitlines()]
     def allowed_mate(row):
@@ -68,6 +72,7 @@ def main():
     args.out.write_text(json.dumps(dict(candidate=str(args.candidate), requested_seconds=args.seconds,
         requested_nodes=args.nodes, source_code_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         max_depth=args.max_depth,
+        value_blend_override=args.value_blend,
         audit_sha256=hashlib.sha256(args.audit.read_bytes()).hexdigest(),
         results=results, scope='Previously audited development positions. Teacher top-one agreement is diagnostic, not a new strength claim. Root policy preference disabled in both probes.'), indent=2) + '\n', encoding='utf-8')
     print(json.dumps(dict(positions=len(results), teacher_agreement=sum(r['agrees_with_deep_teacher'] for r in results),

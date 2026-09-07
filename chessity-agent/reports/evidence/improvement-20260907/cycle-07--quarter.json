@@ -1,0 +1,90 @@
+{
+  "candidate": "candidates\\compiled-paired-ranking-v1",
+  "requested_seconds": 1.0,
+  "requested_nodes": null,
+  "source_code_sha256": "53acb620cfc5c904fd1289bafe3f3804c19b04b9f61533628480e544980b6e92",
+  "max_depth": 64,
+  "value_blend_override": 0.25,
+  "audit_sha256": "4769d7f24510b1bd7d0bd5de4ea5077b0eaa3d0d55d6ed38db7e6a6932bf24c8",
+  "results": [
+    {
+      "id": "game-001-ply-038",
+      "source_label": "verified_200cp_error",
+      "fen": "1k5r/1pp1b1p1/2P4p/5p2/8/2Pr1p1P/3B1PP1/R2R2K1 w - - 2 23",
+      "original_move": "a1b1",
+      "uci": "a1b1",
+      "depth": 7,
+      "nodes": 402432,
+      "seconds": 1.0013431999832392,
+      "score": -20,
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": true
+    },
+    {
+      "id": "game-003-ply-012",
+      "source_label": "verified_200cp_error",
+      "fen": "r2qk2r/ppp1bp2/2npb3/6pp/8/2PB1NB1/PPP2PPP/R2Q1RK1 w kq - 0 11",
+      "original_move": "f3d4",
+      "uci": "f3d4",
+      "depth": 5,
+      "nodes": 340992,
+      "seconds": 1.000392499990994,
+      "score": 8,
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": true
+    },
+    {
+      "id": "game-003-ply-018",
+      "source_label": "verified_200cp_error",
+      "fen": "r2qk2r/ppp1bp2/3pb3/3P2p1/8/3B2p1/PPP2PPP/R2Q1RK1 w kq - 0 14",
+      "original_move": "f2g3",
+      "uci": "f2g3",
+      "depth": 7,
+      "nodes": 345088,
+      "seconds": 1.001541300007375,
+      "score": -263,
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": true
+    },
+    {
+      "id": "game-006-ply-093",
+      "source_label": "verified_200cp_error",
+      "fen": "8/8/4b3/4K2p/2k4P/5P2/1B6/8 b - - 13 51",
+      "original_move": "e6d7",
+      "uci": "e6d7",
+      "depth": 9,
+      "nodes": 505856,
+      "seconds": 1.0004697999975178,
+      "score": -243,
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": true
+    },
+    {
+      "id": "game-007-ply-036",
+      "source_label": "verified_200cp_error",
+      "fen": "R4b1r/3R4/1pr1pk1p/2p2pp1/8/2P1B1P1/PP3P1P/6K1 w - - 4 22",
+      "original_move": "f2f4",
+      "uci": "d7d8",
+      "depth": 5,
+      "nodes": 385024,
+      "seconds": 1.0010006000229623,
+      "score": 59,
+      "agrees_with_deep_teacher": true,
+      "repeats_large_error": false
+    },
+    {
+      "id": "game-008-ply-027",
+      "source_label": "verified_200cp_error",
+      "fen": "r4rk1/pp3p1p/3p1qpb/3Bn3/P2p2bP/3P1NP1/1P3PK1/RN1Q1R2 b - - 3 17",
+      "original_move": "a8e8",
+      "uci": "a8c8",
+      "depth": 5,
+      "nodes": 348160,
+      "seconds": 1.0006934000120964,
+      "score": 196,
+      "agrees_with_deep_teacher": true,
+      "repeats_large_error": false
+    }
+  ],
+  "scope": "Previously audited development positions. Teacher top-one agreement is diagnostic, not a new strength claim. Root policy preference disabled in both probes."
+}

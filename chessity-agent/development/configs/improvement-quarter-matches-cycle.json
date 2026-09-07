@@ -1,0 +1,21 @@
+{
+  "output": "runs/improvement-loop-20260907/cycle-07",
+  "wait_for": ["runs/improvement-loop-20260907/cycle-06/controller.json", "runs/improvement-loop-20260907/cycle-07/probe-gate.json"],
+  "stages": [
+    {
+      "name": "quarter-vs-incumbent",
+      "module": "scripts.improvement_matches",
+      "arguments": ["--candidate", "candidates/compiled-paired-quarter-v1", "--opponent", "candidates/compiled-qsearch-endgames-v1", "--stage", "comparison", "--pairs", "4", "--offset", "0", "--cycle", "cycle-07"]
+    },
+    {
+      "name": "quarter-rated",
+      "module": "scripts.improvement_matches",
+      "arguments": ["--candidate", "candidates/compiled-paired-quarter-v1", "--stage", "rated", "--pairs", "2", "--offset", "0", "--cycle", "cycle-07"]
+    },
+    {
+      "name": "quarter-error-audit",
+      "module": "scripts.improvement_audit",
+      "arguments": ["--source", "runs/improvement-loop-20260907/cycle-07/rated-compiled-paired-quarter-v1/results.json", "--out", "runs/improvement-loop-20260907/cycle-07/rated-error-audit"]
+    }
+  ]
+}

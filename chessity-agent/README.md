@@ -8,7 +8,7 @@
 
 [Search findings](reports/IMPROVEMENT_CYCLE_01.md) · [Learning critique](reports/IMPROVEMENT_CYCLE_02.md) · [Historical elite results](reports/ELITE_LEARNING_RESULTS.md)
 
-Experimental v1.42 achieved a verified nominal2600 checkmate win, finishing1W/2D/1L, but did not beat the incumbent overall. Neither v1.43 nor v1.44 demonstrated a stronger replacement. Newly trained v1.46 passed matched learning/search gates and is playing a fixed24-game screen against score-only controlv1.45, v1.41 and nominal2400/2600. v1.41 remains selected. [Winning PGN](reports/evidence/improvement-20260907/v1.42-vs-nominal2600-win.pgn) · [Completed search critique](reports/IMPROVEMENT_CYCLE_05.md) · [Current supervised learning pilot](reports/IMPROVEMENT_CYCLE_06.md).
+Experimental v1.42 achieved one verified nominal2600 checkmate win, but did not beat the incumbent overall. Full-weight learned v1.46 finished2W/3D/3L versus its score-only control,1W/2D/5L versus v1.41, 1W/1D/2L at nominal2400 and0W/2D/2L at nominal2600. It is not promoted. Calibrated v1.47 passed selected-move regret and read-only checks; its fixed16-game screen is running, with one completed draw retained after an interruption. v1.41 remains selected. [Winning PGN](reports/evidence/improvement-20260907/v1.42-vs-nominal2600-win.pgn) · [Completed learning critique](reports/IMPROVEMENT_CYCLE_06.md) · [Current calibration test](reports/IMPROVEMENT_CYCLE_07.md).
 
 ## Read-only runtime and repository access
 
@@ -64,7 +64,7 @@ The selected package passed blocked file-creation, deletion, renaming and direct
 | [v1.43](versions/v1.43/chessity-agent-v1.43.zip) | Verified rook-bishop conversion tables | 3W1D4L versus v1.41; 1W2D1L at nominal2400; 0W2D2L at nominal2600; not promoted |
 | [v1.44](versions/v1.44/chessity-agent-v1.44.zip) | History-safe transposition move ordering | 2W2D4L versus v1.41; 3W1D0L at nominal2400; 0W0D4L at nominal2600; not promoted |
 | [v1.45](versions/v1.45/chessity-agent-v1.45.zip) | Matched score-only residual learning control | six-epoch own-trained control; read-only and model-parity checks passed; experimental |
-| [v1.46](versions/v1.46/chessity-agent-v1.46.zip) | Verified counterfactual preference learning | matched learning and runtime gates passed; fixed24-game screen running; not promoted |
-| [v1.47](versions/v1.47/chessity-agent-v1.47.zip) | Calibrated quarter-weight learned evaluation | fixed selected-move regret and read-only gates passed; 16 development games queued; not promoted |
+| [v1.46](versions/v1.46/chessity-agent-v1.46.zip) | Verified counterfactual preference learning | 2W3D3L versus v1.45; 1W2D5L versus v1.41; 1W1D2L at nominal2400; 0W2D2L at nominal2600; not promoted |
+| [v1.47](versions/v1.47/chessity-agent-v1.47.zip) | Calibrated quarter-weight learned evaluation | selected-move regret and read-only gates passed; interrupted16-game development screen resumed with completed draw retained; not promoted |
 
 All 48 versions are retained in development order with version tags. Source and own trained weights beside each ZIP match its bytes. v1.35 is a failed preflight preserved for audit and should not be uploaded. New experimental versions are not automatically recommended. Downloaded raw player histories and external engine executables are excluded.

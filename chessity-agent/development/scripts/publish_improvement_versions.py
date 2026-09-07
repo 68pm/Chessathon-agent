@@ -24,11 +24,12 @@ BUILDS = [
     ('compiled-transposition-hints-v1', 'History-safe transposition move ordering', 'correctness, diagnostic and read-only gates passed; fixed development matches running; not promoted', 'compiled-transposition-hints-v1-readonly.json'),
     ('compiled-paired-score-control-v1', 'Matched score-only residual learning control', 'six-epoch own-trained control; read-only and model-parity checks passed; experimental', 'compiled-paired-score-control-v1-readonly.json'),
     ('compiled-paired-ranking-v1', 'Verified counterfactual preference learning', 'matched static learning gate passed; runtime search gate in progress; not promoted', 'compiled-paired-ranking-v1-readonly.json'),
+    ('compiled-paired-quarter-v1', 'Calibrated quarter-weight learned evaluation', 'fixed selected-move regret and read-only gates passed; 16 development games queued; not promoted', 'compiled-paired-quarter-v1-readonly.json'),
 ]
 
 
 def add_build(repo, index):
-    assert 35 <= index <= 46
+    assert 35 <= index <= 47
     public = repo / 'chessity-agent'
     registry = json.loads((public / 'versions.json').read_text(encoding='utf-8'))
     assert len(registry['versions']) == index

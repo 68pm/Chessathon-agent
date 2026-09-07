@@ -1,0 +1,102 @@
+{
+  "status": "complete",
+  "candidate": "v1.46",
+  "recommended": false,
+  "selected": "v1.41",
+  "comparison_to_score_control": "2W/3D/3L",
+  "comparison_to_incumbent": "1W/2D/5L",
+  "nominal2400": "1W/1D/2L",
+  "nominal2600": "0W/2D/2L",
+  "audited_games": 24,
+  "summaries": {
+    "score_control": {
+      "incumbent": {
+        "games": 8,
+        "wins": 2,
+        "draws": 3,
+        "losses": 3,
+        "score": 0.4375,
+        "completed_pairs": 4,
+        "pair_bootstrap_95": [
+          0.125,
+          0.8125
+        ],
+        "terminations": {
+          "threefold_repetition": 2,
+          "checkmate": 5,
+          "fifty_moves": 1
+        },
+        "candidate_failures": 0
+      }
+    },
+    "incumbent": {
+      "incumbent": {
+        "games": 8,
+        "wins": 1,
+        "draws": 2,
+        "losses": 5,
+        "score": 0.25,
+        "completed_pairs": 4,
+        "pair_bootstrap_95": [
+          0.0625,
+          0.4375
+        ],
+        "terminations": {
+          "checkmate": 6,
+          "threefold_repetition": 2
+        },
+        "candidate_failures": 0
+      }
+    },
+    "rated": {
+      "stockfish:2400": {
+        "games": 4,
+        "wins": 1,
+        "draws": 1,
+        "losses": 2,
+        "score": 0.375,
+        "completed_pairs": 2,
+        "pair_bootstrap_95": [
+          0.25,
+          0.5
+        ],
+        "terminations": {
+          "checkmate": 3,
+          "threefold_repetition": 1
+        },
+        "candidate_failures": 0
+      },
+      "stockfish:2600": {
+        "games": 4,
+        "wins": 0,
+        "draws": 2,
+        "losses": 2,
+        "score": 0.25,
+        "completed_pairs": 2,
+        "pair_bootstrap_95": [
+          0.0,
+          0.5
+        ],
+        "terminations": {
+          "threefold_repetition": 2,
+          "checkmate": 2
+        },
+        "candidate_failures": 0
+      }
+    }
+  },
+  "source_sha256": {
+    "cycle-06-vs-control/comparison-compiled-paired-ranking-v1/results.json": "622360b7d8dcac014bc400835ff5d6bf86d15ab3897fd6bbe47f35e68449e415",
+    "cycle-06-vs-incumbent/comparison-compiled-paired-ranking-v1/results.json": "a9be83c80a21c125a12e294005af34d3e3dd22355d330f872739422ca49bc004",
+    "cycle-06/rated-compiled-paired-ranking-v1/results.json": "282da5b682badf2cf979a890947604be3585f05f0b8aac85a069c04f3d9631d0"
+  },
+  "rated_large_errors": 5,
+  "rated_own_moves": 411,
+  "rated_mate_scored": 37,
+  "incumbent_large_errors": 6,
+  "incumbent_own_moves": 377,
+  "incumbent_mate_scored": 28,
+  "independent_audit": "All24 completed games were replayed with scripts.improvement_review.audited: schedule, clocks, increments, outcomes, frozen runtime and harness hashes, teacher binary. No runtime failures.",
+  "decision": "No promotion. Preference learning improved tiny static/probe metrics but lost both direct comparison point estimates. No unchanged refit or extra epochs. Test one predeclared quarter-weight residual using the same weights; selected-move regret passed but ordinary matches are still required.",
+  "limitation": "Development openings and selected error positions are exposed. Small handicap screens do not establish calibrated Elo, consistent2600 wins, or causal learning gains."
+}

@@ -16,7 +16,7 @@ The improvement comes from our original compiled search, faster quiescence termi
 
 Strict read-only/no-network/no-subprocess inference passed, including table probes. Initialization was 28.80s and peak measured memory 229.6MB. Only original Python source and own weights plus attributed permitted table data ship; compilation occurs in memory. The prior full suite passed 108 tests, and four additional successor-data tests passed separately.
 
-ZIP SHA-256: `e4b66bd0f5a16418a49119c0547a818c3bb79a3c9e209b3eca7210907e072f63`. All 47 chronological versions through v1.46 remain available. No competition upload or repository write-access grant was performed.
+ZIP SHA-256: `e4b66bd0f5a16418a49119c0547a818c3bb79a3c9e209b3eca7210907e072f63`. All 48 chronological versions through v1.47 remain available. No competition upload or repository write-access grant was performed.
 
 Later experimental v1.42 achieved a verified checkmate win against nominal2600:
 its complete four-game result was1W/2D/1L. It scored2W/0D/2L at nominal2400 and
@@ -29,13 +29,23 @@ game reached its added coverage; its comparison also failed to establish a gain.
 The v1.44 move-order experiment finished2W/2D/4L versus v1.41,3W/1D/0L at nominal2400
 and0W/0D/4L at nominal2600; it was not promoted. All 16 games were audited.
 
-The next supervised pilot verified18 quiet successor pairs and trained two matched
-models for 6 fixed epochs: score-only v1.45 and preference-learningv1.46. Twelve pairs
-were used for training; six Ruy Lopez pairs were held out. Correct held-out ordering
-was1/6 initially,2/6 forscore-only and3/6 forpreference learning. Ordinary validation
-error worsened slightly within the predeclared1% cap. The36-position development
-search/speed gate passed, and a fixed24-game comparison/rated screen is running.
-These small diagnostic gains do not establish better playing strength or an Elo.
-See [cycle06](IMPROVEMENT_CYCLE_06.md). Exposed positions/groups remain development
-data and cannot become fresh confirmation. The full-project backup is a separate
-earlier snapshot; current source and evidence are preserved in Git.
+The matched supervised pilot trained score-only v1.45 and preference-learning
+v1.46 from the same weights and data. Held-out pair ordering improved from2/6 to3/6,
+but the complete24-game screen did not establish stronger play: v1.46 scored
+2W/3D/3L against v1.45,1W/2D/5L against v1.41,1W/1D/2L at nominal2400 and
+0W/2D/2L at nominal2600. All24 games passed independent audits. See
+[cycle06](IMPROVEMENT_CYCLE_06.md). The full-weight model is not promoted.
+
+Experimental v1.47 applies the same learned correction at one quarter of its old
+weight. On six selected failure positions it reduced independently checked mean
+move regret at both80k/320k teacher budgets; only800k new teacher nodes were needed
+by reusing identical analyses. It still missed the bishop-trapping threat and
+repeated four original errors. Read-only inference passed. Its fixed16-game screen
+against v1.41 and nominal2400/2600 is running. An external process interruption
+left one completed draw; that result and unfinished snapshots were preserved,
+and the unchanged remaining schedule resumed. See [cycle07](IMPROVEMENT_CYCLE_07.md).
+No promotion follows from the selected diagnostic, and consistent2600 is unmet.
+
+Exposed positions/groups remain development data and cannot become fresh
+confirmation. The full-project backup is a separate earlier snapshot; current
+source and evidence are preserved in Git.

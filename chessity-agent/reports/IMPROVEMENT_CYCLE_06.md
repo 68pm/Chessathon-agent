@@ -93,3 +93,18 @@ v1.46 is the preference candidate, ZIP SHA256
 `61b6208f066dd134e9a927a2fdb4681b15cb252188b4eb8b2456b388a8390a15`.
 Only their value.npz differs from each other; other runtime files match. v1.41
 remains selected while the fixed24-game comparison/rated screen runs.
+
+Completed result:2W/3D/3L against matched score-only v1.45,1W/2D/5L against
+incumbent v1.41,1W/1D/2L at nominal2400, and0W/2D/2L at nominal2600. All24 games
+passed independent legal-move, clock, increment, outcome and frozen-source audits,
+with no runtime failures. The rated audit found5 stable >=200cp errors in411 own
+moves and37 mate-scored decisions requiring separate tactical review. The separate
+incumbent comparison audit found6 stable errors in377 own moves and28 mate-scored
+decisions. These counts are from different played positions, not a matched causal
+comparison of blunder rates. No promotion and no unchanged repeat fit.
+
+The next fixed experiment tests calibration of the learned correction: one quarter
+of its previous weight, capped at125cp instead of500cp. It retains the same learned
+parameters and exact v1.41 search. See [cycle07](IMPROVEMENT_CYCLE_07.md). A changed
+move is no longer sufficient for its diagnostic gate; its actual teacher regret
+must improve at both predeclared verification budgets before any match budget.
