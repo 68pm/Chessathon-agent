@@ -1,0 +1,26 @@
+{
+  "output": "runs/improvement-loop-20260907/cycle-08",
+  "wait_for": ["runs/improvement-loop-20260907/cycle-08/runtime-ready.json"],
+  "stages": [
+    {
+      "name": "hash-vs-incumbent",
+      "module": "scripts.improvement_pool_matches",
+      "arguments": ["--candidate", "candidates/compiled-incremental-hash-v1", "--opponent", "candidates/compiled-qsearch-endgames-v1", "--stage", "comparison", "--pairs", "4", "--offset", "0", "--cycle", "cycle-08", "--levels", "2400"]
+    },
+    {
+      "name": "hash-rated",
+      "module": "scripts.improvement_pool_matches",
+      "arguments": ["--candidate", "candidates/compiled-incremental-hash-v1", "--stage", "rated", "--pairs", "4", "--offset", "0", "--cycle", "cycle-08", "--levels", "2400"]
+    },
+    {
+      "name": "hash-error-audit",
+      "module": "scripts.improvement_audit",
+      "arguments": ["--source", "runs/improvement-loop-20260907/cycle-08/rated-compiled-incremental-hash-v1/results.json", "--out", "runs/improvement-loop-20260907/cycle-08/rated-error-audit"]
+    },
+    {
+      "name": "hash-rated-phase-diagnosis",
+      "module": "scripts.improvement_phase_report",
+      "arguments": ["--matches", "runs/improvement-loop-20260907/cycle-08/rated-compiled-incremental-hash-v1/results.json", "--audit", "runs/improvement-loop-20260907/cycle-08/rated-error-audit", "--out", "runs/improvement-loop-20260907/phase-diagnosis-01/v1.48-rated.json", "--label", "v1.48-rated"]
+    }
+  ]
+}

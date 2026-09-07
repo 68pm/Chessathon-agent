@@ -12,6 +12,8 @@ Experimental v1.42 achieved one nominal2600 checkmate win but did not beat the i
 
 [Phase diagnosis and fixed-strength progression](reports/IMPROVEMENT_PHASE_DIAGNOSIS.md): analyse the first deterioration separately from the final phase. Every iteration prioritises engine code, effective learning and targeted data. Only verified consistency replaces2400 with2800 or2600 with3000. Neither level has qualified; isolated wins do not advance the pool.
 
+The subsequent [incremental-hash pilot](reports/IMPROVEMENT_CYCLE_08.md) passed fixed-node correctness but missed its speed gate. No new release or matches followed; v1.41 remains selected. Both nominal2400/2600 opponents remain active until independent winning consistency supports their specified replacements.
+
 ## Read-only runtime and repository access
 
 The selected package passed blocked file-creation, deletion, renaming and directory-creation checks. Inference requires no writes, network or subprocess. Training tools write their own checkpoints. Public visitors can read and download; edits require repository write permission. No collaborator or public write grants were added.

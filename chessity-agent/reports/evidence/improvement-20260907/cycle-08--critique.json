@@ -1,0 +1,39 @@
+{
+  "status": "complete",
+  "experiment": "incremental hash pilot",
+  "release_created": false,
+  "recommended": false,
+  "selected": "v1.41",
+  "fixed_roots": 16,
+  "hash_transitions": 6302,
+  "tests_passed": 6,
+  "gate_sha256": "a4bda637146618561fb491bafd14087e417b7c63c839b84dca7fd9784b586c38",
+  "checks": {
+    "fixed_work_exact_parity": true,
+    "node_budget_or_same_early_stop": true,
+    "median_speedup_at_least_1_10": false,
+    "clock_mean_depth_not_lower": true,
+    "clock_repeated_errors_not_more": false,
+    "frozen_inputs": true
+  },
+  "median_equal_work_speedup": 1.072620500044819,
+  "clock_mean_depth_baseline_prototype": [
+    6.125,
+    6.1875
+  ],
+  "clock_error_repeats_baseline_prototype": [
+    10,
+    11
+  ],
+  "decision": "Do not freeze, schedule matches, promote, or retire opponents. Preserve the failed pilot without lowering the speed threshold or repeating unchanged timings.",
+  "engineering": "Exact hash and fixed-node search parity passed; required elapsed speed and clock-error-repeat gates did not. Wide timing variation limits causal speed conclusions on this shared computer.",
+  "learning": "No fit or residual blend change: this code-only hypothesis cannot justify retraining the failed network.",
+  "data": "Sixteen previously audited large-error roots suffice for the pilot. Zero new teacher calls, external downloads or accepted training examples.",
+  "next": "Diagnose capture ordering and useful threat depth on the frozen incumbent. Its current ordering ranks captures by victim/attacker material without estimating recaptures. Verify a measured exchange-ordering weakness before implementing a new bounded experiment. Future efficiency comparisons must predeclare balanced build order and record process CPU as well as elapsed time; do not retroactively reinterpret this failed gate.",
+  "active_pool": [
+    2400,
+    2600
+  ],
+  "qualification_attempts": 0,
+  "scope": "Development diagnostics, not an Elo estimate or a playing-strength comparison."
+}

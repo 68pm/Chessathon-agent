@@ -59,3 +59,8 @@ Future iterations review code, descendant-position learning and targeted data in
 that order. Keep a fixed-strength focus; retire2400 only after independent winning
 consistency and replace it with2800, and similarly2600 with3000. Neither level has
 qualified. The selected download remains the byte-identical v1.41 archive.
+
+
+The subsequent [incremental-hash pilot](IMPROVEMENT_CYCLE_08.md) preserved all
+fixed-node decisions but missed its predeclared speed gate. No v1.48 release or
+match run followed. v1.41 remains selected; neither opponent level is retired.
