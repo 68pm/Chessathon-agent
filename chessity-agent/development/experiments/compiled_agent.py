@@ -41,7 +41,7 @@ _endgames = None
 if _config.get('elementary_tables'):
     from engine.elementary_endgames import ElementaryEndgames
 
-    _endgames = ElementaryEndgames(_root / 'tables')
+    _endgames = ElementaryEndgames(_root / 'tables', _config.get('table_max_pieces', 3))
 _last = None
 
 

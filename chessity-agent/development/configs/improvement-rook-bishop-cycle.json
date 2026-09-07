@@ -1,0 +1,21 @@
+{
+  "output": "runs/improvement-loop-20260907/cycle-04",
+  "wait_for": ["runs/improvement-loop-20260907/cycle-03/controller.json", "runs/improvement-loop-20260907/cycle-04/probe-gate.json"],
+  "stages": [
+    {
+      "name": "rook-bishop-comparison",
+      "module": "scripts.improvement_matches",
+      "arguments": ["--candidate", "candidates/compiled-rook-bishop-v1", "--opponent", "candidates/compiled-qsearch-endgames-v1", "--stage", "comparison", "--pairs", "4", "--offset", "0", "--cycle", "cycle-04"]
+    },
+    {
+      "name": "rook-bishop-rated",
+      "module": "scripts.improvement_matches",
+      "arguments": ["--candidate", "candidates/compiled-rook-bishop-v1", "--stage", "rated", "--pairs", "2", "--offset", "0", "--cycle", "cycle-04"]
+    },
+    {
+      "name": "rook-bishop-error-audit",
+      "module": "scripts.improvement_audit",
+      "arguments": ["--source", "runs/improvement-loop-20260907/cycle-04/rated-compiled-rook-bishop-v1/results.json", "--out", "runs/improvement-loop-20260907/cycle-04/rated-error-audit"]
+    }
+  ]
+}

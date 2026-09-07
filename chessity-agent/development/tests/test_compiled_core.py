@@ -70,8 +70,9 @@ def test_ep_repetition_key_and_pin():
         assert equal == (not chess.Board(fen).has_legal_en_passant())
 
 
-def test_search_mate_restoration_and_node_limit():
-    search = CompiledSearch()
+@pytest.mark.parametrize('reductions', [False, True])
+def test_search_mate_restoration_and_node_limit(reductions):
+    search = CompiledSearch(reductions=reductions)
     search.warmup()
     board = chess.Board('7k/8/5KQ1/8/8/8/8/8 w - - 0 1')
     fen = board.fen()

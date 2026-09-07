@@ -1,0 +1,26 @@
+{
+  "output": "runs/improvement-loop-20260907/cycle-03",
+  "wait_for": ["runs/improvement-loop-20260907/cycle-03/probe-gate.json"],
+  "stages": [
+    {
+      "name": "reductions-comparison",
+      "module": "scripts.improvement_matches",
+      "arguments": ["--candidate", "candidates/compiled-reductions-v1", "--opponent", "candidates/compiled-qsearch-endgames-v1", "--stage", "comparison", "--pairs", "4", "--offset", "0", "--cycle", "cycle-03"]
+    },
+    {
+      "name": "reductions-rated",
+      "module": "scripts.improvement_matches",
+      "arguments": ["--candidate", "candidates/compiled-reductions-v1", "--stage", "rated", "--pairs", "2", "--offset", "0", "--cycle", "cycle-03"]
+    },
+    {
+      "name": "reductions-error-audit",
+      "module": "scripts.improvement_audit",
+      "arguments": ["--source", "runs/improvement-loop-20260907/cycle-03/rated-compiled-reductions-v1/results.json", "--out", "runs/improvement-loop-20260907/cycle-03/rated-error-audit"]
+    },
+    {
+      "name": "reductions-successor-data",
+      "module": "training.counterfactual_value",
+      "arguments": ["--source", "runs/improvement-loop-20260907/cycle-03/rated-compiled-reductions-v1/results.json", "--audit", "runs/improvement-loop-20260907/cycle-03/rated-error-audit", "--out", "runs/improvement-loop-20260907/cycle-03/successor-data", "--max-pairs", "16"]
+    }
+  ]
+}

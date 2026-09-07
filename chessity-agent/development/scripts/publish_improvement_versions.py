@@ -19,14 +19,21 @@ BUILDS = [
     ('compiled-residual-incremental-v1', 'Incremental residual evaluation', 'numerical and read-only checks passed; no ordinary matches', 'compiled-residual-incremental-v1-readonly.json'),
     ('compiled-qsearch-v1', 'Efficient quiescence terminal checks', 'fixed-node parity and read-only checks passed; no ordinary matches', 'compiled-qsearch-v1-readonly.json'),
     ('compiled-qsearch-endgames-v1', 'Efficient compiled search with endgame tables', 'independent confirmation in progress; not yet promoted', 'compiled-qsearch-endgames-v1-readonly.json'),
+    ('compiled-reductions-v1', 'Conservative late quiet move reductions', '1W5D2L versus v1.41 in development; rated screen continuing; not promoted', 'compiled-reductions-v1-readonly.json'),
+    ('compiled-rook-bishop-v1', 'Verified rook-bishop conversion tables', 'conversion and read-only checks passed; ordinary matches queued; not promoted', 'compiled-rook-bishop-v1-readonly.json'),
 ]
 
 
 def add_build(repo, index):
-    assert 35 <= index <= 41
+    assert 35 <= index <= 43
     public = repo / 'chessity-agent'
     registry = json.loads((public / 'versions.json').read_text(encoding='utf-8'))
-    assert len(registry['versions']) == index and registry['recommended'] == 'v1.14'
+    assert len(registry['versions']) == index
+    incumbent = registry['recommended']
+    assert incumbent == ('v1.14' if index <= 41 else 'v1.41')
+    incumbent_sha = next(row['sha256'] for row in registry['versions'] if row['version'] == incumbent)
+    preserved_archives = {row['archive']: row['sha256'] for row in registry['versions']}
+    assert all(sha256(public / path) == digest for path, digest in preserved_archives.items())
     candidate, title, status, probe = BUILDS[index - 35]
     source = ROOT / 'candidates' / candidate
     original = source.with_suffix('.zip')
@@ -67,10 +74,10 @@ def add_build(repo, index):
         f'# chessity-agent {version}\n\n{title}. **Status: {status}.**\n\n'
         f'Archive: `{archive.name}`. SHA-256: `{record["sha256"]}`. Source and own trained weights '
         'beside the ZIP match its bytes. A later version number does not establish stronger play. '
-        'The recommended download remains v1.14 until independent confirmation supports promotion.\n\n'
+        f'The recommended download remains {incumbent} until independent confirmation supports promotion.\n\n'
         'This experiment uses original Python source with the permitted in-memory Numba compiler. '
         'No external chess engine implementation, native executable or pretrained chess network is shipped. '
-        'Table-enabled builds contain permitted elementary Syzygy data with source attribution.\n',
+        'Table-enabled builds contain permitted Syzygy data with source attribution.\n',
         encoding='utf-8', newline='\n')
     registry['versions'].append(record)
     save_json(public / 'versions.json', registry)
@@ -85,7 +92,11 @@ def add_build(repo, index):
         'preserved for audit and should not be uploaded. New experimental versions are not automatically '
         'recommended. Downloaded raw player histories and external engine executables are excluded.\n')
     readme.write_text(text, encoding='utf-8', newline='\n')
-    assert sha256(public / 'latest/chessity-agent.zip') == '6d287209c28bba520a21ef49261af99543a167fb192ce15513102c883c503a56'
+    root_readme = repo / 'README.md'
+    root_readme.write_text(root_readme.read_text(encoding='utf-8').replace(
+        f'All {index} versions', f'All {index + 1} versions'), encoding='utf-8', newline='\n')
+    assert sha256(public / 'latest/chessity-agent.zip') == incumbent_sha
+    assert all(sha256(public / path) == digest for path, digest in preserved_archives.items())
     print(json.dumps(record), flush=True)
 
 

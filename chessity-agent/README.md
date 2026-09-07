@@ -8,6 +8,8 @@
 
 [Search findings](reports/IMPROVEMENT_CYCLE_01.md) · [Learning critique](reports/IMPROVEMENT_CYCLE_02.md) · [Historical elite results](reports/ELITE_LEARNING_RESULTS.md)
 
+Experimental v1.42 scored 1W/5D/2L against v1.41; its fixed rated screen continues. Experimental v1.43 fixes a measured rook-bishop conversion and has ordinary matches queued. Neither is promoted. [Search experiment](reports/IMPROVEMENT_CYCLE_03.md) · [Verified endgame data](reports/IMPROVEMENT_ENDGAME_TARGET.md) · [Queued regression plan](reports/IMPROVEMENT_CYCLE_04.md).
+
 ## Read-only runtime and repository access
 
 The selected package passed blocked file-creation, deletion, renaming and directory-creation checks. Inference requires no writes, network or subprocess. Training tools write their own checkpoints. Public visitors can read and download; edits require repository write permission. No collaborator or public write grants were added.

@@ -67,12 +67,18 @@ if getattr(agent, '_config', {}).get('opening_style') == 'alien-selective':
     selective_alien_verified = True
 b = chess.Board()
 elementary_endgames_verified = False
+extended_endgames_verified = False
 if getattr(agent, '_config', {}).get('elementary_tables'):
     for fen in ['7k/8/5KQ1/8/8/8/8/8 w - - 0 1', '8/4P3/4K3/8/8/8/8/k7 w - - 0 1']:
         elementary = chess.Board(fen)
         answer = chess.Move.from_uci(agent.get_move(fen, 1000))
         assert answer in elementary.legal_moves
     elementary_endgames_verified = True
+    if agent._config.get('table_max_pieces', 3) >= 5:
+        check_evasion = chess.Board('5R2/7K/2r5/5k2/3b4/8/8/8 b - - 41 65')
+        assert agent.get_move(check_evasion.fen(), 1000) == 'd4f6'
+        assert agent.get_move(check_evasion.mirror().fen(), 1000) == 'd5f3'
+        extended_endgames_verified = True
 randomizer = random.Random(20)
 times=[]
 clock_ms, calls = int(sys.argv[1]), int(sys.argv[2])
@@ -104,7 +110,7 @@ if sys.platform == 'win32':
     psapi.GetProcessMemoryInfo.argtypes=[ctypes.wintypes.HANDLE, ctypes.POINTER(Counters), ctypes.wintypes.DWORD]
     if psapi.GetProcessMemoryInfo(kernel.GetCurrentProcess(),ctypes.byref(counters),counters.cb):
         memory=counters.PeakWorkingSetSize
-print(json.dumps({'init_ms':init_ms,'legal_calls':calls,'clock_ms':clock_ms,'policy_calls':policy_calls,'alien_verified':alien_verified,'selective_alien_verified':selective_alien_verified,'selective_alien_choice':selective_alien_choice,'elementary_endgames_verified':elementary_endgames_verified,'max_move_ms':max(times),'peak_working_set_bytes':memory,'read_only_checks':read_only_checks,'audit':'no filesystem mutations, network or subprocess'}))
+print(json.dumps({'init_ms':init_ms,'legal_calls':calls,'clock_ms':clock_ms,'policy_calls':policy_calls,'alien_verified':alien_verified,'selective_alien_verified':selective_alien_verified,'selective_alien_choice':selective_alien_choice,'elementary_endgames_verified':elementary_endgames_verified,'extended_endgames_verified':extended_endgames_verified,'max_move_ms':max(times),'peak_working_set_bytes':memory,'read_only_checks':read_only_checks,'audit':'no filesystem mutations, network or subprocess'}))
 """
 
 
