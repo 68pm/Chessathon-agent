@@ -47,6 +47,18 @@ separate. Stop flags STOP_TRAINING / STOP_BENCHMARK are honoured. Record checkpo
 criticism, rejected ideas and actual results. Scheduled continuation should stay quiet
 unless there is a meaningful result, failure, resource limit or required user action.
 
+## Three needs reviewed in every iteration
+
+The user reaffirmed the priority order: better engine code first, better use of
+training second, and targeted data after a diagnosed gap. Every future cycle must
+include the [three-part review](IMPROVEMENT_REVIEW_TEMPLATE.md), recording the
+evidence and decision for each need. The learned descendant-position evaluator
+exists experimentally; it must prove a playing gain before replacing v1.41.
+Prioritise the remaining verified threat-calculation and conversion errors when
+the current fixed calibration screen is complete. Preserve its schedule and
+weights while it runs. Do not resume broad data collection or unchanged fitting
+merely to keep the programme busy.
+
 Rules rechecked: https://aichessathon.com/docs and https://aichessathon.com/terms,
 2026-09-07. Numba 0.67.0 allowed; Python 3.12, one CPU, 2 GB, 90s init, 50 MB ZIP
 uncompressed, read-only inference. No Daily Five material is accessed.

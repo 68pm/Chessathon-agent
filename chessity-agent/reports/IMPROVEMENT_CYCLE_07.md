@@ -76,3 +76,22 @@ schedule were rechecked before resuming the remaining games, with a hidden detac
 controller. Unfinished games restart from their declared setup; completed game2
 is not replayed. This interrupted development screen cannot serve as fresh final
 confirmation. No thresholds, source files, weights or completed scores changed.
+
+Three-part review, following the user's reaffirmed priority order:
+
+1. Engine: both the incumbent and the learned candidate miss a bishop-trapping
+   pawn advance; all three diagnostic variants also mishandle the same bishop/pawn
+   ending. These remain priorities for the next code diagnosis. The present
+   calibration experiment leaves the exact incumbent search intact. Earlier
+   reductions, move-ordering and extra-table experiments have no demonstrated
+   ordinary-game gain and are not automatically merged.
+2. Learning: the own residual network evaluates descendant positions inside search;
+   this is the experimental architecture change beyond root move preference.
+   Full-weight play was weaker in the matched screen. This single fixed calibration
+   checks its influence without another fit. Runtime parity, legality and actual
+   matches govern whether it can become part of the selected agent.
+3. Data: six own stable errors and their verified alternatives were sufficient for
+   the calibration diagnosis. Only800k additional requested teacher nodes were used.
+   No external collection was needed. Later targets should address the remaining
+   threat and ending failures, with verified branch values and held-out families,
+   if the next code audit identifies a learning-related gap.
