@@ -1,0 +1,82 @@
+Timeout (0:00:30)!
+Thread 0x00006844 (most recent call first):
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\llvmlite\binding\ffi.py", line 212 in __call__
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\llvmlite\binding\newpassmanagers.py", line 122 in run
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\codegen.py", line 691 in _optimize_final_module
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\codegen.py", line 773 in finalize
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\codegen.py", line 569 in _ensure_finalized
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\codegen.py", line 1000 in get_pointer_to_function
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\cpu.py", line 283 in get_executable
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py", line 501 in run_pass
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py", line 272 in check
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py", line 311 in _runPass
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py", line 35 in _acquire_compile_lock
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py", line 356 in run
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py", line 473 in _compile_core
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py", line 505 in _compile_bytecode
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py", line 439 in compile_extra
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py", line 739 in compile_extra
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py", line 107 in _compile_core
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py", line 94 in _compile_cached
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py", line 80 in compile
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py", line 906 in compile
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py", line 317 in get_call_template
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\types\functions.py", line 542 in get_call_type
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py", line 335 in _resolve_user_function_type
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py", line 279 in resolve_function_type
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py", line 1546 in resolve_call
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py", line 595 in resolve
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py", line 572 in __call__
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py", line 160 in propagate
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py", line 1075 in propagate
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py", line 95 in type_inference_stage
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py", line 114 in run_pass
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py", line 272 in check
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py", line 311 in _runPass
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py", line 35 in _acquire_compile_lock
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py", line 356 in run
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py", line 473 in _compile_core
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py", line 505 in _compile_bytecode
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py", line 439 in compile_extra
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py", line 739 in compile_extra
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py", line 107 in _compile_core
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py", line 94 in _compile_cached
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py", line 80 in compile
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py", line 906 in compile
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py", line 317 in get_call_template
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\types\functions.py", line 542 in get_call_type
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py", line 335 in _resolve_user_function_type
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py", line 279 in resolve_function_type
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py", line 1569 in resolve_call
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py", line 595 in resolve
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py", line 572 in __call__
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py", line 160 in propagate
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py", line 1075 in propagate
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py", line 95 in type_inference_stage
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py", line 114 in run_pass
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py", line 272 in check
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py", line 311 in _runPass
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py", line 35 in _acquire_compile_lock
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py", line 356 in run
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py", line 473 in _compile_core
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py", line 505 in _compile_bytecode
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py", line 439 in compile_extra
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py", line 739 in compile_extra
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py", line 107 in _compile_core
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py", line 94 in _compile_cached
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py", line 80 in compile
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py", line 906 in compile
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py", line 374 in _compile_for_args
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\candidates\compiled-qsearch-endgames-v1\engine\compiled_driver.py", line 98 in run
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\candidates\compiled-qsearch-endgames-v1\engine\compiled_driver.py", line 115 in warmup
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\candidates\compiled-qsearch-endgames-v1\agent.py", line 39 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 999 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\overnight_runtime_trace.py", line 26 in child
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\overnight_runtime_trace.py", line 62 in main
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\overnight_runtime_trace.py", line 108 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 198 in _run_module_as_main

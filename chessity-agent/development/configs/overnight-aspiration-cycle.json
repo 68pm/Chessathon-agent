@@ -1,0 +1,9 @@
+{
+  "output": "runs/improvement-loop-20260907/overnight-aspiration-controller",
+  "wait_for": ["runs/improvement-loop-20260907/overnight-serial-controller/controller.json"],
+  "stages": [
+    {"name":"resource-check", "module":"scripts.overnight_resources", "arguments":["--out","runs/improvement-loop-20260907/cycle-17/resources-before-tests.json"]},
+    {"name":"correctness", "module":"pytest", "arguments":["tests/test_aspiration.py","-q","--junitxml=runs/improvement-loop-20260907/cycle-17/aspiration-tests.xml"]},
+    {"name":"position-gate", "module":"scripts.improvement_aspiration_gate", "arguments":[]}
+  ]
+}

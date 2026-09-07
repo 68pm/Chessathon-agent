@@ -1,0 +1,53 @@
+{
+  "id": 2,
+  "candidate_path": "candidates/compiled-qsearch-endgames-v1",
+  "family": "stockfish:2800",
+  "pair": 0,
+  "opening": [
+    "e2e4",
+    "e7e5",
+    "g1f3",
+    "b8c6",
+    "f1c4",
+    "g8f6",
+    "f3g5",
+    "d7d5",
+    "e4d5",
+    "c6a5"
+  ],
+  "opening_group": "C58",
+  "candidate_white": false,
+  "elo": 2800,
+  "score": 0.0,
+  "termination": "init",
+  "failed_colour": "black",
+  "host_cpu_busy_fraction": 0.6806150812668592,
+  "memory_start": {
+    "utc": "2026-09-07T21:48:00.016098+00:00",
+    "load_percent": 94,
+    "available_mb": 903.9,
+    "total_mb": 16087.7
+  },
+  "memory_end": {
+    "utc": "2026-09-07T21:49:35.029076+00:00",
+    "load_percent": 95,
+    "available_mb": 728.5,
+    "total_mb": 16087.7
+  },
+  "failure_detail": {
+    "component": "agent_start",
+    "error": "AgentFailure('init')",
+    "agent_stderr": {
+      "black": ""
+    }
+  },
+  "host_load_scope": "Host-wide average during game and initialization; includes all applications, not per-engine utilization or an isolated-core guarantee.",
+  "moves": [],
+  "init_ms": {
+    "white": 4266.405500005931
+  },
+  "uci_limits": [],
+  "pgn": "[Event \"Chessity fast-chess verified pilot\"]\n[Site \"Local offline\"]\n[Date \"????.??.??\"]\n[Round \"2\"]\n[White \"Stockfish 19 UCI_Elo 2800\"]\n[Black \"compiled-qsearch-endgames-v1\"]\n[Result \"1-0\"]\n[FEN \"r1bqkb1r/ppp2ppp/5n2/n2Pp1N1/2B5/8/PPPP1PPP/RNBQK2R w KQkq - 1 6\"]\n[SetUp \"1\"]\n[TimeControl \"120+0.5\"]\n[Termination \"init\"]\n[OpeningSetupUCI \"e2e4 e7e5 g1f3 b8c6 f1c4 g8f6 f3g5 d7d5 e4d5 c6a5\"]\n\n1-0",
+  "seconds": 95.1663675000018,
+  "final_fen": "r1bqkb1r/ppp2ppp/5n2/n2Pp1N1/2B5/8/PPPP1PPP/RNBQK2R w KQkq - 1 6"
+}

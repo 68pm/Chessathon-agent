@@ -1,0 +1,50 @@
+{
+  "output": "runs/improvement-loop-20260907/overnight-baseline-controller",
+  "stages": [
+    {
+      "name": "four-rated-games",
+      "module": "scripts.improvement_pool_matches",
+      "arguments": [
+        "--candidate",
+        "candidates/compiled-qsearch-endgames-v1",
+        "--stage",
+        "rated",
+        "--pairs",
+        "1",
+        "--cycle",
+        "overnight-baseline-01",
+        "--levels",
+        "2800",
+        "3000",
+        "--openings",
+        "configs/overnight-baseline-openings.json",
+        "--pool",
+        "configs/overnight-opponent-pool.json"
+      ]
+    },
+    {
+      "name": "audit",
+      "module": "scripts.improvement_audit",
+      "arguments": [
+        "--source",
+        "runs/improvement-loop-20260907/overnight-baseline-01/rated-compiled-qsearch-endgames-v1/results.json",
+        "--out",
+        "runs/improvement-loop-20260907/overnight-baseline-controller/audit"
+      ]
+    },
+    {
+      "name": "phase",
+      "module": "scripts.improvement_phase_report",
+      "arguments": [
+        "--matches",
+        "runs/improvement-loop-20260907/overnight-baseline-01/rated-compiled-qsearch-endgames-v1/results.json",
+        "--audit",
+        "runs/improvement-loop-20260907/overnight-baseline-controller/audit",
+        "--out",
+        "runs/improvement-loop-20260907/overnight-baseline-controller/phase.json",
+        "--label",
+        "v1.41-overnight-2800-3000"
+      ]
+    }
+  ]
+}

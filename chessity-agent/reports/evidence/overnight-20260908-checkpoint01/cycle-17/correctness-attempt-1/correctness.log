@@ -1,0 +1,79 @@
+F.......F                                                                [100%]
+================================== FAILURES ===================================
+_ test_windows_return_valid_bounds_and_restore_state[rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1] _
+
+fen = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1'
+
+    @pytest.mark.parametrize('fen', [
+        chess.STARTING_FEN,
+        'r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1',
+        '4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1',
+        '4k3/P7/8/8/8/8/1p6/4K3 w - - 0 1',
+        '7k/8/5KQ1/8/8/8/8/8 w - - 0 1',
+    ])
+    def test_windows_return_valid_bounds_and_restore_state(fen):
+        board = chess.Board(fen)
+        bonuses = {move.uci(): (i % 6) * 5 for i, move in enumerate(board.legal_moves)}
+        _, exact, completed = root(board, 3, bonuses=bonuses)
+>       assert completed
+E       assert False
+
+tests\test_aspiration.py:55: AssertionError
+______________ test_full_window_preserves_selected_engine_scores ______________
+
+    def test_full_window_preserves_selected_engine_scores():
+        path = Path(__file__).resolve().parents[1] / 'candidates/compiled-qsearch-endgames-v1/engine/compiled_core.py'
+        spec = importlib.util.spec_from_file_location('aspiration_reference_core', path)
+        reference = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(reference)
+        for fen in [chess.STARTING_FEN,
+            '2bqr1k1/1pp3b1/6pp/1P1p4/3P2pP/Q3PNP1/3N2P1/5RK1 w - - 0 23',
+            '4R3/5bP1/5K2/8/prpk4/8/8/8 b - - 15 56']:
+            board = chess.Board(fen)
+            bonuses = {m.uci(): (i % 6) * 5 for i, m in enumerate(board.legal_moves)}
+>           assert root(board, 3, bonuses=bonuses) == root(board, 3, bonuses=bonuses, reference=reference)
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_aspiration.py:113: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+board = Board('rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1')
+depth = 3, alpha = -31000, beta = 31000
+bonuses = array([15, 10,  5,  0, 25,  5, 20,  0, 15, 25, 10, 20,  5, 15,  0, 10, 25,
+        5, 20,  0])
+nodes = 10000000
+reference = <module 'aspiration_reference_core' from 'C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\candidates\\compiled-qsearch-endgames-v1\\engine\\compiled_core.py'>
+
+    def root(board, depth, alpha=-31000, beta=31000, bonuses=None, nodes=10000000, reference=None):
+        search = CompiledSearch()
+        pieces, state = arrays(board)
+        before, saved = pieces.copy(), state.copy()
+        moves = core.legal_moves(pieces, state)
+        if bonuses is None:
+            bonuses = np.zeros(len(moves), dtype=np.int64)
+        else:
+            bonuses = np.array([bonuses.get(decode(int(m)).uci(), 0) for m in moves], dtype=np.int64)
+        hashes = np.zeros(800, dtype=np.uint64)
+        replay, past = board.copy(stack=True), []
+        for _ in range(min(board.halfmove_clock, len(board.move_stack)) + 1):
+            b, s = arrays(replay)
+            past.append(core.position_hash(b, s))
+            if not replay.move_stack:
+                break
+            replay.pop()
+        past.reverse()
+        hashes[:len(past)] = past
+        control = np.array([0, 0, nodes], dtype=np.int64)
+        args = (pieces, state, depth, int(moves[0]), moves, bonuses,
+            hashes, len(past), search.ttkey, search.ttcontext, search.ttdata, search.killers,
+            search.history, control, time.perf_counter() + 120, search.weights, search.bias,
+            search.output, 0.0, False, False)
+>       result = reference.root_iteration(*args) if reference else core.root_iteration(*args, alpha, beta)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       RuntimeError: numba jitted function aborted due to unresolved symbol
+
+tests\test_aspiration.py:38: RuntimeError
+=========================== short test summary info ===========================
+FAILED tests/test_aspiration.py::test_windows_return_valid_bounds_and_restore_state[rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1]
+FAILED tests/test_aspiration.py::test_full_window_preserves_selected_engine_scores
+2 failed, 7 passed in 408.25s (0:06:48)

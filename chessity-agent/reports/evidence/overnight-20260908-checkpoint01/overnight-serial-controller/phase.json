@@ -1,0 +1,306 @@
+{
+  "status": "complete",
+  "label": "v1.41-overnight-serial-2800-3000",
+  "candidate": "candidates/compiled-qsearch-endgames-v1",
+  "matches_sha256": "550e55287334700d861dadf8714c8cab51259c819415d0201e6a0d79a0beb762",
+  "audit_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source_code_sha256": "20a834c22cb09f1e320eefc3c44aac7c069ffa2df8bf8f5bafbd846f241115db",
+  "teacher_context": {
+    "source_sha256": "550e55287334700d861dadf8714c8cab51259c819415d0201e6a0d79a0beb762",
+    "teacher_sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0",
+    "source_code_sha256": "883f9c78c8c890e9ffcad0aca59dbc79f87e832be57e817e1a9f518b26680e33",
+    "screen_nodes": 20000,
+    "verify_nodes": [
+      80000,
+      320000
+    ]
+  },
+  "new_teacher_nodes": 0,
+  "definitions": {
+    "endgame_material_phase_max": 8,
+    "opening_fullmove_max": 12,
+    "material_weights": {
+      "knight": 1,
+      "bishop": 1,
+      "rook": 2,
+      "queen": 4
+    },
+    "verified_large_error_cp": 200,
+    "losing_cutoff_cp": -200,
+    "minimum_finite_crossing_gap_cp": 80,
+    "squandered_best_min_cp": 200,
+    "squandered_played_max_cp": 100
+  },
+  "match_summary": {
+    "stockfish:2800": {
+      "games": 2,
+      "wins": 0,
+      "draws": 0,
+      "losses": 2,
+      "score": 0.0,
+      "completed_pairs": 1,
+      "pair_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "terminations": {
+        "flag": 1,
+        "init": 1
+      },
+      "candidate_failures": 2
+    },
+    "stockfish:3000": {
+      "games": 2,
+      "wins": 0,
+      "draws": 0,
+      "losses": 2,
+      "score": 0.0,
+      "completed_pairs": 1,
+      "pair_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "terminations": {
+        "init": 2
+      },
+      "candidate_failures": 2
+    }
+  },
+  "groups": {
+    "stockfish:2800": {
+      "games": 2,
+      "wins": 0,
+      "draws": 0,
+      "losses": 2,
+      "loss_first_warning_phase": {
+        "opening": 0,
+        "middlegame": 0,
+        "endgame": 0,
+        "unresolved": 2
+      },
+      "loss_first_losing_transition_phase": {
+        "opening": 0,
+        "middlegame": 0,
+        "endgame": 0,
+        "unresolved": 2
+      },
+      "loss_terminal_phase": {
+        "opening": 2
+      },
+      "nonwin_first_squandered_advantage_phase": {
+        "opening": 0,
+        "middlegame": 0,
+        "endgame": 0,
+        "unresolved": 2
+      },
+      "phase_exposure": {
+        "opening": {
+          "own_moves": 0,
+          "large_cp_errors": 0,
+          "mate_scored": 0,
+          "large_errors_per_100_observed_moves": null
+        },
+        "middlegame": {
+          "own_moves": 0,
+          "large_cp_errors": 0,
+          "mate_scored": 0,
+          "large_errors_per_100_observed_moves": null
+        },
+        "endgame": {
+          "own_moves": 0,
+          "large_cp_errors": 0,
+          "mate_scored": 0,
+          "large_errors_per_100_observed_moves": null
+        }
+      }
+    },
+    "stockfish:3000": {
+      "games": 2,
+      "wins": 0,
+      "draws": 0,
+      "losses": 2,
+      "loss_first_warning_phase": {
+        "opening": 0,
+        "middlegame": 0,
+        "endgame": 0,
+        "unresolved": 2
+      },
+      "loss_first_losing_transition_phase": {
+        "opening": 0,
+        "middlegame": 0,
+        "endgame": 0,
+        "unresolved": 2
+      },
+      "loss_terminal_phase": {
+        "opening": 2
+      },
+      "nonwin_first_squandered_advantage_phase": {
+        "opening": 0,
+        "middlegame": 0,
+        "endgame": 0,
+        "unresolved": 2
+      },
+      "phase_exposure": {
+        "opening": {
+          "own_moves": 0,
+          "large_cp_errors": 0,
+          "mate_scored": 0,
+          "large_errors_per_100_observed_moves": null
+        },
+        "middlegame": {
+          "own_moves": 0,
+          "large_cp_errors": 0,
+          "mate_scored": 0,
+          "large_errors_per_100_observed_moves": null
+        },
+        "endgame": {
+          "own_moves": 0,
+          "large_cp_errors": 0,
+          "mate_scored": 0,
+          "large_errors_per_100_observed_moves": null
+        }
+      }
+    }
+  },
+  "games": [
+    {
+      "id": 1,
+      "opponent": "stockfish:2800",
+      "score": 0.0,
+      "candidate_white": true,
+      "termination": "flag",
+      "terminal": {
+        "phase": "opening",
+        "material_phase": 24,
+        "fullmove": 6
+      },
+      "phase_exposure": {
+        "opening": {
+          "own_moves": 0,
+          "large_cp_errors": 0,
+          "mate_scored": 0
+        },
+        "middlegame": {
+          "own_moves": 0,
+          "large_cp_errors": 0,
+          "mate_scored": 0
+        },
+        "endgame": {
+          "own_moves": 0,
+          "large_cp_errors": 0,
+          "mate_scored": 0
+        }
+      },
+      "first_warning": null,
+      "first_large_error": null,
+      "first_losing_transition": null,
+      "first_mate_loss_transition": null,
+      "first_squandered_advantage": null
+    },
+    {
+      "id": 2,
+      "opponent": "stockfish:2800",
+      "score": 0.0,
+      "candidate_white": false,
+      "termination": "init",
+      "terminal": {
+        "phase": "opening",
+        "material_phase": 24,
+        "fullmove": 6
+      },
+      "phase_exposure": {
+        "opening": {
+          "own_moves": 0,
+          "large_cp_errors": 0,
+          "mate_scored": 0
+        },
+        "middlegame": {
+          "own_moves": 0,
+          "large_cp_errors": 0,
+          "mate_scored": 0
+        },
+        "endgame": {
+          "own_moves": 0,
+          "large_cp_errors": 0,
+          "mate_scored": 0
+        }
+      },
+      "first_warning": null,
+      "first_large_error": null,
+      "first_losing_transition": null,
+      "first_mate_loss_transition": null,
+      "first_squandered_advantage": null
+    },
+    {
+      "id": 3,
+      "opponent": "stockfish:3000",
+      "score": 0.0,
+      "candidate_white": true,
+      "termination": "init",
+      "terminal": {
+        "phase": "opening",
+        "material_phase": 24,
+        "fullmove": 6
+      },
+      "phase_exposure": {
+        "opening": {
+          "own_moves": 0,
+          "large_cp_errors": 0,
+          "mate_scored": 0
+        },
+        "middlegame": {
+          "own_moves": 0,
+          "large_cp_errors": 0,
+          "mate_scored": 0
+        },
+        "endgame": {
+          "own_moves": 0,
+          "large_cp_errors": 0,
+          "mate_scored": 0
+        }
+      },
+      "first_warning": null,
+      "first_large_error": null,
+      "first_losing_transition": null,
+      "first_mate_loss_transition": null,
+      "first_squandered_advantage": null
+    },
+    {
+      "id": 4,
+      "opponent": "stockfish:3000",
+      "score": 0.0,
+      "candidate_white": false,
+      "termination": "init",
+      "terminal": {
+        "phase": "opening",
+        "material_phase": 24,
+        "fullmove": 6
+      },
+      "phase_exposure": {
+        "opening": {
+          "own_moves": 0,
+          "large_cp_errors": 0,
+          "mate_scored": 0
+        },
+        "middlegame": {
+          "own_moves": 0,
+          "large_cp_errors": 0,
+          "mate_scored": 0
+        },
+        "endgame": {
+          "own_moves": 0,
+          "large_cp_errors": 0,
+          "mate_scored": 0
+        }
+      },
+      "first_warning": null,
+      "first_large_error": null,
+      "first_losing_transition": null,
+      "first_mate_loss_transition": null,
+      "first_squandered_advantage": null
+    }
+  ],
+  "review_queue": [],
+  "total_verified_large_errors": 0,
+  "scope": "Operational phases; first verified warning is not proof of the cause of a loss. Screening can miss errors. Mate uncertainty and losses without warnings retained. Candidate/opponent groups stay separate. Exposed development data, no Elo or consistency inference, no new accepted training labels."
+}

@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\overnight_resources.py", line 54, in <module>
+    print(json.dumps(wait_for_memory(args.out,args.minimum_mb,args.wait_seconds)), flush=True)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\overnight_resources.py", line 39, in wait_for_memory
+    save_json(out, dict(status='ready' if ready else 'waiting_for_memory',
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\alien_rating_ladder.py", line 35, in save_json
+    temporary.write_text(json.dumps(value, indent=2), encoding="utf-8")
+  File "C:\Users\disea\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py", line 1047, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\disea\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'runs\\improvement-loop-20260907\\cycle-17\\resources-before-tests.json.tmp'
+{"utc": "2026-09-07T22:08:41.352907+00:00", "load_percent": 91, "available_mb": 1322.2, "total_mb": 16087.7}

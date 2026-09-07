@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\improvement_phase_report.py", line 165, in <module>
+    report(args.matches, args.audit, args.out, args.label)
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\improvement_phase_report.py", line 89, in report
+    rows = [json.loads(line) for line in (audit / 'positions.jsonl').read_text(encoding='utf-8').splitlines()]
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\disea\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\disea\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'runs\\improvement-loop-20260907\\overnight-serial-controller\\audit\\positions.jsonl'
+{"label": "v1.41-overnight-serial-2800-3000", "groups": {"stockfish:2800": {"games": 2, "wins": 0, "draws": 0, "losses": 2, "loss_first_warning_phase": {"opening": 0, "middlegame": 0, "endgame": 0, "unresolved": 2}, "loss_first_losing_transition_phase": {"opening": 0, "middlegame": 0, "endgame": 0, "unresolved": 2}, "loss_terminal_phase": {"opening": 2}, "nonwin_first_squandered_advantage_phase": {"opening": 0, "middlegame": 0, "endgame": 0, "unresolved": 2}, "phase_exposure": {"opening": {"own_moves": 0, "large_cp_errors": 0, "mate_scored": 0, "large_errors_per_100_observed_moves": null}, "middlegame": {"own_moves": 0, "large_cp_errors": 0, "mate_scored": 0, "large_errors_per_100_observed_moves": null}, "endgame": {"own_moves": 0, "large_cp_errors": 0, "mate_scored": 0, "large_errors_per_100_observed_moves": null}}}, "stockfish:3000": {"games": 2, "wins": 0, "draws": 0, "losses": 2, "loss_first_warning_phase": {"opening": 0, "middlegame": 0, "endgame": 0, "unresolved": 2}, "loss_first_losing_transition_phase": {"opening": 0, "middlegame": 0, "endgame": 0, "unresolved": 2}, "loss_terminal_phase": {"opening": 2}, "nonwin_first_squandered_advantage_phase": {"opening": 0, "middlegame": 0, "endgame": 0, "unresolved": 2}, "phase_exposure": {"opening": {"own_moves": 0, "large_cp_errors": 0, "mate_scored": 0, "large_errors_per_100_observed_moves": null}, "middlegame": {"own_moves": 0, "large_cp_errors": 0, "mate_scored": 0, "large_errors_per_100_observed_moves": null}, "endgame": {"own_moves": 0, "large_cp_errors": 0, "mate_scored": 0, "large_errors_per_100_observed_moves": null}}}}, "queued": 0, "new_teacher_nodes": 0}

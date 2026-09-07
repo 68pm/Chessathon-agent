@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\improvement_cycle_driver.py", line 84, in <module>
+    main()
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\improvement_cycle_driver.py", line 67, in main
+    subprocess.run([sys.executable, '-m', stage['module'], *stage['arguments']],
+  File "C:\Users\disea\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\work\\chess-fast-venv\\Scripts\\python.exe', '-m', 'scripts.improvement_pool_matches', '--candidate', 'candidates/compiled-qsearch-endgames-v1', '--stage', 'rated', '--pairs', '1', '--cycle', 'overnight-baseline-01', '--levels', '2800', '3000', '--openings', 'configs/overnight-baseline-openings.json', '--pool', 'configs/overnight-opponent-pool.json']' returned non-zero exit status 1.

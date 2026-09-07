@@ -1,0 +1,8 @@
+{
+  "output": "runs/improvement-loop-20260907/overnight-serial-controller",
+  "stages": [
+    {"name":"four-serial-games", "module":"scripts.overnight_matches", "arguments":["--candidate","candidates/compiled-qsearch-endgames-v1","--stage","rated","--pairs","1","--cycle","overnight-serial-baseline-01","--levels","2800","3000","--openings","configs/overnight-baseline-openings.json"]},
+    {"name":"audit", "module":"scripts.improvement_audit", "arguments":["--source","runs/improvement-loop-20260907/overnight-serial-baseline-01/rated-compiled-qsearch-endgames-v1/results.json","--out","runs/improvement-loop-20260907/overnight-serial-controller/audit"]},
+    {"name":"phase", "module":"scripts.improvement_phase_report", "arguments":["--matches","runs/improvement-loop-20260907/overnight-serial-baseline-01/rated-compiled-qsearch-endgames-v1/results.json","--audit","runs/improvement-loop-20260907/overnight-serial-controller/audit","--out","runs/improvement-loop-20260907/overnight-serial-controller/phase.json","--label","v1.41-overnight-serial-2800-3000"]}
+  ]
+}
