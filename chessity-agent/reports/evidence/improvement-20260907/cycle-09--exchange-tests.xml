@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="9" time="9.815" timestamp="2026-09-07T18:36:33.805574+01:00" hostname="MSI"><testcase classname="tests.test_exchange_ordering" name="test_directed_exchange_and_state[3r1k2/6pp/3pR3/1ppP1pPn/5P1P/2P1B3/2P2K2/8 w - - 1 37-e6d6--405]" time="7.183" /><testcase classname="tests.test_exchange_ordering" name="test_directed_exchange_and_state[4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1-e5d6-100]" time="0.003" /><testcase classname="tests.test_exchange_ordering" name="test_directed_exchange_and_state[4k3/8/2p5/3p4/4Q3/8/8/4K3 w - - 0 1-e4d5--875]" time="0.001"><failure message="AssertionError: assert False&#10; +  where False = is_valid()&#10; +    where is_valid = Board('4k3/8/2p5/3p4/4Q3/8/8/4K3 w - - 0 1').is_valid">fen = '4k3/8/2p5/3p4/4Q3/8/8/4K3 w - - 0 1', move = 'e4d5', expected = -875
+
+    @pytest.mark.parametrize('fen,move,expected', [
+        ('3r1k2/6pp/3pR3/1ppP1pPn/5P1P/2P1B3/2P2K2/8 w - - 1 37', 'e6d6', -405),
+        ('4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1', 'e5d6', 100),
+        ('4k3/8/2p5/3p4/4Q3/8/8/4K3 w - - 0 1', 'e4d5', -875),
+        ('4k3/4r3/3p4/2Q5/8/8/8/4R1K1 w - - 0 1', 'c5d6', 100),
+        ('7k/8/8/8/K7/8/1p6/2R5 b - - 0 1', 'b2c1q', 1380),
+        ('7k/8/8/8/K7/8/1p6/2R5 b - - 0 1', 'b2c1n', 730),
+        ('3k4/8/2p5/3p4/4Q3/8/8/4K3 w - - 0 1', 'e4d5', 0),
+    ])
+    def test_directed_exchange_and_state(fen, move, expected):
+        board = chess.Board(fen)
+&gt;       assert board.is_valid()
+E       AssertionError: assert False
+E        +  where False = is_valid()
+E        +    where is_valid = Board('4k3/8/2p5/3p4/4Q3/8/8/4K3 w - - 0 1').is_valid
+
+tests\test_exchange_ordering.py:74: AssertionError</failure></testcase><testcase classname="tests.test_exchange_ordering" name="test_directed_exchange_and_state[4k3/4r3/3p4/2Q5/8/8/8/4R1K1 w - - 0 1-c5d6-100]" time="0.002" /><testcase classname="tests.test_exchange_ordering" name="test_directed_exchange_and_state[7k/8/8/8/K7/8/1p6/2R5 b - - 0 1-b2c1q-1380]" time="0.001" /><testcase classname="tests.test_exchange_ordering" name="test_directed_exchange_and_state[7k/8/8/8/K7/8/1p6/2R5 b - - 0 1-b2c1n-730]" time="0.001" /><testcase classname="tests.test_exchange_ordering" name="test_directed_exchange_and_state[3k4/8/2p5/3p4/4Q3/8/8/4K3 w - - 0 1-e4d5-0]" time="0.001" /><testcase classname="tests.test_exchange_ordering" name="test_random_capture_oracle" time="0.468" /><testcase classname="tests.test_exchange_ordering" name="test_ordering_keeps_all_moves_and_hint" time="0.726" /></testsuite></testsuites>

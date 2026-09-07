@@ -1,0 +1,42 @@
+{
+  "id": "game-055-ply-041",
+  "fen": "r3r1k1/5ppp/8/p1R5/2N5/7P/1Pn1BPK1/4R3 w - - 1 26",
+  "candidate": "candidates\\compiled-qsearch-endgames-v1",
+  "source_sha256": "eb32ea22876fc0973cbf49453f90d7a35c5512df494d49866c4e5da200122ffb",
+  "core_sha256": "dd69c187227210f2b60708fb114da19849bceabb81cd11821930960d83ae3eca",
+  "limits": {
+    "seconds": 12.0,
+    "nodes": 6000000
+  },
+  "records": [
+    {
+      "depth": 9,
+      "root": {
+        "uci": "g2f1",
+        "score": 15,
+        "completed_depth": 8,
+        "nodes": 4381696
+      },
+      "choices": [
+        {
+          "uci": "g2f1",
+          "score": 25,
+          "complete": true,
+          "nodes": 1364966,
+          "seconds": 2.225594199990155,
+          "static": 244,
+          "reply": "c2e1"
+        },
+        {
+          "uci": "e1c1",
+          "score": 159,
+          "complete": true,
+          "nodes": 1645502,
+          "seconds": 2.693261500011431,
+          "static": 257,
+          "reply": "e8e2"
+        }
+      ]
+    }
+  ]
+}

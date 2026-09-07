@@ -1,0 +1,23 @@
+{
+  "output": "runs/improvement-loop-20260907/cycle-13-pair",
+  "stages": [
+    {
+      "name": "two-games-vs41",
+      "module": "scripts.improvement_pool_matches",
+      "arguments": [
+        "--candidate",
+        "candidates/compiled-pawn-proof-v1",
+        "--opponent",
+        "candidates/compiled-qsearch-endgames-v1",
+        "--stage",
+        "comparison",
+        "--pairs",
+        "1",
+        "--cycle",
+        "cycle-13-pair",
+        "--openings",
+        "configs/competition-pawn-proof-openings.json"
+      ]
+    }
+  ]
+}

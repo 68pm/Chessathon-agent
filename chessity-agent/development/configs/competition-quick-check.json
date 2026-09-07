@@ -1,0 +1,98 @@
+{
+  "output": "runs/improvement-loop-20260907/quick-check-01",
+  "stages": [
+    {
+      "name": "matches-2400",
+      "module": "scripts.improvement_pool_matches",
+      "arguments": [
+        "--candidate",
+        "candidates/compiled-qsearch-endgames-v1",
+        "--stage",
+        "rated",
+        "--pairs",
+        "1",
+        "--offset",
+        "0",
+        "--cycle",
+        "quick-check-01-2400",
+        "--openings",
+        "configs/competition-quick-openings.json",
+        "--levels",
+        "2400"
+      ]
+    },
+    {
+      "name": "matches-2600",
+      "module": "scripts.improvement_pool_matches",
+      "arguments": [
+        "--candidate",
+        "candidates/compiled-qsearch-endgames-v1",
+        "--stage",
+        "rated",
+        "--pairs",
+        "1",
+        "--offset",
+        "1",
+        "--cycle",
+        "quick-check-01-2600",
+        "--openings",
+        "configs/competition-quick-openings.json",
+        "--levels",
+        "2600"
+      ]
+    },
+    {
+      "name": "audit-2400",
+      "module": "scripts.improvement_audit",
+      "arguments": [
+        "--source",
+        "runs/improvement-loop-20260907/quick-check-01-2400/rated-compiled-qsearch-endgames-v1/results.json",
+        "--out",
+        "runs/improvement-loop-20260907/quick-check-01/audit-2400"
+      ]
+    },
+    {
+      "name": "phase-2400",
+      "module": "scripts.improvement_phase_report",
+      "arguments": [
+        "--matches",
+        "runs/improvement-loop-20260907/quick-check-01-2400/rated-compiled-qsearch-endgames-v1/results.json",
+        "--audit",
+        "runs/improvement-loop-20260907/quick-check-01/audit-2400",
+        "--out",
+        "runs/improvement-loop-20260907/quick-check-01/phase-2400.json",
+        "--label",
+        "competition-quick-v1.41-2400"
+      ]
+    },
+    {
+      "name": "audit-2600",
+      "module": "scripts.improvement_audit",
+      "arguments": [
+        "--source",
+        "runs/improvement-loop-20260907/quick-check-01-2600/rated-compiled-qsearch-endgames-v1/results.json",
+        "--out",
+        "runs/improvement-loop-20260907/quick-check-01/audit-2600"
+      ]
+    },
+    {
+      "name": "phase-2600",
+      "module": "scripts.improvement_phase_report",
+      "arguments": [
+        "--matches",
+        "runs/improvement-loop-20260907/quick-check-01-2600/rated-compiled-qsearch-endgames-v1/results.json",
+        "--audit",
+        "runs/improvement-loop-20260907/quick-check-01/audit-2600",
+        "--out",
+        "runs/improvement-loop-20260907/quick-check-01/phase-2600.json",
+        "--label",
+        "competition-quick-v1.41-2600"
+      ]
+    },
+    {
+      "name": "review",
+      "module": "scripts.competition_check_review",
+      "arguments": []
+    }
+  ]
+}

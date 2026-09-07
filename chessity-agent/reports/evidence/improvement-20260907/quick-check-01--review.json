@@ -1,0 +1,145 @@
+{
+  "status": "complete",
+  "selected": "v1.41",
+  "games": 4,
+  "time_control": "120+0.5",
+  "groups": {
+    "2400": {
+      "summary": {
+        "games": 2,
+        "wins": 0,
+        "draws": 0,
+        "losses": 2,
+        "score": 0.0,
+        "completed_pairs": 1,
+        "pair_bootstrap_95": [
+          0.0,
+          0.0
+        ],
+        "terminations": {
+          "checkmate": 2
+        },
+        "candidate_failures": 0
+      },
+      "phase": {
+        "games": 2,
+        "wins": 0,
+        "draws": 0,
+        "losses": 2,
+        "loss_first_warning_phase": {
+          "opening": 1,
+          "middlegame": 1,
+          "endgame": 0,
+          "unresolved": 0
+        },
+        "loss_first_losing_transition_phase": {
+          "opening": 0,
+          "middlegame": 1,
+          "endgame": 0,
+          "unresolved": 1
+        },
+        "loss_terminal_phase": {
+          "endgame": 1,
+          "middlegame": 1
+        },
+        "nonwin_first_squandered_advantage_phase": {
+          "opening": 0,
+          "middlegame": 1,
+          "endgame": 0,
+          "unresolved": 1
+        },
+        "phase_exposure": {
+          "opening": {
+            "own_moves": 10,
+            "large_cp_errors": 1,
+            "mate_scored": 0,
+            "large_errors_per_100_observed_moves": 10.0
+          },
+          "middlegame": {
+            "own_moves": 42,
+            "large_cp_errors": 2,
+            "mate_scored": 5,
+            "large_errors_per_100_observed_moves": 4.761904761904762
+          },
+          "endgame": {
+            "own_moves": 40,
+            "large_cp_errors": 0,
+            "mate_scored": 7,
+            "large_errors_per_100_observed_moves": 0.0
+          }
+        }
+      },
+      "results_sha256": "f2d085531c4b49009bbfac7a9c02392d6ea57e06653565f460117269bc22ed43",
+      "phase_sha256": "ca0ef1e2b367c0681356d044c2d3da79140a72a0975f5155ea47eea86474b453"
+    },
+    "2600": {
+      "summary": {
+        "games": 2,
+        "wins": 1,
+        "draws": 0,
+        "losses": 1,
+        "score": 0.5,
+        "completed_pairs": 1,
+        "pair_bootstrap_95": [
+          0.5,
+          0.5
+        ],
+        "terminations": {
+          "checkmate": 2
+        },
+        "candidate_failures": 0
+      },
+      "phase": {
+        "games": 2,
+        "wins": 1,
+        "draws": 0,
+        "losses": 1,
+        "loss_first_warning_phase": {
+          "opening": 0,
+          "middlegame": 1,
+          "endgame": 0,
+          "unresolved": 0
+        },
+        "loss_first_losing_transition_phase": {
+          "opening": 0,
+          "middlegame": 1,
+          "endgame": 0,
+          "unresolved": 0
+        },
+        "loss_terminal_phase": {
+          "middlegame": 1
+        },
+        "nonwin_first_squandered_advantage_phase": {
+          "opening": 0,
+          "middlegame": 0,
+          "endgame": 0,
+          "unresolved": 1
+        },
+        "phase_exposure": {
+          "opening": {
+            "own_moves": 14,
+            "large_cp_errors": 0,
+            "mate_scored": 0,
+            "large_errors_per_100_observed_moves": 0.0
+          },
+          "middlegame": {
+            "own_moves": 56,
+            "large_cp_errors": 1,
+            "mate_scored": 11,
+            "large_errors_per_100_observed_moves": 1.7857142857142858
+          },
+          "endgame": {
+            "own_moves": 28,
+            "large_cp_errors": 0,
+            "mate_scored": 3,
+            "large_errors_per_100_observed_moves": 0.0
+          }
+        }
+      },
+      "results_sha256": "8a054a0c9e47f632fd57f276eb2a562ad3402277360707dd2d5b2e9c048c8c8c",
+      "phase_sha256": "ebba2ca6107cbcb2ab04147fd446a9771935feebbdba9688c869d430fad682f7"
+    }
+  },
+  "decision": "Use first-warning evidence to choose the next bounded improvement. No qualification, pool retirement, or promotion follows from four games.",
+  "source_code_sha256": "a732af1e0dc9e6716200d0faa661473ef110326197c1e9f7da93dd05be520261"
+}

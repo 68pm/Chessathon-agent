@@ -1,0 +1,51 @@
+{
+  "candidate": "candidates\\compiled-qsearch-endgames-v1",
+  "requested_seconds": 3.0,
+  "requested_nodes": null,
+  "source_code_sha256": "53acb620cfc5c904fd1289bafe3f3804c19b04b9f61533628480e544980b6e92",
+  "max_depth": 64,
+  "value_blend_override": null,
+  "audit_sha256": "a5bafc64fc5d45d000cd2d605a6352a00db8f291a415ed04791455a5af02d4cc",
+  "results": [
+    {
+      "id": "game-055-ply-041",
+      "source_label": "verified_200cp_error",
+      "fen": "r3r1k1/5ppp/8/p1R5/2N5/7P/1Pn1BPK1/4R3 w - - 1 26",
+      "original_move": "g2f1",
+      "uci": "g2f1",
+      "depth": 8,
+      "nodes": 1664000,
+      "seconds": 3.0008181000011973,
+      "score": 15,
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": true
+    },
+    {
+      "id": "game-054-ply-050",
+      "source_label": "verified_200cp_error",
+      "fen": "2r3k1/2rb2b1/3p2p1/p2P1p2/p3pP1p/NqP1B3/1P1Q2PP/1RR3K1 b - - 7 33",
+      "original_move": "g7c3",
+      "uci": "g7c3",
+      "depth": 6,
+      "nodes": 1481728,
+      "seconds": 3.000570099975448,
+      "score": 305,
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": true
+    },
+    {
+      "id": "game-054-ply-056",
+      "source_label": "verified_200cp_error",
+      "fen": "2r3k1/3b4/3p2p1/p2P1p2/p2BpP1p/q1P5/3Q2PP/1R4K1 b - - 1 36",
+      "original_move": "d7e8",
+      "uci": "d7e8",
+      "depth": 7,
+      "nodes": 1584128,
+      "seconds": 3.000975800008746,
+      "score": 304,
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": true
+    }
+  ],
+  "scope": "Previously audited development positions. Teacher top-one agreement is diagnostic, not a new strength claim. Root policy preference disabled in both probes."
+}
