@@ -2,7 +2,12 @@
 
 User authorises continued autonomous engineering, targeted data acquisition, training and
 2400/2600 evaluation towards consistent wins. No guaranteed strength or completion time.
-Preserved incumbent: v1.14, SHA256 6d287209c28bba520a21ef49261af99543a167fb192ce15513102c883c503a56.
+Current incumbent after confirmation: **v1.41**, `candidates/compiled-qsearch-endgames-v1`,
+SHA256 e4b66bd0f5a16418a49119c0547a818c3bb79a3c9e209b3eca7210907e072f63.
+Original incumbent v1.14 remains preserved, SHA256
+6d287209c28bba520a21ef49261af99543a167fb192ce15513102c883c503a56.
+New candidates must now be compared against v1.41. The completed confirmation's
+rated groups C10, C53, C67 and D10 are retired as development material.
 
 ## Loop
 

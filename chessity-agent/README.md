@@ -1,18 +1,12 @@
 # chessity-agent
 
-**Best verified upload: v1.14 — Classical/Witty/Magnus policy.**
+**Best verified upload: v1.41 — Efficient compiled search with endgame tables.**
 
 [Download the competition ZIP](latest/chessity-agent.zip). Upload the agent ZIP directly.
 
-The phase and elite-learning experiments are complete. The final outcome candidate v1.33 scored **1W/1D/14L at 2400** and **0W/5D/11L at 2600**, and lost its direct comparison against v1.14. Highest individual winning setting: 2400. Consistent 2400/2600 wins were not achieved. All tests use 120+0.5; nominal engine settings are not a human/site Elo.
+[Completed confirmation and actual results](reports/IMPROVEMENT_RESULTS.md): 23W/1D/0L against v1.14, with rated results and limitations in the report. **Consistent 2600 strength is not established; improvement work continues.**
 
-[Full delivery](reports/DELIVERY.md) · [Elite learning and rewards](reports/ELITE_LEARNING_RESULTS.md) · [Phase search results](reports/THREEPHASE_RESULTS.md)
-
-The new improvement programme is active. Original compiled search scored 8W/0D/0L against v1.14 in development, 1W/1D/2L at nominal 2400 and 0W/1D/3L at nominal 2600. The newly trained leaf network tied its compiled control 2W/4D/2L, then scored 1W/0D/3L at 2400 and 0W/0D/4L at 2600. Independent confirmation of the faster classical build is in progress. **Consistent 2600 strength has not been achieved.** These settings are not calibrated human/site Elo.
-
-[Search findings](reports/IMPROVEMENT_CYCLE_01.md) · [Learning critique](reports/IMPROVEMENT_CYCLE_02.md) · [Fixed confirmation plan](reports/IMPROVEMENT_CONFIRMATION_01.md)
-
-[Fresh comparison complete: v1.41 scored **23W/1D/0L against v1.14**](reports/IMPROVEMENT_CONFIRMATION_PROGRESS.md). The 2400/2600 confirmation is running; promotion is still pending.
+[Search findings](reports/IMPROVEMENT_CYCLE_01.md) · [Learning critique](reports/IMPROVEMENT_CYCLE_02.md) · [Historical elite results](reports/ELITE_LEARNING_RESULTS.md)
 
 ## Read-only runtime and repository access
 
@@ -36,7 +30,7 @@ The selected package passed blocked file-creation, deletion, renaming and direct
 | [v1.11](versions/v1.11/chessity-agent-v1.11.zip) | Revised Alien Gambit hybrid | historical forced-opening experiment |
 | [v1.12](versions/v1.12/chessity-agent-v1.12.zip) | Witty-trained 300k hybrid | experimental forced-opening candidate |
 | [v1.13](versions/v1.13/chessity-agent-v1.13.zip) | Classical/Witty with optional Alien | experimental |
-| [v1.14](versions/v1.14/chessity-agent-v1.14.zip) | Classical/Witty/Magnus policy | best verified upload after completed phase and elite comparisons |
+| [v1.14](versions/v1.14/chessity-agent-v1.14.zip) | Classical/Witty/Magnus policy | preserved former champion; superseded by v1.41 after independent confirmation |
 | [v1.15](versions/v1.15/chessity-agent-v1.15.zip) | Phase-pilot ordinary-data control | control ablation |
 | [v1.16](versions/v1.16/chessity-agent-v1.16.zip) | Phase curriculum pilot | not promoted |
 | [v1.17](versions/v1.17/chessity-agent-v1.17.zip) | Puzzle-pilot ordinary-data control | control ablation |
@@ -63,6 +57,6 @@ The selected package passed blocked file-creation, deletion, renaming and direct
 | [v1.38](versions/v1.38/chessity-agent-v1.38.zip) | Compiled search with elementary endgame tables | conversion drills and read-only checks passed; no ordinary matches |
 | [v1.39](versions/v1.39/chessity-agent-v1.39.zip) | Incremental residual evaluation | numerical and read-only checks passed; no ordinary matches |
 | [v1.40](versions/v1.40/chessity-agent-v1.40.zip) | Efficient quiescence terminal checks | fixed-node parity and read-only checks passed; no ordinary matches |
-| [v1.41](versions/v1.41/chessity-agent-v1.41.zip) | Efficient compiled search with endgame tables | independent confirmation in progress; not yet promoted |
+| [v1.41](versions/v1.41/chessity-agent-v1.41.zip) | Efficient compiled search with endgame tables | selected after independent 23W/1D/0L confirmation versus v1.14; consistent 2600 target not reached |
 
 All 42 versions are retained in development order with version tags. Source and own trained weights beside each ZIP match its bytes. v1.35 is a failed preflight preserved for audit and should not be uploaded. New experimental versions are not automatically recommended. Downloaded raw player histories and external engine executables are excluded.

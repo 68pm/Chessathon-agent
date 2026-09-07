@@ -3,10 +3,6 @@ Chessathon agent team verity made for the  AI Chessathon x Optiver event, upload
 
 ## chessity-agent releases
 
-[Download the best tested agent (v1.14)](chessity-agent/latest/chessity-agent.zip) · [All versioned builds and results](chessity-agent/README.md)
+[Download the selected agent (v1.41)](chessity-agent/latest/chessity-agent.zip) · [All 42 versions](chessity-agent/README.md) · [Actual results](chessity-agent/reports/IMPROVEMENT_RESULTS.md)
 
-Agents are tested for read-only runtime operation. Public visitors have read access; repository edits require write permission.
-
-[Completed phase and elite-learning results, with all 35 versions](chessity-agent/reports/DELIVERY.md). The best verified upload remains v1.14.
-
-[Active search and learning improvements, versions v1.35–v1.41](chessity-agent/reports/IMPROVEMENT_CYCLE_01.md). Independent confirmation is in progress; the recommended download remains v1.14. v1.35 is an archived failed preflight.
+v1.41 passed independent promotion over v1.14. The programme continues toward consistent 2600 wins; that target has not been reached. Inference is read-only; public visitors have read access.

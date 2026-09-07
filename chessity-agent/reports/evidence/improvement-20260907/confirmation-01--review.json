@@ -1,0 +1,78 @@
+{
+  "status": "complete",
+  "candidate": "candidates/compiled-qsearch-endgames-v1",
+  "candidate_sha256": "e4b66bd0f5a16418a49119c0547a818c3bb79a3c9e209b3eca7210907e072f63",
+  "confirmation_attempt": 1,
+  "comparison": {
+    "incumbent": {
+      "games": 24,
+      "wins": 23,
+      "draws": 1,
+      "losses": 0,
+      "score": 0.9791666666666666,
+      "completed_pairs": 12,
+      "pair_bootstrap_95": [
+        0.9375,
+        1.0
+      ],
+      "terminations": {
+        "checkmate": 23,
+        "threefold_repetition": 1
+      },
+      "candidate_failures": 0
+    }
+  },
+  "rated": {
+    "stockfish:2400": {
+      "games": 8,
+      "wins": 3,
+      "draws": 4,
+      "losses": 1,
+      "score": 0.625,
+      "completed_pairs": 4,
+      "pair_bootstrap_95": [
+        0.5,
+        0.75
+      ],
+      "terminations": {
+        "threefold_repetition": 4,
+        "checkmate": 4
+      },
+      "candidate_failures": 0
+    },
+    "stockfish:2600": {
+      "games": 8,
+      "wins": 0,
+      "draws": 3,
+      "losses": 5,
+      "score": 0.1875,
+      "completed_pairs": 4,
+      "pair_bootstrap_95": [
+        0.0,
+        0.375
+      ],
+      "terminations": {
+        "threefold_repetition": 2,
+        "checkmate": 5,
+        "fifty_moves": 1
+      },
+      "candidate_failures": 0
+    }
+  },
+  "paired_bound": {
+    "pairs": 12,
+    "mean": 0.9791666666666666,
+    "one_sided_alpha": 0.025,
+    "lower_score_bound": 0.5871165288168239,
+    "method": "Bounded colour-pair Hoeffding bound; independent groups and stable conditions assumed."
+  },
+  "eligible_for_promotion": true,
+  "reasons": [],
+  "goal_achieved": false,
+  "highest_setting_defeated": 2400,
+  "source_sha256": {
+    "comparison": "130c477c7f0f622371596949058b1ba4a834a4e148c2fb8f6bee76d8fe0bdab0",
+    "rated": "8063436adbdeae934617aef9be1db7e5a841419f0ded190372396f82796b50d8"
+  },
+  "limitation": "This fixed40-game confirmation cannot certify consistent2600 wins or a human/site Elo. Audit/retire its rated positions as development data before future fitting. Publication/selected ZIP require an explicit final file audit."
+}

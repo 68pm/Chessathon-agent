@@ -1,5 +1,8 @@
 # chessity-agent delivery — 7 September 2026
 
+This is the historical phase/elite delivery. **The current selected agent is v1.41**;
+see [the newer confirmation results and download](IMPROVEMENT_RESULTS.md).
+
 **Recommended competition upload: v1.14.** The new phase-search and elite-learning candidates did not pass the frozen promotion rules. Upload `../chessity-agent.zip` directly. Newest experimental build: v1.34, the teacher-only control; the final outcome-trained candidate is v1.33.
 
 - [Recommended ZIP on GitHub](https://github.com/68pm/Chessathon-agent/raw/refs/heads/main/chessity-agent/latest/chessity-agent.zip)
