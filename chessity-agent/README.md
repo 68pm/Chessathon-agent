@@ -64,5 +64,6 @@ The selected package passed blocked file-creation, deletion, renaming and direct
 | [v1.43](versions/v1.43/chessity-agent-v1.43.zip) | Verified rook-bishop conversion tables | 3W1D4L versus v1.41; 1W2D1L at nominal2400; 0W2D2L at nominal2600; not promoted |
 | [v1.44](versions/v1.44/chessity-agent-v1.44.zip) | History-safe transposition move ordering | correctness, diagnostic and read-only gates passed; fixed development matches running; not promoted |
 | [v1.45](versions/v1.45/chessity-agent-v1.45.zip) | Matched score-only residual learning control | six-epoch own-trained control; read-only and model-parity checks passed; experimental |
+| [v1.46](versions/v1.46/chessity-agent-v1.46.zip) | Verified counterfactual preference learning | matched static learning gate passed; runtime search gate in progress; not promoted |
 
-All 46 versions are retained in development order with version tags. Source and own trained weights beside each ZIP match its bytes. v1.35 is a failed preflight preserved for audit and should not be uploaded. New experimental versions are not automatically recommended. Downloaded raw player histories and external engine executables are excluded.
+All 47 versions are retained in development order with version tags. Source and own trained weights beside each ZIP match its bytes. v1.35 is a failed preflight preserved for audit and should not be uploaded. New experimental versions are not automatically recommended. Downloaded raw player histories and external engine executables are excluded.
