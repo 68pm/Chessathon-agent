@@ -14,6 +14,8 @@ Experimental v1.42 achieved one nominal2600 checkmate win but did not beat the i
 
 The subsequent [incremental-hash pilot](reports/IMPROVEMENT_CYCLE_08.md) passed fixed-node correctness but missed its speed gate. No new release or matches followed; v1.41 remains selected. Both nominal2400/2600 opponents remain active until independent winning consistency supports their specified replacements.
 
+The [256-game independent consistency study](reports/IMPROVEMENT_CONSISTENCY_STATUS.md) of frozen v1.41 is now running against nominal2400 and2600. Both levels remain in the pool pending the complete results and audit. No training runs alongside these matches.
+
 ## Read-only runtime and repository access
 
 The selected package passed blocked file-creation, deletion, renaming and directory-creation checks. Inference requires no writes, network or subprocess. Training tools write their own checkpoints. Public visitors can read and download; edits require repository write permission. No collaborator or public write grants were added.
