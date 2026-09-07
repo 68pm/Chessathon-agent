@@ -1,0 +1,548 @@
+{
+  "status": "complete",
+  "utc": "2026-09-07T23:55:53.551579+00:00",
+  "source_sha256": "eebf1774255a0b39999dc04820f8cb72e9aaf88f59648ff94bd6f54060e652ff",
+  "blend": 0.25,
+  "raw_residual_cap_cp": 500,
+  "applied_residual_cap_cp": 125.0,
+  "dataset_sha256": "94cf460c576e4fdb60ee7bd7a05ae178fb4c2004dfacf2510a5b2dda3d97db74",
+  "model_sha256": {
+    "candidate": "373c61f0a5adb0ed16d02724cceb8a8bc5c8a1cebe14e4d7fe06a0ab7ffce87b",
+    "control": "05f5c6c18582bf088f59529dd73aa6126b37c5b32d7b0b5cc1a9df2f8a71c734"
+  },
+  "endpoint_count": 18,
+  "endpoint_targets_outside_cap": 14,
+  "unreachable_pair_margin_count": 2,
+  "clipped_final_endpoints": {
+    "candidate": 4,
+    "control": 0
+  },
+  "rows": [
+    {
+      "id": "recent-competition:game-054-ply-050",
+      "split": "heldout",
+      "base_pair_gap_cp": -158,
+      "requested_pair_margin_cp": 200.0,
+      "maximum_possible_pair_gap_cp": 92.0,
+      "requested_pair_margin_reachable": false,
+      "endpoints": [
+        {
+          "branch": "best",
+          "classical_cp": -256,
+          "teacher_cp": -250,
+          "needed_residual_cp": 6,
+          "exact_teacher_target_reachable": true,
+          "irreducible_absolute_error_cp": 0,
+          "final": {
+            "candidate": {
+              "raw_residual_cp": 89.82087707519531,
+              "applied_residual_cp": 22.455219268798828,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 17,
+              "differentiable_hidden": 17
+            },
+            "control": {
+              "raw_residual_cp": 154.6610870361328,
+              "applied_residual_cp": 38.6652717590332,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 23,
+              "differentiable_hidden": 23
+            }
+          }
+        },
+        {
+          "branch": "played",
+          "classical_cp": -414,
+          "teacher_cp": 80,
+          "needed_residual_cp": 494,
+          "exact_teacher_target_reachable": false,
+          "irreducible_absolute_error_cp": 369.0,
+          "final": {
+            "candidate": {
+              "raw_residual_cp": 217.63262939453125,
+              "applied_residual_cp": 54.40815734863281,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 29,
+              "differentiable_hidden": 29
+            },
+            "control": {
+              "raw_residual_cp": 281.7269287109375,
+              "applied_residual_cp": 70.43173217773438,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 31,
+              "differentiable_hidden": 29
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "recent-competition:game-055-ply-041",
+      "split": "training",
+      "base_pair_gap_cp": 13,
+      "requested_pair_margin_cp": 200.0,
+      "maximum_possible_pair_gap_cp": 263.0,
+      "requested_pair_margin_reachable": true,
+      "endpoints": [
+        {
+          "branch": "best",
+          "classical_cp": -257,
+          "teacher_cp": -521,
+          "needed_residual_cp": -264,
+          "exact_teacher_target_reachable": false,
+          "irreducible_absolute_error_cp": 139.0,
+          "final": {
+            "candidate": {
+              "raw_residual_cp": 8.18631362915039,
+              "applied_residual_cp": 2.0465784072875977,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 18,
+              "differentiable_hidden": 18
+            },
+            "control": {
+              "raw_residual_cp": 179.86575317382812,
+              "applied_residual_cp": 44.96643829345703,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 28,
+              "differentiable_hidden": 28
+            }
+          }
+        },
+        {
+          "branch": "played",
+          "classical_cp": -244,
+          "teacher_cp": -10,
+          "needed_residual_cp": 234,
+          "exact_teacher_target_reachable": false,
+          "irreducible_absolute_error_cp": 109.0,
+          "final": {
+            "candidate": {
+              "raw_residual_cp": 306.29681396484375,
+              "applied_residual_cp": 76.57420349121094,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 30,
+              "differentiable_hidden": 30
+            },
+            "control": {
+              "raw_residual_cp": 196.7205352783203,
+              "applied_residual_cp": 49.18013381958008,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 29,
+              "differentiable_hidden": 29
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "recent-competition:game-054-ply-056",
+      "split": "heldout",
+      "base_pair_gap_cp": 48,
+      "requested_pair_margin_cp": 200.0,
+      "maximum_possible_pair_gap_cp": 298.0,
+      "requested_pair_margin_reachable": true,
+      "endpoints": [
+        {
+          "branch": "best",
+          "classical_cp": -360,
+          "teacher_cp": 20,
+          "needed_residual_cp": 380,
+          "exact_teacher_target_reachable": false,
+          "irreducible_absolute_error_cp": 255.0,
+          "final": {
+            "candidate": {
+              "raw_residual_cp": 412.36517333984375,
+              "applied_residual_cp": 103.09129333496094,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 31,
+              "differentiable_hidden": 29
+            },
+            "control": {
+              "raw_residual_cp": 386.36456298828125,
+              "applied_residual_cp": 96.59114074707031,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 31,
+              "differentiable_hidden": 27
+            }
+          }
+        },
+        {
+          "branch": "played",
+          "classical_cp": -312,
+          "teacher_cp": 284,
+          "needed_residual_cp": 596,
+          "exact_teacher_target_reachable": false,
+          "irreducible_absolute_error_cp": 471.0,
+          "final": {
+            "candidate": {
+              "raw_residual_cp": 259.8095703125,
+              "applied_residual_cp": 64.952392578125,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 28,
+              "differentiable_hidden": 27
+            },
+            "control": {
+              "raw_residual_cp": 339.77581787109375,
+              "applied_residual_cp": 84.94395446777344,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 31,
+              "differentiable_hidden": 28
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "newest-vs41:game-001-ply-013",
+      "split": "training",
+      "base_pair_gap_cp": 3,
+      "requested_pair_margin_cp": 200.0,
+      "maximum_possible_pair_gap_cp": 253.0,
+      "requested_pair_margin_reachable": true,
+      "endpoints": [
+        {
+          "branch": "best",
+          "classical_cp": -75,
+          "teacher_cp": 16,
+          "needed_residual_cp": 91,
+          "exact_teacher_target_reachable": true,
+          "irreducible_absolute_error_cp": 0,
+          "final": {
+            "candidate": {
+              "raw_residual_cp": 424.15496826171875,
+              "applied_residual_cp": 106.03874206542969,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 30,
+              "differentiable_hidden": 29
+            },
+            "control": {
+              "raw_residual_cp": 182.152587890625,
+              "applied_residual_cp": 45.53814697265625,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 28,
+              "differentiable_hidden": 27
+            }
+          }
+        },
+        {
+          "branch": "played",
+          "classical_cp": -72,
+          "teacher_cp": 511,
+          "needed_residual_cp": 583,
+          "exact_teacher_target_reachable": false,
+          "irreducible_absolute_error_cp": 458.0,
+          "final": {
+            "candidate": {
+              "raw_residual_cp": 473.1083679199219,
+              "applied_residual_cp": 118.27709197998047,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 31,
+              "differentiable_hidden": 29
+            },
+            "control": {
+              "raw_residual_cp": 182.63522338867188,
+              "applied_residual_cp": 45.65880584716797,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 25,
+              "differentiable_hidden": 24
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "newest-vs47:game-002-ply-046",
+      "split": "training",
+      "base_pair_gap_cp": 7,
+      "requested_pair_margin_cp": 200.0,
+      "maximum_possible_pair_gap_cp": 257.0,
+      "requested_pair_margin_reachable": true,
+      "endpoints": [
+        {
+          "branch": "best",
+          "classical_cp": 156,
+          "teacher_cp": 336,
+          "needed_residual_cp": 180,
+          "exact_teacher_target_reachable": false,
+          "irreducible_absolute_error_cp": 55.0,
+          "final": {
+            "candidate": {
+              "raw_residual_cp": 537.0228881835938,
+              "applied_residual_cp": 125.0,
+              "output_clip_gradient_zero": true,
+              "active_hidden": 32,
+              "differentiable_hidden": 26
+            },
+            "control": {
+              "raw_residual_cp": 271.8493957519531,
+              "applied_residual_cp": 67.96234893798828,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 31,
+              "differentiable_hidden": 30
+            }
+          }
+        },
+        {
+          "branch": "played",
+          "classical_cp": 163,
+          "teacher_cp": 747,
+          "needed_residual_cp": 584,
+          "exact_teacher_target_reachable": false,
+          "irreducible_absolute_error_cp": 459.0,
+          "final": {
+            "candidate": {
+              "raw_residual_cp": 579.783447265625,
+              "applied_residual_cp": 125.0,
+              "output_clip_gradient_zero": true,
+              "active_hidden": 32,
+              "differentiable_hidden": 25
+            },
+            "control": {
+              "raw_residual_cp": 305.12689208984375,
+              "applied_residual_cp": 76.28172302246094,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 30,
+              "differentiable_hidden": 29
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "newest-vs47:game-002-ply-098",
+      "split": "training",
+      "base_pair_gap_cp": 47,
+      "requested_pair_margin_cp": 200.0,
+      "maximum_possible_pair_gap_cp": 297.0,
+      "requested_pair_margin_reachable": true,
+      "endpoints": [
+        {
+          "branch": "best",
+          "classical_cp": 32,
+          "teacher_cp": -559,
+          "needed_residual_cp": -591,
+          "exact_teacher_target_reachable": false,
+          "irreducible_absolute_error_cp": 466.0,
+          "final": {
+            "candidate": {
+              "raw_residual_cp": 0.0,
+              "applied_residual_cp": 0.0,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 0,
+              "differentiable_hidden": 0
+            },
+            "control": {
+              "raw_residual_cp": 52.90258026123047,
+              "applied_residual_cp": 13.225645065307617,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 13,
+              "differentiable_hidden": 13
+            }
+          }
+        },
+        {
+          "branch": "played",
+          "classical_cp": 79,
+          "teacher_cp": 4,
+          "needed_residual_cp": -75,
+          "exact_teacher_target_reachable": true,
+          "irreducible_absolute_error_cp": 0,
+          "final": {
+            "candidate": {
+              "raw_residual_cp": 72.5186767578125,
+              "applied_residual_cp": 18.129669189453125,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 10,
+              "differentiable_hidden": 10
+            },
+            "control": {
+              "raw_residual_cp": 77.30718994140625,
+              "applied_residual_cp": 19.326797485351562,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 14,
+              "differentiable_hidden": 14
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "newest-vs48:game-001-ply-015",
+      "split": "training",
+      "base_pair_gap_cp": -47,
+      "requested_pair_margin_cp": 187.0,
+      "maximum_possible_pair_gap_cp": 203.0,
+      "requested_pair_margin_reachable": true,
+      "endpoints": [
+        {
+          "branch": "best",
+          "classical_cp": -126,
+          "teacher_cp": 21,
+          "needed_residual_cp": 147,
+          "exact_teacher_target_reachable": false,
+          "irreducible_absolute_error_cp": 22.0,
+          "final": {
+            "candidate": {
+              "raw_residual_cp": 332.0703125,
+              "applied_residual_cp": 83.017578125,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 32,
+              "differentiable_hidden": 27
+            },
+            "control": {
+              "raw_residual_cp": 246.86631774902344,
+              "applied_residual_cp": 61.71657943725586,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 27,
+              "differentiable_hidden": 27
+            }
+          }
+        },
+        {
+          "branch": "played",
+          "classical_cp": -173,
+          "teacher_cp": 218,
+          "needed_residual_cp": 391,
+          "exact_teacher_target_reachable": false,
+          "irreducible_absolute_error_cp": 266.0,
+          "final": {
+            "candidate": {
+              "raw_residual_cp": 499.90625,
+              "applied_residual_cp": 124.9765625,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 32,
+              "differentiable_hidden": 28
+            },
+            "control": {
+              "raw_residual_cp": 289.13726806640625,
+              "applied_residual_cp": 72.28431701660156,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 28,
+              "differentiable_hidden": 26
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "newest-vs48:game-002-ply-052",
+      "split": "training",
+      "base_pair_gap_cp": 4,
+      "requested_pair_margin_cp": 200.0,
+      "maximum_possible_pair_gap_cp": 254.0,
+      "requested_pair_margin_reachable": true,
+      "endpoints": [
+        {
+          "branch": "best",
+          "classical_cp": -230,
+          "teacher_cp": -429,
+          "needed_residual_cp": -199,
+          "exact_teacher_target_reachable": false,
+          "irreducible_absolute_error_cp": 74.0,
+          "final": {
+            "candidate": {
+              "raw_residual_cp": 72.17333984375,
+              "applied_residual_cp": 18.0433349609375,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 22,
+              "differentiable_hidden": 22
+            },
+            "control": {
+              "raw_residual_cp": 250.3567657470703,
+              "applied_residual_cp": 62.58919143676758,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 30,
+              "differentiable_hidden": 28
+            }
+          }
+        },
+        {
+          "branch": "played",
+          "classical_cp": -226,
+          "teacher_cp": -208,
+          "needed_residual_cp": 18,
+          "exact_teacher_target_reachable": true,
+          "irreducible_absolute_error_cp": 0,
+          "final": {
+            "candidate": {
+              "raw_residual_cp": 141.26812744140625,
+              "applied_residual_cp": 35.31703186035156,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 29,
+              "differentiable_hidden": 29
+            },
+            "control": {
+              "raw_residual_cp": 224.53253173828125,
+              "applied_residual_cp": 56.13313293457031,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 28,
+              "differentiable_hidden": 27
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "newest-vs48:game-002-ply-056",
+      "split": "training",
+      "base_pair_gap_cp": -95,
+      "requested_pair_margin_cp": 200.0,
+      "maximum_possible_pair_gap_cp": 155.0,
+      "requested_pair_margin_reachable": false,
+      "endpoints": [
+        {
+          "branch": "best",
+          "classical_cp": 153,
+          "teacher_cp": 1041,
+          "needed_residual_cp": 888,
+          "exact_teacher_target_reachable": false,
+          "irreducible_absolute_error_cp": 763.0,
+          "final": {
+            "candidate": {
+              "raw_residual_cp": 582.1707763671875,
+              "applied_residual_cp": 125.0,
+              "output_clip_gradient_zero": true,
+              "active_hidden": 31,
+              "differentiable_hidden": 27
+            },
+            "control": {
+              "raw_residual_cp": 275.5298156738281,
+              "applied_residual_cp": 68.88245391845703,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 30,
+              "differentiable_hidden": 29
+            }
+          }
+        },
+        {
+          "branch": "played",
+          "classical_cp": -248,
+          "teacher_cp": 11,
+          "needed_residual_cp": 259,
+          "exact_teacher_target_reachable": false,
+          "irreducible_absolute_error_cp": 134.0,
+          "final": {
+            "candidate": {
+              "raw_residual_cp": 564.48291015625,
+              "applied_residual_cp": 125.0,
+              "output_clip_gradient_zero": true,
+              "active_hidden": 32,
+              "differentiable_hidden": 32
+            },
+            "control": {
+              "raw_residual_cp": 369.7582092285156,
+              "applied_residual_cp": 92.4395523071289,
+              "output_clip_gradient_zero": false,
+              "active_hidden": 31,
+              "differentiable_hidden": 26
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "promotion": false,
+  "fitted_updates": 0,
+  "teacher_nodes": 0,
+  "scope": "Exposed completed-pilot data. Exact algebraic capacity limits and vectorized saved-model diagnostics, not compiled-runtime parity, new generalization evidence or proof of the sole cause of the failed match/heldout results."
+}

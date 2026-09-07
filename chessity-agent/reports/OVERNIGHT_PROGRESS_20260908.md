@@ -79,3 +79,10 @@ The two startup candidates are archived as unselected development experiments,
 without new release numbers or a claim that the latest upload changed. All50
 numbered versions throughv1.49 remain preserved. See the matching source,
 hash manifest and failure evidence accompanying this report.
+
+A later lightweight [learning review](LEARNING_REACHABILITY_REVIEW.md) found that
+14 of the replay pilot's 18 endpoint targets exceed its permitted 125cp correction,
+and two requested pair margins are unreachable under that cap. Four final targeted
+endpoints saturate the hard output clip, versus none for the matched control.
+This identifies a training-objective limitation to address before another fit;
+it is not new training, a proven sole cause of the failed pilot or an Elo gain.
