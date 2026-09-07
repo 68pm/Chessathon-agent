@@ -1,0 +1,16 @@
+{
+  "output": "runs/improvement-loop-20260907/cycle-06-labels",
+  "wait_for": ["runs/improvement-loop-20260907/cycle-05/controller.json"],
+  "stages": [
+    {
+      "name": "endgame-cycle-successors",
+      "module": "training.counterfactual_value",
+      "arguments": ["--source", "runs/improvement-loop-20260907/cycle-04/rated-compiled-rook-bishop-v1/results.json", "--audit", "runs/improvement-loop-20260907/cycle-04/rated-error-audit", "--out", "runs/improvement-loop-20260907/cycle-04/successor-data", "--max-pairs", "16"]
+    },
+    {
+      "name": "transposition-cycle-successors",
+      "module": "training.counterfactual_value",
+      "arguments": ["--source", "runs/improvement-loop-20260907/cycle-05/rated-compiled-transposition-hints-v1/results.json", "--audit", "runs/improvement-loop-20260907/cycle-05/rated-error-audit", "--out", "runs/improvement-loop-20260907/cycle-05/successor-data", "--max-pairs", "16"]
+    }
+  ]
+}

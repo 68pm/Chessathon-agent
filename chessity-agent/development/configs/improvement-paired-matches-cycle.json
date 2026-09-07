@@ -1,0 +1,26 @@
+{
+  "output": "runs/improvement-loop-20260907/cycle-06",
+  "wait_for": ["runs/improvement-loop-20260907/cycle-06-labels/controller.json", "runs/improvement-loop-20260907/cycle-06/probe-gate.json"],
+  "stages": [
+    {
+      "name": "paired-vs-score-control",
+      "module": "scripts.improvement_matches",
+      "arguments": ["--candidate", "candidates/compiled-paired-ranking-v1", "--opponent", "candidates/compiled-paired-score-control-v1", "--stage", "comparison", "--pairs", "4", "--offset", "0", "--cycle", "cycle-06-vs-control"]
+    },
+    {
+      "name": "paired-vs-incumbent",
+      "module": "scripts.improvement_matches",
+      "arguments": ["--candidate", "candidates/compiled-paired-ranking-v1", "--opponent", "candidates/compiled-qsearch-endgames-v1", "--stage", "comparison", "--pairs", "4", "--offset", "0", "--cycle", "cycle-06-vs-incumbent"]
+    },
+    {
+      "name": "paired-rated",
+      "module": "scripts.improvement_matches",
+      "arguments": ["--candidate", "candidates/compiled-paired-ranking-v1", "--stage", "rated", "--pairs", "2", "--offset", "0", "--cycle", "cycle-06"]
+    },
+    {
+      "name": "paired-error-audit",
+      "module": "scripts.improvement_audit",
+      "arguments": ["--source", "runs/improvement-loop-20260907/cycle-06/rated-compiled-paired-ranking-v1/results.json", "--out", "runs/improvement-loop-20260907/cycle-06/rated-error-audit"]
+    }
+  ]
+}

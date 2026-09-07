@@ -1,0 +1,114 @@
+{
+  "status": "complete",
+  "gate_passed": true,
+  "initial": {
+    "ordinary_validation_capped_mse_cp": 73951.5546875,
+    "heldout_pair_margin_loss": 1.625827431678772,
+    "heldout_ordering_accuracy": 0.16666666666666666,
+    "heldout_predicted_gaps_cp": [
+      -191.825927734375,
+      -50.53649139404297,
+      -14.014768600463867,
+      -94.2093505859375,
+      -138.35784912109375,
+      7.749009132385254
+    ]
+  },
+  "control": {
+    "status": "complete",
+    "epochs": [
+      {
+        "epoch": 1,
+        "updates": 118
+      },
+      {
+        "epoch": 2,
+        "updates": 236
+      },
+      {
+        "epoch": 3,
+        "updates": 354
+      },
+      {
+        "epoch": 4,
+        "updates": 472
+      },
+      {
+        "epoch": 5,
+        "updates": 590
+      },
+      {
+        "epoch": 6,
+        "updates": 708
+      }
+    ],
+    "pairwise_weight": 0.0,
+    "endpoint_weight": 0.25,
+    "value_blend": 1.0,
+    "model_sha256": "8d73a0b6cbd7c2f45421ed85eee4062f8b3dffa9ac372be5d1a22b1e83a13a0f",
+    "metrics": {
+      "ordinary_validation_capped_mse_cp": 74076.2421875,
+      "heldout_pair_margin_loss": 1.5593148469924927,
+      "heldout_ordering_accuracy": 0.3333333333333333,
+      "heldout_predicted_gaps_cp": [
+        -178.60801696777344,
+        16.84107780456543,
+        -10.261702537536621,
+        -103.14501190185547,
+        -130.970947265625,
+        30.847454071044922
+      ]
+    }
+  },
+  "candidate": {
+    "status": "complete",
+    "epochs": [
+      {
+        "epoch": 1,
+        "updates": 118
+      },
+      {
+        "epoch": 2,
+        "updates": 236
+      },
+      {
+        "epoch": 3,
+        "updates": 354
+      },
+      {
+        "epoch": 4,
+        "updates": 472
+      },
+      {
+        "epoch": 5,
+        "updates": 590
+      },
+      {
+        "epoch": 6,
+        "updates": 708
+      }
+    ],
+    "pairwise_weight": 0.1,
+    "endpoint_weight": 0.25,
+    "value_blend": 1.0,
+    "model_sha256": "870230715753f631d92d7006df056191207262f7197a4a46ff604f2dac7194ef",
+    "metrics": {
+      "ordinary_validation_capped_mse_cp": 74292.609375,
+      "heldout_pair_margin_loss": 1.5508599281311035,
+      "heldout_ordering_accuracy": 0.5,
+      "heldout_predicted_gaps_cp": [
+        -179.62037658691406,
+        24.339258193969727,
+        4.337716102600098,
+        -97.45738220214844,
+        -140.1713104248047,
+        28.083574295043945
+      ]
+    }
+  },
+  "source_code_sha256": "f9f0b74cd0b08dbed71af2ab024027b644f8015c5e6308eea875afaf58f3aa4b",
+  "data_report_sha256": "7a569d1f231eccc18f4a68d057a3faf0b82107734dd8580cbafbe39ec7b564a0",
+  "epochs_selected": "fixed6, no heldout checkpoint selection",
+  "next": "Freeze in identical v1.41 runtimes and declare probes/matches.",
+  "scope": "Supervised development pilot, not a strength or reinforcement-learning claim."
+}

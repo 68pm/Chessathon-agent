@@ -1,0 +1,142 @@
+{
+  "status": "complete",
+  "original_dataset_sha256": "152f48407046f7bcf29c964eb7d636cf52ed66b2f385fadc3fbb6bbe18c4c9f5",
+  "initial_model_sha256": "bd27a042e617a7e6fdd7019443833bfeed60d87bfaa0ec8a026a717ee7e512fd",
+  "sources": [
+    {
+      "source": "runs\\improvement-loop-20260907\\confirmation-01\\rated\\results.json",
+      "source_sha256": "8063436adbdeae934617aef9be1db7e5a841419f0ded190372396f82796b50d8",
+      "pairs": "runs\\improvement-loop-20260907\\counterfactual-pilot-01\\verified-pairs.jsonl",
+      "pairs_sha256": "8d918b94a02e49ff7b5934f3a647c621186f581790b940b9016d217040e86160"
+    },
+    {
+      "source": "runs\\improvement-loop-20260907\\cycle-03\\rated-compiled-reductions-v1\\results.json",
+      "source_sha256": "dc09a847a1b8c1ae51f1dc706d7cb1fb4ee208ee33d36ed280c0d8818e30c555",
+      "pairs": "runs\\improvement-loop-20260907\\cycle-03\\successor-data\\verified-pairs.jsonl",
+      "pairs_sha256": "7db3174c9b155a58cb0903f3d340d6b41f0c6eab631e12fbc0e68e56cfd21852"
+    },
+    {
+      "source": "runs\\improvement-loop-20260907\\cycle-04\\rated-compiled-rook-bishop-v1\\results.json",
+      "source_sha256": "2f7f473cf9d5c1da940568a9d25d710ed3b317066f3f08512562c8b87b1e5c04",
+      "pairs": "runs\\improvement-loop-20260907\\cycle-04\\successor-data\\verified-pairs.jsonl",
+      "pairs_sha256": "c0b600e87ccde40ef6aab73582fd78c747b966141b51e3c8c84a0b9dc0c9d41b"
+    },
+    {
+      "source": "runs\\improvement-loop-20260907\\cycle-05\\rated-compiled-transposition-hints-v1\\results.json",
+      "source_sha256": "660f105f73e8ea0a65966b3b67eae4af74a49a654a6d5c299405f50ded3cdad6",
+      "pairs": "runs\\improvement-loop-20260907\\cycle-05\\successor-data\\verified-pairs.jsonl",
+      "pairs_sha256": "c187e0737b7a97496f7076e721c385bb90dfb67cb1cef299f99d2ed840637660"
+    }
+  ],
+  "accepted_before_additional_filters": 18,
+  "retained_pairs": 18,
+  "groups": {
+    "french": 1,
+    "italian": 1,
+    "ruy-lopez": 6,
+    "slav": 1,
+    "petrov": 9
+  },
+  "heldout_groups": [
+    "ruy-lopez"
+  ],
+  "quarantine": [],
+  "source_code_sha256": "f9f0b74cd0b08dbed71af2ab024027b644f8015c5e6308eea875afaf58f3aa4b",
+  "seed": 2026090712,
+  "scope": "Counterfactual labels held out by broad opening family. Historic general-data/theory exposure remains possible. All data is development material.",
+  "training_pairs": 12,
+  "validation_pairs": 6,
+  "rows": [
+    {
+      "id": "8063436adbdeae934617aef9be1db7e5a841419f0ded190372396f82796b50d8:game-001-ply-025",
+      "group": "french",
+      "split": 0
+    },
+    {
+      "id": "8063436adbdeae934617aef9be1db7e5a841419f0ded190372396f82796b50d8:game-012-ply-100",
+      "group": "italian",
+      "split": 0
+    },
+    {
+      "id": "8063436adbdeae934617aef9be1db7e5a841419f0ded190372396f82796b50d8:game-013-ply-056",
+      "group": "ruy-lopez",
+      "split": 1
+    },
+    {
+      "id": "8063436adbdeae934617aef9be1db7e5a841419f0ded190372396f82796b50d8:game-015-ply-036",
+      "group": "slav",
+      "split": 0
+    },
+    {
+      "id": "dc09a847a1b8c1ae51f1dc706d7cb1fb4ee208ee33d36ed280c0d8818e30c555:game-002-ply-023",
+      "group": "ruy-lopez",
+      "split": 1
+    },
+    {
+      "id": "dc09a847a1b8c1ae51f1dc706d7cb1fb4ee208ee33d36ed280c0d8818e30c555:game-007-ply-048",
+      "group": "petrov",
+      "split": 0
+    },
+    {
+      "id": "dc09a847a1b8c1ae51f1dc706d7cb1fb4ee208ee33d36ed280c0d8818e30c555:game-008-ply-063",
+      "group": "petrov",
+      "split": 0
+    },
+    {
+      "id": "dc09a847a1b8c1ae51f1dc706d7cb1fb4ee208ee33d36ed280c0d8818e30c555:game-007-ply-068",
+      "group": "petrov",
+      "split": 0
+    },
+    {
+      "id": "2f7f473cf9d5c1da940568a9d25d710ed3b317066f3f08512562c8b87b1e5c04:game-002-ply-019",
+      "group": "ruy-lopez",
+      "split": 1
+    },
+    {
+      "id": "2f7f473cf9d5c1da940568a9d25d710ed3b317066f3f08512562c8b87b1e5c04:game-004-ply-021",
+      "group": "petrov",
+      "split": 0
+    },
+    {
+      "id": "2f7f473cf9d5c1da940568a9d25d710ed3b317066f3f08512562c8b87b1e5c04:game-008-ply-035",
+      "group": "petrov",
+      "split": 0
+    },
+    {
+      "id": "2f7f473cf9d5c1da940568a9d25d710ed3b317066f3f08512562c8b87b1e5c04:game-001-ply-048",
+      "group": "ruy-lopez",
+      "split": 1
+    },
+    {
+      "id": "660f105f73e8ea0a65966b3b67eae4af74a49a654a6d5c299405f50ded3cdad6:game-001-ply-044",
+      "group": "ruy-lopez",
+      "split": 1
+    },
+    {
+      "id": "660f105f73e8ea0a65966b3b67eae4af74a49a654a6d5c299405f50ded3cdad6:game-003-ply-038",
+      "group": "petrov",
+      "split": 0
+    },
+    {
+      "id": "660f105f73e8ea0a65966b3b67eae4af74a49a654a6d5c299405f50ded3cdad6:game-005-ply-018",
+      "group": "ruy-lopez",
+      "split": 1
+    },
+    {
+      "id": "660f105f73e8ea0a65966b3b67eae4af74a49a654a6d5c299405f50ded3cdad6:game-007-ply-022",
+      "group": "petrov",
+      "split": 0
+    },
+    {
+      "id": "660f105f73e8ea0a65966b3b67eae4af74a49a654a6d5c299405f50ded3cdad6:game-008-ply-011",
+      "group": "petrov",
+      "split": 0
+    },
+    {
+      "id": "660f105f73e8ea0a65966b3b67eae4af74a49a654a6d5c299405f50ded3cdad6:game-003-ply-050",
+      "group": "petrov",
+      "split": 0
+    }
+  ],
+  "prepared_pairs_sha256": "d8e60563c6503333205b2dbf93c45427ba24fd32302b8a3493cb525074633d0e"
+}

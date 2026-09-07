@@ -16,7 +16,7 @@ The improvement comes from our original compiled search, faster quiescence termi
 
 Strict read-only/no-network/no-subprocess inference passed, including table probes. Initialization was 28.80s and peak measured memory 229.6MB. Only original Python source and own weights plus attributed permitted table data ship; compilation occurs in memory. The prior full suite passed 108 tests, and four additional successor-data tests passed separately.
 
-ZIP SHA-256: `e4b66bd0f5a16418a49119c0547a818c3bb79a3c9e209b3eca7210907e072f63`. All 45 chronological versions through v1.44 remain available. No competition upload or repository write-access grant was performed.
+ZIP SHA-256: `e4b66bd0f5a16418a49119c0547a818c3bb79a3c9e209b3eca7210907e072f63`. All 47 chronological versions through v1.46 remain available. No competition upload or repository write-access grant was performed.
 
 Later experimental v1.42 achieved a verified checkmate win against nominal2600:
 its complete four-game result was1W/2D/1L. It scored2W/0D/2L at nominal2400 and
@@ -26,9 +26,16 @@ with the [cycle03 critique](IMPROVEMENT_CYCLE_03.md).
 
 The v1.43 table experiment fixed a measured conversion in drills but no ordinary
 game reached its added coverage; its comparison also failed to establish a gain.
-The v1.44 isolated move-order experiment passed correctness and efficiency gates
-and is now playing its fixed development screen. Eight verified successor pairs
-from recent audits are retained for future targeted replay; no new fit is claimed.
-See [cycle05](IMPROVEMENT_CYCLE_05.md). Exposed positions/groups remain development
+The v1.44 move-order experiment finished2W/2D/4L versus v1.41,3W/1D/0L at nominal2400
+and0W/0D/4L at nominal2600; it was not promoted. All 16 games were audited.
+
+The next supervised pilot verified18 quiet successor pairs and trained two matched
+models for 6 fixed epochs: score-only v1.45 and preference-learningv1.46. Twelve pairs
+were used for training; six Ruy Lopez pairs were held out. Correct held-out ordering
+was1/6 initially,2/6 forscore-only and3/6 forpreference learning. Ordinary validation
+error worsened slightly within the predeclared1% cap. The36-position development
+search/speed gate passed, and a fixed24-game comparison/rated screen is running.
+These small diagnostic gains do not establish better playing strength or an Elo.
+See [cycle06](IMPROVEMENT_CYCLE_06.md). Exposed positions/groups remain development
 data and cannot become fresh confirmation. The full-project backup is a separate
-earlier snapshot; the current source and evidence are preserved in Git.
+earlier snapshot; current source and evidence are preserved in Git.
