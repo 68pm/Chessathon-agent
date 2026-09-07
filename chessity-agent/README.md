@@ -53,5 +53,6 @@ The selected package passed blocked file-creation, deletion, renaming and direct
 | [v1.34](versions/v1.34/chessity-agent-v1.34.zip) | Elite teacher-only matched control | matched teacher-only ablation; not independently promoted |
 | [v1.35](versions/v1.35/chessity-agent-v1.35.zip) | Original compiled search preflight | failed Windows import preflight; archival only; do not upload |
 | [v1.36](versions/v1.36/chessity-agent-v1.36.zip) | Original compiled classical search | 8W0D0L versus v1.14 in development; not independently promoted |
+| [v1.37](versions/v1.37/chessity-agent-v1.37.zip) | Original trained leaf residual evaluator | 2W4D2L versus compiled control; no demonstrated gain; not promoted |
 
-All 37 versions are retained in development order with version tags. Source and own trained weights beside each ZIP match its bytes. v1.35 is a failed preflight preserved for audit and should not be uploaded. New experimental versions are not automatically recommended. Downloaded raw player histories and external engine executables are excluded.
+All 38 versions are retained in development order with version tags. Source and own trained weights beside each ZIP match its bytes. v1.35 is a failed preflight preserved for audit and should not be uploaded. New experimental versions are not automatically recommended. Downloaded raw player histories and external engine executables are excluded.
