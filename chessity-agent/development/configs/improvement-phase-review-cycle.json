@@ -1,0 +1,11 @@
+{
+  "output": "runs/improvement-loop-20260907/cycle-07-phase-review",
+  "wait_for": ["runs/improvement-loop-20260907/cycle-07/controller.json"],
+  "stages": [
+    {
+      "name": "quarter-rated-phase-diagnosis",
+      "module": "scripts.improvement_phase_report",
+      "arguments": ["--matches", "runs/improvement-loop-20260907/cycle-07/rated-compiled-paired-quarter-v1/results.json", "--audit", "runs/improvement-loop-20260907/cycle-07/rated-error-audit", "--out", "runs/improvement-loop-20260907/phase-diagnosis-01/v1.47-rated.json", "--label", "v1.47-rated"]
+    }
+  ]
+}

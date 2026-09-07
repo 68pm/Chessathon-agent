@@ -49,3 +49,12 @@ No promotion follows from the selected diagnostic, and consistent2600 is unmet.
 Exposed positions/groups remain development data and cannot become fresh
 confirmation. The full-project backup is a separate earlier snapshot; current
 source and evidence are preserved in Git.
+
+The [phase diagnosis](IMPROVEMENT_PHASE_DIAGNOSIS.md) reuses32 completed games and
+1,614 audited own moves. Four of v1.41's five2600 losses ended in the endgame, but
+the first verified losing transition was middlegame in two, endgame in one and
+unresolved in two. Threat calculation and conversion both remain priorities.
+Future iterations review code, descendant-position learning and targeted data in
+that order. Keep a fixed-strength focus; retire2400 only after independent winning
+consistency and replace it with2800, and similarly2600 with3000. Neither level has
+qualified. The selected download remains the byte-identical v1.41 archive.

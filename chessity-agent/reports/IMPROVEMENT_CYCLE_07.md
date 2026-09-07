@@ -95,3 +95,10 @@ Three-part review, following the user's reaffirmed priority order:
    No external collection was needed. Later targets should address the remaining
    threat and ending failures, with verified branch values and held-out families,
    if the next code audit identifies a learning-related gap.
+
+The8-game comparison completed2W/5D/1L against v1.41, with no runtime failures and
+independent schedule, legal-move, clock, outcome and frozen-source checks passed.
+Its56.25% score and four opening pairs are insufficient for promotion; the paired
+bootstrap interval is37.5%–75%. The rated schedule and its audit continue unchanged.
+The new phase report will run automatically after that audit, with no new teacher
+calls. Subsequent tests follow the user's fixed-strength consistency/pool rules.

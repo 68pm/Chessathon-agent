@@ -6,6 +6,14 @@ all three needs, including a reason when no change is warranted. Assessing all
 three does not require changing all three at once: preserve a matched control so
 the result can be attributed to the tested change.
 
+Maintain a fixed-strength focus until wins are repeatable. Use the phase report to
+distinguish the first verified deterioration from the phase in which the game
+ended. Report unresolved losses and missed conversion opportunities in draws too.
+Consult configs/improvement-opponent-pool.json for active levels and the user's
+replacement rule: verified consistency against2400 replaces it with2800; against
+2600 replaces it with3000. No level has qualified yet. A single win, point estimate
+or small development screen cannot retire a level. Do not modify running schedules.
+
 1. **Engine code.** Identify the concrete missed threat, wasted search work, or
    conversion failure using actual game history and verified alternatives. Check
    legality, terminal and draw handling before evaluating strength. State the

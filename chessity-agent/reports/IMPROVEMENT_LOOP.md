@@ -59,6 +59,14 @@ the current fixed calibration screen is complete. Preserve its schedule and
 weights while it runs. Do not resume broad data collection or unchanged fitting
 merely to keep the programme busy.
 
+Latest pool rule: use configs/improvement-opponent-pool.json. Start with2400/2600;
+focus development on2400 and first-deterioration phases, not the highest isolated
+win. Only verified consistency retires a level: replace2400 with2800, and2600 with
+3000. Do not change active frozen schedules or qualify from exposed/interrupted
+screens. Analyse opening, middlegame and endgame warnings separately from terminal
+phase, including draws with squandered advantages. The original2600 target remains
+a milestone; the user also authorises the resulting2800/3000 checks.
+
 Rules rechecked: https://aichessathon.com/docs and https://aichessathon.com/terms,
 2026-09-07. Numba 0.67.0 allowed; Python 3.12, one CPU, 2 GB, 90s init, 50 MB ZIP
 uncompressed, read-only inference. No Daily Five material is accessed.

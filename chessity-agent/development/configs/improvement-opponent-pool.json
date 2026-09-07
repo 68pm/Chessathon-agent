@@ -1,0 +1,33 @@
+{
+  "status": "active",
+  "active_nominal_levels": [2400, 2600],
+  "development_focus": 2400,
+  "replacement_after_verified_consistency": {"2400": 2800, "2600": 3000},
+  "retired_nominal_levels": [],
+  "qualification_attempts": [],
+  "time_control": "120+0.5",
+  "consistency_rule": {
+    "independent_blocks": 2,
+    "games_per_block": 64,
+    "distinct_colour_paired_groups_per_block": 32,
+    "require_same_frozen_agent": true,
+    "require_fresh_groups_across_blocks": true,
+    "require_outright_wins_over_draws_plus_losses_in_each_block": true,
+    "require_lower_bound_on_outright_win_probability_over": 0.5,
+    "familywise_alpha_budget": 0.05,
+    "attempt_alpha": "0.05 / (attempt * (attempt + 1)); split equally across both blocks",
+    "method": "Bounded colour-pair Hoeffding lower bound; independence and stable conditions required",
+    "require_no_runtime_failures_or_interrupted_confirmation": true,
+    "require_independent_clock_source_outcome_and_freshness_audit": true
+  },
+  "engine_option_verification": {
+    "engine": "Stockfish 19 offline opponent",
+    "uci_elo_min": 1320,
+    "uci_elo_max": 3190,
+    "all_requested_levels_supported": true,
+    "verification_date": "2026-09-07"
+  },
+  "progression": "Keep each level until consistency is verified; then remove it from the regular pool and add its specified replacement. Select the lowest remaining level as the next development focus. Never alter a running frozen schedule. No replacement above3000 is currently specified.",
+  "qualification_status": "Neither2400 nor2600 has qualified. Small development screens and isolated wins do not change this pool.",
+  "scope": "Opponent handicap settings are not calibrated human, FIDE or Chess.com Elo. Compare the agent with the selected incumbent separately. Original2600 target remains a milestone; user also authorises subsequent pool checks at2800 and3000."
+}
