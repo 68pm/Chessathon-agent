@@ -1,0 +1,103 @@
+{
+  "candidate": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\improvement-loop-20260907\\mistake-replay-01\\round-3-candidate\\agent",
+  "requested_seconds": 20.0,
+  "requested_nodes": 250000,
+  "source_code_sha256": "53acb620cfc5c904fd1289bafe3f3804c19b04b9f61533628480e544980b6e92",
+  "max_depth": 64,
+  "value_blend_override": null,
+  "audit_sha256": "255562eae04f112b82d69c331e09a646583f65d713305513ed1390918aa74852",
+  "results": [
+    {
+      "id": "recent-competition:game-055-ply-041",
+      "source_label": "verified_200cp_error",
+      "fen": "r3r1k1/5ppp/8/p1R5/2N5/7P/1Pn1BPK1/4R3 w - - 1 26",
+      "original_move": "g2f1",
+      "uci": "g2f1",
+      "depth": 6,
+      "nodes": 250000,
+      "seconds": 1.018271500011906,
+      "score": 72,
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": true
+    },
+    {
+      "id": "newest-vs41:game-001-ply-013",
+      "source_label": "verified_200cp_error",
+      "fen": "r1bqr1k1/1p2ppbn/3p2p1/p5Bp/P1P4Q/2N3P1/RP2PPBP/5RK1 w - - 4 14",
+      "original_move": "g5d2",
+      "uci": "g2f3",
+      "depth": 5,
+      "nodes": 250000,
+      "seconds": 1.4198304000019561,
+      "score": -80,
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": false
+    },
+    {
+      "id": "newest-vs47:game-002-ply-046",
+      "source_label": "verified_200cp_error",
+      "fen": "r6k/1p6/pqn2PBp/2p1p1b1/2P5/1P2P3/P2B3Q/5RK1 b - - 0 30",
+      "original_move": "a8f8",
+      "uci": "a8g8",
+      "depth": 5,
+      "nodes": 250000,
+      "seconds": 1.0142456000030506,
+      "score": -261,
+      "agrees_with_deep_teacher": true,
+      "repeats_large_error": false
+    },
+    {
+      "id": "newest-vs47:game-002-ply-098",
+      "source_label": "verified_200cp_error",
+      "fen": "8/6k1/R7/2P4B/P3pr2/1P3nKp/8/8 b - - 1 56",
+      "original_move": "f4f5",
+      "uci": "f4f5",
+      "depth": 8,
+      "nodes": 250000,
+      "seconds": 0.7981360999983735,
+      "score": -108,
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": true
+    },
+    {
+      "id": "newest-vs48:game-001-ply-015",
+      "source_label": "verified_200cp_error",
+      "fen": "r2q1rk1/3b1pb1/3p1npp/nppPp3/4P3/1PNQBNP1/P4PBP/R4RK1 w - - 0 15",
+      "original_move": "f3e5",
+      "uci": "f3e5",
+      "depth": 5,
+      "nodes": 250000,
+      "seconds": 1.0481012999953236,
+      "score": -19,
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": true
+    },
+    {
+      "id": "newest-vs48:game-002-ply-052",
+      "source_label": "verified_200cp_error",
+      "fen": "2r3k1/q5b1/3p2pp/1R1P1p2/4p3/6P1/2r2P1P/1Q2NRK1 b - - 1 33",
+      "original_move": "c2d2",
+      "uci": "c2d2",
+      "depth": 5,
+      "nodes": 250000,
+      "seconds": 0.9835065999941435,
+      "score": 210,
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": true
+    },
+    {
+      "id": "newest-vs48:game-002-ply-056",
+      "source_label": "verified_200cp_error",
+      "fen": "2r3k1/q5b1/3p2pp/1R1P1p2/5Q2/4p1P1/3r1P1P/4NRK1 b - - 1 35",
+      "original_move": "g7d4",
+      "uci": "g7d4",
+      "depth": 5,
+      "nodes": 250000,
+      "seconds": 0.982301300013205,
+      "score": 278,
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": true
+    }
+  ],
+  "scope": "Previously audited development positions. Teacher top-one agreement is diagnostic, not a new strength claim. Root policy preference disabled in both probes."
+}

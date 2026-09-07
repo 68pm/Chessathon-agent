@@ -1,0 +1,51 @@
+{
+  "candidate": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\candidates\\compiled-pawn-proof-v1",
+  "requested_seconds": 20.0,
+  "requested_nodes": 250000,
+  "source_code_sha256": "53acb620cfc5c904fd1289bafe3f3804c19b04b9f61533628480e544980b6e92",
+  "max_depth": 64,
+  "value_blend_override": null,
+  "audit_sha256": "62ccdb5ae63d706e835484c90e28c80e28536137af9b129ee8e62778e6d2fca7",
+  "results": [
+    {
+      "id": "game-001-ply-034",
+      "source_label": "verified_200cp_error",
+      "fen": "2bqr1k1/1pp3b1/6pp/1P1p4/3P2pP/Q3PNP1/3N2P1/5RK1 w - - 0 23",
+      "original_move": "f3e1",
+      "uci": "f3e1",
+      "depth": 6,
+      "nodes": 250000,
+      "seconds": 0.39278500000364147,
+      "score": -78,
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": true
+    },
+    {
+      "id": "game-002-ply-045",
+      "source_label": "verified_200cp_error",
+      "fen": "4r1k1/1pr3q1/2pRb2p/p3P2R/P7/4P2P/1P2Q1P1/6K1 b - - 0 28",
+      "original_move": "e6f7",
+      "uci": "e6d5",
+      "depth": 5,
+      "nodes": 250000,
+      "seconds": 0.382988800003659,
+      "score": 80,
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": false
+    },
+    {
+      "id": "game-002-ply-101",
+      "source_label": "verified_200cp_error",
+      "fen": "4R3/5bP1/5K2/8/prpk4/8/8/8 b - - 15 56",
+      "original_move": "f7e8",
+      "uci": "f7e8",
+      "depth": 7,
+      "nodes": 250000,
+      "seconds": 0.35359250000328757,
+      "score": 375,
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": true
+    }
+  ],
+  "scope": "Previously audited development positions. Teacher top-one agreement is diagnostic, not a new strength claim. Root policy preference disabled in both probes."
+}

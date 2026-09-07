@@ -1,0 +1,38 @@
+{
+  "candidate": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\improvement-loop-20260907\\mistake-replay-01\\round-3-control\\agent",
+  "requested_seconds": 20.0,
+  "requested_nodes": 250000,
+  "source_code_sha256": "53acb620cfc5c904fd1289bafe3f3804c19b04b9f61533628480e544980b6e92",
+  "max_depth": 64,
+  "value_blend_override": null,
+  "audit_sha256": "bf5021676ea4e9b175acba77732899524d120ce3ca06a08bb863c382456842d9",
+  "results": [
+    {
+      "id": "recent-competition:game-054-ply-050",
+      "source_label": "verified_200cp_error",
+      "fen": "2r3k1/2rb2b1/3p2p1/p2P1p2/p3pP1p/NqP1B3/1P1Q2PP/1RR3K1 b - - 7 33",
+      "original_move": "g7c3",
+      "uci": "c7b7",
+      "depth": 5,
+      "nodes": 250000,
+      "seconds": 1.3439352000132203,
+      "score": 238,
+      "agrees_with_deep_teacher": true,
+      "repeats_large_error": false
+    },
+    {
+      "id": "recent-competition:game-054-ply-056",
+      "source_label": "verified_200cp_error",
+      "fen": "2r3k1/3b4/3p2p1/p2P1p2/p2BpP1p/q1P5/3Q2PP/1R4K1 b - - 1 36",
+      "original_move": "d7e8",
+      "uci": "d7e8",
+      "depth": 6,
+      "nodes": 250000,
+      "seconds": 1.2221123999916017,
+      "score": 279,
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": true
+    }
+  ],
+  "scope": "Previously audited development positions. Teacher top-one agreement is diagnostic, not a new strength claim. Root policy preference disabled in both probes."
+}

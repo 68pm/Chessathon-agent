@@ -1,0 +1,43 @@
+{
+  "output": "runs/improvement-loop-20260907/mistake-replay-01",
+  "wait_for": "runs/improvement-loop-20260907/cycle-15-battery/controller.json",
+  "base": "candidates/compiled-qsearch-endgames-v1",
+  "initial_model": "candidates/compiled-paired-quarter-v1/models/value.npz",
+  "ordinary": "runs/improvement-loop-20260907/residual-pilot-01/dataset.npz",
+  "ordinary_manifest": "runs/improvement-loop-20260907/residual-pilot-01/dataset-manifest.json",
+  "seed": 2026090721,
+  "recipe": {
+    "max_rounds": 3,
+    "updates_per_round": 128,
+    "batch_size": 128,
+    "learning_rate": 0.0003,
+    "blend": 0.25
+  },
+  "sources": [
+    {
+      "label": "recent-competition",
+      "matches": "runs/improvement-loop-20260907/competition-20260907/recent/results.json",
+      "audit": "runs/improvement-loop-20260907/competition-20260907/recent-audit"
+    },
+    {
+      "label": "newest-vs41",
+      "matches": "runs/improvement-loop-20260907/cycle-15-vs41/comparison-compiled-queen-pawn-v1/results.json",
+      "audit": "runs/improvement-loop-20260907/cycle-15-battery/audit-v1.41"
+    },
+    {
+      "label": "newest-vs47",
+      "matches": "runs/improvement-loop-20260907/cycle-15-vs47/comparison-compiled-queen-pawn-v1/results.json",
+      "audit": "runs/improvement-loop-20260907/cycle-15-battery/audit-v1.47"
+    },
+    {
+      "label": "newest-vs48",
+      "matches": "runs/improvement-loop-20260907/cycle-15-vs48/comparison-compiled-queen-pawn-v1/results.json",
+      "audit": "runs/improvement-loop-20260907/cycle-15-battery/audit-v1.48"
+    },
+    {
+      "label": "newest-rated",
+      "matches": "runs/improvement-loop-20260907/cycle-15-rated/rated-compiled-queen-pawn-v1/results.json",
+      "audit": "runs/improvement-loop-20260907/cycle-15-battery/audit-rated"
+    }
+  ]
+}

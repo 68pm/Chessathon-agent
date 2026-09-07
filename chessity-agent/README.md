@@ -6,9 +6,9 @@
 
 [Completed confirmation and actual results](reports/IMPROVEMENT_RESULTS.md): 23W/1D/0L against v1.14, with rated results and limitations in the report. **Consistent 2600 strength is not established; improvement work continues.**
 
-[Search findings](reports/IMPROVEMENT_CYCLE_01.md) · [Learning critique](reports/IMPROVEMENT_CYCLE_02.md) · [Historical elite results](reports/ELITE_LEARNING_RESULTS.md)
+[Search findings](reports/IMPROVEMENT_CYCLE_01.md) Â· [Learning critique](reports/IMPROVEMENT_CYCLE_02.md) Â· [Historical elite results](reports/ELITE_LEARNING_RESULTS.md)
 
-Experimental v1.42 achieved one nominal2600 checkmate win but did not beat the incumbent overall. Full-weight learned v1.46 was not promoted. Calibrated v1.47 finished2W/5D/1L versus v1.41, 2W/1D/1L at nominal2400 and0W/1D/3L at nominal2600. All16 completed games were audited; its interrupted development screen does not establish a stronger replacement or consistency. v1.41 remains selected. [Learning critique](reports/IMPROVEMENT_CYCLE_06.md) · [Calibration critique](reports/IMPROVEMENT_CYCLE_07.md).
+Experimental v1.42 achieved one nominal2600 checkmate win but did not beat the incumbent overall. Full-weight learned v1.46 was not promoted. Calibrated v1.47 finished2W/5D/1L versus v1.41, 2W/1D/1L at nominal2400 and0W/1D/3L at nominal2600. All16 completed games were audited; its interrupted development screen does not establish a stronger replacement or consistency. v1.41 remains selected. [Learning critique](reports/IMPROVEMENT_CYCLE_06.md) Â· [Calibration critique](reports/IMPROVEMENT_CYCLE_07.md).
 
 [Phase diagnosis and fixed-strength progression](reports/IMPROVEMENT_PHASE_DIAGNOSIS.md): analyse the first deterioration separately from the final phase. Every iteration prioritises engine code, effective learning and targeted data. Only verified consistency replaces2400 with2800 or2600 with3000. Neither level has qualified; isolated wins do not advance the pool.
 
@@ -24,6 +24,8 @@ The [latest three actual competition games](reports/COMPETITION_RECENT_GAMES.md)
 
 
 Completed practical pair: **0 wins, 1 draw, 1 loss against v1.41**,120+0.5. All source, legal-move, clock and outcome audits passed; candidate runtime failures=0. Selected download: **v1.41**. This follows the declared practical rule and does not establish an Elo gain or stable superiority. v1.41 is retained.
+
+[Newest ten-game diagnostic](reports/COMPETITION_TEN_GAME_REVIEW.md): v1.49 is archival only; two startup failures and0W/0D/2L versus41 prevented selection. [Growth plan](reports/COMPETITION_GROWTH_PLAN.md) and [bounded mistake replay](reports/IMPROVEMENT_CYCLE_16.md) guide the next work.
 
 ## Read-only runtime and repository access
 
@@ -84,4 +86,6 @@ The selected package passed blocked file-creation, deletion, renaming and direct
 
 | [v1.48](versions/v1.48/chessity-agent-v1.48.zip) | Exact legal-pawn proof speeds quiescence | 0W/1D/1L versus v1.41 at120+0.5; exact-work/speed/read-only gates passed; not selected after the short comparison |
 
-All 49 versions are retained in development order with version tags. Source and own trained weights beside each ZIP match its bytes. v1.35 is a failed preflight preserved for audit and should not be uploaded. New experimental versions are not automatically recommended. Downloaded raw player histories and external engine executables are excluded.
+| [v1.49](versions/v1.49/chessity-agent-v1.49.zip) | Queen-aware passed-pawn evaluation | Archival only: 0W0D2L vs41, 0W2D0L vs47, 1W0D1L vs48; two startup losses at2400; 1W1D0L at2600 with opponent flag win; not selected |
+
+All 50 versions are retained in development order with version tags. Source and own trained weights beside each ZIP match its bytes. v1.35 is a failed preflight preserved for audit and should not be uploaded. New experimental versions are not automatically recommended. Downloaded raw player histories and external engine executables are excluded.

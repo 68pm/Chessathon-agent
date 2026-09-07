@@ -1,0 +1,187 @@
+{
+  "id": "game-001-ply-034",
+  "fen": "2bqr1k1/1pp3b1/6pp/1P1p4/3P2pP/Q3PNP1/3N2P1/5RK1 w - - 0 23",
+  "candidate": "candidates\\compiled-pawn-proof-v1",
+  "source_sha256": "28bb844972c819e9ca96809fab757abbf4c289c0a715997c8a5b164bbf5ba99f",
+  "core_sha256": "6c202cfb7a888093362f8da9010d77a0ca7aab98480c57846f2328d86a7fa0ba",
+  "limits": {
+    "seconds": 2.0,
+    "nodes": 1000000
+  },
+  "records": [
+    {
+      "depth": 1,
+      "root": {
+        "uci": "f3e1",
+        "score": 3,
+        "completed_depth": 1,
+        "nodes": 258
+      },
+      "choices": [
+        {
+          "uci": "f3e1",
+          "score": 3,
+          "complete": true,
+          "nodes": 15,
+          "seconds": 0.0006936000136192888,
+          "static": 3,
+          "reply": null
+        },
+        {
+          "uci": "f3e5",
+          "score": -106,
+          "complete": true,
+          "nodes": 10,
+          "seconds": 0.0011208999785594642,
+          "static": 71,
+          "reply": null
+        }
+      ]
+    },
+    {
+      "depth": 2,
+      "root": {
+        "uci": "f3e1",
+        "score": -50,
+        "completed_depth": 2,
+        "nodes": 576
+      },
+      "choices": [
+        {
+          "uci": "f3e1",
+          "score": -50,
+          "complete": true,
+          "nodes": 67,
+          "seconds": 0.0009391999919898808,
+          "static": 3,
+          "reply": "c8f5"
+        },
+        {
+          "uci": "f3e5",
+          "score": -106,
+          "complete": true,
+          "nodes": 31,
+          "seconds": 0.00028909998945891857,
+          "static": 71,
+          "reply": "g7e5"
+        }
+      ]
+    },
+    {
+      "depth": 3,
+      "root": {
+        "uci": "f3e1",
+        "score": -37,
+        "completed_depth": 3,
+        "nodes": 2592
+      },
+      "choices": [
+        {
+          "uci": "f3e1",
+          "score": -37,
+          "complete": true,
+          "nodes": 1101,
+          "seconds": 0.004278100008377805,
+          "static": 3,
+          "reply": "c8f5"
+        },
+        {
+          "uci": "f3e5",
+          "score": -106,
+          "complete": true,
+          "nodes": 390,
+          "seconds": 0.0015936999989207834,
+          "static": 71,
+          "reply": "g7e5"
+        }
+      ]
+    },
+    {
+      "depth": 4,
+      "root": {
+        "uci": "f3e1",
+        "score": -56,
+        "completed_depth": 4,
+        "nodes": 11083
+      },
+      "choices": [
+        {
+          "uci": "f3e1",
+          "score": -56,
+          "complete": true,
+          "nodes": 2918,
+          "seconds": 0.010868300014408305,
+          "static": 3,
+          "reply": "g7f6"
+        },
+        {
+          "uci": "f3e5",
+          "score": -106,
+          "complete": true,
+          "nodes": 985,
+          "seconds": 0.0035690999939106405,
+          "static": 71,
+          "reply": "g7e5"
+        }
+      ]
+    },
+    {
+      "depth": 5,
+      "root": {
+        "uci": "f3e1",
+        "score": -68,
+        "completed_depth": 5,
+        "nodes": 52716
+      },
+      "choices": [
+        {
+          "uci": "f3e1",
+          "score": -68,
+          "complete": true,
+          "nodes": 23861,
+          "seconds": 0.09383909997995943,
+          "static": 3,
+          "reply": "c8f5"
+        },
+        {
+          "uci": "f3e5",
+          "score": -114,
+          "complete": true,
+          "nodes": 15206,
+          "seconds": 0.05987009999807924,
+          "static": 71,
+          "reply": "c8f5"
+        }
+      ]
+    },
+    {
+      "depth": 6,
+      "root": {
+        "uci": "f3e1",
+        "score": -78,
+        "completed_depth": 6,
+        "nodes": 214266
+      },
+      "choices": [
+        {
+          "uci": "f3e1",
+          "score": -78,
+          "complete": true,
+          "nodes": 64827,
+          "seconds": 0.25028379997820593,
+          "static": 3,
+          "reply": "c8f5"
+        },
+        {
+          "uci": "f3e5",
+          "score": -118,
+          "complete": true,
+          "nodes": 29086,
+          "seconds": 0.09903219999978319,
+          "static": 71,
+          "reply": "g7e5"
+        }
+      ]
+    }
+  ]
+}

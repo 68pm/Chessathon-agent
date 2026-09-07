@@ -1,0 +1,187 @@
+{
+  "id": "game-002-ply-101",
+  "fen": "4R3/5bP1/5K2/8/prpk4/8/8/8 b - - 15 56",
+  "candidate": "candidates\\compiled-pawn-proof-v1",
+  "source_sha256": "28bb844972c819e9ca96809fab757abbf4c289c0a715997c8a5b164bbf5ba99f",
+  "core_sha256": "6c202cfb7a888093362f8da9010d77a0ca7aab98480c57846f2328d86a7fa0ba",
+  "limits": {
+    "seconds": 2.0,
+    "nodes": 1000000
+  },
+  "records": [
+    {
+      "depth": 1,
+      "root": {
+        "uci": "b4b7",
+        "score": 460,
+        "completed_depth": 1,
+        "nodes": 121
+      },
+      "choices": [
+        {
+          "uci": "f7e8",
+          "score": 363,
+          "complete": true,
+          "nodes": 5,
+          "seconds": 0.00039270002162083983,
+          "static": 1038,
+          "reply": null
+        },
+        {
+          "uci": "b4b7",
+          "score": 460,
+          "complete": true,
+          "nodes": 14,
+          "seconds": 0.00017479999223724008,
+          "static": 468,
+          "reply": null
+        }
+      ]
+    },
+    {
+      "depth": 2,
+      "root": {
+        "uci": "b4b7",
+        "score": 458,
+        "completed_depth": 2,
+        "nodes": 280
+      },
+      "choices": [
+        {
+          "uci": "f7e8",
+          "score": 363,
+          "complete": true,
+          "nodes": 9,
+          "seconds": 0.0003411000070627779,
+          "static": 1038,
+          "reply": "g7g8q"
+        },
+        {
+          "uci": "b4b7",
+          "score": 458,
+          "complete": true,
+          "nodes": 54,
+          "seconds": 0.0003555000002961606,
+          "static": 468,
+          "reply": "f6f5"
+        }
+      ]
+    },
+    {
+      "depth": 3,
+      "root": {
+        "uci": "f7d5",
+        "score": 453,
+        "completed_depth": 3,
+        "nodes": 2132
+      },
+      "choices": [
+        {
+          "uci": "f7e8",
+          "score": 371,
+          "complete": true,
+          "nodes": 91,
+          "seconds": 0.000597700010985136,
+          "static": 1038,
+          "reply": "g7g8q"
+        },
+        {
+          "uci": "b4b7",
+          "score": 304,
+          "complete": true,
+          "nodes": 903,
+          "seconds": 0.004005399998277426,
+          "static": 468,
+          "reply": "e8a8"
+        }
+      ]
+    },
+    {
+      "depth": 4,
+      "root": {
+        "uci": "f7d5",
+        "score": 453,
+        "completed_depth": 4,
+        "nodes": 3501
+      },
+      "choices": [
+        {
+          "uci": "f7e8",
+          "score": 364,
+          "complete": true,
+          "nodes": 209,
+          "seconds": 0.0010137000062968582,
+          "static": 1038,
+          "reply": "g7g8q"
+        },
+        {
+          "uci": "b4b7",
+          "score": 304,
+          "complete": true,
+          "nodes": 1372,
+          "seconds": 0.005028300016419962,
+          "static": 468,
+          "reply": "e8a8"
+        }
+      ]
+    },
+    {
+      "depth": 5,
+      "root": {
+        "uci": "f7e8",
+        "score": 366,
+        "completed_depth": 5,
+        "nodes": 14569
+      },
+      "choices": [
+        {
+          "uci": "f7e8",
+          "score": 366,
+          "complete": true,
+          "nodes": 1068,
+          "seconds": 0.003561299992725253,
+          "static": 1038,
+          "reply": "g7g8q"
+        },
+        {
+          "uci": "b4b7",
+          "score": 316,
+          "complete": true,
+          "nodes": 13639,
+          "seconds": 0.043402699986472726,
+          "static": 468,
+          "reply": "e8a8"
+        }
+      ]
+    },
+    {
+      "depth": 6,
+      "root": {
+        "uci": "f7e8",
+        "score": 364,
+        "completed_depth": 6,
+        "nodes": 33179
+      },
+      "choices": [
+        {
+          "uci": "f7e8",
+          "score": 364,
+          "complete": true,
+          "nodes": 3221,
+          "seconds": 0.009623699996154755,
+          "static": 1038,
+          "reply": "g7g8q"
+        },
+        {
+          "uci": "b4b7",
+          "score": 315,
+          "complete": true,
+          "nodes": 26933,
+          "seconds": 0.0819877999892924,
+          "static": 468,
+          "reply": "e8a8"
+        }
+      ]
+    }
+  ]
+}
