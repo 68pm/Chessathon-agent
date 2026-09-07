@@ -57,5 +57,6 @@ The selected package passed blocked file-creation, deletion, renaming and direct
 | [v1.38](versions/v1.38/chessity-agent-v1.38.zip) | Compiled search with elementary endgame tables | conversion drills and read-only checks passed; no ordinary matches |
 | [v1.39](versions/v1.39/chessity-agent-v1.39.zip) | Incremental residual evaluation | numerical and read-only checks passed; no ordinary matches |
 | [v1.40](versions/v1.40/chessity-agent-v1.40.zip) | Efficient quiescence terminal checks | fixed-node parity and read-only checks passed; no ordinary matches |
+| [v1.41](versions/v1.41/chessity-agent-v1.41.zip) | Efficient compiled search with endgame tables | independent confirmation in progress; not yet promoted |
 
-All 41 versions are retained in development order with version tags. Source and own trained weights beside each ZIP match its bytes. v1.35 is a failed preflight preserved for audit and should not be uploaded. New experimental versions are not automatically recommended. Downloaded raw player histories and external engine executables are excluded.
+All 42 versions are retained in development order with version tags. Source and own trained weights beside each ZIP match its bytes. v1.35 is a failed preflight preserved for audit and should not be uploaded. New experimental versions are not automatically recommended. Downloaded raw player histories and external engine executables are excluded.
