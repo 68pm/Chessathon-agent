@@ -1,6 +1,6 @@
 # Chess training and evaluation complete — 7 September 2026
 
-The 92-game phase experiment and 64-game elite learning/evaluation pilot are complete and audited. No training or benchmark controller remains active. Recommended upload: ../latest/chessity-agent.zip, v1.14. The new candidates did not meet promotion or 2400/2600 consistency targets. There are 35 versioned builds through v1.34; see ../reports/DELIVERY.md and ../reports/ELITE_LEARNING_RESULTS.md. Publication verification is recorded separately after the final push.
+The 92-game phase experiment and 64-game elite learning/evaluation pilot are complete and audited. No training or benchmark controller remains active. Recommended upload: ../latest/chessity-agent.zip, v1.14. The new candidates did not meet promotion or 2400/2600 consistency targets. There are 35 versioned builds through v1.34; see ../reports/DELIVERY.md and ../reports/ELITE_LEARNING_RESULTS.md. GitHub publication is verified: all 35 tagged ZIP downloads passed SHA-256 and ZIP checks, and the public latest ZIP matches the selected local agent byte for byte. See ../reports/evidence/github-publication-20260907.json.
 
 ## Archived earlier status
 
