@@ -1,0 +1,1891 @@
+{
+  "status": "complete",
+  "candidate": "candidates/threephase-pvs-v1",
+  "config": {
+    "scope": "Twelve additional phase drill games, separate from the 88-game rated/comparison budget: six each for the frozen baseline and selected challenger.",
+    "base_ms": 120000,
+    "increment_ms": 500,
+    "ply_cap": 600,
+    "workers": 2,
+    "opponent_elo": 2600,
+    "basic_conversion_fens": [
+      "7k/8/8/8/5Q2/2K5/8/8 w - - 0 1",
+      "7k/8/8/8/5R2/2K5/8/8 w - - 0 1"
+    ],
+    "mirror_each_basic_case": true,
+    "practical_near_equal_cases": 2,
+    "practical_max_abs_cp_both_budgets": 20,
+    "notes": "Basic material-family conversion drills have no installed tablebase proof. Mirrored cases are paired, not independent families. Practical equality is a finite teacher estimate, not exact WDL. Play to a real terminal result or the fixed ply cap; no evaluation adjudication."
+  },
+  "config_sha256": "eb666544335eb5c5bf9956204bb9aa4ba5f85d94b7e0b65eed8e360c537007cf",
+  "files": {
+    "agent.py": "42daf8b5e2024fdcfc636da1232dba044684c1d73fcd7e069f8c40d868feaf66",
+    "engine/__init__.py": "4b709ca1cc2a0a735610b4b7d4e981bf48960ee32fb43b74008eb3585b6f2230",
+    "engine/advanced_search.py": "99610dd91d166cdabc2e419c5cd2abd8a435e123a77f69da55c41fa0f95954c0",
+    "engine/evaluation.py": "0341daf1c779fa545ccac35931c9eeed360dec54a94794f818745abcfb2430f2",
+    "engine/features.py": "ae2c58155031225ae746556ce4dbf3d7300904a4571839ec983ad823ab238f3a",
+    "engine/fusion.py": "5e434119ed32929a451dd4ea24927ae9e0b173aa1704c94fb70bbf90f48f260e",
+    "engine/move_ordering.py": "2339554439997158142ce3530f9f8fbe18289d6405c13088b7e00a565d6ace7c",
+    "engine/neural.py": "a879ab961563f429b9defbaaa00c5ef72f39f2c6f2f48ff9744202adb6f33321",
+    "engine/openings.py": "0ee9b0788629af759b4ef638a44a1fbe14754968ec555ff41d1347fcf699295c",
+    "engine/player_policy.py": "0ae7d3c9b87b19e3f4e914c512383ee68d4bbdb72532cad8f937e41071982b30",
+    "engine/search.py": "b057052a89c6163d6fcc093345010797e607fde6e7f493b90e5484b589a0d150",
+    "engine/time_manager.py": "ae6874efbab490711d13a7579f6d9e90a2bc250fa022652c0d86c8b9ebd288fe",
+    "engine/transposition.py": "64376559b6b5be2e4ac31bebef183490c3074499f6a60213f7f04e05f5ef72bb",
+    "models/player-policy.npz": "1670b12e42fa7a48502e22d4202d79a809b1a8a0fba2b179a9d1671e53f4b6b7",
+    "runtime.json": "3c2dfaa8a85f518d3263533bbc5b5912bea0dc02963e03aeb03e1dc3e9913776"
+  },
+  "schedule": [
+    {
+      "id": 1,
+      "candidate_path": "candidates/threephase-pvs-v1",
+      "opening": [],
+      "elo": 2600,
+      "family": "basic_conversion_0",
+      "pair": 0,
+      "candidate_white": true,
+      "start_fen": "7k/8/8/8/5Q2/2K5/8/8 w - - 0 1",
+      "source_kind": "constructed_material_family_drill",
+      "mirrored": false,
+      "intended_objective": "complete_checkmate_without_stalemate_or_time_loss"
+    },
+    {
+      "id": 2,
+      "candidate_path": "candidates/threephase-pvs-v1",
+      "opening": [],
+      "elo": 2600,
+      "family": "basic_conversion_0",
+      "pair": 0,
+      "candidate_white": false,
+      "start_fen": "8/8/2k5/5q2/8/8/8/7K b - - 0 1",
+      "source_kind": "constructed_material_family_drill",
+      "mirrored": true,
+      "intended_objective": "complete_checkmate_without_stalemate_or_time_loss"
+    },
+    {
+      "id": 3,
+      "candidate_path": "candidates/threephase-pvs-v1",
+      "opening": [],
+      "elo": 2600,
+      "family": "basic_conversion_1",
+      "pair": 1,
+      "candidate_white": true,
+      "start_fen": "7k/8/8/8/5R2/2K5/8/8 w - - 0 1",
+      "source_kind": "constructed_material_family_drill",
+      "mirrored": false,
+      "intended_objective": "complete_checkmate_without_stalemate_or_time_loss"
+    },
+    {
+      "id": 4,
+      "candidate_path": "candidates/threephase-pvs-v1",
+      "opening": [],
+      "elo": 2600,
+      "family": "basic_conversion_1",
+      "pair": 1,
+      "candidate_white": false,
+      "start_fen": "8/8/2k5/5r2/8/8/8/7K b - - 0 1",
+      "source_kind": "constructed_material_family_drill",
+      "mirrored": true,
+      "intended_objective": "complete_checkmate_without_stalemate_or_time_loss"
+    },
+    {
+      "id": 5,
+      "candidate_path": "candidates/threephase-pvs-v1",
+      "opening": [],
+      "elo": 2600,
+      "family": "practical_near_equal",
+      "pair": 0,
+      "candidate_white": false,
+      "start_fen": "R7/5p1k/4p3/3p4/2nP4/p4R1P/3r2P1/6K1 b - - 7 53",
+      "source_id": "threephase:0b787841180f718629f7:106",
+      "source_kind": "heldout_game_finite_equality_estimate",
+      "canonical_key": "6k1/3R2p1/P4r1p/2Np4/3P4/4P3/5P1K/r7 w - -",
+      "intended_objective": "preserve_draw_or_win_against_2600_setting"
+    },
+    {
+      "id": 6,
+      "candidate_path": "candidates/threephase-pvs-v1",
+      "opening": [],
+      "elo": 2600,
+      "family": "practical_near_equal",
+      "pair": 1,
+      "candidate_white": true,
+      "start_fen": "8/8/8/4k3/1RP1nnp1/8/7P/6K1 w - - 1 51",
+      "source_id": "threephase:92da0973bcafc593e9f1:101",
+      "source_kind": "heldout_game_finite_equality_estimate",
+      "canonical_key": "6k1/7p/8/1rp1NNP1/4K3/8/8/8 b - -",
+      "intended_objective": "preserve_draw_or_win_against_2600_setting"
+    }
+  ],
+  "games": [
+    {
+      "id": 2,
+      "candidate_path": "candidates/threephase-pvs-v1",
+      "opening": [],
+      "elo": 2600,
+      "family": "basic_conversion_0",
+      "pair": 0,
+      "candidate_white": false,
+      "start_fen": "8/8/2k5/5q2/8/8/8/7K b - - 0 1",
+      "source_kind": "constructed_material_family_drill",
+      "mirrored": true,
+      "intended_objective": "complete_checkmate_without_stalemate_or_time_loss",
+      "score": 0.5,
+      "termination": "threefold_repetition",
+      "failed_colour": null,
+      "host_cpu_busy_fraction": 0.37802692643477465,
+      "host_load_scope": "Host-wide average during game and initialization; includes all applications, not per-engine utilization or an isolated-core guarantee.",
+      "moves": [
+        {
+          "uci": "f5f3",
+          "san": "Qf3+",
+          "fen": "8/8/2k5/5q2/8/8/8/7K b - - 0 1",
+          "white": false,
+          "clock_before_ms": 120000.0,
+          "elapsed_ms": 5265.28779999353,
+          "clock_after_ms": 115234.71220000647
+        },
+        {
+          "uci": "h1h2",
+          "san": "Kh2",
+          "fen": "8/8/2k5/8/8/5q2/8/7K w - - 1 2",
+          "white": true,
+          "clock_before_ms": 120000.0,
+          "elapsed_ms": 2285.537000017939,
+          "clock_after_ms": 118214.46299998206
+        },
+        {
+          "uci": "c6d5",
+          "san": "Kd5",
+          "fen": "8/8/2k5/8/8/5q2/7K/8 b - - 2 2",
+          "white": false,
+          "clock_before_ms": 115234.71220000647,
+          "elapsed_ms": 4792.745000013383,
+          "clock_after_ms": 110941.96719999309
+        },
+        {
+          "uci": "h2g1",
+          "san": "Kg1",
+          "fen": "8/8/8/3k4/8/5q2/7K/8 w - - 3 3",
+          "white": true,
+          "clock_before_ms": 118214.46299998206,
+          "elapsed_ms": 148.57549997395836,
+          "clock_after_ms": 118565.8875000081
+        },
+        {
+          "uci": "d5e5",
+          "san": "Ke5",
+          "fen": "8/8/8/3k4/8/5q2/8/6K1 b - - 4 3",
+          "white": false,
+          "clock_before_ms": 110941.96719999309,
+          "elapsed_ms": 4568.937200005166,
+          "clock_after_ms": 106873.02999998792
+        },
+        {
+          "uci": "g1h2",
+          "san": "Kh2",
+          "fen": "8/8/8/4k3/8/5q2/8/6K1 w - - 5 4",
+          "white": true,
+          "clock_before_ms": 118565.8875000081,
+          "elapsed_ms": 281.25359999830835,
+          "clock_after_ms": 118784.6339000098
+        },
+        {
+          "uci": "e5d5",
+          "san": "Kd5",
+          "fen": "8/8/8/4k3/8/5q2/7K/8 b - - 6 4",
+          "white": false,
+          "clock_before_ms": 106873.02999998792,
+          "elapsed_ms": 5022.181100008311,
+          "clock_after_ms": 102350.84889997961
+        },
+        {
+          "uci": "h2g1",
+          "san": "Kg1",
+          "fen": "8/8/8/3k4/8/5q2/7K/8 w - - 7 5",
+          "white": true,
+          "clock_before_ms": 118784.6339000098,
+          "elapsed_ms": 16.788999986601993,
+          "clock_after_ms": 119267.84490002319
+        },
+        {
+          "uci": "d5e5",
+          "san": "Ke5",
+          "fen": "8/8/8/3k4/8/5q2/8/6K1 b - - 8 5",
+          "white": false,
+          "clock_before_ms": 102350.84889997961,
+          "elapsed_ms": 4240.655299974605,
+          "clock_after_ms": 98610.193600005
+        },
+        {
+          "uci": "g1h2",
+          "san": "Kh2",
+          "fen": "8/8/8/4k3/8/5q2/8/6K1 w - - 9 6",
+          "white": true,
+          "clock_before_ms": 119267.84490002319,
+          "elapsed_ms": 291.3845000148285,
+          "clock_after_ms": 119476.46040000836
+        }
+      ],
+      "init_ms": {
+        "white": 694.6683999849483,
+        "black": 670.1212000043597
+      },
+      "uci_limits": [
+        {
+          "ply": 2,
+          "white_clock": 120.0,
+          "black_clock": 115.23471220000647,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 4,
+          "white_clock": 118.21446299998206,
+          "black_clock": 110.94196719999309,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 6,
+          "white_clock": 118.5658875000081,
+          "black_clock": 106.87302999998792,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 8,
+          "white_clock": 118.7846339000098,
+          "black_clock": 102.35084889997961,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 10,
+          "white_clock": 119.26784490002319,
+          "black_clock": 98.610193600005,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        }
+      ],
+      "pgn": "[Event \"Chessity fast-chess verified pilot\"]\n[Site \"Local offline\"]\n[Date \"????.??.??\"]\n[Round \"2\"]\n[White \"Stockfish 19 UCI_Elo 2600\"]\n[Black \"threephase-pvs-v1\"]\n[Result \"1/2-1/2\"]\n[FEN \"8/8/2k5/5q2/8/8/8/7K b - - 0 1\"]\n[SetUp \"1\"]\n[TimeControl \"120+0.5\"]\n[Termination \"threefold_repetition\"]\n[OpeningSetupUCI \"\"]\n\n1... Qf3+ { [%clk 0:01:55.235] } 2. Kh2 { [%clk 0:01:58.214] } 2... Kd5 { [%clk 0:01:50.942] } 3. Kg1 { [%clk 0:01:58.566] } 3... Ke5 { [%clk 0:01:46.873] } 4. Kh2 { [%clk 0:01:58.785] } 4... Kd5 { [%clk 0:01:42.351] } 5. Kg1 { [%clk 0:01:59.268] } 5... Ke5 { [%clk 0:01:38.61] } 6. Kh2 { [%clk 0:01:59.476] } 1/2-1/2",
+      "seconds": 28.357511300011538,
+      "final_fen": "8/8/8/4k3/8/5q2/7K/8 b - - 10 6"
+    },
+    {
+      "id": 1,
+      "candidate_path": "candidates/threephase-pvs-v1",
+      "opening": [],
+      "elo": 2600,
+      "family": "basic_conversion_0",
+      "pair": 0,
+      "candidate_white": true,
+      "start_fen": "7k/8/8/8/5Q2/2K5/8/8 w - - 0 1",
+      "source_kind": "constructed_material_family_drill",
+      "mirrored": false,
+      "intended_objective": "complete_checkmate_without_stalemate_or_time_loss",
+      "score": 0.5,
+      "termination": "threefold_repetition",
+      "failed_colour": null,
+      "host_cpu_busy_fraction": 0.3810848400556328,
+      "host_load_scope": "Host-wide average during game and initialization; includes all applications, not per-engine utilization or an isolated-core guarantee.",
+      "moves": [
+        {
+          "uci": "f4f6",
+          "san": "Qf6+",
+          "fen": "7k/8/8/8/5Q2/2K5/8/8 w - - 0 1",
+          "white": true,
+          "clock_before_ms": 120000.0,
+          "elapsed_ms": 5347.453700000187,
+          "clock_after_ms": 115152.54629999981
+        },
+        {
+          "uci": "h8g8",
+          "san": "Kg8",
+          "fen": "7k/8/5Q2/8/8/2K5/8/8 b - - 1 1",
+          "white": false,
+          "clock_before_ms": 120000.0,
+          "elapsed_ms": 2242.460300010862,
+          "clock_after_ms": 118257.53969998914
+        },
+        {
+          "uci": "c3d4",
+          "san": "Kd4",
+          "fen": "6k1/8/5Q2/8/8/2K5/8/8 w - - 2 2",
+          "white": true,
+          "clock_before_ms": 115152.54629999981,
+          "elapsed_ms": 4790.50250002183,
+          "clock_after_ms": 110862.04379997798
+        },
+        {
+          "uci": "g8h7",
+          "san": "Kh7",
+          "fen": "6k1/8/5Q2/8/3K4/8/8/8 b - - 3 2",
+          "white": false,
+          "clock_before_ms": 118257.53969998914,
+          "elapsed_ms": 186.92840001313016,
+          "clock_after_ms": 118570.61129997601
+        },
+        {
+          "uci": "d4d5",
+          "san": "Kd5",
+          "fen": "8/7k/5Q2/8/3K4/8/8/8 w - - 4 3",
+          "white": true,
+          "clock_before_ms": 110862.04379997798,
+          "elapsed_ms": 4566.202099988004,
+          "clock_after_ms": 106795.84169998998
+        },
+        {
+          "uci": "h7g8",
+          "san": "Kg8",
+          "fen": "8/7k/5Q2/3K4/8/8/8/8 b - - 5 3",
+          "white": false,
+          "clock_before_ms": 118570.61129997601,
+          "elapsed_ms": 274.67969999997877,
+          "clock_after_ms": 118795.93159997603
+        },
+        {
+          "uci": "d5e4",
+          "san": "Ke4",
+          "fen": "6k1/8/5Q2/3K4/8/8/8/8 w - - 6 4",
+          "white": true,
+          "clock_before_ms": 106795.84169998998,
+          "elapsed_ms": 5018.789199995808,
+          "clock_after_ms": 102277.05249999417
+        },
+        {
+          "uci": "g8h7",
+          "san": "Kh7",
+          "fen": "6k1/8/5Q2/8/4K3/8/8/8 b - - 7 4",
+          "white": false,
+          "clock_before_ms": 118795.93159997603,
+          "elapsed_ms": 277.1515999920666,
+          "clock_after_ms": 119018.77999998396
+        },
+        {
+          "uci": "e4d4",
+          "san": "Kd4",
+          "fen": "8/7k/5Q2/8/4K3/8/8/8 w - - 8 5",
+          "white": true,
+          "clock_before_ms": 102277.05249999417,
+          "elapsed_ms": 4822.541200002888,
+          "clock_after_ms": 97954.51129999128
+        },
+        {
+          "uci": "h7g8",
+          "san": "Kg8",
+          "fen": "8/7k/5Q2/8/3K4/8/8/8 b - - 9 5",
+          "white": false,
+          "clock_before_ms": 119018.77999998396,
+          "elapsed_ms": 336.09540000907145,
+          "clock_after_ms": 119182.68459997489
+        },
+        {
+          "uci": "d4e4",
+          "san": "Ke4",
+          "fen": "6k1/8/5Q2/8/3K4/8/8/8 w - - 10 6",
+          "white": true,
+          "clock_before_ms": 97954.51129999128,
+          "elapsed_ms": 4161.852799996268,
+          "clock_after_ms": 94292.65849999501
+        },
+        {
+          "uci": "g8h7",
+          "san": "Kh7",
+          "fen": "6k1/8/5Q2/8/4K3/8/8/8 b - - 11 6",
+          "white": false,
+          "clock_before_ms": 119182.68459997489,
+          "elapsed_ms": 342.6426000078209,
+          "clock_after_ms": 119340.04199996707
+        },
+        {
+          "uci": "e4d4",
+          "san": "Kd4",
+          "fen": "8/7k/5Q2/8/4K3/8/8/8 w - - 12 7",
+          "white": true,
+          "clock_before_ms": 94292.65849999501,
+          "elapsed_ms": 4572.757999994792,
+          "clock_after_ms": 90219.90050000022
+        },
+        {
+          "uci": "h7g8",
+          "san": "Kg8",
+          "fen": "8/7k/5Q2/8/3K4/8/8/8 b - - 13 7",
+          "white": false,
+          "clock_before_ms": 119340.04199996707,
+          "elapsed_ms": 341.13700001034886,
+          "clock_after_ms": 119498.90499995672
+        }
+      ],
+      "init_ms": {
+        "white": 694.483900006162,
+        "black": 324.7774000046775
+      },
+      "uci_limits": [
+        {
+          "ply": 1,
+          "white_clock": 115.15254629999981,
+          "black_clock": 120.0,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 3,
+          "white_clock": 110.86204379997798,
+          "black_clock": 118.25753969998914,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 5,
+          "white_clock": 106.79584169998998,
+          "black_clock": 118.57061129997601,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 7,
+          "white_clock": 102.27705249999417,
+          "black_clock": 118.79593159997603,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 9,
+          "white_clock": 97.95451129999128,
+          "black_clock": 119.01877999998396,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 11,
+          "white_clock": 94.29265849999501,
+          "black_clock": 119.18268459997489,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 13,
+          "white_clock": 90.21990050000022,
+          "black_clock": 119.34004199996707,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        }
+      ],
+      "pgn": "[Event \"Chessity fast-chess verified pilot\"]\n[Site \"Local offline\"]\n[Date \"????.??.??\"]\n[Round \"1\"]\n[White \"threephase-pvs-v1\"]\n[Black \"Stockfish 19 UCI_Elo 2600\"]\n[Result \"1/2-1/2\"]\n[FEN \"7k/8/8/8/5Q2/2K5/8/8 w - - 0 1\"]\n[SetUp \"1\"]\n[TimeControl \"120+0.5\"]\n[Termination \"threefold_repetition\"]\n[OpeningSetupUCI \"\"]\n\n1. Qf6+ { [%clk 0:01:55.153] } 1... Kg8 { [%clk 0:01:58.258] } 2. Kd4 { [%clk 0:01:50.862] } 2... Kh7 { [%clk 0:01:58.571] } 3. Kd5 { [%clk 0:01:46.796] } 3... Kg8 { [%clk 0:01:58.796] } 4. Ke4 { [%clk 0:01:42.277] } 4... Kh7 { [%clk 0:01:59.019] } 5. Kd4 { [%clk 0:01:37.955] } 5... Kg8 { [%clk 0:01:59.183] } 6. Ke4 { [%clk 0:01:34.293] } 6... Kh7 { [%clk 0:01:59.34] } 7. Kd4 { [%clk 0:01:30.22] } 7... Kg8 { [%clk 0:01:59.499] } 1/2-1/2",
+      "seconds": 38.3964999000018,
+      "final_fen": "6k1/8/5Q2/8/3K4/8/8/8 w - - 14 8"
+    },
+    {
+      "id": 3,
+      "candidate_path": "candidates/threephase-pvs-v1",
+      "opening": [],
+      "elo": 2600,
+      "family": "basic_conversion_1",
+      "pair": 1,
+      "candidate_white": true,
+      "start_fen": "7k/8/8/8/5R2/2K5/8/8 w - - 0 1",
+      "source_kind": "constructed_material_family_drill",
+      "mirrored": false,
+      "intended_objective": "complete_checkmate_without_stalemate_or_time_loss",
+      "score": 1.0,
+      "termination": "checkmate",
+      "failed_colour": null,
+      "host_cpu_busy_fraction": 0.3843730308758664,
+      "host_load_scope": "Host-wide average during game and initialization; includes all applications, not per-engine utilization or an isolated-core guarantee.",
+      "moves": [
+        {
+          "uci": "c3d4",
+          "san": "Kd4",
+          "fen": "7k/8/8/8/5R2/2K5/8/8 w - - 0 1",
+          "white": true,
+          "clock_before_ms": 120000.0,
+          "elapsed_ms": 3649.9868000100832,
+          "clock_after_ms": 116850.01319998992
+        },
+        {
+          "uci": "h8g8",
+          "san": "Kg8",
+          "fen": "7k/8/8/8/3K1R2/8/8/8 b - - 1 1",
+          "white": false,
+          "clock_before_ms": 120000.0,
+          "elapsed_ms": 3661.5397999994457,
+          "clock_after_ms": 116838.46020000055
+        },
+        {
+          "uci": "d4e5",
+          "san": "Ke5",
+          "fen": "6k1/8/8/8/3K1R2/8/8/8 w - - 2 2",
+          "white": true,
+          "clock_before_ms": 116850.01319998992,
+          "elapsed_ms": 3399.0257999976166,
+          "clock_after_ms": 113950.9873999923
+        },
+        {
+          "uci": "g8g7",
+          "san": "Kg7",
+          "fen": "6k1/8/8/4K3/5R2/8/8/8 b - - 3 2",
+          "white": false,
+          "clock_before_ms": 116838.46020000055,
+          "elapsed_ms": 1603.3368999778759,
+          "clock_after_ms": 115735.12330002268
+        },
+        {
+          "uci": "f4f6",
+          "san": "Rf6",
+          "fen": "8/6k1/8/4K3/5R2/8/8/8 w - - 4 3",
+          "white": true,
+          "clock_before_ms": 113950.9873999923,
+          "elapsed_ms": 3392.517400003271,
+          "clock_after_ms": 111058.46999998903
+        },
+        {
+          "uci": "g7g8",
+          "san": "Kg8",
+          "fen": "8/6k1/5R2/4K3/8/8/8/8 b - - 5 3",
+          "white": false,
+          "clock_before_ms": 115735.12330002268,
+          "elapsed_ms": 1564.0885999891907,
+          "clock_after_ms": 114671.03470003349
+        },
+        {
+          "uci": "e5e4",
+          "san": "Ke4",
+          "fen": "6k1/8/5R2/4K3/8/8/8/8 w - - 6 4",
+          "white": true,
+          "clock_before_ms": 111058.46999998903,
+          "elapsed_ms": 3312.030400004005,
+          "clock_after_ms": 108246.43959998502
+        },
+        {
+          "uci": "g8h8",
+          "san": "Kh8",
+          "fen": "6k1/8/5R2/8/4K3/8/8/8 b - - 7 4",
+          "white": false,
+          "clock_before_ms": 114671.03470003349,
+          "elapsed_ms": 1318.7737000116613,
+          "clock_after_ms": 113852.26100002183
+        },
+        {
+          "uci": "f6g6",
+          "san": "Rg6",
+          "fen": "7k/8/5R2/8/4K3/8/8/8 w - - 8 5",
+          "white": true,
+          "clock_before_ms": 108246.43959998502,
+          "elapsed_ms": 2311.5944000019226,
+          "clock_after_ms": 106434.8451999831
+        },
+        {
+          "uci": "h8h7",
+          "san": "Kh7",
+          "fen": "7k/8/6R1/8/4K3/8/8/8 b - - 9 5",
+          "white": false,
+          "clock_before_ms": 113852.26100002183,
+          "elapsed_ms": 82.82330000656657,
+          "clock_after_ms": 114269.43770001526
+        },
+        {
+          "uci": "e4f5",
+          "san": "Kf5",
+          "fen": "8/7k/6R1/8/4K3/8/8/8 w - - 10 6",
+          "white": true,
+          "clock_before_ms": 106434.8451999831,
+          "elapsed_ms": 3409.2199000006076,
+          "clock_after_ms": 103525.6252999825
+        },
+        {
+          "uci": "h7h8",
+          "san": "Kh8",
+          "fen": "8/7k/6R1/5K2/8/8/8/8 b - - 11 6",
+          "white": false,
+          "clock_before_ms": 114269.43770001526,
+          "elapsed_ms": 8.8984000030905,
+          "clock_after_ms": 114760.53930001217
+        },
+        {
+          "uci": "f5f6",
+          "san": "Kf6",
+          "fen": "7k/8/6R1/5K2/8/8/8/8 w - - 12 7",
+          "white": true,
+          "clock_before_ms": 103525.6252999825,
+          "elapsed_ms": 4.4610999757424,
+          "clock_after_ms": 104021.16420000675
+        },
+        {
+          "uci": "h8h7",
+          "san": "Kh7",
+          "fen": "7k/8/5KR1/8/8/8/8/8 b - - 13 7",
+          "white": false,
+          "clock_before_ms": 114760.53930001217,
+          "elapsed_ms": 6.978699995670468,
+          "clock_after_ms": 115253.5606000165
+        },
+        {
+          "uci": "f6f7",
+          "san": "Kf7",
+          "fen": "8/7k/5KR1/8/8/8/8/8 w - - 14 8",
+          "white": true,
+          "clock_before_ms": 104021.16420000675,
+          "elapsed_ms": 17.65049999812618,
+          "clock_after_ms": 104503.51370000863
+        },
+        {
+          "uci": "h7h8",
+          "san": "Kh8",
+          "fen": "8/5K1k/6R1/8/8/8/8/8 b - - 15 8",
+          "white": false,
+          "clock_before_ms": 115253.5606000165,
+          "elapsed_ms": 1.2376999948173761,
+          "clock_after_ms": 115752.32290002168
+        },
+        {
+          "uci": "g6h6",
+          "san": "Rh6#",
+          "fen": "7k/5K2/6R1/8/8/8/8/8 w - - 16 9",
+          "white": true,
+          "clock_before_ms": 104503.51370000863,
+          "elapsed_ms": 3.0977000133134425,
+          "clock_after_ms": 105000.41599999531
+        }
+      ],
+      "init_ms": {
+        "white": 753.110799996648,
+        "black": 345.05810000700876
+      },
+      "uci_limits": [
+        {
+          "ply": 1,
+          "white_clock": 116.85001319998992,
+          "black_clock": 120.0,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 3,
+          "white_clock": 113.9509873999923,
+          "black_clock": 116.83846020000055,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 5,
+          "white_clock": 111.05846999998903,
+          "black_clock": 115.73512330002268,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 7,
+          "white_clock": 108.24643959998502,
+          "black_clock": 114.67103470003349,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 9,
+          "white_clock": 106.4348451999831,
+          "black_clock": 113.85226100002183,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 11,
+          "white_clock": 103.5256252999825,
+          "black_clock": 114.26943770001526,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 13,
+          "white_clock": 104.02116420000675,
+          "black_clock": 114.76053930001217,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 15,
+          "white_clock": 104.50351370000863,
+          "black_clock": 115.2535606000165,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        }
+      ],
+      "pgn": "[Event \"Chessity fast-chess verified pilot\"]\n[Site \"Local offline\"]\n[Date \"????.??.??\"]\n[Round \"3\"]\n[White \"threephase-pvs-v1\"]\n[Black \"Stockfish 19 UCI_Elo 2600\"]\n[Result \"1-0\"]\n[FEN \"7k/8/8/8/5R2/2K5/8/8 w - - 0 1\"]\n[SetUp \"1\"]\n[TimeControl \"120+0.5\"]\n[Termination \"checkmate\"]\n[OpeningSetupUCI \"\"]\n\n1. Kd4 { [%clk 0:01:56.85] } 1... Kg8 { [%clk 0:01:56.838] } 2. Ke5 { [%clk 0:01:53.951] } 2... Kg7 { [%clk 0:01:55.735] } 3. Rf6 { [%clk 0:01:51.058] } 3... Kg8 { [%clk 0:01:54.671] } 4. Ke4 { [%clk 0:01:48.246] } 4... Kh8 { [%clk 0:01:53.852] } 5. Rg6 { [%clk 0:01:46.435] } 5... Kh7 { [%clk 0:01:54.269] } 6. Kf5 { [%clk 0:01:43.526] } 6... Kh8 { [%clk 0:01:54.761] } 7. Kf6 { [%clk 0:01:44.021] } 7... Kh7 { [%clk 0:01:55.254] } 8. Kf7 { [%clk 0:01:44.504] } 8... Kh8 { [%clk 0:01:55.752] } 9. Rh6# { [%clk 0:01:45] } 1-0",
+      "seconds": 28.93366139999125,
+      "final_fen": "7k/5K2/7R/8/8/8/8/8 b - - 17 9"
+    },
+    {
+      "id": 4,
+      "candidate_path": "candidates/threephase-pvs-v1",
+      "opening": [],
+      "elo": 2600,
+      "family": "basic_conversion_1",
+      "pair": 1,
+      "candidate_white": false,
+      "start_fen": "8/8/2k5/5r2/8/8/8/7K b - - 0 1",
+      "source_kind": "constructed_material_family_drill",
+      "mirrored": true,
+      "intended_objective": "complete_checkmate_without_stalemate_or_time_loss",
+      "score": 1.0,
+      "termination": "checkmate",
+      "failed_colour": null,
+      "host_cpu_busy_fraction": 0.3808631251714364,
+      "host_load_scope": "Host-wide average during game and initialization; includes all applications, not per-engine utilization or an isolated-core guarantee.",
+      "moves": [
+        {
+          "uci": "c6d5",
+          "san": "Kd5",
+          "fen": "8/8/2k5/5r2/8/8/8/7K b - - 0 1",
+          "white": false,
+          "clock_before_ms": 120000.0,
+          "elapsed_ms": 3650.227800011635,
+          "clock_after_ms": 116849.77219998837
+        },
+        {
+          "uci": "h1g2",
+          "san": "Kg2",
+          "fen": "8/8/8/3k1r2/8/8/8/7K w - - 1 2",
+          "white": true,
+          "clock_before_ms": 120000.0,
+          "elapsed_ms": 3783.6286000092514,
+          "clock_after_ms": 116716.37139999075
+        },
+        {
+          "uci": "f5f4",
+          "san": "Rf4",
+          "fen": "8/8/8/3k1r2/8/8/6K1/8 b - - 2 2",
+          "white": false,
+          "clock_before_ms": 116849.77219998837,
+          "elapsed_ms": 3399.004500010051,
+          "clock_after_ms": 113950.76769997831
+        },
+        {
+          "uci": "g2h3",
+          "san": "Kh3",
+          "fen": "8/8/8/3k4/5r2/8/6K1/8 w - - 3 3",
+          "white": true,
+          "clock_before_ms": 116716.37139999075,
+          "elapsed_ms": 1724.802600016119,
+          "clock_after_ms": 115491.56879997463
+        },
+        {
+          "uci": "d5e4",
+          "san": "Ke4",
+          "fen": "8/8/8/3k4/5r2/7K/8/8 b - - 4 3",
+          "white": false,
+          "clock_before_ms": 113950.76769997831,
+          "elapsed_ms": 3553.542899986496,
+          "clock_after_ms": 110897.22479999182
+        },
+        {
+          "uci": "h3g3",
+          "san": "Kg3",
+          "fen": "8/8/8/8/4kr2/7K/8/8 w - - 5 4",
+          "white": true,
+          "clock_before_ms": 115491.56879997463,
+          "elapsed_ms": 1776.8931000027806,
+          "clock_after_ms": 114214.67569997185
+        },
+        {
+          "uci": "e4e3",
+          "san": "Ke3",
+          "fen": "8/8/8/8/4kr2/6K1/8/8 b - - 6 4",
+          "white": false,
+          "clock_before_ms": 110897.22479999182,
+          "elapsed_ms": 3308.231600007275,
+          "clock_after_ms": 108088.99319998454
+        },
+        {
+          "uci": "g3g2",
+          "san": "Kg2",
+          "fen": "8/8/8/8/5r2/4k1K1/8/8 w - - 7 5",
+          "white": true,
+          "clock_before_ms": 114214.67569997185,
+          "elapsed_ms": 557.2547999909148,
+          "clock_after_ms": 114157.42089998093
+        },
+        {
+          "uci": "f4f3",
+          "san": "Rf3",
+          "fen": "8/8/8/8/5r2/4k3/6K1/8 b - - 8 5",
+          "white": false,
+          "clock_before_ms": 108088.99319998454,
+          "elapsed_ms": 2276.384099997813,
+          "clock_after_ms": 106312.60909998673
+        },
+        {
+          "uci": "g2g1",
+          "san": "Kg1",
+          "fen": "8/8/8/8/8/4kr2/6K1/8 w - - 9 6",
+          "white": true,
+          "clock_before_ms": 114157.42089998093,
+          "elapsed_ms": 41.05529998196289,
+          "clock_after_ms": 114616.36559999897
+        },
+        {
+          "uci": "f3f2",
+          "san": "Rf2",
+          "fen": "8/8/8/8/8/4kr2/8/6K1 b - - 10 6",
+          "white": false,
+          "clock_before_ms": 106312.60909998673,
+          "elapsed_ms": 3250.658700009808,
+          "clock_after_ms": 103561.95039997692
+        },
+        {
+          "uci": "g1h1",
+          "san": "Kh1",
+          "fen": "8/8/8/8/8/4k3/5r2/6K1 w - - 11 7",
+          "white": true,
+          "clock_before_ms": 114616.36559999897,
+          "elapsed_ms": 10.199899988947436,
+          "clock_after_ms": 115106.16570001002
+        },
+        {
+          "uci": "e3f3",
+          "san": "Kf3",
+          "fen": "8/8/8/8/8/4k3/5r2/7K b - - 12 7",
+          "white": false,
+          "clock_before_ms": 103561.95039997692,
+          "elapsed_ms": 4.905500012682751,
+          "clock_after_ms": 104057.04489996424
+        },
+        {
+          "uci": "h1g1",
+          "san": "Kg1",
+          "fen": "8/8/8/8/8/5k2/5r2/7K w - - 13 8",
+          "white": true,
+          "clock_before_ms": 115106.16570001002,
+          "elapsed_ms": 7.270499976584688,
+          "clock_after_ms": 115598.89520003344
+        },
+        {
+          "uci": "f3g3",
+          "san": "Kg3",
+          "fen": "8/8/8/8/8/5k2/5r2/6K1 b - - 14 8",
+          "white": false,
+          "clock_before_ms": 104057.04489996424,
+          "elapsed_ms": 14.384200010681525,
+          "clock_after_ms": 104542.66069995356
+        },
+        {
+          "uci": "g1h1",
+          "san": "Kh1",
+          "fen": "8/8/8/8/8/6k1/5r2/6K1 w - - 15 9",
+          "white": true,
+          "clock_before_ms": 115598.89520003344,
+          "elapsed_ms": 1.9059000187553465,
+          "clock_after_ms": 116096.98930001468
+        },
+        {
+          "uci": "f2f1",
+          "san": "Rf1#",
+          "fen": "8/8/8/8/8/6k1/5r2/7K b - - 16 9",
+          "white": false,
+          "clock_before_ms": 104542.66069995356,
+          "elapsed_ms": 2.681600017240271,
+          "clock_after_ms": 105039.97909993632
+        }
+      ],
+      "init_ms": {
+        "white": 326.436500006821,
+        "black": 682.161000004271
+      },
+      "uci_limits": [
+        {
+          "ply": 2,
+          "white_clock": 120.0,
+          "black_clock": 116.84977219998837,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 4,
+          "white_clock": 116.71637139999075,
+          "black_clock": 113.95076769997831,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 6,
+          "white_clock": 115.49156879997463,
+          "black_clock": 110.89722479999182,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 8,
+          "white_clock": 114.21467569997185,
+          "black_clock": 108.08899319998454,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 10,
+          "white_clock": 114.15742089998093,
+          "black_clock": 106.31260909998673,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 12,
+          "white_clock": 114.61636559999897,
+          "black_clock": 103.56195039997692,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 14,
+          "white_clock": 115.10616570001002,
+          "black_clock": 104.05704489996424,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 16,
+          "white_clock": 115.59889520003344,
+          "black_clock": 104.54266069995356,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        }
+      ],
+      "pgn": "[Event \"Chessity fast-chess verified pilot\"]\n[Site \"Local offline\"]\n[Date \"????.??.??\"]\n[Round \"4\"]\n[White \"Stockfish 19 UCI_Elo 2600\"]\n[Black \"threephase-pvs-v1\"]\n[Result \"0-1\"]\n[FEN \"8/8/2k5/5r2/8/8/8/7K b - - 0 1\"]\n[SetUp \"1\"]\n[TimeControl \"120+0.5\"]\n[Termination \"checkmate\"]\n[OpeningSetupUCI \"\"]\n\n1... Kd5 { [%clk 0:01:56.85] } 2. Kg2 { [%clk 0:01:56.716] } 2... Rf4 { [%clk 0:01:53.951] } 3. Kh3 { [%clk 0:01:55.492] } 3... Ke4 { [%clk 0:01:50.897] } 4. Kg3 { [%clk 0:01:54.215] } 4... Ke3 { [%clk 0:01:48.089] } 5. Kg2 { [%clk 0:01:54.157] } 5... Rf3 { [%clk 0:01:46.313] } 6. Kg1 { [%clk 0:01:54.616] } 6... Rf2 { [%clk 0:01:43.562] } 7. Kh1 { [%clk 0:01:55.106] } 7... Kf3 { [%clk 0:01:44.057] } 8. Kg1 { [%clk 0:01:55.599] } 8... Kg3 { [%clk 0:01:44.543] } 9. Kh1 { [%clk 0:01:56.097] } 9... Rf1# { [%clk 0:01:45.04] } 0-1",
+      "seconds": 28.475732500024606,
+      "final_fen": "8/8/8/8/8/6k1/8/5r1K w - - 17 10"
+    },
+    {
+      "id": 5,
+      "candidate_path": "candidates/threephase-pvs-v1",
+      "opening": [],
+      "elo": 2600,
+      "family": "practical_near_equal",
+      "pair": 0,
+      "candidate_white": false,
+      "start_fen": "R7/5p1k/4p3/3p4/2nP4/p4R1P/3r2P1/6K1 b - - 7 53",
+      "source_id": "threephase:0b787841180f718629f7:106",
+      "source_kind": "heldout_game_finite_equality_estimate",
+      "canonical_key": "6k1/3R2p1/P4r1p/2Np4/3P4/4P3/5P1K/r7 w - -",
+      "intended_objective": "preserve_draw_or_win_against_2600_setting",
+      "score": 0.0,
+      "termination": "checkmate",
+      "failed_colour": null,
+      "host_cpu_busy_fraction": 0.3962829528527384,
+      "host_load_scope": "Host-wide average during game and initialization; includes all applications, not per-engine utilization or an isolated-core guarantee.",
+      "moves": [
+        {
+          "uci": "d2d4",
+          "san": "Rxd4",
+          "fen": "R7/5p1k/4p3/3p4/2nP4/p4R1P/3r2P1/6K1 b - - 7 53",
+          "white": false,
+          "clock_before_ms": 120000.0,
+          "elapsed_ms": 5339.415700000245,
+          "clock_after_ms": 115160.58429999975
+        },
+        {
+          "uci": "a8a7",
+          "san": "Ra7",
+          "fen": "R7/5p1k/4p3/3p4/2nr4/p4R1P/6P1/6K1 w - - 0 54",
+          "white": true,
+          "clock_before_ms": 120000.0,
+          "elapsed_ms": 9748.842899978627,
+          "clock_after_ms": 110751.15710002137
+        },
+        {
+          "uci": "h7g6",
+          "san": "Kg6",
+          "fen": "8/R4p1k/4p3/3p4/2nr4/p4R1P/6P1/6K1 b - - 1 54",
+          "white": false,
+          "clock_before_ms": 115160.58429999975,
+          "elapsed_ms": 5509.423899988178,
+          "clock_after_ms": 110151.16040001158
+        },
+        {
+          "uci": "f3g3",
+          "san": "Rg3+",
+          "fen": "8/R4p2/4p1k1/3p4/2nr4/p4R1P/6P1/6K1 w - - 2 55",
+          "white": true,
+          "clock_before_ms": 110751.15710002137,
+          "elapsed_ms": 8734.750900010113,
+          "clock_after_ms": 102516.40620001126
+        },
+        {
+          "uci": "g6h6",
+          "san": "Kh6",
+          "fen": "8/R4p2/4p1k1/3p4/2nr4/p5RP/6P1/6K1 b - - 3 55",
+          "white": false,
+          "clock_before_ms": 110151.16040001158,
+          "elapsed_ms": 5280.264200002421,
+          "clock_after_ms": 105370.89620000916
+        },
+        {
+          "uci": "g1h2",
+          "san": "Kh2",
+          "fen": "8/R4p2/4p2k/3p4/2nr4/p5RP/6P1/6K1 w - - 4 56",
+          "white": true,
+          "clock_before_ms": 102516.40620001126,
+          "elapsed_ms": 4105.1090999972075,
+          "clock_after_ms": 98911.29710001405
+        },
+        {
+          "uci": "f7f5",
+          "san": "f5",
+          "fen": "8/R4p2/4p2k/3p4/2nr4/p5RP/6PK/8 b - - 5 56",
+          "white": false,
+          "clock_before_ms": 105370.89620000916,
+          "elapsed_ms": 5061.377600010019,
+          "clock_after_ms": 100809.51859999914
+        },
+        {
+          "uci": "g3g8",
+          "san": "Rg8",
+          "fen": "8/R7/4p2k/3p1p2/2nr4/p5RP/6PK/8 w - - 0 57",
+          "white": true,
+          "clock_before_ms": 98911.29710001405,
+          "elapsed_ms": 3355.3747000114527,
+          "clock_after_ms": 96055.9224000026
+        },
+        {
+          "uci": "e6e5",
+          "san": "e5",
+          "fen": "6R1/R7/4p2k/3p1p2/2nr4/p6P/6PK/8 b - - 1 57",
+          "white": false,
+          "clock_before_ms": 100809.51859999914,
+          "elapsed_ms": 5037.050200015074,
+          "clock_after_ms": 96272.46839998406
+        },
+        {
+          "uci": "h2g3",
+          "san": "Kg3",
+          "fen": "6R1/R7/7k/3ppp2/2nr4/p6P/6PK/8 w - - 0 58",
+          "white": true,
+          "clock_before_ms": 96055.9224000026,
+          "elapsed_ms": 5629.959799989592,
+          "clock_after_ms": 90925.96260001301
+        },
+        {
+          "uci": "d4d3",
+          "san": "Rd3+",
+          "fen": "6R1/R7/7k/3ppp2/2nr4/p5KP/6P1/8 b - - 1 58",
+          "white": false,
+          "clock_before_ms": 96272.46839998406,
+          "elapsed_ms": 4821.043500007363,
+          "clock_after_ms": 91951.4248999767
+        },
+        {
+          "uci": "g3h2",
+          "san": "Kh2",
+          "fen": "6R1/R7/7k/3ppp2/2n5/p2r2KP/6P1/8 w - - 2 59",
+          "white": true,
+          "clock_before_ms": 90925.96260001301,
+          "elapsed_ms": 7767.201600014232,
+          "clock_after_ms": 83658.76099999878
+        },
+        {
+          "uci": "e5e4",
+          "san": "e4",
+          "fen": "6R1/R7/7k/3ppp2/2n5/p2r3P/6PK/8 b - - 3 59",
+          "white": false,
+          "clock_before_ms": 91951.4248999767,
+          "elapsed_ms": 4615.534799988382,
+          "clock_after_ms": 87835.89009998832
+        },
+        {
+          "uci": "a7a6",
+          "san": "Ra6+",
+          "fen": "6R1/R7/7k/3p1p2/2n1p3/p2r3P/6PK/8 w - - 0 60",
+          "white": true,
+          "clock_before_ms": 83658.76099999878,
+          "elapsed_ms": 11801.40389999724,
+          "clock_after_ms": 72357.35710000154
+        },
+        {
+          "uci": "h6h7",
+          "san": "Kh7",
+          "fen": "6R1/8/R6k/3p1p2/2n1p3/p2r3P/6PK/8 b - - 1 60",
+          "white": false,
+          "clock_before_ms": 87835.89009998832,
+          "elapsed_ms": 4593.717100011418,
+          "clock_after_ms": 83742.1729999769
+        },
+        {
+          "uci": "g8e8",
+          "san": "Re8",
+          "fen": "6R1/7k/R7/3p1p2/2n1p3/p2r3P/6PK/8 w - - 2 61",
+          "white": true,
+          "clock_before_ms": 72357.35710000154,
+          "elapsed_ms": 2710.7460999977775,
+          "clock_after_ms": 70146.61100000376
+        },
+        {
+          "uci": "h7g7",
+          "san": "Kg7",
+          "fen": "4R3/7k/R7/3p1p2/2n1p3/p2r3P/6PK/8 b - - 3 61",
+          "white": false,
+          "clock_before_ms": 83742.1729999769,
+          "elapsed_ms": 3958.9197000022978,
+          "clock_after_ms": 80283.2532999746
+        },
+        {
+          "uci": "e8e7",
+          "san": "Re7+",
+          "fen": "4R3/6k1/R7/3p1p2/2n1p3/p2r3P/6PK/8 w - - 4 62",
+          "white": true,
+          "clock_before_ms": 70146.61100000376,
+          "elapsed_ms": 16264.08399999491,
+          "clock_after_ms": 54382.52700000885
+        },
+        {
+          "uci": "g7f8",
+          "san": "Kf8",
+          "fen": "8/4R1k1/R7/3p1p2/2n1p3/p2r3P/6PK/8 b - - 5 62",
+          "white": false,
+          "clock_before_ms": 80283.2532999746,
+          "elapsed_ms": 4219.319800002268,
+          "clock_after_ms": 76563.93349997234
+        },
+        {
+          "uci": "e7c7",
+          "san": "Rc7",
+          "fen": "5k2/4R3/R7/3p1p2/2n1p3/p2r3P/6PK/8 w - - 6 63",
+          "white": true,
+          "clock_before_ms": 54382.52700000885,
+          "elapsed_ms": 6441.217699990375,
+          "clock_after_ms": 48441.309300018474
+        },
+        {
+          "uci": "c4d6",
+          "san": "Nd6",
+          "fen": "5k2/2R5/R7/3p1p2/2n1p3/p2r3P/6PK/8 b - - 7 63",
+          "white": false,
+          "clock_before_ms": 76563.93349997234,
+          "elapsed_ms": 4399.761100008618,
+          "clock_after_ms": 72664.17239996372
+        },
+        {
+          "uci": "a6d6",
+          "san": "Rxd6",
+          "fen": "5k2/2R5/R2n4/3p1p2/4p3/p2r3P/6PK/8 w - - 8 64",
+          "white": true,
+          "clock_before_ms": 48441.309300018474,
+          "elapsed_ms": 5850.294100004248,
+          "clock_after_ms": 43091.015200014226
+        },
+        {
+          "uci": "f8e8",
+          "san": "Ke8",
+          "fen": "5k2/2R5/3R4/3p1p2/4p3/p2r3P/6PK/8 b - - 0 64",
+          "white": false,
+          "clock_before_ms": 72664.17239996372,
+          "elapsed_ms": 4001.3204000133555,
+          "clock_after_ms": 69162.85199995036
+        },
+        {
+          "uci": "d6h6",
+          "san": "Rh6",
+          "fen": "4k3/2R5/3R4/3p1p2/4p3/p2r3P/6PK/8 w - - 1 65",
+          "white": true,
+          "clock_before_ms": 43091.015200014226,
+          "elapsed_ms": 1772.0007000025362,
+          "clock_after_ms": 41819.01450001169
+        },
+        {
+          "uci": "e8d8",
+          "san": "Kd8",
+          "fen": "4k3/2R5/7R/3p1p2/4p3/p2r3P/6PK/8 b - - 2 65",
+          "white": false,
+          "clock_before_ms": 69162.85199995036,
+          "elapsed_ms": 1661.5597999771126,
+          "clock_after_ms": 68001.29219997325
+        },
+        {
+          "uci": "c7a7",
+          "san": "Ra7",
+          "fen": "3k4/2R5/7R/3p1p2/4p3/p2r3P/6PK/8 w - - 3 66",
+          "white": true,
+          "clock_before_ms": 41819.01450001169,
+          "elapsed_ms": 804.0151999739464,
+          "clock_after_ms": 41514.99930003774
+        },
+        {
+          "uci": "d3h3",
+          "san": "Rxh3+",
+          "fen": "3k4/R7/7R/3p1p2/4p3/p2r3P/6PK/8 b - - 4 66",
+          "white": false,
+          "clock_before_ms": 68001.29219997325,
+          "elapsed_ms": 46.52420000638813,
+          "clock_after_ms": 68454.76799996686
+        },
+        {
+          "uci": "h6h3",
+          "san": "Rxh3",
+          "fen": "3k4/R7/7R/3p1p2/4p3/p6r/6PK/8 w - - 0 67",
+          "white": true,
+          "clock_before_ms": 41514.99930003774,
+          "elapsed_ms": 5585.034700023243,
+          "clock_after_ms": 36429.9646000145
+        },
+        {
+          "uci": "d5d4",
+          "san": "d4",
+          "fen": "3k4/R7/8/3p1p2/4p3/p6R/6PK/8 b - - 0 67",
+          "white": false,
+          "clock_before_ms": 68454.76799996686,
+          "elapsed_ms": 4.008699994301423,
+          "clock_after_ms": 68950.75929997256
+        },
+        {
+          "uci": "g2g3",
+          "san": "g3",
+          "fen": "3k4/R7/8/5p2/3pp3/p6R/6PK/8 w - - 0 68",
+          "white": true,
+          "clock_before_ms": 36429.9646000145,
+          "elapsed_ms": 2.413799986243248,
+          "clock_after_ms": 36927.55080002826
+        },
+        {
+          "uci": "d4d3",
+          "san": "d3",
+          "fen": "3k4/R7/8/5p2/3pp3/p5PR/7K/8 b - - 0 68",
+          "white": false,
+          "clock_before_ms": 68950.75929997256,
+          "elapsed_ms": 11.005200009094551,
+          "clock_after_ms": 69439.75409996347
+        },
+        {
+          "uci": "h3h8",
+          "san": "Rh8#",
+          "fen": "3k4/R7/8/5p2/4p3/p2p2PR/7K/8 w - - 0 69",
+          "white": true,
+          "clock_before_ms": 36927.55080002826,
+          "elapsed_ms": 2.867899980628863,
+          "clock_after_ms": 37424.68290004763
+        }
+      ],
+      "init_ms": {
+        "white": 362.58479999378324,
+        "black": 689.7167999995872
+      },
+      "uci_limits": [
+        {
+          "ply": 106,
+          "white_clock": 120.0,
+          "black_clock": 115.16058429999975,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 108,
+          "white_clock": 110.75115710002137,
+          "black_clock": 110.15116040001158,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 110,
+          "white_clock": 102.51640620001126,
+          "black_clock": 105.37089620000916,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 112,
+          "white_clock": 98.91129710001405,
+          "black_clock": 100.80951859999914,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 114,
+          "white_clock": 96.0559224000026,
+          "black_clock": 96.27246839998406,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 116,
+          "white_clock": 90.92596260001301,
+          "black_clock": 91.9514248999767,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 118,
+          "white_clock": 83.65876099999878,
+          "black_clock": 87.83589009998832,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 120,
+          "white_clock": 72.35735710000154,
+          "black_clock": 83.7421729999769,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 122,
+          "white_clock": 70.14661100000376,
+          "black_clock": 80.2832532999746,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 124,
+          "white_clock": 54.38252700000885,
+          "black_clock": 76.56393349997234,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 126,
+          "white_clock": 48.441309300018474,
+          "black_clock": 72.66417239996372,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 128,
+          "white_clock": 43.091015200014226,
+          "black_clock": 69.16285199995036,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 130,
+          "white_clock": 41.81901450001169,
+          "black_clock": 68.00129219997325,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 132,
+          "white_clock": 41.51499930003774,
+          "black_clock": 68.45476799996686,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 134,
+          "white_clock": 36.4299646000145,
+          "black_clock": 68.95075929997256,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 136,
+          "white_clock": 36.92755080002826,
+          "black_clock": 69.43975409996347,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        }
+      ],
+      "pgn": "[Event \"Chessity fast-chess verified pilot\"]\n[Site \"Local offline\"]\n[Date \"????.??.??\"]\n[Round \"5\"]\n[White \"Stockfish 19 UCI_Elo 2600\"]\n[Black \"threephase-pvs-v1\"]\n[Result \"1-0\"]\n[FEN \"R7/5p1k/4p3/3p4/2nP4/p4R1P/3r2P1/6K1 b - - 7 53\"]\n[SetUp \"1\"]\n[TimeControl \"120+0.5\"]\n[Termination \"checkmate\"]\n[OpeningSetupUCI \"\"]\n\n53... Rxd4 { [%clk 0:01:55.161] } 54. Ra7 { [%clk 0:01:50.751] } 54... Kg6 { [%clk 0:01:50.151] } 55. Rg3+ { [%clk 0:01:42.516] } 55... Kh6 { [%clk 0:01:45.371] } 56. Kh2 { [%clk 0:01:38.911] } 56... f5 { [%clk 0:01:40.81] } 57. Rg8 { [%clk 0:01:36.056] } 57... e5 { [%clk 0:01:36.272] } 58. Kg3 { [%clk 0:01:30.926] } 58... Rd3+ { [%clk 0:01:31.951] } 59. Kh2 { [%clk 0:01:23.659] } 59... e4 { [%clk 0:01:27.836] } 60. Ra6+ { [%clk 0:01:12.357] } 60... Kh7 { [%clk 0:01:23.742] } 61. Re8 { [%clk 0:01:10.147] } 61... Kg7 { [%clk 0:01:20.283] } 62. Re7+ { [%clk 0:00:54.383] } 62... Kf8 { [%clk 0:01:16.564] } 63. Rc7 { [%clk 0:00:48.441] } 63... Nd6 { [%clk 0:01:12.664] } 64. Rxd6 { [%clk 0:00:43.091] } 64... Ke8 { [%clk 0:01:09.163] } 65. Rh6 { [%clk 0:00:41.819] } 65... Kd8 { [%clk 0:01:08.001] } 66. Ra7 { [%clk 0:00:41.515] } 66... Rxh3+ { [%clk 0:01:08.455] } 67. Rxh3 { [%clk 0:00:36.43] } 67... d4 { [%clk 0:01:08.951] } 68. g3 { [%clk 0:00:36.928] } 68... d3 { [%clk 0:01:09.44] } 69. Rh8# { [%clk 0:00:37.425] } 1-0",
+      "seconds": 150.35488060000353,
+      "final_fen": "3k3R/R7/8/5p2/4p3/p2p2P1/7K/8 b - - 1 69"
+    },
+    {
+      "id": 6,
+      "candidate_path": "candidates/threephase-pvs-v1",
+      "opening": [],
+      "elo": 2600,
+      "family": "practical_near_equal",
+      "pair": 1,
+      "candidate_white": true,
+      "start_fen": "8/8/8/4k3/1RP1nnp1/8/7P/6K1 w - - 1 51",
+      "source_id": "threephase:92da0973bcafc593e9f1:101",
+      "source_kind": "heldout_game_finite_equality_estimate",
+      "canonical_key": "6k1/7p/8/1rp1NNP1/4K3/8/8/8 b - -",
+      "intended_objective": "preserve_draw_or_win_against_2600_setting",
+      "score": 1.0,
+      "termination": "checkmate",
+      "failed_colour": null,
+      "host_cpu_busy_fraction": 0.36669069935111753,
+      "host_load_scope": "Host-wide average during game and initialization; includes all applications, not per-engine utilization or an isolated-core guarantee.",
+      "moves": [
+        {
+          "uci": "b4a4",
+          "san": "Ra4",
+          "fen": "8/8/8/4k3/1RP1nnp1/8/7P/6K1 w - - 1 51",
+          "white": true,
+          "clock_before_ms": 120000.0,
+          "elapsed_ms": 3699.884000001475,
+          "clock_after_ms": 116800.11599999852
+        },
+        {
+          "uci": "e5d4",
+          "san": "Kd4",
+          "fen": "8/8/8/4k3/R1P1nnp1/8/7P/6K1 b - - 2 51",
+          "white": false,
+          "clock_before_ms": 120000.0,
+          "elapsed_ms": 21363.599599979352,
+          "clock_after_ms": 99136.40040002065
+        },
+        {
+          "uci": "c4c5",
+          "san": "c5+",
+          "fen": "8/8/8/8/R1Pknnp1/8/7P/6K1 w - - 3 52",
+          "white": true,
+          "clock_before_ms": 116800.11599999852,
+          "elapsed_ms": 5386.390300001949,
+          "clock_after_ms": 111913.72569999658
+        },
+        {
+          "uci": "d4d3",
+          "san": "Kd3",
+          "fen": "8/8/8/2P5/R2knnp1/8/7P/6K1 b - - 0 52",
+          "white": false,
+          "clock_before_ms": 99136.40040002065,
+          "elapsed_ms": 8604.23249998712,
+          "clock_after_ms": 91032.16790003353
+        },
+        {
+          "uci": "c5c6",
+          "san": "c6",
+          "fen": "8/8/8/2P5/R3nnp1/3k4/7P/6K1 w - - 1 53",
+          "white": true,
+          "clock_before_ms": 111913.72569999658,
+          "elapsed_ms": 5170.988900004886,
+          "clock_after_ms": 107242.73679999169
+        },
+        {
+          "uci": "f4e2",
+          "san": "Ne2+",
+          "fen": "8/8/2P5/8/R3nnp1/3k4/7P/6K1 b - - 0 53",
+          "white": false,
+          "clock_before_ms": 91032.16790003353,
+          "elapsed_ms": 44931.76360000507,
+          "clock_after_ms": 46600.40430002846
+        },
+        {
+          "uci": "g1f1",
+          "san": "Kf1",
+          "fen": "8/8/2P5/8/R3n1p1/3k4/4n2P/6K1 w - - 1 54",
+          "white": true,
+          "clock_before_ms": 107242.73679999169,
+          "elapsed_ms": 5147.14760001516,
+          "clock_after_ms": 102595.58919997653
+        },
+        {
+          "uci": "e2d4",
+          "san": "Nd4",
+          "fen": "8/8/2P5/8/R3n1p1/3k4/4n2P/5K2 b - - 2 54",
+          "white": false,
+          "clock_before_ms": 46600.40430002846,
+          "elapsed_ms": 11107.38709999714,
+          "clock_after_ms": 35993.01720003132
+        },
+        {
+          "uci": "a4a3",
+          "san": "Ra3+",
+          "fen": "8/8/2P5/8/R2nn1p1/3k4/7P/5K2 w - - 3 55",
+          "white": true,
+          "clock_before_ms": 102595.58919997653,
+          "elapsed_ms": 3179.9945999810006,
+          "clock_after_ms": 99915.59459999553
+        },
+        {
+          "uci": "d3c4",
+          "san": "Kc4",
+          "fen": "8/8/2P5/8/3nn1p1/R2k4/7P/5K2 b - - 4 55",
+          "white": false,
+          "clock_before_ms": 35993.01720003132,
+          "elapsed_ms": 16466.647599998396,
+          "clock_after_ms": 20026.369600032922
+        },
+        {
+          "uci": "c6c7",
+          "san": "c7",
+          "fen": "8/8/2P5/8/2knn1p1/R7/7P/5K2 w - - 5 56",
+          "white": true,
+          "clock_before_ms": 99915.59459999553,
+          "elapsed_ms": 4814.321399986511,
+          "clock_after_ms": 95601.27320000902
+        },
+        {
+          "uci": "c4b4",
+          "san": "Kb4",
+          "fen": "8/2P5/8/8/2knn1p1/R7/7P/5K2 b - - 0 56",
+          "white": false,
+          "clock_before_ms": 20026.369600032922,
+          "elapsed_ms": 3108.0388000118546,
+          "clock_after_ms": 17418.330800021067
+        },
+        {
+          "uci": "a3a6",
+          "san": "Ra6",
+          "fen": "8/2P5/8/8/1k1nn1p1/R7/7P/5K2 w - - 1 57",
+          "white": true,
+          "clock_before_ms": 95601.27320000902,
+          "elapsed_ms": 5245.406000001822,
+          "clock_after_ms": 90855.8672000072
+        },
+        {
+          "uci": "g4g3",
+          "san": "g3",
+          "fen": "8/2P5/R7/8/1k1nn1p1/8/7P/5K2 b - - 2 57",
+          "white": false,
+          "clock_before_ms": 17418.330800021067,
+          "elapsed_ms": 8900.671100011095,
+          "clock_after_ms": 9017.659700009972
+        },
+        {
+          "uci": "c7c8q",
+          "san": "c8=Q",
+          "fen": "8/2P5/R7/8/1k1nn3/6p1/7P/5K2 w - - 0 58",
+          "white": true,
+          "clock_before_ms": 90855.8672000072,
+          "elapsed_ms": 5215.844800026389,
+          "clock_after_ms": 86140.02239998081
+        },
+        {
+          "uci": "e4c5",
+          "san": "Nc5",
+          "fen": "2Q5/8/R7/8/1k1nn3/6p1/7P/5K2 b - - 0 58",
+          "white": false,
+          "clock_before_ms": 9017.659700009972,
+          "elapsed_ms": 3960.544100002153,
+          "clock_after_ms": 5557.115600007819
+        },
+        {
+          "uci": "a6b6",
+          "san": "Rb6+",
+          "fen": "2Q5/8/R7/2n5/1k1n4/6p1/7P/5K2 w - - 1 59",
+          "white": true,
+          "clock_before_ms": 86140.02239998081,
+          "elapsed_ms": 7437.766399991233,
+          "clock_after_ms": 79202.25599998957
+        },
+        {
+          "uci": "b4c4",
+          "san": "Kc4",
+          "fen": "2Q5/8/1R6/2n5/1k1n4/6p1/7P/5K2 b - - 2 59",
+          "white": false,
+          "clock_before_ms": 5557.115600007819,
+          "elapsed_ms": 1433.890699991025,
+          "clock_after_ms": 4623.224900016794
+        },
+        {
+          "uci": "c8g8",
+          "san": "Qg8+",
+          "fen": "2Q5/8/1R6/2n5/2kn4/6p1/7P/5K2 w - - 3 60",
+          "white": true,
+          "clock_before_ms": 79202.25599998957,
+          "elapsed_ms": 7339.934399991762,
+          "clock_after_ms": 72362.32159999781
+        },
+        {
+          "uci": "c4d3",
+          "san": "Kd3",
+          "fen": "6Q1/8/1R6/2n5/2kn4/6p1/7P/5K2 b - - 4 60",
+          "white": false,
+          "clock_before_ms": 4623.224900016794,
+          "elapsed_ms": 3664.4340000057127,
+          "clock_after_ms": 1458.7909000110812
+        },
+        {
+          "uci": "g8g3",
+          "san": "Qxg3+",
+          "fen": "6Q1/8/1R6/2n5/3n4/3k2p1/7P/5K2 w - - 5 61",
+          "white": true,
+          "clock_before_ms": 72362.32159999781,
+          "elapsed_ms": 6832.857100002002,
+          "clock_after_ms": 66029.46449999581
+        },
+        {
+          "uci": "d3d2",
+          "san": "Kd2",
+          "fen": "8/8/1R6/2n5/3n4/3k2Q1/7P/5K2 b - - 0 61",
+          "white": false,
+          "clock_before_ms": 1458.7909000110812,
+          "elapsed_ms": 1164.913999993587,
+          "clock_after_ms": 793.8769000174943
+        },
+        {
+          "uci": "b6b2",
+          "san": "Rb2+",
+          "fen": "8/8/1R6/2n5/3n4/6Q1/3k3P/5K2 w - - 1 62",
+          "white": true,
+          "clock_before_ms": 66029.46449999581,
+          "elapsed_ms": 6278.001500002574,
+          "clock_after_ms": 60251.46299999324
+        },
+        {
+          "uci": "d4c2",
+          "san": "Nc2",
+          "fen": "8/8/8/2n5/3n4/6Q1/1R1k3P/5K2 b - - 2 62",
+          "white": false,
+          "clock_before_ms": 793.8769000174943,
+          "elapsed_ms": 171.16739999619313,
+          "clock_after_ms": 1122.7095000213012
+        },
+        {
+          "uci": "h2h4",
+          "san": "h4",
+          "fen": "8/8/8/2n5/8/6Q1/1Rnk3P/5K2 w - - 3 63",
+          "white": true,
+          "clock_before_ms": 60251.46299999324,
+          "elapsed_ms": 5378.8634999946225,
+          "clock_after_ms": 55372.599499998614
+        },
+        {
+          "uci": "c5a6",
+          "san": "Na6",
+          "fen": "8/8/8/2n5/7P/6Q1/1Rnk4/5K2 b - - 0 63",
+          "white": false,
+          "clock_before_ms": 1122.7095000213012,
+          "elapsed_ms": 568.8850000151433,
+          "clock_after_ms": 1053.824500006158
+        },
+        {
+          "uci": "g3f2",
+          "san": "Qf2+",
+          "fen": "8/8/n7/8/7P/6Q1/1Rnk4/5K2 w - - 1 64",
+          "white": true,
+          "clock_before_ms": 55372.599499998614,
+          "elapsed_ms": 5172.0634999801405,
+          "clock_after_ms": 50700.536000018474
+        },
+        {
+          "uci": "d2d3",
+          "san": "Kd3",
+          "fen": "8/8/n7/8/7P/8/1Rnk1Q2/5K2 b - - 2 64",
+          "white": false,
+          "clock_before_ms": 1053.824500006158,
+          "elapsed_ms": 147.40109999547713,
+          "clock_after_ms": 1406.4234000106808
+        },
+        {
+          "uci": "f2c2",
+          "san": "Qxc2+",
+          "fen": "8/8/n7/8/7P/3k4/1Rn2Q2/5K2 w - - 3 65",
+          "white": true,
+          "clock_before_ms": 50700.536000018474,
+          "elapsed_ms": 3408.770199981518,
+          "clock_after_ms": 47791.765800036956
+        },
+        {
+          "uci": "d3e3",
+          "san": "Ke3",
+          "fen": "8/8/n7/8/7P/3k4/1RQ5/5K2 b - - 0 65",
+          "white": false,
+          "clock_before_ms": 1406.4234000106808,
+          "elapsed_ms": 374.3869000172708,
+          "clock_after_ms": 1532.03649999341
+        },
+        {
+          "uci": "c2c4",
+          "san": "Qc4",
+          "fen": "8/8/n7/8/7P/4k3/1RQ5/5K2 w - - 1 66",
+          "white": true,
+          "clock_before_ms": 47791.765800036956,
+          "elapsed_ms": 4436.812600004487,
+          "clock_after_ms": 43854.95320003247
+        },
+        {
+          "uci": "a6c5",
+          "san": "Nc5",
+          "fen": "8/8/n7/8/2Q4P/4k3/1R6/5K2 b - - 2 66",
+          "white": false,
+          "clock_before_ms": 1532.03649999341,
+          "elapsed_ms": 174.6724999975413,
+          "clock_after_ms": 1857.3639999958687
+        },
+        {
+          "uci": "c4c5",
+          "san": "Qxc5+",
+          "fen": "8/8/8/2n5/2Q4P/4k3/1R6/5K2 w - - 3 67",
+          "white": true,
+          "clock_before_ms": 43854.95320003247,
+          "elapsed_ms": 4661.529700009851,
+          "clock_after_ms": 39693.42350002262
+        },
+        {
+          "uci": "e3d3",
+          "san": "Kd3",
+          "fen": "8/8/8/2Q5/7P/4k3/1R6/5K2 b - - 0 67",
+          "white": false,
+          "clock_before_ms": 1857.3639999958687,
+          "elapsed_ms": 206.36680000461638,
+          "clock_after_ms": 2150.9971999912523
+        },
+        {
+          "uci": "c5b4",
+          "san": "Qb4",
+          "fen": "8/8/8/2Q5/7P/3k4/1R6/5K2 w - - 1 68",
+          "white": true,
+          "clock_before_ms": 39693.42350002262,
+          "elapsed_ms": 202.58469998952933,
+          "clock_after_ms": 39990.83880003309
+        },
+        {
+          "uci": "d3e3",
+          "san": "Ke3",
+          "fen": "8/8/8/8/1Q5P/3k4/1R6/5K2 b - - 2 68",
+          "white": false,
+          "clock_before_ms": 2150.9971999912523,
+          "elapsed_ms": 1.5516999992541969,
+          "clock_after_ms": 2649.445499991998
+        },
+        {
+          "uci": "b2b3",
+          "san": "Rb3#",
+          "fen": "8/8/8/8/1Q5P/4k3/1R6/5K2 w - - 3 69",
+          "white": true,
+          "clock_before_ms": 39990.83880003309,
+          "elapsed_ms": 8.898200001567602,
+          "clock_after_ms": 40481.94060003152
+        }
+      ],
+      "init_ms": {
+        "white": 736.7786999966484,
+        "black": 365.1067000173498
+      },
+      "uci_limits": [
+        {
+          "ply": 101,
+          "white_clock": 116.80011599999852,
+          "black_clock": 120.0,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 103,
+          "white_clock": 111.91372569999658,
+          "black_clock": 99.13640040002065,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 105,
+          "white_clock": 107.24273679999169,
+          "black_clock": 91.03216790003353,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 107,
+          "white_clock": 102.59558919997653,
+          "black_clock": 46.60040430002846,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 109,
+          "white_clock": 99.91559459999553,
+          "black_clock": 35.99301720003132,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 111,
+          "white_clock": 95.60127320000902,
+          "black_clock": 20.026369600032922,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 113,
+          "white_clock": 90.8558672000072,
+          "black_clock": 17.418330800021067,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 115,
+          "white_clock": 86.14002239998081,
+          "black_clock": 9.017659700009972,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 117,
+          "white_clock": 79.20225599998957,
+          "black_clock": 5.557115600007819,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 119,
+          "white_clock": 72.36232159999781,
+          "black_clock": 4.623224900016794,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 121,
+          "white_clock": 66.02946449999581,
+          "black_clock": 1.4587909000110812,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 123,
+          "white_clock": 60.25146299999324,
+          "black_clock": 0.7938769000174943,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 125,
+          "white_clock": 55.372599499998614,
+          "black_clock": 1.1227095000213012,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 127,
+          "white_clock": 50.700536000018474,
+          "black_clock": 1.053824500006158,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 129,
+          "white_clock": 47.791765800036956,
+          "black_clock": 1.4064234000106808,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 131,
+          "white_clock": 43.85495320003247,
+          "black_clock": 1.53203649999341,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 133,
+          "white_clock": 39.69342350002262,
+          "black_clock": 1.8573639999958687,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 135,
+          "white_clock": 39.99083880003309,
+          "black_clock": 2.1509971999912523,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        }
+      ],
+      "pgn": "[Event \"Chessity fast-chess verified pilot\"]\n[Site \"Local offline\"]\n[Date \"????.??.??\"]\n[Round \"6\"]\n[White \"threephase-pvs-v1\"]\n[Black \"Stockfish 19 UCI_Elo 2600\"]\n[Result \"1-0\"]\n[FEN \"8/8/8/4k3/1RP1nnp1/8/7P/6K1 w - - 1 51\"]\n[SetUp \"1\"]\n[TimeControl \"120+0.5\"]\n[Termination \"checkmate\"]\n[OpeningSetupUCI \"\"]\n\n51. Ra4 { [%clk 0:01:56.8] } 51... Kd4 { [%clk 0:01:39.136] } 52. c5+ { [%clk 0:01:51.914] } 52... Kd3 { [%clk 0:01:31.032] } 53. c6 { [%clk 0:01:47.243] } 53... Ne2+ { [%clk 0:00:46.6] } 54. Kf1 { [%clk 0:01:42.596] } 54... Nd4 { [%clk 0:00:35.993] } 55. Ra3+ { [%clk 0:01:39.916] } 55... Kc4 { [%clk 0:00:20.026] } 56. c7 { [%clk 0:01:35.601] } 56... Kb4 { [%clk 0:00:17.418] } 57. Ra6 { [%clk 0:01:30.856] } 57... g3 { [%clk 0:00:09.018] } 58. c8=Q { [%clk 0:01:26.14] } 58... Nc5 { [%clk 0:00:05.557] } 59. Rb6+ { [%clk 0:01:19.202] } 59... Kc4 { [%clk 0:00:04.623] } 60. Qg8+ { [%clk 0:01:12.362] } 60... Kd3 { [%clk 0:00:01.459] } 61. Qxg3+ { [%clk 0:01:06.029] } 61... Kd2 { [%clk 0:00:00.794] } 62. Rb2+ { [%clk 0:01:00.251] } 62... Nc2 { [%clk 0:00:01.123] } 63. h4 { [%clk 0:00:55.373] } 63... Na6 { [%clk 0:00:01.054] } 64. Qf2+ { [%clk 0:00:50.701] } 64... Kd3 { [%clk 0:00:01.406] } 65. Qxc2+ { [%clk 0:00:47.792] } 65... Ke3 { [%clk 0:00:01.532] } 66. Qc4 { [%clk 0:00:43.855] } 66... Nc5 { [%clk 0:00:01.857] } 67. Qxc5+ { [%clk 0:00:39.693] } 67... Kd3 { [%clk 0:00:02.151] } 68. Qb4 { [%clk 0:00:39.991] } 68... Ke3 { [%clk 0:00:02.649] } 69. Rb3# { [%clk 0:00:40.482] } 1-0",
+      "seconds": 216.724089299998,
+      "final_fen": "8/8/8/8/1Q5P/1R2k3/8/5K2 b - - 4 69"
+    }
+  ],
+  "practical_cases_available": 2,
+  "history_scope": "Each game begins with the recorded FEN's rule counters and fresh repetition history, as for a curated match start.",
+  "source_files": {
+    "scripts/threephase_endgames.py": "00ddbfec486015a2f1b7cc15de76f77aaf94e66c220eefd1ba64726dac0d3af1",
+    "scripts/fastchess_matches.py": "dff3a94e4d1e5fa139565c2418d62fa9829d6cd58eb6fc02c788d1b770265df2"
+  },
+  "summary": {
+    "basic_conversion": {
+      "not_converted:threefold_repetition": 2,
+      "checkmate": 2
+    },
+    "practical_results": {
+      "0.0": 1,
+      "1.0": 1
+    }
+  }
+}

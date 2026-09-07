@@ -7,4 +7,4 @@ Chessathon agent team verity made for the  AI Chessathon x Optiver event, upload
 
 Agents are tested for read-only runtime operation. Public visitors have read access; repository edits require write permission.
 
-[Three-phase progress and new experimental v1.24](chessity-agent/reports/THREEPHASE_PROGRESS.md). The best verified upload remains v1.14.
+[Completed phase and elite-learning results, with all 35 versions](chessity-agent/reports/DELIVERY.md). The best verified upload remains v1.14.

@@ -1,0 +1,1797 @@
+{
+  "status": "complete",
+  "candidate": "candidates/classical-witty-magnus-v1",
+  "config": {
+    "scope": "Twelve additional phase drill games, separate from the 88-game rated/comparison budget: six each for the frozen baseline and selected challenger.",
+    "base_ms": 120000,
+    "increment_ms": 500,
+    "ply_cap": 600,
+    "workers": 2,
+    "opponent_elo": 2600,
+    "basic_conversion_fens": [
+      "7k/8/8/8/5Q2/2K5/8/8 w - - 0 1",
+      "7k/8/8/8/5R2/2K5/8/8 w - - 0 1"
+    ],
+    "mirror_each_basic_case": true,
+    "practical_near_equal_cases": 2,
+    "practical_max_abs_cp_both_budgets": 20,
+    "notes": "Basic material-family conversion drills have no installed tablebase proof. Mirrored cases are paired, not independent families. Practical equality is a finite teacher estimate, not exact WDL. Play to a real terminal result or the fixed ply cap; no evaluation adjudication."
+  },
+  "config_sha256": "eb666544335eb5c5bf9956204bb9aa4ba5f85d94b7e0b65eed8e360c537007cf",
+  "files": {
+    "agent.py": "a3e297d8a6f6d4f8e8749f1fd7a1aa6b7a7f113a226682855848e117566cd4ae",
+    "engine/__init__.py": "4b709ca1cc2a0a735610b4b7d4e981bf48960ee32fb43b74008eb3585b6f2230",
+    "engine/evaluation.py": "0341daf1c779fa545ccac35931c9eeed360dec54a94794f818745abcfb2430f2",
+    "engine/features.py": "ae2c58155031225ae746556ce4dbf3d7300904a4571839ec983ad823ab238f3a",
+    "engine/move_ordering.py": "2339554439997158142ce3530f9f8fbe18289d6405c13088b7e00a565d6ace7c",
+    "engine/neural.py": "a879ab961563f429b9defbaaa00c5ef72f39f2c6f2f48ff9744202adb6f33321",
+    "engine/openings.py": "0ee9b0788629af759b4ef638a44a1fbe14754968ec555ff41d1347fcf699295c",
+    "engine/player_policy.py": "0ae7d3c9b87b19e3f4e914c512383ee68d4bbdb72532cad8f937e41071982b30",
+    "engine/search.py": "37b4cdf59e16503b4ef2d6b95deab29bedc9f7d7acdd6c0977e49632fb90f484",
+    "engine/time_manager.py": "b09e00cc5b8bc48ae5a89d36726e19fb6794e82b75dd4e31129b87c078d9ac66",
+    "engine/transposition.py": "64376559b6b5be2e4ac31bebef183490c3074499f6a60213f7f04e05f5ef72bb",
+    "models/player-policy.npz": "1670b12e42fa7a48502e22d4202d79a809b1a8a0fba2b179a9d1671e53f4b6b7",
+    "runtime.json": "84dd10c32af02135ea1a726e0c72eaf66c0a508626f1b8c18db1dc39e3431915"
+  },
+  "schedule": [
+    {
+      "id": 1,
+      "candidate_path": "candidates/classical-witty-magnus-v1",
+      "opening": [],
+      "elo": 2600,
+      "family": "basic_conversion_0",
+      "pair": 0,
+      "candidate_white": true,
+      "start_fen": "7k/8/8/8/5Q2/2K5/8/8 w - - 0 1",
+      "source_kind": "constructed_material_family_drill",
+      "mirrored": false,
+      "intended_objective": "complete_checkmate_without_stalemate_or_time_loss"
+    },
+    {
+      "id": 2,
+      "candidate_path": "candidates/classical-witty-magnus-v1",
+      "opening": [],
+      "elo": 2600,
+      "family": "basic_conversion_0",
+      "pair": 0,
+      "candidate_white": false,
+      "start_fen": "8/8/2k5/5q2/8/8/8/7K b - - 0 1",
+      "source_kind": "constructed_material_family_drill",
+      "mirrored": true,
+      "intended_objective": "complete_checkmate_without_stalemate_or_time_loss"
+    },
+    {
+      "id": 3,
+      "candidate_path": "candidates/classical-witty-magnus-v1",
+      "opening": [],
+      "elo": 2600,
+      "family": "basic_conversion_1",
+      "pair": 1,
+      "candidate_white": true,
+      "start_fen": "7k/8/8/8/5R2/2K5/8/8 w - - 0 1",
+      "source_kind": "constructed_material_family_drill",
+      "mirrored": false,
+      "intended_objective": "complete_checkmate_without_stalemate_or_time_loss"
+    },
+    {
+      "id": 4,
+      "candidate_path": "candidates/classical-witty-magnus-v1",
+      "opening": [],
+      "elo": 2600,
+      "family": "basic_conversion_1",
+      "pair": 1,
+      "candidate_white": false,
+      "start_fen": "8/8/2k5/5r2/8/8/8/7K b - - 0 1",
+      "source_kind": "constructed_material_family_drill",
+      "mirrored": true,
+      "intended_objective": "complete_checkmate_without_stalemate_or_time_loss"
+    },
+    {
+      "id": 5,
+      "candidate_path": "candidates/classical-witty-magnus-v1",
+      "opening": [],
+      "elo": 2600,
+      "family": "practical_near_equal",
+      "pair": 0,
+      "candidate_white": false,
+      "start_fen": "R7/5p1k/4p3/3p4/2nP4/p4R1P/3r2P1/6K1 b - - 7 53",
+      "source_id": "threephase:0b787841180f718629f7:106",
+      "source_kind": "heldout_game_finite_equality_estimate",
+      "canonical_key": "6k1/3R2p1/P4r1p/2Np4/3P4/4P3/5P1K/r7 w - -",
+      "intended_objective": "preserve_draw_or_win_against_2600_setting"
+    },
+    {
+      "id": 6,
+      "candidate_path": "candidates/classical-witty-magnus-v1",
+      "opening": [],
+      "elo": 2600,
+      "family": "practical_near_equal",
+      "pair": 1,
+      "candidate_white": true,
+      "start_fen": "8/8/8/4k3/1RP1nnp1/8/7P/6K1 w - - 1 51",
+      "source_id": "threephase:92da0973bcafc593e9f1:101",
+      "source_kind": "heldout_game_finite_equality_estimate",
+      "canonical_key": "6k1/7p/8/1rp1NNP1/4K3/8/8/8 b - -",
+      "intended_objective": "preserve_draw_or_win_against_2600_setting"
+    }
+  ],
+  "games": [
+    {
+      "id": 1,
+      "candidate_path": "candidates/classical-witty-magnus-v1",
+      "opening": [],
+      "elo": 2600,
+      "family": "basic_conversion_0",
+      "pair": 0,
+      "candidate_white": true,
+      "start_fen": "7k/8/8/8/5Q2/2K5/8/8 w - - 0 1",
+      "source_kind": "constructed_material_family_drill",
+      "mirrored": false,
+      "intended_objective": "complete_checkmate_without_stalemate_or_time_loss",
+      "score": 1.0,
+      "termination": "checkmate",
+      "failed_colour": null,
+      "host_cpu_busy_fraction": 0.38112347734642016,
+      "host_load_scope": "Host-wide average during game and initialization; includes all applications, not per-engine utilization or an isolated-core guarantee.",
+      "moves": [
+        {
+          "uci": "f4g5",
+          "san": "Qg5",
+          "fen": "7k/8/8/8/5Q2/2K5/8/8 w - - 0 1",
+          "white": true,
+          "clock_before_ms": 120000.0,
+          "elapsed_ms": 5474.544400000013,
+          "clock_after_ms": 115025.45559999999
+        },
+        {
+          "uci": "h8h7",
+          "san": "Kh7",
+          "fen": "7k/8/8/6Q1/8/2K5/8/8 b - - 1 1",
+          "white": false,
+          "clock_before_ms": 120000.0,
+          "elapsed_ms": 344.55850001540966,
+          "clock_after_ms": 120155.44149998459
+        },
+        {
+          "uci": "c3d4",
+          "san": "Kd4",
+          "fen": "8/7k/8/6Q1/8/2K5/8/8 w - - 2 2",
+          "white": true,
+          "clock_before_ms": 115025.45559999999,
+          "elapsed_ms": 4944.235500006471,
+          "clock_after_ms": 110581.22009999352
+        },
+        {
+          "uci": "h7h8",
+          "san": "Kh8",
+          "fen": "8/7k/8/6Q1/3K4/8/8/8 b - - 3 2",
+          "white": false,
+          "clock_before_ms": 120155.44149998459,
+          "elapsed_ms": 30.84999998100102,
+          "clock_after_ms": 120624.59150000359
+        },
+        {
+          "uci": "d4e5",
+          "san": "Ke5",
+          "fen": "7k/8/8/6Q1/3K4/8/8/8 w - - 4 3",
+          "white": true,
+          "clock_before_ms": 110581.22009999352,
+          "elapsed_ms": 2543.7982000003103,
+          "clock_after_ms": 108537.4218999932
+        },
+        {
+          "uci": "h8h7",
+          "san": "Kh7",
+          "fen": "7k/8/8/4K1Q1/8/8/8/8 b - - 5 3",
+          "white": false,
+          "clock_before_ms": 120624.59150000359,
+          "elapsed_ms": 7.808399997884408,
+          "clock_after_ms": 121116.7831000057
+        },
+        {
+          "uci": "e5f6",
+          "san": "Kf6",
+          "fen": "8/7k/8/4K1Q1/8/8/8/8 w - - 6 4",
+          "white": true,
+          "clock_before_ms": 108537.4218999932,
+          "elapsed_ms": 8.217399998102337,
+          "clock_after_ms": 109029.2044999951
+        },
+        {
+          "uci": "h7h8",
+          "san": "Kh8",
+          "fen": "8/7k/5K2/6Q1/8/8/8/8 b - - 7 4",
+          "white": false,
+          "clock_before_ms": 121116.7831000057,
+          "elapsed_ms": 1.3840000028721988,
+          "clock_after_ms": 121615.39910000283
+        },
+        {
+          "uci": "g5g7",
+          "san": "Qg7#",
+          "fen": "7k/8/5K2/6Q1/8/8/8/8 w - - 8 5",
+          "white": true,
+          "clock_before_ms": 109029.2044999951,
+          "elapsed_ms": 4.078700003447011,
+          "clock_after_ms": 109525.12579999166
+        }
+      ],
+      "init_ms": {
+        "white": 672.219900006894,
+        "black": 769.5230000244919
+      },
+      "uci_limits": [
+        {
+          "ply": 1,
+          "white_clock": 115.02545559999999,
+          "black_clock": 120.0,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 3,
+          "white_clock": 110.58122009999352,
+          "black_clock": 120.15544149998459,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 5,
+          "white_clock": 108.5374218999932,
+          "black_clock": 120.62459150000359,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 7,
+          "white_clock": 109.0292044999951,
+          "black_clock": 121.1167831000057,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        }
+      ],
+      "pgn": "[Event \"Chessity fast-chess verified pilot\"]\n[Site \"Local offline\"]\n[Date \"????.??.??\"]\n[Round \"1\"]\n[White \"classical-witty-magnus-v1\"]\n[Black \"Stockfish 19 UCI_Elo 2600\"]\n[Result \"1-0\"]\n[FEN \"7k/8/8/8/5Q2/2K5/8/8 w - - 0 1\"]\n[SetUp \"1\"]\n[TimeControl \"120+0.5\"]\n[Termination \"checkmate\"]\n[OpeningSetupUCI \"\"]\n\n1. Qg5 { [%clk 0:01:55.025] } 1... Kh7 { [%clk 0:02:00.155] } 2. Kd4 { [%clk 0:01:50.581] } 2... Kh8 { [%clk 0:02:00.625] } 3. Ke5 { [%clk 0:01:48.537] } 3... Kh7 { [%clk 0:02:01.117] } 4. Kf6 { [%clk 0:01:49.029] } 4... Kh8 { [%clk 0:02:01.615] } 5. Qg7# { [%clk 0:01:49.525] } 1-0",
+      "seconds": 14.880346799996914,
+      "final_fen": "7k/6Q1/5K2/8/8/8/8/8 b - - 9 5"
+    },
+    {
+      "id": 2,
+      "candidate_path": "candidates/classical-witty-magnus-v1",
+      "opening": [],
+      "elo": 2600,
+      "family": "basic_conversion_0",
+      "pair": 0,
+      "candidate_white": false,
+      "start_fen": "8/8/2k5/5q2/8/8/8/7K b - - 0 1",
+      "source_kind": "constructed_material_family_drill",
+      "mirrored": true,
+      "intended_objective": "complete_checkmate_without_stalemate_or_time_loss",
+      "score": 1.0,
+      "termination": "checkmate",
+      "failed_colour": null,
+      "host_cpu_busy_fraction": 0.38474504846186264,
+      "host_load_scope": "Host-wide average during game and initialization; includes all applications, not per-engine utilization or an isolated-core guarantee.",
+      "moves": [
+        {
+          "uci": "f5g4",
+          "san": "Qg4",
+          "fen": "8/8/2k5/5q2/8/8/8/7K b - - 0 1",
+          "white": false,
+          "clock_before_ms": 120000.0,
+          "elapsed_ms": 5474.464300001273,
+          "clock_after_ms": 115025.53569999873
+        },
+        {
+          "uci": "h1h2",
+          "san": "Kh2",
+          "fen": "8/8/2k5/8/6q1/8/8/7K w - - 1 2",
+          "white": true,
+          "clock_before_ms": 120000.0,
+          "elapsed_ms": 334.846000012476,
+          "clock_after_ms": 120165.15399998752
+        },
+        {
+          "uci": "c6d5",
+          "san": "Kd5",
+          "fen": "8/8/2k5/8/6q1/8/7K/8 b - - 2 2",
+          "white": false,
+          "clock_before_ms": 115025.53569999873,
+          "elapsed_ms": 4944.116800004849,
+          "clock_after_ms": 110581.41889999388
+        },
+        {
+          "uci": "h2h1",
+          "san": "Kh1",
+          "fen": "8/8/8/3k4/6q1/8/7K/8 w - - 3 3",
+          "white": true,
+          "clock_before_ms": 120165.15399998752,
+          "elapsed_ms": 28.629799984628335,
+          "clock_after_ms": 120636.5242000029
+        },
+        {
+          "uci": "d5e4",
+          "san": "Ke4",
+          "fen": "8/8/8/3k4/6q1/8/8/7K b - - 4 3",
+          "white": false,
+          "clock_before_ms": 110581.41889999388,
+          "elapsed_ms": 2565.1494000048842,
+          "clock_after_ms": 108516.269499989
+        },
+        {
+          "uci": "h1h2",
+          "san": "Kh2",
+          "fen": "8/8/8/8/4k1q1/8/8/7K w - - 5 4",
+          "white": true,
+          "clock_before_ms": 120636.5242000029,
+          "elapsed_ms": 9.466599993174896,
+          "clock_after_ms": 121127.05760000972
+        },
+        {
+          "uci": "e4f3",
+          "san": "Kf3",
+          "fen": "8/8/8/8/4k1q1/8/7K/8 b - - 6 4",
+          "white": false,
+          "clock_before_ms": 108516.269499989,
+          "elapsed_ms": 8.463899983325973,
+          "clock_after_ms": 109007.80560000567
+        },
+        {
+          "uci": "h2h1",
+          "san": "Kh1",
+          "fen": "8/8/8/8/6q1/5k2/7K/8 w - - 7 5",
+          "white": true,
+          "clock_before_ms": 121127.05760000972,
+          "elapsed_ms": 1.3513999874703586,
+          "clock_after_ms": 121625.70620002225
+        },
+        {
+          "uci": "g4g2",
+          "san": "Qg2#",
+          "fen": "8/8/8/8/6q1/5k2/8/7K b - - 8 5",
+          "white": false,
+          "clock_before_ms": 109007.80560000567,
+          "elapsed_ms": 3.453899989835918,
+          "clock_after_ms": 109504.35170001583
+        }
+      ],
+      "init_ms": {
+        "white": 1335.8083000057377,
+        "black": 656.3436000142246
+      },
+      "uci_limits": [
+        {
+          "ply": 2,
+          "white_clock": 120.0,
+          "black_clock": 115.02553569999873,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 4,
+          "white_clock": 120.16515399998752,
+          "black_clock": 110.58141889999388,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 6,
+          "white_clock": 120.6365242000029,
+          "black_clock": 108.516269499989,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 8,
+          "white_clock": 121.12705760000972,
+          "black_clock": 109.00780560000567,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        }
+      ],
+      "pgn": "[Event \"Chessity fast-chess verified pilot\"]\n[Site \"Local offline\"]\n[Date \"????.??.??\"]\n[Round \"2\"]\n[White \"Stockfish 19 UCI_Elo 2600\"]\n[Black \"classical-witty-magnus-v1\"]\n[Result \"0-1\"]\n[FEN \"8/8/2k5/5q2/8/8/8/7K b - - 0 1\"]\n[SetUp \"1\"]\n[TimeControl \"120+0.5\"]\n[Termination \"checkmate\"]\n[OpeningSetupUCI \"\"]\n\n1... Qg4 { [%clk 0:01:55.026] } 2. Kh2 { [%clk 0:02:00.165] } 2... Kd5 { [%clk 0:01:50.581] } 3. Kh1 { [%clk 0:02:00.637] } 3... Ke4 { [%clk 0:01:48.516] } 4. Kh2 { [%clk 0:02:01.127] } 4... Kf3 { [%clk 0:01:49.008] } 5. Kh1 { [%clk 0:02:01.626] } 5... Qg2# { [%clk 0:01:49.504] } 0-1",
+      "seconds": 15.475006499997107,
+      "final_fen": "8/8/8/8/8/5k2/6q1/7K w - - 9 6"
+    },
+    {
+      "id": 3,
+      "candidate_path": "candidates/classical-witty-magnus-v1",
+      "opening": [],
+      "elo": 2600,
+      "family": "basic_conversion_1",
+      "pair": 1,
+      "candidate_white": true,
+      "start_fen": "7k/8/8/8/5R2/2K5/8/8 w - - 0 1",
+      "source_kind": "constructed_material_family_drill",
+      "mirrored": false,
+      "intended_objective": "complete_checkmate_without_stalemate_or_time_loss",
+      "score": 1.0,
+      "termination": "checkmate",
+      "failed_colour": null,
+      "host_cpu_busy_fraction": 0.38249358009386347,
+      "host_load_scope": "Host-wide average during game and initialization; includes all applications, not per-engine utilization or an isolated-core guarantee.",
+      "moves": [
+        {
+          "uci": "c3d4",
+          "san": "Kd4",
+          "fen": "7k/8/8/8/5R2/2K5/8/8 w - - 0 1",
+          "white": true,
+          "clock_before_ms": 120000.0,
+          "elapsed_ms": 3650.0954999937676,
+          "clock_after_ms": 116849.90450000623
+        },
+        {
+          "uci": "h8h7",
+          "san": "Kh7",
+          "fen": "7k/8/8/8/3K1R2/8/8/8 b - - 1 1",
+          "white": false,
+          "clock_before_ms": 120000.0,
+          "elapsed_ms": 3689.1793999820948,
+          "clock_after_ms": 116810.8206000179
+        },
+        {
+          "uci": "f4f6",
+          "san": "Rf6",
+          "fen": "8/7k/8/8/3K1R2/8/8/8 w - - 2 2",
+          "white": true,
+          "clock_before_ms": 116849.90450000623,
+          "elapsed_ms": 2237.8822000173386,
+          "clock_after_ms": 115112.0222999889
+        },
+        {
+          "uci": "h7g7",
+          "san": "Kg7",
+          "fen": "8/7k/5R2/8/3K4/8/8/8 b - - 3 2",
+          "white": false,
+          "clock_before_ms": 116810.8206000179,
+          "elapsed_ms": 1660.3623000264633,
+          "clock_after_ms": 115650.45829999144
+        },
+        {
+          "uci": "d4e5",
+          "san": "Ke5",
+          "fen": "8/6k1/5R2/8/3K4/8/8/8 w - - 4 3",
+          "white": true,
+          "clock_before_ms": 115112.0222999889,
+          "elapsed_ms": 3587.330699985614,
+          "clock_after_ms": 112024.69160000328
+        },
+        {
+          "uci": "g7h7",
+          "san": "Kh7",
+          "fen": "8/6k1/5R2/4K3/8/8/8/8 b - - 5 3",
+          "white": false,
+          "clock_before_ms": 115650.45829999144,
+          "elapsed_ms": 1586.832200002391,
+          "clock_after_ms": 114563.62609998905
+        },
+        {
+          "uci": "f6d6",
+          "san": "Rd6",
+          "fen": "8/7k/5R2/4K3/8/8/8/8 w - - 6 4",
+          "white": true,
+          "clock_before_ms": 112024.69160000328,
+          "elapsed_ms": 2245.2078000060283,
+          "clock_after_ms": 110279.48379999725
+        },
+        {
+          "uci": "h7g7",
+          "san": "Kg7",
+          "fen": "8/7k/3R4/4K3/8/8/8/8 b - - 7 4",
+          "white": false,
+          "clock_before_ms": 114563.62609998905,
+          "elapsed_ms": 1673.5470999847166,
+          "clock_after_ms": 113390.07900000433
+        },
+        {
+          "uci": "d6f6",
+          "san": "Rf6",
+          "fen": "8/6k1/3R4/4K3/8/8/8/8 w - - 8 5",
+          "white": true,
+          "clock_before_ms": 110279.48379999725,
+          "elapsed_ms": 2335.459699999774,
+          "clock_after_ms": 108444.02409999748
+        },
+        {
+          "uci": "g7g8",
+          "san": "Kg8",
+          "fen": "8/6k1/5R2/4K3/8/8/8/8 b - - 9 5",
+          "white": false,
+          "clock_before_ms": 113390.07900000433,
+          "elapsed_ms": 1499.7836999827996,
+          "clock_after_ms": 112390.29530002153
+        },
+        {
+          "uci": "e5e6",
+          "san": "Ke6",
+          "fen": "6k1/8/5R2/4K3/8/8/8/8 w - - 10 6",
+          "white": true,
+          "clock_before_ms": 108444.02409999748,
+          "elapsed_ms": 2779.730500013102,
+          "clock_after_ms": 106164.29359998438
+        },
+        {
+          "uci": "g8h8",
+          "san": "Kh8",
+          "fen": "6k1/8/4KR2/8/8/8/8/8 b - - 11 6",
+          "white": false,
+          "clock_before_ms": 112390.29530002153,
+          "elapsed_ms": 302.3370999726467,
+          "clock_after_ms": 112587.95820004889
+        },
+        {
+          "uci": "f6g6",
+          "san": "Rg6",
+          "fen": "7k/8/4KR2/8/8/8/8/8 w - - 12 7",
+          "white": true,
+          "clock_before_ms": 106164.29359998438,
+          "elapsed_ms": 585.6643000151962,
+          "clock_after_ms": 106078.62929996918
+        },
+        {
+          "uci": "h8h7",
+          "san": "Kh7",
+          "fen": "7k/8/4K1R1/8/8/8/8/8 b - - 13 7",
+          "white": false,
+          "clock_before_ms": 112587.95820004889,
+          "elapsed_ms": 7.103800016921014,
+          "clock_after_ms": 113080.85440003197
+        },
+        {
+          "uci": "e6f7",
+          "san": "Kf7",
+          "fen": "8/7k/4K1R1/8/8/8/8/8 w - - 14 8",
+          "white": true,
+          "clock_before_ms": 106078.62929996918,
+          "elapsed_ms": 5.0934999890159816,
+          "clock_after_ms": 106573.53579998016
+        },
+        {
+          "uci": "h7h8",
+          "san": "Kh8",
+          "fen": "8/5K1k/6R1/8/8/8/8/8 b - - 15 8",
+          "white": false,
+          "clock_before_ms": 113080.85440003197,
+          "elapsed_ms": 1.2721999955829233,
+          "clock_after_ms": 113579.58220003638
+        },
+        {
+          "uci": "g6h6",
+          "san": "Rh6#",
+          "fen": "7k/5K2/6R1/8/8/8/8/8 w - - 16 9",
+          "white": true,
+          "clock_before_ms": 106573.53579998016,
+          "elapsed_ms": 2.5224999990314245,
+          "clock_after_ms": 107071.01329998113
+        }
+      ],
+      "init_ms": {
+        "white": 719.0209999971557,
+        "black": 748.311500006821
+      },
+      "uci_limits": [
+        {
+          "ply": 1,
+          "white_clock": 116.84990450000623,
+          "black_clock": 120.0,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 3,
+          "white_clock": 115.1120222999889,
+          "black_clock": 116.8108206000179,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 5,
+          "white_clock": 112.02469160000328,
+          "black_clock": 115.65045829999144,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 7,
+          "white_clock": 110.27948379999725,
+          "black_clock": 114.56362609998905,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 9,
+          "white_clock": 108.44402409999748,
+          "black_clock": 113.39007900000433,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 11,
+          "white_clock": 106.16429359998438,
+          "black_clock": 112.39029530002153,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 13,
+          "white_clock": 106.07862929996918,
+          "black_clock": 112.58795820004889,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 15,
+          "white_clock": 106.57353579998016,
+          "black_clock": 113.08085440003197,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        }
+      ],
+      "pgn": "[Event \"Chessity fast-chess verified pilot\"]\n[Site \"Local offline\"]\n[Date \"????.??.??\"]\n[Round \"3\"]\n[White \"classical-witty-magnus-v1\"]\n[Black \"Stockfish 19 UCI_Elo 2600\"]\n[Result \"1-0\"]\n[FEN \"7k/8/8/8/5R2/2K5/8/8 w - - 0 1\"]\n[SetUp \"1\"]\n[TimeControl \"120+0.5\"]\n[Termination \"checkmate\"]\n[OpeningSetupUCI \"\"]\n\n1. Kd4 { [%clk 0:01:56.85] } 1... Kh7 { [%clk 0:01:56.811] } 2. Rf6 { [%clk 0:01:55.112] } 2... Kg7 { [%clk 0:01:55.65] } 3. Ke5 { [%clk 0:01:52.025] } 3... Kh7 { [%clk 0:01:54.564] } 4. Rd6 { [%clk 0:01:50.279] } 4... Kg7 { [%clk 0:01:53.39] } 5. Rf6 { [%clk 0:01:48.444] } 5... Kg8 { [%clk 0:01:52.39] } 6. Ke6 { [%clk 0:01:46.164] } 6... Kh8 { [%clk 0:01:52.588] } 7. Rg6 { [%clk 0:01:46.079] } 7... Kh7 { [%clk 0:01:53.081] } 8. Kf7 { [%clk 0:01:46.574] } 8... Kh8 { [%clk 0:01:53.58] } 9. Rh6# { [%clk 0:01:47.071] } 1-0",
+      "seconds": 29.407542400003877,
+      "final_fen": "7k/5K2/7R/8/8/8/8/8 b - - 17 9"
+    },
+    {
+      "id": 4,
+      "candidate_path": "candidates/classical-witty-magnus-v1",
+      "opening": [],
+      "elo": 2600,
+      "family": "basic_conversion_1",
+      "pair": 1,
+      "candidate_white": false,
+      "start_fen": "8/8/2k5/5r2/8/8/8/7K b - - 0 1",
+      "source_kind": "constructed_material_family_drill",
+      "mirrored": true,
+      "intended_objective": "complete_checkmate_without_stalemate_or_time_loss",
+      "score": 0.5,
+      "termination": "threefold_repetition",
+      "failed_colour": null,
+      "host_cpu_busy_fraction": 0.3820559583648414,
+      "host_load_scope": "Host-wide average during game and initialization; includes all applications, not per-engine utilization or an isolated-core guarantee.",
+      "moves": [
+        {
+          "uci": "c6d5",
+          "san": "Kd5",
+          "fen": "8/8/2k5/5r2/8/8/8/7K b - - 0 1",
+          "white": false,
+          "clock_before_ms": 120000.0,
+          "elapsed_ms": 3649.9162999971304,
+          "clock_after_ms": 116850.08370000287
+        },
+        {
+          "uci": "h1h2",
+          "san": "Kh2",
+          "fen": "8/8/8/3k1r2/8/8/8/7K w - - 1 2",
+          "white": true,
+          "clock_before_ms": 120000.0,
+          "elapsed_ms": 3798.2750000082888,
+          "clock_after_ms": 116701.72499999171
+        },
+        {
+          "uci": "f5f3",
+          "san": "Rf3",
+          "fen": "8/8/8/3k1r2/8/8/7K/8 b - - 2 2",
+          "white": false,
+          "clock_before_ms": 116850.08370000287,
+          "elapsed_ms": 2389.0639999881387,
+          "clock_after_ms": 114961.01970001473
+        },
+        {
+          "uci": "h2g2",
+          "san": "Kg2",
+          "fen": "8/8/8/3k4/8/5r2/7K/8 w - - 3 3",
+          "white": true,
+          "clock_before_ms": 116701.72499999171,
+          "elapsed_ms": 1738.4338999981992,
+          "clock_after_ms": 115463.29109999351
+        },
+        {
+          "uci": "d5e4",
+          "san": "Ke4",
+          "fen": "8/8/8/3k4/8/5r2/6K1/8 b - - 4 3",
+          "white": false,
+          "clock_before_ms": 114961.01970001473,
+          "elapsed_ms": 3582.7960000024177,
+          "clock_after_ms": 111878.22370001231
+        },
+        {
+          "uci": "g2g1",
+          "san": "Kg1",
+          "fen": "8/8/8/8/4k3/5r2/6K1/8 w - - 5 4",
+          "white": true,
+          "clock_before_ms": 115463.29109999351,
+          "elapsed_ms": 1548.1372000067495,
+          "clock_after_ms": 114415.15389998676
+        },
+        {
+          "uci": "f3f5",
+          "san": "Rf5",
+          "fen": "8/8/8/8/4k3/5r2/8/6K1 b - - 6 4",
+          "white": false,
+          "clock_before_ms": 111878.22370001231,
+          "elapsed_ms": 2108.1950000079814,
+          "clock_after_ms": 110270.02870000433
+        },
+        {
+          "uci": "g1g2",
+          "san": "Kg2",
+          "fen": "8/8/8/5r2/4k3/8/8/6K1 w - - 7 5",
+          "white": true,
+          "clock_before_ms": 114415.15389998676,
+          "elapsed_ms": 1679.4984000152908,
+          "clock_after_ms": 113235.65549997147
+        },
+        {
+          "uci": "f5f3",
+          "san": "Rf3",
+          "fen": "8/8/8/5r2/4k3/8/6K1/8 b - - 8 5",
+          "white": false,
+          "clock_before_ms": 110270.02870000433,
+          "elapsed_ms": 2533.298400026979,
+          "clock_after_ms": 108236.73029997735
+        },
+        {
+          "uci": "g2g1",
+          "san": "Kg1",
+          "fen": "8/8/8/8/4k3/5r2/6K1/8 w - - 9 6",
+          "white": true,
+          "clock_before_ms": 113235.65549997147,
+          "elapsed_ms": 1572.2985000174958,
+          "clock_after_ms": 112163.35699995398
+        },
+        {
+          "uci": "e4e3",
+          "san": "Ke3",
+          "fen": "8/8/8/8/4k3/5r2/8/6K1 b - - 10 6",
+          "white": false,
+          "clock_before_ms": 108236.73029997735,
+          "elapsed_ms": 2625.2494000073057,
+          "clock_after_ms": 106111.48089997005
+        },
+        {
+          "uci": "g1g2",
+          "san": "Kg2",
+          "fen": "8/8/8/8/8/4kr2/8/6K1 w - - 11 7",
+          "white": true,
+          "clock_before_ms": 112163.35699995398,
+          "elapsed_ms": 392.3468999855686,
+          "clock_after_ms": 112271.01009996841
+        }
+      ],
+      "init_ms": {
+        "white": 816.3354999851435,
+        "black": 711.223099991912
+      },
+      "uci_limits": [
+        {
+          "ply": 2,
+          "white_clock": 120.0,
+          "black_clock": 116.85008370000287,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 4,
+          "white_clock": 116.70172499999171,
+          "black_clock": 114.96101970001473,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 6,
+          "white_clock": 115.46329109999351,
+          "black_clock": 111.87822370001231,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 8,
+          "white_clock": 114.41515389998676,
+          "black_clock": 110.27002870000433,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 10,
+          "white_clock": 113.23565549997147,
+          "black_clock": 108.23673029997735,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 12,
+          "white_clock": 112.16335699995398,
+          "black_clock": 106.11148089997005,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        }
+      ],
+      "pgn": "[Event \"Chessity fast-chess verified pilot\"]\n[Site \"Local offline\"]\n[Date \"????.??.??\"]\n[Round \"4\"]\n[White \"Stockfish 19 UCI_Elo 2600\"]\n[Black \"classical-witty-magnus-v1\"]\n[Result \"1/2-1/2\"]\n[FEN \"8/8/2k5/5r2/8/8/8/7K b - - 0 1\"]\n[SetUp \"1\"]\n[TimeControl \"120+0.5\"]\n[Termination \"threefold_repetition\"]\n[OpeningSetupUCI \"\"]\n\n1... Kd5 { [%clk 0:01:56.85] } 2. Kh2 { [%clk 0:01:56.702] } 2... Rf3 { [%clk 0:01:54.961] } 3. Kg2 { [%clk 0:01:55.463] } 3... Ke4 { [%clk 0:01:51.878] } 4. Kg1 { [%clk 0:01:54.415] } 4... Rf5 { [%clk 0:01:50.27] } 5. Kg2 { [%clk 0:01:53.236] } 5... Rf3 { [%clk 0:01:48.237] } 6. Kg1 { [%clk 0:01:52.163] } 6... Ke3 { [%clk 0:01:46.111] } 7. Kg2 { [%clk 0:01:52.271] } 1/2-1/2",
+      "seconds": 29.258498499984853,
+      "final_fen": "8/8/8/8/8/4kr2/6K1/8 b - - 12 7"
+    },
+    {
+      "id": 5,
+      "candidate_path": "candidates/classical-witty-magnus-v1",
+      "opening": [],
+      "elo": 2600,
+      "family": "practical_near_equal",
+      "pair": 0,
+      "candidate_white": false,
+      "start_fen": "R7/5p1k/4p3/3p4/2nP4/p4R1P/3r2P1/6K1 b - - 7 53",
+      "source_id": "threephase:0b787841180f718629f7:106",
+      "source_kind": "heldout_game_finite_equality_estimate",
+      "canonical_key": "6k1/3R2p1/P4r1p/2Np4/3P4/4P3/5P1K/r7 w - -",
+      "intended_objective": "preserve_draw_or_win_against_2600_setting",
+      "score": 0.5,
+      "termination": "threefold_repetition",
+      "failed_colour": null,
+      "host_cpu_busy_fraction": 0.38857850796205984,
+      "host_load_scope": "Host-wide average during game and initialization; includes all applications, not per-engine utilization or an isolated-core guarantee.",
+      "moves": [
+        {
+          "uci": "d2d4",
+          "san": "Rxd4",
+          "fen": "R7/5p1k/4p3/3p4/2nP4/p4R1P/3r2P1/6K1 b - - 7 53",
+          "white": false,
+          "clock_before_ms": 120000.0,
+          "elapsed_ms": 5790.593300014734,
+          "clock_after_ms": 114709.40669998527
+        },
+        {
+          "uci": "a8a7",
+          "san": "Ra7",
+          "fen": "R7/5p1k/4p3/3p4/2nr4/p4R1P/6P1/6K1 w - - 0 54",
+          "white": true,
+          "clock_before_ms": 120000.0,
+          "elapsed_ms": 8512.913999991724,
+          "clock_after_ms": 111987.08600000828
+        },
+        {
+          "uci": "h7g6",
+          "san": "Kg6",
+          "fen": "8/R4p1k/4p3/3p4/2nr4/p4R1P/6P1/6K1 b - - 1 54",
+          "white": false,
+          "clock_before_ms": 114709.40669998527,
+          "elapsed_ms": 5488.779700011946,
+          "clock_after_ms": 109720.62699997332
+        },
+        {
+          "uci": "g2g4",
+          "san": "g4",
+          "fen": "8/R4p2/4p1k1/3p4/2nr4/p4R1P/6P1/6K1 w - - 2 55",
+          "white": true,
+          "clock_before_ms": 111987.08600000828,
+          "elapsed_ms": 11185.72160002077,
+          "clock_after_ms": 101301.3643999875
+        },
+        {
+          "uci": "d4d1",
+          "san": "Rd1+",
+          "fen": "8/R4p2/4p1k1/3p4/2nr2P1/p4R1P/8/6K1 b - - 0 55",
+          "white": false,
+          "clock_before_ms": 109720.62699997332,
+          "elapsed_ms": 5260.5654999788385,
+          "clock_after_ms": 104960.06149999448
+        },
+        {
+          "uci": "g1f2",
+          "san": "Kf2",
+          "fen": "8/R4p2/4p1k1/3p4/2n3P1/p4R1P/8/3r2K1 w - - 1 56",
+          "white": true,
+          "clock_before_ms": 101301.3643999875,
+          "elapsed_ms": 11078.388300025836,
+          "clock_after_ms": 90722.97609996167
+        },
+        {
+          "uci": "d1d2",
+          "san": "Rd2+",
+          "fen": "8/R4p2/4p1k1/3p4/2n3P1/p4R1P/5K2/3r4 b - - 2 56",
+          "white": false,
+          "clock_before_ms": 104960.06149999448,
+          "elapsed_ms": 6243.329299992183,
+          "clock_after_ms": 99216.7322000023
+        },
+        {
+          "uci": "f2g3",
+          "san": "Kg3",
+          "fen": "8/R4p2/4p1k1/3p4/2n3P1/p4R1P/3r1K2/8 w - - 3 57",
+          "white": true,
+          "clock_before_ms": 90722.97609996167,
+          "elapsed_ms": 15089.616900018882,
+          "clock_after_ms": 76133.35919994279
+        },
+        {
+          "uci": "f7f6",
+          "san": "f6",
+          "fen": "8/R4p2/4p1k1/3p4/2n3P1/p4RKP/3r4/8 b - - 4 57",
+          "white": false,
+          "clock_before_ms": 99216.7322000023,
+          "elapsed_ms": 5274.594999995315,
+          "clock_after_ms": 94442.13720000698
+        },
+        {
+          "uci": "a7a6",
+          "san": "Ra6",
+          "fen": "8/R7/4ppk1/3p4/2n3P1/p4RKP/3r4/8 w - - 0 58",
+          "white": true,
+          "clock_before_ms": 76133.35919994279,
+          "elapsed_ms": 3481.2841000093613,
+          "clock_after_ms": 73152.07509993343
+        },
+        {
+          "uci": "a3a2",
+          "san": "a2",
+          "fen": "8/8/R3ppk1/3p4/2n3P1/p4RKP/3r4/8 b - - 1 58",
+          "white": false,
+          "clock_before_ms": 94442.13720000698,
+          "elapsed_ms": 5635.721300001023,
+          "clock_after_ms": 89306.41590000596
+        },
+        {
+          "uci": "f3f1",
+          "san": "Rf1",
+          "fen": "8/8/R3ppk1/3p4/2n3P1/5RKP/p2r4/8 w - - 0 59",
+          "white": true,
+          "clock_before_ms": 73152.07509993343,
+          "elapsed_ms": 4603.709799994249,
+          "clock_after_ms": 69048.36529993918
+        },
+        {
+          "uci": "c4e3",
+          "san": "Ne3",
+          "fen": "8/8/R3ppk1/3p4/2n3P1/6KP/p2r4/5R2 b - - 1 59",
+          "white": false,
+          "clock_before_ms": 89306.41590000596,
+          "elapsed_ms": 5986.110400001053,
+          "clock_after_ms": 83820.3055000049
+        },
+        {
+          "uci": "f1a1",
+          "san": "Ra1",
+          "fen": "8/8/R3ppk1/3p4/6P1/4n1KP/p2r4/5R2 w - - 2 60",
+          "white": true,
+          "clock_before_ms": 69048.36529993918,
+          "elapsed_ms": 4125.404100021115,
+          "clock_after_ms": 65422.96119991806
+        },
+        {
+          "uci": "e3g4",
+          "san": "Nxg4",
+          "fen": "8/8/R3ppk1/3p4/6P1/4n1KP/p2r4/R7 b - - 3 60",
+          "white": false,
+          "clock_before_ms": 83820.3055000049,
+          "elapsed_ms": 5022.410699981265,
+          "clock_after_ms": 79297.89480002364
+        },
+        {
+          "uci": "g3g4",
+          "san": "Kxg4",
+          "fen": "8/8/R3ppk1/3p4/6n1/6KP/p2r4/R7 w - - 0 61",
+          "white": true,
+          "clock_before_ms": 65422.96119991806,
+          "elapsed_ms": 9258.013400016353,
+          "clock_after_ms": 56664.94779990171
+        },
+        {
+          "uci": "f6f5",
+          "san": "f5+",
+          "fen": "8/8/R3ppk1/3p4/6K1/7P/p2r4/R7 b - - 0 61",
+          "white": false,
+          "clock_before_ms": 79297.89480002364,
+          "elapsed_ms": 4170.5077000078745,
+          "clock_after_ms": 75627.38710001577
+        },
+        {
+          "uci": "g4g3",
+          "san": "Kg3",
+          "fen": "8/8/R3p1k1/3p1p2/6K1/7P/p2r4/R7 w - - 0 62",
+          "white": true,
+          "clock_before_ms": 56664.94779990171,
+          "elapsed_ms": 4401.127599994652,
+          "clock_after_ms": 52763.82019990706
+        },
+        {
+          "uci": "f5f4",
+          "san": "f4+",
+          "fen": "8/8/R3p1k1/3p1p2/8/6KP/p2r4/R7 b - - 1 62",
+          "white": false,
+          "clock_before_ms": 75627.38710001577,
+          "elapsed_ms": 2772.099199995864,
+          "clock_after_ms": 73355.2879000199
+        },
+        {
+          "uci": "g3g4",
+          "san": "Kg4",
+          "fen": "8/8/R3p1k1/3p4/5p2/6KP/p2r4/R7 w - - 0 63",
+          "white": true,
+          "clock_before_ms": 52763.82019990706,
+          "elapsed_ms": 9368.135199998505,
+          "clock_after_ms": 43895.68499990855
+        },
+        {
+          "uci": "d2g2",
+          "san": "Rg2+",
+          "fen": "8/8/R3p1k1/3p4/5pK1/7P/p2r4/R7 b - - 1 63",
+          "white": false,
+          "clock_before_ms": 73355.2879000199,
+          "elapsed_ms": 4033.981799992034,
+          "clock_after_ms": 69821.30610002787
+        },
+        {
+          "uci": "g4f3",
+          "san": "Kf3",
+          "fen": "8/8/R3p1k1/3p4/5pK1/7P/p5r1/R7 w - - 2 64",
+          "white": true,
+          "clock_before_ms": 43895.68499990855,
+          "elapsed_ms": 5096.168399992166,
+          "clock_after_ms": 39299.51659991639
+        },
+        {
+          "uci": "g2d2",
+          "san": "Rd2",
+          "fen": "8/8/R3p1k1/3p4/5p2/5K1P/p5r1/R7 b - - 3 64",
+          "white": false,
+          "clock_before_ms": 69821.30610002787,
+          "elapsed_ms": 2549.7712999931537,
+          "clock_after_ms": 67771.53480003471
+        },
+        {
+          "uci": "f3g4",
+          "san": "Kg4",
+          "fen": "8/8/R3p1k1/3p4/5p2/5K1P/p2r4/R7 w - - 4 65",
+          "white": true,
+          "clock_before_ms": 39299.51659991639,
+          "elapsed_ms": 7303.749999991851,
+          "clock_after_ms": 32495.766599924536
+        },
+        {
+          "uci": "d2g2",
+          "san": "Rg2+",
+          "fen": "8/8/R3p1k1/3p4/5pK1/7P/p2r4/R7 b - - 5 65",
+          "white": false,
+          "clock_before_ms": 67771.53480003471,
+          "elapsed_ms": 3744.9655999953393,
+          "clock_after_ms": 64526.569200039376
+        },
+        {
+          "uci": "g4f3",
+          "san": "Kf3",
+          "fen": "8/8/R3p1k1/3p4/5pK1/7P/p5r1/R7 w - - 6 66",
+          "white": true,
+          "clock_before_ms": 32495.766599924536,
+          "elapsed_ms": 4601.016600005096,
+          "clock_after_ms": 28394.74999991944
+        },
+        {
+          "uci": "g2d2",
+          "san": "Rd2",
+          "fen": "8/8/R3p1k1/3p4/5p2/5K1P/p5r1/R7 b - - 7 66",
+          "white": false,
+          "clock_before_ms": 64526.569200039376,
+          "elapsed_ms": 3728.794700000435,
+          "clock_after_ms": 61297.77450003894
+        }
+      ],
+      "init_ms": {
+        "white": 331.69189997715876,
+        "black": 736.7618999851402
+      },
+      "uci_limits": [
+        {
+          "ply": 106,
+          "white_clock": 120.0,
+          "black_clock": 114.70940669998527,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 108,
+          "white_clock": 111.98708600000828,
+          "black_clock": 109.72062699997332,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 110,
+          "white_clock": 101.3013643999875,
+          "black_clock": 104.96006149999448,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 112,
+          "white_clock": 90.72297609996167,
+          "black_clock": 99.2167322000023,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 114,
+          "white_clock": 76.13335919994279,
+          "black_clock": 94.44213720000698,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 116,
+          "white_clock": 73.15207509993343,
+          "black_clock": 89.30641590000596,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 118,
+          "white_clock": 69.04836529993918,
+          "black_clock": 83.8203055000049,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 120,
+          "white_clock": 65.42296119991806,
+          "black_clock": 79.29789480002364,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 122,
+          "white_clock": 56.66494779990171,
+          "black_clock": 75.62738710001577,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 124,
+          "white_clock": 52.76382019990706,
+          "black_clock": 73.3552879000199,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 126,
+          "white_clock": 43.89568499990855,
+          "black_clock": 69.82130610002787,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 128,
+          "white_clock": 39.29951659991639,
+          "black_clock": 67.77153480003471,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 130,
+          "white_clock": 32.495766599924536,
+          "black_clock": 64.52656920003938,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        }
+      ],
+      "pgn": "[Event \"Chessity fast-chess verified pilot\"]\n[Site \"Local offline\"]\n[Date \"????.??.??\"]\n[Round \"5\"]\n[White \"Stockfish 19 UCI_Elo 2600\"]\n[Black \"classical-witty-magnus-v1\"]\n[Result \"1/2-1/2\"]\n[FEN \"R7/5p1k/4p3/3p4/2nP4/p4R1P/3r2P1/6K1 b - - 7 53\"]\n[SetUp \"1\"]\n[TimeControl \"120+0.5\"]\n[Termination \"threefold_repetition\"]\n[OpeningSetupUCI \"\"]\n\n53... Rxd4 { [%clk 0:01:54.709] } 54. Ra7 { [%clk 0:01:51.987] } 54... Kg6 { [%clk 0:01:49.721] } 55. g4 { [%clk 0:01:41.301] } 55... Rd1+ { [%clk 0:01:44.96] } 56. Kf2 { [%clk 0:01:30.723] } 56... Rd2+ { [%clk 0:01:39.217] } 57. Kg3 { [%clk 0:01:16.133] } 57... f6 { [%clk 0:01:34.442] } 58. Ra6 { [%clk 0:01:13.152] } 58... a2 { [%clk 0:01:29.306] } 59. Rf1 { [%clk 0:01:09.048] } 59... Ne3 { [%clk 0:01:23.82] } 60. Ra1 { [%clk 0:01:05.423] } 60... Nxg4 { [%clk 0:01:19.298] } 61. Kxg4 { [%clk 0:00:56.665] } 61... f5+ { [%clk 0:01:15.627] } 62. Kg3 { [%clk 0:00:52.764] } 62... f4+ { [%clk 0:01:13.355] } 63. Kg4 { [%clk 0:00:43.896] } 63... Rg2+ { [%clk 0:01:09.821] } 64. Kf3 { [%clk 0:00:39.3] } 64... Rd2 { [%clk 0:01:07.772] } 65. Kg4 { [%clk 0:00:32.496] } 65... Rg2+ { [%clk 0:01:04.527] } 66. Kf3 { [%clk 0:00:28.395] } 66... Rd2 { [%clk 0:01:01.298] } 1/2-1/2",
+      "seconds": 165.01684090000344,
+      "final_fen": "8/8/R3p1k1/3p4/5p2/5K1P/p2r4/R7 w - - 8 67"
+    },
+    {
+      "id": 6,
+      "candidate_path": "candidates/classical-witty-magnus-v1",
+      "opening": [],
+      "elo": 2600,
+      "family": "practical_near_equal",
+      "pair": 1,
+      "candidate_white": true,
+      "start_fen": "8/8/8/4k3/1RP1nnp1/8/7P/6K1 w - - 1 51",
+      "source_id": "threephase:92da0973bcafc593e9f1:101",
+      "source_kind": "heldout_game_finite_equality_estimate",
+      "canonical_key": "6k1/7p/8/1rp1NNP1/4K3/8/8/8 b - -",
+      "intended_objective": "preserve_draw_or_win_against_2600_setting",
+      "score": 0.5,
+      "termination": "threefold_repetition",
+      "failed_colour": null,
+      "host_cpu_busy_fraction": 0.37112787080830034,
+      "host_load_scope": "Host-wide average during game and initialization; includes all applications, not per-engine utilization or an isolated-core guarantee.",
+      "moves": [
+        {
+          "uci": "b4a4",
+          "san": "Ra4",
+          "fen": "8/8/8/4k3/1RP1nnp1/8/7P/6K1 w - - 1 51",
+          "white": true,
+          "clock_before_ms": 120000.0,
+          "elapsed_ms": 3967.135600018082,
+          "clock_after_ms": 116532.86439998192
+        },
+        {
+          "uci": "e5d4",
+          "san": "Kd4",
+          "fen": "8/8/8/4k3/R1P1nnp1/8/7P/6K1 b - - 2 51",
+          "white": false,
+          "clock_before_ms": 120000.0,
+          "elapsed_ms": 15477.866600005655,
+          "clock_after_ms": 105022.13339999435
+        },
+        {
+          "uci": "c4c5",
+          "san": "c5+",
+          "fen": "8/8/8/8/R1Pknnp1/8/7P/6K1 w - - 3 52",
+          "white": true,
+          "clock_before_ms": 116532.86439998192,
+          "elapsed_ms": 5374.607799982186,
+          "clock_after_ms": 111658.25659999973
+        },
+        {
+          "uci": "d4d5",
+          "san": "Kd5",
+          "fen": "8/8/8/2P5/R2knnp1/8/7P/6K1 b - - 0 52",
+          "white": false,
+          "clock_before_ms": 105022.13339999435,
+          "elapsed_ms": 12513.727500016103,
+          "clock_after_ms": 93008.40589997824
+        },
+        {
+          "uci": "c5c6",
+          "san": "c6",
+          "fen": "8/8/8/2Pk4/R3nnp1/8/7P/6K1 w - - 1 53",
+          "white": true,
+          "clock_before_ms": 111658.25659999973,
+          "elapsed_ms": 5159.78330001235,
+          "clock_after_ms": 106998.47329998738
+        },
+        {
+          "uci": "g4g3",
+          "san": "g3",
+          "fen": "8/8/2P5/3k4/R3nnp1/8/7P/6K1 b - - 0 53",
+          "white": false,
+          "clock_before_ms": 93008.40589997824,
+          "elapsed_ms": 6755.19309999072,
+          "clock_after_ms": 86753.21279998752
+        },
+        {
+          "uci": "c6c7",
+          "san": "c7",
+          "fen": "8/8/2P5/3k4/R3nn2/6p1/7P/6K1 w - - 0 54",
+          "white": true,
+          "clock_before_ms": 106998.47329998738,
+          "elapsed_ms": 5135.656400001608,
+          "clock_after_ms": 102362.81689998577
+        },
+        {
+          "uci": "f4h3",
+          "san": "Nh3+",
+          "fen": "8/2P5/8/3k4/R3nn2/6p1/7P/6K1 b - - 0 54",
+          "white": false,
+          "clock_before_ms": 86753.21279998752,
+          "elapsed_ms": 8425.360799999908,
+          "clock_after_ms": 78827.85199998762
+        },
+        {
+          "uci": "g1g2",
+          "san": "Kg2",
+          "fen": "8/2P5/8/3k4/R3n3/6pn/7P/6K1 w - - 1 55",
+          "white": true,
+          "clock_before_ms": 102362.81689998577,
+          "elapsed_ms": 4923.790500004543,
+          "clock_after_ms": 97939.02639998123
+        },
+        {
+          "uci": "h3f4",
+          "san": "Nf4+",
+          "fen": "8/2P5/8/3k4/R3n3/6pn/6KP/8 b - - 2 55",
+          "white": false,
+          "clock_before_ms": 78827.85199998762,
+          "elapsed_ms": 6847.608499985654,
+          "clock_after_ms": 72480.24350000196
+        },
+        {
+          "uci": "g2f3",
+          "san": "Kf3",
+          "fen": "8/2P5/8/3k4/R3nn2/6p1/6KP/8 w - - 3 56",
+          "white": true,
+          "clock_before_ms": 97939.02639998123,
+          "elapsed_ms": 4721.234800003003,
+          "clock_after_ms": 93717.79159997823
+        },
+        {
+          "uci": "e4d6",
+          "san": "Nd6",
+          "fen": "8/2P5/8/3k4/R3nn2/5Kp1/7P/8 b - - 4 56",
+          "white": false,
+          "clock_before_ms": 72480.24350000196,
+          "elapsed_ms": 8027.099500002805,
+          "clock_after_ms": 64953.143999999156
+        },
+        {
+          "uci": "a4f4",
+          "san": "Rxf4",
+          "fen": "8/2P5/3n4/3k4/R4n2/5Kp1/7P/8 w - - 5 57",
+          "white": true,
+          "clock_before_ms": 93717.79159997823,
+          "elapsed_ms": 5147.03880000161,
+          "clock_after_ms": 89070.75279997662
+        },
+        {
+          "uci": "g3h2",
+          "san": "gxh2",
+          "fen": "8/2P5/3n4/3k4/5R2/5Kp1/7P/8 b - - 0 57",
+          "white": false,
+          "clock_before_ms": 64953.143999999156,
+          "elapsed_ms": 7247.467599983793,
+          "clock_after_ms": 58205.67640001536
+        },
+        {
+          "uci": "f3g2",
+          "san": "Kg2",
+          "fen": "8/2P5/3n4/3k4/5R2/5K2/7p/8 w - - 0 58",
+          "white": true,
+          "clock_before_ms": 89070.75279997662,
+          "elapsed_ms": 4473.132300016005,
+          "clock_after_ms": 85097.62049996061
+        },
+        {
+          "uci": "h2h1r",
+          "san": "h1=R",
+          "fen": "8/2P5/3n4/3k4/5R2/8/6Kp/8 b - - 1 58",
+          "white": false,
+          "clock_before_ms": 58205.67640001536,
+          "elapsed_ms": 8721.913800021866,
+          "clock_after_ms": 49983.7625999935
+        },
+        {
+          "uci": "g2h1",
+          "san": "Kxh1",
+          "fen": "8/2P5/3n4/3k4/5R2/8/6K1/7r w - - 0 59",
+          "white": true,
+          "clock_before_ms": 85097.62049996061,
+          "elapsed_ms": 4493.367099988973,
+          "clock_after_ms": 81104.25339997164
+        },
+        {
+          "uci": "d5c6",
+          "san": "Kc6",
+          "fen": "8/2P5/3n4/3k4/5R2/8/8/7K b - - 0 59",
+          "white": false,
+          "clock_before_ms": 49983.7625999935,
+          "elapsed_ms": 4983.266600000206,
+          "clock_after_ms": 45500.49599999329
+        },
+        {
+          "uci": "f4c4",
+          "san": "Rc4+",
+          "fen": "8/2P5/2kn4/8/5R2/8/8/7K w - - 1 60",
+          "white": true,
+          "clock_before_ms": 81104.25339997164,
+          "elapsed_ms": 3146.2037000164855,
+          "clock_after_ms": 78458.04969995515
+        },
+        {
+          "uci": "c6b7",
+          "san": "Kb7",
+          "fen": "8/2P5/2kn4/8/2R5/8/8/7K b - - 2 60",
+          "white": false,
+          "clock_before_ms": 45500.49599999329,
+          "elapsed_ms": 5811.581599991769,
+          "clock_after_ms": 40188.91440000152
+        },
+        {
+          "uci": "c4c5",
+          "san": "Rc5",
+          "fen": "8/1kP5/3n4/8/2R5/8/8/7K w - - 3 61",
+          "white": true,
+          "clock_before_ms": 78458.04969995515,
+          "elapsed_ms": 4128.834000002826,
+          "clock_after_ms": 74829.21569995233
+        },
+        {
+          "uci": "b7c8",
+          "san": "Kc8",
+          "fen": "8/1kP5/3n4/2R5/8/8/8/7K b - - 4 61",
+          "white": false,
+          "clock_before_ms": 40188.91440000152,
+          "elapsed_ms": 4964.549199998146,
+          "clock_after_ms": 35724.365200003376
+        },
+        {
+          "uci": "h1g2",
+          "san": "Kg2",
+          "fen": "2k5/2P5/3n4/2R5/8/8/8/7K w - - 5 62",
+          "white": true,
+          "clock_before_ms": 74829.21569995233,
+          "elapsed_ms": 3949.009500007378,
+          "clock_after_ms": 71380.20619994495
+        },
+        {
+          "uci": "d6e8",
+          "san": "Ne8",
+          "fen": "2k5/2P5/3n4/2R5/8/8/6K1/8 b - - 6 62",
+          "white": false,
+          "clock_before_ms": 35724.365200003376,
+          "elapsed_ms": 4829.851499991491,
+          "clock_after_ms": 31394.513700011885
+        },
+        {
+          "uci": "g2f3",
+          "san": "Kf3",
+          "fen": "2k1n3/2P5/8/2R5/8/8/6K1/8 w - - 7 63",
+          "white": true,
+          "clock_before_ms": 71380.20619994495,
+          "elapsed_ms": 2793.686599994544,
+          "clock_after_ms": 69086.5195999504
+        },
+        {
+          "uci": "e8c7",
+          "san": "Nxc7",
+          "fen": "2k1n3/2P5/8/2R5/8/5K2/8/8 b - - 8 63",
+          "white": false,
+          "clock_before_ms": 31394.513700011885,
+          "elapsed_ms": 4419.731500005582,
+          "clock_after_ms": 27474.782200006302
+        },
+        {
+          "uci": "c5c3",
+          "san": "Rc3",
+          "fen": "2k5/2n5/8/2R5/8/5K2/8/8 w - - 0 64",
+          "white": true,
+          "clock_before_ms": 69086.5195999504,
+          "elapsed_ms": 3378.670499980217,
+          "clock_after_ms": 66207.84909997019
+        },
+        {
+          "uci": "c8d7",
+          "san": "Kd7",
+          "fen": "2k5/2n5/8/8/8/2R2K2/8/8 b - - 1 64",
+          "white": false,
+          "clock_before_ms": 27474.782200006302,
+          "elapsed_ms": 3154.3888000014704,
+          "clock_after_ms": 24820.393400004832
+        },
+        {
+          "uci": "c3d3",
+          "san": "Rd3+",
+          "fen": "8/2nk4/8/8/8/2R2K2/8/8 w - - 2 65",
+          "white": true,
+          "clock_before_ms": 66207.84909997019,
+          "elapsed_ms": 3664.2511000100058,
+          "clock_after_ms": 63043.597999960184
+        },
+        {
+          "uci": "d7e8",
+          "san": "Ke8",
+          "fen": "8/2nk4/8/8/8/3R1K2/8/8 b - - 3 65",
+          "white": false,
+          "clock_before_ms": 24820.393400004832,
+          "elapsed_ms": 966.3044000044465,
+          "clock_after_ms": 24354.089000000386
+        },
+        {
+          "uci": "d3e3",
+          "san": "Re3+",
+          "fen": "4k3/2n5/8/8/8/3R1K2/8/8 w - - 4 66",
+          "white": true,
+          "clock_before_ms": 63043.597999960184,
+          "elapsed_ms": 3648.981200007256,
+          "clock_after_ms": 59894.61679995293
+        },
+        {
+          "uci": "e8f8",
+          "san": "Kf8",
+          "fen": "4k3/2n5/8/8/8/4RK2/8/8 b - - 5 66",
+          "white": false,
+          "clock_before_ms": 24354.089000000386,
+          "elapsed_ms": 3130.1926000160165,
+          "clock_after_ms": 21723.89639998437
+        },
+        {
+          "uci": "e3e5",
+          "san": "Re5",
+          "fen": "5k2/2n5/8/8/8/4RK2/8/8 w - - 6 67",
+          "white": true,
+          "clock_before_ms": 59894.61679995293,
+          "elapsed_ms": 3478.355700004613,
+          "clock_after_ms": 56916.261099948315
+        },
+        {
+          "uci": "c7e8",
+          "san": "Ne8",
+          "fen": "5k2/2n5/8/4R3/8/5K2/8/8 b - - 7 67",
+          "white": false,
+          "clock_before_ms": 21723.89639998437,
+          "elapsed_ms": 2542.5027000019327,
+          "clock_after_ms": 19681.393699982436
+        },
+        {
+          "uci": "f3e4",
+          "san": "Ke4",
+          "fen": "4nk2/8/8/4R3/8/5K2/8/8 w - - 8 68",
+          "white": true,
+          "clock_before_ms": 56916.261099948315,
+          "elapsed_ms": 3475.2428000210784,
+          "clock_after_ms": 53941.01829992724
+        },
+        {
+          "uci": "e8d6",
+          "san": "Nd6+",
+          "fen": "4nk2/8/8/4R3/4K3/8/8/8 b - - 9 68",
+          "white": false,
+          "clock_before_ms": 19681.393699982436,
+          "elapsed_ms": 2196.0588000074495,
+          "clock_after_ms": 17985.334899974987
+        },
+        {
+          "uci": "e4d5",
+          "san": "Kd5",
+          "fen": "5k2/8/3n4/4R3/4K3/8/8/8 w - - 10 69",
+          "white": true,
+          "clock_before_ms": 53941.01829992724,
+          "elapsed_ms": 2544.1479999863077,
+          "clock_after_ms": 51896.87029994093
+        },
+        {
+          "uci": "d6e8",
+          "san": "Ne8",
+          "fen": "5k2/8/3n4/3KR3/8/8/8/8 b - - 11 69",
+          "white": false,
+          "clock_before_ms": 17985.334899974987,
+          "elapsed_ms": 2111.4671000104863,
+          "clock_after_ms": 16373.8677999645
+        },
+        {
+          "uci": "d5e6",
+          "san": "Ke6",
+          "fen": "4nk2/8/8/3KR3/8/8/8/8 w - - 12 70",
+          "white": true,
+          "clock_before_ms": 51896.87029994093,
+          "elapsed_ms": 2508.4545999998227,
+          "clock_after_ms": 49888.415699941106
+        },
+        {
+          "uci": "e8g7",
+          "san": "Ng7+",
+          "fen": "4nk2/8/4K3/4R3/8/8/8/8 b - - 13 70",
+          "white": false,
+          "clock_before_ms": 16373.8677999645,
+          "elapsed_ms": 3396.1930999939796,
+          "clock_after_ms": 13477.674699970521
+        },
+        {
+          "uci": "e6f6",
+          "san": "Kf6",
+          "fen": "5k2/6n1/4K3/4R3/8/8/8/8 w - - 14 71",
+          "white": true,
+          "clock_before_ms": 49888.415699941106,
+          "elapsed_ms": 2866.8478000035975,
+          "clock_after_ms": 47521.56789993751
+        },
+        {
+          "uci": "g7e8",
+          "san": "Ne8+",
+          "fen": "5k2/6n1/5K2/4R3/8/8/8/8 b - - 15 71",
+          "white": false,
+          "clock_before_ms": 13477.674699970521,
+          "elapsed_ms": 2965.175999997882,
+          "clock_after_ms": 11012.498699972639
+        },
+        {
+          "uci": "f6e6",
+          "san": "Ke6",
+          "fen": "4nk2/8/5K2/4R3/8/8/8/8 w - - 16 72",
+          "white": true,
+          "clock_before_ms": 47521.56789993751,
+          "elapsed_ms": 2266.0509000124875,
+          "clock_after_ms": 45755.51699992502
+        },
+        {
+          "uci": "e8g7",
+          "san": "Ng7+",
+          "fen": "4nk2/8/4K3/4R3/8/8/8/8 b - - 17 72",
+          "white": false,
+          "clock_before_ms": 11012.498699972639,
+          "elapsed_ms": 3277.7434999879915,
+          "clock_after_ms": 8234.755199984647
+        },
+        {
+          "uci": "e6f6",
+          "san": "Kf6",
+          "fen": "5k2/6n1/4K3/4R3/8/8/8/8 w - - 18 73",
+          "white": true,
+          "clock_before_ms": 45755.51699992502,
+          "elapsed_ms": 2148.4463000088,
+          "clock_after_ms": 44107.07069991622
+        },
+        {
+          "uci": "g7e8",
+          "san": "Ne8+",
+          "fen": "5k2/6n1/5K2/4R3/8/8/8/8 b - - 19 73",
+          "white": false,
+          "clock_before_ms": 8234.755199984647,
+          "elapsed_ms": 2503.3306000113953,
+          "clock_after_ms": 6231.424599973252
+        }
+      ],
+      "init_ms": {
+        "white": 664.9172999896109,
+        "black": 341.10879999934696
+      },
+      "uci_limits": [
+        {
+          "ply": 101,
+          "white_clock": 116.53286439998192,
+          "black_clock": 120.0,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 103,
+          "white_clock": 111.65825659999973,
+          "black_clock": 105.02213339999435,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 105,
+          "white_clock": 106.99847329998738,
+          "black_clock": 93.00840589997824,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 107,
+          "white_clock": 102.36281689998577,
+          "black_clock": 86.75321279998752,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 109,
+          "white_clock": 97.93902639998123,
+          "black_clock": 78.82785199998762,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 111,
+          "white_clock": 93.71779159997823,
+          "black_clock": 72.48024350000196,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 113,
+          "white_clock": 89.07075279997662,
+          "black_clock": 64.95314399999916,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 115,
+          "white_clock": 85.09762049996061,
+          "black_clock": 58.20567640001536,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 117,
+          "white_clock": 81.10425339997164,
+          "black_clock": 49.9837625999935,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 119,
+          "white_clock": 78.45804969995515,
+          "black_clock": 45.50049599999329,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 121,
+          "white_clock": 74.82921569995233,
+          "black_clock": 40.18891440000152,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 123,
+          "white_clock": 71.38020619994495,
+          "black_clock": 35.724365200003376,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 125,
+          "white_clock": 69.0865195999504,
+          "black_clock": 31.394513700011885,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 127,
+          "white_clock": 66.20784909997019,
+          "black_clock": 27.474782200006302,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 129,
+          "white_clock": 63.043597999960184,
+          "black_clock": 24.820393400004832,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 131,
+          "white_clock": 59.89461679995293,
+          "black_clock": 24.354089000000386,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 133,
+          "white_clock": 56.916261099948315,
+          "black_clock": 21.72389639998437,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 135,
+          "white_clock": 53.94101829992724,
+          "black_clock": 19.681393699982436,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 137,
+          "white_clock": 51.89687029994093,
+          "black_clock": 17.985334899974987,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 139,
+          "white_clock": 49.888415699941106,
+          "black_clock": 16.3738677999645,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 141,
+          "white_clock": 47.52156789993751,
+          "black_clock": 13.477674699970521,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 143,
+          "white_clock": 45.75551699992502,
+          "black_clock": 11.012498699972639,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        },
+        {
+          "ply": 145,
+          "white_clock": 44.10707069991622,
+          "black_clock": 8.234755199984647,
+          "white_inc": 0.5,
+          "black_inc": 0.5
+        }
+      ],
+      "pgn": "[Event \"Chessity fast-chess verified pilot\"]\n[Site \"Local offline\"]\n[Date \"????.??.??\"]\n[Round \"6\"]\n[White \"classical-witty-magnus-v1\"]\n[Black \"Stockfish 19 UCI_Elo 2600\"]\n[Result \"1/2-1/2\"]\n[FEN \"8/8/8/4k3/1RP1nnp1/8/7P/6K1 w - - 1 51\"]\n[SetUp \"1\"]\n[TimeControl \"120+0.5\"]\n[Termination \"threefold_repetition\"]\n[OpeningSetupUCI \"\"]\n\n51. Ra4 { [%clk 0:01:56.533] } 51... Kd4 { [%clk 0:01:45.022] } 52. c5+ { [%clk 0:01:51.658] } 52... Kd5 { [%clk 0:01:33.008] } 53. c6 { [%clk 0:01:46.998] } 53... g3 { [%clk 0:01:26.753] } 54. c7 { [%clk 0:01:42.363] } 54... Nh3+ { [%clk 0:01:18.828] } 55. Kg2 { [%clk 0:01:37.939] } 55... Nf4+ { [%clk 0:01:12.48] } 56. Kf3 { [%clk 0:01:33.718] } 56... Nd6 { [%clk 0:01:04.953] } 57. Rxf4 { [%clk 0:01:29.071] } 57... gxh2 { [%clk 0:00:58.206] } 58. Kg2 { [%clk 0:01:25.098] } 58... h1=R { [%clk 0:00:49.984] } 59. Kxh1 { [%clk 0:01:21.104] } 59... Kc6 { [%clk 0:00:45.5] } 60. Rc4+ { [%clk 0:01:18.458] } 60... Kb7 { [%clk 0:00:40.189] } 61. Rc5 { [%clk 0:01:14.829] } 61... Kc8 { [%clk 0:00:35.724] } 62. Kg2 { [%clk 0:01:11.38] } 62... Ne8 { [%clk 0:00:31.395] } 63. Kf3 { [%clk 0:01:09.087] } 63... Nxc7 { [%clk 0:00:27.475] } 64. Rc3 { [%clk 0:01:06.208] } 64... Kd7 { [%clk 0:00:24.82] } 65. Rd3+ { [%clk 0:01:03.044] } 65... Ke8 { [%clk 0:00:24.354] } 66. Re3+ { [%clk 0:00:59.895] } 66... Kf8 { [%clk 0:00:21.724] } 67. Re5 { [%clk 0:00:56.916] } 67... Ne8 { [%clk 0:00:19.681] } 68. Ke4 { [%clk 0:00:53.941] } 68... Nd6+ { [%clk 0:00:17.985] } 69. Kd5 { [%clk 0:00:51.897] } 69... Ne8 { [%clk 0:00:16.374] } 70. Ke6 { [%clk 0:00:49.888] } 70... Ng7+ { [%clk 0:00:13.478] } 71. Kf6 { [%clk 0:00:47.522] } 71... Ne8+ { [%clk 0:00:11.012] } 72. Ke6 { [%clk 0:00:45.756] } 72... Ng7+ { [%clk 0:00:08.235] } 73. Kf6 { [%clk 0:00:44.107] } 73... Ne8+ { [%clk 0:00:06.231] } 1/2-1/2",
+      "seconds": 213.9226604999858,
+      "final_fen": "4nk2/8/5K2/4R3/8/8/8/8 w - - 20 74"
+    }
+  ],
+  "practical_cases_available": 2,
+  "history_scope": "Each game begins with the recorded FEN's rule counters and fresh repetition history, as for a curated match start.",
+  "source_files": {
+    "scripts/threephase_endgames.py": "00ddbfec486015a2f1b7cc15de76f77aaf94e66c220eefd1ba64726dac0d3af1",
+    "scripts/fastchess_matches.py": "dff3a94e4d1e5fa139565c2418d62fa9829d6cd58eb6fc02c788d1b770265df2"
+  },
+  "summary": {
+    "basic_conversion": {
+      "checkmate": 3,
+      "not_converted:threefold_repetition": 1
+    },
+    "practical_results": {
+      "0.5": 2
+    }
+  }
+}

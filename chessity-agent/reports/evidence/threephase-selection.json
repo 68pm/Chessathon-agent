@@ -1,0 +1,836 @@
+{
+  "status": "complete",
+  "selected_path": "candidates/classical-witty-magnus-v1",
+  "public_version": "v1.14",
+  "selected_zip_sha256": "6d287209c28bba520a21ef49261af99543a167fb192ce15513102c883c503a56",
+  "candidate_promoted": false,
+  "promotion_reasons": [
+    "Fresh paired 95% lower score bound versus v1.14 did not exceed 50%."
+  ],
+  "challenger": "candidates/threephase-pvs-v1",
+  "time_control": "120+0.5",
+  "matches": {
+    "baseline": {
+      "stockfish:2200": {
+        "games": 4,
+        "wins": 1,
+        "draws": 0,
+        "losses": 3,
+        "score": 0.25,
+        "completed_pairs": 2,
+        "pair_bootstrap_95": [
+          0.0,
+          0.5
+        ],
+        "terminations": {
+          "checkmate": 4
+        },
+        "candidate_failures": 0
+      },
+      "stockfish:2400": {
+        "games": 4,
+        "wins": 1,
+        "draws": 1,
+        "losses": 2,
+        "score": 0.375,
+        "completed_pairs": 2,
+        "pair_bootstrap_95": [
+          0.25,
+          0.5
+        ],
+        "terminations": {
+          "threefold_repetition": 1,
+          "checkmate": 3
+        },
+        "candidate_failures": 0
+      },
+      "stockfish:2600": {
+        "games": 4,
+        "wins": 0,
+        "draws": 0,
+        "losses": 4,
+        "score": 0.0,
+        "completed_pairs": 2,
+        "pair_bootstrap_95": [
+          0.0,
+          0.0
+        ],
+        "terminations": {
+          "checkmate": 4
+        },
+        "candidate_failures": 0
+      }
+    },
+    "confirmation": {
+      "candidates/classical-witty-magnus-v1": {
+        "games": 16,
+        "wins": 4,
+        "draws": 7,
+        "losses": 5,
+        "score": 0.46875,
+        "completed_pairs": 8,
+        "pair_bootstrap_95": [
+          0.3125,
+          0.625
+        ],
+        "terminations": {
+          "threefold_repetition": 7,
+          "checkmate": 9
+        },
+        "candidate_failures": 0
+      },
+      "candidates/fastchess-adaptive-v1": {
+        "games": 8,
+        "wins": 3,
+        "draws": 4,
+        "losses": 1,
+        "score": 0.625,
+        "completed_pairs": 4,
+        "pair_bootstrap_95": [
+          0.375,
+          0.875
+        ],
+        "terminations": {
+          "checkmate": 4,
+          "threefold_repetition": 4
+        },
+        "candidate_failures": 0
+      }
+    },
+    "rated": {
+      "stockfish:2200": {
+        "games": 12,
+        "wins": 1,
+        "draws": 1,
+        "losses": 10,
+        "score": 0.125,
+        "completed_pairs": 6,
+        "pair_bootstrap_95": [
+          0.0,
+          0.2916666666666667
+        ],
+        "terminations": {
+          "checkmate": 11,
+          "threefold_repetition": 1
+        },
+        "candidate_failures": 0
+      },
+      "stockfish:2400": {
+        "games": 12,
+        "wins": 2,
+        "draws": 0,
+        "losses": 10,
+        "score": 0.16666666666666666,
+        "completed_pairs": 6,
+        "pair_bootstrap_95": [
+          0.0,
+          0.3333333333333333
+        ],
+        "terminations": {
+          "checkmate": 12
+        },
+        "candidate_failures": 0
+      },
+      "stockfish:2600": {
+        "games": 12,
+        "wins": 0,
+        "draws": 3,
+        "losses": 9,
+        "score": 0.125,
+        "completed_pairs": 6,
+        "pair_bootstrap_95": [
+          0.041666666666666664,
+          0.20833333333333334
+        ],
+        "terminations": {
+          "threefold_repetition": 2,
+          "checkmate": 9,
+          "fifty_moves": 1
+        },
+        "candidate_failures": 0
+      }
+    },
+    "development-threephase-pvs-v1": {
+      "candidates/classical-witty-magnus-v1": {
+        "games": 8,
+        "wins": 5,
+        "draws": 1,
+        "losses": 2,
+        "score": 0.6875,
+        "completed_pairs": 4,
+        "pair_bootstrap_95": [
+          0.5,
+          0.875
+        ],
+        "terminations": {
+          "checkmate": 7,
+          "threefold_repetition": 1
+        },
+        "candidate_failures": 0
+      }
+    }
+  },
+  "endgames": {
+    "candidates/classical-witty-magnus-v1": {
+      "basic_conversion": {
+        "checkmate": 3,
+        "not_converted:threefold_repetition": 1
+      },
+      "practical_results": {
+        "0.5": 2
+      }
+    },
+    "candidates/threephase-pvs-v1": {
+      "basic_conversion": {
+        "not_converted:threefold_repetition": 2,
+        "checkmate": 2
+      },
+      "practical_results": {
+        "0.0": 1,
+        "1.0": 1
+      }
+    }
+  },
+  "test_positions": {
+    "candidates/classical-witty-magnus-v1": {
+      "clock4000:all": {
+        "positions": 96,
+        "accepted": 63,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 96,
+        "blunders": 5,
+        "mean_regret_cp": 66.32291666666667,
+        "median_seconds": 0.5555452499975218,
+        "p95_seconds": 0.6652166999992914,
+        "median_nodes": 1540.0,
+        "completed_depths": {}
+      },
+      "clock4000:opening": {
+        "positions": 24,
+        "accepted": 18,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 1,
+        "mean_regret_cp": 58.583333333333336,
+        "median_seconds": 0.5590432500030147,
+        "p95_seconds": 0.6378958099958254,
+        "median_nodes": 1273.0,
+        "completed_depths": {}
+      },
+      "clock4000:middlegame": {
+        "positions": 24,
+        "accepted": 15,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 1,
+        "mean_regret_cp": 71.66666666666667,
+        "median_seconds": 0.6459158000070602,
+        "p95_seconds": 0.7060066900012316,
+        "median_nodes": 1761.0,
+        "completed_depths": {}
+      },
+      "clock4000:transition": {
+        "positions": 24,
+        "accepted": 11,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 1,
+        "mean_regret_cp": 82.54166666666667,
+        "median_seconds": 0.6008638000057545,
+        "p95_seconds": 0.6507259399950271,
+        "median_nodes": 1569.5,
+        "completed_depths": {}
+      },
+      "clock4000:endgame": {
+        "positions": 24,
+        "accepted": 19,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 2,
+        "mean_regret_cp": 52.5,
+        "median_seconds": 0.39770639999915147,
+        "p95_seconds": 0.5499859049901715,
+        "median_nodes": 1310.0,
+        "completed_depths": {}
+      },
+      "clock800:all": {
+        "positions": 96,
+        "accepted": 64,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 96,
+        "blunders": 7,
+        "mean_regret_cp": 73.375,
+        "median_seconds": 0.38842619999923045,
+        "p95_seconds": 0.3935862750004162,
+        "median_nodes": 1588.0,
+        "completed_depths": {}
+      },
+      "clock800:opening": {
+        "positions": 24,
+        "accepted": 19,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 1,
+        "mean_regret_cp": 54.5,
+        "median_seconds": 0.39259534999291645,
+        "p95_seconds": 0.39577217998958075,
+        "median_nodes": 1461.5,
+        "completed_depths": {}
+      },
+      "clock800:middlegame": {
+        "positions": 24,
+        "accepted": 15,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 1,
+        "mean_regret_cp": 71.66666666666667,
+        "median_seconds": 0.3920325499930186,
+        "p95_seconds": 0.3930661500096903,
+        "median_nodes": 1739.5,
+        "completed_depths": {}
+      },
+      "clock800:transition": {
+        "positions": 24,
+        "accepted": 11,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 3,
+        "mean_regret_cp": 114.83333333333333,
+        "median_seconds": 0.3919884000060847,
+        "p95_seconds": 0.39295446999531125,
+        "median_nodes": 1491.5,
+        "completed_depths": {}
+      },
+      "clock800:endgame": {
+        "positions": 24,
+        "accepted": 19,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 2,
+        "mean_regret_cp": 52.5,
+        "median_seconds": 0.27258255000197096,
+        "p95_seconds": 0.3783079499960877,
+        "median_nodes": 1604.0,
+        "completed_depths": {}
+      },
+      "nodes2000:all": {
+        "positions": 96,
+        "accepted": 63,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 96,
+        "blunders": 5,
+        "mean_regret_cp": 66.8125,
+        "median_seconds": 0.730033950007055,
+        "p95_seconds": 1.0497935250023147,
+        "median_nodes": 2000.0,
+        "completed_depths": {
+          "2": 45,
+          "1": 28,
+          "5": 1,
+          "4": 4,
+          "3": 18
+        }
+      },
+      "nodes2000:opening": {
+        "positions": 24,
+        "accepted": 17,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 1,
+        "mean_regret_cp": 61.083333333333336,
+        "median_seconds": 0.8938265500037232,
+        "p95_seconds": 1.0887049350050801,
+        "median_nodes": 2000.0,
+        "completed_depths": {
+          "2": 17,
+          "1": 7
+        }
+      },
+      "nodes2000:middlegame": {
+        "positions": 24,
+        "accepted": 15,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 1,
+        "mean_regret_cp": 71.66666666666667,
+        "median_seconds": 0.820505650000996,
+        "p95_seconds": 1.041242404998047,
+        "median_nodes": 2000.0,
+        "completed_depths": {
+          "2": 13,
+          "1": 9,
+          "3": 2
+        }
+      },
+      "nodes2000:transition": {
+        "positions": 24,
+        "accepted": 12,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 1,
+        "mean_regret_cp": 82.0,
+        "median_seconds": 0.657273949989758,
+        "p95_seconds": 0.9928212549930322,
+        "median_nodes": 2000.0,
+        "completed_depths": {
+          "1": 12,
+          "2": 9,
+          "3": 3
+        }
+      },
+      "nodes2000:endgame": {
+        "positions": 24,
+        "accepted": 19,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 2,
+        "mean_regret_cp": 52.5,
+        "median_seconds": 0.5446446999994805,
+        "p95_seconds": 0.8209999450016765,
+        "median_nodes": 2000.0,
+        "completed_depths": {
+          "5": 1,
+          "4": 4,
+          "3": 13,
+          "2": 6
+        }
+      },
+      "nodes2000_book_off:all": {
+        "positions": 96,
+        "accepted": 63,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 96,
+        "blunders": 5,
+        "mean_regret_cp": 66.8125,
+        "median_seconds": 0.36617254999873694,
+        "p95_seconds": 0.46030569999857107,
+        "median_nodes": 2000.0,
+        "completed_depths": {
+          "2": 45,
+          "1": 28,
+          "5": 1,
+          "4": 4,
+          "3": 18
+        }
+      },
+      "nodes2000_book_off:opening": {
+        "positions": 24,
+        "accepted": 17,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 1,
+        "mean_regret_cp": 61.083333333333336,
+        "median_seconds": 0.4090379000044777,
+        "p95_seconds": 0.44459397500249903,
+        "median_nodes": 2000.0,
+        "completed_depths": {
+          "2": 17,
+          "1": 7
+        }
+      },
+      "nodes2000_book_off:middlegame": {
+        "positions": 24,
+        "accepted": 15,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 1,
+        "mean_regret_cp": 71.66666666666667,
+        "median_seconds": 0.35820765000244137,
+        "p95_seconds": 0.4793279300050926,
+        "median_nodes": 2000.0,
+        "completed_depths": {
+          "2": 13,
+          "1": 9,
+          "3": 2
+        }
+      },
+      "nodes2000_book_off:transition": {
+        "positions": 24,
+        "accepted": 12,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 1,
+        "mean_regret_cp": 82.0,
+        "median_seconds": 0.3711457000026712,
+        "p95_seconds": 0.4435537850098626,
+        "median_nodes": 2000.0,
+        "completed_depths": {
+          "1": 12,
+          "2": 9,
+          "3": 3
+        }
+      },
+      "nodes2000_book_off:endgame": {
+        "positions": 24,
+        "accepted": 19,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 2,
+        "mean_regret_cp": 52.5,
+        "median_seconds": 0.297219549996953,
+        "p95_seconds": 0.3878291649954917,
+        "median_nodes": 2000.0,
+        "completed_depths": {
+          "5": 1,
+          "4": 4,
+          "3": 13,
+          "2": 6
+        }
+      }
+    },
+    "candidates/threephase-pvs-v1": {
+      "clock4000:all": {
+        "positions": 96,
+        "accepted": 65,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 96,
+        "blunders": 3,
+        "mean_regret_cp": 64.65625,
+        "median_seconds": 0.5325661500028218,
+        "p95_seconds": 0.6646623000015097,
+        "median_nodes": 3527.5,
+        "completed_depths": {}
+      },
+      "clock4000:opening": {
+        "positions": 24,
+        "accepted": 15,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 1,
+        "mean_regret_cp": 69.79166666666667,
+        "median_seconds": 0.5287796999982675,
+        "p95_seconds": 0.6365001149999443,
+        "median_nodes": 3299.0,
+        "completed_depths": {}
+      },
+      "clock4000:middlegame": {
+        "positions": 24,
+        "accepted": 16,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 0,
+        "mean_regret_cp": 54.541666666666664,
+        "median_seconds": 0.5752843999944162,
+        "p95_seconds": 0.7027310200093779,
+        "median_nodes": 4140.5,
+        "completed_depths": {}
+      },
+      "clock4000:transition": {
+        "positions": 24,
+        "accepted": 12,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 2,
+        "mean_regret_cp": 109.16666666666667,
+        "median_seconds": 0.5628166000024066,
+        "p95_seconds": 0.650868600004469,
+        "median_nodes": 3566.0,
+        "completed_depths": {}
+      },
+      "clock4000:endgame": {
+        "positions": 24,
+        "accepted": 22,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 0,
+        "mean_regret_cp": 25.125,
+        "median_seconds": 0.40093180000258144,
+        "p95_seconds": 0.6235043800006679,
+        "median_nodes": 3294.5,
+        "completed_depths": {}
+      },
+      "clock800:all": {
+        "positions": 96,
+        "accepted": 63,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 96,
+        "blunders": 4,
+        "mean_regret_cp": 63.885416666666664,
+        "median_seconds": 0.389258349998272,
+        "p95_seconds": 0.3931943749958009,
+        "median_nodes": 2789.0,
+        "completed_depths": {}
+      },
+      "clock800:opening": {
+        "positions": 24,
+        "accepted": 16,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 1,
+        "mean_regret_cp": 70.125,
+        "median_seconds": 0.392169599996123,
+        "p95_seconds": 0.39379437500756465,
+        "median_nodes": 2845.0,
+        "completed_depths": {}
+      },
+      "clock800:middlegame": {
+        "positions": 24,
+        "accepted": 15,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 1,
+        "mean_regret_cp": 71.66666666666667,
+        "median_seconds": 0.3920667999991565,
+        "p95_seconds": 0.3926900099948398,
+        "median_nodes": 2884.5,
+        "completed_depths": {}
+      },
+      "clock800:transition": {
+        "positions": 24,
+        "accepted": 12,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 1,
+        "mean_regret_cp": 82.0,
+        "median_seconds": 0.39203070000803564,
+        "p95_seconds": 0.392911945002561,
+        "median_nodes": 2906.5,
+        "completed_depths": {}
+      },
+      "clock800:endgame": {
+        "positions": 24,
+        "accepted": 20,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 1,
+        "mean_regret_cp": 31.75,
+        "median_seconds": 0.2705157499949564,
+        "p95_seconds": 0.3758512949949363,
+        "median_nodes": 2334.5,
+        "completed_depths": {}
+      },
+      "nodes2000:all": {
+        "positions": 96,
+        "accepted": 64,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 96,
+        "blunders": 5,
+        "mean_regret_cp": 66.92708333333333,
+        "median_seconds": 0.25799219999316847,
+        "p95_seconds": 0.3323796000040602,
+        "median_nodes": 2000.0,
+        "completed_depths": {
+          "2": 39,
+          "1": 32,
+          "5": 1,
+          "3": 21,
+          "4": 3
+        }
+      },
+      "nodes2000:opening": {
+        "positions": 24,
+        "accepted": 18,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 1,
+        "mean_regret_cp": 59.375,
+        "median_seconds": 0.2833313500013901,
+        "p95_seconds": 0.35188859499903624,
+        "median_nodes": 2000.0,
+        "completed_depths": {
+          "2": 14,
+          "1": 9,
+          "3": 1
+        }
+      },
+      "nodes2000:middlegame": {
+        "positions": 24,
+        "accepted": 15,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 1,
+        "mean_regret_cp": 73.83333333333333,
+        "median_seconds": 0.2596607999948901,
+        "p95_seconds": 0.3011720299982698,
+        "median_nodes": 2000.0,
+        "completed_depths": {
+          "2": 11,
+          "1": 10,
+          "3": 3
+        }
+      },
+      "nodes2000:transition": {
+        "positions": 24,
+        "accepted": 12,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 1,
+        "mean_regret_cp": 82.0,
+        "median_seconds": 0.267757449997589,
+        "p95_seconds": 0.310867884990148,
+        "median_nodes": 2000.0,
+        "completed_depths": {
+          "1": 12,
+          "2": 9,
+          "3": 3
+        }
+      },
+      "nodes2000:endgame": {
+        "positions": 24,
+        "accepted": 19,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 2,
+        "mean_regret_cp": 52.5,
+        "median_seconds": 0.213372199999867,
+        "p95_seconds": 0.30710135499539315,
+        "median_nodes": 2000.0,
+        "completed_depths": {
+          "5": 1,
+          "3": 14,
+          "2": 5,
+          "4": 3,
+          "1": 1
+        }
+      },
+      "nodes2000_book_off:all": {
+        "positions": 96,
+        "accepted": 64,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 96,
+        "blunders": 5,
+        "mean_regret_cp": 66.92708333333333,
+        "median_seconds": 0.2507082000010996,
+        "p95_seconds": 0.32947170000261394,
+        "median_nodes": 2000.0,
+        "completed_depths": {
+          "2": 39,
+          "1": 32,
+          "5": 1,
+          "3": 21,
+          "4": 3
+        }
+      },
+      "nodes2000_book_off:opening": {
+        "positions": 24,
+        "accepted": 18,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 1,
+        "mean_regret_cp": 59.375,
+        "median_seconds": 0.2797245500041754,
+        "p95_seconds": 0.33031928999116644,
+        "median_nodes": 2000.0,
+        "completed_depths": {
+          "2": 14,
+          "1": 9,
+          "3": 1
+        }
+      },
+      "nodes2000_book_off:middlegame": {
+        "positions": 24,
+        "accepted": 15,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 1,
+        "mean_regret_cp": 73.83333333333333,
+        "median_seconds": 0.2467090999998618,
+        "p95_seconds": 0.31052840500778983,
+        "median_nodes": 2000.0,
+        "completed_depths": {
+          "2": 11,
+          "1": 10,
+          "3": 3
+        }
+      },
+      "nodes2000_book_off:transition": {
+        "positions": 24,
+        "accepted": 12,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 1,
+        "mean_regret_cp": 82.0,
+        "median_seconds": 0.2697810000026948,
+        "p95_seconds": 0.4070714549940021,
+        "median_nodes": 2000.0,
+        "completed_depths": {
+          "1": 12,
+          "2": 9,
+          "3": 3
+        }
+      },
+      "nodes2000_book_off:endgame": {
+        "positions": 24,
+        "accepted": 19,
+        "illegal": 0,
+        "clock_overruns": 0,
+        "cp_positions": 24,
+        "blunders": 2,
+        "mean_regret_cp": 52.5,
+        "median_seconds": 0.21496659999684198,
+        "p95_seconds": 0.27419107500827516,
+        "median_nodes": 2000.0,
+        "completed_depths": {
+          "5": 1,
+          "3": 14,
+          "2": 5,
+          "4": 3,
+          "1": 1
+        }
+      }
+    }
+  },
+  "highest_candidate_winning_setting": 2400,
+  "highest_baseline_winning_setting": 2400,
+  "audited_games": 92,
+  "weights_updated": false,
+  "read_only_validation": {
+    "init_ms": 524.5966999791563,
+    "legal_calls": 2,
+    "clock_ms": 120000,
+    "policy_calls": 2,
+    "alien_verified": false,
+    "selective_alien_verified": true,
+    "selective_alien_choice": "g5f3",
+    "max_move_ms": 3483.8313000218477,
+    "peak_working_set_bytes": 37871616,
+    "read_only_checks": {
+      "create_file": "blocked",
+      "delete_file": "blocked",
+      "create_directory": "blocked",
+      "rename_file": "blocked"
+    },
+    "audit": "no filesystem mutations, network or subprocess",
+    "sha256": "6d287209c28bba520a21ef49261af99543a167fb192ce15513102c883c503a56"
+  },
+  "limitation": "Nominal local Stockfish settings, not a calibrated human/site rating; endgame advantage drills excluded from highest rated win."
+}

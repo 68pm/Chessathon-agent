@@ -14,7 +14,6 @@ def main():
         for p in root.iterdir()
         if p.is_file()
         and p.suffix in {".md", ".py", ".json", ".toml", ".txt", ".csv", ".ps1"}
-        and p.name != "TRAINING_STATUS.md"
     ]
     files += [root / ".gitignore", root / "STARTER_LICENSE", root / "submission.zip"]
     files += [
@@ -92,11 +91,15 @@ def main():
             ]
         ]
     files = [p for p in files if p.is_file()]
-    for name in ["fastchess-control-v1", "fastchess-static-v1", "fastchess-adaptive-v1"]:
+    for name in ["fastchess-control-v1", "fastchess-static-v1", "fastchess-adaptive-v1", "threephase-pvs-v1",
+                 "elite-case-seed-v1", "elite-teacher-control-v1",
+                 *[f"elite-outcome-g{index:02}-v1" for index in range(1, 9)]]:
         folder = root / "candidates" / name
         files += [folder.with_suffix(".zip"), folder.with_suffix(".manifest.json")]
         files += [p for p in folder.rglob("*") if p.is_file() and "__pycache__" not in p.parts and p.suffix != ".pyc"]
     for directory in ["runs/fastchess-pilot-20260906", "data/hikaru-gotham-pack",
+                      "runs/threephase-pilot-20260906", "data/three-phase-pack",
+                      "runs/elite-case-pilot-20260907", "data/elite-blitz-cases",
                       "runs/variants", "runs/unattended-20260905-away/candidate-100000-neural",
                       "runs/unattended-20260905-away/candidate-100000-hybrid",
                       "runs/unattended-20260905-away/candidate-300000-neural",

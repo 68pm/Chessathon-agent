@@ -19,6 +19,7 @@ from training.puzzle_verifier import duplicate_key
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--candidate", required=True)
+    parser.add_argument("--resume", action="store_true")
     args = parser.parse_args()
     config_path = ROOT / "configs/threephase-endgame-tests.json"
     config = json.loads(config_path.read_text())
@@ -27,9 +28,6 @@ def main():
     assert args.candidate in {selection["challenger"], experiment["baseline"]}
     folder = ROOT / args.candidate
     out = RUN / "endgames" / folder.name
-    if out.exists():
-        raise ValueError("Preserve completed or interrupted phase games")
-    out.mkdir(parents=True)
     jobs = []
     for index, fen in enumerate(config["basic_conversion_fens"]):
         board = chess.Board(fen)
@@ -68,10 +66,31 @@ def main():
                   files=frozen, schedule=jobs, games=[], practical_cases_available=len(selected),
                   history_scope="Each game begins with the recorded FEN's rule counters and fresh repetition history, as for a curated match start.",
                   source_files={p: sha256(ROOT / p) for p in ["scripts/threephase_endgames.py", "scripts/fastchess_matches.py"]})
+    if out.exists():
+        assert args.resume, "Preserve completed or interrupted phase games; inspect before --resume"
+        previous = json.loads((out / "results.json").read_text())
+        for key in ["candidate", "config", "config_sha256", "files", "schedule", "source_files"]:
+            assert report[key] == previous[key], f"Resume mismatch: {key}"
+        if previous["status"] == "complete":
+            print("Endgame stage already complete.")
+            return
+        report = previous
+        report.update(status="running")
+        report.pop("error", None)
+    else:
+        out.mkdir(parents=True)
+    completed = {row["id"]: row for row in report["games"]}
+    for job in jobs:
+        game_path = out / f"game-{job['id']:03}.json"
+        if game_path.exists() and job["id"] not in completed:
+            row = json.loads(game_path.read_text())
+            assert all(row[key] == value for key, value in job.items())
+            completed[job["id"]] = row
+    report["games"] = sorted(completed.values(), key=lambda row: row["id"])
     save_json(out / "results.json", report)
     try:
         with concurrent.futures.ThreadPoolExecutor(max_workers=config["workers"]) as pool:
-            futures = [pool.submit(run_game, job, config, out) for job in jobs]
+            futures = [pool.submit(run_game, job, config, out) for job in jobs if job["id"] not in completed]
             for future in concurrent.futures.as_completed(futures):
                 row = future.result()
                 report["games"].append(row)

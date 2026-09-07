@@ -1,0 +1,342 @@
+{
+  "status": "complete",
+  "selected_path": "candidates/classical-witty-magnus-v1",
+  "public_version": "v1.14",
+  "selected_zip_sha256": "6d287209c28bba520a21ef49261af99543a167fb192ce15513102c883c503a56",
+  "candidate_promoted": false,
+  "promotion_reasons": [
+    "Fresh paired 95% lower score bound versus the preserved best did not exceed 50%.",
+    "The outcome candidate scored below 50% versus the matched teacher-only ablation."
+  ],
+  "challenger": "candidates/elite-outcome-g08-v1",
+  "control": "candidates/elite-teacher-control-v1",
+  "comparison": {
+    "candidates/classical-witty-magnus-v1": {
+      "games": 16,
+      "wins": 5,
+      "draws": 2,
+      "losses": 9,
+      "score": 0.375,
+      "completed_pairs": 8,
+      "pair_bootstrap_95": [
+        0.15625,
+        0.59375
+      ],
+      "terminations": {
+        "checkmate": 14,
+        "threefold_repetition": 2
+      },
+      "candidate_failures": 0
+    },
+    "candidates/elite-teacher-control-v1": {
+      "games": 8,
+      "wins": 3,
+      "draws": 1,
+      "losses": 4,
+      "score": 0.4375,
+      "completed_pairs": 4,
+      "pair_bootstrap_95": [
+        0.125,
+        0.6875
+      ],
+      "terminations": {
+        "checkmate": 7,
+        "threefold_repetition": 1
+      },
+      "candidate_failures": 0
+    }
+  },
+  "rated": {
+    "stockfish:2400": {
+      "games": 16,
+      "wins": 1,
+      "draws": 1,
+      "losses": 14,
+      "score": 0.09375,
+      "completed_pairs": 8,
+      "pair_bootstrap_95": [
+        0.0,
+        0.21875
+      ],
+      "terminations": {
+        "threefold_repetition": 1,
+        "checkmate": 15
+      },
+      "candidate_failures": 0,
+      "outright_win_rate_95_wilson": [
+        0.01111934476464252,
+        0.28328737570298945
+      ],
+      "consistency_pilot_criterion_met": false
+    },
+    "stockfish:2600": {
+      "games": 16,
+      "wins": 0,
+      "draws": 5,
+      "losses": 11,
+      "score": 0.15625,
+      "completed_pairs": 8,
+      "pair_bootstrap_95": [
+        0.03125,
+        0.28125
+      ],
+      "terminations": {
+        "threefold_repetition": 4,
+        "checkmate": 11,
+        "fifty_moves": 1
+      },
+      "candidate_failures": 0,
+      "outright_win_rate_95_wilson": [
+        0,
+        0.1936076805344365
+      ],
+      "consistency_pilot_criterion_met": false
+    }
+  },
+  "highest_fresh_candidate_winning_setting": 2400,
+  "adaptation_outcomes": {
+    "0.0": 6,
+    "0.5": 2
+  },
+  "reviews": [
+    {
+      "game_id": 1,
+      "result": 0.0,
+      "all_moves_attempted": 118,
+      "all_moves_verified": 96,
+      "own_verified": 47,
+      "verified_own_blunders": 2
+    },
+    {
+      "game_id": 2,
+      "result": 0.5,
+      "all_moves_attempted": 159,
+      "all_moves_verified": 145,
+      "own_verified": 75,
+      "verified_own_blunders": 0
+    },
+    {
+      "game_id": 3,
+      "result": 0.5,
+      "all_moves_attempted": 87,
+      "all_moves_verified": 81,
+      "own_verified": 42,
+      "verified_own_blunders": 0
+    },
+    {
+      "game_id": 4,
+      "result": 0.0,
+      "all_moves_attempted": 49,
+      "all_moves_verified": 42,
+      "own_verified": 19,
+      "verified_own_blunders": 0
+    },
+    {
+      "game_id": 5,
+      "result": 0.0,
+      "all_moves_attempted": 100,
+      "all_moves_verified": 68,
+      "own_verified": 31,
+      "verified_own_blunders": 0
+    },
+    {
+      "game_id": 6,
+      "result": 0.0,
+      "all_moves_attempted": 63,
+      "all_moves_verified": 31,
+      "own_verified": 15,
+      "verified_own_blunders": 1
+    },
+    {
+      "game_id": 7,
+      "result": 0.0,
+      "all_moves_attempted": 64,
+      "all_moves_verified": 48,
+      "own_verified": 22,
+      "verified_own_blunders": 1
+    },
+    {
+      "game_id": 8,
+      "result": 0.0,
+      "all_moves_attempted": 75,
+      "all_moves_verified": 31,
+      "own_verified": 10,
+      "verified_own_blunders": 0
+    }
+  ],
+  "training": {
+    "seed": {
+      "teacher_only": {
+        "selected_epoch": 4,
+        "parameter_l2_change": 0.7601123200751291,
+        "sha256": "fca35a233bb77fa5e1e1671e27a0466b7368cb19466cef63a919e46bdb150868",
+        "seconds": 27.52125469999737
+      },
+      "outcome": {
+        "selected_epoch": 4,
+        "parameter_l2_change": 0.7601123200751291,
+        "sha256": "fca35a233bb77fa5e1e1671e27a0466b7368cb19466cef63a919e46bdb150868",
+        "seconds": 27.43635569998878
+      }
+    },
+    "after-game-01": {
+      "teacher_only": {
+        "selected_epoch": 2,
+        "parameter_l2_change": 0.45960208536506647,
+        "sha256": "bc89e5a99ea6e1cc415772c528ab0d887ed8974320fe11847b6322b62414a3e6",
+        "seconds": 14.22209780002595
+      },
+      "outcome": {
+        "selected_epoch": 2,
+        "parameter_l2_change": 0.45960208536506647,
+        "sha256": "bc89e5a99ea6e1cc415772c528ab0d887ed8974320fe11847b6322b62414a3e6",
+        "seconds": 13.952697400003672
+      }
+    },
+    "after-game-02": {
+      "teacher_only": {
+        "selected_epoch": 0,
+        "parameter_l2_change": 0.0,
+        "sha256": "bc89e5a99ea6e1cc415772c528ab0d887ed8974320fe11847b6322b62414a3e6",
+        "seconds": 13.362955499993404
+      },
+      "outcome": {
+        "selected_epoch": 0,
+        "parameter_l2_change": 0.0,
+        "sha256": "bc89e5a99ea6e1cc415772c528ab0d887ed8974320fe11847b6322b62414a3e6",
+        "seconds": 12.913210700004129
+      }
+    },
+    "after-game-03": {
+      "teacher_only": {
+        "selected_epoch": 2,
+        "parameter_l2_change": 0.47199151421670216,
+        "sha256": "0da9993aa47ba047a8a69ea29efa5006961b4b05b4dde14cd3e9e02a09b51edd",
+        "seconds": 14.370905999996467
+      },
+      "outcome": {
+        "selected_epoch": 2,
+        "parameter_l2_change": 0.47194258885784574,
+        "sha256": "c30f3cc660d9fcc57c6ccd92afc0aa9901d129523fc484e91d629b993512155d",
+        "seconds": 14.734902900003362
+      }
+    },
+    "after-game-04": {
+      "teacher_only": {
+        "selected_epoch": 0,
+        "parameter_l2_change": 0.0,
+        "sha256": "0da9993aa47ba047a8a69ea29efa5006961b4b05b4dde14cd3e9e02a09b51edd",
+        "seconds": 13.995592599996598
+      },
+      "outcome": {
+        "selected_epoch": 0,
+        "parameter_l2_change": 0.0,
+        "sha256": "c30f3cc660d9fcc57c6ccd92afc0aa9901d129523fc484e91d629b993512155d",
+        "seconds": 13.701784600008978
+      }
+    },
+    "after-game-05": {
+      "teacher_only": {
+        "selected_epoch": 1,
+        "parameter_l2_change": 0.3123344867024233,
+        "sha256": "bafb08f84583e19bd29ccfb0258cebf3491d0c0a95295b476a1b2fa9437716d4",
+        "seconds": 14.186281700007385
+      },
+      "outcome": {
+        "selected_epoch": 1,
+        "parameter_l2_change": 0.3123099774216724,
+        "sha256": "f3e1f887eefd4dd71eefe110ebea8d5000bcc1bdee54d32c5910b81a2179898d",
+        "seconds": 15.028125299984822
+      }
+    },
+    "after-game-06": {
+      "teacher_only": {
+        "selected_epoch": 1,
+        "parameter_l2_change": 0.30641586481402694,
+        "sha256": "7e583e0283cc17471a5624d8f99fec4a02d653b19adc756f23d8da61fead7269",
+        "seconds": 13.643809500004863
+      },
+      "outcome": {
+        "selected_epoch": 1,
+        "parameter_l2_change": 0.30627025684133397,
+        "sha256": "1320f0a700ae9a1c0ff5ac89f86d279769dbf1ca80cc556305a03e5206c6a01c",
+        "seconds": 13.688616100000218
+      }
+    },
+    "after-game-07": {
+      "teacher_only": {
+        "selected_epoch": 1,
+        "parameter_l2_change": 0.30195923627126925,
+        "sha256": "ce08d338de4fa09f7dfc2a1dab5aed26c0e9dc68ce6fce22fa880efd5c578280",
+        "seconds": 14.242811400006758
+      },
+      "outcome": {
+        "selected_epoch": 1,
+        "parameter_l2_change": 0.3019869111691811,
+        "sha256": "8aa972baf9c31458090f76a06d5ba3abe7375744c0d1ac6e9e385368060fe1aa",
+        "seconds": 13.99123879999388
+      }
+    },
+    "after-game-08": {
+      "teacher_only": {
+        "selected_epoch": 2,
+        "parameter_l2_change": 0.4341340362780181,
+        "sha256": "e4331a0f5a71e7a2ae4ca3912e8ba902068446131b480a486e11b0b9a48dbccc",
+        "seconds": 14.540171500004362
+      },
+      "outcome": {
+        "selected_epoch": 2,
+        "parameter_l2_change": 0.4341788076858177,
+        "sha256": "689944a5a2e07049ff60a44e34dac9b3930cd213760e753e5c35edb099e9e0d4",
+        "seconds": 14.221720500005176
+      }
+    }
+  },
+  "unique_reinforced_sound_choices": 77,
+  "unique_reinforced_winning_choices": 0,
+  "audited_games": 64,
+  "source_cases": {
+    "entries": 22,
+    "unique_cases": 21,
+    "unique_games": 20,
+    "source_sha256": "267d2127accfea673214a6ac7bbdb11b37d8052cf791cae5748a53dbe8737244",
+    "full_corpus_available": false,
+    "all_cases_training_only": true,
+    "weights_changed": false
+  },
+  "verified_cases": {
+    "status": "complete",
+    "attempted": 21,
+    "accepted": 20,
+    "quarantined": 1,
+    "verified_sha256": "0c1bdde1fdf65d877a32517f09355c1c065b7a85c04079dba5776aa168bb883f",
+    "context": {
+      "config_sha256": "dee8acd0a27a3f334f88fd257f85680919c7eba4b0e4b33ed5addc018cdf279b",
+      "teacher_sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0",
+      "verifier_sha256": "ded1f395cfa525cce348d2e1bb85af82c5a26355bf5004bdce9dc3fe6530819b",
+      "base_verifier_sha256": "717a0b7c053983e30ebe0fe84e61da85081bafc335c68fc7d02be1c765b2e1dd"
+    },
+    "scope": "Finite 80k/320k full-legal teacher estimates using unbounded UCI score snapshots. Unknown source-case repetition history remains unavailable; no game-theoretic certainty inferred."
+  },
+  "read_only_validation": {
+    "init_ms": 503.484999993816,
+    "legal_calls": 2,
+    "clock_ms": 120000,
+    "policy_calls": 2,
+    "alien_verified": false,
+    "selective_alien_verified": true,
+    "selective_alien_choice": "g5f3",
+    "max_move_ms": 3483.7049999914598,
+    "peak_working_set_bytes": 36986880,
+    "read_only_checks": {
+      "create_file": "blocked",
+      "delete_file": "blocked",
+      "create_directory": "blocked",
+      "rename_file": "blocked"
+    },
+    "audit": "no filesystem mutations, network or subprocess",
+    "sha256": "6d287209c28bba520a21ef49261af99543a167fb192ce15513102c883c503a56"
+  },
+  "time_control": "120+0.5",
+  "limitation": "Nominal local Stockfish handicap settings, not calibrated human/site Elo. Adaptive training games are excluded from strength claims; final weights were frozen."
+}

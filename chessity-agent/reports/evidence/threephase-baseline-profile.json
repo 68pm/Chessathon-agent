@@ -1,0 +1,388 @@
+{
+  "agent": "candidates\\classical-witty-magnus-v1",
+  "training_positions": [
+    {
+      "id": "threephase:5b91ea526ad91902a912:20",
+      "phase": "opening",
+      "nodes": 2000,
+      "completed_depth": 1,
+      "uci": "h7h5",
+      "profiled_seconds": 0.7464173999906052
+    },
+    {
+      "id": "threephase:ac2d51da96afdb3c727e:22",
+      "phase": "opening",
+      "nodes": 2000,
+      "completed_depth": 2,
+      "uci": "d6h2",
+      "profiled_seconds": 0.7196792000031564
+    },
+    {
+      "id": "threephase:f97b386703bda4139741:58",
+      "phase": "middlegame",
+      "nodes": 2000,
+      "completed_depth": 3,
+      "uci": "f3f8",
+      "profiled_seconds": 0.6821603999997023
+    },
+    {
+      "id": "threephase:86fa892877e857a15254:44",
+      "phase": "middlegame",
+      "nodes": 2000,
+      "completed_depth": 2,
+      "uci": "c5c2",
+      "profiled_seconds": 0.9085381000040798
+    },
+    {
+      "id": "threephase:23ac9ac6079c04594c49:27",
+      "phase": "transition",
+      "nodes": 2000,
+      "completed_depth": 1,
+      "uci": "f3e5",
+      "profiled_seconds": 1.0930764999939129
+    },
+    {
+      "id": "threephase:19c78a0ea2e9438820a4:71",
+      "phase": "transition",
+      "nodes": 2000,
+      "completed_depth": 2,
+      "uci": "g3f4",
+      "profiled_seconds": 0.7920928999956232
+    },
+    {
+      "id": "threephase:9bb33228fe288e9d1944:86",
+      "phase": "endgame",
+      "nodes": 2000,
+      "completed_depth": 3,
+      "uci": "d2d7",
+      "profiled_seconds": 0.67333520000102
+    },
+    {
+      "id": "threephase:19f71b9c899db1ea5b49:64",
+      "phase": "endgame",
+      "nodes": 2000,
+      "completed_depth": 2,
+      "uci": "h7h5",
+      "profiled_seconds": 0.6850302999955602
+    }
+  ],
+  "functions": [
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\candidates\\classical-witty-magnus-v1\\engine\\search.py",
+      "line": 132,
+      "function": "run",
+      "primitive_calls": 8,
+      "calls": 8,
+      "self_seconds": 0.0040397,
+      "cumulative_seconds": 6.300372
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\candidates\\classical-witty-magnus-v1\\engine\\search.py",
+      "line": 55,
+      "function": "child",
+      "primitive_calls": 449,
+      "calls": 15559,
+      "self_seconds": 0.1438261,
+      "cumulative_seconds": 6.261885400000001
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\candidates\\classical-witty-magnus-v1\\engine\\search.py",
+      "line": 90,
+      "function": "negamax",
+      "primitive_calls": 449,
+      "calls": 3882,
+      "self_seconds": 0.0680086,
+      "cumulative_seconds": 6.241452600000001
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\candidates\\classical-witty-magnus-v1\\engine\\search.py",
+      "line": 67,
+      "function": "qsearch",
+      "primitive_calls": 3058,
+      "calls": 14735,
+      "self_seconds": 0.32391600000000004,
+      "cumulative_seconds": 5.7795076000000005
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\work\\chess-venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 3702,
+      "function": "generate_legal_moves",
+      "primitive_calls": 423055,
+      "calls": 423055,
+      "self_seconds": 0.3533229,
+      "cumulative_seconds": 2.5953264000000003
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\candidates\\classical-witty-magnus-v1\\engine\\evaluation.py",
+      "line": 130,
+      "function": "__call__",
+      "primitive_calls": 12971,
+      "calls": 12971,
+      "self_seconds": 0.0221603,
+      "cumulative_seconds": 1.8769557000000001
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\candidates\\classical-witty-magnus-v1\\engine\\evaluation.py",
+      "line": 43,
+      "function": "classical",
+      "primitive_calls": 12979,
+      "calls": 12979,
+      "self_seconds": 1.1330743,
+      "cumulative_seconds": 1.8560897
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\work\\chess-venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 1819,
+      "function": "generate_pseudo_legal_moves",
+      "primitive_calls": 432791,
+      "calls": 432791,
+      "self_seconds": 0.6266082000000001,
+      "cumulative_seconds": 1.3240971000000001
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\work\\chess-venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 3664,
+      "function": "_is_safe",
+      "primitive_calls": 423892,
+      "calls": 423892,
+      "self_seconds": 0.3235365,
+      "cumulative_seconds": 0.7535371000000001
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\work\\chess-venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 414,
+      "function": "scan_reversed",
+      "primitive_calls": 777093,
+      "calls": 777093,
+      "self_seconds": 0.3383567,
+      "cumulative_seconds": 0.444323
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\work\\chess-venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 2310,
+      "function": "push",
+      "primitive_calls": 15788,
+      "calls": 15788,
+      "self_seconds": 0.1669902,
+      "cumulative_seconds": 0.36554580000000003
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\work\\chess-venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 905,
+      "function": "attackers_mask",
+      "primitive_calls": 93060,
+      "calls": 93060,
+      "self_seconds": 0.25887930000000003,
+      "cumulative_seconds": 0.25887930000000003
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\work\\chess-venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 925,
+      "function": "is_attacked_by",
+      "primitive_calls": 58296,
+      "calls": 58296,
+      "self_seconds": 0.0460725,
+      "cumulative_seconds": 0.216702
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\work\\chess-venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 405,
+      "function": "scan_forward",
+      "primitive_calls": 372135,
+      "calls": 372135,
+      "self_seconds": 0.1755266,
+      "cumulative_seconds": 0.2164156
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\work\\chess-venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 875,
+      "function": "attacks_mask",
+      "primitive_calls": 154512,
+      "calls": 154512,
+      "self_seconds": 0.2015753,
+      "cumulative_seconds": 0.2015753
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\work\\chess-venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 3311,
+      "function": "is_capture",
+      "primitive_calls": 213619,
+      "calls": 213619,
+      "self_seconds": 0.16094840000000002,
+      "cumulative_seconds": 0.1970819
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\candidates\\classical-witty-magnus-v1\\engine\\move_ordering.py",
+      "line": 6,
+      "function": "ordered",
+      "primitive_calls": 10445,
+      "calls": 10445,
+      "self_seconds": 0.011882,
+      "cumulative_seconds": 0.1914902
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\candidates\\classical-witty-magnus-v1\\engine\\search.py",
+      "line": 46,
+      "function": "terminal",
+      "primitive_calls": 15559,
+      "calls": 15559,
+      "self_seconds": 0.042513600000000006,
+      "cumulative_seconds": 0.1880949
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<built-in method builtins.sorted>",
+      "primitive_calls": 10445,
+      "calls": 10445,
+      "self_seconds": 0.0333733,
+      "cumulative_seconds": 0.17960820000000002
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'bit_length' of 'int' objects>",
+      "primitive_calls": 845136,
+      "calls": 845136,
+      "self_seconds": 0.1634157,
+      "cumulative_seconds": 0.1634157
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\candidates\\classical-witty-magnus-v1\\engine\\move_ordering.py",
+      "line": 7,
+      "function": "rank",
+      "primitive_calls": 41470,
+      "calls": 41470,
+      "self_seconds": 0.0853798,
+      "cumulative_seconds": 0.1462349
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\work\\chess-venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 3341,
+      "function": "is_castling",
+      "primitive_calls": 59041,
+      "calls": 59041,
+      "self_seconds": 0.10441700000000001,
+      "cumulative_seconds": 0.1385743
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "function": "<method 'bit_count' of 'int' objects>",
+      "primitive_calls": 535123,
+      "calls": 535123,
+      "self_seconds": 0.1216681,
+      "cumulative_seconds": 0.1216681
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\work\\chess-venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 3304,
+      "function": "is_en_passant",
+      "primitive_calls": 589166,
+      "calls": 589166,
+      "self_seconds": 0.11493940000000001,
+      "cumulative_seconds": 0.11495730000000001
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\work\\chess-venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 2110,
+      "function": "is_insufficient_material",
+      "primitive_calls": 15544,
+      "calls": 15544,
+      "self_seconds": 0.0530776,
+      "cumulative_seconds": 0.10460630000000001
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\work\\chess-venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 1918,
+      "function": "is_check",
+      "primitive_calls": 15147,
+      "calls": 15147,
+      "self_seconds": 0.013064800000000001,
+      "cumulative_seconds": 0.09708670000000001
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\work\\chess-venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 799,
+      "function": "pieces_mask",
+      "primitive_calls": 207768,
+      "calls": 207768,
+      "self_seconds": 0.08633070000000001,
+      "cumulative_seconds": 0.08633070000000001
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\work\\chess-venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 1906,
+      "function": "checkers_mask",
+      "primitive_calls": 15147,
+      "calls": 15147,
+      "self_seconds": 0.020523700000000002,
+      "cumulative_seconds": 0.08402190000000001
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\candidates\\classical-witty-magnus-v1\\engine\\search.py",
+      "line": 16,
+      "function": "position_key",
+      "primitive_calls": 31932,
+      "calls": 31932,
+      "self_seconds": 0.018462600000000003,
+      "cumulative_seconds": 0.0836716
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\work\\chess-venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 3738,
+      "function": "generate_castling_moves",
+      "primitive_calls": 14680,
+      "calls": 14680,
+      "self_seconds": 0.047454,
+      "cumulative_seconds": 0.08285790000000001
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\work\\chess-venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 3677,
+      "function": "_generate_evasions",
+      "primitive_calls": 10293,
+      "calls": 10293,
+      "self_seconds": 0.0224046,
+      "cumulative_seconds": 0.080725
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\work\\chess-venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 1014,
+      "function": "_remove_piece_at",
+      "primitive_calls": 31586,
+      "calls": 31586,
+      "self_seconds": 0.060088800000000005,
+      "cumulative_seconds": 0.0771846
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\work\\chess-venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 3645,
+      "function": "_slider_blockers",
+      "primitive_calls": 15599,
+      "calls": 15599,
+      "self_seconds": 0.054811000000000006,
+      "cumulative_seconds": 0.0702835
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\work\\chess-venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 864,
+      "function": "king",
+      "primitive_calls": 41225,
+      "calls": 41225,
+      "self_seconds": 0.038275800000000006,
+      "cumulative_seconds": 0.06596640000000001
+    },
+    {
+      "file": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\work\\chess-venv\\Lib\\site-packages\\chess\\__init__.py",
+      "line": 3797,
+      "function": "_transposition_key",
+      "primitive_calls": 31932,
+      "calls": 31932,
+      "self_seconds": 0.0460201,
+      "cumulative_seconds": 0.065209
+    }
+  ],
+  "total_profiled_seconds": 6.183377899999999,
+  "scope": "Diagnostic training positions only. Profiling adds overhead; these times are for cost attribution, not a production-speed claim."
+}

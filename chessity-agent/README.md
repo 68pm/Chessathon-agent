@@ -1,16 +1,16 @@
 # chessity-agent
 
-Best tested package in this session: **v1.14** — Classical/Witty/Magnus policy.
+**Best verified upload: v1.14 — Classical/Witty/Magnus policy.**
 
-[Download the competition ZIP](latest/chessity-agent.zip). Upload this ZIP, not the repository source archive.
+[Download the competition ZIP](latest/chessity-agent.zip). Upload the agent ZIP directly.
 
-[The latest fast-chess report](reports/FASTCHESS_PILOT_RESULTS.md) contains the promotion decision and fresh 1700/2000/2200 tests. The preceding fusion report preserves the earlier six-agent comparison and 2000/2200 tests. These final sessions use 120+0.5. Opponent settings are not an official human or website rating.
+The phase and elite-learning experiments are complete. The final outcome candidate v1.33 scored **1W/1D/14L at 2400** and **0W/5D/11L at 2600**, and lost its direct comparison against v1.14. Highest individual winning setting: 2400. Consistent 2400/2600 wins were not achieved. All tests use 120+0.5; nominal engine settings are not a human/site Elo.
 
-[Three-phase progress](reports/THREEPHASE_PROGRESS.md): baseline tests at 2200/2400/2600 are complete; experimental v1.24 is being evaluated. The recommended upload remains v1.14.
+[Full delivery](reports/DELIVERY.md) · [Elite learning and rewards](reports/ELITE_LEARNING_RESULTS.md) · [Phase search results](reports/THREEPHASE_RESULTS.md)
 
 ## Read-only runtime and repository access
 
-The final package was tested with file creation, deletion, renaming and directory creation blocked. Runtime inference needs no file writes, network access or subprocesses. Training tools are separate and intentionally write checkpoints. GitHub public visitors can read and download this repository; editing it requires repository write permission. No collaborator or public write grants are added by this publication.
+The selected package passed blocked file-creation, deletion, renaming and directory-creation checks. Inference requires no writes, network or subprocess. Training tools write their own checkpoints. Public visitors can read and download; edits require repository write permission. No collaborator or public write grants were added.
 
 ## Versions
 
@@ -30,7 +30,7 @@ The final package was tested with file creation, deletion, renaming and director
 | [v1.11](versions/v1.11/chessity-agent-v1.11.zip) | Revised Alien Gambit hybrid | historical forced-opening experiment |
 | [v1.12](versions/v1.12/chessity-agent-v1.12.zip) | Witty-trained 300k hybrid | experimental forced-opening candidate |
 | [v1.13](versions/v1.13/chessity-agent-v1.13.zip) | Classical/Witty with optional Alien | experimental |
-| [v1.14](versions/v1.14/chessity-agent-v1.14.zip) | Classical/Witty/Magnus policy | Best tested in this session |
+| [v1.14](versions/v1.14/chessity-agent-v1.14.zip) | Classical/Witty/Magnus policy | best verified upload after completed phase and elite comparisons |
 | [v1.15](versions/v1.15/chessity-agent-v1.15.zip) | Phase-pilot ordinary-data control | control ablation |
 | [v1.16](versions/v1.16/chessity-agent-v1.16.zip) | Phase curriculum pilot | not promoted |
 | [v1.17](versions/v1.17/chessity-agent-v1.17.zip) | Puzzle-pilot ordinary-data control | control ablation |
@@ -40,8 +40,16 @@ The final package was tested with file creation, deletion, renaming and director
 | [v1.21](versions/v1.21/chessity-agent-v1.21.zip) | Fast-chess pilot matched broad-data control | control ablation |
 | [v1.22](versions/v1.22/chessity-agent-v1.22.zip) | Hikaru/Gotham verified policy with original clock controller | clock ablation |
 | [v1.23](versions/v1.23/chessity-agent-v1.23.zip) | Hikaru/Gotham verified policy with adaptive 120+0.5 controller | see measured pilot promotion decision |
-| [v1.24](versions/v1.24/chessity-agent-v1.24.zip) | Three-phase PVS search candidate | experimental; full comparison and final rated tests pending |
+| [v1.24](versions/v1.24/chessity-agent-v1.24.zip) | Three-phase PVS search candidate | PVS search experiment; not promoted after fresh confirmation |
+| [v1.25](versions/v1.25/chessity-agent-v1.25.zip) | Elite verified-case seed policy | experimental intermediate checkpoint; not promoted |
+| [v1.26](versions/v1.26/chessity-agent-v1.26.zip) | Elite outcome-guided policy after training game 1 | experimental intermediate checkpoint; not promoted |
+| [v1.27](versions/v1.27/chessity-agent-v1.27.zip) | Elite outcome-guided policy after training game 2 | validation retained previous checkpoint; identical ZIP to v1.26 |
+| [v1.28](versions/v1.28/chessity-agent-v1.28.zip) | Elite outcome-guided policy after training game 3 | experimental intermediate checkpoint; not promoted |
+| [v1.29](versions/v1.29/chessity-agent-v1.29.zip) | Elite outcome-guided policy after training game 4 | validation retained previous checkpoint; identical ZIP to v1.28 |
+| [v1.30](versions/v1.30/chessity-agent-v1.30.zip) | Elite outcome-guided policy after training game 5 | experimental intermediate checkpoint; not promoted |
+| [v1.31](versions/v1.31/chessity-agent-v1.31.zip) | Elite outcome-guided policy after training game 6 | experimental intermediate checkpoint; not promoted |
+| [v1.32](versions/v1.32/chessity-agent-v1.32.zip) | Elite outcome-guided policy after training game 7 | experimental intermediate checkpoint; not promoted |
+| [v1.33](versions/v1.33/chessity-agent-v1.33.zip) | Elite outcome-guided policy after training game 8 | final outcome candidate; not promoted after fresh comparisons |
+| [v1.34](versions/v1.34/chessity-agent-v1.34.zip) | Elite teacher-only matched control | matched teacher-only ablation; not independently promoted |
 
-Source and weights for each archive are retained beside it. Neural weights were trained locally; no third-party chess engine or pretrained chess network ships in the agent ZIPs. Offline verifier and opponent engines are development tools only. Code was developed with AI assistance. Downloaded player histories and external engine executables are not published here.
-
-The development scripts retain their original local project layout and references. Full training datasets remain in the local project; this repository alone is not a byte-for-byte training reproduction bundle.
+All 35 versions have chronological development commits and annotated version tags. Source and own trained weights beside each ZIP match its bytes. v1.27/v1.26 and v1.29/v1.28 are intentionally identical after validation rejected those updates. Newest v1.34 is the matched teacher-only control, not the recommended upload. Downloaded raw histories, supplied source packs and external engine executables are not included.

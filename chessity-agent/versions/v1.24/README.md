@@ -1,7 +1,5 @@
 # chessity-agent v1.24
 
-Experimental PVS search candidate. Full comparison and final rated tests are still pending. The recommended competition upload remains v1.14.
+PVS search experiment, not promoted. It scored 4W/7D/5L versus v1.14 in fresh confirmation. Rated results: 1W/1D/10L at 2200, 2W/0D/10L at 2400 and 0W/3D/9L at 2600, all at 120+0.5. It retains the original v1.14 policy weights; no new neural fitting occurred in this search experiment.
 
-This version keeps the locally trained v1.14 policy and classical evaluation, changes the search, and preserves the optional Alien preference and original clock controller. It does not contain newly fitted weights.
-
-Archive: `chessity-agent-v1.24.zip`. SHA-256: `75fdaf1982bf9d1e710e7d9949573e236b0962ba15930ef3b9605dbe4a839184`. Readable source and weights in `source/` match the archive exactly. Read-only smoke checks passed. See the three-phase progress report for completed evidence and remaining work.
+The ZIP and original annotated tag remain unchanged. See [the full report](../../reports/THREEPHASE_RESULTS.md). Recommended upload remains v1.14.
