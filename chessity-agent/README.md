@@ -12,6 +12,8 @@ The new improvement programme is active. Original compiled search scored 8W/0D/0
 
 [Search findings](reports/IMPROVEMENT_CYCLE_01.md) · [Learning critique](reports/IMPROVEMENT_CYCLE_02.md) · [Fixed confirmation plan](reports/IMPROVEMENT_CONFIRMATION_01.md)
 
+[Fresh comparison complete: v1.41 scored **23W/1D/0L against v1.14**](reports/IMPROVEMENT_CONFIRMATION_PROGRESS.md). The 2400/2600 confirmation is running; promotion is still pending.
+
 ## Read-only runtime and repository access
 
 The selected package passed blocked file-creation, deletion, renaming and directory-creation checks. Inference requires no writes, network or subprocess. Training tools write their own checkpoints. Public visitors can read and download; edits require repository write permission. No collaborator or public write grants were added.
