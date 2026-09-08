@@ -32,3 +32,5 @@ no repository write-access grants or live competition submissions were made.
 [Queen-aware evaluation with bounded check search](chessity-agent/reports/TACTICAL_PILOT_27_20260908.md): gate failed; selected upload remains v1.51.
 
 [Rook-refutation features](chessity-agent/reports/ROOK_REFUTATION_FEATURES_20260908.md): a cheap existing-data review suggests inspecting queen-supported coordination; no new upload selected.
+
+[Bounded coordinated king-pressure evaluation](chessity-agent/reports/TACTICAL_PILOT_29_20260908.md): gate passed; selected upload remains v1.51.
