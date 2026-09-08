@@ -18,3 +18,5 @@ No long consistency study, repository write-access grants or live submission.
 [Historical morning report](chessity-agent/reports/OVERNIGHT_REPORT_20260908.md)
 
 [Completed rated results and diagnosis](chessity-agent/reports/KING_COORDINATION_RATED_RESULTS_20260908.md).
+
+[Full-window first-warning diagnosis](chessity-agent/reports/FIRST_WARNING_SEARCH_TRACE_20260908.md): all three loss choices remain preferred at depth6; depth8 attempts hit their fixed node caps. No agent changed.

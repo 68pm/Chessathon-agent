@@ -35,7 +35,7 @@ cause merely from where checkmate occurred. Finite screens can miss earlier caus
 |---|---|---|---|
 | Draw as White vs2400, move26 | cxd5 | g5 | Advantage dropped to a drawn assessment;207/293cp regret |
 | Loss as Black vs2400, move30 | ...Bxf2+ | ...Qf5 /...Qd3 | Near-equal assessment became losing;505/512cp regret |
-| Loss as White vs2600, move26 | gxf6 en passant | Rd3 | Near-equal assessment became losing;481/505cp regret |
+| Loss as White vs2600, move26 | gxf6 en passant | Rdd3 | Near-equal assessment became losing;481/505cp regret |
 | Loss as Black vs2600, move13 | ...Ng4 | ...a6 | Assessment crossed the losing cutoff;156/192cp regret |
 
 The last row is a stable losing transition, not a200cp blunder. The two teacher
