@@ -8,7 +8,7 @@ v1.52 adds tested engine search/evaluation repairs. The small120+0.5 comparison
 finished **1 win,0 draws,1 loss againstv1.51** with no failures. Tactical mistakes
 repeated on the diagnostic clock roots fell from14/17 to8/17. Read-only validation
 passed. No calibrated Elo or overall superiority is established; v1.51 remains
-a fallback. This version has not yet played rated opponents.
+a fallback. Its four-game rated check against nominal2400/2600 is in progress.
 
 The priority is quick practical improvement for the11September competition.
 No long consistency study, repository write-access grants or live submission.
