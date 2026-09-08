@@ -1,0 +1,3475 @@
+{
+  "status": "complete",
+  "pid": 13160,
+  "preparation_sha256": "0b824c047abc984e485eb0bea2e3bb144f2f5c6e5159b3b143ffc8b97ff2d085",
+  "records": [
+    {
+      "target": "v53-rated-loss-2",
+      "forced": "b8c6",
+      "depth": 6,
+      "analysis": {
+        "complete": true,
+        "score_root": 134,
+        "nodes": 57470,
+        "seconds": 0.6284587000263855
+      },
+      "trace": {
+        "pv": [
+          "b8c6",
+          "d2h6",
+          "c6d4",
+          "c1g5",
+          "d4e6",
+          "g5g3"
+        ],
+        "entries": [
+          {
+            "ply": 1,
+            "remaining_depth": 5,
+            "credits": 2,
+            "stored_depth": 5,
+            "stored_bound": 0,
+            "uci": "d2h6",
+            "san": "Bxh6"
+          },
+          {
+            "ply": 2,
+            "remaining_depth": 4,
+            "credits": 2,
+            "stored_depth": 4,
+            "stored_bound": 0,
+            "uci": "c6d4",
+            "san": "Nxd4"
+          },
+          {
+            "ply": 3,
+            "remaining_depth": 3,
+            "credits": 2,
+            "stored_depth": 3,
+            "stored_bound": 0,
+            "uci": "c1g5",
+            "san": "Qg5"
+          },
+          {
+            "ply": 4,
+            "remaining_depth": 2,
+            "credits": 2,
+            "stored_depth": 2,
+            "stored_bound": 0,
+            "uci": "d4e6",
+            "san": "Ne6"
+          },
+          {
+            "ply": 5,
+            "remaining_depth": 1,
+            "credits": 2,
+            "stored_depth": 1,
+            "stored_bound": 0,
+            "uci": "g5g3",
+            "san": "Qg3"
+          }
+        ],
+        "stop": "quiescence_reached",
+        "leaf_id": "leaf-01"
+      }
+    },
+    {
+      "target": "v53-rated-loss-2",
+      "forced": "g8h7",
+      "depth": 6,
+      "analysis": {
+        "complete": true,
+        "score_root": 37,
+        "nodes": 174465,
+        "seconds": 1.4341536000138149
+      },
+      "trace": {
+        "pv": [
+          "g8h7",
+          "h1g1",
+          "b8c6",
+          "d2e3",
+          "h7g8"
+        ],
+        "entries": [
+          {
+            "ply": 1,
+            "remaining_depth": 5,
+            "credits": 2,
+            "stored_depth": 5,
+            "stored_bound": 0,
+            "uci": "h1g1",
+            "san": "Rg1"
+          },
+          {
+            "ply": 2,
+            "remaining_depth": 4,
+            "credits": 2,
+            "stored_depth": 4,
+            "stored_bound": 0,
+            "uci": "b8c6",
+            "san": "Nc6"
+          },
+          {
+            "ply": 3,
+            "remaining_depth": 3,
+            "credits": 2,
+            "stored_depth": 3,
+            "stored_bound": 0,
+            "uci": "d2e3",
+            "san": "Be3"
+          },
+          {
+            "ply": 4,
+            "remaining_depth": 2,
+            "credits": 2,
+            "stored_depth": 2,
+            "stored_bound": 0,
+            "uci": "h7g8",
+            "san": "Kg8"
+          }
+        ],
+        "stop": "missing_or_nonexact_transposition_entry",
+        "leaf_id": "leaf-02"
+      }
+    },
+    {
+      "target": "v53-rated-loss-3",
+      "forced": "d1b3",
+      "depth": 6,
+      "analysis": {
+        "complete": true,
+        "score_root": -56,
+        "nodes": 125425,
+        "seconds": 0.5828482999932021
+      },
+      "trace": {
+        "pv": [
+          "d1b3",
+          "g4f3",
+          "g2f3",
+          "g7d4",
+          "b3b5",
+          "d7e5"
+        ],
+        "entries": [
+          {
+            "ply": 1,
+            "remaining_depth": 5,
+            "credits": 2,
+            "stored_depth": 5,
+            "stored_bound": 0,
+            "uci": "g4f3",
+            "san": "Bxf3"
+          },
+          {
+            "ply": 2,
+            "remaining_depth": 4,
+            "credits": 2,
+            "stored_depth": 4,
+            "stored_bound": 0,
+            "uci": "g2f3",
+            "san": "gxf3"
+          },
+          {
+            "ply": 3,
+            "remaining_depth": 3,
+            "credits": 2,
+            "stored_depth": 3,
+            "stored_bound": 0,
+            "uci": "g7d4",
+            "san": "Bd4"
+          },
+          {
+            "ply": 4,
+            "remaining_depth": 2,
+            "credits": 2,
+            "stored_depth": 2,
+            "stored_bound": 0,
+            "uci": "b3b5",
+            "san": "Qb5"
+          },
+          {
+            "ply": 5,
+            "remaining_depth": 1,
+            "credits": 2,
+            "stored_depth": 1,
+            "stored_bound": 0,
+            "uci": "d7e5",
+            "san": "Ne5"
+          }
+        ],
+        "stop": "quiescence_reached",
+        "leaf_id": "leaf-03"
+      }
+    },
+    {
+      "target": "v53-rated-loss-3",
+      "forced": "h2h3",
+      "depth": 6,
+      "analysis": {
+        "complete": true,
+        "score_root": -78,
+        "nodes": 73239,
+        "seconds": 0.26981179998256266
+      },
+      "trace": {
+        "pv": [
+          "h2h3",
+          "g4f3",
+          "d1f3",
+          "d7e5",
+          "f3e2",
+          "e5d3"
+        ],
+        "entries": [
+          {
+            "ply": 1,
+            "remaining_depth": 5,
+            "credits": 2,
+            "stored_depth": 5,
+            "stored_bound": 0,
+            "uci": "g4f3",
+            "san": "Bxf3"
+          },
+          {
+            "ply": 2,
+            "remaining_depth": 4,
+            "credits": 2,
+            "stored_depth": 4,
+            "stored_bound": 0,
+            "uci": "d1f3",
+            "san": "Qxf3"
+          },
+          {
+            "ply": 3,
+            "remaining_depth": 3,
+            "credits": 2,
+            "stored_depth": 3,
+            "stored_bound": 0,
+            "uci": "d7e5",
+            "san": "Ne5"
+          },
+          {
+            "ply": 4,
+            "remaining_depth": 2,
+            "credits": 2,
+            "stored_depth": 2,
+            "stored_bound": 0,
+            "uci": "f3e2",
+            "san": "Qe2"
+          },
+          {
+            "ply": 5,
+            "remaining_depth": 1,
+            "credits": 2,
+            "stored_depth": 1,
+            "stored_bound": 0,
+            "uci": "e5d3",
+            "san": "Nxd3"
+          }
+        ],
+        "stop": "quiescence_reached",
+        "leaf_id": "leaf-04"
+      }
+    },
+    {
+      "target": "v53-rated-loss-4",
+      "forced": "f6h4",
+      "depth": 6,
+      "analysis": {
+        "complete": false,
+        "score_root": null,
+        "nodes": 500000,
+        "seconds": 3.190155800024513
+      }
+    },
+    {
+      "target": "v53-rated-loss-4",
+      "forced": "c8e6",
+      "depth": 6,
+      "analysis": {
+        "complete": true,
+        "score_root": 50,
+        "nodes": 313923,
+        "seconds": 2.613336599955801
+      },
+      "trace": {
+        "pv": [
+          "c8e6",
+          "d5f6",
+          "e7f6",
+          "c1c3",
+          "a3a1"
+        ],
+        "entries": [
+          {
+            "ply": 1,
+            "remaining_depth": 5,
+            "credits": 2,
+            "stored_depth": 5,
+            "stored_bound": 0,
+            "uci": "d5f6",
+            "san": "Nxf6+"
+          },
+          {
+            "ply": 2,
+            "remaining_depth": 5,
+            "credits": 1,
+            "stored_depth": 5,
+            "stored_bound": 0,
+            "uci": "e7f6",
+            "san": "exf6"
+          },
+          {
+            "ply": 3,
+            "remaining_depth": 4,
+            "credits": 1,
+            "stored_depth": 4,
+            "stored_bound": 0,
+            "uci": "c1c3",
+            "san": "Rc3"
+          },
+          {
+            "ply": 4,
+            "remaining_depth": 3,
+            "credits": 1,
+            "stored_depth": 3,
+            "stored_bound": 0,
+            "uci": "a3a1",
+            "san": "Qa1+"
+          }
+        ],
+        "stop": "missing_or_nonexact_transposition_entry",
+        "leaf_id": "leaf-05"
+      }
+    }
+  ],
+  "leaves": [
+    {
+      "id": "leaf-01",
+      "target": "v53-rated-loss-2",
+      "start_fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N2N2/PP3PPP/R2QKB1R b KQ - 3 6",
+      "history": [
+        "h7h6",
+        "g5d2",
+        "g6g5",
+        "f1e2",
+        "g5g4",
+        "d1c1",
+        "g4f3",
+        "g2f3",
+        "b8c6",
+        "d2h6",
+        "c6d4",
+        "c1g5",
+        "d4e6",
+        "g5g3"
+      ],
+      "fen": "r1bq1rk1/ppp1ppb1/3pnn1B/8/2P1P3/2N2PQ1/PP2BP1P/R3K2R b KQ - 3 13",
+      "root_white": false,
+      "terminal": false,
+      "origins": [
+        {
+          "kind": "student",
+          "forced": "b8c6",
+          "trace_stop": "quiescence_reached",
+          "extensions_left": 2,
+          "pv": [
+            "b8c6",
+            "d2h6",
+            "c6d4",
+            "c1g5",
+            "d4e6",
+            "g5g3"
+          ]
+        }
+      ],
+      "king_shelter": {
+        "white": {
+          "king": "e1",
+          "own_pawns_on_file": 1,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [
+            "f2",
+            "f3"
+          ],
+          "absolutely_pinned": []
+        },
+        "black": {
+          "king": "g8",
+          "own_pawns_on_file": 0,
+          "enemy_pawns_on_file": 0,
+          "close_forward_pawns": [
+            "f7"
+          ],
+          "absolutely_pinned": [
+            "g7"
+          ]
+        }
+      },
+      "static_root": 134,
+      "material_root": 225,
+      "phase": 23,
+      "king_pressure": {
+        "white": {
+          "units": 7,
+          "attackers": 2,
+          "bonus": 98
+        },
+        "black": {
+          "units": 0,
+          "attackers": 0,
+          "bonus": 0
+        }
+      },
+      "passers": [
+        {
+          "square": "h2",
+          "white": true,
+          "relative_rank": 1,
+          "mg_bonus": 2,
+          "eg_bonus": 5,
+          "defenders": [
+            "h1",
+            "g3"
+          ],
+          "attackers": [],
+          "enemy_king_distance": 6
+        }
+      ],
+      "in_check": false,
+      "quiescence": {
+        "complete": true,
+        "score_root": 134,
+        "nodes": 3,
+        "seconds": 9.660003706812859e-05
+      }
+    },
+    {
+      "id": "leaf-02",
+      "target": "v53-rated-loss-2",
+      "start_fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N2N2/PP3PPP/R2QKB1R b KQ - 3 6",
+      "history": [
+        "h7h6",
+        "g5d2",
+        "g6g5",
+        "f1e2",
+        "g5g4",
+        "d1c1",
+        "g4f3",
+        "g2f3",
+        "g8h7",
+        "h1g1",
+        "b8c6",
+        "d2e3",
+        "h7g8"
+      ],
+      "fen": "r1bq1rk1/ppp1ppb1/2np1n1p/8/2PPP3/2N1BP2/PP2BP1P/R1Q1K1R1 w Q - 5 13",
+      "root_white": false,
+      "terminal": false,
+      "origins": [
+        {
+          "kind": "student",
+          "forced": "g8h7",
+          "trace_stop": "missing_or_nonexact_transposition_entry",
+          "extensions_left": 2,
+          "pv": [
+            "g8h7",
+            "h1g1",
+            "b8c6",
+            "d2e3",
+            "h7g8"
+          ]
+        }
+      ],
+      "king_shelter": {
+        "white": {
+          "king": "e1",
+          "own_pawns_on_file": 1,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [
+            "f2",
+            "f3"
+          ],
+          "absolutely_pinned": []
+        },
+        "black": {
+          "king": "g8",
+          "own_pawns_on_file": 0,
+          "enemy_pawns_on_file": 0,
+          "close_forward_pawns": [
+            "h6",
+            "f7"
+          ],
+          "absolutely_pinned": [
+            "g7"
+          ]
+        }
+      },
+      "static_root": 176,
+      "material_root": 225,
+      "phase": 23,
+      "king_pressure": {
+        "white": {
+          "units": 3,
+          "attackers": 1,
+          "bonus": 0
+        },
+        "black": {
+          "units": 0,
+          "attackers": 0,
+          "bonus": 0
+        }
+      },
+      "passers": [],
+      "in_check": false,
+      "quiescence": {
+        "complete": true,
+        "score_root": 37,
+        "nodes": 48,
+        "seconds": 0.0005148000200279057
+      }
+    },
+    {
+      "id": "leaf-03",
+      "target": "v53-rated-loss-3",
+      "start_fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N2N2/PP3PPP/R2QKB1R b KQ - 3 6",
+      "history": [
+        "h7h6",
+        "g5f6",
+        "e7f6",
+        "f1e2",
+        "f6f5",
+        "e1g1",
+        "f5e4",
+        "c3e4",
+        "a7a5",
+        "f1e1",
+        "f8e8",
+        "e2d3",
+        "c8g4",
+        "d4d5",
+        "b8d7",
+        "d1b3",
+        "g4f3",
+        "g2f3",
+        "g7d4",
+        "b3b5",
+        "d7e5"
+      ],
+      "fen": "r2qr1k1/1pp2p2/3p2pp/pQ1Pn3/2PbN3/3B1P2/PP3P1P/R3R1K1 w - - 3 17",
+      "root_white": true,
+      "terminal": false,
+      "origins": [
+        {
+          "kind": "student",
+          "forced": "d1b3",
+          "trace_stop": "quiescence_reached",
+          "extensions_left": 2,
+          "pv": [
+            "d1b3",
+            "g4f3",
+            "g2f3",
+            "g7d4",
+            "b3b5",
+            "d7e5"
+          ]
+        }
+      ],
+      "king_shelter": {
+        "white": {
+          "king": "g1",
+          "own_pawns_on_file": 0,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [
+            "f2",
+            "h2",
+            "f3"
+          ],
+          "absolutely_pinned": [
+            "f2"
+          ]
+        },
+        "black": {
+          "king": "g8",
+          "own_pawns_on_file": 1,
+          "enemy_pawns_on_file": 0,
+          "close_forward_pawns": [
+            "g6",
+            "h6",
+            "f7"
+          ],
+          "absolutely_pinned": []
+        }
+      },
+      "static_root": -56,
+      "material_root": 0,
+      "phase": 20,
+      "king_pressure": {
+        "white": {
+          "units": 0,
+          "attackers": 0,
+          "bonus": 0
+        },
+        "black": {
+          "units": 2,
+          "attackers": 1,
+          "bonus": 0
+        }
+      },
+      "passers": [],
+      "in_check": false,
+      "quiescence": {
+        "complete": true,
+        "score_root": -56,
+        "nodes": 174,
+        "seconds": 0.0015788000309839845
+      }
+    },
+    {
+      "id": "leaf-04",
+      "target": "v53-rated-loss-3",
+      "start_fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N2N2/PP3PPP/R2QKB1R b KQ - 3 6",
+      "history": [
+        "h7h6",
+        "g5f6",
+        "e7f6",
+        "f1e2",
+        "f6f5",
+        "e1g1",
+        "f5e4",
+        "c3e4",
+        "a7a5",
+        "f1e1",
+        "f8e8",
+        "e2d3",
+        "c8g4",
+        "d4d5",
+        "b8d7",
+        "h2h3",
+        "g4f3",
+        "d1f3",
+        "d7e5",
+        "f3e2",
+        "e5d3"
+      ],
+      "fen": "r2qr1k1/1pp2pb1/3p2pp/p2P4/2P1N3/3n3P/PP2QPP1/R3R1K1 w - - 0 17",
+      "root_white": true,
+      "terminal": false,
+      "origins": [
+        {
+          "kind": "student",
+          "forced": "h2h3",
+          "trace_stop": "quiescence_reached",
+          "extensions_left": 2,
+          "pv": [
+            "h2h3",
+            "g4f3",
+            "d1f3",
+            "d7e5",
+            "f3e2",
+            "e5d3"
+          ]
+        }
+      ],
+      "king_shelter": {
+        "white": {
+          "king": "g1",
+          "own_pawns_on_file": 1,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [
+            "f2",
+            "g2",
+            "h3"
+          ],
+          "absolutely_pinned": []
+        },
+        "black": {
+          "king": "g8",
+          "own_pawns_on_file": 1,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [
+            "g6",
+            "h6",
+            "f7"
+          ],
+          "absolutely_pinned": []
+        }
+      },
+      "static_root": -326,
+      "material_root": -340,
+      "phase": 19,
+      "king_pressure": {
+        "white": {
+          "units": 0,
+          "attackers": 0,
+          "bonus": 0
+        },
+        "black": {
+          "units": 2,
+          "attackers": 1,
+          "bonus": 0
+        }
+      },
+      "passers": [],
+      "in_check": false,
+      "quiescence": {
+        "complete": true,
+        "score_root": -78,
+        "nodes": 25,
+        "seconds": 0.0006959000020287931
+      }
+    },
+    {
+      "id": "leaf-05",
+      "target": "v53-rated-loss-4",
+      "start_fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N2N2/PP3PPP/R2QKB1R b KQ - 3 6",
+      "history": [
+        "h7h6",
+        "g5h4",
+        "g6g5",
+        "f3g5",
+        "h6g5",
+        "h4g5",
+        "b8c6",
+        "d4d5",
+        "c6e5",
+        "a1c1",
+        "c7c6",
+        "d1d2",
+        "d8b6",
+        "h2h3",
+        "b6b4",
+        "d2c2",
+        "e5c4",
+        "a2a3",
+        "c4a3",
+        "b2a3",
+        "b4a3",
+        "c2d2",
+        "c6d5",
+        "g5f6",
+        "g7f6",
+        "c3d5",
+        "c8e6",
+        "d5f6",
+        "e7f6",
+        "c1c3",
+        "a3a1"
+      ],
+      "fen": "r4rk1/pp3p2/3pbp2/8/4P3/2R4P/3Q1PP1/q3KB1R w K - 2 22",
+      "root_white": false,
+      "terminal": false,
+      "origins": [
+        {
+          "kind": "student",
+          "forced": "c8e6",
+          "trace_stop": "missing_or_nonexact_transposition_entry",
+          "extensions_left": 0,
+          "pv": [
+            "c8e6",
+            "d5f6",
+            "e7f6",
+            "c1c3",
+            "a3a1"
+          ]
+        }
+      ],
+      "king_shelter": {
+        "white": {
+          "king": "e1",
+          "own_pawns_on_file": 1,
+          "enemy_pawns_on_file": 0,
+          "close_forward_pawns": [
+            "f2"
+          ],
+          "absolutely_pinned": []
+        },
+        "black": {
+          "king": "g8",
+          "own_pawns_on_file": 0,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [
+            "f6",
+            "f7"
+          ],
+          "absolutely_pinned": []
+        }
+      },
+      "static_root": 47,
+      "material_root": 100,
+      "phase": 18,
+      "king_pressure": {
+        "white": {
+          "units": 0,
+          "attackers": 0,
+          "bonus": 0
+        },
+        "black": {
+          "units": 5,
+          "attackers": 1,
+          "bonus": 0
+        }
+      },
+      "passers": [
+        {
+          "square": "h3",
+          "white": true,
+          "relative_rank": 2,
+          "mg_bonus": 8,
+          "eg_bonus": 20,
+          "defenders": [
+            "h1",
+            "g2",
+            "c3"
+          ],
+          "attackers": [
+            "e6"
+          ],
+          "enemy_king_distance": 5
+        },
+        {
+          "square": "b7",
+          "white": false,
+          "relative_rank": 1,
+          "mg_bonus": 2,
+          "eg_bonus": 5,
+          "defenders": [],
+          "attackers": [],
+          "enemy_king_distance": 6
+        },
+        {
+          "square": "a7",
+          "white": false,
+          "relative_rank": 1,
+          "mg_bonus": 2,
+          "eg_bonus": 5,
+          "defenders": [
+            "a1",
+            "a8"
+          ],
+          "attackers": [],
+          "enemy_king_distance": 6
+        }
+      ],
+      "in_check": true,
+      "quiescence": {
+        "complete": true,
+        "score_root": 49,
+        "nodes": 41,
+        "seconds": 0.0005684000207111239
+      }
+    },
+    {
+      "id": "leaf-06",
+      "target": "v53-rated-loss-2",
+      "start_fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N2N2/PP3PPP/R2QKB1R b KQ - 3 6",
+      "history": [
+        "h7h6",
+        "g5d2",
+        "g6g5",
+        "f1e2",
+        "g5g4",
+        "d1c1",
+        "g4f3",
+        "g2f3",
+        "g8h7",
+        "e4e5",
+        "d6e5",
+        "d4e5"
+      ],
+      "fen": "rnbq1r2/ppp1ppbk/5n1p/4P3/2P5/2N2P2/PP1BBP1P/R1Q1K2R b KQ - 0 12",
+      "root_white": false,
+      "terminal": false,
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "best",
+          "budget": 80000,
+          "requested_prefix": 4,
+          "pv": [
+            "g8h7",
+            "e4e5",
+            "d6e5",
+            "d4e5"
+          ]
+        }
+      ],
+      "king_shelter": {
+        "white": {
+          "king": "e1",
+          "own_pawns_on_file": 1,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [
+            "f2",
+            "f3"
+          ],
+          "absolutely_pinned": []
+        },
+        "black": {
+          "king": "h7",
+          "own_pawns_on_file": 1,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [
+            "h6"
+          ],
+          "absolutely_pinned": []
+        }
+      },
+      "static_root": 149,
+      "material_root": 225,
+      "phase": 23,
+      "king_pressure": {
+        "white": {
+          "units": 2,
+          "attackers": 1,
+          "bonus": 0
+        },
+        "black": {
+          "units": 5,
+          "attackers": 1,
+          "bonus": 0
+        }
+      },
+      "passers": [],
+      "in_check": false,
+      "quiescence": {
+        "complete": true,
+        "score_root": 149,
+        "nodes": 3,
+        "seconds": 0.0001476999605074525
+      }
+    },
+    {
+      "id": "leaf-07",
+      "target": "v53-rated-loss-2",
+      "start_fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N2N2/PP3PPP/R2QKB1R b KQ - 3 6",
+      "history": [
+        "h7h6",
+        "g5d2",
+        "g6g5",
+        "f1e2",
+        "g5g4",
+        "d1c1",
+        "g4f3",
+        "g2f3",
+        "g8h7",
+        "e4e5",
+        "d6e5",
+        "d4e5",
+        "f6g8",
+        "c1c2",
+        "h7h8",
+        "e1c1"
+      ],
+      "fen": "rnbq1rnk/ppp1ppb1/7p/4P3/2P5/2N2P2/PPQBBP1P/2KR3R b - - 4 14",
+      "root_white": false,
+      "terminal": false,
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "best",
+          "budget": 80000,
+          "requested_prefix": 8,
+          "pv": [
+            "g8h7",
+            "e4e5",
+            "d6e5",
+            "d4e5",
+            "f6g8",
+            "c1c2",
+            "h7h8",
+            "e1c1"
+          ]
+        }
+      ],
+      "king_shelter": {
+        "white": {
+          "king": "c1",
+          "own_pawns_on_file": 1,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [
+            "b2"
+          ],
+          "absolutely_pinned": []
+        },
+        "black": {
+          "king": "h8",
+          "own_pawns_on_file": 1,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [
+            "h6"
+          ],
+          "absolutely_pinned": []
+        }
+      },
+      "static_root": 41,
+      "material_root": 225,
+      "phase": 23,
+      "king_pressure": {
+        "white": {
+          "units": 5,
+          "attackers": 1,
+          "bonus": 0
+        },
+        "black": {
+          "units": 5,
+          "attackers": 1,
+          "bonus": 0
+        }
+      },
+      "passers": [],
+      "in_check": false,
+      "quiescence": {
+        "complete": true,
+        "score_root": 135,
+        "nodes": 37,
+        "seconds": 0.00048779998905956745
+      }
+    },
+    {
+      "id": "leaf-08",
+      "target": "v53-rated-loss-2",
+      "start_fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N2N2/PP3PPP/R2QKB1R b KQ - 3 6",
+      "history": [
+        "h7h6",
+        "g5d2",
+        "g6g5",
+        "f1e2",
+        "g5g4",
+        "d1c1",
+        "g4f3",
+        "g2f3",
+        "b8c6",
+        "d2h6",
+        "e7e5",
+        "h1g1"
+      ],
+      "fen": "r1bq1rk1/ppp2pb1/2np1n1B/4p3/2PPP3/2N2P2/PP2BP1P/R1Q1K1R1 b Q - 1 12",
+      "root_white": false,
+      "terminal": false,
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "played",
+          "budget": 80000,
+          "requested_prefix": 4,
+          "pv": [
+            "b8c6",
+            "d2h6",
+            "e7e5",
+            "h1g1"
+          ]
+        },
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "played",
+          "budget": 320000,
+          "requested_prefix": 4,
+          "pv": [
+            "b8c6",
+            "d2h6",
+            "e7e5",
+            "h1g1"
+          ]
+        }
+      ],
+      "king_shelter": {
+        "white": {
+          "king": "e1",
+          "own_pawns_on_file": 1,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [
+            "f2",
+            "f3"
+          ],
+          "absolutely_pinned": []
+        },
+        "black": {
+          "king": "g8",
+          "own_pawns_on_file": 0,
+          "enemy_pawns_on_file": 0,
+          "close_forward_pawns": [
+            "f7"
+          ],
+          "absolutely_pinned": [
+            "g7"
+          ]
+        }
+      },
+      "static_root": 58,
+      "material_root": 125,
+      "phase": 23,
+      "king_pressure": {
+        "white": {
+          "units": 5,
+          "attackers": 2,
+          "bonus": 50
+        },
+        "black": {
+          "units": 0,
+          "attackers": 0,
+          "bonus": 0
+        }
+      },
+      "passers": [
+        {
+          "square": "h2",
+          "white": true,
+          "relative_rank": 1,
+          "mg_bonus": 2,
+          "eg_bonus": 5,
+          "defenders": [],
+          "attackers": [],
+          "enemy_king_distance": 6
+        }
+      ],
+      "in_check": false,
+      "quiescence": {
+        "complete": true,
+        "score_root": 58,
+        "nodes": 36,
+        "seconds": 0.0009443999733775854
+      }
+    },
+    {
+      "id": "leaf-09",
+      "target": "v53-rated-loss-2",
+      "start_fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N2N2/PP3PPP/R2QKB1R b KQ - 3 6",
+      "history": [
+        "h7h6",
+        "g5d2",
+        "g6g5",
+        "f1e2",
+        "g5g4",
+        "d1c1",
+        "g4f3",
+        "g2f3",
+        "b8c6",
+        "d2h6",
+        "e7e5",
+        "h1g1",
+        "f6g4",
+        "f3g4",
+        "c6d4",
+        "c1d2"
+      ],
+      "fen": "r1bq1rk1/ppp2pb1/3p3B/4p3/2PnP1P1/2N5/PP1QBP1P/R3K1R1 b Q - 1 14",
+      "root_white": false,
+      "terminal": false,
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "played",
+          "budget": 80000,
+          "requested_prefix": 8,
+          "pv": [
+            "b8c6",
+            "d2h6",
+            "e7e5",
+            "h1g1",
+            "f6g4",
+            "f3g4",
+            "c6d4",
+            "c1d2"
+          ]
+        },
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "played",
+          "budget": 320000,
+          "requested_prefix": 8,
+          "pv": [
+            "b8c6",
+            "d2h6",
+            "e7e5",
+            "h1g1",
+            "f6g4",
+            "f3g4",
+            "c6d4",
+            "c1d2"
+          ]
+        }
+      ],
+      "king_shelter": {
+        "white": {
+          "king": "e1",
+          "own_pawns_on_file": 1,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [
+            "f2"
+          ],
+          "absolutely_pinned": []
+        },
+        "black": {
+          "king": "g8",
+          "own_pawns_on_file": 0,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [
+            "f7"
+          ],
+          "absolutely_pinned": []
+        }
+      },
+      "static_root": -89,
+      "material_root": -100,
+      "phase": 22,
+      "king_pressure": {
+        "white": {
+          "units": 2,
+          "attackers": 1,
+          "bonus": 0
+        },
+        "black": {
+          "units": 2,
+          "attackers": 1,
+          "bonus": 0
+        }
+      },
+      "passers": [
+        {
+          "square": "h2",
+          "white": true,
+          "relative_rank": 1,
+          "mg_bonus": 2,
+          "eg_bonus": 5,
+          "defenders": [],
+          "attackers": [],
+          "enemy_king_distance": 6
+        }
+      ],
+      "in_check": false,
+      "quiescence": {
+        "complete": true,
+        "score_root": -89,
+        "nodes": 31,
+        "seconds": 0.0007860999903641641
+      }
+    },
+    {
+      "id": "leaf-10",
+      "target": "v53-rated-loss-2",
+      "start_fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N2N2/PP3PPP/R2QKB1R b KQ - 3 6",
+      "history": [
+        "h7h6",
+        "g5d2",
+        "g6g5",
+        "f1e2",
+        "g5g4",
+        "d1c1",
+        "g4f3",
+        "g2f3",
+        "g8h7",
+        "e4e5",
+        "f6g8",
+        "e2d3"
+      ],
+      "fen": "rnbq1rn1/ppp1ppbk/3p3p/4P3/2PP4/2NB1P2/PP1B1P1P/R1Q1K2R b KQ - 2 12",
+      "root_white": false,
+      "terminal": false,
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "best",
+          "budget": 320000,
+          "requested_prefix": 4,
+          "pv": [
+            "g8h7",
+            "e4e5",
+            "f6g8",
+            "e2d3"
+          ]
+        }
+      ],
+      "king_shelter": {
+        "white": {
+          "king": "e1",
+          "own_pawns_on_file": 1,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [
+            "f2",
+            "f3"
+          ],
+          "absolutely_pinned": []
+        },
+        "black": {
+          "king": "h7",
+          "own_pawns_on_file": 1,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [
+            "h6"
+          ],
+          "absolutely_pinned": []
+        }
+      },
+      "static_root": 7,
+      "material_root": 225,
+      "phase": 23,
+      "king_pressure": {
+        "white": {
+          "units": 4,
+          "attackers": 2,
+          "bonus": 32
+        },
+        "black": {
+          "units": 0,
+          "attackers": 0,
+          "bonus": 0
+        }
+      },
+      "passers": [],
+      "in_check": true,
+      "quiescence": {
+        "complete": true,
+        "score_root": 51,
+        "nodes": 90,
+        "seconds": 0.0007063000230118632
+      }
+    },
+    {
+      "id": "leaf-11",
+      "target": "v53-rated-loss-2",
+      "start_fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N2N2/PP3PPP/R2QKB1R b KQ - 3 6",
+      "history": [
+        "h7h6",
+        "g5d2",
+        "g6g5",
+        "f1e2",
+        "g5g4",
+        "d1c1",
+        "g4f3",
+        "g2f3",
+        "g8h7",
+        "e4e5",
+        "f6g8",
+        "e2d3",
+        "h7h8",
+        "h1g1",
+        "e7e6",
+        "d2g5"
+      ],
+      "fen": "rnbq1rnk/ppp2pb1/3pp2p/4P1B1/2PP4/2NB1P2/PP3P1P/R1Q1K1R1 b Q - 1 14",
+      "root_white": false,
+      "terminal": false,
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "best",
+          "budget": 320000,
+          "requested_prefix": 8,
+          "pv": [
+            "g8h7",
+            "e4e5",
+            "f6g8",
+            "e2d3",
+            "h7h8",
+            "h1g1",
+            "e7e6",
+            "d2g5"
+          ]
+        }
+      ],
+      "king_shelter": {
+        "white": {
+          "king": "e1",
+          "own_pawns_on_file": 1,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [
+            "f2",
+            "f3"
+          ],
+          "absolutely_pinned": []
+        },
+        "black": {
+          "king": "h8",
+          "own_pawns_on_file": 1,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [
+            "h6"
+          ],
+          "absolutely_pinned": []
+        }
+      },
+      "static_root": 10,
+      "material_root": 225,
+      "phase": 23,
+      "king_pressure": {
+        "white": {
+          "units": 2,
+          "attackers": 1,
+          "bonus": 0
+        },
+        "black": {
+          "units": 0,
+          "attackers": 0,
+          "bonus": 0
+        }
+      },
+      "passers": [],
+      "in_check": false,
+      "quiescence": {
+        "complete": true,
+        "score_root": 281,
+        "nodes": 158,
+        "seconds": 0.0017951999907381833
+      }
+    },
+    {
+      "id": "leaf-12",
+      "target": "v53-rated-loss-3",
+      "start_fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N2N2/PP3PPP/R2QKB1R b KQ - 3 6",
+      "history": [
+        "h7h6",
+        "g5f6",
+        "e7f6",
+        "f1e2",
+        "f6f5",
+        "e1g1",
+        "f5e4",
+        "c3e4",
+        "a7a5",
+        "f1e1",
+        "f8e8",
+        "e2d3",
+        "c8g4",
+        "d4d5",
+        "b8d7",
+        "h2h3",
+        "g4f3",
+        "d1f3",
+        "g7b2"
+      ],
+      "fen": "r2qr1k1/1ppn1p2/3p2pp/p2P4/2P1N3/3B1Q1P/Pb3PP1/R3R1K1 w - - 0 16",
+      "root_white": true,
+      "terminal": false,
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "best",
+          "budget": 80000,
+          "requested_prefix": 4,
+          "pv": [
+            "h2h3",
+            "g4f3",
+            "d1f3",
+            "g7b2"
+          ]
+        },
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "best",
+          "budget": 320000,
+          "requested_prefix": 4,
+          "pv": [
+            "h2h3",
+            "g4f3",
+            "d1f3",
+            "g7b2"
+          ]
+        }
+      ],
+      "king_shelter": {
+        "white": {
+          "king": "g1",
+          "own_pawns_on_file": 1,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [
+            "f2",
+            "g2",
+            "h3"
+          ],
+          "absolutely_pinned": []
+        },
+        "black": {
+          "king": "g8",
+          "own_pawns_on_file": 1,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [
+            "g6",
+            "h6",
+            "f7"
+          ],
+          "absolutely_pinned": []
+        }
+      },
+      "static_root": -58,
+      "material_root": -100,
+      "phase": 20,
+      "king_pressure": {
+        "white": {
+          "units": 5,
+          "attackers": 1,
+          "bonus": 0
+        },
+        "black": {
+          "units": 0,
+          "attackers": 0,
+          "bonus": 0
+        }
+      },
+      "passers": [],
+      "in_check": false,
+      "quiescence": {
+        "complete": true,
+        "score_root": -58,
+        "nodes": 74,
+        "seconds": 0.001153699995484203
+      }
+    },
+    {
+      "id": "leaf-13",
+      "target": "v53-rated-loss-3",
+      "start_fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N2N2/PP3PPP/R2QKB1R b KQ - 3 6",
+      "history": [
+        "h7h6",
+        "g5f6",
+        "e7f6",
+        "f1e2",
+        "f6f5",
+        "e1g1",
+        "f5e4",
+        "c3e4",
+        "a7a5",
+        "f1e1",
+        "f8e8",
+        "e2d3",
+        "c8g4",
+        "d4d5",
+        "b8d7",
+        "h2h3",
+        "g4f3",
+        "d1f3",
+        "g7b2",
+        "a1b1",
+        "b2d4",
+        "f3f4",
+        "d4g7"
+      ],
+      "fen": "r2qr1k1/1ppn1pb1/3p2pp/p2P4/2P1NQ2/3B3P/P4PP1/1R2R1K1 w - - 4 18",
+      "root_white": true,
+      "terminal": false,
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "best",
+          "budget": 80000,
+          "requested_prefix": 8,
+          "pv": [
+            "h2h3",
+            "g4f3",
+            "d1f3",
+            "g7b2",
+            "a1b1",
+            "b2d4",
+            "f3f4",
+            "d4g7"
+          ]
+        },
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "best",
+          "budget": 320000,
+          "requested_prefix": 8,
+          "pv": [
+            "h2h3",
+            "g4f3",
+            "d1f3",
+            "g7b2",
+            "a1b1",
+            "b2d4",
+            "f3f4",
+            "d4g7"
+          ]
+        }
+      ],
+      "king_shelter": {
+        "white": {
+          "king": "g1",
+          "own_pawns_on_file": 1,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [
+            "f2",
+            "g2",
+            "h3"
+          ],
+          "absolutely_pinned": []
+        },
+        "black": {
+          "king": "g8",
+          "own_pawns_on_file": 1,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [
+            "g6",
+            "h6",
+            "f7"
+          ],
+          "absolutely_pinned": []
+        }
+      },
+      "static_root": -25,
+      "material_root": -100,
+      "phase": 20,
+      "king_pressure": {
+        "white": {
+          "units": 5,
+          "attackers": 1,
+          "bonus": 0
+        },
+        "black": {
+          "units": 0,
+          "attackers": 0,
+          "bonus": 0
+        }
+      },
+      "passers": [],
+      "in_check": false,
+      "quiescence": {
+        "complete": true,
+        "score_root": 128,
+        "nodes": 33,
+        "seconds": 0.0012752999900840223
+      }
+    },
+    {
+      "id": "leaf-14",
+      "target": "v53-rated-loss-3",
+      "start_fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N2N2/PP3PPP/R2QKB1R b KQ - 3 6",
+      "history": [
+        "h7h6",
+        "g5f6",
+        "e7f6",
+        "f1e2",
+        "f6f5",
+        "e1g1",
+        "f5e4",
+        "c3e4",
+        "a7a5",
+        "f1e1",
+        "f8e8",
+        "e2d3",
+        "c8g4",
+        "d4d5",
+        "b8d7",
+        "d1b3",
+        "g4f3",
+        "g2f3",
+        "a5a4"
+      ],
+      "fen": "r2qr1k1/1ppn1pb1/3p2pp/3P4/p1P1N3/1Q1B1P2/PP3P1P/R3R1K1 w - - 0 16",
+      "root_white": true,
+      "terminal": false,
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "played",
+          "budget": 80000,
+          "requested_prefix": 4,
+          "pv": [
+            "d1b3",
+            "g4f3",
+            "g2f3",
+            "a5a4"
+          ]
+        },
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "played",
+          "budget": 320000,
+          "requested_prefix": 4,
+          "pv": [
+            "d1b3",
+            "g4f3",
+            "g2f3",
+            "a5a4"
+          ]
+        }
+      ],
+      "king_shelter": {
+        "white": {
+          "king": "g1",
+          "own_pawns_on_file": 0,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [
+            "f2",
+            "h2",
+            "f3"
+          ],
+          "absolutely_pinned": []
+        },
+        "black": {
+          "king": "g8",
+          "own_pawns_on_file": 1,
+          "enemy_pawns_on_file": 0,
+          "close_forward_pawns": [
+            "g6",
+            "h6",
+            "f7"
+          ],
+          "absolutely_pinned": []
+        }
+      },
+      "static_root": 3,
+      "material_root": 0,
+      "phase": 20,
+      "king_pressure": {
+        "white": {
+          "units": 0,
+          "attackers": 0,
+          "bonus": 0
+        },
+        "black": {
+          "units": 0,
+          "attackers": 0,
+          "bonus": 0
+        }
+      },
+      "passers": [],
+      "in_check": false,
+      "quiescence": {
+        "complete": true,
+        "score_root": 112,
+        "nodes": 32,
+        "seconds": 0.0003013999667018652
+      }
+    },
+    {
+      "id": "leaf-15",
+      "target": "v53-rated-loss-3",
+      "start_fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N2N2/PP3PPP/R2QKB1R b KQ - 3 6",
+      "history": [
+        "h7h6",
+        "g5f6",
+        "e7f6",
+        "f1e2",
+        "f6f5",
+        "e1g1",
+        "f5e4",
+        "c3e4",
+        "a7a5",
+        "f1e1",
+        "f8e8",
+        "e2d3",
+        "c8g4",
+        "d4d5",
+        "b8d7",
+        "d1b3",
+        "g4f3",
+        "g2f3",
+        "a5a4",
+        "b3a3",
+        "d8h4",
+        "a1d1",
+        "h6h5"
+      ],
+      "fen": "r3r1k1/1ppn1pb1/3p2p1/3P3p/p1P1N2q/Q2B1P2/PP3P1P/3RR1K1 w - - 0 18",
+      "root_white": true,
+      "terminal": false,
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "played",
+          "budget": 80000,
+          "requested_prefix": 8,
+          "pv": [
+            "d1b3",
+            "g4f3",
+            "g2f3",
+            "a5a4",
+            "b3a3",
+            "d8h4",
+            "a1d1",
+            "h6h5"
+          ]
+        }
+      ],
+      "king_shelter": {
+        "white": {
+          "king": "g1",
+          "own_pawns_on_file": 0,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [
+            "f2",
+            "h2",
+            "f3"
+          ],
+          "absolutely_pinned": []
+        },
+        "black": {
+          "king": "g8",
+          "own_pawns_on_file": 1,
+          "enemy_pawns_on_file": 0,
+          "close_forward_pawns": [
+            "g6",
+            "f7"
+          ],
+          "absolutely_pinned": []
+        }
+      },
+      "static_root": -32,
+      "material_root": 0,
+      "phase": 20,
+      "king_pressure": {
+        "white": {
+          "units": 0,
+          "attackers": 0,
+          "bonus": 0
+        },
+        "black": {
+          "units": 10,
+          "attackers": 1,
+          "bonus": 0
+        }
+      },
+      "passers": [],
+      "in_check": false,
+      "quiescence": {
+        "complete": true,
+        "score_root": -32,
+        "nodes": 16,
+        "seconds": 0.0003124999930150807
+      }
+    },
+    {
+      "id": "leaf-16",
+      "target": "v53-rated-loss-3",
+      "start_fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N2N2/PP3PPP/R2QKB1R b KQ - 3 6",
+      "history": [
+        "h7h6",
+        "g5f6",
+        "e7f6",
+        "f1e2",
+        "f6f5",
+        "e1g1",
+        "f5e4",
+        "c3e4",
+        "a7a5",
+        "f1e1",
+        "f8e8",
+        "e2d3",
+        "c8g4",
+        "d4d5",
+        "b8d7",
+        "d1b3",
+        "g4f3",
+        "g2f3",
+        "a5a4",
+        "b3a3",
+        "d8h4",
+        "d3f1",
+        "g7e5"
+      ],
+      "fen": "r3r1k1/1ppn1p2/3p2pp/3Pb3/p1P1N2q/Q4P2/PP3P1P/R3RBK1 w - - 4 18",
+      "root_white": true,
+      "terminal": false,
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "played",
+          "budget": 320000,
+          "requested_prefix": 8,
+          "pv": [
+            "d1b3",
+            "g4f3",
+            "g2f3",
+            "a5a4",
+            "b3a3",
+            "d8h4",
+            "d3f1",
+            "g7e5"
+          ]
+        }
+      ],
+      "king_shelter": {
+        "white": {
+          "king": "g1",
+          "own_pawns_on_file": 0,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [
+            "f2",
+            "h2",
+            "f3"
+          ],
+          "absolutely_pinned": []
+        },
+        "black": {
+          "king": "g8",
+          "own_pawns_on_file": 1,
+          "enemy_pawns_on_file": 0,
+          "close_forward_pawns": [
+            "g6",
+            "h6",
+            "f7"
+          ],
+          "absolutely_pinned": []
+        }
+      },
+      "static_root": -338,
+      "material_root": 0,
+      "phase": 20,
+      "king_pressure": {
+        "white": {
+          "units": 0,
+          "attackers": 0,
+          "bonus": 0
+        },
+        "black": {
+          "units": 12,
+          "attackers": 2,
+          "bonus": 250
+        }
+      },
+      "passers": [],
+      "in_check": false,
+      "quiescence": {
+        "complete": true,
+        "score_root": -338,
+        "nodes": 15,
+        "seconds": 0.0002710000262595713
+      }
+    },
+    {
+      "id": "leaf-17",
+      "target": "v53-rated-loss-4",
+      "start_fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N2N2/PP3PPP/R2QKB1R b KQ - 3 6",
+      "history": [
+        "h7h6",
+        "g5h4",
+        "g6g5",
+        "f3g5",
+        "h6g5",
+        "h4g5",
+        "b8c6",
+        "d4d5",
+        "c6e5",
+        "a1c1",
+        "c7c6",
+        "d1d2",
+        "d8b6",
+        "h2h3",
+        "b6b4",
+        "d2c2",
+        "e5c4",
+        "a2a3",
+        "c4a3",
+        "b2a3",
+        "b4a3",
+        "c2d2",
+        "c6d5",
+        "g5f6",
+        "g7f6",
+        "c3d5",
+        "c8e6",
+        "d5f6",
+        "e7f6",
+        "f1e2"
+      ],
+      "fen": "r4rk1/pp3p2/3pbp2/8/4P3/q6P/3QBPP1/2R1K2R b K - 1 21",
+      "root_white": false,
+      "terminal": false,
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "best",
+          "budget": 80000,
+          "requested_prefix": 4,
+          "pv": [
+            "c8e6",
+            "d5f6",
+            "e7f6",
+            "f1e2"
+          ]
+        },
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "best",
+          "budget": 320000,
+          "requested_prefix": 4,
+          "pv": [
+            "c8e6",
+            "d5f6",
+            "e7f6",
+            "f1e2"
+          ]
+        }
+      ],
+      "king_shelter": {
+        "white": {
+          "king": "e1",
+          "own_pawns_on_file": 1,
+          "enemy_pawns_on_file": 0,
+          "close_forward_pawns": [
+            "f2"
+          ],
+          "absolutely_pinned": []
+        },
+        "black": {
+          "king": "g8",
+          "own_pawns_on_file": 0,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [
+            "f6",
+            "f7"
+          ],
+          "absolutely_pinned": []
+        }
+      },
+      "static_root": 36,
+      "material_root": 100,
+      "phase": 18,
+      "king_pressure": {
+        "white": {
+          "units": 0,
+          "attackers": 0,
+          "bonus": 0
+        },
+        "black": {
+          "units": 0,
+          "attackers": 0,
+          "bonus": 0
+        }
+      },
+      "passers": [
+        {
+          "square": "h3",
+          "white": true,
+          "relative_rank": 2,
+          "mg_bonus": 8,
+          "eg_bonus": 20,
+          "defenders": [
+            "h1",
+            "g2"
+          ],
+          "attackers": [
+            "a3",
+            "e6"
+          ],
+          "enemy_king_distance": 5
+        },
+        {
+          "square": "b7",
+          "white": false,
+          "relative_rank": 1,
+          "mg_bonus": 2,
+          "eg_bonus": 5,
+          "defenders": [],
+          "attackers": [],
+          "enemy_king_distance": 6
+        },
+        {
+          "square": "a7",
+          "white": false,
+          "relative_rank": 1,
+          "mg_bonus": 2,
+          "eg_bonus": 5,
+          "defenders": [
+            "a3",
+            "a8"
+          ],
+          "attackers": [],
+          "enemy_king_distance": 6
+        }
+      ],
+      "in_check": false,
+      "quiescence": {
+        "complete": true,
+        "score_root": 36,
+        "nodes": 12,
+        "seconds": 0.0002212999970652163
+      }
+    },
+    {
+      "id": "leaf-18",
+      "target": "v53-rated-loss-4",
+      "start_fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N2N2/PP3PPP/R2QKB1R b KQ - 3 6",
+      "history": [
+        "h7h6",
+        "g5h4",
+        "g6g5",
+        "f3g5",
+        "h6g5",
+        "h4g5",
+        "b8c6",
+        "d4d5",
+        "c6e5",
+        "a1c1",
+        "c7c6",
+        "d1d2",
+        "d8b6",
+        "h2h3",
+        "b6b4",
+        "d2c2",
+        "e5c4",
+        "a2a3",
+        "c4a3",
+        "b2a3",
+        "b4a3",
+        "c2d2",
+        "c6d5",
+        "g5f6",
+        "g7f6",
+        "c3d5",
+        "c8e6",
+        "d5f6",
+        "e7f6",
+        "f1e2",
+        "a8c8",
+        "e1g1",
+        "c8c1",
+        "f1c1"
+      ],
+      "fen": "5rk1/pp3p2/3pbp2/8/4P3/q6P/3QBPP1/2R3K1 b - - 0 23",
+      "root_white": false,
+      "terminal": false,
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "best",
+          "budget": 80000,
+          "requested_prefix": 8,
+          "pv": [
+            "c8e6",
+            "d5f6",
+            "e7f6",
+            "f1e2",
+            "a8c8",
+            "e1g1",
+            "c8c1",
+            "f1c1"
+          ]
+        }
+      ],
+      "king_shelter": {
+        "white": {
+          "king": "g1",
+          "own_pawns_on_file": 1,
+          "enemy_pawns_on_file": 0,
+          "close_forward_pawns": [
+            "f2",
+            "g2",
+            "h3"
+          ],
+          "absolutely_pinned": []
+        },
+        "black": {
+          "king": "g8",
+          "own_pawns_on_file": 0,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [
+            "f6",
+            "f7"
+          ],
+          "absolutely_pinned": []
+        }
+      },
+      "static_root": 4,
+      "material_root": 100,
+      "phase": 14,
+      "king_pressure": {
+        "white": {
+          "units": 0,
+          "attackers": 0,
+          "bonus": 0
+        },
+        "black": {
+          "units": 0,
+          "attackers": 0,
+          "bonus": 0
+        }
+      },
+      "passers": [
+        {
+          "square": "h3",
+          "white": true,
+          "relative_rank": 2,
+          "mg_bonus": 8,
+          "eg_bonus": 20,
+          "defenders": [
+            "g2"
+          ],
+          "attackers": [
+            "a3",
+            "e6"
+          ],
+          "enemy_king_distance": 5
+        },
+        {
+          "square": "b7",
+          "white": false,
+          "relative_rank": 1,
+          "mg_bonus": 2,
+          "eg_bonus": 5,
+          "defenders": [],
+          "attackers": [],
+          "enemy_king_distance": 6
+        },
+        {
+          "square": "a7",
+          "white": false,
+          "relative_rank": 1,
+          "mg_bonus": 2,
+          "eg_bonus": 5,
+          "defenders": [
+            "a3"
+          ],
+          "attackers": [],
+          "enemy_king_distance": 6
+        }
+      ],
+      "in_check": false,
+      "quiescence": {
+        "complete": true,
+        "score_root": 4,
+        "nodes": 12,
+        "seconds": 0.0001183999702334404
+      }
+    },
+    {
+      "id": "leaf-19",
+      "target": "v53-rated-loss-4",
+      "start_fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N2N2/PP3PPP/R2QKB1R b KQ - 3 6",
+      "history": [
+        "h7h6",
+        "g5h4",
+        "g6g5",
+        "f3g5",
+        "h6g5",
+        "h4g5",
+        "b8c6",
+        "d4d5",
+        "c6e5",
+        "a1c1",
+        "c7c6",
+        "d1d2",
+        "d8b6",
+        "h2h3",
+        "b6b4",
+        "d2c2",
+        "e5c4",
+        "a2a3",
+        "c4a3",
+        "b2a3",
+        "b4a3",
+        "c2d2",
+        "c6d5",
+        "g5f6",
+        "g7f6",
+        "c3d5",
+        "f6h4",
+        "f1d3",
+        "c8e6",
+        "e1g1"
+      ],
+      "fen": "r4rk1/pp2pp2/3pb3/3N4/4P2b/q2B3P/3Q1PP1/2R2RK1 b - - 4 21",
+      "root_white": false,
+      "terminal": false,
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "played",
+          "budget": 80000,
+          "requested_prefix": 4,
+          "pv": [
+            "f6h4",
+            "f1d3",
+            "c8e6",
+            "e1g1"
+          ]
+        }
+      ],
+      "king_shelter": {
+        "white": {
+          "king": "g1",
+          "own_pawns_on_file": 1,
+          "enemy_pawns_on_file": 0,
+          "close_forward_pawns": [
+            "f2",
+            "g2",
+            "h3"
+          ],
+          "absolutely_pinned": []
+        },
+        "black": {
+          "king": "g8",
+          "own_pawns_on_file": 0,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [
+            "f7"
+          ],
+          "absolutely_pinned": []
+        }
+      },
+      "static_root": 50,
+      "material_root": 115,
+      "phase": 20,
+      "king_pressure": {
+        "white": {
+          "units": 0,
+          "attackers": 0,
+          "bonus": 0
+        },
+        "black": {
+          "units": 2,
+          "attackers": 1,
+          "bonus": 0
+        }
+      },
+      "passers": [
+        {
+          "square": "h3",
+          "white": true,
+          "relative_rank": 2,
+          "mg_bonus": 8,
+          "eg_bonus": 20,
+          "defenders": [
+            "g2"
+          ],
+          "attackers": [
+            "e6"
+          ],
+          "enemy_king_distance": 5
+        },
+        {
+          "square": "b7",
+          "white": false,
+          "relative_rank": 1,
+          "mg_bonus": 2,
+          "eg_bonus": 5,
+          "defenders": [],
+          "attackers": [],
+          "enemy_king_distance": 6
+        },
+        {
+          "square": "a7",
+          "white": false,
+          "relative_rank": 1,
+          "mg_bonus": 2,
+          "eg_bonus": 5,
+          "defenders": [
+            "a3",
+            "a8"
+          ],
+          "attackers": [],
+          "enemy_king_distance": 6
+        }
+      ],
+      "in_check": false,
+      "quiescence": {
+        "complete": true,
+        "score_root": 50,
+        "nodes": 65,
+        "seconds": 0.0002479000249877572
+      }
+    },
+    {
+      "id": "leaf-20",
+      "target": "v53-rated-loss-4",
+      "start_fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N2N2/PP3PPP/R2QKB1R b KQ - 3 6",
+      "history": [
+        "h7h6",
+        "g5h4",
+        "g6g5",
+        "f3g5",
+        "h6g5",
+        "h4g5",
+        "b8c6",
+        "d4d5",
+        "c6e5",
+        "a1c1",
+        "c7c6",
+        "d1d2",
+        "d8b6",
+        "h2h3",
+        "b6b4",
+        "d2c2",
+        "e5c4",
+        "a2a3",
+        "c4a3",
+        "b2a3",
+        "b4a3",
+        "c2d2",
+        "c6d5",
+        "g5f6",
+        "g7f6",
+        "c3d5",
+        "f6h4",
+        "f1d3",
+        "c8e6",
+        "e1g1",
+        "f8c8",
+        "c1a1",
+        "a3c5",
+        "d2h6"
+      ],
+      "fen": "r1r3k1/pp2pp2/3pb2Q/2qN4/4P2b/3B3P/5PP1/R4RK1 b - - 8 23",
+      "root_white": false,
+      "terminal": false,
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "played",
+          "budget": 80000,
+          "requested_prefix": 8,
+          "pv": [
+            "f6h4",
+            "f1d3",
+            "c8e6",
+            "e1g1",
+            "f8c8",
+            "c1a1",
+            "a3c5",
+            "d2h6"
+          ]
+        }
+      ],
+      "king_shelter": {
+        "white": {
+          "king": "g1",
+          "own_pawns_on_file": 1,
+          "enemy_pawns_on_file": 0,
+          "close_forward_pawns": [
+            "f2",
+            "g2",
+            "h3"
+          ],
+          "absolutely_pinned": [
+            "f2"
+          ]
+        },
+        "black": {
+          "king": "g8",
+          "own_pawns_on_file": 0,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [
+            "f7"
+          ],
+          "absolutely_pinned": []
+        }
+      },
+      "static_root": 185,
+      "material_root": 115,
+      "phase": 20,
+      "king_pressure": {
+        "white": {
+          "units": 20,
+          "attackers": 1,
+          "bonus": 0
+        },
+        "black": {
+          "units": 7,
+          "attackers": 2,
+          "bonus": 98
+        }
+      },
+      "passers": [
+        {
+          "square": "h3",
+          "white": true,
+          "relative_rank": 2,
+          "mg_bonus": 8,
+          "eg_bonus": 20,
+          "defenders": [
+            "g2"
+          ],
+          "attackers": [
+            "e6"
+          ],
+          "enemy_king_distance": 5
+        },
+        {
+          "square": "b7",
+          "white": false,
+          "relative_rank": 1,
+          "mg_bonus": 2,
+          "eg_bonus": 5,
+          "defenders": [],
+          "attackers": [],
+          "enemy_king_distance": 6
+        },
+        {
+          "square": "a7",
+          "white": false,
+          "relative_rank": 1,
+          "mg_bonus": 2,
+          "eg_bonus": 5,
+          "defenders": [
+            "c5",
+            "a8"
+          ],
+          "attackers": [
+            "a1"
+          ],
+          "enemy_king_distance": 6
+        }
+      ],
+      "in_check": false,
+      "quiescence": {
+        "complete": true,
+        "score_root": 185,
+        "nodes": 53,
+        "seconds": 0.0006308999727480114
+      }
+    },
+    {
+      "id": "leaf-21",
+      "target": "v53-rated-loss-4",
+      "start_fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N2N2/PP3PPP/R2QKB1R b KQ - 3 6",
+      "history": [
+        "h7h6",
+        "g5h4",
+        "g6g5",
+        "f3g5",
+        "h6g5",
+        "h4g5",
+        "b8c6",
+        "d4d5",
+        "c6e5",
+        "a1c1",
+        "c7c6",
+        "d1d2",
+        "d8b6",
+        "h2h3",
+        "b6b4",
+        "d2c2",
+        "e5c4",
+        "a2a3",
+        "c4a3",
+        "b2a3",
+        "b4a3",
+        "c2d2",
+        "c6d5",
+        "g5f6",
+        "g7f6",
+        "c3d5",
+        "c8e6",
+        "d5f6",
+        "e7f6",
+        "f1e2",
+        "f8c8",
+        "e1g1",
+        "c8c1",
+        "f1c1"
+      ],
+      "fen": "r5k1/pp3p2/3pbp2/8/4P3/q6P/3QBPP1/2R3K1 b - - 0 23",
+      "root_white": false,
+      "terminal": false,
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "best",
+          "budget": 320000,
+          "requested_prefix": 8,
+          "pv": [
+            "c8e6",
+            "d5f6",
+            "e7f6",
+            "f1e2",
+            "f8c8",
+            "e1g1",
+            "c8c1",
+            "f1c1"
+          ]
+        }
+      ],
+      "king_shelter": {
+        "white": {
+          "king": "g1",
+          "own_pawns_on_file": 1,
+          "enemy_pawns_on_file": 0,
+          "close_forward_pawns": [
+            "f2",
+            "g2",
+            "h3"
+          ],
+          "absolutely_pinned": []
+        },
+        "black": {
+          "king": "g8",
+          "own_pawns_on_file": 0,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [
+            "f6",
+            "f7"
+          ],
+          "absolutely_pinned": []
+        }
+      },
+      "static_root": 1,
+      "material_root": 100,
+      "phase": 14,
+      "king_pressure": {
+        "white": {
+          "units": 0,
+          "attackers": 0,
+          "bonus": 0
+        },
+        "black": {
+          "units": 0,
+          "attackers": 0,
+          "bonus": 0
+        }
+      },
+      "passers": [
+        {
+          "square": "h3",
+          "white": true,
+          "relative_rank": 2,
+          "mg_bonus": 8,
+          "eg_bonus": 20,
+          "defenders": [
+            "g2"
+          ],
+          "attackers": [
+            "a3",
+            "e6"
+          ],
+          "enemy_king_distance": 5
+        },
+        {
+          "square": "b7",
+          "white": false,
+          "relative_rank": 1,
+          "mg_bonus": 2,
+          "eg_bonus": 5,
+          "defenders": [],
+          "attackers": [],
+          "enemy_king_distance": 6
+        },
+        {
+          "square": "a7",
+          "white": false,
+          "relative_rank": 1,
+          "mg_bonus": 2,
+          "eg_bonus": 5,
+          "defenders": [
+            "a3",
+            "a8"
+          ],
+          "attackers": [],
+          "enemy_king_distance": 6
+        }
+      ],
+      "in_check": false,
+      "quiescence": {
+        "complete": true,
+        "score_root": 1,
+        "nodes": 12,
+        "seconds": 9.42000187933445e-05
+      }
+    },
+    {
+      "id": "leaf-22",
+      "target": "v53-rated-loss-4",
+      "start_fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N2N2/PP3PPP/R2QKB1R b KQ - 3 6",
+      "history": [
+        "h7h6",
+        "g5h4",
+        "g6g5",
+        "f3g5",
+        "h6g5",
+        "h4g5",
+        "b8c6",
+        "d4d5",
+        "c6e5",
+        "a1c1",
+        "c7c6",
+        "d1d2",
+        "d8b6",
+        "h2h3",
+        "b6b4",
+        "d2c2",
+        "e5c4",
+        "a2a3",
+        "c4a3",
+        "b2a3",
+        "b4a3",
+        "c2d2",
+        "c6d5",
+        "g5f6",
+        "g7f6",
+        "c3d5",
+        "f6h4",
+        "f1d3",
+        "g8g7",
+        "e1g1"
+      ],
+      "fen": "r1b2r2/pp2ppk1/3p4/3N4/4P2b/q2B3P/3Q1PP1/2R2RK1 b - - 4 21",
+      "root_white": false,
+      "terminal": false,
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "played",
+          "budget": 320000,
+          "requested_prefix": 4,
+          "pv": [
+            "f6h4",
+            "f1d3",
+            "g8g7",
+            "e1g1"
+          ]
+        }
+      ],
+      "king_shelter": {
+        "white": {
+          "king": "g1",
+          "own_pawns_on_file": 1,
+          "enemy_pawns_on_file": 0,
+          "close_forward_pawns": [
+            "f2",
+            "g2",
+            "h3"
+          ],
+          "absolutely_pinned": []
+        },
+        "black": {
+          "king": "g7",
+          "own_pawns_on_file": 0,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [],
+          "absolutely_pinned": []
+        }
+      },
+      "static_root": -122,
+      "material_root": 115,
+      "phase": 20,
+      "king_pressure": {
+        "white": {
+          "units": 7,
+          "attackers": 2,
+          "bonus": 98
+        },
+        "black": {
+          "units": 2,
+          "attackers": 1,
+          "bonus": 0
+        }
+      },
+      "passers": [
+        {
+          "square": "h3",
+          "white": true,
+          "relative_rank": 2,
+          "mg_bonus": 8,
+          "eg_bonus": 20,
+          "defenders": [
+            "g2"
+          ],
+          "attackers": [
+            "c8"
+          ],
+          "enemy_king_distance": 4
+        },
+        {
+          "square": "b7",
+          "white": false,
+          "relative_rank": 1,
+          "mg_bonus": 2,
+          "eg_bonus": 5,
+          "defenders": [
+            "c8"
+          ],
+          "attackers": [],
+          "enemy_king_distance": 6
+        },
+        {
+          "square": "a7",
+          "white": false,
+          "relative_rank": 1,
+          "mg_bonus": 2,
+          "eg_bonus": 5,
+          "defenders": [
+            "a3",
+            "a8"
+          ],
+          "attackers": [],
+          "enemy_king_distance": 6
+        }
+      ],
+      "in_check": false,
+      "quiescence": {
+        "complete": true,
+        "score_root": -122,
+        "nodes": 37,
+        "seconds": 0.0005740000051446259
+      }
+    },
+    {
+      "id": "leaf-23",
+      "target": "v53-rated-loss-4",
+      "start_fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N2N2/PP3PPP/R2QKB1R b KQ - 3 6",
+      "history": [
+        "h7h6",
+        "g5h4",
+        "g6g5",
+        "f3g5",
+        "h6g5",
+        "h4g5",
+        "b8c6",
+        "d4d5",
+        "c6e5",
+        "a1c1",
+        "c7c6",
+        "d1d2",
+        "d8b6",
+        "h2h3",
+        "b6b4",
+        "d2c2",
+        "e5c4",
+        "a2a3",
+        "c4a3",
+        "b2a3",
+        "b4a3",
+        "c2d2",
+        "c6d5",
+        "g5f6",
+        "g7f6",
+        "c3d5",
+        "f6h4",
+        "f1d3",
+        "g8g7",
+        "e1g1",
+        "c8d7",
+        "c1c3",
+        "a3a5",
+        "d3b1"
+      ],
+      "fen": "r4r2/pp1bppk1/3p4/q2N4/4P2b/2R4P/3Q1PP1/1B3RK1 b - - 8 23",
+      "root_white": false,
+      "terminal": false,
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "played",
+          "budget": 320000,
+          "requested_prefix": 8,
+          "pv": [
+            "f6h4",
+            "f1d3",
+            "g8g7",
+            "e1g1",
+            "c8d7",
+            "c1c3",
+            "a3a5",
+            "d3b1"
+          ]
+        }
+      ],
+      "king_shelter": {
+        "white": {
+          "king": "g1",
+          "own_pawns_on_file": 1,
+          "enemy_pawns_on_file": 0,
+          "close_forward_pawns": [
+            "f2",
+            "g2",
+            "h3"
+          ],
+          "absolutely_pinned": []
+        },
+        "black": {
+          "king": "g7",
+          "own_pawns_on_file": 0,
+          "enemy_pawns_on_file": 1,
+          "close_forward_pawns": [],
+          "absolutely_pinned": []
+        }
+      },
+      "static_root": -42,
+      "material_root": 115,
+      "phase": 20,
+      "king_pressure": {
+        "white": {
+          "units": 7,
+          "attackers": 2,
+          "bonus": 98
+        },
+        "black": {
+          "units": 2,
+          "attackers": 1,
+          "bonus": 0
+        }
+      },
+      "passers": [
+        {
+          "square": "h3",
+          "white": true,
+          "relative_rank": 2,
+          "mg_bonus": 8,
+          "eg_bonus": 20,
+          "defenders": [
+            "g2",
+            "c3"
+          ],
+          "attackers": [
+            "d7"
+          ],
+          "enemy_king_distance": 4
+        },
+        {
+          "square": "b7",
+          "white": false,
+          "relative_rank": 1,
+          "mg_bonus": 2,
+          "eg_bonus": 5,
+          "defenders": [],
+          "attackers": [],
+          "enemy_king_distance": 6
+        },
+        {
+          "square": "a7",
+          "white": false,
+          "relative_rank": 1,
+          "mg_bonus": 2,
+          "eg_bonus": 5,
+          "defenders": [
+            "a5",
+            "a8"
+          ],
+          "attackers": [],
+          "enemy_king_distance": 6
+        }
+      ],
+      "in_check": false,
+      "quiescence": {
+        "complete": true,
+        "score_root": -42,
+        "nodes": 38,
+        "seconds": 0.0003483999753370881
+      }
+    }
+  ],
+  "attempts": [
+    {
+      "fen": "r1bq1rk1/ppp1ppb1/2np1n1p/8/2PPP3/2N2P2/PP1BBP1P/R1Q1K2R w KQ - 1 11",
+      "depth": 5,
+      "ply": 1,
+      "limits": {
+        "nodes": 500000,
+        "seconds": 8
+      },
+      "interrupted": false,
+      "restored": true,
+      "within_bounds": true,
+      "signature_count_before": 3,
+      "added_signatures": [],
+      "complete": true,
+      "score_root": 134,
+      "nodes": 57470,
+      "seconds": 0.6284587000263855
+    },
+    {
+      "fen": "rnbq1r2/ppp1ppbk/3p1n1p/8/2PPP3/2N2P2/PP1BBP1P/R1Q1K2R w KQ - 1 11",
+      "depth": 5,
+      "ply": 1,
+      "limits": {
+        "nodes": 500000,
+        "seconds": 8
+      },
+      "interrupted": false,
+      "restored": true,
+      "within_bounds": true,
+      "signature_count_before": 3,
+      "added_signatures": [],
+      "complete": true,
+      "score_root": 37,
+      "nodes": 174465,
+      "seconds": 1.4341536000138149
+    },
+    {
+      "fen": "r2qr1k1/1ppn1pb1/3p2pp/p2P4/2P1N1b1/1Q1B1N2/PP3PPP/R3R1K1 b - - 2 14",
+      "depth": 5,
+      "ply": 1,
+      "limits": {
+        "nodes": 500000,
+        "seconds": 8
+      },
+      "interrupted": false,
+      "restored": true,
+      "within_bounds": true,
+      "signature_count_before": 3,
+      "added_signatures": [],
+      "complete": true,
+      "score_root": -56,
+      "nodes": 125425,
+      "seconds": 0.5828482999932021
+    },
+    {
+      "fen": "r2qr1k1/1ppn1pb1/3p2pp/p2P4/2P1N1b1/3B1N1P/PP3PP1/R2QR1K1 b - - 0 14",
+      "depth": 5,
+      "ply": 1,
+      "limits": {
+        "nodes": 500000,
+        "seconds": 8
+      },
+      "interrupted": false,
+      "restored": true,
+      "within_bounds": true,
+      "signature_count_before": 3,
+      "added_signatures": [],
+      "complete": true,
+      "score_root": -78,
+      "nodes": 73239,
+      "seconds": 0.26981179998256266
+    },
+    {
+      "fen": "r1b2rk1/pp2pp2/3p4/3N4/4P2b/q6P/3Q1PP1/2R1KB1R w K - 1 20",
+      "depth": 5,
+      "ply": 1,
+      "limits": {
+        "nodes": 500000,
+        "seconds": 8
+      },
+      "interrupted": true,
+      "restored": true,
+      "within_bounds": true,
+      "signature_count_before": 3,
+      "added_signatures": [],
+      "complete": false,
+      "score_root": null,
+      "nodes": 500000,
+      "seconds": 3.190155800024513
+    },
+    {
+      "fen": "r4rk1/pp2pp2/3pbb2/3N4/4P3/q6P/3Q1PP1/2R1KB1R w K - 1 20",
+      "depth": 5,
+      "ply": 1,
+      "limits": {
+        "nodes": 500000,
+        "seconds": 8
+      },
+      "interrupted": false,
+      "restored": true,
+      "within_bounds": true,
+      "signature_count_before": 3,
+      "added_signatures": [],
+      "complete": true,
+      "score_root": 50,
+      "nodes": 313923,
+      "seconds": 2.613336599955801
+    },
+    {
+      "fen": "r1bq1rk1/ppp1ppb1/3pnn1B/8/2P1P3/2N2PQ1/PP2BP1P/R3K2R b KQ - 3 13",
+      "depth": 0,
+      "ply": 0,
+      "limits": {
+        "nodes": 100000,
+        "seconds": 2
+      },
+      "interrupted": false,
+      "restored": true,
+      "within_bounds": true,
+      "signature_count_before": 3,
+      "added_signatures": [],
+      "complete": true,
+      "score_root": 134,
+      "nodes": 3,
+      "seconds": 9.660003706812859e-05
+    },
+    {
+      "fen": "r1bq1rk1/ppp1ppb1/2np1n1p/8/2PPP3/2N1BP2/PP2BP1P/R1Q1K1R1 w Q - 5 13",
+      "depth": 0,
+      "ply": 0,
+      "limits": {
+        "nodes": 100000,
+        "seconds": 2
+      },
+      "interrupted": false,
+      "restored": true,
+      "within_bounds": true,
+      "signature_count_before": 3,
+      "added_signatures": [],
+      "complete": true,
+      "score_root": 37,
+      "nodes": 48,
+      "seconds": 0.0005148000200279057
+    },
+    {
+      "fen": "r2qr1k1/1pp2p2/3p2pp/pQ1Pn3/2PbN3/3B1P2/PP3P1P/R3R1K1 w - - 3 17",
+      "depth": 0,
+      "ply": 0,
+      "limits": {
+        "nodes": 100000,
+        "seconds": 2
+      },
+      "interrupted": false,
+      "restored": true,
+      "within_bounds": true,
+      "signature_count_before": 3,
+      "added_signatures": [],
+      "complete": true,
+      "score_root": -56,
+      "nodes": 174,
+      "seconds": 0.0015788000309839845
+    },
+    {
+      "fen": "r2qr1k1/1pp2pb1/3p2pp/p2P4/2P1N3/3n3P/PP2QPP1/R3R1K1 w - - 0 17",
+      "depth": 0,
+      "ply": 0,
+      "limits": {
+        "nodes": 100000,
+        "seconds": 2
+      },
+      "interrupted": false,
+      "restored": true,
+      "within_bounds": true,
+      "signature_count_before": 3,
+      "added_signatures": [],
+      "complete": true,
+      "score_root": -78,
+      "nodes": 25,
+      "seconds": 0.0006959000020287931
+    },
+    {
+      "fen": "r4rk1/pp3p2/3pbp2/8/4P3/2R4P/3Q1PP1/q3KB1R w K - 2 22",
+      "depth": 0,
+      "ply": 0,
+      "limits": {
+        "nodes": 100000,
+        "seconds": 2
+      },
+      "interrupted": false,
+      "restored": true,
+      "within_bounds": true,
+      "signature_count_before": 3,
+      "added_signatures": [],
+      "complete": true,
+      "score_root": 49,
+      "nodes": 41,
+      "seconds": 0.0005684000207111239
+    },
+    {
+      "fen": "rnbq1r2/ppp1ppbk/5n1p/4P3/2P5/2N2P2/PP1BBP1P/R1Q1K2R b KQ - 0 12",
+      "depth": 0,
+      "ply": 0,
+      "limits": {
+        "nodes": 100000,
+        "seconds": 2
+      },
+      "interrupted": false,
+      "restored": true,
+      "within_bounds": true,
+      "signature_count_before": 3,
+      "added_signatures": [],
+      "complete": true,
+      "score_root": 149,
+      "nodes": 3,
+      "seconds": 0.0001476999605074525
+    },
+    {
+      "fen": "rnbq1rnk/ppp1ppb1/7p/4P3/2P5/2N2P2/PPQBBP1P/2KR3R b - - 4 14",
+      "depth": 0,
+      "ply": 0,
+      "limits": {
+        "nodes": 100000,
+        "seconds": 2
+      },
+      "interrupted": false,
+      "restored": true,
+      "within_bounds": true,
+      "signature_count_before": 3,
+      "added_signatures": [],
+      "complete": true,
+      "score_root": 135,
+      "nodes": 37,
+      "seconds": 0.00048779998905956745
+    },
+    {
+      "fen": "r1bq1rk1/ppp2pb1/2np1n1B/4p3/2PPP3/2N2P2/PP2BP1P/R1Q1K1R1 b Q - 1 12",
+      "depth": 0,
+      "ply": 0,
+      "limits": {
+        "nodes": 100000,
+        "seconds": 2
+      },
+      "interrupted": false,
+      "restored": true,
+      "within_bounds": true,
+      "signature_count_before": 3,
+      "added_signatures": [],
+      "complete": true,
+      "score_root": 58,
+      "nodes": 36,
+      "seconds": 0.0009443999733775854
+    },
+    {
+      "fen": "r1bq1rk1/ppp2pb1/3p3B/4p3/2PnP1P1/2N5/PP1QBP1P/R3K1R1 b Q - 1 14",
+      "depth": 0,
+      "ply": 0,
+      "limits": {
+        "nodes": 100000,
+        "seconds": 2
+      },
+      "interrupted": false,
+      "restored": true,
+      "within_bounds": true,
+      "signature_count_before": 3,
+      "added_signatures": [],
+      "complete": true,
+      "score_root": -89,
+      "nodes": 31,
+      "seconds": 0.0007860999903641641
+    },
+    {
+      "fen": "rnbq1rn1/ppp1ppbk/3p3p/4P3/2PP4/2NB1P2/PP1B1P1P/R1Q1K2R b KQ - 2 12",
+      "depth": 0,
+      "ply": 0,
+      "limits": {
+        "nodes": 100000,
+        "seconds": 2
+      },
+      "interrupted": false,
+      "restored": true,
+      "within_bounds": true,
+      "signature_count_before": 3,
+      "added_signatures": [],
+      "complete": true,
+      "score_root": 51,
+      "nodes": 90,
+      "seconds": 0.0007063000230118632
+    },
+    {
+      "fen": "rnbq1rnk/ppp2pb1/3pp2p/4P1B1/2PP4/2NB1P2/PP3P1P/R1Q1K1R1 b Q - 1 14",
+      "depth": 0,
+      "ply": 0,
+      "limits": {
+        "nodes": 100000,
+        "seconds": 2
+      },
+      "interrupted": false,
+      "restored": true,
+      "within_bounds": true,
+      "signature_count_before": 3,
+      "added_signatures": [],
+      "complete": true,
+      "score_root": 281,
+      "nodes": 158,
+      "seconds": 0.0017951999907381833
+    },
+    {
+      "fen": "r2qr1k1/1ppn1p2/3p2pp/p2P4/2P1N3/3B1Q1P/Pb3PP1/R3R1K1 w - - 0 16",
+      "depth": 0,
+      "ply": 0,
+      "limits": {
+        "nodes": 100000,
+        "seconds": 2
+      },
+      "interrupted": false,
+      "restored": true,
+      "within_bounds": true,
+      "signature_count_before": 3,
+      "added_signatures": [],
+      "complete": true,
+      "score_root": -58,
+      "nodes": 74,
+      "seconds": 0.001153699995484203
+    },
+    {
+      "fen": "r2qr1k1/1ppn1pb1/3p2pp/p2P4/2P1NQ2/3B3P/P4PP1/1R2R1K1 w - - 4 18",
+      "depth": 0,
+      "ply": 0,
+      "limits": {
+        "nodes": 100000,
+        "seconds": 2
+      },
+      "interrupted": false,
+      "restored": true,
+      "within_bounds": true,
+      "signature_count_before": 3,
+      "added_signatures": [],
+      "complete": true,
+      "score_root": 128,
+      "nodes": 33,
+      "seconds": 0.0012752999900840223
+    },
+    {
+      "fen": "r2qr1k1/1ppn1pb1/3p2pp/3P4/p1P1N3/1Q1B1P2/PP3P1P/R3R1K1 w - - 0 16",
+      "depth": 0,
+      "ply": 0,
+      "limits": {
+        "nodes": 100000,
+        "seconds": 2
+      },
+      "interrupted": false,
+      "restored": true,
+      "within_bounds": true,
+      "signature_count_before": 3,
+      "added_signatures": [],
+      "complete": true,
+      "score_root": 112,
+      "nodes": 32,
+      "seconds": 0.0003013999667018652
+    },
+    {
+      "fen": "r3r1k1/1ppn1pb1/3p2p1/3P3p/p1P1N2q/Q2B1P2/PP3P1P/3RR1K1 w - - 0 18",
+      "depth": 0,
+      "ply": 0,
+      "limits": {
+        "nodes": 100000,
+        "seconds": 2
+      },
+      "interrupted": false,
+      "restored": true,
+      "within_bounds": true,
+      "signature_count_before": 3,
+      "added_signatures": [],
+      "complete": true,
+      "score_root": -32,
+      "nodes": 16,
+      "seconds": 0.0003124999930150807
+    },
+    {
+      "fen": "r3r1k1/1ppn1p2/3p2pp/3Pb3/p1P1N2q/Q4P2/PP3P1P/R3RBK1 w - - 4 18",
+      "depth": 0,
+      "ply": 0,
+      "limits": {
+        "nodes": 100000,
+        "seconds": 2
+      },
+      "interrupted": false,
+      "restored": true,
+      "within_bounds": true,
+      "signature_count_before": 3,
+      "added_signatures": [],
+      "complete": true,
+      "score_root": -338,
+      "nodes": 15,
+      "seconds": 0.0002710000262595713
+    },
+    {
+      "fen": "r4rk1/pp3p2/3pbp2/8/4P3/q6P/3QBPP1/2R1K2R b K - 1 21",
+      "depth": 0,
+      "ply": 0,
+      "limits": {
+        "nodes": 100000,
+        "seconds": 2
+      },
+      "interrupted": false,
+      "restored": true,
+      "within_bounds": true,
+      "signature_count_before": 3,
+      "added_signatures": [],
+      "complete": true,
+      "score_root": 36,
+      "nodes": 12,
+      "seconds": 0.0002212999970652163
+    },
+    {
+      "fen": "5rk1/pp3p2/3pbp2/8/4P3/q6P/3QBPP1/2R3K1 b - - 0 23",
+      "depth": 0,
+      "ply": 0,
+      "limits": {
+        "nodes": 100000,
+        "seconds": 2
+      },
+      "interrupted": false,
+      "restored": true,
+      "within_bounds": true,
+      "signature_count_before": 3,
+      "added_signatures": [],
+      "complete": true,
+      "score_root": 4,
+      "nodes": 12,
+      "seconds": 0.0001183999702334404
+    },
+    {
+      "fen": "r4rk1/pp2pp2/3pb3/3N4/4P2b/q2B3P/3Q1PP1/2R2RK1 b - - 4 21",
+      "depth": 0,
+      "ply": 0,
+      "limits": {
+        "nodes": 100000,
+        "seconds": 2
+      },
+      "interrupted": false,
+      "restored": true,
+      "within_bounds": true,
+      "signature_count_before": 3,
+      "added_signatures": [],
+      "complete": true,
+      "score_root": 50,
+      "nodes": 65,
+      "seconds": 0.0002479000249877572
+    },
+    {
+      "fen": "r1r3k1/pp2pp2/3pb2Q/2qN4/4P2b/3B3P/5PP1/R4RK1 b - - 8 23",
+      "depth": 0,
+      "ply": 0,
+      "limits": {
+        "nodes": 100000,
+        "seconds": 2
+      },
+      "interrupted": false,
+      "restored": true,
+      "within_bounds": true,
+      "signature_count_before": 3,
+      "added_signatures": [],
+      "complete": true,
+      "score_root": 185,
+      "nodes": 53,
+      "seconds": 0.0006308999727480114
+    },
+    {
+      "fen": "r5k1/pp3p2/3pbp2/8/4P3/q6P/3QBPP1/2R3K1 b - - 0 23",
+      "depth": 0,
+      "ply": 0,
+      "limits": {
+        "nodes": 100000,
+        "seconds": 2
+      },
+      "interrupted": false,
+      "restored": true,
+      "within_bounds": true,
+      "signature_count_before": 3,
+      "added_signatures": [],
+      "complete": true,
+      "score_root": 1,
+      "nodes": 12,
+      "seconds": 9.42000187933445e-05
+    },
+    {
+      "fen": "r1b2r2/pp2ppk1/3p4/3N4/4P2b/q2B3P/3Q1PP1/2R2RK1 b - - 4 21",
+      "depth": 0,
+      "ply": 0,
+      "limits": {
+        "nodes": 100000,
+        "seconds": 2
+      },
+      "interrupted": false,
+      "restored": true,
+      "within_bounds": true,
+      "signature_count_before": 3,
+      "added_signatures": [],
+      "complete": true,
+      "score_root": -122,
+      "nodes": 37,
+      "seconds": 0.0005740000051446259
+    },
+    {
+      "fen": "r4r2/pp1bppk1/3p4/q2N4/4P2b/2R4P/3Q1PP1/1B3RK1 b - - 8 23",
+      "depth": 0,
+      "ply": 0,
+      "limits": {
+        "nodes": 100000,
+        "seconds": 2
+      },
+      "interrupted": false,
+      "restored": true,
+      "within_bounds": true,
+      "signature_count_before": 3,
+      "added_signatures": [],
+      "complete": true,
+      "score_root": -42,
+      "nodes": 38,
+      "seconds": 0.0003483999753370881
+    }
+  ],
+  "limits": {
+    "branches": 6,
+    "branch_nodes": 500000,
+    "branch_seconds": 8,
+    "endpoints": 30,
+    "endpoint_nodes": 100000,
+    "endpoint_seconds": 2
+  },
+  "init_seconds": 73.92405289999442
+}

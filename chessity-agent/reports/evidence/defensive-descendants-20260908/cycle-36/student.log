@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\defensive_descendant_trace.py", line 320, in <module>
+    (student if args.mode == 'student' else teacher)()
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\defensive_descendant_trace.py", line 179, in student
+    analysis, context = evaluate(board, position.turn, 5, 1, 500000, 8, 2)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\defensive_descendant_trace.py", line 103, in evaluate
+    assert int(control[0]) <= nodes and elapsed <= seconds + .25
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

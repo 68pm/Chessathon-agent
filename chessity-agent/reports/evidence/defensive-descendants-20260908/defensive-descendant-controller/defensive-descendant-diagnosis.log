@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\defensive_descendant_trace.py", line 322, in <module>
+    main()
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\defensive_descendant_trace.py", line 311, in main
+    child(['-m', 'scripts.defensive_descendant_trace', '--mode', stage], OUT / (stage + '.log'), timeout=360)
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\improvement_king_coordination_gate.py", line 34, in child
+    raise subprocess.CalledProcessError(code, arguments)
+subprocess.CalledProcessError: Command '['-m', 'scripts.defensive_descendant_trace', '--mode', 'student']' returned non-zero exit status 1.

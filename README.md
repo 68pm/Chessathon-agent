@@ -18,3 +18,5 @@ consistency study remains cancelled. No live submission or permission grants.
 [Previous v1.52 rated results](chessity-agent/reports/KING_COORDINATION_RATED_RESULTS_20260908.md)
 
 [Completed rated results](chessity-agent/reports/NEAR_QUEEN_RATED_RESULTS_20260908.md).
+
+[Defensive continuation diagnosis](chessity-agent/reports/DEFENSIVE_DESCENDANTS_RESULTS_20260908.md).
