@@ -1,0 +1,7 @@
+{
+  "output": "runs/improvement-loop-20260907/canonical-protocol-controller",
+  "wait_for": ["runs/improvement-loop-20260907/overnight-plain-startup-controller/controller.json"],
+  "stages": [
+    {"name": "canonical-protocol", "module": "scripts.overnight_canonical_protocol", "arguments": ["--candidate", "candidates/compiled-startup-plain-v1", "--out", "runs/improvement-loop-20260907/cycle-19/canonical-protocol"]}
+  ]
+}

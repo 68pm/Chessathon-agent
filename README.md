@@ -3,21 +3,20 @@ Chessathon agent team verity made for the  AI Chessathon x Optiver event, upload
 
 ## chessity-agent releases
 
-[Download the selected agent (v1.41)](chessity-agent/latest/chessity-agent.zip) Â· [All 50 versions](chessity-agent/README.md) Â· [Actual results](chessity-agent/reports/IMPROVEMENT_RESULTS.md)
+[Download the selected agent (v1.51)](chessity-agent/latest/chessity-agent.zip) ·
+[All 52 versions](chessity-agent/README.md) ·
+[Results and limitations](chessity-agent/reports/IMPROVEMENT_RESULTS.md)
 
-v1.41 passed independent promotion over v1.14. The current priority is quick, tested improvements for the 11 September competition deadline. The latest small local check scored 0W/0D/2L at nominal 2400 and 1W/0D/1L at nominal 2600; consistent 2600 strength is not established. Inference is read-only; public visitors have read access.
+v1.51 retains v1.41's playing engine and trained policy while fixing startup
+completion and compiler diagnostic handling. Read-only checks and four ordinary
+games passed without candidate runtime failures. At120+0.5 it scored0W/1D/1L
+against each nominal2800 and3000 setting. This is a practical startup revision,
+not proof of higher playing Elo. v1.41 is preserved as a fallback.
 
-Completed practical pair: **0 wins, 1 draw, 1 loss against v1.41**,120+0.5. All source, legal-move, clock and outcome audits passed; candidate runtime failures=0. Selected download: **v1.41**. This follows the declared practical rule and does not establish an Elo gain or stable superiority. v1.41 is retained.
+The11September competition priority is quick, useful improvements from diagnosed
+mistakes. No long consistency study is running. Public visitors can read/download;
+no repository write-access grants or live competition submissions were made.
 
-[Newest candidate diagnostic](chessity-agent/reports/COMPETITION_TEN_GAME_REVIEW.md): v1.49 is archived with all ten outcomes, including startup failures and an opponent-flag win. v1.41 remains the recommended upload.
-
-[Overnight progress, 8 September](chessity-agent/reports/OVERNIGHT_PROGRESS_20260908.md):
-startup fixes and their failure evidence are preserved as development experiments.
-Heavy validation is blocked by local disk space; no new numbered release or Elo
-increase is claimed. The selected download remains v1.41.
-
-[Morning report, 8 September](chessity-agent/reports/OVERNIGHT_REPORT_20260908.md):
-v1.41 remains selected. The earlier checkmate win over nominal2600 remains its
-highest verified opponent setting; overnight2800/3000 attempts failed before
-gameplay. Disk capacity recovered, but the morning memory check still blocked
-runtime validation. All results and limitations are included.
+[Earlier morning report](chessity-agent/reports/OVERNIGHT_REPORT_20260908.md) ·
+[Latest startup results](chessity-agent/reports/STARTUP_RECOVERY_RESULTS_20260908.md) ·
+[Learning diagnosis](chessity-agent/reports/LEARNING_REACHABILITY_REVIEW.md)

@@ -1,35 +1,20 @@
 # chessity-agent
 
-**Recommended competition upload: v1.41.** [Current selection and limitations](reports/IMPROVEMENT_RESULTS.md).
+**Recommended competition upload: v1.51.** [Download ZIP](latest/chessity-agent.zip).
 
-[Download the competition ZIP](latest/chessity-agent.zip). Upload the agent ZIP directly.
+This startup revision keeps v1.41's playing engine, trained policy, optional Alien
+Gambit and endgame tables. Read-only checks and four audited games passed without
+candidate runtime failures:0W/1D/1L at each nominal2800 and3000 setting,120+0.5.
+No higher Elo or consistent winning strength is established. v1.41 is a preserved
+fallback; v1.50 is an unselected intermediate experiment.
 
-[Completed confirmation and actual results](reports/IMPROVEMENT_RESULTS.md): 23W/1D/0L against v1.14, with rated results and limitations in the report. **Consistent 2600 strength is not established; improvement work continues.**
+[Current results and limitations](reports/IMPROVEMENT_RESULTS.md) ·
+[Previous development history](reports/IMPROVEMENT_RESULTS_BEFORE_STARTUP_20260908.md) ·
+[Growth plan](reports/COMPETITION_GROWTH_PLAN.md)
 
-[Search findings](reports/IMPROVEMENT_CYCLE_01.md) Â· [Learning critique](reports/IMPROVEMENT_CYCLE_02.md) Â· [Historical elite results](reports/ELITE_LEARNING_RESULTS.md)
-
-Experimental v1.42 achieved one nominal2600 checkmate win but did not beat the incumbent overall. Full-weight learned v1.46 was not promoted. Calibrated v1.47 finished2W/5D/1L versus v1.41, 2W/1D/1L at nominal2400 and0W/1D/3L at nominal2600. All16 completed games were audited; its interrupted development screen does not establish a stronger replacement or consistency. v1.41 remains selected. [Learning critique](reports/IMPROVEMENT_CYCLE_06.md) Â· [Calibration critique](reports/IMPROVEMENT_CYCLE_07.md).
-
-[Phase diagnosis and fixed-strength progression](reports/IMPROVEMENT_PHASE_DIAGNOSIS.md): analyse the first deterioration separately from the final phase. Every iteration prioritises engine code, effective learning and targeted data. Only verified consistency replaces2400 with2800 or2600 with3000. Neither level has qualified; isolated wins do not advance the pool.
-
-The subsequent [incremental-hash pilot](reports/IMPROVEMENT_CYCLE_08.md) passed fixed-node correctness but missed its speed gate. No new release or matches followed; v1.41 remains selected. Both nominal2400/2600 opponents remain active until independent winning consistency supports their specified replacements.
-
-The [first consistency study](reports/IMPROVEMENT_CONSISTENCY_STATUS.md) was interrupted before either opening game completed. Zero results are claimed; registered attempts1/2 are invalid and both opponent levels remain active. v1.41 remains the recommended upload.
-
-[Four-game competition diagnostic](reports/COMPETITION_QUICK_CHECK_01.md): v1.41 finished **0W/0D/2L at nominal 2400 and 1W/0D/1L at nominal 2600**, all at 120+0.5 with audited checkmate outcomes and no runtime failures. These are separate from the earlier confirmation and do not establish a rating. [The current priority](reports/COMPETITION_FAST_TRACK.md) is quick, tested competition improvements before 11 September; the user rejected further large consistency runs. Older dashboard matches used older bots, so recent match version provenance matters. See the [capture-ordering pilot](reports/IMPROVEMENT_CYCLE_09.md) for its measured outcome. The selected download remains v1.41.
-
-The [latest three actual competition games](reports/COMPETITION_RECENT_GAMES.md) finished **2 wins and 1 draw**. Their v1.41 mapping follows the upload timeline and displayed hash; it is not a per-game full-hash attestation. All 194 own moves were analysed. Three verified middlegame errors occurred in the wins; the drawn game showed no verified loss of a winning advantage under the finite analysis. Older competition results stay separate.
-
-[Resumed competition development](reports/COMPETITION_DEVELOPMENT_UPDATE.md) records the latest targeted search diagnosis and four bounded code experiments. Long independent consistency checks remain abandoned; earlier ladder qualification rules are historical and do not govern this competition-first work.
-
-
-Completed practical pair: **0 wins, 1 draw, 1 loss against v1.41**,120+0.5. All source, legal-move, clock and outcome audits passed; candidate runtime failures=0. Selected download: **v1.41**. This follows the declared practical rule and does not establish an Elo gain or stable superiority. v1.41 is retained.
-
-[Newest ten-game diagnostic](reports/COMPETITION_TEN_GAME_REVIEW.md): v1.49 is archival only; two startup failures and0W/0D/2L versus41 prevented selection. [Growth plan](reports/COMPETITION_GROWTH_PLAN.md) and [bounded mistake replay](reports/IMPROVEMENT_CYCLE_16.md) guide the next work.
-
-## Read-only runtime and repository access
-
-The selected package passed blocked file-creation, deletion, renaming and directory-creation checks. Inference requires no writes, network or subprocess. Training tools write their own checkpoints. Public visitors can read and download; edits require repository write permission. No collaborator or public write grants were added.
+Inference needs no filesystem writes, network or subprocess. Public visitors can
+read and download; edits require repository permission. No access grants changed.
+The long consistency study remains abandoned in favour of small useful tests.
 
 ## Versions
 
@@ -76,18 +61,16 @@ The selected package passed blocked file-creation, deletion, renaming and direct
 | [v1.38](versions/v1.38/chessity-agent-v1.38.zip) | Compiled search with elementary endgame tables | conversion drills and read-only checks passed; no ordinary matches |
 | [v1.39](versions/v1.39/chessity-agent-v1.39.zip) | Incremental residual evaluation | numerical and read-only checks passed; no ordinary matches |
 | [v1.40](versions/v1.40/chessity-agent-v1.40.zip) | Efficient quiescence terminal checks | fixed-node parity and read-only checks passed; no ordinary matches |
-| [v1.41](versions/v1.41/chessity-agent-v1.41.zip) | Efficient compiled search with endgame tables | selected after independent 23W/1D/0L confirmation versus v1.14; consistent 2600 target not reached |
+| [v1.41](versions/v1.41/chessity-agent-v1.41.zip) | Efficient compiled search with endgame tables | Preserved playing-engine baseline and fallback; selected startup revision is v1.51 |
 | [v1.42](versions/v1.42/chessity-agent-v1.42.zip) | Conservative late quiet move reductions | 1W5D2L versus v1.41; 2W0D2L at nominal2400; 1W2D1L at nominal2600; not promoted |
 | [v1.43](versions/v1.43/chessity-agent-v1.43.zip) | Verified rook-bishop conversion tables | 3W1D4L versus v1.41; 1W2D1L at nominal2400; 0W2D2L at nominal2600; not promoted |
 | [v1.44](versions/v1.44/chessity-agent-v1.44.zip) | History-safe transposition move ordering | 2W2D4L versus v1.41; 3W1D0L at nominal2400; 0W0D4L at nominal2600; not promoted |
 | [v1.45](versions/v1.45/chessity-agent-v1.45.zip) | Matched score-only residual learning control | six-epoch own-trained control; read-only and model-parity checks passed; experimental |
 | [v1.46](versions/v1.46/chessity-agent-v1.46.zip) | Verified counterfactual preference learning | 2W3D3L versus v1.45; 1W2D5L versus v1.41; 1W1D2L at nominal2400; 0W2D2L at nominal2600; not promoted |
 | [v1.47](versions/v1.47/chessity-agent-v1.47.zip) | Calibrated quarter-weight learned evaluation | 2W5D1L versus v1.41; 2W1D1L at nominal2400; 0W1D3L at nominal2600; interrupted development audited; not promoted |
-
 | [v1.48](versions/v1.48/chessity-agent-v1.48.zip) | Exact legal-pawn proof speeds quiescence | 0W/1D/1L versus v1.41 at120+0.5; exact-work/speed/read-only gates passed; not selected after the short comparison |
-
 | [v1.49](versions/v1.49/chessity-agent-v1.49.zip) | Queen-aware passed-pawn evaluation | Archival only: 0W0D2L vs41, 0W2D0L vs47, 1W0D1L vs48; two startup losses at2400; 1W1D0L at2600 with opponent flag win; not selected |
-
 | [v1.50](versions/v1.50/chessity-agent-v1.50.zip) | Complete root compilation before readiness | Archival only: readiness and read-only checks passed; instrumented protocol initialization failed; superseded startup experiment |
+| [v1.51](versions/v1.51/chessity-agent-v1.51.zip) | Completed warmup with plain compiler diagnostics | Selected startup reliability revision of v1.41; 0W1D1L at each nominal2800/3000, no candidate failures; playing strength gain unproven |
 
-All 51 versions are retained in development order with version tags. Source and own trained weights beside each ZIP match its bytes. v1.35 is a failed preflight preserved for audit and should not be uploaded. New experimental versions are not automatically recommended. Downloaded raw player histories and external engine executables are excluded.
+All 52 versions are retained in development order with version tags. Each source folder and its own trained weights match the adjacent ZIP. Failed and experimental versions remain archival; numbering alone is not a recommendation. Raw downloaded player histories and external engine executables are excluded.

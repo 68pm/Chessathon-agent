@@ -1,0 +1,64 @@
+{
+  "status": "selected_as_startup_reliability_revision",
+  "selected": "v1.51",
+  "fallback": "v1.41",
+  "utc": "2026-09-08T07:58:05.472345+00:00",
+  "candidate_sha256": "f23376c7c33ad28ccb2276c16b8b242c84e34492e7ef3910691e4cb9b58a79e2",
+  "rule": "docs/STARTUP_RECOVERY_GAMES_20260908.md",
+  "rule_sha256": "e3673fa39ab40b5a86d09e6a7b577af651f3866407ea9142555da3047478a444",
+  "matches_sha256": "a67af337e27ff4b65ba64a51a4cbf9df59b97518db60dfa9ab874abec08c00ef",
+  "teacher_audit_sha256": "f19b4f4bb1cf7096dd67abb59b913399b78a5ed2cc05464e23a88f670e2184e5",
+  "independent_serial_audit": "passed in completed review; reused without replaying games or teacher analysis",
+  "changed_files": [
+    "agent.py",
+    "engine/compiled_driver.py"
+  ],
+  "agent_ast_only_plain_diagnostics": true,
+  "driver_ast_identical_outside_warmup": true,
+  "other_runtime_files_byte_identical": true,
+  "results": {
+    "stockfish:2800": {
+      "games": 2,
+      "wins": 0,
+      "draws": 1,
+      "losses": 1,
+      "candidate_failures": 0
+    },
+    "stockfish:3000": {
+      "games": 2,
+      "wins": 0,
+      "draws": 1,
+      "losses": 1,
+      "candidate_failures": 0
+    }
+  },
+  "readonly": {
+    "init_ms": 61530.73659999063,
+    "legal_calls": 2,
+    "clock_ms": 120000,
+    "policy_calls": 2,
+    "alien_verified": false,
+    "selective_alien_verified": true,
+    "selective_alien_choice": "g5f3",
+    "elementary_endgames_verified": true,
+    "extended_endgames_verified": false,
+    "max_move_ms": 3487.0469000015873,
+    "peak_working_set_bytes": 232681472,
+    "read_only_checks": {
+      "create_file": "blocked",
+      "delete_file": "blocked",
+      "create_directory": "blocked",
+      "rename_file": "blocked"
+    },
+    "audit": "no filesystem mutations, network or subprocess",
+    "sha256": "f23376c7c33ad28ccb2276c16b8b242c84e34492e7ef3910691e4cb9b58a79e2"
+  },
+  "canonical_protocol_passed": true,
+  "instrumented_protocol_passed": false,
+  "limitations": [
+    "Same playing engine and weights as v1.41; no demonstrated chess-strength increase.",
+    "Four games, one opening pair per level; no calibrated Elo or consistency inference.",
+    "No wins in this build at 2800 or 3000; historical v1.41 nominal2600 win remains separate.",
+    "Instrumented native crash and every earlier startup failure preserved; cause not established."
+  ]
+}

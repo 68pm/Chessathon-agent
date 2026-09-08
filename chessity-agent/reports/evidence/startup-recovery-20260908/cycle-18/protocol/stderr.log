@@ -1,0 +1,47 @@
+Timeout (0:00:30)!
+Thread 0x00006da4 (most recent call first):
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\ssa.py", line 194 in _run_block_rewrite
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\ssa.py", line 136 in _fresh_vars
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\ssa.py", line 68 in _run_ssa
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\ssa.py", line 31 in reconstruct_ssa
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\untyped_passes.py", line 1756 in run_pass
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py", line 272 in check
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py", line 311 in _runPass
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py", line 35 in _acquire_compile_lock
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py", line 356 in run
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py", line 473 in _compile_core
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py", line 505 in _compile_bytecode
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py", line 439 in compile_extra
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py", line 739 in compile_extra
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py", line 107 in _compile_core
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py", line 94 in _compile_cached
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py", line 80 in compile
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py", line 906 in compile
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py", line 374 in _compile_for_args
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\candidates\compiled-startup-complete-v1\engine\compiled_driver.py", line 82 in run
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\candidates\compiled-startup-complete-v1\engine\compiled_driver.py", line 118 in warmup
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\candidates\compiled-startup-complete-v1\agent.py", line 39 in <module>
+  File "<frozen importlib._bootstrap>", line 488 in _call_with_frames_removed
+  File "<frozen importlib._bootstrap_external>", line 999 in exec_module
+  File "<frozen importlib._bootstrap>", line 935 in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1331 in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1360 in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1387 in _gcd_import
+  File "C:\Users\disea\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\importlib\__init__.py", line 90 in import_module
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\harness\runner.py", line 11 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 98 in _run_module_code
+  File "<frozen runpy>", line 287 in run_path
+  File "<string>", line 1 in <module>
+Timeout (0:00:30)!
+Thread 0x00006da4 (most recent call first):
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\colorama\win32.py", line 115 in winapi_test
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\colorama\winterm.py", line 179 in enable_vt_processing
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\colorama\ansitowin32.py", line 101 in __init__
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\colorama\initialise.py"Windows fatal exception: access violation
+
+Thread 0x00006da4 (most recent call first):
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\colorama\ansitowin32.py", line 102 in __init__
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\work\chess-fast-venv\Lib\site-packages\colorama\initialise.py", line 113 in wrap_stream
+Windows fatal exception: access violation
+
