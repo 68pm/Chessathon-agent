@@ -87,3 +87,5 @@ and every failure are recorded in the [learning report](reports/E55_LOSSES_DRAW_
 the recommended upload; no new version is implied by this experiment.
 
 Every-game feedback is now the default local test workflow. [Latest competition review and learning results](reports/ALL_GAME_FEEDBACK_RESULTS_20260908.md) cover all 395 moves in eight games. The reward-policy checkpoint remains experimental; v1.53 remains the recommended upload.
+
+[Overnight first-pass checkpoint,9September](reports/OVERNIGHT_FIRST_PASS_20260909.md): completed engine trials, independent value fit and638 reviewed competition moves. No successor qualified at this checkpoint; v1.53 and all54 archives remain unchanged.
