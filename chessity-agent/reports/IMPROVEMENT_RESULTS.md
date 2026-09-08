@@ -60,11 +60,11 @@ no live competition upload or repository permission changes were made.
 [All practical evidence](evidence/near-queen-practical-20260908/manifest.json)
 
 
-## Completed rated screen: 8 September
+## First rated screen: 8 September, E90
 
 **Nominal2400: 0 wins, 1 draw, 1 loss. Nominal2600: 0 wins, 0 draws, 2 losses.**
 One threefold draw and three checkmate losses; no failures on either side.
-No rated opponent has been defeated by this build. Its recommendation remains
+No rated opponent was defeated in that first screen. Its recommendation remains
 provisional; neither higher overall strength nor a calibrated Elo is established.
 
 Review of160 own moves found7 finite paired200cp errors and17 mate-scored rows.
@@ -72,3 +72,11 @@ The first loss developed in the opening; the other two first warnings were in
 the middlegame. Next work examines defensive continuations before another fit.
 
 [Full rated results and diagnosis](NEAR_QUEEN_RATED_RESULTS_20260908.md).
+
+## Latest requested screen: E55
+
+**2400 1W0D1L; 2600 0W1D1L**. Failures on either side: 0. Highest nominal checkmate win in this screen: 2400. The same v1.53 code and weights were used.
+
+Cumulative rated results for exact v1.53: **2400 1W1D2L; 2600 0W1D3L**. Different small opening screens do not establish calibrated Elo or consistent strength.
+
+[Latest full results](COMPETITION_CONDITIONAL_RATED_RESULTS_20260908.md) · [Defensive/rook targets](COMPETITION_COUNTERFACTUALS_RESULTS_20260908.md).

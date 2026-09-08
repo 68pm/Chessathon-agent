@@ -1,0 +1,48 @@
+{
+  "status": "complete",
+  "pid": 18236,
+  "stage": "awaiting-review",
+  "completed": [
+    {
+      "path": "runs/improvement-loop-20260907/competition-conditional-rated-01/rated-compiled-near-queen-checks-v1/results.json",
+      "sha256": "39db417e7ab3669ec31721938b0e07ec4778f2d24e7fdaf19799ebc4a37db4b7",
+      "summary": {
+        "stockfish:2400": {
+          "games": 2,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "score": 0.5,
+          "completed_pairs": 1,
+          "pair_bootstrap_95": [
+            0.5,
+            0.5
+          ],
+          "terminations": {
+            "checkmate": 2
+          },
+          "candidate_failures": 0
+        },
+        "stockfish:2600": {
+          "games": 2,
+          "wins": 0,
+          "draws": 1,
+          "losses": 1,
+          "score": 0.25,
+          "completed_pairs": 1,
+          "pair_bootstrap_95": [
+            0.25,
+            0.25
+          ],
+          "terminations": {
+            "threefold_repetition": 1,
+            "checkmate": 1
+          },
+          "candidate_failures": 0
+        }
+      }
+    }
+  ],
+  "preparation_sha256": "e1df637ff4bf4667f3352539826c35d13c15e135c37b727a06a32f8b64a68509",
+  "conditional_2800": "skipped_no_played_2600_win"
+}

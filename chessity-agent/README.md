@@ -14,7 +14,7 @@ changed, and v1.52 remains a fallback. Its rated results appear below.
 Inference is read-only and uses no network or subprocesses. No live competition
 submission or repository permission changes occurred. The long study is cancelled.
 
-Rated screen: **2400 0W1D1L; 2600 0W0D2L**, with no failures. [Full results](reports/NEAR_QUEEN_RATED_RESULTS_20260908.md). No rated opponent beaten by53 yet.
+Latest E55 rated screen: **2400 1W0D1L; 2600 0W1D1L**. [Full results](reports/COMPETITION_CONDITIONAL_RATED_RESULTS_20260908.md).
 
 ## Versions
 
@@ -78,3 +78,5 @@ Rated screen: **2400 0W1D1L; 2600 0W0D2L**, with no failures. [Full results](rep
 All 54 numbered versions are retained chronologically. A higher version number alone is not evidence of strength.
 
 [Recent competition losses and draw: old/current comparison, verified cases and rejected fixes](reports/COMPETITION_LOSSES_RESULTS_20260908.md). Recommendation remains v1.53.
+
+[Defensive/rook descendant findings](reports/COMPETITION_COUNTERFACTUALS_RESULTS_20260908.md) · [Requested 2400/2600 and conditional 2800 results](reports/COMPETITION_CONDITIONAL_RATED_RESULTS_20260908.md).
