@@ -22,3 +22,5 @@ No long consistency study, repository write-access grants or live submission.
 [Full-window first-warning diagnosis](chessity-agent/reports/FIRST_WARNING_SEARCH_TRACE_20260908.md): all three loss choices remain preferred at depth6; depth8 attempts hit their fixed node caps. No agent changed.
 
 [Root PVS pilot](chessity-agent/reports/ROOT_PVS_RESULTS_20260908.md): 24.92% fewer fixed-depth nodes, but all 21 clock-limited choices unchanged; prototype not selected.
+
+[Tactical descendant diagnosis](chessity-agent/reports/TACTICAL_DESCENDANT_DIAGNOSIS_20260908.md): missing opponent defenses and independently measured endpoint value errors; v1.52 unchanged.
