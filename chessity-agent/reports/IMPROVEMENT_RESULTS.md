@@ -88,3 +88,20 @@ No live competition submission was made.
 [Phase diagnosis](evidence/king-coordination-practical-20260908/cycle-29-review/phase.json) ·
 [Evidence manifest](evidence/king-coordination-practical-20260908/manifest.json) ·
 [Previous v1.51 results](STARTUP_RECOVERY_RESULTS_20260908.md)
+
+
+## Completed rated screen:8September
+
+The subsequent four-game120+0.5 screen finished **0W1D1L against nominal2400**
+and **0W0D2L against nominal2600**. All losses were checkmates; the draw was
+threefold repetition. No candidate or opponent runtime/clock failures occurred.
+This build has beaten neither rated setting. Its only beaten opponent remains
+v1.51, with no calibrated rating. No overall superiority or reliable Elo is
+established; the recommendation remains provisional.
+
+The173-move teacher audit found first warnings and losing transitions in the
+middlegame for all three losses, although each ended in the endgame. Five finite
+200cp errors were retained. Next work traces the actual played and alternative
+lines before changing search/evaluation or fitting again.
+
+[Full rated results and mistake analysis](KING_COORDINATION_RATED_RESULTS_20260908.md).

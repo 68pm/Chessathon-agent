@@ -16,6 +16,8 @@ Inference uses no filesystem writes, network or subprocess. Visitors can read
 and download; no repository permission grants or live competition upload occurred.
 The long consistency study remains cancelled.
 
+Rated screen: **2400 0W1D1L;2600 0W0D2L**, with no failures. [Full results](reports/KING_COORDINATION_RATED_RESULTS_20260908.md). No rated opponent beaten by52 yet.
+
 ## Versions
 
 | Version | Build | Status |
@@ -72,6 +74,6 @@ The long consistency study remains cancelled.
 | [v1.49](versions/v1.49/chessity-agent-v1.49.zip) | Queen-aware passed-pawn evaluation | Archival only: 0W0D2L vs41, 0W2D0L vs47, 1W0D1L vs48; two startup losses at2400; 1W1D0L at2600 with opponent flag win; not selected |
 | [v1.50](versions/v1.50/chessity-agent-v1.50.zip) | Complete root compilation before readiness | Archival only: readiness and read-only checks passed; instrumented protocol initialization failed; superseded startup experiment |
 | [v1.51](versions/v1.51/chessity-agent-v1.51.zip) | Completed warmup with plain compiler diagnostics | Preserved v1.51 startup fallback; provisional tactical recommendation is nowv1.52 |
-| [v1.52](versions/v1.52/chessity-agent-v1.52.zip) | Bounded check search and coordinated king-pressure evaluation | Provisional practical selection: tactical gate passed;1W0D1L vs51; no Elo established |
+| [v1.52](versions/v1.52/chessity-agent-v1.52.zip) | Bounded check search and coordinated king-pressure evaluation | Provisional:1W0D1L vs51; rated2400 0W1D1L and2600 0W0D2L; no Elo established |
 
 All53 numbered versions are retained chronologically. Each source folder matches its adjacent ZIP. Failed experiments remain archived; version number alone is not strength evidence.
