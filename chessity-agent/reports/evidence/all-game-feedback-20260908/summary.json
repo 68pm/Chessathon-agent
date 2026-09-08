@@ -1,0 +1,65 @@
+{
+  "status": "complete",
+  "games": 8,
+  "moves": 395,
+  "rewarded": 173,
+  "penalised": 33,
+  "labels": {
+    "good_move": 160,
+    "small_or_uncertain_difference": 64,
+    "inaccuracy": 25,
+    "uncertain": 91,
+    "preserves_engine_mate": 13,
+    "major_mistake": 5,
+    "already_in_engine_forced_loss": 24,
+    "allows_engine_mate": 3,
+    "forced_move": 10
+  },
+  "training": {
+    "identity": {
+      "source_files": {
+        "runs\\all-game-feedback-20260908\\review\\games\\d5ff6037f7f5141f1628045aaa3d7f14c6ee5a8b3fda772ac239af4ac2566c0f\\review.json": "932e8fb94c31882725084132a01e26bc2a1479d724846b94a73342cf68e52e55",
+        "runs\\all-game-feedback-20260908\\review\\games\\47da9b6f76487eb2a36fad58d3512484971307ceb2ba057cc2ec584c35e33482\\review.json": "4fece6d514e4cbd6f76875bc9f6f20bdae75c1be494ca1c25759ea73a2749478",
+        "runs\\all-game-feedback-20260908\\review\\games\\3d6204c67d6193436e6967480e83cc0c0e4a7c436accd1103e084a374a442eaa\\review.json": "eaa2b5aec7fba920eb169b6434d9ca92ce99748493ac4d4192ed84b13b2c0b05",
+        "runs\\all-game-feedback-20260908\\review\\games\\63b907bf3025aecbe2ef364ecf989b461c3043267204dfa33c71ae1a10e5a127\\review.json": "52f73bcc7d20f2aab7b0aec9575e524aa19503da29e8aefb381eb50ad1cdbd1d",
+        "runs\\all-game-feedback-20260908\\review\\games\\9d214af520073f3b5b6fea91a9c8383301809e96ee991a8b61fb56d83b4c6f56\\review.json": "7c1a48cb2f1b2bbb2d5da62f3323f807eb5e683cef87afbfb6a2a9b7a59ff21c",
+        "runs\\all-game-feedback-20260908\\review\\games\\f10a1a53a6a24085e6992eea3fb6478ca54e23ba2f5e25b03dc3b481d5806505\\review.json": "33c032e564e0051a07bebc09d7f1115a5c47701b5d5bb0ff4c94e949e8d88e10",
+        "runs\\all-game-feedback-20260908\\review\\games\\b612d72e3f7fe25923bc60f8783b68ff27186be44c8e6eec1060d18d16b15de8\\review.json": "3cb0e94f9cd1d89616d3c2adb02fc77b3061370762c6f06734cfe6b9122ccd5c",
+        "runs\\all-game-feedback-20260908\\review\\games\\3e197dc411b9eb1bf3b0f7a229895dbbdb66cd471a5400f8dd01da2532e26b60\\review.json": "a097b0d8152a2fdf8ec264e10b0684e359d03ba35dc59e3bf932bb4731560c16"
+      },
+      "initial_policy_sha256": "1670b12e42fa7a48502e22d4202d79a809b1a8a0fba2b179a9d1671e53f4b6b7",
+      "trainer_sha256": "80306e181a10f248b247804e28fc64f079a4344b2fe0dac62384f881f6338a88",
+      "epochs": 1,
+      "learning_rate": 5e-05,
+      "seed": 20260908,
+      "anchor_weight": 2.0,
+      "max_per_game": 48
+    },
+    "status": "complete",
+    "trained": true,
+    "updates": 20,
+    "examples": 190,
+    "good_examples": 166,
+    "corrected_bad_examples": 24,
+    "replay_positions": 128,
+    "replay_source_sha256": "2104b888888162a96261f395e82e586ca2717ef81cccb30e57fff6500bc26c5d",
+    "objective_before": 1.3636064953492872,
+    "objective_after": 1.3369338281303635,
+    "model_sha256": "43f3c0a5b48eeba4a87797b9ff92c54a137f29547745c8c95ab4529e3bfe96a3",
+    "architecture": "935 inputs / 64 / 32 / 1 move policy",
+    "promoted": false,
+    "selected_agent_changed": false,
+    "value_weights_changed": false,
+    "limitation": "One bounded supervised reward-weighted policy update. In-sample objective only; no strength or Elo claim. Quiet descendant labels remain necessary for position-value training."
+  },
+  "selected": "v1.53 unchanged",
+  "new_release": false,
+  "new_competition_record": {
+    "wins": 2,
+    "draws": 0,
+    "losses": 1
+  },
+  "dashboard_rating": 1666,
+  "active_submission_prefix": "e4b66bd0f5a1",
+  "matches_archive": "v1.41"
+}

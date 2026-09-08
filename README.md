@@ -29,3 +29,5 @@ Latest loss/draw review: two implemented heuristics and an actually fitted
 local-value model did not qualify for promotion. The small requested rematch
 and every failure are recorded in the [learning report](chessity-agent/reports/E55_LOSSES_DRAW_AND_LEARNING_20260908.md). v1.53 remains
 the recommended upload; no new version is implied by this experiment.
+
+Every-game feedback is now the default local test workflow. [Latest competition review and learning results](chessity-agent/reports/ALL_GAME_FEEDBACK_RESULTS_20260908.md) cover all 395 moves in eight games. The reward-policy checkpoint remains experimental; v1.53 remains the recommended upload.
