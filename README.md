@@ -24,3 +24,5 @@ No long consistency study, repository write-access grants or live submission.
 [Root PVS pilot](chessity-agent/reports/ROOT_PVS_RESULTS_20260908.md): 24.92% fewer fixed-depth nodes, but all 21 clock-limited choices unchanged; prototype not selected.
 
 [Tactical descendant diagnosis](chessity-agent/reports/TACTICAL_DESCENDANT_DIAGNOSIS_20260908.md): missing opponent defenses and independently measured endpoint value errors; v1.52 unchanged.
+
+[Forcing-check diagnosis](chessity-agent/reports/FORCING_CHECK_DIAGNOSIS_20260908.md): Kh1 was correct; the later rook captures permit a verified mating sequence omitted by shallow search. Agent unchanged.
