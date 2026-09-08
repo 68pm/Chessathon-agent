@@ -1,0 +1,11 @@
+{
+  "output": "runs/improvement-loop-20260907/direct-check-order-controller",
+  "wait_for": ["runs/improvement-loop-20260907/check-extension-regression-controller/controller.json"],
+  "stages": [
+    {
+      "name": "correctness-and-bounded-gate",
+      "module": "scripts.improvement_direct_check_order_gate",
+      "arguments": []
+    }
+  ]
+}
