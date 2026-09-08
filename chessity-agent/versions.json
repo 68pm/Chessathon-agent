@@ -1,5 +1,5 @@
 {
-  "recommended": "v1.51",
+  "recommended": "v1.52",
   "versions": [
     {
       "version": "v1",
@@ -724,8 +724,8 @@
       "version": "v1.51",
       "name": "chessity-agent",
       "title": "Completed warmup with plain compiler diagnostics",
-      "status": "Selected startup reliability revision of v1.41; 0W1D1L at each nominal2800/3000, no candidate failures; playing strength gain unproven",
-      "recommended": true,
+      "status": "Preserved v1.51 startup fallback; provisional tactical recommendation is nowv1.52",
+      "recommended": false,
       "source_version": "candidates/compiled-startup-plain-v1",
       "sha256": "f23376c7c33ad28ccb2276c16b8b242c84e34492e7ef3910691e4cb9b58a79e2",
       "zip_bytes": 272625,
@@ -733,6 +733,21 @@
       "archive": "versions/v1.51/chessity-agent-v1.51.zip",
       "read_only_smoke_calls": 2,
       "read_only_status": "passed; canonical request and four games passed; separate instrumented crash preserved",
+      "archive_json_formatting_differs_from_local_folder": []
+    },
+    {
+      "version": "v1.52",
+      "name": "chessity-agent",
+      "title": "Bounded check search and coordinated king-pressure evaluation",
+      "status": "Provisional practical selection: tactical gate passed;1W0D1L vs51; no Elo established",
+      "recommended": true,
+      "source_version": "candidates/compiled-king-coordination-v1",
+      "sha256": "72604b1b50c2e22200b70068d8ab98d25a96b586a20278ae465c464cd77ee2c8",
+      "zip_bytes": 273199,
+      "created_utc": "2026-09-08T11:28:49.898819+00:00",
+      "archive": "versions/v1.52/chessity-agent-v1.52.zip",
+      "read_only_smoke_calls": 2,
+      "read_only_status": "passed; both practical games clean",
       "archive_json_formatting_differs_from_local_folder": []
     }
   ],

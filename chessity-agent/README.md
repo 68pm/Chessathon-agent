@@ -1,20 +1,20 @@
 # chessity-agent
 
-**Recommended competition upload: v1.51.** [Download ZIP](latest/chessity-agent.zip).
+**Recommended competition upload: v1.52 (provisional).** [Download ZIP](latest/chessity-agent.zip).
 
-This startup revision keeps v1.41's playing engine, trained policy, optional Alien
-Gambit and endgame tables. Read-only checks and four audited games passed without
-candidate runtime failures:0W/1D/1L at each nominal2800 and3000 setting,120+0.5.
-No higher Elo or consistent winning strength is established. v1.41 is a preserved
-fallback; v1.50 is an unselected intermediate experiment.
+The engine repairs more of the diagnosed tactical mistakes and passed strict
+read-only checks. Its short120+0.5 comparison scored **1 win,0 draws,1 loss against
+v1.51**, with no runtime or clock failures on either side. A tied two-game pair
+does not establish higher overall playing strength or Elo. v1.51 is preserved
+as fallback; no new neural weights were fitted for this release.
 
 [Current results and limitations](reports/IMPROVEMENT_RESULTS.md) ·
-[Previous development history](reports/IMPROVEMENT_RESULTS_BEFORE_STARTUP_20260908.md) ·
-[Growth plan](reports/COMPETITION_GROWTH_PLAN.md)
+[Tactical gate](reports/TACTICAL_PILOT_29_20260908.md) ·
+[Previous v1.51 results](reports/STARTUP_RECOVERY_RESULTS_20260908.md)
 
-Inference needs no filesystem writes, network or subprocess. Public visitors can
-read and download; edits require repository permission. No access grants changed.
-The long consistency study remains abandoned in favour of small useful tests.
+Inference uses no filesystem writes, network or subprocess. Visitors can read
+and download; no repository permission grants or live competition upload occurred.
+The long consistency study remains cancelled.
 
 ## Versions
 
@@ -71,6 +71,7 @@ The long consistency study remains abandoned in favour of small useful tests.
 | [v1.48](versions/v1.48/chessity-agent-v1.48.zip) | Exact legal-pawn proof speeds quiescence | 0W/1D/1L versus v1.41 at120+0.5; exact-work/speed/read-only gates passed; not selected after the short comparison |
 | [v1.49](versions/v1.49/chessity-agent-v1.49.zip) | Queen-aware passed-pawn evaluation | Archival only: 0W0D2L vs41, 0W2D0L vs47, 1W0D1L vs48; two startup losses at2400; 1W1D0L at2600 with opponent flag win; not selected |
 | [v1.50](versions/v1.50/chessity-agent-v1.50.zip) | Complete root compilation before readiness | Archival only: readiness and read-only checks passed; instrumented protocol initialization failed; superseded startup experiment |
-| [v1.51](versions/v1.51/chessity-agent-v1.51.zip) | Completed warmup with plain compiler diagnostics | Selected startup reliability revision of v1.41; 0W1D1L at each nominal2800/3000, no candidate failures; playing strength gain unproven |
+| [v1.51](versions/v1.51/chessity-agent-v1.51.zip) | Completed warmup with plain compiler diagnostics | Preserved v1.51 startup fallback; provisional tactical recommendation is nowv1.52 |
+| [v1.52](versions/v1.52/chessity-agent-v1.52.zip) | Bounded check search and coordinated king-pressure evaluation | Provisional practical selection: tactical gate passed;1W0D1L vs51; no Elo established |
 
-All 52 versions are retained in development order with version tags. Each source folder and its own trained weights match the adjacent ZIP. Failed and experimental versions remain archival; numbering alone is not a recommendation. Raw downloaded player histories and external engine executables are excluded.
+All53 numbered versions are retained chronologically. Each source folder matches its adjacent ZIP. Failed experiments remain archived; version number alone is not strength evidence.

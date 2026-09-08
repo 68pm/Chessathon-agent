@@ -1,0 +1,37 @@
+{
+  "status": "selected_provisional_practical_revision",
+  "selected": "v1.52",
+  "fallback": "v1.51",
+  "utc": "2026-09-08T11:28:49.898819+00:00",
+  "candidate_sha256": "72604b1b50c2e22200b70068d8ab98d25a96b586a20278ae465c464cd77ee2c8",
+  "rules": {
+    "IMPROVEMENT_CYCLE_29.md": "6c8596a852668310aba033da46c529276a335b8ae2e26c646b333316c4c6eaf0",
+    "KING_COORDINATION_PRACTICAL_20260908.md": "0440f50873c722219182f3274266c0b5bc7255c996fbdca5b662fd6cf3c5e5b7"
+  },
+  "gate_sha256": "63fbf217237825f83ba165380e1a60e7fbf240059496894995a026f6dc7d2b49",
+  "decision_sha256": "90621978382f0ab079f4cab89e4c1651d0509ca57e030b19266d44f20c734ac2",
+  "matches_sha256": "69976f5370ad1b1cb5193c56edba3df08807f779da0ca30c7fa9d3d1d7897ea2",
+  "phase_sha256": "c7fbff46f04e878c36641ff1149996d01a6b6f87c6584624a89212a689912458",
+  "changed_runtime_files": [
+    "engine/compiled_core.py"
+  ],
+  "models_and_other_runtime_files_unchanged": true,
+  "summary": {
+    "games": 2,
+    "wins": 1,
+    "draws": 0,
+    "losses": 1,
+    "score": 0.5,
+    "completed_pairs": 1,
+    "terminations": {
+      "checkmate": 2
+    },
+    "candidate_failures": 0
+  },
+  "rationale": "Fewer exposed tactical mistakes with all declared regression requirements passed, strict read-only pass, clean50% predeclared pair.",
+  "limitations": [
+    "Tied two-game pair from one opening does not prove overall strength advantage or calibrated Elo.",
+    "No new neural fitting; fixed-node king target remains a limitation.",
+    "This build has not played rated opponents; older nominal wins are not attributed to it."
+  ]
+}

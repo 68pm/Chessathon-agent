@@ -1,0 +1,9 @@
+{
+  "output": "runs/improvement-loop-20260907/king-coordination-review-controller",
+  "wait_for": ["runs/improvement-loop-20260907/king-coordination-practical-controller/controller.json"],
+  "stages": [
+    {"name": "capacity", "module": "scripts.overnight_capacity", "arguments": ["--out", "runs/improvement-loop-20260907/cycle-29-review/capacity.json"]},
+    {"name": "teacher-audit", "module": "scripts.improvement_audit", "arguments": ["--source", "runs/improvement-loop-20260907/cycle-29-pair/comparison-compiled-king-coordination-v1/results.json", "--out", "runs/improvement-loop-20260907/cycle-29-review/audit"]},
+    {"name": "phase-summary", "module": "scripts.improvement_phase_report", "arguments": ["--matches", "runs/improvement-loop-20260907/cycle-29-pair/comparison-compiled-king-coordination-v1/results.json", "--audit", "runs/improvement-loop-20260907/cycle-29-review/audit", "--out", "runs/improvement-loop-20260907/cycle-29-review/phase.json", "--label", "king-coordination-v1-vs51"]}
+  ]
+}
