@@ -1,0 +1,7 @@
+{
+  "output": "runs/improvement-loop-20260907/root-pvs-controller",
+  "wait_for": ["runs/improvement-loop-20260907/first-warning-trace-controller/controller.json"],
+  "stages": [
+    {"name": "root-pvs-correctness-and-pilot", "module": "scripts.root_pvs_pilot", "arguments": []}
+  ]
+}
