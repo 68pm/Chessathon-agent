@@ -22,3 +22,5 @@ no repository write-access grants or live competition submissions were made.
 [Learning diagnosis](chessity-agent/reports/LEARNING_REACHABILITY_REVIEW.md)
 
 [Latest search results](chessity-agent/reports/CHECK_EXTENSION_RESULTS_20260908.md): the bounded check-extension pilot failed its tactical gate. Selected upload remains v1.51.
+
+[Rook-regression diagnosis](chessity-agent/reports/ROOK_REGRESSION_DIAGNOSIS_20260908.md): full-window values confirm a horizon-dependent preference; no new upload is selected.
