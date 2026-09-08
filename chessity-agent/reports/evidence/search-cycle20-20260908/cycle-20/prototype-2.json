@@ -1,0 +1,1189 @@
+{
+  "status": "complete",
+  "pid": 10792,
+  "candidate": "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\improvement-loop-20260907\\cycle-20\\prototype",
+  "roots_sha256": "b8b49e0801f89fae9d5a595010b23da1a2053280b36d9acae1dc7408bf6b2ec8",
+  "source_sha256": "02d8c1d49162c8f8fa8a92af214e958d66747ef9ae330b1d61574a793cc14c85",
+  "requested_seconds": 1.0,
+  "maximum_wall_seconds": 1.25,
+  "initialization_limit_seconds": 90,
+  "results": [
+    {
+      "id": "game-001-ply-025",
+      "fen": "r2q2k1/1p3pp1/4pn1p/1PR5/3P3P/3B2P1/1Q3P2/6K1 w - - 3 33",
+      "original_move": "f2f4",
+      "uci": "f2f4",
+      "depth": 5,
+      "nodes": 238592,
+      "seconds": 1.0057177999988198,
+      "wall_seconds": 1.0057727000094019,
+      "score": 71,
+      "iterations": [
+        {
+          "depth": 1,
+          "completed": true,
+          "retries": 0,
+          "score": 115,
+          "nodes": 73,
+          "seconds": 0.0010024999792221934
+        },
+        {
+          "depth": 2,
+          "completed": true,
+          "retries": 0,
+          "score": 80,
+          "nodes": 377,
+          "seconds": 0.0019182999967597425
+        },
+        {
+          "depth": 3,
+          "completed": true,
+          "retries": 0,
+          "score": 92,
+          "nodes": 3119,
+          "seconds": 0.013222399982623756
+        },
+        {
+          "depth": 4,
+          "completed": true,
+          "retries": 0,
+          "score": 67,
+          "nodes": 14190,
+          "seconds": 0.05002070000045933
+        },
+        {
+          "depth": 5,
+          "completed": true,
+          "retries": 0,
+          "score": 71,
+          "nodes": 74841,
+          "seconds": 0.2449854000005871
+        },
+        {
+          "depth": 6,
+          "completed": false,
+          "retries": 0,
+          "score": 0,
+          "nodes": 238592,
+          "seconds": 1.0057039999810513
+        }
+      ],
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": true
+    },
+    {
+      "id": "game-005-ply-056",
+      "fen": "4r1k1/1p5p/2p3p1/B5P1/P1PQ1p1P/1P2p2q/4KP2/4R3 w - - 0 37",
+      "original_move": "e2d1",
+      "uci": "f2e3",
+      "depth": 6,
+      "nodes": 151552,
+      "seconds": 1.0021938999998383,
+      "wall_seconds": 1.002233699982753,
+      "score": 159,
+      "iterations": [
+        {
+          "depth": 1,
+          "completed": true,
+          "retries": 0,
+          "score": 416,
+          "nodes": 393,
+          "seconds": 0.006101900013163686
+        },
+        {
+          "depth": 2,
+          "completed": true,
+          "retries": 0,
+          "score": 416,
+          "nodes": 739,
+          "seconds": 0.009259900019969791
+        },
+        {
+          "depth": 3,
+          "completed": true,
+          "retries": 0,
+          "score": 416,
+          "nodes": 1678,
+          "seconds": 0.02055600000312552
+        },
+        {
+          "depth": 4,
+          "completed": true,
+          "retries": 0,
+          "score": 416,
+          "nodes": 5315,
+          "seconds": 0.040725500002736226
+        },
+        {
+          "depth": 5,
+          "completed": true,
+          "retries": 2,
+          "score": 159,
+          "nodes": 56803,
+          "seconds": 0.26230490001034923
+        },
+        {
+          "depth": 6,
+          "completed": true,
+          "retries": 0,
+          "score": 159,
+          "nodes": 121601,
+          "seconds": 0.6959048999997322
+        },
+        {
+          "depth": 7,
+          "completed": false,
+          "retries": 0,
+          "score": 0,
+          "nodes": 151552,
+          "seconds": 1.0021894000237808
+        }
+      ],
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": false
+    },
+    {
+      "id": "game-005-ply-060",
+      "fen": "4r1k1/1p5p/2p3p1/q5P1/P1PQ1p1P/1P2P3/8/3KR3 w - - 0 39",
+      "original_move": "d4f4",
+      "uci": "d4f4",
+      "depth": 6,
+      "nodes": 123904,
+      "seconds": 1.0018011000065599,
+      "wall_seconds": 1.0018369999888819,
+      "score": 126,
+      "iterations": [
+        {
+          "depth": 1,
+          "completed": true,
+          "retries": 0,
+          "score": 306,
+          "nodes": 98,
+          "seconds": 0.000985699996817857
+        },
+        {
+          "depth": 2,
+          "completed": true,
+          "retries": 0,
+          "score": 296,
+          "nodes": 623,
+          "seconds": 0.003053899999940768
+        },
+        {
+          "depth": 3,
+          "completed": true,
+          "retries": 0,
+          "score": 169,
+          "nodes": 4372,
+          "seconds": 0.024233800009824336
+        },
+        {
+          "depth": 4,
+          "completed": true,
+          "retries": 0,
+          "score": 168,
+          "nodes": 10496,
+          "seconds": 0.051520600012736395
+        },
+        {
+          "depth": 5,
+          "completed": true,
+          "retries": 0,
+          "score": 164,
+          "nodes": 32131,
+          "seconds": 0.24480919999768957
+        },
+        {
+          "depth": 6,
+          "completed": true,
+          "retries": 0,
+          "score": 126,
+          "nodes": 105629,
+          "seconds": 0.9211292999971192
+        },
+        {
+          "depth": 7,
+          "completed": false,
+          "retries": 0,
+          "score": 0,
+          "nodes": 123904,
+          "seconds": 1.0017968000029214
+        }
+      ],
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": true
+    },
+    {
+      "id": "game-008-ply-019",
+      "fen": "r4rk1/pp2bp2/2p2np1/3pB2P/3Pn3/P3PN2/1q2NPQ1/2R1K2R b K - 1 20",
+      "original_move": "e7a3",
+      "uci": "e7a3",
+      "depth": 5,
+      "nodes": 181248,
+      "seconds": 1.013738600013312,
+      "wall_seconds": 1.0138241000240669,
+      "score": 224,
+      "iterations": [
+        {
+          "depth": 1,
+          "completed": true,
+          "retries": 0,
+          "score": 87,
+          "nodes": 5298,
+          "seconds": 0.029664400004548952
+        },
+        {
+          "depth": 2,
+          "completed": true,
+          "retries": 0,
+          "score": 87,
+          "nodes": 9952,
+          "seconds": 0.05794970001443289
+        },
+        {
+          "depth": 3,
+          "completed": true,
+          "retries": 0,
+          "score": 208,
+          "nodes": 19105,
+          "seconds": 0.09907620001467876
+        },
+        {
+          "depth": 4,
+          "completed": true,
+          "retries": 0,
+          "score": 208,
+          "nodes": 46024,
+          "seconds": 0.2071128000097815
+        },
+        {
+          "depth": 5,
+          "completed": true,
+          "retries": 0,
+          "score": 224,
+          "nodes": 155419,
+          "seconds": 0.6550375999941025
+        },
+        {
+          "depth": 6,
+          "completed": false,
+          "retries": 0,
+          "score": 0,
+          "nodes": 181248,
+          "seconds": 1.013723400013987
+        }
+      ],
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": true
+    },
+    {
+      "id": "game-012-ply-100",
+      "fen": "5R2/7K/2r5/5k2/3b4/8/8/8 b - - 41 65",
+      "original_move": "f5e4",
+      "uci": "f5e4",
+      "depth": 6,
+      "nodes": 152576,
+      "seconds": 1.0002169999934267,
+      "wall_seconds": 1.0002945000014734,
+      "score": 430,
+      "iterations": [
+        {
+          "depth": 1,
+          "completed": true,
+          "retries": 0,
+          "score": 441,
+          "nodes": 9,
+          "seconds": 0.0021492000087164342
+        },
+        {
+          "depth": 2,
+          "completed": true,
+          "retries": 0,
+          "score": 437,
+          "nodes": 58,
+          "seconds": 0.0025414999981876463
+        },
+        {
+          "depth": 3,
+          "completed": true,
+          "retries": 0,
+          "score": 442,
+          "nodes": 392,
+          "seconds": 0.0061961000028532
+        },
+        {
+          "depth": 4,
+          "completed": true,
+          "retries": 0,
+          "score": 435,
+          "nodes": 1312,
+          "seconds": 0.016192099981708452
+        },
+        {
+          "depth": 5,
+          "completed": true,
+          "retries": 0,
+          "score": 440,
+          "nodes": 7323,
+          "seconds": 0.05385639998712577
+        },
+        {
+          "depth": 6,
+          "completed": true,
+          "retries": 0,
+          "score": 430,
+          "nodes": 29172,
+          "seconds": 0.1530909999855794
+        },
+        {
+          "depth": 7,
+          "completed": false,
+          "retries": 0,
+          "score": 0,
+          "nodes": 152576,
+          "seconds": 1.0002040999825113
+        }
+      ],
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": true
+    },
+    {
+      "id": "game-013-ply-056",
+      "fen": "3r1k2/6pp/3pR3/1ppP1pPn/5P1P/2P1B3/2P2K2/8 w - - 1 37",
+      "original_move": "e6d6",
+      "uci": "e6d6",
+      "depth": 6,
+      "nodes": 130048,
+      "seconds": 1.0067899000132456,
+      "wall_seconds": 1.0068934999872,
+      "score": 70,
+      "iterations": [
+        {
+          "depth": 1,
+          "completed": true,
+          "retries": 0,
+          "score": 104,
+          "nodes": 35,
+          "seconds": 0.0005691999976988882
+        },
+        {
+          "depth": 2,
+          "completed": true,
+          "retries": 0,
+          "score": 88,
+          "nodes": 375,
+          "seconds": 0.005268500011879951
+        },
+        {
+          "depth": 3,
+          "completed": true,
+          "retries": 0,
+          "score": 99,
+          "nodes": 1062,
+          "seconds": 0.007710800011409447
+        },
+        {
+          "depth": 4,
+          "completed": true,
+          "retries": 0,
+          "score": 76,
+          "nodes": 5885,
+          "seconds": 0.04152800000156276
+        },
+        {
+          "depth": 5,
+          "completed": true,
+          "retries": 0,
+          "score": 77,
+          "nodes": 21427,
+          "seconds": 0.1267097000090871
+        },
+        {
+          "depth": 6,
+          "completed": true,
+          "retries": 0,
+          "score": 70,
+          "nodes": 51735,
+          "seconds": 0.5240975999913644
+        },
+        {
+          "depth": 7,
+          "completed": false,
+          "retries": 0,
+          "score": 0,
+          "nodes": 130048,
+          "seconds": 1.0067605999938678
+        }
+      ],
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": true
+    },
+    {
+      "id": "game-014-ply-051",
+      "fen": "4q1k1/1Q4pp/1pr5/pN1P1p2/P1p1p2P/6P1/1P1b1P2/5RK1 b - - 0 34",
+      "original_move": "c6g6",
+      "uci": "c6g6",
+      "depth": 6,
+      "nodes": 180224,
+      "seconds": 1.0036848000017926,
+      "wall_seconds": 1.0037417999992613,
+      "score": 74,
+      "iterations": [
+        {
+          "depth": 1,
+          "completed": true,
+          "retries": 0,
+          "score": 151,
+          "nodes": 191,
+          "seconds": 0.0013787999923806638
+        },
+        {
+          "depth": 2,
+          "completed": true,
+          "retries": 0,
+          "score": 119,
+          "nodes": 715,
+          "seconds": 0.0033161999890580773
+        },
+        {
+          "depth": 3,
+          "completed": true,
+          "retries": 0,
+          "score": 118,
+          "nodes": 5128,
+          "seconds": 0.020497599994996563
+        },
+        {
+          "depth": 4,
+          "completed": true,
+          "retries": 1,
+          "score": 58,
+          "nodes": 17189,
+          "seconds": 0.06689230000483803
+        },
+        {
+          "depth": 5,
+          "completed": true,
+          "retries": 0,
+          "score": 75,
+          "nodes": 54907,
+          "seconds": 0.40313449999666773
+        },
+        {
+          "depth": 6,
+          "completed": true,
+          "retries": 0,
+          "score": 74,
+          "nodes": 163745,
+          "seconds": 0.9068200000037905
+        },
+        {
+          "depth": 7,
+          "completed": false,
+          "retries": 0,
+          "score": 0,
+          "nodes": 180224,
+          "seconds": 1.0036760999937542
+        }
+      ],
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": true
+    },
+    {
+      "id": "game-015-ply-036",
+      "fen": "4rrk1/7p/p1pnqpp1/3p2P1/1P1P3P/P1N1P3/4QP2/R1R3K1 w - - 2 29",
+      "original_move": "e2a6",
+      "uci": "e2a6",
+      "depth": 5,
+      "nodes": 137216,
+      "seconds": 1.0020796000026166,
+      "wall_seconds": 1.0021063000021968,
+      "score": 196,
+      "iterations": [
+        {
+          "depth": 1,
+          "completed": true,
+          "retries": 0,
+          "score": 262,
+          "nodes": 156,
+          "seconds": 0.004818999994313344
+        },
+        {
+          "depth": 2,
+          "completed": true,
+          "retries": 0,
+          "score": 220,
+          "nodes": 1799,
+          "seconds": 0.025720899982843548
+        },
+        {
+          "depth": 3,
+          "completed": true,
+          "retries": 0,
+          "score": 220,
+          "nodes": 5998,
+          "seconds": 0.1108300999912899
+        },
+        {
+          "depth": 4,
+          "completed": true,
+          "retries": 0,
+          "score": 194,
+          "nodes": 37699,
+          "seconds": 0.48594019998563454
+        },
+        {
+          "depth": 5,
+          "completed": true,
+          "retries": 0,
+          "score": 196,
+          "nodes": 94518,
+          "seconds": 0.733847199997399
+        },
+        {
+          "depth": 6,
+          "completed": false,
+          "retries": 0,
+          "score": 0,
+          "nodes": 137216,
+          "seconds": 1.0020752999989782
+        }
+      ],
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": true
+    },
+    {
+      "id": "game-055-ply-041",
+      "fen": "r3r1k1/5ppp/8/p1R5/2N5/7P/1Pn1BPK1/4R3 w - - 1 26",
+      "original_move": "g2f1",
+      "uci": "g2f1",
+      "depth": 6,
+      "nodes": 241664,
+      "seconds": 1.0033683000074234,
+      "wall_seconds": 1.0034009999944828,
+      "score": 38,
+      "iterations": [
+        {
+          "depth": 1,
+          "completed": true,
+          "retries": 0,
+          "score": 40,
+          "nodes": 273,
+          "seconds": 0.0011860000086016953
+        },
+        {
+          "depth": 2,
+          "completed": true,
+          "retries": 0,
+          "score": 40,
+          "nodes": 565,
+          "seconds": 0.004545700008748099
+        },
+        {
+          "depth": 3,
+          "completed": true,
+          "retries": 0,
+          "score": 40,
+          "nodes": 1669,
+          "seconds": 0.014778800017666072
+        },
+        {
+          "depth": 4,
+          "completed": true,
+          "retries": 0,
+          "score": 30,
+          "nodes": 6919,
+          "seconds": 0.035430400021141395
+        },
+        {
+          "depth": 5,
+          "completed": true,
+          "retries": 0,
+          "score": 59,
+          "nodes": 22258,
+          "seconds": 0.10843120000208728
+        },
+        {
+          "depth": 6,
+          "completed": true,
+          "retries": 0,
+          "score": 38,
+          "nodes": 90022,
+          "seconds": 0.4662423999980092
+        },
+        {
+          "depth": 7,
+          "completed": false,
+          "retries": 0,
+          "score": 0,
+          "nodes": 241664,
+          "seconds": 1.0033624000207055
+        }
+      ],
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": true
+    },
+    {
+      "id": "game-054-ply-050",
+      "fen": "2r3k1/2rb2b1/3p2p1/p2P1p2/p3pP1p/NqP1B3/1P1Q2PP/1RR3K1 b - - 7 33",
+      "original_move": "g7c3",
+      "uci": "g7c3",
+      "depth": 5,
+      "nodes": 217088,
+      "seconds": 1.0026860000216402,
+      "wall_seconds": 1.0027348000148777,
+      "score": 310,
+      "iterations": [
+        {
+          "depth": 1,
+          "completed": true,
+          "retries": 0,
+          "score": 331,
+          "nodes": 90,
+          "seconds": 0.0016399000014644116
+        },
+        {
+          "depth": 2,
+          "completed": true,
+          "retries": 0,
+          "score": 331,
+          "nodes": 1224,
+          "seconds": 0.005629799998132512
+        },
+        {
+          "depth": 3,
+          "completed": true,
+          "retries": 0,
+          "score": 331,
+          "nodes": 3819,
+          "seconds": 0.016572799999266863
+        },
+        {
+          "depth": 4,
+          "completed": true,
+          "retries": 0,
+          "score": 300,
+          "nodes": 41327,
+          "seconds": 0.192349999997532
+        },
+        {
+          "depth": 5,
+          "completed": true,
+          "retries": 0,
+          "score": 310,
+          "nodes": 109032,
+          "seconds": 0.4742965000041295
+        },
+        {
+          "depth": 6,
+          "completed": false,
+          "retries": 0,
+          "score": 0,
+          "nodes": 217088,
+          "seconds": 1.0026783000212163
+        }
+      ],
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": true
+    },
+    {
+      "id": "game-054-ply-056",
+      "fen": "2r3k1/3b4/3p2p1/p2P1p2/p2BpP1p/q1P5/3Q2PP/1R4K1 b - - 1 36",
+      "original_move": "d7e8",
+      "uci": "d7e8",
+      "depth": 6,
+      "nodes": 242688,
+      "seconds": 1.0022564000100829,
+      "wall_seconds": 1.0022970999998506,
+      "score": 274,
+      "iterations": [
+        {
+          "depth": 1,
+          "completed": true,
+          "retries": 0,
+          "score": 332,
+          "nodes": 109,
+          "seconds": 0.001128700008848682
+        },
+        {
+          "depth": 2,
+          "completed": true,
+          "retries": 0,
+          "score": 318,
+          "nodes": 647,
+          "seconds": 0.0033967000199481845
+        },
+        {
+          "depth": 3,
+          "completed": true,
+          "retries": 0,
+          "score": 309,
+          "nodes": 5069,
+          "seconds": 0.023530100006610155
+        },
+        {
+          "depth": 4,
+          "completed": true,
+          "retries": 0,
+          "score": 301,
+          "nodes": 9502,
+          "seconds": 0.04073259999859147
+        },
+        {
+          "depth": 5,
+          "completed": true,
+          "retries": 0,
+          "score": 309,
+          "nodes": 34170,
+          "seconds": 0.1520526000240352
+        },
+        {
+          "depth": 6,
+          "completed": true,
+          "retries": 0,
+          "score": 274,
+          "nodes": 117468,
+          "seconds": 0.42347870001685806
+        },
+        {
+          "depth": 7,
+          "completed": false,
+          "retries": 0,
+          "score": 0,
+          "nodes": 242688,
+          "seconds": 1.0022495000157505
+        }
+      ],
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": true
+    },
+    {
+      "id": "game-001-ply-034",
+      "fen": "2bqr1k1/1pp3b1/6pp/1P1p4/3P2pP/Q3PNP1/3N2P1/5RK1 w - - 0 23",
+      "original_move": "f3e1",
+      "uci": "f3e1",
+      "depth": 5,
+      "nodes": 146432,
+      "seconds": 1.0056810000096448,
+      "wall_seconds": 1.0057133000227623,
+      "score": -68,
+      "iterations": [
+        {
+          "depth": 1,
+          "completed": true,
+          "retries": 0,
+          "score": 3,
+          "nodes": 258,
+          "seconds": 0.0012707000132650137
+        },
+        {
+          "depth": 2,
+          "completed": true,
+          "retries": 0,
+          "score": -50,
+          "nodes": 576,
+          "seconds": 0.0023625000030733645
+        },
+        {
+          "depth": 3,
+          "completed": true,
+          "retries": 0,
+          "score": -37,
+          "nodes": 2592,
+          "seconds": 0.010267700010444969
+        },
+        {
+          "depth": 4,
+          "completed": true,
+          "retries": 0,
+          "score": -56,
+          "nodes": 10917,
+          "seconds": 0.05263510000077076
+        },
+        {
+          "depth": 5,
+          "completed": true,
+          "retries": 0,
+          "score": -68,
+          "nodes": 52406,
+          "seconds": 0.21079310000641271
+        },
+        {
+          "depth": 6,
+          "completed": false,
+          "retries": 0,
+          "score": 0,
+          "nodes": 146432,
+          "seconds": 1.0056751999945845
+        }
+      ],
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": true
+    },
+    {
+      "id": "game-002-ply-045",
+      "fen": "4r1k1/1pr3q1/2pRb2p/p3P2R/P7/4P2P/1P2Q1P1/6K1 b - - 0 28",
+      "original_move": "e6f7",
+      "uci": "e6d5",
+      "depth": 5,
+      "nodes": 190464,
+      "seconds": 1.0021290000004228,
+      "wall_seconds": 1.0021734000183642,
+      "score": 80,
+      "iterations": [
+        {
+          "depth": 1,
+          "completed": true,
+          "retries": 0,
+          "score": 97,
+          "nodes": 164,
+          "seconds": 0.004590800002915785
+        },
+        {
+          "depth": 2,
+          "completed": true,
+          "retries": 0,
+          "score": 85,
+          "nodes": 2982,
+          "seconds": 0.03561369999079034
+        },
+        {
+          "depth": 3,
+          "completed": true,
+          "retries": 0,
+          "score": 89,
+          "nodes": 10483,
+          "seconds": 0.1117212999961339
+        },
+        {
+          "depth": 4,
+          "completed": true,
+          "retries": 0,
+          "score": 80,
+          "nodes": 42576,
+          "seconds": 0.3778957999893464
+        },
+        {
+          "depth": 5,
+          "completed": true,
+          "retries": 0,
+          "score": 80,
+          "nodes": 137589,
+          "seconds": 0.8268856999929994
+        },
+        {
+          "depth": 6,
+          "completed": false,
+          "retries": 0,
+          "score": 0,
+          "nodes": 190464,
+          "seconds": 1.0021232000144664
+        }
+      ],
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": false
+    },
+    {
+      "id": "game-002-ply-101",
+      "fen": "4R3/5bP1/5K2/8/prpk4/8/8/8 b - - 15 56",
+      "original_move": "f7e8",
+      "uci": "f7e8",
+      "depth": 7,
+      "nodes": 278528,
+      "seconds": 1.001236100011738,
+      "wall_seconds": 1.0012759999954142,
+      "score": 375,
+      "iterations": [
+        {
+          "depth": 1,
+          "completed": true,
+          "retries": 0,
+          "score": 460,
+          "nodes": 121,
+          "seconds": 0.0022481000050902367
+        },
+        {
+          "depth": 2,
+          "completed": true,
+          "retries": 0,
+          "score": 458,
+          "nodes": 280,
+          "seconds": 0.002730300009716302
+        },
+        {
+          "depth": 3,
+          "completed": true,
+          "retries": 0,
+          "score": 453,
+          "nodes": 2132,
+          "seconds": 0.00788210000609979
+        },
+        {
+          "depth": 4,
+          "completed": true,
+          "retries": 0,
+          "score": 453,
+          "nodes": 3499,
+          "seconds": 0.011061500001233071
+        },
+        {
+          "depth": 5,
+          "completed": true,
+          "retries": 1,
+          "score": 366,
+          "nodes": 13548,
+          "seconds": 0.03597920000902377
+        },
+        {
+          "depth": 6,
+          "completed": true,
+          "retries": 0,
+          "score": 364,
+          "nodes": 32247,
+          "seconds": 0.09249530002125539
+        },
+        {
+          "depth": 7,
+          "completed": true,
+          "retries": 0,
+          "score": 375,
+          "nodes": 110635,
+          "seconds": 0.4262027000077069
+        },
+        {
+          "depth": 8,
+          "completed": false,
+          "retries": 0,
+          "score": 0,
+          "nodes": 278528,
+          "seconds": 1.0012316000065766
+        }
+      ],
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": true
+    },
+    {
+      "id": "startup19-game-001-ply-062",
+      "fen": "8/6kp/6p1/1N6/P7/3BqnP1/2P2R1P/6K1 w - - 1 37",
+      "original_move": "g1f1",
+      "uci": "g1f1",
+      "depth": 7,
+      "nodes": 253952,
+      "seconds": 1.0032851000141818,
+      "wall_seconds": 1.0033196000149474,
+      "score": 75,
+      "iterations": [
+        {
+          "depth": 1,
+          "completed": true,
+          "retries": 0,
+          "score": 168,
+          "nodes": 38,
+          "seconds": 0.0005816000048071146
+        },
+        {
+          "depth": 2,
+          "completed": true,
+          "retries": 0,
+          "score": 113,
+          "nodes": 169,
+          "seconds": 0.0012433000083547086
+        },
+        {
+          "depth": 3,
+          "completed": true,
+          "retries": 0,
+          "score": 113,
+          "nodes": 827,
+          "seconds": 0.00643460001447238
+        },
+        {
+          "depth": 4,
+          "completed": true,
+          "retries": 0,
+          "score": 113,
+          "nodes": 2676,
+          "seconds": 0.011777500010794029
+        },
+        {
+          "depth": 5,
+          "completed": true,
+          "retries": 1,
+          "score": 156,
+          "nodes": 12502,
+          "seconds": 0.047680200019385666
+        },
+        {
+          "depth": 6,
+          "completed": true,
+          "retries": 1,
+          "score": 69,
+          "nodes": 45706,
+          "seconds": 0.20017100000404753
+        },
+        {
+          "depth": 7,
+          "completed": true,
+          "retries": 0,
+          "score": 75,
+          "nodes": 141580,
+          "seconds": 0.5914921000075992
+        },
+        {
+          "depth": 8,
+          "completed": false,
+          "retries": 0,
+          "score": 0,
+          "nodes": 253952,
+          "seconds": 1.0032804000074975
+        }
+      ],
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": true
+    },
+    {
+      "id": "startup19-game-002-ply-021",
+      "fen": "r1b2rk1/p5pp/2p5/n3pp2/1b6/3P2N1/P1P1KPPP/RNB4R b - - 0 16",
+      "original_move": "f5f4",
+      "uci": "f5f4",
+      "depth": 6,
+      "nodes": 147456,
+      "seconds": 1.00893549999455,
+      "wall_seconds": 1.0089898000005633,
+      "score": 118,
+      "iterations": [
+        {
+          "depth": 1,
+          "completed": true,
+          "retries": 0,
+          "score": 195,
+          "nodes": 47,
+          "seconds": 0.0009990000107791275
+        },
+        {
+          "depth": 2,
+          "completed": true,
+          "retries": 0,
+          "score": 156,
+          "nodes": 707,
+          "seconds": 0.0058862000005319715
+        },
+        {
+          "depth": 3,
+          "completed": true,
+          "retries": 0,
+          "score": 173,
+          "nodes": 3303,
+          "seconds": 0.01689349999651313
+        },
+        {
+          "depth": 4,
+          "completed": true,
+          "retries": 0,
+          "score": 150,
+          "nodes": 7265,
+          "seconds": 0.038989199994830415
+        },
+        {
+          "depth": 5,
+          "completed": true,
+          "retries": 0,
+          "score": 159,
+          "nodes": 31434,
+          "seconds": 0.1342956000007689
+        },
+        {
+          "depth": 6,
+          "completed": true,
+          "retries": 1,
+          "score": 118,
+          "nodes": 129076,
+          "seconds": 0.8254778000118677
+        },
+        {
+          "depth": 7,
+          "completed": false,
+          "retries": 0,
+          "score": 0,
+          "nodes": 147456,
+          "seconds": 1.0089249000011478
+        }
+      ],
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": true
+    },
+    {
+      "id": "startup19-game-003-ply-068",
+      "fen": "3R4/5pbk/8/5p2/P7/2N3P1/1qn1NP1P/6K1 w - - 1 40",
+      "original_move": "d8c8",
+      "uci": "d8c8",
+      "depth": 6,
+      "nodes": 247808,
+      "seconds": 1.003292599983979,
+      "wall_seconds": 1.0033347999851685,
+      "score": -172,
+      "iterations": [
+        {
+          "depth": 1,
+          "completed": true,
+          "retries": 0,
+          "score": -58,
+          "nodes": 85,
+          "seconds": 0.002373099996475503
+        },
+        {
+          "depth": 2,
+          "completed": true,
+          "retries": 0,
+          "score": -124,
+          "nodes": 426,
+          "seconds": 0.005628999992040917
+        },
+        {
+          "depth": 3,
+          "completed": true,
+          "retries": 0,
+          "score": -96,
+          "nodes": 2862,
+          "seconds": 0.0341167000005953
+        },
+        {
+          "depth": 4,
+          "completed": true,
+          "retries": 0,
+          "score": -121,
+          "nodes": 8465,
+          "seconds": 0.07056799999554642
+        },
+        {
+          "depth": 5,
+          "completed": true,
+          "retries": 0,
+          "score": -101,
+          "nodes": 30781,
+          "seconds": 0.2484002999844961
+        },
+        {
+          "depth": 6,
+          "completed": true,
+          "retries": 1,
+          "score": -172,
+          "nodes": 159001,
+          "seconds": 0.6792450999782886
+        },
+        {
+          "depth": 7,
+          "completed": false,
+          "retries": 0,
+          "score": 0,
+          "nodes": 247808,
+          "seconds": 1.0032885999826249
+        }
+      ],
+      "agrees_with_deep_teacher": false,
+      "repeats_large_error": true
+    }
+  ],
+  "scope": "Exposed search diagnostic; root policy disabled equally. No rating or learning claim.",
+  "init_seconds": 56.9369885000051
+}

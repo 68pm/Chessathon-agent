@@ -1,0 +1,7 @@
+{
+  "output": "runs/improvement-loop-20260907/quiet-check-controller",
+  "wait_for": ["runs/improvement-loop-20260907/startup-aspiration-controller/controller.json"],
+  "stages": [
+    {"name": "correctness-and-bounded-gate", "module": "scripts.improvement_quiet_check_gate", "arguments": []}
+  ]
+}

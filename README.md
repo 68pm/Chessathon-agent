@@ -20,3 +20,5 @@ no repository write-access grants or live competition submissions were made.
 [Earlier morning report](chessity-agent/reports/OVERNIGHT_REPORT_20260908.md) ·
 [Latest startup results](chessity-agent/reports/STARTUP_RECOVERY_RESULTS_20260908.md) ·
 [Learning diagnosis](chessity-agent/reports/LEARNING_REACHABILITY_REVIEW.md)
+
+[Current search development](chessity-agent/reports/SEARCH_UPDATE_20260908.md): the aspiration pilot was rejected; one bounded quiet-check hypothesis is next. Selected upload remains v1.51.

@@ -1,0 +1,7 @@
+{
+  "output": "runs/improvement-loop-20260907/startup-aspiration-controller",
+  "wait_for": ["runs/improvement-loop-20260907/startup-recovery-games-controller/controller.json"],
+  "stages": [
+    {"name": "bounded-position-gate", "module": "scripts.improvement_startup_aspiration_gate", "arguments": []}
+  ]
+}
