@@ -1,0 +1,13 @@
+Audited game 1: 36 own moves
+Audited game 2: 102 own moves
+Audited game 3: 190 own moves
+Audited game 4: 236 own moves
+{
+  "status": "complete",
+  "games": 4,
+  "own_moves": 236,
+  "large_errors": 9,
+  "mate_scored": 25,
+  "scope": "Screen every own move at 20k nodes; verify suspected errors at 80k/320k. Finite teacher estimates, not proofs. Old evaluation games become development data and cannot support fresh claims."
+}
+{"label": "v53-e55", "groups": {"stockfish:2400": {"games": 2, "wins": 1, "draws": 0, "losses": 1, "loss_first_warning_phase": {"opening": 0, "middlegame": 1, "endgame": 0, "unresolved": 0}, "loss_first_losing_transition_phase": {"opening": 0, "middlegame": 0, "endgame": 0, "unresolved": 1}, "loss_terminal_phase": {"endgame": 1}, "nonwin_first_squandered_advantage_phase": {"opening": 0, "middlegame": 0, "endgame": 0, "unresolved": 1}, "phase_exposure": {"opening": {"own_moves": 8, "large_cp_errors": 0, "mate_scored": 0, "large_errors_per_100_observed_moves": 0.0}, "middlegame": {"own_moves": 71, "large_cp_errors": 3, "mate_scored": 4, "large_errors_per_100_observed_moves": 4.225352112676056}, "endgame": {"own_moves": 23, "large_cp_errors": 2, "mate_scored": 6, "large_errors_per_100_observed_moves": 8.695652173913043}}}, "stockfish:2600": {"games": 2, "wins": 0, "draws": 1, "losses": 1, "loss_first_warning_phase": {"opening": 0, "middlegame": 1, "endgame": 0, "unresolved": 0}, "loss_first_losing_transition_phase": {"opening": 0, "middlegame": 1, "endgame": 0, "unresolved": 0}, "loss_terminal_phase": {"endgame": 1}, "nonwin_first_squandered_advantage_phase": {"opening": 0, "middlegame": 1, "endgame": 0, "unresolved": 1}, "phase_exposure": {"opening": {"own_moves": 8, "large_cp_errors": 0, "mate_scored": 0, "large_errors_per_100_observed_moves": 0.0}, "middlegame": {"own_moves": 65, "large_cp_errors": 3, "mate_scored": 12, "large_errors_per_100_observed_moves": 4.615384615384615}, "endgame": {"own_moves": 61, "large_cp_errors": 1, "mate_scored": 3, "large_errors_per_100_observed_moves": 1.639344262295082}}}}, "queued": 4, "new_teacher_nodes": 0}

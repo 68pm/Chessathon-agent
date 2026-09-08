@@ -80,3 +80,8 @@ All 54 numbered versions are retained chronologically. A higher version number a
 [Recent competition losses and draw: old/current comparison, verified cases and rejected fixes](reports/COMPETITION_LOSSES_RESULTS_20260908.md). Recommendation remains v1.53.
 
 [Defensive/rook descendant findings](reports/COMPETITION_COUNTERFACTUALS_RESULTS_20260908.md) · [Requested 2400/2600 and conditional 2800 results](reports/COMPETITION_CONDITIONAL_RATED_RESULTS_20260908.md).
+
+Latest loss/draw review: two implemented heuristics and an actually fitted
+local-value model did not qualify for promotion. The small requested rematch
+and every failure are recorded in the [learning report](reports/E55_LOSSES_DRAW_AND_LEARNING_20260908.md). v1.53 remains
+the recommended upload; no new version is implied by this experiment.

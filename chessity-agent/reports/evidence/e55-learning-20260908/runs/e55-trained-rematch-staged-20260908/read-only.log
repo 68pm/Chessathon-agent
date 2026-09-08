@@ -1,0 +1,27 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\validate_package_staged.py", line 116, in <module>
+    main()
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\validate_package_staged.py", line 112, in main
+    save_json(args.out,result)
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\alien_rating_ladder.py", line 35, in save_json
+    temporary.write_text(json.dumps(value, indent=2), encoding="utf-8")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\disea\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\disea\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\json\encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "C:\Users\disea\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\json\encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\disea\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\disea\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\disea\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "C:\Users\disea\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\json\encoder.py", line 341, in _iterencode_dict
+    raise ValueError("Circular reference detected")
+ValueError: Circular reference detected

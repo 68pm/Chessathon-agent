@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\e55_battery_trial_fixed.py", line 182, in <module>
+    worker(args.stage)
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\e55_battery_trial_fixed.py", line 39, in worker
+    import agent
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\candidates\compiled-near-queen-checks-v1\agent.py", line 26, in <module>
+    from engine.compiled_driver import CompiledSearch
+ModuleNotFoundError: No module named 'engine.compiled_driver'

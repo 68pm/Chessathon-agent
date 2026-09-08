@@ -1,0 +1,346 @@
+{
+  "passed": false,
+  "common_finite": 17,
+  "mean_regret": {
+    "baseline": [
+      122.05882352941177,
+      139.8235294117647
+    ],
+    "prototype": [
+      154.1764705882353,
+      180.11764705882354
+    ]
+  },
+  "major_errors": {
+    "baseline": 5,
+    "prototype": 7
+  },
+  "repaired_100cp": [],
+  "new_major": [
+    "game-001-ply-030",
+    "game-001-ply-042"
+  ],
+  "new_mate": [],
+  "draw_cases": [
+    {
+      "id": "game-003-ply-052",
+      "baseline": {
+        "id": "game-003-ply-052",
+        "uci": "c4c5",
+        "san": "c5",
+        "score": 329,
+        "depth": 5,
+        "nodes": 120832,
+        "seconds": 1.0063565000309609,
+        "legal_restored": true,
+        "analysis": [
+          {
+            "cp": 282,
+            "mate": null,
+            "depth": 13,
+            "pv": [
+              "c4c5",
+              "e2e1",
+              "g1g2",
+              "e8e2",
+              "f3f2",
+              "d7h3",
+              "g2h3",
+              "e2f2",
+              "b3d5",
+              "e1e8",
+              "b6b7",
+              "g8h7",
+              "c5c6"
+            ],
+            "nodes": 64398
+          },
+          {
+            "cp": 337,
+            "mate": null,
+            "depth": 15,
+            "pv": [
+              "c4c5",
+              "e2e1",
+              "g1g2",
+              "e8e2",
+              "f3f2",
+              "d7h3",
+              "g2h3",
+              "e2f2",
+              "b3d5",
+              "g8h7",
+              "b6b7",
+              "e1e8",
+              "h4h5",
+              "g7g5",
+              "h5g6",
+              "f7g6",
+              "c5c6",
+              "g6g5",
+              "c6c7"
+            ],
+            "nodes": 253024
+          }
+        ],
+        "regret": [
+          0,
+          0
+        ]
+      },
+      "prototype": {
+        "id": "game-003-ply-052",
+        "uci": "c4c5",
+        "san": "c5",
+        "score": 329,
+        "depth": 5,
+        "nodes": 117760,
+        "seconds": 1.002668500004802,
+        "legal_restored": true,
+        "analysis": [
+          {
+            "cp": 282,
+            "mate": null,
+            "depth": 13,
+            "pv": [
+              "c4c5",
+              "e2e1",
+              "g1g2",
+              "e8e2",
+              "f3f2",
+              "d7h3",
+              "g2h3",
+              "e2f2",
+              "b3d5",
+              "e1e8",
+              "b6b7",
+              "g8h7",
+              "c5c6"
+            ],
+            "nodes": 64398
+          },
+          {
+            "cp": 337,
+            "mate": null,
+            "depth": 15,
+            "pv": [
+              "c4c5",
+              "e2e1",
+              "g1g2",
+              "e8e2",
+              "f3f2",
+              "d7h3",
+              "g2h3",
+              "e2f2",
+              "b3d5",
+              "g8h7",
+              "b6b7",
+              "e1e8",
+              "h4h5",
+              "g7g5",
+              "h5g6",
+              "f7g6",
+              "c5c6",
+              "g6g5",
+              "c6c7"
+            ],
+            "nodes": 253024
+          }
+        ],
+        "regret": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "game-003-ply-140",
+      "baseline": {
+        "id": "game-003-ply-140",
+        "uci": "e7e1",
+        "san": "Re1",
+        "score": 249,
+        "depth": 3,
+        "nodes": 102400,
+        "seconds": 1.0030154999694787,
+        "legal_restored": true,
+        "analysis": [
+          {
+            "cp": -9,
+            "mate": null,
+            "depth": 13,
+            "pv": [
+              "e7e1",
+              "g1g7",
+              "e1d1",
+              "d7c8",
+              "d1h1",
+              "c6d6",
+              "h1h6",
+              "d6c7"
+            ],
+            "nodes": 47130
+          },
+          {
+            "cp": -13,
+            "mate": null,
+            "depth": 17,
+            "pv": [
+              "e7e1",
+              "g1g4",
+              "c4b3",
+              "c6d6",
+              "e1e8",
+              "g4g3",
+              "b3b4",
+              "g3g7",
+              "c7c8r"
+            ],
+            "nodes": 262738
+          }
+        ],
+        "regret": [
+          10,
+          9
+        ]
+      },
+      "prototype": {
+        "id": "game-003-ply-140",
+        "uci": "e7e8",
+        "san": "Re8",
+        "score": 218,
+        "depth": 4,
+        "nodes": 123904,
+        "seconds": 1.0049129000399262,
+        "legal_restored": true,
+        "analysis": [
+          {
+            "cp": -1,
+            "mate": null,
+            "depth": 15,
+            "pv": [
+              "e7e8",
+              "g1g7",
+              "c7c8q",
+              "d7c8",
+              "e8c8",
+              "c6d6",
+              "c4b3",
+              "d6d7",
+              "c8c2",
+              "g7g5",
+              "c2d2",
+              "d7c8"
+            ],
+            "nodes": 21296
+          },
+          {
+            "cp": 4,
+            "mate": null,
+            "depth": 18,
+            "pv": [
+              "e7e8",
+              "g1g4",
+              "c4c3",
+              "g4g7",
+              "c7c8q",
+              "d7c8",
+              "e8c8",
+              "c6d6",
+              "c8h8",
+              "g7g3",
+              "c3d2",
+              "g3g6",
+              "h8d8",
+              "d6c7",
+              "d8d5"
+            ],
+            "nodes": 248665
+          }
+        ],
+        "regret": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "id": "competition-r68-ply-145",
+      "baseline": {
+        "id": "competition-r68-ply-145",
+        "uci": "d1a1",
+        "san": "Ra1",
+        "score": 0,
+        "depth": 7,
+        "nodes": 221184,
+        "seconds": 1.0092238999786787,
+        "legal_restored": true,
+        "analysis": [
+          {
+            "cp": 0,
+            "mate": null,
+            "depth": 78,
+            "pv": [
+              "d1a1",
+              "e7f6"
+            ],
+            "nodes": 80015
+          },
+          {
+            "cp": 0,
+            "mate": null,
+            "depth": 94,
+            "pv": [
+              "d1a1",
+              "e7f6"
+            ],
+            "nodes": 320148
+          }
+        ],
+        "regret": [
+          209,
+          204
+        ]
+      },
+      "prototype": {
+        "id": "competition-r68-ply-145",
+        "uci": "d1a1",
+        "san": "Ra1",
+        "score": 0,
+        "depth": 7,
+        "nodes": 124928,
+        "seconds": 1.0020423000096343,
+        "legal_restored": true,
+        "analysis": [
+          {
+            "cp": 0,
+            "mate": null,
+            "depth": 78,
+            "pv": [
+              "d1a1",
+              "e7f6"
+            ],
+            "nodes": 80015
+          },
+          {
+            "cp": 0,
+            "mate": null,
+            "depth": 94,
+            "pv": [
+              "d1a1",
+              "e7f6"
+            ],
+            "nodes": 320148
+          }
+        ],
+        "regret": [
+          209,
+          204
+        ]
+      }
+    }
+  ],
+  "new_fits": 0,
+  "new_games": 0,
+  "scope": "Exposed development positions; not a playing-strength estimate."
+}

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\e55_trained_rematch_staged.py", line 109, in <module>
+    main()
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\e55_trained_rematch_staged.py", line 78, in main
+    child(['-X', 'utf8', '-m', 'scripts.validate_package_staged', '--zip', str(OUT / 'candidate.zip'),
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\improvement_king_coordination_gate.py", line 34, in child
+    raise subprocess.CalledProcessError(code, arguments)
+subprocess.CalledProcessError: Command '['-X', 'utf8', '-m', 'scripts.validate_package_staged', '--zip', 'C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\e55-trained-rematch-staged-20260908\\candidate.zip', '--out', 'C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\e55-trained-rematch-staged-20260908\\read-only-check.json', '--clock-ms', '120000', '--calls', '2']' returned non-zero exit status 1.

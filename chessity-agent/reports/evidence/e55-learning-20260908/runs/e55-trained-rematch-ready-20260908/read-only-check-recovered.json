@@ -1,0 +1,60 @@
+{
+  "init_ms": 75026.32070000982,
+  "legal_calls": 2,
+  "clock_ms": 120000,
+  "policy_calls": 2,
+  "alien_verified": false,
+  "selective_alien_verified": true,
+  "selective_alien_choice": "g5f3",
+  "elementary_endgames_verified": true,
+  "extended_endgames_verified": false,
+  "max_move_ms": 3486.171500000637,
+  "peak_working_set_bytes": 234115072,
+  "read_only_checks": {
+    "create_file": "blocked",
+    "delete_file": "blocked",
+    "create_directory": "blocked",
+    "rename_file": "blocked"
+  },
+  "audit": "no filesystem mutations, network or subprocess",
+  "status": "complete",
+  "sha256": "bed3b53d6f5859ee91c98e142295175b638b54b4df6ad125ca6c36dc911a6bfb",
+  "stages": {
+    "status": "complete",
+    "stage": "move-and-feature-checks",
+    "startup_limit_seconds": 90,
+    "post_ready_limit_seconds": 30,
+    "events": [
+      {
+        "event": "ready",
+        "init_ms": 75026.32070000982
+      },
+      {
+        "init_ms": 75026.32070000982,
+        "legal_calls": 2,
+        "clock_ms": 120000,
+        "policy_calls": 2,
+        "alien_verified": false,
+        "selective_alien_verified": true,
+        "selective_alien_choice": "g5f3",
+        "elementary_endgames_verified": true,
+        "extended_endgames_verified": false,
+        "max_move_ms": 3486.171500000637,
+        "peak_working_set_bytes": 234115072,
+        "read_only_checks": {
+          "create_file": "blocked",
+          "delete_file": "blocked",
+          "create_directory": "blocked",
+          "rename_file": "blocked"
+        },
+        "audit": "no filesystem mutations, network or subprocess"
+      }
+    ],
+    "init_ms": 75026.32070000982,
+    "elapsed_seconds": 82.73399999999674,
+    "stderr": ""
+  },
+  "recovery": "Original probe passed; final report serialization introduced a circular reference. Recovered from complete saved telemetry without repeating engine calls.",
+  "source_progress_sha256": "f5cb68c59a1555b46270e7c1607c70e19509be4fa4e37c08956de6aafe858b10",
+  "original_log_sha256": "d2fe76118f7711ad4611e9ff63ffea8a3163e66a359ed532f5149c999be68779"
+}

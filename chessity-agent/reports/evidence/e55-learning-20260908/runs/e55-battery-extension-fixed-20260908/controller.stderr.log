@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\e55_battery_trial_fixed.py", line 184, in <module>
+    main()
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\e55_battery_trial_fixed.py", line 163, in main
+    child(args, OUT / (stage + '.log'), timeout=360)
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\improvement_king_coordination_gate.py", line 34, in child
+    raise subprocess.CalledProcessError(code, arguments)
+subprocess.CalledProcessError: Command '['-X', 'utf8', '-m', 'scripts.e55_battery_trial_fixed', '--stage', 'baseline']' returned non-zero exit status 1.
