@@ -1,0 +1,136 @@
+{
+  "passed": false,
+  "common_finite": 13,
+  "mean_regret": {
+    "baseline": [
+      186.15384615384616,
+      178.69230769230768
+    ],
+    "prototype": [
+      248.23076923076923,
+      240.23076923076923
+    ]
+  },
+  "paired_major_errors": {
+    "baseline": 4,
+    "prototype": 5
+  },
+  "new_major": [
+    "competition-r61-ply-87"
+  ],
+  "new_mate": [],
+  "repaired_100cp": [],
+  "completed_depths": {
+    "baseline": [
+      4,
+      4,
+      3,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      3,
+      1,
+      6,
+      7,
+      7
+    ],
+    "prototype": [
+      4,
+      4,
+      4,
+      4,
+      3,
+      4,
+      4,
+      5,
+      4,
+      3,
+      1,
+      6,
+      7,
+      7
+    ]
+  },
+  "draw_case": {
+    "id": "competition-r68-ply-145",
+    "baseline": {
+      "id": "competition-r68-ply-145",
+      "uci": "d1a1",
+      "san": "Ra1",
+      "score": 0,
+      "depth": 7,
+      "nodes": 193536,
+      "seconds": 1.0054004999692552,
+      "repeats_played": true,
+      "legal": true,
+      "restored": true,
+      "analysis": [
+        {
+          "cp": 0,
+          "mate": null,
+          "depth": 78,
+          "pv": [
+            "d1a1",
+            "e7f6"
+          ],
+          "nodes": 80015
+        },
+        {
+          "cp": 0,
+          "mate": null,
+          "depth": 94,
+          "pv": [
+            "d1a1",
+            "e7f6"
+          ],
+          "nodes": 320148
+        }
+      ],
+      "regret": [
+        209,
+        204
+      ]
+    },
+    "prototype": {
+      "id": "competition-r68-ply-145",
+      "uci": "d1a1",
+      "san": "Ra1",
+      "score": 0,
+      "depth": 7,
+      "nodes": 184320,
+      "seconds": 1.0010750999790616,
+      "legal": true,
+      "restored": true,
+      "analysis": [
+        {
+          "cp": 0,
+          "mate": null,
+          "depth": 78,
+          "pv": [
+            "d1a1",
+            "e7f6"
+          ],
+          "nodes": 80015
+        },
+        {
+          "cp": 0,
+          "mate": null,
+          "depth": 94,
+          "pv": [
+            "d1a1",
+            "e7f6"
+          ],
+          "nodes": 320148
+        }
+      ],
+      "regret": [
+        209,
+        204
+      ]
+    }
+  },
+  "limitation": "Exposed development positions; no Elo or full-game claim."
+}

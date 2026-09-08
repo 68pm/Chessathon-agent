@@ -76,3 +76,5 @@ Rated screen: **2400 0W1D1L; 2600 0W0D2L**, with no failures. [Full results](rep
 | [v1.53](versions/v1.53/chessity-agent-v1.53.zip) | Bounded forcing checks near the enemy king | Provisional: 1W0D1L vs52; rated2400 0W1D1L and2600 0W0D2L; no calibrated Elo |
 
 All 54 numbered versions are retained chronologically. A higher version number alone is not evidence of strength.
+
+[Recent competition losses and draw: old/current comparison, verified cases and rejected fixes](reports/COMPETITION_LOSSES_RESULTS_20260908.md). Recommendation remains v1.53.
