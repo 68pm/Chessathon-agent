@@ -26,3 +26,5 @@ no repository write-access grants or live competition submissions were made.
 [Rook-regression diagnosis](chessity-agent/reports/ROOK_REGRESSION_DIAGNOSIS_20260908.md): full-window values confirm a horizon-dependent preference; no new upload is selected.
 
 [Direct-check ordering pilot](chessity-agent/reports/DIRECT_CHECK_ORDER_RESULTS_20260908.md): tactical gate failed; selected upload remains v1.51.
+
+[Pawn-proof/check-extension combination](chessity-agent/reports/PAWN_CHECK_RESULTS_20260908.md): gate failed; selected upload remains v1.51.
