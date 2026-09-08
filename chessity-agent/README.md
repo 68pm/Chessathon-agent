@@ -6,13 +6,15 @@ Bounded checking continuations repair a diagnosed tactical miss. Read-only
 validation passed and the 120s + 0.5s comparison scored **1 win, 0 draws, 1 loss
 against v1.52**, with no failures on either side. Both Black sides won; this small
 pair does not establish overall superiority or calibrated Elo. No neural weights
-changed, and v1.52 remains a fallback. This build has not played rated opponents.
+changed, and v1.52 remains a fallback. Its rated results appear below.
 
 [Current results](reports/IMPROVEMENT_RESULTS.md) ·
 [Tactical evidence](reports/NEAR_QUEEN_CHECKS_RESULTS_20260908.md)
 
 Inference is read-only and uses no network or subprocesses. No live competition
 submission or repository permission changes occurred. The long study is cancelled.
+
+Rated screen: **2400 0W1D1L; 2600 0W0D2L**, with no failures. [Full results](reports/NEAR_QUEEN_RATED_RESULTS_20260908.md). No rated opponent beaten by53 yet.
 
 ## Versions
 
@@ -71,6 +73,6 @@ submission or repository permission changes occurred. The long study is cancelle
 | [v1.50](versions/v1.50/chessity-agent-v1.50.zip) | Complete root compilation before readiness | Archival only: readiness and read-only checks passed; instrumented protocol initialization failed; superseded startup experiment |
 | [v1.51](versions/v1.51/chessity-agent-v1.51.zip) | Completed warmup with plain compiler diagnostics | Preserved v1.51 startup fallback; provisional tactical recommendation is nowv1.52 |
 | [v1.52](versions/v1.52/chessity-agent-v1.52.zip) | Bounded check search and coordinated king-pressure evaluation | Provisional:1W0D1L vs51; rated2400 0W1D1L and2600 0W0D2L; no Elo established |
-| [v1.53](versions/v1.53/chessity-agent-v1.53.zip) | Bounded forcing checks near the enemy king | Provisional: tactical gate passed; 1W0D1L vs v1.52; no calibrated Elo |
+| [v1.53](versions/v1.53/chessity-agent-v1.53.zip) | Bounded forcing checks near the enemy king | Provisional: 1W0D1L vs52; rated2400 0W1D1L and2600 0W0D2L; no calibrated Elo |
 
 All 54 numbered versions are retained chronologically. A higher version number alone is not evidence of strength.

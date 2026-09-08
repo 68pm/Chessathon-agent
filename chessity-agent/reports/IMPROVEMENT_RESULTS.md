@@ -50,7 +50,7 @@ compatible network objective. The reviewed games provide the targeted data;
 broader game downloads and unchanged training epochs are not justified yet.
 
 The highest opponent this exact build has beaten is **Chessity v1.52**, whose
-Elo is uncalibrated. It has no results against nominal 2400/2600/2800/3000 yet.
+Elo is uncalibrated. Its subsequent rated screen is recorded below.
 No older version's wins are attributed to it. The long consistency study remains
 cancelled. Submitted inference is read-only, without network or subprocesses;
 no live competition upload or repository permission changes were made.
@@ -58,3 +58,17 @@ no live competition upload or repository permission changes were made.
 [Tactical evidence](NEAR_QUEEN_CHECKS_RESULTS_20260908.md) ·
 [Original practical rules](NEAR_QUEEN_CHECKS_PRACTICAL_20260908.md) ·
 [All practical evidence](evidence/near-queen-practical-20260908/manifest.json)
+
+
+## Completed rated screen: 8 September
+
+**Nominal2400: 0 wins, 1 draw, 1 loss. Nominal2600: 0 wins, 0 draws, 2 losses.**
+One threefold draw and three checkmate losses; no failures on either side.
+No rated opponent has been defeated by this build. Its recommendation remains
+provisional; neither higher overall strength nor a calibrated Elo is established.
+
+Review of160 own moves found7 finite paired200cp errors and17 mate-scored rows.
+The first loss developed in the opening; the other two first warnings were in
+the middlegame. Next work examines defensive continuations before another fit.
+
+[Full rated results and diagnosis](NEAR_QUEEN_RATED_RESULTS_20260908.md).
