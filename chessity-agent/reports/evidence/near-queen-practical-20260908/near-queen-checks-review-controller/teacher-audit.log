@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\near_queen_checks_review.py", line 69, in <module>
+    main()
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\near_queen_checks_review.py", line 32, in main
+    save_json(out / 'preparation.json', prep)
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\alien_rating_ladder.py", line 35, in save_json
+    temporary.write_text(json.dumps(value, indent=2), encoding="utf-8")
+  File "C:\Users\disea\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py", line 1047, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\disea\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\improvement-loop-20260907\\cycle-35-review\\preparation.json.tmp'

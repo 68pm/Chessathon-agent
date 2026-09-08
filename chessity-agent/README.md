@@ -1,22 +1,18 @@
 # chessity-agent
 
-**Recommended competition upload: v1.52 (provisional).** [Download ZIP](latest/chessity-agent.zip).
+**Recommended competition upload: v1.53 (provisional).** [Download ZIP](latest/chessity-agent.zip).
 
-The engine repairs more of the diagnosed tactical mistakes and passed strict
-read-only checks. Its short120+0.5 comparison scored **1 win,0 draws,1 loss against
-v1.51**, with no runtime or clock failures on either side. A tied two-game pair
-does not establish higher overall playing strength or Elo. v1.51 is preserved
-as fallback; no new neural weights were fitted for this release.
+Bounded checking continuations repair a diagnosed tactical miss. Read-only
+validation passed and the 120s + 0.5s comparison scored **1 win, 0 draws, 1 loss
+against v1.52**, with no failures on either side. Both Black sides won; this small
+pair does not establish overall superiority or calibrated Elo. No neural weights
+changed, and v1.52 remains a fallback. This build has not played rated opponents.
 
-[Current results and limitations](reports/IMPROVEMENT_RESULTS.md) ·
-[Tactical gate](reports/TACTICAL_PILOT_29_20260908.md) ·
-[Previous v1.51 results](reports/STARTUP_RECOVERY_RESULTS_20260908.md)
+[Current results](reports/IMPROVEMENT_RESULTS.md) ·
+[Tactical evidence](reports/NEAR_QUEEN_CHECKS_RESULTS_20260908.md)
 
-Inference uses no filesystem writes, network or subprocess. Visitors can read
-and download; no repository permission grants or live competition upload occurred.
-The long consistency study remains cancelled.
-
-Rated screen: **2400 0W1D1L;2600 0W0D2L**, with no failures. [Full results](reports/KING_COORDINATION_RATED_RESULTS_20260908.md). No rated opponent beaten by52 yet.
+Inference is read-only and uses no network or subprocesses. No live competition
+submission or repository permission changes occurred. The long study is cancelled.
 
 ## Versions
 
@@ -75,5 +71,6 @@ Rated screen: **2400 0W1D1L;2600 0W0D2L**, with no failures. [Full results](repo
 | [v1.50](versions/v1.50/chessity-agent-v1.50.zip) | Complete root compilation before readiness | Archival only: readiness and read-only checks passed; instrumented protocol initialization failed; superseded startup experiment |
 | [v1.51](versions/v1.51/chessity-agent-v1.51.zip) | Completed warmup with plain compiler diagnostics | Preserved v1.51 startup fallback; provisional tactical recommendation is nowv1.52 |
 | [v1.52](versions/v1.52/chessity-agent-v1.52.zip) | Bounded check search and coordinated king-pressure evaluation | Provisional:1W0D1L vs51; rated2400 0W1D1L and2600 0W0D2L; no Elo established |
+| [v1.53](versions/v1.53/chessity-agent-v1.53.zip) | Bounded forcing checks near the enemy king | Provisional: tactical gate passed; 1W0D1L vs v1.52; no calibrated Elo |
 
-All53 numbered versions are retained chronologically. Each source folder matches its adjacent ZIP. Failed experiments remain archived; version number alone is not strength evidence.
+All 54 numbered versions are retained chronologically. A higher version number alone is not evidence of strength.

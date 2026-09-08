@@ -20,7 +20,6 @@ def main():
     assert len(report['games']) == len(report['schedule']) == 2
     assert sorted(g['candidate_white'] for g in report['games']) == [False, True]
     assert not (out / 'preparation.json').exists(), 'Preserve the original review attempt'
-    out.mkdir(parents=True, exist_ok=False)
     count = sum(m['white'] == g['candidate_white'] for g in report['games'] for m in g['moves'])
     paths = ['scripts/near_queen_checks_review.py', 'scripts/improvement_audit.py',
              'scripts/improvement_phase_report.py', 'training/puzzle_verifier.py',

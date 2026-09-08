@@ -1,0 +1,1305 @@
+{
+  "status": "complete",
+  "label": "near-queen-checks-v1-vs52",
+  "candidate": "candidates\\compiled-near-queen-checks-v1",
+  "matches_sha256": "f38b9f1916db6fae18b86764e92427bbef55deb2e1140bf3b8b473cd0bd2d4a7",
+  "audit_sha256": "dff42a01a881f2de1f4ac2d76484562ce86fea08929c7cbd6423a9a1edc4cc74",
+  "source_code_sha256": "20a834c22cb09f1e320eefc3c44aac7c069ffa2df8bf8f5bafbd846f241115db",
+  "teacher_context": {
+    "source_sha256": "f38b9f1916db6fae18b86764e92427bbef55deb2e1140bf3b8b473cd0bd2d4a7",
+    "teacher_sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0",
+    "source_code_sha256": "883f9c78c8c890e9ffcad0aca59dbc79f87e832be57e817e1a9f518b26680e33",
+    "screen_nodes": 20000,
+    "verify_nodes": [
+      80000,
+      320000
+    ]
+  },
+  "new_teacher_nodes": 0,
+  "definitions": {
+    "endgame_material_phase_max": 8,
+    "opening_fullmove_max": 12,
+    "material_weights": {
+      "knight": 1,
+      "bishop": 1,
+      "rook": 2,
+      "queen": 4
+    },
+    "verified_large_error_cp": 200,
+    "losing_cutoff_cp": -200,
+    "minimum_finite_crossing_gap_cp": 80,
+    "squandered_best_min_cp": 200,
+    "squandered_played_max_cp": 100
+  },
+  "match_summary": {
+    "incumbent": {
+      "games": 2,
+      "wins": 1,
+      "draws": 0,
+      "losses": 1,
+      "score": 0.5,
+      "completed_pairs": 1,
+      "pair_bootstrap_95": [
+        0.5,
+        0.5
+      ],
+      "terminations": {
+        "checkmate": 2
+      },
+      "candidate_failures": 0
+    }
+  },
+  "groups": {
+    "incumbent": {
+      "games": 2,
+      "wins": 1,
+      "draws": 0,
+      "losses": 1,
+      "loss_first_warning_phase": {
+        "opening": 0,
+        "middlegame": 1,
+        "endgame": 0,
+        "unresolved": 0
+      },
+      "loss_first_losing_transition_phase": {
+        "opening": 0,
+        "middlegame": 1,
+        "endgame": 0,
+        "unresolved": 0
+      },
+      "loss_terminal_phase": {
+        "middlegame": 1
+      },
+      "nonwin_first_squandered_advantage_phase": {
+        "opening": 0,
+        "middlegame": 0,
+        "endgame": 0,
+        "unresolved": 1
+      },
+      "phase_exposure": {
+        "opening": {
+          "own_moves": 10,
+          "large_cp_errors": 0,
+          "mate_scored": 0,
+          "large_errors_per_100_observed_moves": 0.0
+        },
+        "middlegame": {
+          "own_moves": 82,
+          "large_cp_errors": 4,
+          "mate_scored": 1,
+          "large_errors_per_100_observed_moves": 4.878048780487805
+        },
+        "endgame": {
+          "own_moves": 27,
+          "large_cp_errors": 0,
+          "mate_scored": 20,
+          "large_errors_per_100_observed_moves": 0.0
+        }
+      }
+    }
+  },
+  "games": [
+    {
+      "id": 1,
+      "opponent": "incumbent",
+      "score": 0.0,
+      "candidate_white": true,
+      "termination": "checkmate",
+      "terminal": {
+        "phase": "middlegame",
+        "material_phase": 9,
+        "fullmove": 55
+      },
+      "phase_exposure": {
+        "opening": {
+          "own_moves": 5,
+          "large_cp_errors": 0,
+          "mate_scored": 0
+        },
+        "middlegame": {
+          "own_moves": 42,
+          "large_cp_errors": 2,
+          "mate_scored": 1
+        },
+        "endgame": {
+          "own_moves": 0,
+          "large_cp_errors": 0,
+          "mate_scored": 0
+        }
+      },
+      "first_warning": {
+        "id": "game-001-ply-036",
+        "game_ply": 36,
+        "phase": "middlegame",
+        "material_phase": 22,
+        "fullmove": 26,
+        "large_cp_error": true,
+        "losing_transition": true,
+        "mate_loss_transition": false,
+        "squandered_advantage": false,
+        "mate_scored": false,
+        "fen": "1r4k1/n4pp1/B2p2qp/b7/P1R1P1b1/5N2/1r1BQPPP/3R2K1 w - - 3 26",
+        "played": "c4d4",
+        "clock_ms": 49052.47110023629,
+        "alternative_by_budget": [
+          "h2h3",
+          "h2h3"
+        ],
+        "verification": [
+          {
+            "best": {
+              "cp": -101,
+              "mate": null,
+              "depth": 16,
+              "pv": [
+                "h2h3",
+                "g4h3",
+                "e2f1",
+                "a5d2",
+                "f3d2",
+                "h3g4",
+                "f2f3",
+                "g4d7",
+                "c4c7",
+                "d7a4",
+                "d1b1",
+                "g6g5",
+                "b1b2",
+                "b8b2",
+                "d2c4",
+                "b2c2",
+                "c7a7"
+              ],
+              "nodes": 80047
+            },
+            "played": {
+              "cp": -388,
+              "mate": null,
+              "depth": 13,
+              "pv": [
+                "c4d4",
+                "a7c6",
+                "d4d5",
+                "b8b3",
+                "g1h1",
+                "b2d2",
+                "d5d2",
+                "a5d2",
+                "e2d2",
+                "b3f3",
+                "d1b1",
+                "f3a3",
+                "a6f1",
+                "g6e4"
+              ],
+              "nodes": 80009
+            }
+          },
+          {
+            "best": {
+              "cp": -119,
+              "mate": null,
+              "depth": 18,
+              "pv": [
+                "h2h3",
+                "g4h3",
+                "f3h4",
+                "g6f6",
+                "h4f3",
+                "h3g4",
+                "e4e5",
+                "g4f3",
+                "e2f3",
+                "f6f3",
+                "g2f3",
+                "a5d2",
+                "c4c7",
+                "d2a5",
+                "c7a7",
+                "a5b6",
+                "a7d7",
+                "b6f2",
+                "g1f1",
+                "f2h4",
+                "d7d6"
+              ],
+              "nodes": 320043
+            },
+            "played": {
+              "cp": -434,
+              "mate": null,
+              "depth": 17,
+              "pv": [
+                "c4d4",
+                "a7c6",
+                "d4d3",
+                "c6e5",
+                "f3e5",
+                "g4e2",
+                "e5g6",
+                "a5d2",
+                "d3d2",
+                "b2d2",
+                "a6e2",
+                "d2e2",
+                "g6e7",
+                "g8f8",
+                "e7f5",
+                "b8a8"
+              ],
+              "nodes": 320076
+            }
+          }
+        ],
+        "start_fen": "r1bq1rk1/2ppbppp/p1n2n2/1p2p3/4P3/1B3N2/PPPPQPPP/RNB2RK1 w - - 2 8",
+        "history": [
+          "b1c3",
+          "e7c5",
+          "a2a4",
+          "b5b4",
+          "c3d5",
+          "d7d6",
+          "c2c3",
+          "c8e6",
+          "d2d3",
+          "b4c3",
+          "b2c3",
+          "a8b8",
+          "b3c4",
+          "h7h6",
+          "d5f6",
+          "d8f6",
+          "c4a6",
+          "b8b3",
+          "c1d2",
+          "f8b8",
+          "a6b5",
+          "c6a7",
+          "b5a6",
+          "b3b2",
+          "a1c1",
+          "e6g4",
+          "f1d1",
+          "f6g6",
+          "d3d4",
+          "e5d4",
+          "c3d4",
+          "c5d4",
+          "c1c7",
+          "d4b6",
+          "c7c4",
+          "b6a5"
+        ]
+      },
+      "first_large_error": {
+        "id": "game-001-ply-036",
+        "game_ply": 36,
+        "phase": "middlegame",
+        "material_phase": 22,
+        "fullmove": 26,
+        "large_cp_error": true,
+        "losing_transition": true,
+        "mate_loss_transition": false,
+        "squandered_advantage": false,
+        "mate_scored": false,
+        "fen": "1r4k1/n4pp1/B2p2qp/b7/P1R1P1b1/5N2/1r1BQPPP/3R2K1 w - - 3 26",
+        "played": "c4d4",
+        "clock_ms": 49052.47110023629,
+        "alternative_by_budget": [
+          "h2h3",
+          "h2h3"
+        ],
+        "verification": [
+          {
+            "best": {
+              "cp": -101,
+              "mate": null,
+              "depth": 16,
+              "pv": [
+                "h2h3",
+                "g4h3",
+                "e2f1",
+                "a5d2",
+                "f3d2",
+                "h3g4",
+                "f2f3",
+                "g4d7",
+                "c4c7",
+                "d7a4",
+                "d1b1",
+                "g6g5",
+                "b1b2",
+                "b8b2",
+                "d2c4",
+                "b2c2",
+                "c7a7"
+              ],
+              "nodes": 80047
+            },
+            "played": {
+              "cp": -388,
+              "mate": null,
+              "depth": 13,
+              "pv": [
+                "c4d4",
+                "a7c6",
+                "d4d5",
+                "b8b3",
+                "g1h1",
+                "b2d2",
+                "d5d2",
+                "a5d2",
+                "e2d2",
+                "b3f3",
+                "d1b1",
+                "f3a3",
+                "a6f1",
+                "g6e4"
+              ],
+              "nodes": 80009
+            }
+          },
+          {
+            "best": {
+              "cp": -119,
+              "mate": null,
+              "depth": 18,
+              "pv": [
+                "h2h3",
+                "g4h3",
+                "f3h4",
+                "g6f6",
+                "h4f3",
+                "h3g4",
+                "e4e5",
+                "g4f3",
+                "e2f3",
+                "f6f3",
+                "g2f3",
+                "a5d2",
+                "c4c7",
+                "d2a5",
+                "c7a7",
+                "a5b6",
+                "a7d7",
+                "b6f2",
+                "g1f1",
+                "f2h4",
+                "d7d6"
+              ],
+              "nodes": 320043
+            },
+            "played": {
+              "cp": -434,
+              "mate": null,
+              "depth": 17,
+              "pv": [
+                "c4d4",
+                "a7c6",
+                "d4d3",
+                "c6e5",
+                "f3e5",
+                "g4e2",
+                "e5g6",
+                "a5d2",
+                "d3d2",
+                "b2d2",
+                "a6e2",
+                "d2e2",
+                "g6e7",
+                "g8f8",
+                "e7f5",
+                "b8a8"
+              ],
+              "nodes": 320076
+            }
+          }
+        ],
+        "start_fen": "r1bq1rk1/2ppbppp/p1n2n2/1p2p3/4P3/1B3N2/PPPPQPPP/RNB2RK1 w - - 2 8",
+        "history": [
+          "b1c3",
+          "e7c5",
+          "a2a4",
+          "b5b4",
+          "c3d5",
+          "d7d6",
+          "c2c3",
+          "c8e6",
+          "d2d3",
+          "b4c3",
+          "b2c3",
+          "a8b8",
+          "b3c4",
+          "h7h6",
+          "d5f6",
+          "d8f6",
+          "c4a6",
+          "b8b3",
+          "c1d2",
+          "f8b8",
+          "a6b5",
+          "c6a7",
+          "b5a6",
+          "b3b2",
+          "a1c1",
+          "e6g4",
+          "f1d1",
+          "f6g6",
+          "d3d4",
+          "e5d4",
+          "c3d4",
+          "c5d4",
+          "c1c7",
+          "d4b6",
+          "c7c4",
+          "b6a5"
+        ]
+      },
+      "first_losing_transition": {
+        "id": "game-001-ply-036",
+        "game_ply": 36,
+        "phase": "middlegame",
+        "material_phase": 22,
+        "fullmove": 26,
+        "large_cp_error": true,
+        "losing_transition": true,
+        "mate_loss_transition": false,
+        "squandered_advantage": false,
+        "mate_scored": false,
+        "fen": "1r4k1/n4pp1/B2p2qp/b7/P1R1P1b1/5N2/1r1BQPPP/3R2K1 w - - 3 26",
+        "played": "c4d4",
+        "clock_ms": 49052.47110023629,
+        "alternative_by_budget": [
+          "h2h3",
+          "h2h3"
+        ],
+        "verification": [
+          {
+            "best": {
+              "cp": -101,
+              "mate": null,
+              "depth": 16,
+              "pv": [
+                "h2h3",
+                "g4h3",
+                "e2f1",
+                "a5d2",
+                "f3d2",
+                "h3g4",
+                "f2f3",
+                "g4d7",
+                "c4c7",
+                "d7a4",
+                "d1b1",
+                "g6g5",
+                "b1b2",
+                "b8b2",
+                "d2c4",
+                "b2c2",
+                "c7a7"
+              ],
+              "nodes": 80047
+            },
+            "played": {
+              "cp": -388,
+              "mate": null,
+              "depth": 13,
+              "pv": [
+                "c4d4",
+                "a7c6",
+                "d4d5",
+                "b8b3",
+                "g1h1",
+                "b2d2",
+                "d5d2",
+                "a5d2",
+                "e2d2",
+                "b3f3",
+                "d1b1",
+                "f3a3",
+                "a6f1",
+                "g6e4"
+              ],
+              "nodes": 80009
+            }
+          },
+          {
+            "best": {
+              "cp": -119,
+              "mate": null,
+              "depth": 18,
+              "pv": [
+                "h2h3",
+                "g4h3",
+                "f3h4",
+                "g6f6",
+                "h4f3",
+                "h3g4",
+                "e4e5",
+                "g4f3",
+                "e2f3",
+                "f6f3",
+                "g2f3",
+                "a5d2",
+                "c4c7",
+                "d2a5",
+                "c7a7",
+                "a5b6",
+                "a7d7",
+                "b6f2",
+                "g1f1",
+                "f2h4",
+                "d7d6"
+              ],
+              "nodes": 320043
+            },
+            "played": {
+              "cp": -434,
+              "mate": null,
+              "depth": 17,
+              "pv": [
+                "c4d4",
+                "a7c6",
+                "d4d3",
+                "c6e5",
+                "f3e5",
+                "g4e2",
+                "e5g6",
+                "a5d2",
+                "d3d2",
+                "b2d2",
+                "a6e2",
+                "d2e2",
+                "g6e7",
+                "g8f8",
+                "e7f5",
+                "b8a8"
+              ],
+              "nodes": 320076
+            }
+          }
+        ],
+        "start_fen": "r1bq1rk1/2ppbppp/p1n2n2/1p2p3/4P3/1B3N2/PPPPQPPP/RNB2RK1 w - - 2 8",
+        "history": [
+          "b1c3",
+          "e7c5",
+          "a2a4",
+          "b5b4",
+          "c3d5",
+          "d7d6",
+          "c2c3",
+          "c8e6",
+          "d2d3",
+          "b4c3",
+          "b2c3",
+          "a8b8",
+          "b3c4",
+          "h7h6",
+          "d5f6",
+          "d8f6",
+          "c4a6",
+          "b8b3",
+          "c1d2",
+          "f8b8",
+          "a6b5",
+          "c6a7",
+          "b5a6",
+          "b3b2",
+          "a1c1",
+          "e6g4",
+          "f1d1",
+          "f6g6",
+          "d3d4",
+          "e5d4",
+          "c3d4",
+          "c5d4",
+          "c1c7",
+          "d4b6",
+          "c7c4",
+          "b6a5"
+        ]
+      },
+      "first_mate_loss_transition": null,
+      "first_squandered_advantage": null
+    },
+    {
+      "id": 2,
+      "opponent": "incumbent",
+      "score": 1.0,
+      "candidate_white": false,
+      "termination": "checkmate",
+      "terminal": {
+        "phase": "endgame",
+        "material_phase": 5,
+        "fullmove": 80
+      },
+      "phase_exposure": {
+        "opening": {
+          "own_moves": 5,
+          "large_cp_errors": 0,
+          "mate_scored": 0
+        },
+        "middlegame": {
+          "own_moves": 40,
+          "large_cp_errors": 2,
+          "mate_scored": 0
+        },
+        "endgame": {
+          "own_moves": 27,
+          "large_cp_errors": 0,
+          "mate_scored": 20
+        }
+      },
+      "first_warning": {
+        "id": "game-002-ply-017",
+        "game_ply": 17,
+        "phase": "middlegame",
+        "material_phase": 22,
+        "fullmove": 16,
+        "large_cp_error": false,
+        "losing_transition": true,
+        "mate_loss_transition": false,
+        "squandered_advantage": false,
+        "mate_scored": false,
+        "fen": "1r3rk1/2p2pp1/B1npb1q1/P1b1p2p/1p2P2N/2P5/1P1PQPPP/R1B2RK1 b - - 2 16",
+        "played": "g6g5",
+        "clock_ms": 84937.86750000436,
+        "alternative_by_budget": [
+          "g6g4",
+          "g6g4"
+        ],
+        "verification": [
+          {
+            "best": {
+              "cp": -104,
+              "mate": null,
+              "depth": 16,
+              "pv": [
+                "g6g4",
+                "h4f3",
+                "b8a8",
+                "h2h3",
+                "g4g6",
+                "g1h1",
+                "f8b8",
+                "a6b5",
+                "c6a5",
+                "d2d4",
+                "c5b6",
+                "d4d5",
+                "e6c8",
+                "f3h4",
+                "g6f6",
+                "e2h5",
+                "a5b3",
+                "a1a8",
+                "b8a8"
+              ],
+              "nodes": 80034
+            },
+            "played": {
+              "cp": -214,
+              "mate": null,
+              "depth": 15,
+              "pv": [
+                "g6g5",
+                "d2d4",
+                "g5h4",
+                "d4c5",
+                "b4c3",
+                "b2c3",
+                "d6d5",
+                "e4d5",
+                "e6d5",
+                "f1d1",
+                "f8d8",
+                "c1e3",
+                "e5e4",
+                "a6b5",
+                "c6e5"
+              ],
+              "nodes": 31981
+            }
+          },
+          {
+            "best": {
+              "cp": -112,
+              "mate": null,
+              "depth": 17,
+              "pv": [
+                "g6g4",
+                "h4f3",
+                "b8a8",
+                "h2h3",
+                "g4g6",
+                "g1h1",
+                "f8b8",
+                "a6b5",
+                "c6a5",
+                "d2d4",
+                "c5b6",
+                "d4e5",
+                "a5b3",
+                "a1a8",
+                "b8a8",
+                "c1f4",
+                "b4c3",
+                "b2c3",
+                "d6e5",
+                "f3e5",
+                "g6f6",
+                "f4h2",
+                "a8a5",
+                "f2f4",
+                "b3d2"
+              ],
+              "nodes": 240262
+            },
+            "played": {
+              "cp": -253,
+              "mate": null,
+              "depth": 18,
+              "pv": [
+                "g6g5",
+                "d2d4",
+                "g5h4",
+                "d4c5",
+                "b4c3",
+                "b2c3",
+                "d6d5",
+                "e4d5",
+                "e6d5",
+                "f1d1",
+                "d5b3",
+                "d1e1",
+                "e5e4",
+                "c1e3",
+                "b3d5",
+                "e1d1",
+                "d5e6",
+                "h2h3"
+              ],
+              "nodes": 214856
+            }
+          }
+        ],
+        "start_fen": "r1bq1rk1/2ppbppp/p1n2n2/1p2p3/4P3/1B3N2/PPPPQPPP/RNB2RK1 w - - 2 8",
+        "history": [
+          "b1c3",
+          "e7c5",
+          "a2a4",
+          "b5b4",
+          "c3d5",
+          "d7d6",
+          "c2c3",
+          "c8e6",
+          "a4a5",
+          "h7h5",
+          "b3c4",
+          "a8b8",
+          "d5f6",
+          "d8f6",
+          "c4a6",
+          "f6g6",
+          "f3h4"
+        ]
+      },
+      "first_large_error": {
+        "id": "game-002-ply-029",
+        "game_ply": 29,
+        "phase": "middlegame",
+        "material_phase": 20,
+        "fullmove": 22,
+        "large_cp_error": true,
+        "losing_transition": false,
+        "mate_loss_transition": false,
+        "squandered_advantage": false,
+        "mate_scored": false,
+        "fen": "3r2k1/2p2pp1/B1n1b3/P1B1p2p/4P2q/1rP5/4QPPP/R1R3K1 b - - 2 22",
+        "played": "h4g5",
+        "clock_ms": 63527.681300009135,
+        "alternative_by_budget": [
+          "d8a8",
+          "d8a8"
+        ],
+        "verification": [
+          {
+            "best": {
+              "cp": -280,
+              "mate": null,
+              "depth": 14,
+              "pv": [
+                "d8a8",
+                "h2h3",
+                "h4f6",
+                "c5e3",
+                "b3b8",
+                "c1d1",
+                "f6h4",
+                "e2f1",
+                "h4e4"
+              ],
+              "nodes": 44245
+            },
+            "played": {
+              "cp": -495,
+              "mate": null,
+              "depth": 14,
+              "pv": [
+                "h4g5",
+                "c5e3",
+                "g5e7",
+                "a6c4",
+                "b3a3",
+                "c4e6",
+                "f7e6",
+                "e2h5",
+                "c6a5",
+                "a1a3",
+                "e7a3",
+                "h5e5",
+                "a5b3",
+                "e5e6",
+                "g8h7",
+                "e6f5",
+                "h7h8"
+              ],
+              "nodes": 24088
+            }
+          },
+          {
+            "best": {
+              "cp": -230,
+              "mate": null,
+              "depth": 17,
+              "pv": [
+                "d8a8",
+                "h2h3",
+                "b3b8",
+                "c5e3",
+                "h4e7",
+                "c1d1",
+                "g7g6",
+                "d1e1",
+                "b8b3",
+                "e1c1",
+                "b3b8",
+                "g1h1",
+                "g8g7",
+                "h1h2",
+                "e7f6",
+                "h2g1"
+              ],
+              "nodes": 279275
+            },
+            "played": {
+              "cp": -537,
+              "mate": null,
+              "depth": 19,
+              "pv": [
+                "h4g5",
+                "c5e3",
+                "g5g4",
+                "a6d3",
+                "g4e2",
+                "d3e2",
+                "d8a8",
+                "a5a6",
+                "b3b2",
+                "e2f1",
+                "g8f8",
+                "a1a4",
+                "b2b3",
+                "a6a7",
+                "f8e7",
+                "a4a6",
+                "c6d8",
+                "c1d1",
+                "b3c3"
+              ],
+              "nodes": 320037
+            }
+          }
+        ],
+        "start_fen": "r1bq1rk1/2ppbppp/p1n2n2/1p2p3/4P3/1B3N2/PPPPQPPP/RNB2RK1 w - - 2 8",
+        "history": [
+          "b1c3",
+          "e7c5",
+          "a2a4",
+          "b5b4",
+          "c3d5",
+          "d7d6",
+          "c2c3",
+          "c8e6",
+          "a4a5",
+          "h7h5",
+          "b3c4",
+          "a8b8",
+          "d5f6",
+          "d8f6",
+          "c4a6",
+          "f6g6",
+          "f3h4",
+          "g6g5",
+          "d2d4",
+          "g5h4",
+          "d4c5",
+          "b4c3",
+          "b2c3",
+          "d6c5",
+          "c1e3",
+          "b8b3",
+          "e3c5",
+          "f8d8",
+          "f1c1"
+        ]
+      },
+      "first_losing_transition": {
+        "id": "game-002-ply-017",
+        "game_ply": 17,
+        "phase": "middlegame",
+        "material_phase": 22,
+        "fullmove": 16,
+        "large_cp_error": false,
+        "losing_transition": true,
+        "mate_loss_transition": false,
+        "squandered_advantage": false,
+        "mate_scored": false,
+        "fen": "1r3rk1/2p2pp1/B1npb1q1/P1b1p2p/1p2P2N/2P5/1P1PQPPP/R1B2RK1 b - - 2 16",
+        "played": "g6g5",
+        "clock_ms": 84937.86750000436,
+        "alternative_by_budget": [
+          "g6g4",
+          "g6g4"
+        ],
+        "verification": [
+          {
+            "best": {
+              "cp": -104,
+              "mate": null,
+              "depth": 16,
+              "pv": [
+                "g6g4",
+                "h4f3",
+                "b8a8",
+                "h2h3",
+                "g4g6",
+                "g1h1",
+                "f8b8",
+                "a6b5",
+                "c6a5",
+                "d2d4",
+                "c5b6",
+                "d4d5",
+                "e6c8",
+                "f3h4",
+                "g6f6",
+                "e2h5",
+                "a5b3",
+                "a1a8",
+                "b8a8"
+              ],
+              "nodes": 80034
+            },
+            "played": {
+              "cp": -214,
+              "mate": null,
+              "depth": 15,
+              "pv": [
+                "g6g5",
+                "d2d4",
+                "g5h4",
+                "d4c5",
+                "b4c3",
+                "b2c3",
+                "d6d5",
+                "e4d5",
+                "e6d5",
+                "f1d1",
+                "f8d8",
+                "c1e3",
+                "e5e4",
+                "a6b5",
+                "c6e5"
+              ],
+              "nodes": 31981
+            }
+          },
+          {
+            "best": {
+              "cp": -112,
+              "mate": null,
+              "depth": 17,
+              "pv": [
+                "g6g4",
+                "h4f3",
+                "b8a8",
+                "h2h3",
+                "g4g6",
+                "g1h1",
+                "f8b8",
+                "a6b5",
+                "c6a5",
+                "d2d4",
+                "c5b6",
+                "d4e5",
+                "a5b3",
+                "a1a8",
+                "b8a8",
+                "c1f4",
+                "b4c3",
+                "b2c3",
+                "d6e5",
+                "f3e5",
+                "g6f6",
+                "f4h2",
+                "a8a5",
+                "f2f4",
+                "b3d2"
+              ],
+              "nodes": 240262
+            },
+            "played": {
+              "cp": -253,
+              "mate": null,
+              "depth": 18,
+              "pv": [
+                "g6g5",
+                "d2d4",
+                "g5h4",
+                "d4c5",
+                "b4c3",
+                "b2c3",
+                "d6d5",
+                "e4d5",
+                "e6d5",
+                "f1d1",
+                "d5b3",
+                "d1e1",
+                "e5e4",
+                "c1e3",
+                "b3d5",
+                "e1d1",
+                "d5e6",
+                "h2h3"
+              ],
+              "nodes": 214856
+            }
+          }
+        ],
+        "start_fen": "r1bq1rk1/2ppbppp/p1n2n2/1p2p3/4P3/1B3N2/PPPPQPPP/RNB2RK1 w - - 2 8",
+        "history": [
+          "b1c3",
+          "e7c5",
+          "a2a4",
+          "b5b4",
+          "c3d5",
+          "d7d6",
+          "c2c3",
+          "c8e6",
+          "a4a5",
+          "h7h5",
+          "b3c4",
+          "a8b8",
+          "d5f6",
+          "d8f6",
+          "c4a6",
+          "f6g6",
+          "f3h4"
+        ]
+      },
+      "first_mate_loss_transition": null,
+      "first_squandered_advantage": null
+    }
+  ],
+  "review_queue": [
+    {
+      "source_id": "near-queen-checks-v1-vs52:game-001-ply-036",
+      "source_game_id": "near-queen-checks-v1-vs52:1",
+      "opponent": "incumbent",
+      "score": 0.0,
+      "opening": [
+        "e2e4",
+        "e7e5",
+        "g1f3",
+        "b8c6",
+        "f1b5",
+        "a7a6",
+        "b5a4",
+        "g8f6",
+        "e1g1",
+        "f8e7",
+        "d1e2",
+        "b7b5",
+        "a4b3",
+        "e8g8"
+      ],
+      "split": "development_review_queue",
+      "acceptance": "Not yet accepted for fitting; successor stability and partition checks remain required.",
+      "id": "game-001-ply-036",
+      "game_ply": 36,
+      "phase": "middlegame",
+      "material_phase": 22,
+      "fullmove": 26,
+      "large_cp_error": true,
+      "losing_transition": true,
+      "mate_loss_transition": false,
+      "squandered_advantage": false,
+      "mate_scored": false,
+      "fen": "1r4k1/n4pp1/B2p2qp/b7/P1R1P1b1/5N2/1r1BQPPP/3R2K1 w - - 3 26",
+      "played": "c4d4",
+      "clock_ms": 49052.47110023629,
+      "alternative_by_budget": [
+        "h2h3",
+        "h2h3"
+      ],
+      "verification": [
+        {
+          "best": {
+            "cp": -101,
+            "mate": null,
+            "depth": 16,
+            "pv": [
+              "h2h3",
+              "g4h3",
+              "e2f1",
+              "a5d2",
+              "f3d2",
+              "h3g4",
+              "f2f3",
+              "g4d7",
+              "c4c7",
+              "d7a4",
+              "d1b1",
+              "g6g5",
+              "b1b2",
+              "b8b2",
+              "d2c4",
+              "b2c2",
+              "c7a7"
+            ],
+            "nodes": 80047
+          },
+          "played": {
+            "cp": -388,
+            "mate": null,
+            "depth": 13,
+            "pv": [
+              "c4d4",
+              "a7c6",
+              "d4d5",
+              "b8b3",
+              "g1h1",
+              "b2d2",
+              "d5d2",
+              "a5d2",
+              "e2d2",
+              "b3f3",
+              "d1b1",
+              "f3a3",
+              "a6f1",
+              "g6e4"
+            ],
+            "nodes": 80009
+          }
+        },
+        {
+          "best": {
+            "cp": -119,
+            "mate": null,
+            "depth": 18,
+            "pv": [
+              "h2h3",
+              "g4h3",
+              "f3h4",
+              "g6f6",
+              "h4f3",
+              "h3g4",
+              "e4e5",
+              "g4f3",
+              "e2f3",
+              "f6f3",
+              "g2f3",
+              "a5d2",
+              "c4c7",
+              "d2a5",
+              "c7a7",
+              "a5b6",
+              "a7d7",
+              "b6f2",
+              "g1f1",
+              "f2h4",
+              "d7d6"
+            ],
+            "nodes": 320043
+          },
+          "played": {
+            "cp": -434,
+            "mate": null,
+            "depth": 17,
+            "pv": [
+              "c4d4",
+              "a7c6",
+              "d4d3",
+              "c6e5",
+              "f3e5",
+              "g4e2",
+              "e5g6",
+              "a5d2",
+              "d3d2",
+              "b2d2",
+              "a6e2",
+              "d2e2",
+              "g6e7",
+              "g8f8",
+              "e7f5",
+              "b8a8"
+            ],
+            "nodes": 320076
+          }
+        }
+      ],
+      "start_fen": "r1bq1rk1/2ppbppp/p1n2n2/1p2p3/4P3/1B3N2/PPPPQPPP/RNB2RK1 w - - 2 8",
+      "history": [
+        "b1c3",
+        "e7c5",
+        "a2a4",
+        "b5b4",
+        "c3d5",
+        "d7d6",
+        "c2c3",
+        "c8e6",
+        "d2d3",
+        "b4c3",
+        "b2c3",
+        "a8b8",
+        "b3c4",
+        "h7h6",
+        "d5f6",
+        "d8f6",
+        "c4a6",
+        "b8b3",
+        "c1d2",
+        "f8b8",
+        "a6b5",
+        "c6a7",
+        "b5a6",
+        "b3b2",
+        "a1c1",
+        "e6g4",
+        "f1d1",
+        "f6g6",
+        "d3d4",
+        "e5d4",
+        "c3d4",
+        "c5d4",
+        "c1c7",
+        "d4b6",
+        "c7c4",
+        "b6a5"
+      ]
+    }
+  ],
+  "total_verified_large_errors": 4,
+  "scope": "Operational phases; first verified warning is not proof of the cause of a loss. Screening can miss errors. Mate uncertainty and losses without warnings retained. Candidate/opponent groups stay separate. Exposed development data, no Elo or consistency inference, no new accepted training labels."
+}

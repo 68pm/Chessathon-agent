@@ -1,0 +1,37 @@
+{
+  "status": "selected_provisional_practical_revision",
+  "selected": "v1.53",
+  "fallback": "v1.52",
+  "utc": "2026-09-08T14:13:03.457729+00:00",
+  "candidate_sha256": "5747acec37da25ea79704e49d19e45bf23bd2af5842a14eaf66bf6ecf2791315",
+  "changed_runtime_files": [
+    "engine/compiled_core.py"
+  ],
+  "models_and_other_runtime_files_unchanged": true,
+  "rules": {
+    "IMPROVEMENT_CYCLE_35.md": "ecb8693bc76ccd0359e0b03e7661600d9b55d299ea395dea249f12177c06f3c0",
+    "NEAR_QUEEN_CHECKS_PRACTICAL_20260908.md": "a02cc1d01dfdd73b2dbdf0c349b8f8b6746f32583468e345ceb7a5d902dc2f44"
+  },
+  "gate_sha256": "11485ee02c91ce8528a86e88319f37396c9e8de6f11c45ab96aa9f741e5fc4d0",
+  "decision_sha256": "ebbc5690443f6bac4f6582509bcb4aa44c2a4e8a0f26388e4e31924a005c2314",
+  "matches_sha256": "f38b9f1916db6fae18b86764e92427bbef55deb2e1140bf3b8b473cd0bd2d4a7",
+  "phase_sha256": "b50e4f742ede64df0b26f964ed621279e1b8a74d94cad5d0c8980bb995f2d6de",
+  "summary": {
+    "games": 2,
+    "wins": 1,
+    "draws": 0,
+    "losses": 1,
+    "score": 0.5,
+    "completed_pairs": 1,
+    "terminations": {
+      "checkmate": 2
+    },
+    "candidate_failures": 0
+  },
+  "rationale": "Declared tactical improvement gate passed, strict read-only checks passed, clean 50% practical pair.",
+  "limitations": [
+    "One opening pair with both Black sides winning does not prove overall superiority or calibrated Elo.",
+    "No neural weights changed; the separate exchange-ending value error remains unresolved.",
+    "This build has not played nominal rated opponents; older results are not attributed to it."
+  ]
+}

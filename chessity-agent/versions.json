@@ -1,5 +1,5 @@
 {
-  "recommended": "v1.52",
+  "recommended": "v1.53",
   "versions": [
     {
       "version": "v1",
@@ -740,7 +740,7 @@
       "name": "chessity-agent",
       "title": "Bounded check search and coordinated king-pressure evaluation",
       "status": "Provisional:1W0D1L vs51; rated2400 0W1D1L and2600 0W0D2L; no Elo established",
-      "recommended": true,
+      "recommended": false,
       "source_version": "candidates/compiled-king-coordination-v1",
       "sha256": "72604b1b50c2e22200b70068d8ab98d25a96b586a20278ae465c464cd77ee2c8",
       "zip_bytes": 273199,
@@ -766,6 +766,21 @@
         }
       },
       "highest_nominal_opponent_defeated": null
+    },
+    {
+      "version": "v1.53",
+      "name": "chessity-agent",
+      "title": "Bounded forcing checks near the enemy king",
+      "status": "Provisional: tactical gate passed; 1W0D1L vs v1.52; no calibrated Elo",
+      "recommended": true,
+      "source_version": "candidates/compiled-near-queen-checks-v1",
+      "sha256": "5747acec37da25ea79704e49d19e45bf23bd2af5842a14eaf66bf6ecf2791315",
+      "zip_bytes": 273531,
+      "created_utc": "2026-09-08T14:13:03.457729+00:00",
+      "archive": "versions/v1.53/chessity-agent-v1.53.zip",
+      "read_only_smoke_calls": 2,
+      "read_only_status": "passed; both practical games clean",
+      "archive_json_formatting_differs_from_local_folder": []
     }
   ],
   "publication_order": "Preserved development stages; controls and rejected experiments explicitly labelled."

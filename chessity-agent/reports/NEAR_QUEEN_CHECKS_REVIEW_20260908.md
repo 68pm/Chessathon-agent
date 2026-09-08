@@ -28,3 +28,10 @@ Useful learning is second: any later targets must include stronger opponent
 continuations and independently verified descendant values within a compatible
 network objective. These two games and existing tactical cases provide the
 targeted data. This review does not itself train the model or establish Elo.
+
+The first review launch stopped before creating its preparation file or starting
+the teacher: the new wrapper had omitted creation of its output directory.
+The original controller logs, source and plan are preserved. A corrected wrapper
+explicitly creates a fresh output directory; controller02 records its launch.
+There were zero teacher positions, fits or games in the failed launch. The review
+budgets and completed practical outcomes remain unchanged.
