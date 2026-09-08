@@ -1,0 +1,8 @@
+{
+  "output": "runs/improvement-loop-20260907/near-queen-checks-review-controller",
+  "wait_for": ["runs/improvement-loop-20260907/near-queen-checks-practical-controller/controller.json"],
+  "stages": [
+    {"name": "teacher-audit", "module": "scripts.near_queen_checks_review", "arguments": []},
+    {"name": "phase-summary", "module": "scripts.improvement_phase_report", "arguments": ["--matches", "runs/improvement-loop-20260907/cycle-35-pair/comparison-compiled-near-queen-checks-v1/results.json", "--audit", "runs/improvement-loop-20260907/cycle-35-review/audit", "--out", "runs/improvement-loop-20260907/cycle-35-review/phase.json", "--label", "near-queen-checks-v1-vs52"]}
+  ]
+}
