@@ -1,0 +1,306 @@
+...FF.....                                                               [100%]
+================================== FAILURES ===================================
+________ test_recursive_credit_budget_is_inherited_and_never_reset[1] _________
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x00000230A3E8F1A0>
+credits = 1
+
+    @pytest.mark.parametrize('credits', [1, 2])
+    def test_recursive_credit_budget_is_inherited_and_never_reset(monkeypatch, credits):
+        original = core.search.py_func
+        stack, seen = [], []
+    
+        def observed(*args):
+            left = args[-1]
+            assert 0 <= left <= credits
+            if stack:
+                expected = stack[-1]
+                assert left == expected
+            board, state, depth = args[:3]
+            checked = core.attacked(board, state[4 if state[0] == 1 else 5], -state[0])
+            next_left = left - int(checked and depth >= 0 and left > 0)
+            seen.append(left)
+            stack.append(next_left)
+            try:
+                return original(*args)
+            finally:
+                stack.pop()
+    
+        monkeypatch.setattr(core, 'search', observed)
+        board = chess.Board('8/6kp/6p1/1N6/P7/3BqnP1/2P2R1P/6K1 w - - 1 37')
+        with np.errstate(over='ignore'):
+>           _, control = run(board, credits=credits, depth=1, nodes=512)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_check_extensions.py:82: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_check_extensions.py:41: in run
+    value = module.search(*args, credits) if module is core else module.search(*args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_check_extensions.py:75: in observed
+    return original(*args)
+           ^^^^^^^^^^^^^^^
+experiments\check_extensions_core.py:540: in search
+    value = -search(board, state, nextdepth, -beta, -alpha, ply + 1, qdepth + 1 if quiescence else 0,
+tests\test_check_extensions.py:75: in observed
+    return original(*args)
+           ^^^^^^^^^^^^^^^
+experiments\check_extensions_core.py:540: in search
+    value = -search(board, state, nextdepth, -beta, -alpha, ply + 1, qdepth + 1 if quiescence else 0,
+tests\test_check_extensions.py:75: in observed
+    return original(*args)
+           ^^^^^^^^^^^^^^^
+experiments\check_extensions_core.py:540: in search
+    value = -search(board, state, nextdepth, -beta, -alpha, ply + 1, qdepth + 1 if quiescence else 0,
+tests\test_check_extensions.py:75: in observed
+    return original(*args)
+           ^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+board = array([ 0,  0,  0,  0,  0,  0,  0,  6,  0,  0,  0,  0,  0,  0,  0,  0,  0,
+        0,  1,  0,  0, -5,  0,  1,  0,  0, ...
+       -6, -1,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,
+        0,  0,  0,  0,  0,  0,  0,  0,  0])
+state = array([ -1,   0,  -1,   1,   7, 102]), depth = -1, alpha = -31000
+beta = -573, ply = 3, qdepth = 1
+hashes = array([ 7125019697602724510, 17708453829433819455,  4871073449781700402,
+       14180449489198809924,  900901419887906...       0,                    0,                    0,
+                          0,                    0], dtype=uint64)
+hlen = 4, context = 19051522938980510326
+ttkey = array([0, 0, 0, ..., 0, 0, 0], shape=(4096,), dtype=uint64)
+ttcontext = array([0, 0, 0, ..., 0, 0, 0], shape=(4096,), dtype=uint64)
+ttdata = array([[0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0],
+       ...,
+       [0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0]], shape=(4096, 5))
+killers = array([[0, 0],
+       [0, 0],
+       [0, 0],
+       [0, 0],
+       [0, 0],
+       [0, 0],
+       [0, 0],
+       [0, 0]...      [0, 0],
+       [0, 0],
+       [0, 0],
+       [0, 0],
+       [0, 0],
+       [0, 0],
+       [0, 0],
+       [0, 0]])
+history = array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+      ...      [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], shape=(2, 128, 128))
+control = array([  8,   0, 512]), deadline = inf
+weights = array([[0., 0., 0., ..., 0., 0., 0.],
+       [0., 0., 0., ..., 0., 0., 0.],
+       [0., 0., 0., ..., 0., 0., 0.],
+    ..., 0., 0.],
+       [0., 0., 0., ..., 0., 0., 0.],
+       [0., 0., 0., ..., 0., 0., 0.]], shape=(768, 32), dtype=float32)
+bias = array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
+      dtype=float32)
+output = array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
+      dtype=float32)
+blend = 0.0, conversion = False, reductions = False
+accumulator = array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0...., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.]])
+extensions_left = 0
+
+    @njit(cache=False)
+    def search(board, state, depth, alpha, beta, ply, qdepth, hashes, hlen, context,
+               ttkey, ttcontext, ttdata, killers, history, control, deadline,
+               weights, bias, output, blend, conversion, reductions, accumulator, extensions_left):
+        control[0] += 1
+        if control[0] >= control[2] or ((control[0] & 1023) == 0 and clock_now() >= deadline):
+            control[1] = 1
+        if control[1]:
+            return 0
+        side = state[0]
+        checked = attacked(board, state[4 if side == 1 else 5], -side)
+        key = hashes[hlen - 1]
+        repetitions = 0
+        for i in range(max(0, hlen - state[3] - 1), hlen):
+            repetitions += int(hashes[i] == key)
+        if state[3] >= 100 or repetitions >= 3 or insufficient(board):
+            # A checkmate takes precedence over automatic draws.
+            if checked and not has_legal_move(board, state):
+                return -30000 + ply
+            return 0
+        if ply >= 96:
+            return (-30000 + ply if checked else 0) if not has_legal_move(board, state) else evaluate_accumulator(board, state, output, blend, conversion, accumulator)
+        # At most two checking nodes on a line preserve one extra ply each.
+        if checked and depth >= 0 and extensions_left > 0:
+            depth += 1
+            extensions_left -= 1
+        quiescence = depth <= 0
+        # Future extension capacity affects the searched value, so it belongs in the TT context.
+>       tt_context = context ^ (np.uint64(extensions_left) * np.uint64(0x9e3779b97f4a7c15))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       OverflowError: int too big to convert
+
+experiments\check_extensions_core.py:492: OverflowError
+________ test_recursive_credit_budget_is_inherited_and_never_reset[2] _________
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x00000230A040C680>
+credits = 2
+
+    @pytest.mark.parametrize('credits', [1, 2])
+    def test_recursive_credit_budget_is_inherited_and_never_reset(monkeypatch, credits):
+        original = core.search.py_func
+        stack, seen = [], []
+    
+        def observed(*args):
+            left = args[-1]
+            assert 0 <= left <= credits
+            if stack:
+                expected = stack[-1]
+                assert left == expected
+            board, state, depth = args[:3]
+            checked = core.attacked(board, state[4 if state[0] == 1 else 5], -state[0])
+            next_left = left - int(checked and depth >= 0 and left > 0)
+            seen.append(left)
+            stack.append(next_left)
+            try:
+                return original(*args)
+            finally:
+                stack.pop()
+    
+        monkeypatch.setattr(core, 'search', observed)
+        board = chess.Board('8/6kp/6p1/1N6/P7/3BqnP1/2P2R1P/6K1 w - - 1 37')
+        with np.errstate(over='ignore'):
+>           _, control = run(board, credits=credits, depth=1, nodes=512)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_check_extensions.py:82: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_check_extensions.py:41: in run
+    value = module.search(*args, credits) if module is core else module.search(*args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_check_extensions.py:75: in observed
+    return original(*args)
+           ^^^^^^^^^^^^^^^
+experiments\check_extensions_core.py:540: in search
+    value = -search(board, state, nextdepth, -beta, -alpha, ply + 1, qdepth + 1 if quiescence else 0,
+tests\test_check_extensions.py:75: in observed
+    return original(*args)
+           ^^^^^^^^^^^^^^^
+experiments\check_extensions_core.py:540: in search
+    value = -search(board, state, nextdepth, -beta, -alpha, ply + 1, qdepth + 1 if quiescence else 0,
+tests\test_check_extensions.py:75: in observed
+    return original(*args)
+           ^^^^^^^^^^^^^^^
+experiments\check_extensions_core.py:544: in search
+    value = -search(board, state, nextdepth - int(reduced), -alpha - 1, -alpha, ply + 1, 0,
+tests\test_check_extensions.py:75: in observed
+    return original(*args)
+           ^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+board = array([ 0,  0,  0,  0,  0,  0,  0,  6,  0,  0,  0,  0,  0,  0,  0,  0,  0,
+        0,  1,  0,  0, -5,  0,  1,  0,  0, ...
+       -6, -1,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,
+        0,  0,  0,  0,  0,  0,  0,  0,  0])
+state = array([ -1,   0,  -1,   1,   7, 102]), depth = 0, alpha = -574
+beta = -573, ply = 3, qdepth = 0
+hashes = array([ 7125019697602724510, 17708453829433819455,  4871073449781700402,
+       14180449489198809924,  900901419887906...       0,                    0,                    0,
+                          0,                    0], dtype=uint64)
+hlen = 4, context = 19051522938980510326
+ttkey = array([0, 0, 0, ..., 0, 0, 0], shape=(4096,), dtype=uint64)
+ttcontext = array([0, 0, 0, ..., 0, 0, 0], shape=(4096,), dtype=uint64)
+ttdata = array([[0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0],
+       ...,
+       [0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0]], shape=(4096, 5))
+killers = array([[0, 0],
+       [0, 0],
+       [0, 0],
+       [0, 0],
+       [0, 0],
+       [0, 0],
+       [0, 0],
+       [0, 0]...      [0, 0],
+       [0, 0],
+       [0, 0],
+       [0, 0],
+       [0, 0],
+       [0, 0],
+       [0, 0],
+       [0, 0]])
+history = array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+      ...      [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], shape=(2, 128, 128))
+control = array([  8,   0, 512]), deadline = inf
+weights = array([[0., 0., 0., ..., 0., 0., 0.],
+       [0., 0., 0., ..., 0., 0., 0.],
+       [0., 0., 0., ..., 0., 0., 0.],
+    ..., 0., 0.],
+       [0., 0., 0., ..., 0., 0., 0.],
+       [0., 0., 0., ..., 0., 0., 0.]], shape=(768, 32), dtype=float32)
+bias = array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
+      dtype=float32)
+output = array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
+      dtype=float32)
+blend = 0.0, conversion = False, reductions = False
+accumulator = array([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0...., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.]])
+extensions_left = 0
+
+    @njit(cache=False)
+    def search(board, state, depth, alpha, beta, ply, qdepth, hashes, hlen, context,
+               ttkey, ttcontext, ttdata, killers, history, control, deadline,
+               weights, bias, output, blend, conversion, reductions, accumulator, extensions_left):
+        control[0] += 1
+        if control[0] >= control[2] or ((control[0] & 1023) == 0 and clock_now() >= deadline):
+            control[1] = 1
+        if control[1]:
+            return 0
+        side = state[0]
+        checked = attacked(board, state[4 if side == 1 else 5], -side)
+        key = hashes[hlen - 1]
+        repetitions = 0
+        for i in range(max(0, hlen - state[3] - 1), hlen):
+            repetitions += int(hashes[i] == key)
+        if state[3] >= 100 or repetitions >= 3 or insufficient(board):
+            # A checkmate takes precedence over automatic draws.
+            if checked and not has_legal_move(board, state):
+                return -30000 + ply
+            return 0
+        if ply >= 96:
+            return (-30000 + ply if checked else 0) if not has_legal_move(board, state) else evaluate_accumulator(board, state, output, blend, conversion, accumulator)
+        # At most two checking nodes on a line preserve one extra ply each.
+        if checked and depth >= 0 and extensions_left > 0:
+            depth += 1
+            extensions_left -= 1
+        quiescence = depth <= 0
+        # Future extension capacity affects the searched value, so it belongs in the TT context.
+>       tt_context = context ^ (np.uint64(extensions_left) * np.uint64(0x9e3779b97f4a7c15))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       OverflowError: int too big to convert
+
+experiments\check_extensions_core.py:492: OverflowError
+=========================== short test summary info ===========================
+FAILED tests/test_check_extensions.py::test_recursive_credit_budget_is_inherited_and_never_reset[1]
+FAILED tests/test_check_extensions.py::test_recursive_credit_budget_is_inherited_and_never_reset[2]
+2 failed, 8 passed in 104.47s (0:01:44)

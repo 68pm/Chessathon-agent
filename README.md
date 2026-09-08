@@ -21,4 +21,4 @@ no repository write-access grants or live competition submissions were made.
 [Latest startup results](chessity-agent/reports/STARTUP_RECOVERY_RESULTS_20260908.md) ·
 [Learning diagnosis](chessity-agent/reports/LEARNING_REACHABILITY_REVIEW.md)
 
-[Latest defensive diagnosis](chessity-agent/reports/KING_DEFENCE_DIAGNOSIS_20260908.md): the trace identifies a missed forcing opponent reply. A bounded check-extension pilot is next; selected upload remains v1.51.
+[Latest search results](chessity-agent/reports/CHECK_EXTENSION_RESULTS_20260908.md): the bounded check-extension pilot failed its tactical gate. Selected upload remains v1.51.
