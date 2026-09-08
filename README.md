@@ -15,3 +15,9 @@ Completed practical pair: **0 wins, 1 draw, 1 loss against v1.41**,120+0.5. All 
 startup fixes and their failure evidence are preserved as development experiments.
 Heavy validation is blocked by local disk space; no new numbered release or Elo
 increase is claimed. The selected download remains v1.41.
+
+[Morning report, 8 September](chessity-agent/reports/OVERNIGHT_REPORT_20260908.md):
+v1.41 remains selected. The earlier checkmate win over nominal2600 remains its
+highest verified opponent setting; overnight2800/3000 attempts failed before
+gameplay. Disk capacity recovered, but the morning memory check still blocked
+runtime validation. All results and limitations are included.
