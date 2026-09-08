@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\improvement_quiet_check_gate_recovered.py", line 123, in <module>
+    main()
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\improvement_quiet_check_gate_recovered.py", line 53, in main
+    child(['-m', 'pytest', 'tests/test_quiet_checks_runtime.py', '-q', '--junitxml', str(xml)], out / 'tests.log')
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\improvement_quiet_check_gate_recovered.py", line 34, in child
+    raise subprocess.CalledProcessError(code, arguments)
+subprocess.CalledProcessError: Command '['-m', 'pytest', 'tests/test_quiet_checks_runtime.py', '-q', '--junitxml', 'C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\improvement-loop-20260907\\cycle-21-recovered\\tests.xml']' returned non-zero exit status 1.

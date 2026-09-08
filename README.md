@@ -21,4 +21,4 @@ no repository write-access grants or live competition submissions were made.
 [Latest startup results](chessity-agent/reports/STARTUP_RECOVERY_RESULTS_20260908.md) ·
 [Learning diagnosis](chessity-agent/reports/LEARNING_REACHABILITY_REVIEW.md)
 
-[Current search development](chessity-agent/reports/SEARCH_UPDATE_20260908.md): the aspiration pilot was rejected; one bounded quiet-check hypothesis is next. Selected upload remains v1.51.
+[Latest search diagnosis](chessity-agent/reports/QUIET_CHECK_RESULTS_20260908.md): the aspiration and quiet-check pilots were rejected. A bounded trace now examines the actual king-defence error. Selected upload remains v1.51.

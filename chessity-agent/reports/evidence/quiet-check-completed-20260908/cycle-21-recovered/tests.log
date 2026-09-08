@@ -1,0 +1,55 @@
+.....F..F.                                                               [100%]
+================================== FAILURES ===================================
+___________ test_non_capture_promotion_survives_quiet_check_budget ____________
+
+    def test_non_capture_promotion_survives_quiet_check_budget():
+        board = chess.Board('7k/5KP1/8/8/8/8/8/8 w - - 0 1')
+        move = chess.Move.from_uci('g7g8q')
+        assert move in board.legal_moves and not board.is_capture(move)
+        child = board.copy()
+        child.push(move)
+        assert child.is_checkmate()
+>       assert qrun(board, qdepth=1)[0] == 29999
+               ^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_quiet_checks_runtime.py:96: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+board = Board('7k/5KP1/8/8/8/8/8/8 w - - 0 1'), qdepth = 1, nodes = 1000000
+
+    def qrun(board, qdepth=0, nodes=1000000):
+>       assert board.is_valid()
+E       AssertionError: assert False
+E        +  where False = is_valid()
+E        +    where is_valid = Board('7k/5KP1/8/8/8/8/8/8 w - - 0 1').is_valid
+
+tests\test_quiet_checks_runtime.py:16: AssertionError
+_ test_interrupted_special_move_search_restores_state[7k/5KP1/8/8/8/8/8/8 w - - 0 1] _
+
+fen = '7k/5KP1/8/8/8/8/8/8 w - - 0 1'
+
+    @pytest.mark.parametrize('fen', [
+        '5k2/8/8/8/8/8/8/4K2R w K - 0 1',
+        '4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1',
+        '7k/5KP1/8/8/8/8/8/8 w - - 0 1',
+    ])
+    def test_interrupted_special_move_search_restores_state(fen):
+>       _, control = qrun(chess.Board(fen), nodes=2)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_quiet_checks_runtime.py:105: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+board = Board('7k/5KP1/8/8/8/8/8/8 w - - 0 1'), qdepth = 0, nodes = 2
+
+    def qrun(board, qdepth=0, nodes=1000000):
+>       assert board.is_valid()
+E       AssertionError: assert False
+E        +  where False = is_valid()
+E        +    where is_valid = Board('7k/5KP1/8/8/8/8/8/8 w - - 0 1').is_valid
+
+tests\test_quiet_checks_runtime.py:16: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_quiet_checks_runtime.py::test_non_capture_promotion_survives_quiet_check_budget
+FAILED tests/test_quiet_checks_runtime.py::test_interrupted_special_move_search_restores_state[7k/5KP1/8/8/8/8/8/8 w - - 0 1]
+2 failed, 8 passed in 52.80s

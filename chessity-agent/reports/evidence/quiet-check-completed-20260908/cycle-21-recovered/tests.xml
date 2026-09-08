@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="10" time="52.793" timestamp="2026-09-08T09:35:17.222657+01:00" hostname="MSI"><testcase classname="tests.test_quiet_checks_runtime" name="test_first_quiet_leaf_finds_non_capture_mate" time="51.346" /><testcase classname="tests.test_quiet_checks_runtime" name="test_quiet_checks_do_not_expand_past_first_leaf" time="0.006" /><testcase classname="tests.test_quiet_checks_runtime" name="test_late_quiescence_retains_quiet_check_evasion" time="0.002" /><testcase classname="tests.test_quiet_checks_runtime" name="test_terminal_rules_precede_quiet_search[7k/5Q2/6K1/8/8/8/8/8 b - - 0 1-0]" time="0.004" /><testcase classname="tests.test_quiet_checks_runtime" name="test_terminal_rules_precede_quiet_search[7k/6Q1/5K2/8/8/8/8/8 b - - 100 1--30000]" time="0.007" /><testcase classname="tests.test_quiet_checks_runtime" name="test_non_capture_promotion_survives_quiet_check_budget" time="0.008"><failure message="AssertionError: assert False&#10; +  where False = is_valid()&#10; +    where is_valid = Board('7k/5KP1/8/8/8/8/8/8 w - - 0 1').is_valid">def test_non_capture_promotion_survives_quiet_check_budget():
+        board = chess.Board('7k/5KP1/8/8/8/8/8/8 w - - 0 1')
+        move = chess.Move.from_uci('g7g8q')
+        assert move in board.legal_moves and not board.is_capture(move)
+        child = board.copy()
+        child.push(move)
+        assert child.is_checkmate()
+&gt;       assert qrun(board, qdepth=1)[0] == 29999
+               ^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_quiet_checks_runtime.py:96: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+board = Board('7k/5KP1/8/8/8/8/8/8 w - - 0 1'), qdepth = 1, nodes = 1000000
+
+    def qrun(board, qdepth=0, nodes=1000000):
+&gt;       assert board.is_valid()
+E       AssertionError: assert False
+E        +  where False = is_valid()
+E        +    where is_valid = Board('7k/5KP1/8/8/8/8/8/8 w - - 0 1').is_valid
+
+tests\test_quiet_checks_runtime.py:16: AssertionError</failure></testcase><testcase classname="tests.test_quiet_checks_runtime" name="test_interrupted_special_move_search_restores_state[5k2/8/8/8/8/8/8/4K2R w K - 0 1]" time="0.004" /><testcase classname="tests.test_quiet_checks_runtime" name="test_interrupted_special_move_search_restores_state[4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1]" time="0.002" /><testcase classname="tests.test_quiet_checks_runtime" name="test_interrupted_special_move_search_restores_state[7k/5KP1/8/8/8/8/8/8 w - - 0 1]" time="0.002"><failure message="AssertionError: assert False&#10; +  where False = is_valid()&#10; +    where is_valid = Board('7k/5KP1/8/8/8/8/8/8 w - - 0 1').is_valid">fen = '7k/5KP1/8/8/8/8/8/8 w - - 0 1'
+
+    @pytest.mark.parametrize('fen', [
+        '5k2/8/8/8/8/8/8/4K2R w K - 0 1',
+        '4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1',
+        '7k/5KP1/8/8/8/8/8/8 w - - 0 1',
+    ])
+    def test_interrupted_special_move_search_restores_state(fen):
+&gt;       _, control = qrun(chess.Board(fen), nodes=2)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_quiet_checks_runtime.py:105: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+board = Board('7k/5KP1/8/8/8/8/8/8 w - - 0 1'), qdepth = 0, nodes = 2
+
+    def qrun(board, qdepth=0, nodes=1000000):
+&gt;       assert board.is_valid()
+E       AssertionError: assert False
+E        +  where False = is_valid()
+E        +    where is_valid = Board('7k/5KP1/8/8/8/8/8/8 w - - 0 1').is_valid
+
+tests\test_quiet_checks_runtime.py:16: AssertionError</failure></testcase><testcase classname="tests.test_quiet_checks_runtime" name="test_repetition_history_still_draws" time="0.003" /></testsuite></testsuites>

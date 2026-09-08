@@ -1,0 +1,7 @@
+{
+  "output": "runs/improvement-loop-20260907/king-defence-controller",
+  "wait_for": ["runs/improvement-loop-20260907/quiet-check-final-controller/controller.json"],
+  "stages": [
+    {"name": "bounded-student-and-leaf-diagnosis", "module": "scripts.king_defence_diagnosis", "arguments": []}
+  ]
+}
