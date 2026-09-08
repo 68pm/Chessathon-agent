@@ -1,0 +1,11 @@
+{
+  "output": "runs/improvement-loop-20260907/queen-check-combination-controller",
+  "wait_for": ["runs/improvement-loop-20260907/pawn-check-combination-controller/controller.json"],
+  "stages": [
+    {
+      "name": "correctness-and-bounded-gate",
+      "module": "scripts.improvement_queen_check_gate",
+      "arguments": []
+    }
+  ]
+}

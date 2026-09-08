@@ -1,0 +1,4653 @@
+{
+  "status": "complete",
+  "target": {
+    "id": "startup19-game-003-ply-068",
+    "game_id": 3,
+    "game_score": 0.0,
+    "opponent": "stockfish:3000",
+    "fen": "3R4/5pbk/8/5p2/P7/2N3P1/1qn1NP1P/6K1 w - - 1 40",
+    "played": "d8c8",
+    "clock_ms": 26246.185200026957,
+    "elapsed_ms": 1209.6042000048328,
+    "screen": {
+      "best": {
+        "cp": -657,
+        "mate": null,
+        "depth": 14,
+        "pv": [
+          "c3d1",
+          "b2b7",
+          "d1e3",
+          "c2e1",
+          "d8d5",
+          "b7a6",
+          "d5b5"
+        ],
+        "nodes": 20028
+      },
+      "played": {
+        "cp": -785,
+        "mate": null,
+        "depth": 15,
+        "pv": [
+          "d8c8",
+          "b2a1",
+          "g1g2",
+          "c2e1",
+          "g2h3",
+          "e1f3",
+          "h3g2",
+          "f3d2",
+          "e2g1",
+          "g7c3",
+          "f2f4",
+          "a1f1",
+          "g2h1",
+          "f1d3",
+          "c8c3",
+          "d3c3"
+        ],
+        "nodes": 20023
+      }
+    },
+    "verification": [
+      {
+        "best": {
+          "cp": -631,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "c3d1",
+            "b2b4",
+            "e2f4",
+            "g7d4",
+            "g1g2",
+            "b4a4",
+            "f4d5",
+            "c2e1",
+            "g2f1",
+            "e1f3"
+          ],
+          "nodes": 80078
+        },
+        "played": {
+          "cp": -914,
+          "mate": null,
+          "depth": 21,
+          "pv": [
+            "d8c8",
+            "b2a1",
+            "g1g2",
+            "c2e1",
+            "g2h3",
+            "e1f3",
+            "h3g2",
+            "f3d2",
+            "e2g1",
+            "a1f1",
+            "g2h1",
+            "f1f2",
+            "h2h3",
+            "f2e3",
+            "h1g2",
+            "g7c3",
+            "c8c3",
+            "e3c3"
+          ],
+          "nodes": 80030
+        }
+      },
+      {
+        "best": {
+          "cp": -689,
+          "mate": null,
+          "depth": 20,
+          "pv": [
+            "c3d1",
+            "b2b1",
+            "g1g2",
+            "c2e1",
+            "g2f1",
+            "e1d3",
+            "d8d3",
+            "b1d3",
+            "d1e3",
+            "g7h6",
+            "e3g2",
+            "d3d1",
+            "g2e1",
+            "d1a4",
+            "f1g2"
+          ],
+          "nodes": 320288
+        },
+        "played": {
+          "cp": -973,
+          "mate": null,
+          "depth": 24,
+          "pv": [
+            "d8c8",
+            "b2a1",
+            "g1g2",
+            "c2e1",
+            "g2f1",
+            "e1f3",
+            "c3b1",
+            "a1b1",
+            "c8c1",
+            "b1d3",
+            "c1c7",
+            "f3h2",
+            "f1g2",
+            "d3e2",
+            "c7f7",
+            "e2f1",
+            "g2h2",
+            "f1f2",
+            "h2h1"
+          ],
+          "nodes": 320040
+        }
+      }
+    ],
+    "minimum_verified_regret_cp": 283,
+    "label": "verified_200cp_error",
+    "source_game_id": "old-baseline:3",
+    "split": "development",
+    "history": [
+      "c4b5",
+      "c8d7",
+      "d1e2",
+      "f8e7",
+      "b1c3",
+      "d7b5",
+      "e2b5",
+      "c7c6",
+      "d5c6",
+      "a5c6",
+      "b5b7",
+      "c6d4",
+      "e1g1",
+      "e8g8",
+      "g5f3",
+      "a8b8",
+      "b7a7",
+      "f8e8",
+      "f3e5",
+      "b8c8",
+      "a2a4",
+      "d8d6",
+      "e5f3",
+      "d4c2",
+      "c3b5",
+      "d6d8",
+      "a1b1",
+      "e7c5",
+      "a7b7",
+      "e8e7",
+      "b7c8",
+      "d8c8",
+      "d2d4",
+      "c5b4",
+      "c1g5",
+      "c8f5",
+      "b1c1",
+      "h7h5",
+      "g5f6",
+      "g7f6",
+      "d4d5",
+      "e7d7",
+      "f3h4",
+      "f5e4",
+      "f1d1",
+      "d7d5",
+      "h4f3",
+      "d5d1",
+      "c1d1",
+      "e4e2",
+      "d1d8",
+      "b4f8",
+      "b5c3",
+      "e2c4",
+      "f3d2",
+      "c4b4",
+      "d2e4",
+      "g8g7",
+      "e4g3",
+      "b4b2",
+      "g3h5",
+      "g7g6",
+      "h5f4",
+      "g6h7",
+      "f4e2",
+      "f6f5",
+      "g2g3",
+      "f8g7"
+    ],
+    "start_fen": "r1bqkb1r/ppp2ppp/5n2/n2Pp1N1/2B5/8/PPPP1PPP/RNBQK2R w KQkq - 1 6",
+    "source_id": "game-003-ply-068",
+    "source": "startup-recovery-games-01"
+  },
+  "roots_sha256": "b8b49e0801f89fae9d5a595010b23da1a2053280b36d9acae1dc7408bf6b2ec8",
+  "cache_sha256": "1a52ae93b38011fa3bb24731745151938b9e602bb7d3f616bcc1b424775dc127",
+  "core_sha256": "b68c7557d1d564ad865ed3089ac39bab8336be42acba01a63d5f41e1d2649e61",
+  "source_sha256": "93b4c99670dc176eb677ce563c996c47ea2bb9b646e7bb6910050ecdf6dddd0a",
+  "plan_sha256": "882701f52f43c4ca87c10c2af4bee1586f5c1206cfc873129e57a50935499b2e",
+  "lines": [
+    {
+      "forced": "d8c8",
+      "budget": 80000,
+      "root_analysis": {
+        "cp": -914,
+        "mate": null,
+        "depth": 21,
+        "pv": [
+          "d8c8",
+          "b2a1",
+          "g1g2",
+          "c2e1",
+          "g2h3",
+          "e1f3",
+          "h3g2",
+          "f3d2",
+          "e2g1",
+          "a1f1",
+          "g2h1",
+          "f1f2",
+          "h2h3",
+          "f2e3",
+          "h1g2",
+          "g7c3",
+          "c8c3",
+          "e3c3"
+        ],
+        "nodes": 80030
+      },
+      "positions": [
+        {
+          "ply": 0,
+          "fen": "3R4/5pbk/8/5p2/P7/2N3P1/1qn1NP1P/6K1 w - - 1 40",
+          "classical_white_cp": -76,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 1,
+          "uci": "d8c8",
+          "san": "Rc8",
+          "fen": "2R5/5pbk/8/5p2/P7/2N3P1/1qn1NP1P/6K1 b - - 2 40",
+          "classical_white_cp": -83,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 2,
+          "uci": "b2a1",
+          "san": "Qa1+",
+          "fen": "2R5/5pbk/8/5p2/P7/2N3P1/2n1NP1P/q5K1 w - - 3 41",
+          "classical_white_cp": -71,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 5,
+              "existing_tapered_pressure_cp": 2.0833333333333335,
+              "enemy_queen_distance": 6,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 3,
+          "uci": "g1g2",
+          "san": "Kg2",
+          "fen": "2R5/5pbk/8/5p2/P7/2N3P1/2n1NPKP/q7 b - - 4 41",
+          "classical_white_cp": -80,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 15,
+              "existing_tapered_pressure_cp": 6.25,
+              "enemy_queen_distance": 6,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 4,
+          "uci": "c2e1",
+          "san": "Ne1+",
+          "fen": "2R5/5pbk/8/5p2/P7/2N3P1/4NPKP/q3n3 w - - 5 42",
+          "classical_white_cp": -67,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.9166666666666665,
+              "enemy_queen_distance": 6,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 5,
+          "uci": "g2h3",
+          "san": "Kh3",
+          "fen": "2R5/5pbk/8/5p2/P7/2N3PK/4NP1P/q3n3 b - - 6 42",
+          "classical_white_cp": -74,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "h3",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 3,
+              "existing_tapered_pressure_cp": 2.9166666666666665,
+              "enemy_queen_distance": 7,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 6,
+          "uci": "e1f3",
+          "san": "Nf3",
+          "fen": "2R5/5pbk/8/5p2/P7/2N2nPK/4NP1P/q7 w - - 7 43",
+          "classical_white_cp": -105,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "h3",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 5,
+              "existing_tapered_pressure_cp": 5.833333333333333,
+              "enemy_queen_distance": 7,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 7,
+          "uci": "h3g2",
+          "san": "Kg2",
+          "fen": "2R5/5pbk/8/5p2/P7/2N2nP1/4NPKP/q7 b - - 8 43",
+          "classical_white_cp": -104,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 4,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 19,
+              "existing_tapered_pressure_cp": 12.083333333333334,
+              "enemy_queen_distance": 6,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 8,
+          "uci": "f3d2",
+          "san": "Nd2",
+          "fen": "2R5/5pbk/8/5p2/P7/2N3P1/3nNPKP/q7 w - - 9 44",
+          "classical_white_cp": -99,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 4,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 19,
+              "existing_tapered_pressure_cp": 12.083333333333334,
+              "enemy_queen_distance": 6,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 9,
+          "uci": "e2g1",
+          "san": "Ng1",
+          "fen": "2R5/5pbk/8/5p2/P7/2N3P1/3n1PKP/q5N1 b - - 10 44",
+          "classical_white_cp": -131,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 14,
+              "existing_tapered_pressure_cp": 10.0,
+              "enemy_queen_distance": 6,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 10,
+          "uci": "a1f1",
+          "san": "Qf1+",
+          "fen": "2R5/5pbk/8/5p2/P7/2N3P1/3n1PKP/5qN1 w - - 11 45",
+          "classical_white_cp": -140,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 4,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 14,
+              "existing_tapered_pressure_cp": 10.0,
+              "enemy_queen_distance": 1,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 11,
+          "uci": "g2h1",
+          "san": "Kh1",
+          "fen": "2R5/5pbk/8/5p2/P7/2N3P1/3n1P1P/5qNK b - - 12 45",
+          "classical_white_cp": -148,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "h1",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 10,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 12,
+          "uci": "f1f2",
+          "san": "Qxf2",
+          "fen": "2R5/5pbk/8/5p2/P7/2N3P1/3n1q1P/6NK w - - 0 46",
+          "classical_white_cp": -276,
+          "material_white_cp": -385,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "h1",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 15,
+              "existing_tapered_pressure_cp": 6.25,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 13,
+          "uci": "h2h3",
+          "san": "h3",
+          "fen": "2R5/5pbk/8/5p2/P7/2N3PP/3n1q2/6NK b - - 0 46",
+          "classical_white_cp": -260,
+          "material_white_cp": -385,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "h1",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 15,
+              "existing_tapered_pressure_cp": 6.25,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 14,
+          "uci": "f2e3",
+          "san": "Qe3",
+          "fen": "2R5/5pbk/8/5p2/P7/2N1q1PP/3n4/6NK w - - 1 47",
+          "classical_white_cp": -275,
+          "material_white_cp": -385,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "h1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 5,
+              "existing_tapered_pressure_cp": 2.0833333333333335,
+              "enemy_queen_distance": 3,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 15,
+          "uci": "h1g2",
+          "san": "Kg2",
+          "fen": "2R5/5pbk/8/5p2/P7/2N1q1PP/3n2K1/6N1 b - - 2 47",
+          "classical_white_cp": -275,
+          "material_white_cp": -385,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 5,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 24,
+              "existing_tapered_pressure_cp": 14.166666666666666,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 16,
+          "uci": "g7c3",
+          "san": "Bxc3",
+          "fen": "2R5/5p1k/8/5p2/P7/2b1q1PP/3n2K1/6N1 w - - 0 48",
+          "classical_white_cp": -628,
+          "material_white_cp": -710,
+          "phase": 9,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 5,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 24,
+              "existing_tapered_pressure_cp": 12.75,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 3.75,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 17,
+          "uci": "c8c3",
+          "san": "Rxc3",
+          "fen": "8/5p1k/8/5p2/P7/2R1q1PP/3n2K1/6N1 b - - 0 48",
+          "classical_white_cp": -287,
+          "material_white_cp": -370,
+          "phase": 8,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 5,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 24,
+              "existing_tapered_pressure_cp": 11.333333333333334,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 18,
+          "uci": "e3c3",
+          "san": "Qxc3",
+          "fen": "8/5p1k/8/5p2/P7/2q3PP/3n2K1/6N1 w - - 0 49",
+          "classical_white_cp": -832,
+          "material_white_cp": -875,
+          "phase": 6,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 14,
+              "existing_tapered_pressure_cp": 6.0,
+              "enemy_queen_distance": 4,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "forced": "d8c8",
+      "budget": 320000,
+      "root_analysis": {
+        "cp": -973,
+        "mate": null,
+        "depth": 24,
+        "pv": [
+          "d8c8",
+          "b2a1",
+          "g1g2",
+          "c2e1",
+          "g2f1",
+          "e1f3",
+          "c3b1",
+          "a1b1",
+          "c8c1",
+          "b1d3",
+          "c1c7",
+          "f3h2",
+          "f1g2",
+          "d3e2",
+          "c7f7",
+          "e2f1",
+          "g2h2",
+          "f1f2",
+          "h2h1"
+        ],
+        "nodes": 320040
+      },
+      "positions": [
+        {
+          "ply": 0,
+          "fen": "3R4/5pbk/8/5p2/P7/2N3P1/1qn1NP1P/6K1 w - - 1 40",
+          "classical_white_cp": -76,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 1,
+          "uci": "d8c8",
+          "san": "Rc8",
+          "fen": "2R5/5pbk/8/5p2/P7/2N3P1/1qn1NP1P/6K1 b - - 2 40",
+          "classical_white_cp": -83,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 2,
+          "uci": "b2a1",
+          "san": "Qa1+",
+          "fen": "2R5/5pbk/8/5p2/P7/2N3P1/2n1NP1P/q5K1 w - - 3 41",
+          "classical_white_cp": -71,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 5,
+              "existing_tapered_pressure_cp": 2.0833333333333335,
+              "enemy_queen_distance": 6,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 3,
+          "uci": "g1g2",
+          "san": "Kg2",
+          "fen": "2R5/5pbk/8/5p2/P7/2N3P1/2n1NPKP/q7 b - - 4 41",
+          "classical_white_cp": -80,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 15,
+              "existing_tapered_pressure_cp": 6.25,
+              "enemy_queen_distance": 6,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 4,
+          "uci": "c2e1",
+          "san": "Ne1+",
+          "fen": "2R5/5pbk/8/5p2/P7/2N3P1/4NPKP/q3n3 w - - 5 42",
+          "classical_white_cp": -67,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.9166666666666665,
+              "enemy_queen_distance": 6,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 5,
+          "uci": "g2f1",
+          "san": "Kf1",
+          "fen": "2R5/5pbk/8/5p2/P7/2N3P1/4NP1P/q3nK2 b - - 6 42",
+          "classical_white_cp": -74,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "f1",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 7,
+              "existing_tapered_pressure_cp": 5.0,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 6,
+          "uci": "e1f3",
+          "san": "Nf3+",
+          "fen": "2R5/5pbk/8/5p2/P7/2N2nP1/4NP1P/q4K2 w - - 7 43",
+          "classical_white_cp": -101,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "f1",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 9,
+              "existing_tapered_pressure_cp": 7.916666666666667,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 7,
+          "uci": "c3b1",
+          "san": "Nb1",
+          "fen": "2R5/5pbk/8/5p2/P7/5nP1/4NP1P/qN3K2 b - - 8 43",
+          "classical_white_cp": -135,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "f1",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 4,
+              "existing_tapered_pressure_cp": 5.833333333333333,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 8,
+          "uci": "a1b1",
+          "san": "Qxb1+",
+          "fen": "2R5/5pbk/8/5p2/P7/5nP1/4NP1P/1q3K2 w - - 0 44",
+          "classical_white_cp": -443,
+          "material_white_cp": -610,
+          "phase": 9,
+          "king_features": {
+            "white": {
+              "king": "f1",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 9,
+              "existing_tapered_pressure_cp": 7.125,
+              "enemy_queen_distance": 4,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 3.75,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 9,
+          "uci": "c8c1",
+          "san": "Rc1",
+          "fen": "8/5pbk/8/5p2/P7/5nP1/4NP1P/1qR2K2 b - - 1 44",
+          "classical_white_cp": -454,
+          "material_white_cp": -610,
+          "phase": 9,
+          "king_features": {
+            "white": {
+              "king": "f1",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 4,
+              "existing_tapered_pressure_cp": 5.25,
+              "enemy_queen_distance": 4,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 10,
+          "uci": "b1d3",
+          "san": "Qd3",
+          "fen": "8/5pbk/8/5p2/P7/3q1nP1/4NP1P/2R2K2 w - - 2 45",
+          "classical_white_cp": -482,
+          "material_white_cp": -610,
+          "phase": 9,
+          "king_features": {
+            "white": {
+              "king": "f1",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 9,
+              "existing_tapered_pressure_cp": 7.125,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 11,
+          "uci": "c1c7",
+          "san": "Rc7",
+          "fen": "8/2R2pbk/8/5p2/P7/3q1nP1/4NP1P/5K2 b - - 3 45",
+          "classical_white_cp": -465,
+          "material_white_cp": -610,
+          "phase": 9,
+          "king_features": {
+            "white": {
+              "king": "f1",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 9,
+              "existing_tapered_pressure_cp": 7.125,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 12,
+          "uci": "f3h2",
+          "san": "Nxh2+",
+          "fen": "8/2R2pbk/8/5p2/P7/3q2P1/4NP1n/5K2 w - - 0 46",
+          "classical_white_cp": -535,
+          "material_white_cp": -710,
+          "phase": 9,
+          "king_features": {
+            "white": {
+              "king": "f1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 5,
+              "existing_tapered_pressure_cp": 1.875,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 13,
+          "uci": "f1g2",
+          "san": "Kg2",
+          "fen": "8/2R2pbk/8/5p2/P7/3q2P1/4NPKn/8 b - - 1 46",
+          "classical_white_cp": -542,
+          "material_white_cp": -710,
+          "phase": 9,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 14,
+              "existing_tapered_pressure_cp": 9.0,
+              "enemy_queen_distance": 3,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 14,
+          "uci": "d3e2",
+          "san": "Qxe2",
+          "fen": "8/2R2pbk/8/5p2/P7/6P1/4qPKn/8 w - - 0 47",
+          "classical_white_cp": -886,
+          "material_white_cp": -1035,
+          "phase": 8,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 19,
+              "existing_tapered_pressure_cp": 9.666666666666666,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 15,
+          "uci": "c7f7",
+          "san": "Rxf7",
+          "fen": "8/5Rbk/8/5p2/P7/6P1/4qPKn/8 b - - 0 47",
+          "classical_white_cp": -822,
+          "material_white_cp": -935,
+          "phase": 8,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 19,
+              "existing_tapered_pressure_cp": 9.666666666666666,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 3,
+              "existing_tapered_pressure_cp": 1.6666666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 16,
+          "uci": "e2f1",
+          "san": "Qf1+",
+          "fen": "8/5Rbk/8/5p2/P7/6P1/5PKn/5q2 w - - 1 48",
+          "classical_white_cp": -798,
+          "material_white_cp": -935,
+          "phase": 8,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 5,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 19,
+              "existing_tapered_pressure_cp": 9.666666666666666,
+              "enemy_queen_distance": 1,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 3,
+              "existing_tapered_pressure_cp": 1.6666666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 17,
+          "uci": "g2h2",
+          "san": "Kxh2",
+          "fen": "8/5Rbk/8/5p2/P7/6P1/5P1K/5q2 b - - 0 48",
+          "classical_white_cp": -511,
+          "material_white_cp": -610,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "h2",
+              "attacked_ring_squares": 4,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 20,
+              "existing_tapered_pressure_cp": 5.833333333333333,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 3,
+              "existing_tapered_pressure_cp": 1.4583333333333333,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 18,
+          "uci": "f1f2",
+          "san": "Qxf2+",
+          "fen": "8/5Rbk/8/5p2/P7/6P1/5q1K/8 w - - 0 49",
+          "classical_white_cp": -644,
+          "material_white_cp": -710,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "h2",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 15,
+              "existing_tapered_pressure_cp": 4.375,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 3,
+              "existing_tapered_pressure_cp": 1.4583333333333333,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 19,
+          "uci": "h2h1",
+          "san": "Kh1",
+          "fen": "8/5Rbk/8/5p2/P7/6P1/5q2/7K b - - 1 49",
+          "classical_white_cp": -651,
+          "material_white_cp": -710,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "h1",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 15,
+              "existing_tapered_pressure_cp": 4.375,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 3,
+              "existing_tapered_pressure_cp": 1.4583333333333333,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "forced": "d8d3",
+      "budget": 80000,
+      "root_analysis": {
+        "cp": -695,
+        "mate": null,
+        "depth": 17,
+        "pv": [
+          "d8d3",
+          "c2e1",
+          "d3e3",
+          "g7c3",
+          "e2c3",
+          "b2a1",
+          "h2h3",
+          "e1c2",
+          "g1h2",
+          "c2e3",
+          "f2e3"
+        ],
+        "nodes": 80049
+      },
+      "positions": [
+        {
+          "ply": 0,
+          "fen": "3R4/5pbk/8/5p2/P7/2N3P1/1qn1NP1P/6K1 w - - 1 40",
+          "classical_white_cp": -76,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 1,
+          "uci": "d8d3",
+          "san": "Rd3",
+          "fen": "8/5pbk/8/5p2/P7/2NR2P1/1qn1NP1P/6K1 b - - 2 40",
+          "classical_white_cp": -87,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 2,
+          "uci": "c2e1",
+          "san": "Ne1",
+          "fen": "8/5pbk/8/5p2/P7/2NR2P1/1q2NP1P/4n1K1 w - - 3 41",
+          "classical_white_cp": -90,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.9166666666666665,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 3,
+          "uci": "d3e3",
+          "san": "Re3",
+          "fen": "8/5pbk/8/5p2/P7/2N1R1P1/1q2NP1P/4n1K1 b - - 4 41",
+          "classical_white_cp": -93,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.9166666666666665,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 4,
+          "uci": "g7c3",
+          "san": "Bxc3",
+          "fen": "8/5p1k/8/5p2/P7/2b1R1P1/1q2NP1P/4n1K1 w - - 0 42",
+          "classical_white_cp": -441,
+          "material_white_cp": -610,
+          "phase": 9,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.625,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 5,
+          "uci": "e2c3",
+          "san": "Nxc3",
+          "fen": "8/5p1k/8/5p2/P7/2N1R1P1/1q3P1P/4n1K1 b - - 0 42",
+          "classical_white_cp": -90,
+          "material_white_cp": -270,
+          "phase": 8,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 7,
+              "existing_tapered_pressure_cp": 4.0,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 6,
+          "uci": "b2a1",
+          "san": "Qa1",
+          "fen": "8/5p1k/8/5p2/P7/2N1R1P1/5P1P/q3n1K1 w - - 1 43",
+          "classical_white_cp": -65,
+          "material_white_cp": -270,
+          "phase": 8,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.3333333333333335,
+              "enemy_queen_distance": 6,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 7,
+          "uci": "h2h3",
+          "san": "h3",
+          "fen": "8/5p1k/8/5p2/P7/2N1R1PP/5P2/q3n1K1 b - - 0 43",
+          "classical_white_cp": -51,
+          "material_white_cp": -270,
+          "phase": 8,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.3333333333333335,
+              "enemy_queen_distance": 6,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 8,
+          "uci": "e1c2",
+          "san": "Nc2+",
+          "fen": "8/5p1k/8/5p2/P7/2N1R1PP/2n2P2/q5K1 w - - 1 44",
+          "classical_white_cp": -58,
+          "material_white_cp": -270,
+          "phase": 8,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 5,
+              "existing_tapered_pressure_cp": 1.6666666666666667,
+              "enemy_queen_distance": 6,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 9,
+          "uci": "g1h2",
+          "san": "Kh2",
+          "fen": "8/5p1k/8/5p2/P7/2N1R1PP/2n2P1K/q7 b - - 2 44",
+          "classical_white_cp": -68,
+          "material_white_cp": -270,
+          "phase": 8,
+          "king_features": {
+            "white": {
+              "king": "h2",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 10,
+              "existing_tapered_pressure_cp": 3.3333333333333335,
+              "enemy_queen_distance": 7,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 10,
+          "uci": "c2e3",
+          "san": "Nxe3",
+          "fen": "8/5p1k/8/5p2/P7/2N1n1PP/5P1K/q7 w - - 0 45",
+          "classical_white_cp": -646,
+          "material_white_cp": -775,
+          "phase": 6,
+          "king_features": {
+            "white": {
+              "king": "h2",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 12,
+              "existing_tapered_pressure_cp": 4.25,
+              "enemy_queen_distance": 7,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 11,
+          "uci": "f2e3",
+          "san": "fxe3",
+          "fen": "8/5p1k/8/5p2/P7/2N1P1PP/7K/q7 b - - 0 45",
+          "classical_white_cp": -293,
+          "material_white_cp": -450,
+          "phase": 5,
+          "king_features": {
+            "white": {
+              "king": "h2",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 10,
+              "existing_tapered_pressure_cp": 2.0833333333333335,
+              "enemy_queen_distance": 7,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "forced": "d8d3",
+      "budget": 320000,
+      "root_analysis": {
+        "cp": -757,
+        "mate": null,
+        "depth": 23,
+        "pv": [
+          "d8d3",
+          "c2e1",
+          "d3e3",
+          "b2d2",
+          "h2h3",
+          "e1d3",
+          "e3f3",
+          "g7c3",
+          "e2c3",
+          "d2c3",
+          "f3f5",
+          "h7g6",
+          "f5f3",
+          "c3a1",
+          "g1h2",
+          "d3e1",
+          "f3f4",
+          "g6g7",
+          "f4g4",
+          "g7f8"
+        ],
+        "nodes": 320014
+      },
+      "positions": [
+        {
+          "ply": 0,
+          "fen": "3R4/5pbk/8/5p2/P7/2N3P1/1qn1NP1P/6K1 w - - 1 40",
+          "classical_white_cp": -76,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 1,
+          "uci": "d8d3",
+          "san": "Rd3",
+          "fen": "8/5pbk/8/5p2/P7/2NR2P1/1qn1NP1P/6K1 b - - 2 40",
+          "classical_white_cp": -87,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 2,
+          "uci": "c2e1",
+          "san": "Ne1",
+          "fen": "8/5pbk/8/5p2/P7/2NR2P1/1q2NP1P/4n1K1 w - - 3 41",
+          "classical_white_cp": -90,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.9166666666666665,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 3,
+          "uci": "d3e3",
+          "san": "Re3",
+          "fen": "8/5pbk/8/5p2/P7/2N1R1P1/1q2NP1P/4n1K1 b - - 4 41",
+          "classical_white_cp": -93,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.9166666666666665,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 4,
+          "uci": "b2d2",
+          "san": "Qd2",
+          "fen": "8/5pbk/8/5p2/P7/2N1R1P1/3qNP1P/4n1K1 w - - 5 42",
+          "classical_white_cp": -100,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.9166666666666665,
+              "enemy_queen_distance": 3,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 5,
+          "uci": "h2h3",
+          "san": "h3",
+          "fen": "8/5pbk/8/5p2/P7/2N1R1PP/3qNP2/4n1K1 b - - 0 42",
+          "classical_white_cp": -82,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.9166666666666665,
+              "enemy_queen_distance": 3,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 6,
+          "uci": "e1d3",
+          "san": "Nd3",
+          "fen": "8/5pbk/8/5p2/P7/2NnR1PP/3qNP2/6K1 w - - 1 43",
+          "classical_white_cp": -107,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.9166666666666665,
+              "enemy_queen_distance": 3,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 7,
+          "uci": "e3f3",
+          "san": "Rf3",
+          "fen": "8/5pbk/8/5p2/P7/2Nn1RPP/3qNP2/6K1 b - - 2 43",
+          "classical_white_cp": -134,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.9166666666666665,
+              "enemy_queen_distance": 3,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 8,
+          "uci": "g7c3",
+          "san": "Bxc3",
+          "fen": "8/5p1k/8/5p2/P7/2bn1RPP/3qNP2/6K1 w - - 0 44",
+          "classical_white_cp": -485,
+          "material_white_cp": -610,
+          "phase": 9,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.625,
+              "enemy_queen_distance": 3,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 9,
+          "uci": "e2c3",
+          "san": "Nxc3",
+          "fen": "8/5p1k/8/5p2/P7/2Nn1RPP/3q1P2/6K1 b - - 0 44",
+          "classical_white_cp": -138,
+          "material_white_cp": -270,
+          "phase": 8,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 7,
+              "existing_tapered_pressure_cp": 4.0,
+              "enemy_queen_distance": 3,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 10,
+          "uci": "d2c3",
+          "san": "Qxc3",
+          "fen": "8/5p1k/8/5p2/P7/2qn1RPP/5P2/6K1 w - - 0 45",
+          "classical_white_cp": -482,
+          "material_white_cp": -595,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.0416666666666665,
+              "enemy_queen_distance": 4,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 11,
+          "uci": "f3f5",
+          "san": "Rxf5",
+          "fen": "8/5p1k/8/5R2/P7/2qn2PP/5P2/6K1 b - - 0 45",
+          "classical_white_cp": -360,
+          "material_white_cp": -495,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.0416666666666665,
+              "enemy_queen_distance": 4,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 12,
+          "uci": "h7g6",
+          "san": "Kg6",
+          "fen": "8/5p2/6k1/5R2/P7/2qn2PP/5P2/6K1 w - - 1 46",
+          "classical_white_cp": -369,
+          "material_white_cp": -495,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.0416666666666665,
+              "enemy_queen_distance": 4,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "g6",
+              "attacked_ring_squares": 4,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 12,
+              "existing_tapered_pressure_cp": 5.833333333333333,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 13,
+          "uci": "f5f3",
+          "san": "Rf3",
+          "fen": "8/5p2/6k1/8/P7/2qn1RPP/5P2/6K1 b - - 2 46",
+          "classical_white_cp": -383,
+          "material_white_cp": -495,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.0416666666666665,
+              "enemy_queen_distance": 4,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "g6",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 9,
+              "existing_tapered_pressure_cp": 4.375,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 14,
+          "uci": "c3a1",
+          "san": "Qa1+",
+          "fen": "8/5p2/6k1/8/P7/3n1RPP/5P2/q5K1 w - - 3 47",
+          "classical_white_cp": -357,
+          "material_white_cp": -495,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 7,
+              "existing_tapered_pressure_cp": 3.5,
+              "enemy_queen_distance": 6,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "g6",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 9,
+              "existing_tapered_pressure_cp": 4.375,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 15,
+          "uci": "g1h2",
+          "san": "Kh2",
+          "fen": "8/5p2/6k1/8/P7/3n1RPP/5P1K/q7 b - - 4 47",
+          "classical_white_cp": -364,
+          "material_white_cp": -495,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "h2",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 10,
+              "existing_tapered_pressure_cp": 2.9166666666666665,
+              "enemy_queen_distance": 7,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "g6",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 9,
+              "existing_tapered_pressure_cp": 4.375,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 16,
+          "uci": "d3e1",
+          "san": "Ne1",
+          "fen": "8/5p2/6k1/8/P7/5RPP/5P1K/q3n3 w - - 5 48",
+          "classical_white_cp": -320,
+          "material_white_cp": -495,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "h2",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.0416666666666665,
+              "enemy_queen_distance": 7,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "g6",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 9,
+              "existing_tapered_pressure_cp": 4.375,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 17,
+          "uci": "f3f4",
+          "san": "Rf4",
+          "fen": "8/5p2/6k1/8/P4R2/6PP/5P1K/q3n3 b - - 6 48",
+          "classical_white_cp": -315,
+          "material_white_cp": -495,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "h2",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.0416666666666665,
+              "enemy_queen_distance": 7,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "g6",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 9,
+              "existing_tapered_pressure_cp": 4.375,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 18,
+          "uci": "g6g7",
+          "san": "Kg7",
+          "fen": "8/5pk1/8/8/P4R2/6PP/5P1K/q3n3 w - - 7 49",
+          "classical_white_cp": -308,
+          "material_white_cp": -495,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "h2",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.0416666666666665,
+              "enemy_queen_distance": 7,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "g7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 2.9166666666666665,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 19,
+          "uci": "f4g4",
+          "san": "Rg4+",
+          "fen": "8/5pk1/8/8/P5R1/6PP/5P1K/q3n3 b - - 8 49",
+          "classical_white_cp": -314,
+          "material_white_cp": -495,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "h2",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.0416666666666665,
+              "enemy_queen_distance": 7,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "g7",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 3,
+              "existing_tapered_pressure_cp": 1.4583333333333333,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 20,
+          "uci": "g7f8",
+          "san": "Kf8",
+          "fen": "5k2/5p2/8/8/P5R1/6PP/5P1K/q3n3 w - - 9 50",
+          "classical_white_cp": -317,
+          "material_white_cp": -495,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "h2",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.0416666666666665,
+              "enemy_queen_distance": 7,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "f8",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 2.9166666666666665,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "forced": "c3d1",
+      "budget": 80000,
+      "root_analysis": {
+        "cp": -631,
+        "mate": null,
+        "depth": 17,
+        "pv": [
+          "c3d1",
+          "b2b4",
+          "e2f4",
+          "g7d4",
+          "g1g2",
+          "b4a4",
+          "f4d5",
+          "c2e1",
+          "g2f1",
+          "e1f3"
+        ],
+        "nodes": 80078
+      },
+      "positions": [
+        {
+          "ply": 0,
+          "fen": "3R4/5pbk/8/5p2/P7/2N3P1/1qn1NP1P/6K1 w - - 1 40",
+          "classical_white_cp": -76,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 1,
+          "uci": "c3d1",
+          "san": "Nd1",
+          "fen": "3R4/5pbk/8/5p2/P7/6P1/1qn1NP1P/3N2K1 b - - 2 40",
+          "classical_white_cp": -99,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 2,
+          "uci": "b2b4",
+          "san": "Qb4",
+          "fen": "3R4/5pbk/8/5p2/Pq6/6P1/2n1NP1P/3N2K1 w - - 3 41",
+          "classical_white_cp": -124,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 3,
+          "uci": "e2f4",
+          "san": "Nf4",
+          "fen": "3R4/5pbk/8/5p2/Pq3N2/6P1/2n2P1P/3N2K1 b - - 4 41",
+          "classical_white_cp": -97,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 8,
+              "existing_tapered_pressure_cp": 7.083333333333333,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 4,
+          "uci": "g7d4",
+          "san": "Bd4",
+          "fen": "3R4/5p1k/8/5p2/Pq1b1N2/6P1/2n2P1P/3N2K1 w - - 5 42",
+          "classical_white_cp": -137,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.9166666666666665,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 8,
+              "existing_tapered_pressure_cp": 7.083333333333333,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 5,
+          "uci": "g1g2",
+          "san": "Kg2",
+          "fen": "3R4/5p1k/8/5p2/Pq1b1N2/6P1/2n2PKP/3N4 b - - 6 42",
+          "classical_white_cp": -144,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.9166666666666665,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 8,
+              "existing_tapered_pressure_cp": 7.083333333333333,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 6,
+          "uci": "b4a4",
+          "san": "Qxa4",
+          "fen": "3R4/5p1k/8/5p2/q2b1N2/6P1/2n2PKP/3N4 w - - 0 43",
+          "classical_white_cp": -294,
+          "material_white_cp": -385,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.9166666666666665,
+              "enemy_queen_distance": 6,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 8,
+              "existing_tapered_pressure_cp": 7.083333333333333,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 7,
+          "uci": "f4d5",
+          "san": "Nd5",
+          "fen": "3R4/5p1k/8/3N1p2/q2b4/6P1/2n2PKP/3N4 b - - 1 43",
+          "classical_white_cp": -286,
+          "material_white_cp": -385,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.9166666666666665,
+              "enemy_queen_distance": 6,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 8,
+          "uci": "c2e1",
+          "san": "Ne1+",
+          "fen": "3R4/5p1k/8/3N1p2/q2b4/6P1/5PKP/3Nn3 w - - 2 44",
+          "classical_white_cp": -290,
+          "material_white_cp": -385,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 4,
+              "existing_tapered_pressure_cp": 5.833333333333333,
+              "enemy_queen_distance": 6,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 9,
+          "uci": "g2f1",
+          "san": "Kf1",
+          "fen": "3R4/5p1k/8/3N1p2/q2b4/6P1/5P1P/3NnK2 b - - 3 44",
+          "classical_white_cp": -294,
+          "material_white_cp": -385,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "f1",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 4,
+              "existing_tapered_pressure_cp": 5.833333333333333,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 10,
+          "uci": "e1f3",
+          "san": "Nf3",
+          "fen": "3R4/5p1k/8/3N1p2/q2b4/5nP1/5P1P/3N1K2 w - - 4 45",
+          "classical_white_cp": -316,
+          "material_white_cp": -385,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "f1",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 8.75,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "forced": "c3d1",
+      "budget": 320000,
+      "root_analysis": {
+        "cp": -689,
+        "mate": null,
+        "depth": 20,
+        "pv": [
+          "c3d1",
+          "b2b1",
+          "g1g2",
+          "c2e1",
+          "g2f1",
+          "e1d3",
+          "d8d3",
+          "b1d3",
+          "d1e3",
+          "g7h6",
+          "e3g2",
+          "d3d1",
+          "g2e1",
+          "d1a4",
+          "f1g2"
+        ],
+        "nodes": 320288
+      },
+      "positions": [
+        {
+          "ply": 0,
+          "fen": "3R4/5pbk/8/5p2/P7/2N3P1/1qn1NP1P/6K1 w - - 1 40",
+          "classical_white_cp": -76,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 1,
+          "uci": "c3d1",
+          "san": "Nd1",
+          "fen": "3R4/5pbk/8/5p2/P7/6P1/1qn1NP1P/3N2K1 b - - 2 40",
+          "classical_white_cp": -99,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 2,
+          "uci": "b2b1",
+          "san": "Qb1",
+          "fen": "3R4/5pbk/8/5p2/P7/6P1/2n1NP1P/1q1N2K1 w - - 3 41",
+          "classical_white_cp": -92,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 3,
+          "uci": "g1g2",
+          "san": "Kg2",
+          "fen": "3R4/5pbk/8/5p2/P7/6P1/2n1NPKP/1q1N4 b - - 4 41",
+          "classical_white_cp": -94,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 4,
+          "uci": "c2e1",
+          "san": "Ne1+",
+          "fen": "3R4/5pbk/8/5p2/P7/6P1/4NPKP/1q1Nn3 w - - 5 42",
+          "classical_white_cp": -97,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.9166666666666665,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 5,
+          "uci": "g2f1",
+          "san": "Kf1",
+          "fen": "3R4/5pbk/8/5p2/P7/6P1/4NP1P/1q1NnK2 b - - 6 42",
+          "classical_white_cp": -101,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "f1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.9166666666666665,
+              "enemy_queen_distance": 4,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 6,
+          "uci": "e1d3",
+          "san": "Nd3",
+          "fen": "3R4/5pbk/8/5p2/P7/3n2P1/4NP1P/1q1N1K2 w - - 7 43",
+          "classical_white_cp": -136,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "f1",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 4,
+              "existing_tapered_pressure_cp": 5.833333333333333,
+              "enemy_queen_distance": 4,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 7,
+          "uci": "d8d3",
+          "san": "Rxd3",
+          "fen": "8/5pbk/8/5p2/P7/3R2P1/4NP1P/1q1N1K2 b - - 0 43",
+          "classical_white_cp": 222,
+          "material_white_cp": 40,
+          "phase": 9,
+          "king_features": {
+            "white": {
+              "king": "f1",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": 4,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 8,
+          "uci": "b1d3",
+          "san": "Qxd3",
+          "fen": "8/5pbk/8/5p2/P7/3q2P1/4NP1P/3N1K2 w - - 0 44",
+          "classical_white_cp": -384,
+          "material_white_cp": -465,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "f1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 5,
+              "existing_tapered_pressure_cp": 1.4583333333333333,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 9,
+          "uci": "d1e3",
+          "san": "Ne3",
+          "fen": "8/5pbk/8/5p2/P7/3qN1P1/4NP1P/5K2 b - - 1 44",
+          "classical_white_cp": -349,
+          "material_white_cp": -465,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "f1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 5,
+              "existing_tapered_pressure_cp": 1.4583333333333333,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 10,
+          "uci": "g7h6",
+          "san": "Bh6",
+          "fen": "8/5p1k/7b/5p2/P7/3qN1P1/4NP1P/5K2 w - - 2 45",
+          "classical_white_cp": -341,
+          "material_white_cp": -465,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "f1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 5,
+              "existing_tapered_pressure_cp": 1.4583333333333333,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 11,
+          "uci": "e3g2",
+          "san": "Ng2",
+          "fen": "8/5p1k/7b/5p2/P7/3q2P1/4NPNP/5K2 b - - 3 45",
+          "classical_white_cp": -389,
+          "material_white_cp": -465,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "f1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 5,
+              "existing_tapered_pressure_cp": 1.4583333333333333,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 12,
+          "uci": "d3d1",
+          "san": "Qd1+",
+          "fen": "8/5p1k/7b/5p2/P7/6P1/4NPNP/3q1K2 w - - 4 46",
+          "classical_white_cp": -373,
+          "material_white_cp": -465,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "f1",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 10,
+              "existing_tapered_pressure_cp": 2.9166666666666665,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 13,
+          "uci": "g2e1",
+          "san": "Ne1",
+          "fen": "8/5p1k/7b/5p2/P7/6P1/4NP1P/3qNK2 b - - 5 46",
+          "classical_white_cp": -360,
+          "material_white_cp": -465,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "f1",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 10,
+              "existing_tapered_pressure_cp": 2.9166666666666665,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 14,
+          "uci": "d1a4",
+          "san": "Qxa4",
+          "fen": "8/5p1k/7b/5p2/q7/6P1/4NP1P/4NK2 w - - 0 47",
+          "classical_white_cp": -516,
+          "material_white_cp": -565,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "f1",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 15,
+          "uci": "f1g2",
+          "san": "Kg2",
+          "fen": "8/5p1k/7b/5p2/q7/6P1/4NPKP/4N3 b - - 1 47",
+          "classical_white_cp": -515,
+          "material_white_cp": -565,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": 6,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "forced": "c3d5",
+      "budget": 80000,
+      "root_analysis": {
+        "cp": -769,
+        "mate": null,
+        "depth": 21,
+        "pv": [
+          "c3d5",
+          "b2a1",
+          "g1g2",
+          "c2e1",
+          "g2h3",
+          "e1d3",
+          "d5e3",
+          "d3f2",
+          "h3g2",
+          "f2e4",
+          "e2f4",
+          "a1b2",
+          "g2h1",
+          "b2f2",
+          "d8d7",
+          "f2f3",
+          "f4g2",
+          "e4f2",
+          "h1g1"
+        ],
+        "nodes": 80064
+      },
+      "positions": [
+        {
+          "ply": 0,
+          "fen": "3R4/5pbk/8/5p2/P7/2N3P1/1qn1NP1P/6K1 w - - 1 40",
+          "classical_white_cp": -76,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 1,
+          "uci": "c3d5",
+          "san": "Nd5",
+          "fen": "3R4/5pbk/8/3N1p2/P7/6P1/1qn1NP1P/6K1 b - - 2 40",
+          "classical_white_cp": -58,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 2,
+          "uci": "b2a1",
+          "san": "Qa1+",
+          "fen": "3R4/5pbk/8/3N1p2/P7/6P1/2n1NP1P/q5K1 w - - 3 41",
+          "classical_white_cp": -49,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 5,
+              "existing_tapered_pressure_cp": 2.0833333333333335,
+              "enemy_queen_distance": 6,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 3,
+          "uci": "g1g2",
+          "san": "Kg2",
+          "fen": "3R4/5pbk/8/3N1p2/P7/6P1/2n1NPKP/q7 b - - 4 41",
+          "classical_white_cp": -57,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 15,
+              "existing_tapered_pressure_cp": 6.25,
+              "enemy_queen_distance": 6,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 4,
+          "uci": "c2e1",
+          "san": "Ne1+",
+          "fen": "3R4/5pbk/8/3N1p2/P7/6P1/4NPKP/q3n3 w - - 5 42",
+          "classical_white_cp": -45,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.9166666666666665,
+              "enemy_queen_distance": 6,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 5,
+          "uci": "g2h3",
+          "san": "Kh3",
+          "fen": "3R4/5pbk/8/3N1p2/P7/6PK/4NP1P/q3n3 b - - 6 42",
+          "classical_white_cp": -52,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "h3",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 3,
+              "existing_tapered_pressure_cp": 2.9166666666666665,
+              "enemy_queen_distance": 7,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 6,
+          "uci": "e1d3",
+          "san": "Nd3",
+          "fen": "3R4/5pbk/8/3N1p2/P7/3n2PK/4NP1P/q7 w - - 7 43",
+          "classical_white_cp": -88,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "h3",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 1,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": 7,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 7,
+          "uci": "d5e3",
+          "san": "Ne3",
+          "fen": "3R4/5pbk/8/5p2/P7/3nN1PK/4NP1P/q7 b - - 8 43",
+          "classical_white_cp": -95,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "h3",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 1,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": 7,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 8,
+          "uci": "d3f2",
+          "san": "Nxf2+",
+          "fen": "3R4/5pbk/8/5p2/P7/4N1PK/4Nn1P/q7 w - - 0 44",
+          "classical_white_cp": -185,
+          "material_white_cp": -385,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "h3",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 3,
+              "existing_tapered_pressure_cp": 2.9166666666666665,
+              "enemy_queen_distance": 7,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 9,
+          "uci": "h3g2",
+          "san": "Kg2",
+          "fen": "3R4/5pbk/8/5p2/P7/4N1P1/4NnKP/q7 b - - 1 44",
+          "classical_white_cp": -194,
+          "material_white_cp": -385,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 4,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 19,
+              "existing_tapered_pressure_cp": 12.083333333333334,
+              "enemy_queen_distance": 6,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 10,
+          "uci": "f2e4",
+          "san": "Ne4",
+          "fen": "3R4/5pbk/8/5p2/P3n3/4N1P1/4N1KP/q7 w - - 2 45",
+          "classical_white_cp": -234,
+          "material_white_cp": -385,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 5,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 19,
+              "existing_tapered_pressure_cp": 12.083333333333334,
+              "enemy_queen_distance": 6,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 11,
+          "uci": "e2f4",
+          "san": "Nf4",
+          "fen": "3R4/5pbk/8/5p2/P3nN2/4N1P1/6KP/q7 b - - 3 45",
+          "classical_white_cp": -214,
+          "material_white_cp": -385,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 5,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 19,
+              "existing_tapered_pressure_cp": 12.083333333333334,
+              "enemy_queen_distance": 6,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 8,
+              "existing_tapered_pressure_cp": 7.083333333333333,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 12,
+          "uci": "a1b2",
+          "san": "Qb2+",
+          "fen": "3R4/5pbk/8/5p2/P3nN2/4N1P1/1q4KP/8 w - - 4 46",
+          "classical_white_cp": -225,
+          "material_white_cp": -385,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 9,
+              "existing_tapered_pressure_cp": 7.916666666666667,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 8,
+              "existing_tapered_pressure_cp": 7.083333333333333,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 13,
+          "uci": "g2h1",
+          "san": "Kh1",
+          "fen": "3R4/5pbk/8/5p2/P3nN2/4N1P1/1q5P/7K b - - 5 46",
+          "classical_white_cp": -226,
+          "material_white_cp": -385,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "h1",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 10,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": 6,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 8,
+              "existing_tapered_pressure_cp": 7.083333333333333,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 14,
+          "uci": "b2f2",
+          "san": "Qf2",
+          "fen": "3R4/5pbk/8/5p2/P3nN2/4N1P1/5q1P/7K w - - 6 47",
+          "classical_white_cp": -224,
+          "material_white_cp": -385,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "h1",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 15,
+              "existing_tapered_pressure_cp": 6.25,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 8,
+              "existing_tapered_pressure_cp": 7.083333333333333,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 15,
+          "uci": "d8d7",
+          "san": "Rd7",
+          "fen": "8/3R1pbk/8/5p2/P3nN2/4N1P1/5q1P/7K b - - 7 47",
+          "classical_white_cp": -224,
+          "material_white_cp": -385,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "h1",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 15,
+              "existing_tapered_pressure_cp": 6.25,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.9166666666666665,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 16,
+          "uci": "f2f3",
+          "san": "Qf3+",
+          "fen": "8/3R1pbk/8/5p2/P3nN2/4NqP1/7P/7K w - - 8 48",
+          "classical_white_cp": -222,
+          "material_white_cp": -385,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "h1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 5,
+              "existing_tapered_pressure_cp": 2.0833333333333335,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.9166666666666665,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 17,
+          "uci": "f4g2",
+          "san": "Nfg2",
+          "fen": "8/3R1pbk/8/5p2/P3n3/4NqP1/6NP/7K b - - 9 48",
+          "classical_white_cp": -273,
+          "material_white_cp": -385,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "h1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 5,
+              "existing_tapered_pressure_cp": 2.0833333333333335,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 18,
+          "uci": "e4f2",
+          "san": "Nf2+",
+          "fen": "8/3R1pbk/8/5p2/P7/4NqP1/5nNP/7K w - - 10 49",
+          "classical_white_cp": -238,
+          "material_white_cp": -385,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "h1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 5,
+              "existing_tapered_pressure_cp": 2.0833333333333335,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 19,
+          "uci": "h1g1",
+          "san": "Kg1",
+          "fen": "8/3R1pbk/8/5p2/P7/4NqP1/5nNP/6K1 b - - 11 49",
+          "classical_white_cp": -230,
+          "material_white_cp": -385,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 12,
+              "existing_tapered_pressure_cp": 7.083333333333333,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "forced": "c3d5",
+      "budget": 320000,
+      "root_analysis": {
+        "cp": -806,
+        "mate": null,
+        "depth": 26,
+        "pv": [
+          "c3d5",
+          "b2b1",
+          "g1g2",
+          "c2e1",
+          "g2f1",
+          "e1d3",
+          "f1g2",
+          "b1e1",
+          "d5f6",
+          "g7f6",
+          "d8d3",
+          "e1e2",
+          "d3f3",
+          "e2e4",
+          "a4a5",
+          "e4d5",
+          "a5a6",
+          "d5e4",
+          "h2h3",
+          "f6d4",
+          "g3g4",
+          "e4c6",
+          "g4g5",
+          "c6e4"
+        ],
+        "nodes": 320055
+      },
+      "positions": [
+        {
+          "ply": 0,
+          "fen": "3R4/5pbk/8/5p2/P7/2N3P1/1qn1NP1P/6K1 w - - 1 40",
+          "classical_white_cp": -76,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 1,
+          "uci": "c3d5",
+          "san": "Nd5",
+          "fen": "3R4/5pbk/8/3N1p2/P7/6P1/1qn1NP1P/6K1 b - - 2 40",
+          "classical_white_cp": -58,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 2,
+          "uci": "b2b1",
+          "san": "Qb1+",
+          "fen": "3R4/5pbk/8/3N1p2/P7/6P1/2n1NP1P/1q4K1 w - - 3 41",
+          "classical_white_cp": -58,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g1",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 5,
+              "existing_tapered_pressure_cp": 2.0833333333333335,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 3,
+          "uci": "g1g2",
+          "san": "Kg2",
+          "fen": "3R4/5pbk/8/3N1p2/P7/6P1/2n1NPKP/1q6 b - - 4 41",
+          "classical_white_cp": -66,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 15,
+              "existing_tapered_pressure_cp": 6.25,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 4,
+          "uci": "c2e1",
+          "san": "Ne1+",
+          "fen": "3R4/5pbk/8/3N1p2/P7/6P1/4NPKP/1q2n3 w - - 5 42",
+          "classical_white_cp": -56,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 2,
+              "existing_tapered_pressure_cp": 2.9166666666666665,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 5,
+          "uci": "g2f1",
+          "san": "Kf1",
+          "fen": "3R4/5pbk/8/3N1p2/P7/6P1/4NP1P/1q2nK2 b - - 6 42",
+          "classical_white_cp": -63,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "f1",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 7,
+              "existing_tapered_pressure_cp": 5.0,
+              "enemy_queen_distance": 4,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 6,
+          "uci": "e1d3",
+          "san": "Nd3+",
+          "fen": "3R4/5pbk/8/3N1p2/P7/3n2P1/4NP1P/1q3K2 w - - 7 43",
+          "classical_white_cp": -98,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "f1",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 9,
+              "existing_tapered_pressure_cp": 7.916666666666667,
+              "enemy_queen_distance": 4,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 7,
+          "uci": "f1g2",
+          "san": "Kg2",
+          "fen": "3R4/5pbk/8/3N1p2/P7/3n2P1/4NPKP/1q6 b - - 8 43",
+          "classical_white_cp": -99,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 4,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 17,
+              "existing_tapered_pressure_cp": 9.166666666666666,
+              "enemy_queen_distance": 5,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 8,
+          "uci": "b1e1",
+          "san": "Qe1",
+          "fen": "3R4/5pbk/8/3N1p2/P7/3n2P1/4NPKP/4q3 w - - 9 44",
+          "classical_white_cp": -102,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 4,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 22,
+              "existing_tapered_pressure_cp": 11.25,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 4.166666666666667,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 9,
+          "uci": "d5f6",
+          "san": "Nf6+",
+          "fen": "3R4/5pbk/5N2/5p2/P7/3n2P1/4NPKP/4q3 b - - 10 44",
+          "classical_white_cp": -106,
+          "material_white_cp": -285,
+          "phase": 10,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 4,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 22,
+              "existing_tapered_pressure_cp": 11.25,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 8,
+              "existing_tapered_pressure_cp": 7.083333333333333,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 10,
+          "uci": "g7f6",
+          "san": "Bxf6",
+          "fen": "3R4/5p1k/5b2/5p2/P7/3n2P1/4NPKP/4q3 w - - 0 45",
+          "classical_white_cp": -478,
+          "material_white_cp": -610,
+          "phase": 9,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 4,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 22,
+              "existing_tapered_pressure_cp": 10.125,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 6,
+              "existing_tapered_pressure_cp": 3.75,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 11,
+          "uci": "d8d3",
+          "san": "Rxd3",
+          "fen": "8/5p1k/5b2/5p2/P7/3R2P1/4NPKP/4q3 b - - 0 45",
+          "classical_white_cp": -142,
+          "material_white_cp": -285,
+          "phase": 8,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 4,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 20,
+              "existing_tapered_pressure_cp": 6.666666666666667,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 12,
+          "uci": "e1e2",
+          "san": "Qxe2",
+          "fen": "8/5p1k/5b2/5p2/P7/3R2P1/4qPKP/8 w - - 0 46",
+          "classical_white_cp": -481,
+          "material_white_cp": -610,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 15,
+              "existing_tapered_pressure_cp": 4.375,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 13,
+          "uci": "d3f3",
+          "san": "Rf3",
+          "fen": "8/5p1k/5b2/5p2/P7/5RP1/4qPKP/8 b - - 1 46",
+          "classical_white_cp": -508,
+          "material_white_cp": -610,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 3,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 15,
+              "existing_tapered_pressure_cp": 4.375,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 14,
+          "uci": "e2e4",
+          "san": "Qe4",
+          "fen": "8/5p1k/5b2/5p2/P3q3/5RP1/5PKP/8 w - - 2 47",
+          "classical_white_cp": -521,
+          "material_white_cp": -610,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 5,
+              "existing_tapered_pressure_cp": 1.4583333333333333,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 15,
+          "uci": "a4a5",
+          "san": "a5",
+          "fen": "8/5p1k/5b2/P4p2/4q3/5RP1/5PKP/8 b - - 0 47",
+          "classical_white_cp": -498,
+          "material_white_cp": -610,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 5,
+              "existing_tapered_pressure_cp": 1.4583333333333333,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 16,
+          "uci": "e4d5",
+          "san": "Qd5",
+          "fen": "8/5p1k/5b2/P2q1p2/8/5RP1/5PKP/8 w - - 1 48",
+          "classical_white_cp": -495,
+          "material_white_cp": -610,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 5,
+              "existing_tapered_pressure_cp": 1.4583333333333333,
+              "enemy_queen_distance": 3,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 17,
+          "uci": "a5a6",
+          "san": "a6",
+          "fen": "8/5p1k/P4b2/3q1p2/8/5RP1/5PKP/8 b - - 0 48",
+          "classical_white_cp": -471,
+          "material_white_cp": -610,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 5,
+              "existing_tapered_pressure_cp": 1.4583333333333333,
+              "enemy_queen_distance": 3,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 18,
+          "uci": "d5e4",
+          "san": "Qe4",
+          "fen": "8/5p1k/P4b2/5p2/4q3/5RP1/5PKP/8 w - - 1 49",
+          "classical_white_cp": -474,
+          "material_white_cp": -610,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 5,
+              "existing_tapered_pressure_cp": 1.4583333333333333,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 19,
+          "uci": "h2h3",
+          "san": "h3",
+          "fen": "8/5p1k/P4b2/5p2/4q3/5RPP/5PK1/8 b - - 0 49",
+          "classical_white_cp": -456,
+          "material_white_cp": -610,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 5,
+              "existing_tapered_pressure_cp": 1.4583333333333333,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 20,
+          "uci": "f6d4",
+          "san": "Bd4",
+          "fen": "8/5p1k/P7/5p2/3bq3/5RPP/5PK1/8 w - - 1 50",
+          "classical_white_cp": -471,
+          "material_white_cp": -610,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 7,
+              "existing_tapered_pressure_cp": 3.5,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 21,
+          "uci": "g3g4",
+          "san": "g4",
+          "fen": "8/5p1k/P7/5p2/3bq1P1/5R1P/5PK1/8 b - - 0 50",
+          "classical_white_cp": -459,
+          "material_white_cp": -610,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 7,
+              "existing_tapered_pressure_cp": 3.5,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 22,
+          "uci": "e4c6",
+          "san": "Qc6",
+          "fen": "8/5p1k/P1q5/5p2/3b2P1/5R1P/5PK1/8 w - - 1 51",
+          "classical_white_cp": -461,
+          "material_white_cp": -610,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 7,
+              "existing_tapered_pressure_cp": 3.5,
+              "enemy_queen_distance": 4,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 0,
+              "nonking_attackers": 0,
+              "weighted_attack_units": 0,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 23,
+          "uci": "g4g5",
+          "san": "g5",
+          "fen": "8/5p1k/P1q5/5pP1/3b4/5R1P/5PK1/8 b - - 0 51",
+          "classical_white_cp": -452,
+          "material_white_cp": -610,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 7,
+              "existing_tapered_pressure_cp": 3.5,
+              "enemy_queen_distance": 4,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 1,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        },
+        {
+          "ply": 24,
+          "uci": "c6e4",
+          "san": "Qe4",
+          "fen": "8/5p1k/P7/5pP1/3bq3/5R1P/5PK1/8 w - - 1 52",
+          "classical_white_cp": -452,
+          "material_white_cp": -610,
+          "phase": 7,
+          "king_features": {
+            "white": {
+              "king": "g2",
+              "attacked_ring_squares": 2,
+              "nonking_attackers": 2,
+              "weighted_attack_units": 7,
+              "existing_tapered_pressure_cp": 3.5,
+              "enemy_queen_distance": 2,
+              "enemy_queen_count": 1
+            },
+            "black": {
+              "king": "h7",
+              "attacked_ring_squares": 1,
+              "nonking_attackers": 1,
+              "weighted_attack_units": 1,
+              "existing_tapered_pressure_cp": 0.0,
+              "enemy_queen_distance": null,
+              "enemy_queen_count": 0
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "new_teacher_nodes": 0,
+  "maximum_positions": 264,
+  "maximum_plies_per_line": 32,
+  "scope": "Descriptive existing-PV features; root teacher scores are NOT labels for every descendant.",
+  "seconds": 0.5918329000123776,
+  "positions": 144,
+  "jit_compilations": 0
+}
