@@ -26,3 +26,5 @@ No long consistency study, repository write-access grants or live submission.
 [Tactical descendant diagnosis](chessity-agent/reports/TACTICAL_DESCENDANT_DIAGNOSIS_20260908.md): missing opponent defenses and independently measured endpoint value errors; v1.52 unchanged.
 
 [Forcing-check diagnosis](chessity-agent/reports/FORCING_CHECK_DIAGNOSIS_20260908.md): Kh1 was correct; the later rook captures permit a verified mating sequence omitted by shallow search. Agent unchanged.
+
+[Near-queen checks tactical gate](chessity-agent/reports/NEAR_QUEEN_CHECKS_RESULTS_20260908.md): both missed mating sequences found and the Bxf2+ root repaired; this gate alone does not establish game strength.
