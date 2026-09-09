@@ -1,0 +1,83 @@
+{
+  "version": "v1.53",
+  "name": "chessity-agent",
+  "title": "Bounded forcing checks near the enemy king",
+  "status": "Provisional: 1W0D1L vs52; cumulative nominal 2400 1W1D2L; 2600 0W1D3L; no calibrated Elo",
+  "recommended": true,
+  "source_version": "candidates/compiled-near-queen-checks-v1",
+  "sha256": "5747acec37da25ea79704e49d19e45bf23bd2af5842a14eaf66bf6ecf2791315",
+  "zip_bytes": 273531,
+  "created_utc": "2026-09-08T14:13:03.457729+00:00",
+  "archive": "versions/v1.53/chessity-agent-v1.53.zip",
+  "read_only_smoke_calls": 2,
+  "read_only_status": "passed; both practical games clean",
+  "archive_json_formatting_differs_from_local_folder": [],
+  "rated_results": {
+    "stockfish:2400": {
+      "games": 4,
+      "wins": 1,
+      "draws": 1,
+      "losses": 2,
+      "candidate_failures": 0
+    },
+    "stockfish:2600": {
+      "games": 4,
+      "wins": 0,
+      "draws": 1,
+      "losses": 3,
+      "candidate_failures": 0
+    }
+  },
+  "highest_nominal_opponent_defeated": 2400,
+  "rated_results_scope": "Cumulative exact-v1.53 results across the E90 and E55 opening screens; small development samples, not calibrated Elo.",
+  "rated_screens": [
+    {
+      "opening": "E90",
+      "report": "reports/NEAR_QUEEN_RATED_RESULTS_20260908.md",
+      "results": {
+        "stockfish:2400": {
+          "games": 2,
+          "wins": 0,
+          "draws": 1,
+          "losses": 1,
+          "candidate_failures": 0
+        },
+        "stockfish:2600": {
+          "games": 2,
+          "wins": 0,
+          "draws": 0,
+          "losses": 2,
+          "candidate_failures": 0
+        }
+      }
+    },
+    {
+      "opening": "E55",
+      "report": "reports/COMPETITION_CONDITIONAL_RATED_RESULTS_20260908.md",
+      "results": {
+        "2400": {
+          "games": 2,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "failures": 0
+        },
+        "2600": {
+          "games": 2,
+          "wins": 0,
+          "draws": 1,
+          "losses": 1,
+          "failures": 0
+        },
+        "2800": {
+          "games": 0,
+          "wins": 0,
+          "draws": 0,
+          "losses": 0,
+          "failures": 0
+        }
+      },
+      "conditional_2800": "skipped_no_played_2600_win"
+    }
+  ]
+}

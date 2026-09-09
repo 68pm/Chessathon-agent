@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "stage": "move-and-feature-checks",
+  "startup_limit_seconds": 90,
+  "post_ready_limit_seconds": 30,
+  "events": [
+    {
+      "event": "ready",
+      "init_ms": 82192.07869999809
+    },
+    {
+      "init_ms": 82192.07869999809,
+      "legal_calls": 2,
+      "clock_ms": 120000,
+      "policy_calls": 2,
+      "alien_verified": false,
+      "selective_alien_verified": true,
+      "selective_alien_choice": "g5f3",
+      "elementary_endgames_verified": true,
+      "extended_endgames_verified": false,
+      "max_move_ms": 3485.0731999613345,
+      "peak_working_set_bytes": 229646336,
+      "read_only_checks": {
+        "create_file": "blocked",
+        "delete_file": "blocked",
+        "create_directory": "blocked",
+        "rename_file": "blocked"
+      },
+      "audit": "no filesystem mutations, network or subprocess"
+    }
+  ],
+  "init_ms": 82192.07869999809,
+  "elapsed_seconds": 89.96899999998277,
+  "stderr": ""
+}

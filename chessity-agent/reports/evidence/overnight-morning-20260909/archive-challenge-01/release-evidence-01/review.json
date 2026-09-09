@@ -1,0 +1,183 @@
+{
+  "status": "complete",
+  "challenger": "v1.42",
+  "comparison_opponent": "exactv1.53",
+  "archive_sha256": {
+    "v1.42": "114c1688a63d4039d7965670fcab0891bec24d4835dacafa8698e22d0c01f48b",
+    "v1.53": "5747acec37da25ea79704e49d19e45bf23bd2af5842a14eaf66bf6ecf2791315"
+  },
+  "source_sha256": {
+    "runs\\improvement-loop-20260907\\n9-archive-42-comparison\\comparison-compiled-reductions-v1\\results.json": "d742de162015117e1e6c154d26da9c1f222582dc8c669e9a34f14a9a0d9080c1",
+    "runs\\improvement-loop-20260907\\n9-archive-42-comparison\\comparison-compiled-reductions-v1\\postgame-feedback\\reviews\\games\\1f30bb39b04170d61987eed8fc6f6aa36e997874fedea7ce030fe8c65bd60e11\\review.json": "7f9ac406ea4c4371de43057046804627928ce7684452ba2cf0717c758fc6267a",
+    "runs\\improvement-loop-20260907\\n9-archive-42-comparison\\comparison-compiled-reductions-v1\\postgame-feedback\\checkpoints\\1f30bb39b04170d61987eed8fc6f6aa36e997874fedea7ce030fe8c65bd60e11\\training.json": "510e2c60b27cb6b0a5f9c79fe5b4090ff8f32a6746004a5c2aee6dc3322f2405",
+    "runs\\improvement-loop-20260907\\n9-archive-42-comparison\\comparison-compiled-reductions-v1\\postgame-feedback\\reviews\\games\\65d2bb1b30395591a066e1159b0ca875ed19c42605da0663a0a39acf7aeea198\\review.json": "b2c48352ab229b613911feec7b166f015a23a676e444a64c0d3d9559d5caec05",
+    "runs\\improvement-loop-20260907\\n9-archive-42-comparison\\comparison-compiled-reductions-v1\\postgame-feedback\\checkpoints\\65d2bb1b30395591a066e1159b0ca875ed19c42605da0663a0a39acf7aeea198\\training.json": "08eb891e4751ce452b9a1aa2cdab116bd45f06a21bdc74783aab716b2cfee957",
+    "runs\\improvement-loop-20260907\\n9-archive-42-comparison\\comparison-compiled-reductions-v1\\postgame-feedback\\reviews\\games\\21db478a22184ab1c261ed60b1bd325cf13db37d0a3cdeedb9af9f43ace1c475\\review.json": "60271d9dee6f582751883c6247df3bfe65f6b857fe764b688d94a7b3ef8c5fbf",
+    "runs\\improvement-loop-20260907\\n9-archive-42-comparison\\comparison-compiled-reductions-v1\\postgame-feedback\\checkpoints\\21db478a22184ab1c261ed60b1bd325cf13db37d0a3cdeedb9af9f43ace1c475\\training.json": "6a475ace485a96ed034142ac7479d251423420c6925177fb8168c1f51c3621cb",
+    "runs\\improvement-loop-20260907\\n9-archive-42-comparison\\comparison-compiled-reductions-v1\\postgame-feedback\\reviews\\games\\ac5b7bbbc0b8eadf4d1548cc55b01bdcf4a58ce4016015da7e413e8b9773f2c1\\review.json": "9acc2c758a27951ed64d87730357bb058aca8518d6b9c21cfc970f624982b337",
+    "runs\\improvement-loop-20260907\\n9-archive-42-comparison\\comparison-compiled-reductions-v1\\postgame-feedback\\checkpoints\\ac5b7bbbc0b8eadf4d1548cc55b01bdcf4a58ce4016015da7e413e8b9773f2c1\\training.json": "1f5d85132c00caeed71319c94e0ab77000e55086f183786a7ba6749a057f302e",
+    "runs\\overnight-20260909\\archive-challenge-01\\preparation.json": "d7229c38662bf4a7d2043679421dce64c23785d9181185dec636800918d1dd41",
+    "runs\\overnight-20260909\\archive-challenge-01\\state.json": "6769f01c298069ca1974ed4c098900ef2237b09594ebb0b44e904a6376010c9c",
+    "runs\\overnight-20260909\\archive-challenge-01\\validation.json": "5113ab930978fb78abc306c300b7a7475dd015ba709e7b7793e3bdbbfb37c4fb",
+    "scripts\\review_archive_challenge.py": "cc76ee67934386473e99c9cdfb5be4c18a72219b037b996915dbbd48bc0e1ce7"
+  },
+  "groups": {
+    "incumbent": {
+      "games": 4,
+      "wins": 3,
+      "draws": 1,
+      "losses": 0,
+      "clean_wins": 3,
+      "operational_games": 0,
+      "by_colour": {
+        "white": {
+          "games": 2,
+          "wins": 2,
+          "draws": 0,
+          "losses": 0,
+          "clean_wins": 2,
+          "operational_games": 0
+        },
+        "black": {
+          "games": 2,
+          "wins": 1,
+          "draws": 1,
+          "losses": 0,
+          "clean_wins": 1,
+          "operational_games": 0
+        }
+      },
+      "terminations": {
+        "checkmate": 3,
+        "threefold_repetition": 1
+      }
+    }
+  },
+  "highest_clean_nominal_win": null,
+  "comparison_points": 3.5,
+  "favourable_comparison": true,
+  "historical_v142_summary": {
+    "stockfish:2400": {
+      "games": 4,
+      "wins": 2,
+      "draws": 0,
+      "losses": 2,
+      "score": 0.5,
+      "completed_pairs": 2,
+      "pair_bootstrap_95": [
+        0.0,
+        1.0
+      ],
+      "terminations": {
+        "checkmate": 4
+      },
+      "candidate_failures": 0
+    },
+    "stockfish:2600": {
+      "games": 4,
+      "wins": 1,
+      "draws": 2,
+      "losses": 1,
+      "score": 0.5,
+      "completed_pairs": 2,
+      "pair_bootstrap_95": [
+        0.25,
+        0.75
+      ],
+      "terminations": {
+        "checkmate": 2,
+        "threefold_repetition": 1,
+        "insufficient_material": 1
+      },
+      "candidate_failures": 0
+    }
+  },
+  "feedback": [
+    {
+      "game_id": 1,
+      "game_key": "1f30bb39b04170d61987eed8fc6f6aa36e997874fedea7ce030fe8c65bd60e11",
+      "family": "incumbent",
+      "candidate_white": true,
+      "score": 1.0,
+      "own_moves": 81,
+      "rewarded": 50,
+      "penalised": 3,
+      "labels": {
+        "good_move": 39,
+        "small_or_uncertain_difference": 17,
+        "inaccuracy": 3,
+        "uncertain": 11,
+        "preserves_engine_mate": 11
+      },
+      "experimental_examples": 48,
+      "experimental_updates": 11
+    },
+    {
+      "game_id": 2,
+      "game_key": "65d2bb1b30395591a066e1159b0ca875ed19c42605da0663a0a39acf7aeea198",
+      "family": "incumbent",
+      "candidate_white": false,
+      "score": 1.0,
+      "own_moves": 34,
+      "rewarded": 24,
+      "penalised": 1,
+      "labels": {
+        "good_move": 19,
+        "small_or_uncertain_difference": 4,
+        "major_mistake": 1,
+        "uncertain": 5,
+        "preserves_engine_mate": 5
+      },
+      "experimental_examples": 73,
+      "experimental_updates": 13
+    },
+    {
+      "game_id": 3,
+      "game_key": "21db478a22184ab1c261ed60b1bd325cf13db37d0a3cdeedb9af9f43ace1c475",
+      "family": "incumbent",
+      "candidate_white": true,
+      "score": 1.0,
+      "own_moves": 60,
+      "rewarded": 31,
+      "penalised": 8,
+      "labels": {
+        "good_move": 25,
+        "small_or_uncertain_difference": 11,
+        "inaccuracy": 7,
+        "major_mistake": 1,
+        "uncertain": 10,
+        "preserves_engine_mate": 6
+      },
+      "experimental_examples": 112,
+      "experimental_updates": 15
+    },
+    {
+      "game_id": 4,
+      "game_key": "ac5b7bbbc0b8eadf4d1548cc55b01bdcf4a58ce4016015da7e413e8b9773f2c1",
+      "family": "incumbent",
+      "candidate_white": false,
+      "score": 0.5,
+      "own_moves": 31,
+      "rewarded": 15,
+      "penalised": 5,
+      "labels": {
+        "small_or_uncertain_difference": 7,
+        "good_move": 15,
+        "inaccuracy": 1,
+        "major_mistake": 4,
+        "uncertain": 3,
+        "forced_move": 1
+      },
+      "experimental_examples": 131,
+      "experimental_updates": 17
+    }
+  ],
+  "reviewed_moves": 206,
+  "rewarded": 120,
+  "penalised": 17,
+  "pending_stage": "rated-2400",
+  "calibrated_elo": null,
+  "selected_version": null,
+  "automatic_promotion": false,
+  "scope": "Small development comparison; separate historical rated results. Frozen playing weights; reviewed policy checkpoints remain experimental."
+}

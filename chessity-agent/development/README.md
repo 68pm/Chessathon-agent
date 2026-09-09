@@ -1,44 +1,18 @@
 # Chess agent
 
-The [GitHub repository](https://github.com/68pm/Chessathon-agent/tree/main/chessity-agent)
-preserves the chronological builds; v1.41 is selected; the earlier v1.41 confirmation remains separate. v1.35 is an archived failed preflight. See the previous
-[35-version delivery and download details](docs/DELIVERY.md).
+**Selected upload: chessity-agent v1.42** at `../chessity-agent.zip`.
+The exact archived build scored 3W/1D/0L against exact v1.53 at 120s + 0.5s in the
+completed 9 September short comparison, with no operational failures. Its code
+and weights are unchanged. The morning report separates historical rated games,
+new comparison results and experimental learning; no calibrated Elo is claimed.
 
-## Autonomous improvement programme — active
+[Current results](docs/IMPROVEMENT_RESULTS.md) ·
+[Morning report](docs/OVERNIGHT_MORNING_REPORT_20260909.md) ·
+[All versions](https://github.com/68pm/Chessathon-agent/tree/main/chessity-agent)
 
-**Selected upload: chessity-agent v1.41**, available at `../chessity-agent.zip`.
-The current priority is [quick competition improvements](docs/COMPETITION_FAST_TRACK.md)
-before 11 September. The [latest four-game diagnostic](docs/COMPETITION_QUICK_CHECK_01.md)
-finished 0W/0D/2L at nominal 2400 and 1W/0D/1L at nominal 2600. This is a separate,
-small local sample, not a new rating or dashboard result. Older competition games
-used older agents; prioritize the latest matches with verified version provenance.
-
-The [latest three analysed competition games](docs/COMPETITION_RECENT_GAMES.md)
-scored2W/1D/0L. Their v1.41 attribution is inferred from upload timing and displayed
-hashes. Three verified middlegame errors in the wins now guide development.
-[Cycle10](docs/IMPROVEMENT_CYCLE_10.md) failed its tactical gate;
-[cycle11](docs/IMPROVEMENT_CYCLE_11.md) preserved exact scores but gained only4.6%
-speed. Neither changed the selected download. [Cycle12](docs/IMPROVEMENT_CYCLE_12.md)
-also missed its speed gate. [Cycle13](docs/IMPROVEMENT_CYCLE_13.md) passed exact
-fixed-work, speed and read-only checks. Its legal-pawn proof candidate
-finished 0W/1D/1L against41 at120+0.5. Selected download: v1.41; no long study.
-
-v1.41 scored **23W/1D/0L against v1.14**, **3W/4D/1L at nominal 2400**, and
-**0W/3D/5L at nominal 2600** in the fixed 40-game confirmation at 120+0.5.
-It passed the predeclared promotion rule and all reliability checks. These results
-do not establish consistent 2600 strength or a human/site rating. The improvement
-programme remains active. See [current results and download](docs/IMPROVEMENT_RESULTS.md).
-
-See [cycle findings](docs/IMPROVEMENT_CYCLE_01.md),
-[the completed residual-learning critique](docs/IMPROVEMENT_CYCLE_02.md),
-[the continuing loop](docs/IMPROVEMENT_LOOP.md), and
-[the predeclared independent confirmation](docs/IMPROVEMENT_CONFIRMATION_01.md).
-The improved engine uses our own Python source, compiled in memory by the permitted
-Numba runtime, with optional exact elementary endgame tables. No external engine code
-or pretrained chess network ships. Its package passed strict read-only inference;
-the earlier full suite passed **108 tests**. Subsequent experiment checks are
-recorded individually in their cycle reports. Use Python 3.12 and
-`requirements-compiled.txt` for this separate development environment.
+Use Python 3.12 and requirements-compiled.txt for development. Submitted inference
+is read-only without networking, subprocesses or training. Stockfish is used
+offline in development. The cancelled long consistency study stays stopped.
 
 <!-- ELITE_SESSION_START -->
 ## Earlier phase and elite selection: chessity-agent v1.14
@@ -166,3 +140,14 @@ on the real Linux container is still required before any competition acceptance 
 
 The controlled phase-coverage experiment is complete. Do not adopt this pilot as an improvement; it showed a regression in the small comparison. See `docs/CARLSEN_CURRICULUM_RESULTS.md` for the 32-game comparison, validation counts, scope and reproduction steps. Candidate and equal-compute control are preserved separately; neither automatically replaces the baseline.
 <!-- CURRICULUM_SESSION_END -->
+
+[Recent competition losses and draw: old/current comparison, verified cases and rejected fixes](docs/COMPETITION_LOSSES_RESULTS_20260908.md). Recommendation remains v1.53.
+
+[Defensive/rook descendant findings](docs/COMPETITION_COUNTERFACTUALS_RESULTS_20260908.md) · [Requested 2400/2600 and conditional 2800 results](docs/COMPETITION_CONDITIONAL_RATED_RESULTS_20260908.md).
+
+Latest loss/draw review: two implemented heuristics and an actually fitted
+local-value model did not qualify for promotion. The small requested rematch
+and every failure are recorded in the [learning report](docs/E55_LOSSES_DRAW_AND_LEARNING_20260908.md). v1.53 remains
+the recommended upload; no new version is implied by this experiment.
+
+Every-game feedback is now the default local test workflow. [Latest competition review and learning results](docs/ALL_GAME_FEEDBACK_RESULTS_20260908.md) cover all 395 moves in eight games. The reward-policy checkpoint remains experimental; v1.53 remains the recommended upload.

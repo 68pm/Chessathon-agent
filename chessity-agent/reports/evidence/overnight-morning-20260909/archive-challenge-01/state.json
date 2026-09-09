@@ -1,0 +1,77 @@
+{
+  "status": "complete",
+  "stages": [
+    {
+      "stage": "read-only",
+      "status": "complete",
+      "arguments": [
+        "scripts.validate_package_staged_fixed",
+        "--zip",
+        "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\work\\github-chessity\\chessity-agent\\versions\\v1.42\\chessity-agent-v1.42.zip",
+        "--out",
+        "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\overnight-20260909\\archive-challenge-01\\validation.json"
+      ],
+      "timeout_seconds": 180,
+      "pid": 30168,
+      "elapsed_seconds": 90.40599999995902
+    },
+    {
+      "stage": "comparison",
+      "status": "complete",
+      "arguments": [
+        "scripts.feedback_matches_windows",
+        "--candidate",
+        "candidates/compiled-reductions-v1",
+        "--opponent",
+        "candidates/compiled-near-queen-checks-v1",
+        "--stage",
+        "comparison",
+        "--pairs",
+        "2",
+        "--offset",
+        "0",
+        "--cycle",
+        "n9-archive-42-comparison",
+        "--openings",
+        "configs/overnight-september9-short-openings.json"
+      ],
+      "timeout_seconds": 2700,
+      "pid": 25324,
+      "elapsed_seconds": 2107.0630000000237
+    }
+  ],
+  "matches": [
+    {
+      "label": "comparison",
+      "result_path": "runs\\improvement-loop-20260907\\n9-archive-42-comparison\\comparison-compiled-reductions-v1\\results.json",
+      "sha256": "d742de162015117e1e6c154d26da9c1f222582dc8c669e9a34f14a9a0d9080c1",
+      "summary": {
+        "incumbent": {
+          "games": 4,
+          "wins": 3,
+          "draws": 1,
+          "losses": 0,
+          "score": 0.875,
+          "completed_pairs": 2,
+          "pair_bootstrap_95": [
+            0.75,
+            1.0
+          ],
+          "terminations": {
+            "checkmate": 3,
+            "threefold_repetition": 1
+          },
+          "candidate_failures": 0
+        }
+      }
+    }
+  ],
+  "preparation_sha256": "d7229c38662bf4a7d2043679421dce64c23785d9181185dec636800918d1dd41",
+  "selected_version": null,
+  "calibrated_elo": null,
+  "favourable_comparison": true,
+  "decision": "deadline_before_next_stage",
+  "pending_stage": "rated-2400",
+  "completed_utc": "2026-09-09T05:17:14.106009+00:00",
+  "frozen_candidates": true
+}
