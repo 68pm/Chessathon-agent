@@ -1,0 +1,31 @@
+{
+  "identity": {
+    "source_files": {
+      "\\\\?\\C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\improvement-loop-20260907\\d9-pawn-bits-01-rated2400\\rated-prototype\\postgame-feedback\\reviews\\games\\39ea1978f53b06d9d568e008e0a76927cb7943d3e9d1ef4c2079a99480793818\\review.json": "f1945a85d2f477e30f0d4afee7a687020783a3a5e6d2b90589b8845a9b02284e",
+      "\\\\?\\C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\improvement-loop-20260907\\d9-pawn-bits-01-rated2400\\rated-prototype\\postgame-feedback\\reviews\\games\\3baa23b2ab566b96132bf60fea373b67c1c948bfbc89c57dd80d0f4c38e333ef\\review.json": "dc8e95cae560b6e86c9c6eb845a01f317000366eee6764bc7546fba446c38917"
+    },
+    "initial_policy_sha256": "1670b12e42fa7a48502e22d4202d79a809b1a8a0fba2b179a9d1671e53f4b6b7",
+    "trainer_sha256": "80306e181a10f248b247804e28fc64f079a4344b2fe0dac62384f881f6338a88",
+    "epochs": 1,
+    "learning_rate": 5e-05,
+    "seed": 20260908,
+    "anchor_weight": 2.0,
+    "max_per_game": 48
+  },
+  "status": "complete",
+  "trained": true,
+  "updates": 10,
+  "examples": 26,
+  "good_examples": 23,
+  "corrected_bad_examples": 3,
+  "replay_positions": 128,
+  "replay_source_sha256": "2104b888888162a96261f395e82e586ca2717ef81cccb30e57fff6500bc26c5d",
+  "objective_before": 0.4366080783210792,
+  "objective_after": 0.42788925334189587,
+  "model_sha256": "1875a6b27de81be0a5f8d74969893464722be7831095c4d4a507aa6eecf6be6e",
+  "architecture": "935 inputs / 64 / 32 / 1 move policy",
+  "promoted": false,
+  "selected_agent_changed": false,
+  "value_weights_changed": false,
+  "limitation": "One bounded supervised reward-weighted policy update. In-sample objective only; no strength or Elo claim. Quiet descendant labels remain necessary for position-value training."
+}

@@ -1,0 +1,14 @@
+[Event "Chessity fast-chess verified pilot"]
+[Site "Local offline"]
+[Date "????.??.??"]
+[Round "2"]
+[White "Stockfish 19 UCI_Elo 2600"]
+[Black "prototype"]
+[Result "1/2-1/2"]
+[FEN "r1bq1rk1/1p1nbppp/p1p2n2/3p2B1/3P4/2NBPN2/PPQ2PPP/2R1K2R b K - 1 10"]
+[SetUp "1"]
+[TimeControl "120+0.5"]
+[Termination "threefold_repetition"]
+[OpeningSetupUCI "d2d4 d7d5 g1f3 g8f6 c2c4 e7e6 b1c3 f8e7 c1g5 e8g8 e2e3 b8d7 a1c1 c7c6 d1c2 a7a6 c4d5 e6d5 f1d3"]
+
+10... h6 { [%clk 0:01:57.578] Feedback: good_move; reward=1.0; regret_cp=[0, 0] } 11. Bf4 { [%clk 0:01:26.068] } 11... Nh5 { [%clk 0:01:53.209] Feedback: good_move; reward=1.0; regret_cp=[0, 0] } 12. Qd2 { [%clk 0:01:15.788] } 12... g5 { [%clk 0:01:49.443] Feedback: small_or_uncertain_difference; reward=0.0; regret_cp=[26, 53] } 13. Bg3 { [%clk 0:01:09.134] } 13... b5 { [%clk 0:01:45.515] Feedback: inaccuracy; reward=-0.39666666666666667; regret_cp=[119, 122] } 14. Bb1 { [%clk 0:01:08.015] } 14... Nxg3 { [%clk 0:01:41.188] Feedback: good_move; reward=1.0; regret_cp=[0, 0] } 15. hxg3 { [%clk 0:01:03.636] } 15... g4 { [%clk 0:01:37.717] Feedback: inaccuracy; reward=-0.5; regret_cp=[150, 220] } 16. e4 { [%clk 0:01:00.535] } 16... Bf6 { [%clk 0:01:34.194] Feedback: uncertain; reward=None; regret_cp=[0, 0] } 17. e5 { [%clk 0:00:57.582] } 17... gxf3 { [%clk 0:01:30.839] Feedback: allows_engine_mate; reward=-1.0; regret_cp=None } 18. Qxh6 { [%clk 0:00:53.134] } 18... Re8 { [%clk 0:01:31.267] Feedback: already_in_engine_forced_loss; reward=0.0; regret_cp=None } 19. Bh7+ { [%clk 0:00:48.604] } 19... Kh8 { [%clk 0:01:31.765] Feedback: forced_move; reward=0.0; regret_cp=None } 20. Bc2+ { [%clk 0:00:47.769] } 20... Kg8 { [%clk 0:01:32.222] Feedback: forced_move; reward=0.0; regret_cp=None } 21. Bh7+ { [%clk 0:00:43.716] } 21... Kh8 { [%clk 0:01:32.72] Feedback: forced_move; reward=0.0; regret_cp=None } 22. Bg6+ { [%clk 0:00:40.259] } 22... Kg8 { [%clk 0:01:33.218] Feedback: forced_move; reward=0.0; regret_cp=None } 1/2-1/2

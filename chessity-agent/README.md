@@ -1,18 +1,19 @@
 # chessity-agent
 
-**Recommended: v1.54.** [Download ZIP](latest/chessity-agent.zip).
+**Recommended: v1.55.** [Download ZIP](latest/chessity-agent.zip).
 
 | Opponent | Wins | Draws | Losses |
 |---|---:|---:|---:|
-| Exact v1.42 | 2 | 0 | 0 |
-| Exact v1.53 | 1 | 1 | 0 |
-| Stockfish nominal 2400 | 0 | 1 | 1 |
-| Stockfish nominal 2600 | 0 | 1 | 1 |
+| Exact v1.54 | 2 | 0 | 0 |
+| Exact v1.53 | 2 | 0 | 0 |
+| Stockfish nominal 2400 | 0 | 0 | 2 |
+| Stockfish nominal 2600 | 1 | 1 | 0 |
+| Stockfish nominal 2800 | 0 | 1 | 1 |
 
-No rated-setting win was recorded in this screen.
-No calibrated Elo is claimed. All55numbered versions remain available.
+Highest clean nominal setting defeated in this screen: **2600**.
+No calibrated Elo is claimed. All 56 numbered versions remain available.
 
-[Release report](reports/DAYTIME_PAWN_RELEASE_20260909.md). Source-only, read-only
+[Release report](reports/DAYTIME_PAWN_BITBOARDS_RELEASE_20260909.md). Source-only, read-only
 inference; existing policy weights retained. Site upload is pending access.
 
 ## Versions
@@ -73,7 +74,8 @@ inference; existing policy weights retained. Site upload is pending access.
 | [v1.51](versions/v1.51/chessity-agent-v1.51.zip) | Completed warmup with plain compiler diagnostics | Preserved v1.51 startup fallback; provisional tactical recommendation is nowv1.52 |
 | [v1.52](versions/v1.52/chessity-agent-v1.52.zip) | Bounded check search and coordinated king-pressure evaluation | Provisional:1W0D1L vs51; rated2400 0W1D1L and2600 0W0D2L; no Elo established |
 | [v1.53](versions/v1.53/chessity-agent-v1.53.zip) | Bounded forcing checks near the enemy king | Preserved alternative after 0W/1D/3L against exact v1.42; historical 2400: 1W/1D/2L, 2600: 0W/1D/3L |
-| [v1.54](versions/v1.54/chessity-agent-v1.54.zip) | Faster exact passed-pawn evaluation | Selected after 2W/0D/0L vs exactv1.42 and 1W/1D/0L vs exactv1.53; nominal2400 0W/1D/1L, nominal2600 0W/1D/1L. Small development screen; no calibrated Elo. |
+| [v1.54](versions/v1.54/chessity-agent-v1.54.zip) | Faster exact passed-pawn evaluation | Former selection after 2W/0D/0L vs exactv1.42 and 1W/1D/0L vs exactv1.53; nominal2400 0W/1D/1L, nominal2600 0W/1D/1L. Small development screen; no calibrated Elo. |
+| [v1.55](versions/v1.55/chessity-agent-v1.55.zip) | Faster pawn evaluation | Selected after 2W/0D/0L vs exact v1.54 and 2W/0D/0L vs exact v1.53; nominal 2400 0W/0D/2L, nominal 2600 1W/1D/0L. Small development screen; no calibrated Elo. |
 
 All 54 numbered versions are retained chronologically. A higher version number alone is not evidence of strength.
 

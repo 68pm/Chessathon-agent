@@ -1,0 +1,80 @@
+{
+  "version": "v1.54",
+  "name": "chessity-agent",
+  "title": "Faster exact passed-pawn evaluation",
+  "status": "Selected after 2W/0D/0L vs exactv1.42 and 1W/1D/0L vs exactv1.53; nominal2400 0W/1D/1L, nominal2600 0W/1D/1L. Small development screen; no calibrated Elo.",
+  "recommended": true,
+  "source_version": "runs\\daytime-20260909\\pawn-extrema-01\\prototype",
+  "sha256": "9c5707d4dc4aa918ecb01ba284f9dd4f7469b22d50afd4b6a6d425e6f44c585e",
+  "zip_bytes": 272547,
+  "created_utc": "2026-09-09T08:19:35.628372+00:00",
+  "selection_utc": "2026-09-09T08:19:35.628372+00:00",
+  "archive": "versions/v1.54/chessity-agent-v1.54.zip",
+  "read_only_smoke_calls": 2,
+  "read_only_status": "passed",
+  "archive_json_formatting_differs_from_local_folder": [],
+  "current_results": {
+    "versus42": {
+      "games": 2,
+      "wins": 2,
+      "draws": 0,
+      "losses": 0,
+      "terminations": {
+        "checkmate": 2
+      },
+      "operational_games": 0
+    },
+    "versus53": {
+      "games": 2,
+      "wins": 1,
+      "draws": 1,
+      "losses": 0,
+      "terminations": {
+        "checkmate": 1,
+        "insufficient_material": 1
+      },
+      "operational_games": 0
+    },
+    "rated2400": {
+      "games": 2,
+      "wins": 0,
+      "draws": 1,
+      "losses": 1,
+      "terminations": {
+        "checkmate": 1,
+        "threefold_repetition": 1
+      },
+      "operational_games": 0
+    },
+    "rated2600": {
+      "games": 2,
+      "wins": 0,
+      "draws": 1,
+      "losses": 1,
+      "terminations": {
+        "fifty_moves": 1,
+        "checkmate": 1
+      },
+      "operational_games": 0
+    }
+  },
+  "highest_nominal_opponent_defeated": null,
+  "calibrated_elo": null,
+  "time_control": "120+0.5",
+  "selection_evidence": "reports/DAYTIME_PAWN_RELEASE_20260909.md",
+  "current_comparison_scope": "Exact archived opponents, both colours, frozen playing weights; exposed development openings.",
+  "latest_read_only_check": {
+    "init_ms": 18564.62720001582,
+    "legal_calls": 2,
+    "read_only_checks": {
+      "create_file": "blocked",
+      "delete_file": "blocked",
+      "create_directory": "blocked",
+      "rename_file": "blocked"
+    },
+    "peak_working_set_bytes": 232034304
+  },
+  "architecture": "Original classical searched-position evaluator with existing learned root policy. No new value model included.",
+  "website_submission_status": "not yet submitted or validated",
+  "goal_achieved": false
+}

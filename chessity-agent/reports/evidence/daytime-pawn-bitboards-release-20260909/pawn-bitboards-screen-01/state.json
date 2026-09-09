@@ -1,0 +1,273 @@
+{
+  "status": "complete",
+  "stages": [
+    {
+      "label": "read-only",
+      "status": "complete",
+      "arguments": [
+        "scripts.validate_package_staged_fixed",
+        "--zip",
+        "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\daytime-20260909\\pawn-bitboards-screen-01\\pawn-bitboards-candidate.zip",
+        "--out",
+        "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\daytime-20260909\\pawn-bitboards-screen-01\\validation.json"
+      ],
+      "timeout_seconds": 180,
+      "pid": 33160,
+      "elapsed_seconds": 25.56300000002375
+    },
+    {
+      "label": "versus54",
+      "status": "complete",
+      "arguments": [
+        "scripts.feedback_matches_windows",
+        "--candidate",
+        "runs\\daytime-20260909\\pawn-bitboards-01\\prototype",
+        "--stage",
+        "comparison",
+        "--pairs",
+        "1",
+        "--offset",
+        "0",
+        "--cycle",
+        "d9-pawn-bits-01-versus54",
+        "--openings",
+        "configs/overnight-september9-short-openings.json",
+        "--opponent",
+        "runs\\daytime-20260909\\pawn-extrema-01\\prototype"
+      ],
+      "timeout_seconds": 1500,
+      "pid": 12844,
+      "elapsed_seconds": 580.905999999959
+    },
+    {
+      "label": "versus53",
+      "status": "complete",
+      "arguments": [
+        "scripts.feedback_matches_windows",
+        "--candidate",
+        "runs\\daytime-20260909\\pawn-bitboards-01\\prototype",
+        "--stage",
+        "comparison",
+        "--pairs",
+        "1",
+        "--offset",
+        "1",
+        "--cycle",
+        "d9-pawn-bits-01-versus53",
+        "--openings",
+        "configs/overnight-september9-short-openings.json",
+        "--opponent",
+        "candidates\\compiled-near-queen-checks-v1"
+      ],
+      "timeout_seconds": 1500,
+      "pid": 13740,
+      "elapsed_seconds": 691.5779999999795
+    },
+    {
+      "label": "rated2400",
+      "status": "complete",
+      "arguments": [
+        "scripts.feedback_matches_windows",
+        "--candidate",
+        "runs\\daytime-20260909\\pawn-bitboards-01\\prototype",
+        "--stage",
+        "rated",
+        "--pairs",
+        "1",
+        "--offset",
+        "2",
+        "--cycle",
+        "d9-pawn-bits-01-rated2400",
+        "--openings",
+        "configs/overnight-september9-short-openings.json",
+        "--levels",
+        "2400"
+      ],
+      "timeout_seconds": 1500,
+      "pid": 8548,
+      "elapsed_seconds": 502.78100000001723
+    },
+    {
+      "label": "rated2600",
+      "status": "complete",
+      "arguments": [
+        "scripts.feedback_matches_windows",
+        "--candidate",
+        "runs\\daytime-20260909\\pawn-bitboards-01\\prototype",
+        "--stage",
+        "rated",
+        "--pairs",
+        "1",
+        "--offset",
+        "2",
+        "--cycle",
+        "d9-pawn-bits-01-rated2600",
+        "--openings",
+        "configs/overnight-september9-short-openings.json",
+        "--levels",
+        "2600"
+      ],
+      "timeout_seconds": 1500,
+      "pid": 4264,
+      "elapsed_seconds": 446.23399999999674
+    },
+    {
+      "label": "rated2800",
+      "status": "complete",
+      "arguments": [
+        "scripts.feedback_matches_windows",
+        "--candidate",
+        "runs\\daytime-20260909\\pawn-bitboards-01\\prototype",
+        "--stage",
+        "rated",
+        "--pairs",
+        "1",
+        "--offset",
+        "2",
+        "--cycle",
+        "d9-pawn-bits-01-rated2800",
+        "--openings",
+        "configs/overnight-september9-short-openings.json",
+        "--levels",
+        "2800"
+      ],
+      "timeout_seconds": 1500,
+      "pid": 27152,
+      "elapsed_seconds": 606.984999999986
+    }
+  ],
+  "matches": [
+    {
+      "label": "versus54",
+      "opponent": "runs\\daytime-20260909\\pawn-extrema-01\\prototype",
+      "offset": 0,
+      "result_path": "runs\\improvement-loop-20260907\\d9-pawn-bits-01-versus54\\comparison-prototype\\results.json",
+      "sha256": "5294fbbda39c1e5b6960d945e60ec74b038bf88fb05c794078c2a35a1d045936",
+      "summary": {
+        "incumbent": {
+          "games": 2,
+          "wins": 2,
+          "draws": 0,
+          "losses": 0,
+          "score": 1.0,
+          "completed_pairs": 1,
+          "pair_bootstrap_95": [
+            1.0,
+            1.0
+          ],
+          "terminations": {
+            "checkmate": 2
+          },
+          "candidate_failures": 0
+        }
+      }
+    },
+    {
+      "label": "versus53",
+      "opponent": "candidates\\compiled-near-queen-checks-v1",
+      "offset": 1,
+      "result_path": "runs\\improvement-loop-20260907\\d9-pawn-bits-01-versus53\\comparison-prototype\\results.json",
+      "sha256": "6b854dde8932378d014227bcb594fad562c215a71acefcca007617ca7a336215",
+      "summary": {
+        "incumbent": {
+          "games": 2,
+          "wins": 2,
+          "draws": 0,
+          "losses": 0,
+          "score": 1.0,
+          "completed_pairs": 1,
+          "pair_bootstrap_95": [
+            1.0,
+            1.0
+          ],
+          "terminations": {
+            "checkmate": 2
+          },
+          "candidate_failures": 0
+        }
+      }
+    },
+    {
+      "label": "rated2400",
+      "level": 2400,
+      "offset": 2,
+      "result_path": "runs\\improvement-loop-20260907\\d9-pawn-bits-01-rated2400\\rated-prototype\\results.json",
+      "sha256": "3c59a7590b637f7cf09f52b513a20155372a5d76b483e8ac8c3df954ac1e165e",
+      "summary": {
+        "stockfish:2400": {
+          "games": 2,
+          "wins": 0,
+          "draws": 0,
+          "losses": 2,
+          "score": 0.0,
+          "completed_pairs": 1,
+          "pair_bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "terminations": {
+            "checkmate": 2
+          },
+          "candidate_failures": 0
+        }
+      }
+    },
+    {
+      "label": "rated2600",
+      "level": 2600,
+      "offset": 2,
+      "result_path": "runs\\improvement-loop-20260907\\d9-pawn-bits-01-rated2600\\rated-prototype\\results.json",
+      "sha256": "556c969da840c2bbac92cc316eedd945fb94a6a6bcc3b107226ce42642af6578",
+      "summary": {
+        "stockfish:2600": {
+          "games": 2,
+          "wins": 1,
+          "draws": 1,
+          "losses": 0,
+          "score": 0.75,
+          "completed_pairs": 1,
+          "pair_bootstrap_95": [
+            0.75,
+            0.75
+          ],
+          "terminations": {
+            "checkmate": 1,
+            "threefold_repetition": 1
+          },
+          "candidate_failures": 0
+        }
+      }
+    },
+    {
+      "label": "rated2800",
+      "level": 2800,
+      "offset": 2,
+      "result_path": "runs\\improvement-loop-20260907\\d9-pawn-bits-01-rated2800\\rated-prototype\\results.json",
+      "sha256": "c2cb12ffcadd1ee239521be63de25067dcb9cbe20e3e0dc475734715ed977292",
+      "summary": {
+        "stockfish:2800": {
+          "games": 2,
+          "wins": 0,
+          "draws": 1,
+          "losses": 1,
+          "score": 0.25,
+          "completed_pairs": 1,
+          "pair_bootstrap_95": [
+            0.25,
+            0.25
+          ],
+          "terminations": {
+            "threefold_repetition": 1,
+            "checkmate": 1
+          },
+          "candidate_failures": 0
+        }
+      }
+    }
+  ],
+  "passed": true,
+  "package_sha256": "29b322dba4ea61d0fce1709327810e8f9f199df79cf40cc92290ddf9ec083fc1",
+  "decision": "review_for_qualified_release_and_authorised_upload",
+  "finished_utc": "2026-09-09T09:38:05.118790+00:00",
+  "frozen_candidates": true
+}

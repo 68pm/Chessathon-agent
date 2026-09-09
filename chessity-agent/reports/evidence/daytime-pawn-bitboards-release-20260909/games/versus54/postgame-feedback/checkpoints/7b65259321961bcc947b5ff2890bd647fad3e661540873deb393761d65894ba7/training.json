@@ -1,0 +1,30 @@
+{
+  "identity": {
+    "source_files": {
+      "\\\\?\\C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\improvement-loop-20260907\\d9-pawn-bits-01-versus54\\comparison-prototype\\postgame-feedback\\reviews\\games\\7b65259321961bcc947b5ff2890bd647fad3e661540873deb393761d65894ba7\\review.json": "4b189c705e2644291f686bb4b06cbcff246305cceaca060f93f4d333422bcfb8"
+    },
+    "initial_policy_sha256": "1670b12e42fa7a48502e22d4202d79a809b1a8a0fba2b179a9d1671e53f4b6b7",
+    "trainer_sha256": "80306e181a10f248b247804e28fc64f079a4344b2fe0dac62384f881f6338a88",
+    "epochs": 1,
+    "learning_rate": 5e-05,
+    "seed": 20260908,
+    "anchor_weight": 2.0,
+    "max_per_game": 48
+  },
+  "status": "complete",
+  "trained": true,
+  "updates": 10,
+  "examples": 25,
+  "good_examples": 24,
+  "corrected_bad_examples": 1,
+  "replay_positions": 128,
+  "replay_source_sha256": "2104b888888162a96261f395e82e586ca2717ef81cccb30e57fff6500bc26c5d",
+  "objective_before": 0.3862964072648217,
+  "objective_after": 0.3738774549774343,
+  "model_sha256": "c69d8fbd3bb9fbc03cfc5348ef6c221408007916121100526760dcb750653448",
+  "architecture": "935 inputs / 64 / 32 / 1 move policy",
+  "promoted": false,
+  "selected_agent_changed": false,
+  "value_weights_changed": false,
+  "limitation": "One bounded supervised reward-weighted policy update. In-sample objective only; no strength or Elo claim. Quiet descendant labels remain necessary for position-value training."
+}

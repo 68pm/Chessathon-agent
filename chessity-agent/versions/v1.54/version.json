@@ -3,7 +3,7 @@
   "name": "chessity-agent",
   "title": "Faster exact passed-pawn evaluation",
   "status": "Selected after 2W/0D/0L vs exactv1.42 and 1W/1D/0L vs exactv1.53; nominal2400 0W/1D/1L, nominal2600 0W/1D/1L. Small development screen; no calibrated Elo.",
-  "recommended": true,
+  "recommended": false,
   "source_version": "runs\\daytime-20260909\\pawn-extrema-01\\prototype",
   "sha256": "9c5707d4dc4aa918ecb01ba284f9dd4f7469b22d50afd4b6a6d425e6f44c585e",
   "zip_bytes": 272547,
@@ -76,5 +76,6 @@
   },
   "architecture": "Original classical searched-position evaluator with existing learned root policy. No new value model included.",
   "website_submission_status": "not yet submitted or validated",
-  "goal_achieved": false
+  "goal_achieved": false,
+  "selection_note": "Preserved former selection; the new pawn candidate passed the declared short comparison. Prior rating evidence remains historical."
 }

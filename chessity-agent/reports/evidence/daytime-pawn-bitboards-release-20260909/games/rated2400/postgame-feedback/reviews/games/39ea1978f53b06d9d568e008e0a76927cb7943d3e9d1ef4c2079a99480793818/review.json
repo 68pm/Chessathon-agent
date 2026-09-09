@@ -1,0 +1,2545 @@
+{
+  "identity": {
+    "schema": "stockfish-move-feedback-v1",
+    "game": {
+      "start_fen": "r1bq1rk1/1p1nbppp/p1p2n2/3p2B1/3P4/2NBPN2/PPQ2PPP/2R1K2R b K - 1 10",
+      "moves": [
+        "h7h6",
+        "g5h4",
+        "g7g5",
+        "h4g3",
+        "f6h5",
+        "g3e5",
+        "f7f6",
+        "h2h4",
+        "g5g4",
+        "e5h2",
+        "g4f3",
+        "d3h7",
+        "g8h8",
+        "c2g6",
+        "f3g2",
+        "h1g1",
+        "e7b4",
+        "g6h6",
+        "b4c3",
+        "b2c3",
+        "f8f7",
+        "h7f5",
+        "h8g8",
+        "g1g2",
+        "h5g7",
+        "g2g7",
+        "f7g7",
+        "f5e6",
+        "g8f8",
+        "h2d6",
+        "f8e8",
+        "h6h5",
+        "g7g6",
+        "h5g6"
+      ],
+      "candidate_white": false,
+      "score": 0.0,
+      "candidate_version": "runs\\daytime-20260909\\pawn-bitboards-01\\prototype",
+      "source_game_id": "2",
+      "opponent": "stockfish:2400",
+      "termination": "checkmate",
+      "operational_failure": null,
+      "pgn_sha256": "35a372da113a53fe8799eb616de7e5b76e5f9c2a8ccd5f3ca742bdaa5fa420ff",
+      "game_key": "39ea1978f53b06d9d568e008e0a76927cb7943d3e9d1ef4c2079a99480793818"
+    },
+    "teacher": {
+      "schema": "stockfish-move-feedback-v1",
+      "executable_sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0",
+      "evaluate_sha256": "883f9c78c8c890e9ffcad0aca59dbc79f87e832be57e817e1a9f518b26680e33",
+      "settings": {
+        "Threads": 1,
+        "Hash": 32,
+        "UCI_LimitStrength": false
+      }
+    },
+    "reviewer_sha256": "31642a11dcfc7d242b7bae0d093db885ca100d33a4111307974c6c87d6bff1d1",
+    "budgets": [
+      80000,
+      320000
+    ]
+  },
+  "status": "complete",
+  "rows": [
+    {
+      "ply": 0,
+      "fullmove": 10,
+      "white": false,
+      "fen": "r1bq1rk1/1p1nbppp/p1p2n2/3p2B1/3P4/2NBPN2/PPQ2PPP/2R1K2R b K - 1 10",
+      "start_fen": "r1bq1rk1/1p1nbppp/p1p2n2/3p2B1/3P4/2NBPN2/PPQ2PPP/2R1K2R b K - 1 10",
+      "history": [],
+      "played": "h7h6",
+      "san": "h6",
+      "clock_after_seconds": 115.714,
+      "labels": [
+        {
+          "nodes": 80000,
+          "best": {
+            "cp": -32,
+            "mate": null,
+            "depth": 15,
+            "pv": [
+              "h7h6",
+              "g5h4",
+              "f8e8",
+              "e1g1",
+              "f6e4",
+              "d3e4",
+              "e7h4",
+              "e4h7",
+              "g8h8",
+              "f3h4",
+              "d8h4",
+              "h7d3",
+              "h4e7",
+              "f1e1"
+            ],
+            "nodes": 67379
+          },
+          "played": {
+            "cp": -32,
+            "mate": null,
+            "depth": 15,
+            "pv": [
+              "h7h6",
+              "g5h4",
+              "f8e8",
+              "e1g1",
+              "f6e4",
+              "d3e4",
+              "e7h4",
+              "e4h7",
+              "g8h8",
+              "f3h4",
+              "d8h4",
+              "h7d3",
+              "h4e7",
+              "f1e1"
+            ],
+            "nodes": 67379
+          }
+        },
+        {
+          "nodes": 320000,
+          "best": {
+            "cp": -26,
+            "mate": null,
+            "depth": 20,
+            "pv": [
+              "h7h6",
+              "g5h4",
+              "f8e8",
+              "e1g1",
+              "f6e4",
+              "h4e7",
+              "d8e7",
+              "c3a4",
+              "d7f8",
+              "f3e5",
+              "f7f6",
+              "a4b6",
+              "a8b8",
+              "b6c8",
+              "b8c8",
+              "e5f3",
+              "g7g6",
+              "b2b3",
+              "c8c7"
+            ],
+            "nodes": 320213
+          },
+          "played": {
+            "cp": -26,
+            "mate": null,
+            "depth": 20,
+            "pv": [
+              "h7h6",
+              "g5h4",
+              "f8e8",
+              "e1g1",
+              "f6e4",
+              "h4e7",
+              "d8e7",
+              "c3a4",
+              "d7f8",
+              "f3e5",
+              "f7f6",
+              "a4b6",
+              "a8b8",
+              "b6c8",
+              "b8c8",
+              "e5f3",
+              "g7g6",
+              "b2b3",
+              "c8c7"
+            ],
+            "nodes": 320213
+          }
+        }
+      ],
+      "tags": [
+        "opening"
+      ],
+      "reward": 1.0,
+      "label": "good_move",
+      "policy_target": "h7h6",
+      "policy_weight": 1.0,
+      "regret_cp": [
+        0,
+        0
+      ],
+      "confidence": "two-budget engine estimate",
+      "static_value_target": null,
+      "value_training_note": "Root action reward only; independently label quiet descendants before value fitting."
+    },
+    {
+      "ply": 2,
+      "fullmove": 11,
+      "white": false,
+      "fen": "r1bq1rk1/1p1nbpp1/p1p2n1p/3p4/3P3B/2NBPN2/PPQ2PPP/2R1K2R b K - 1 11",
+      "start_fen": "r1bq1rk1/1p1nbppp/p1p2n2/3p2B1/3P4/2NBPN2/PPQ2PPP/2R1K2R b K - 1 10",
+      "history": [
+        "h7h6",
+        "g5h4"
+      ],
+      "played": "g7g5",
+      "san": "g5",
+      "clock_after_seconds": 111.417,
+      "labels": [
+        {
+          "nodes": 80000,
+          "best": {
+            "cp": -25,
+            "mate": null,
+            "depth": 15,
+            "pv": [
+              "f8e8",
+              "e1g1",
+              "f6e4",
+              "d3e4",
+              "e7h4",
+              "f3h4",
+              "d8h4",
+              "e4h7",
+              "g8h8",
+              "h7d3",
+              "d7f6",
+              "c3e2",
+              "h4g5",
+              "e2f4",
+              "f6e4"
+            ],
+            "nodes": 52718
+          },
+          "played": {
+            "cp": -68,
+            "mate": null,
+            "depth": 14,
+            "pv": [
+              "g7g5",
+              "h4g3",
+              "f6h5",
+              "c3e2",
+              "h5g3",
+              "e2g3",
+              "g5g4",
+              "f3d2",
+              "d7f6",
+              "g3f5",
+              "c8f5",
+              "d3f5",
+              "f8e8",
+              "g2g3"
+            ],
+            "nodes": 58126
+          }
+        },
+        {
+          "nodes": 320000,
+          "best": {
+            "cp": -23,
+            "mate": null,
+            "depth": 17,
+            "pv": [
+              "f8e8",
+              "e1g1",
+              "f6e4",
+              "d3e4",
+              "e7h4",
+              "e4h7",
+              "g8h8",
+              "f3h4",
+              "d8h4",
+              "h7d3",
+              "d7f6",
+              "c1e1",
+              "h4g5",
+              "f2f4",
+              "g5h4",
+              "c2d2",
+              "f6h7",
+              "f4f5",
+              "h4d8",
+              "h2h3",
+              "a6a5",
+              "f1f4"
+            ],
+            "nodes": 224766
+          },
+          "played": {
+            "cp": -56,
+            "mate": null,
+            "depth": 17,
+            "pv": [
+              "g7g5",
+              "h4g3",
+              "f6h5",
+              "c3e2",
+              "f8e8",
+              "e1g1",
+              "h5g3",
+              "e2g3",
+              "g5g4",
+              "f3d2",
+              "d7f6",
+              "c1e1",
+              "h6h5",
+              "e1e2",
+              "h5h4",
+              "g3f5",
+              "c8f5",
+              "d3f5",
+              "e7b4",
+              "a2a3",
+              "b4d2",
+              "c2d2",
+              "f6e4",
+              "f5e4",
+              "d5e4",
+              "f2f3",
+              "e4f3",
+              "g2f3",
+              "d8g5",
+              "f3g4"
+            ],
+            "nodes": 217077
+          }
+        }
+      ],
+      "tags": [
+        "opening"
+      ],
+      "reward": 0.0,
+      "label": "small_or_uncertain_difference",
+      "policy_target": null,
+      "policy_weight": 0.0,
+      "regret_cp": [
+        43,
+        33
+      ],
+      "confidence": "two-budget engine estimate",
+      "static_value_target": null,
+      "value_training_note": "Root action reward only; independently label quiet descendants before value fitting."
+    },
+    {
+      "ply": 4,
+      "fullmove": 12,
+      "white": false,
+      "fen": "r1bq1rk1/1p1nbp2/p1p2n1p/3p2p1/3P4/2NBPNB1/PPQ2PPP/2R1K2R b K - 1 12",
+      "start_fen": "r1bq1rk1/1p1nbppp/p1p2n2/3p2B1/3P4/2NBPN2/PPQ2PPP/2R1K2R b K - 1 10",
+      "history": [
+        "h7h6",
+        "g5h4",
+        "g7g5",
+        "h4g3"
+      ],
+      "played": "f6h5",
+      "san": "Nh5",
+      "clock_after_seconds": 108.587,
+      "labels": [
+        {
+          "nodes": 80000,
+          "best": {
+            "cp": -71,
+            "mate": null,
+            "depth": 15,
+            "pv": [
+              "f6h5",
+              "c3e2",
+              "e7b4",
+              "e1f1",
+              "f8e8",
+              "d3h7",
+              "g8h8",
+              "g3e5",
+              "d7e5",
+              "f3e5",
+              "d8f6",
+              "g2g4",
+              "b4d6",
+              "h2h4"
+            ],
+            "nodes": 80076
+          },
+          "played": {
+            "cp": -71,
+            "mate": null,
+            "depth": 15,
+            "pv": [
+              "f6h5",
+              "c3e2",
+              "e7b4",
+              "e1f1",
+              "f8e8",
+              "d3h7",
+              "g8h8",
+              "g3e5",
+              "d7e5",
+              "f3e5",
+              "d8f6",
+              "g2g4",
+              "b4d6",
+              "h2h4"
+            ],
+            "nodes": 80076
+          }
+        },
+        {
+          "nodes": 320000,
+          "best": {
+            "cp": -64,
+            "mate": null,
+            "depth": 20,
+            "pv": [
+              "f6h5",
+              "c3e2",
+              "f8e8",
+              "e1g1",
+              "h5g3",
+              "e2g3",
+              "g5g4",
+              "f3d2",
+              "d7f6",
+              "c1e1",
+              "e7d6",
+              "g3f5",
+              "c8f5",
+              "d3f5",
+              "d8b6",
+              "h2h3"
+            ],
+            "nodes": 320287
+          },
+          "played": {
+            "cp": -64,
+            "mate": null,
+            "depth": 20,
+            "pv": [
+              "f6h5",
+              "c3e2",
+              "f8e8",
+              "e1g1",
+              "h5g3",
+              "e2g3",
+              "g5g4",
+              "f3d2",
+              "d7f6",
+              "c1e1",
+              "e7d6",
+              "g3f5",
+              "c8f5",
+              "d3f5",
+              "d8b6",
+              "h2h3"
+            ],
+            "nodes": 320287
+          }
+        }
+      ],
+      "tags": [
+        "opening"
+      ],
+      "reward": 1.0,
+      "label": "good_move",
+      "policy_target": "f6h5",
+      "policy_weight": 1.0,
+      "regret_cp": [
+        0,
+        0
+      ],
+      "confidence": "two-budget engine estimate",
+      "static_value_target": null,
+      "value_training_note": "Root action reward only; independently label quiet descendants before value fitting."
+    },
+    {
+      "ply": 6,
+      "fullmove": 13,
+      "white": false,
+      "fen": "r1bq1rk1/1p1nbp2/p1p4p/3pB1pn/3P4/2NBPN2/PPQ2PPP/2R1K2R b K - 3 13",
+      "start_fen": "r1bq1rk1/1p1nbppp/p1p2n2/3p2B1/3P4/2NBPN2/PPQ2PPP/2R1K2R b K - 1 10",
+      "history": [
+        "h7h6",
+        "g5h4",
+        "g7g5",
+        "h4g3",
+        "f6h5",
+        "g3e5"
+      ],
+      "played": "f7f6",
+      "san": "f6",
+      "clock_after_seconds": 104.461,
+      "labels": [
+        {
+          "nodes": 80000,
+          "best": {
+            "cp": -79,
+            "mate": null,
+            "depth": 14,
+            "pv": [
+              "h5g7",
+              "h2h3",
+              "d7e5",
+              "f3e5",
+              "e7d6",
+              "e1g1",
+              "c8e6",
+              "f2f4",
+              "f7f6",
+              "e5g6",
+              "f8e8",
+              "f4g5"
+            ],
+            "nodes": 68788
+          },
+          "played": {
+            "cp": -459,
+            "mate": null,
+            "depth": 12,
+            "pv": [
+              "f7f6",
+              "d3h7",
+              "g8h8",
+              "c2g6",
+              "f6e5",
+              "g6h6",
+              "d7f6",
+              "h7g6",
+              "h8g8",
+              "d4e5",
+              "e7b4",
+              "e5f6",
+              "h5f6",
+              "h6g5",
+              "d8c7"
+            ],
+            "nodes": 44651
+          }
+        },
+        {
+          "nodes": 320000,
+          "best": {
+            "cp": -39,
+            "mate": null,
+            "depth": 16,
+            "pv": [
+              "d7e5",
+              "f3e5",
+              "e7d6",
+              "e1g1",
+              "d6e5",
+              "d4e5",
+              "g5g4",
+              "c3a4",
+              "d8c7",
+              "e3e4",
+              "d5d4"
+            ],
+            "nodes": 229698
+          },
+          "played": {
+            "cp": -527,
+            "mate": null,
+            "depth": 18,
+            "pv": [
+              "f7f6",
+              "d3h7",
+              "g8h8",
+              "c2g6",
+              "f6e5",
+              "g6h6",
+              "d7f6",
+              "h7g6",
+              "h8g8",
+              "d4e5",
+              "d8d7",
+              "e5f6",
+              "h5f6",
+              "f3e5",
+              "d7c7",
+              "h6g5",
+              "f6h7",
+              "g6h7",
+              "g8h7",
+              "g5h5",
+              "h7g7",
+              "h5g6",
+              "g7h8",
+              "e5f7",
+              "f8f7",
+              "g6f7",
+              "c7e5",
+              "f7g6",
+              "d5d4",
+              "c3e2",
+              "d4e3",
+              "g6h6",
+              "h8g8",
+              "h6e3",
+              "e5e3",
+              "f2e3",
+              "e7b4",
+              "e2c3"
+            ],
+            "nodes": 320009
+          }
+        }
+      ],
+      "tags": [
+        "middlegame"
+      ],
+      "reward": -1.0,
+      "label": "major_mistake",
+      "policy_target": null,
+      "policy_weight": 0.0,
+      "regret_cp": [
+        380,
+        488
+      ],
+      "confidence": "two-budget engine estimate",
+      "static_value_target": null,
+      "value_training_note": "Root action reward only; independently label quiet descendants before value fitting."
+    },
+    {
+      "ply": 8,
+      "fullmove": 14,
+      "white": false,
+      "fen": "r1bq1rk1/1p1nb3/p1p2p1p/3pB1pn/3P3P/2NBPN2/PPQ2PP1/2R1K2R b K - 0 14",
+      "start_fen": "r1bq1rk1/1p1nbppp/p1p2n2/3p2B1/3P4/2NBPN2/PPQ2PPP/2R1K2R b K - 1 10",
+      "history": [
+        "h7h6",
+        "g5h4",
+        "g7g5",
+        "h4g3",
+        "f6h5",
+        "g3e5",
+        "f7f6",
+        "h2h4"
+      ],
+      "played": "g5g4",
+      "san": "g4",
+      "clock_after_seconds": 100.346,
+      "labels": [
+        {
+          "nodes": 80000,
+          "best": {
+            "cp": -48,
+            "mate": null,
+            "depth": 16,
+            "pv": [
+              "f6e5",
+              "h4g5",
+              "e7g5",
+              "h1h5",
+              "d7f6",
+              "h5g5",
+              "h6g5",
+              "f3e5",
+              "f6g4",
+              "d3h7",
+              "g8h8",
+              "e5g6",
+              "h8h7",
+              "g6f8",
+              "h7g7",
+              "f8g6",
+              "d8f6",
+              "g6e5",
+              "g4e5",
+              "d4e5",
+              "f6e5",
+              "a2a3"
+            ],
+            "nodes": 80065
+          },
+          "played": {
+            "cp": -265,
+            "mate": null,
+            "depth": 14,
+            "pv": [
+              "g5g4",
+              "d3h7",
+              "g8h8",
+              "c2g6",
+              "f6e5",
+              "g6h6",
+              "d7f6",
+              "h7g6",
+              "h8g8",
+              "d4e5",
+              "g4f3",
+              "g2f3",
+              "f8f7",
+              "h1g1",
+              "d8f8",
+              "g6h5",
+              "f7g7",
+              "h6g7",
+              "f8g7",
+              "g1g7",
+              "g8g7",
+              "e5f6",
+              "e7f6",
+              "e1e2",
+              "c8f5"
+            ],
+            "nodes": 40109
+          }
+        },
+        {
+          "nodes": 320000,
+          "best": {
+            "cp": -159,
+            "mate": null,
+            "depth": 17,
+            "pv": [
+              "f6e5",
+              "h4g5",
+              "f8f3",
+              "g2f3",
+              "e5d4",
+              "h1h5",
+              "d4c3",
+              "h5h6",
+              "e7g5",
+              "d3h7",
+              "g8f8",
+              "h6g6",
+              "d7f6",
+              "c2c3",
+              "c8f5",
+              "g6g5",
+              "f5h7",
+              "e1e2"
+            ],
+            "nodes": 296692
+          },
+          "played": {
+            "cp": -280,
+            "mate": null,
+            "depth": 17,
+            "pv": [
+              "g5g4",
+              "d3h7",
+              "g8h8",
+              "c2g6",
+              "f6e5",
+              "g6h6",
+              "d7f6",
+              "h7b1",
+              "h8g8",
+              "d4e5",
+              "g4f3",
+              "e5f6",
+              "h5f6",
+              "h6g6",
+              "g8h8",
+              "g2f3",
+              "e7b4",
+              "a2a3",
+              "b4c3",
+              "c1c3",
+              "c8d7",
+              "g6h6",
+              "h8g8",
+              "h1g1",
+              "g8f7",
+              "g1g7",
+              "f7e6",
+              "h6f4"
+            ],
+            "nodes": 296339
+          }
+        }
+      ],
+      "tags": [
+        "middlegame"
+      ],
+      "reward": null,
+      "label": "uncertain",
+      "policy_target": null,
+      "policy_weight": 0.0,
+      "regret_cp": [
+        217,
+        121
+      ],
+      "confidence": "two-budget engine estimate",
+      "static_value_target": null,
+      "value_training_note": "Root action reward only; independently label quiet descendants before value fitting."
+    },
+    {
+      "ply": 10,
+      "fullmove": 15,
+      "white": false,
+      "fen": "r1bq1rk1/1p1nb3/p1p2p1p/3p3n/3P2pP/2NBPN2/PPQ2PPB/2R1K2R b K - 1 15",
+      "start_fen": "r1bq1rk1/1p1nbppp/p1p2n2/3p2B1/3P4/2NBPN2/PPQ2PPP/2R1K2R b K - 1 10",
+      "history": [
+        "h7h6",
+        "g5h4",
+        "g7g5",
+        "h4g3",
+        "f6h5",
+        "g3e5",
+        "f7f6",
+        "h2h4",
+        "g5g4",
+        "e5h2"
+      ],
+      "played": "g4f3",
+      "san": "gxf3",
+      "clock_after_seconds": 96.287,
+      "labels": [
+        {
+          "nodes": 80000,
+          "best": {
+            "cp": -81,
+            "mate": null,
+            "depth": 15,
+            "pv": [
+              "f6f5",
+              "f3e5",
+              "g4g3",
+              "f2g3",
+              "e7d6",
+              "e5g6",
+              "h5g3",
+              "g6f8",
+              "g3h1",
+              "h2d6",
+              "d7f8",
+              "d6f4",
+              "d8h4",
+              "e1d2",
+              "h1g3",
+              "c3e2",
+              "g3e4",
+              "d3e4",
+              "f5e4"
+            ],
+            "nodes": 80065
+          },
+          "played": {
+            "cp": -318,
+            "mate": null,
+            "depth": 16,
+            "pv": [
+              "g4f3",
+              "d3h7",
+              "g8h8",
+              "c2g6",
+              "f8f7",
+              "g6f7",
+              "h5g7",
+              "h2c7",
+              "d8e8",
+              "h7g6",
+              "f3g2",
+              "h1g1",
+              "e8f7",
+              "g6f7",
+              "d7f8",
+              "g1g2",
+              "c8h3",
+              "g2g1",
+              "h6h5",
+              "e1e2",
+              "f8e6",
+              "c7b6",
+              "h3f5",
+              "f2f3",
+              "a8f8",
+              "f7e6",
+              "g7e6",
+              "e3e4",
+              "d5e4",
+              "f3e4"
+            ],
+            "nodes": 80026
+          }
+        },
+        {
+          "nodes": 320000,
+          "best": {
+            "cp": -91,
+            "mate": null,
+            "depth": 16,
+            "pv": [
+              "f6f5",
+              "f3e5",
+              "g4g3",
+              "f2g3",
+              "e7d6",
+              "e5g6",
+              "f8f6",
+              "g6f4",
+              "d6f4",
+              "g3f4",
+              "f6f7",
+              "d3f5",
+              "d8h4",
+              "g2g3",
+              "f7g7"
+            ],
+            "nodes": 241364
+          },
+          "played": {
+            "cp": -299,
+            "mate": null,
+            "depth": 16,
+            "pv": [
+              "g4f3",
+              "d3h7",
+              "g8h8",
+              "c2g6",
+              "f8f7",
+              "g6f7",
+              "h5g7",
+              "h2c7",
+              "d8f8",
+              "h7g6",
+              "f8f7",
+              "g6f7",
+              "f3g2",
+              "h1g1",
+              "d7f8",
+              "g1g2",
+              "c8e6",
+              "f7e6",
+              "f8e6",
+              "c7b6",
+              "h6h5",
+              "c3a4",
+              "a8g8"
+            ],
+            "nodes": 229700
+          }
+        }
+      ],
+      "tags": [
+        "middlegame",
+        "capture_or_exchange"
+      ],
+      "reward": -0.6933333333333334,
+      "label": "major_mistake",
+      "policy_target": "f6f5",
+      "policy_weight": 0.6933333333333334,
+      "regret_cp": [
+        237,
+        208
+      ],
+      "confidence": "two-budget engine estimate",
+      "static_value_target": null,
+      "value_training_note": "Root action reward only; independently label quiet descendants before value fitting."
+    },
+    {
+      "ply": 12,
+      "fullmove": 16,
+      "white": false,
+      "fen": "r1bq1rk1/1p1nb2B/p1p2p1p/3p3n/3P3P/2N1Pp2/PPQ2PPB/2R1K2R b K - 1 16",
+      "start_fen": "r1bq1rk1/1p1nbppp/p1p2n2/3p2B1/3P4/2NBPN2/PPQ2PPP/2R1K2R b K - 1 10",
+      "history": [
+        "h7h6",
+        "g5h4",
+        "g7g5",
+        "h4g3",
+        "f6h5",
+        "g3e5",
+        "f7f6",
+        "h2h4",
+        "g5g4",
+        "e5h2",
+        "g4f3",
+        "d3h7"
+      ],
+      "played": "g8h8",
+      "san": "Kh8",
+      "clock_after_seconds": 93.61,
+      "labels": [
+        {
+          "nodes": 80000,
+          "best": {
+            "cp": -378,
+            "mate": null,
+            "depth": 15,
+            "pv": [
+              "g8h8",
+              "c2g6",
+              "f8f7",
+              "g6f7",
+              "h5g7",
+              "h2c7",
+              "d8e8",
+              "h7g6",
+              "e8f7",
+              "g6f7",
+              "f3g2",
+              "h1g1",
+              "d7f8",
+              "g1g2",
+              "f8e6"
+            ],
+            "nodes": 80062
+          },
+          "played": {
+            "cp": -378,
+            "mate": null,
+            "depth": 15,
+            "pv": [
+              "g8h8",
+              "c2g6",
+              "f8f7",
+              "g6f7",
+              "h5g7",
+              "h2c7",
+              "d8e8",
+              "h7g6",
+              "e8f7",
+              "g6f7",
+              "f3g2",
+              "h1g1",
+              "d7f8",
+              "g1g2",
+              "f8e6"
+            ],
+            "nodes": 80062
+          }
+        },
+        {
+          "nodes": 320000,
+          "best": {
+            "cp": -388,
+            "mate": null,
+            "depth": 15,
+            "pv": [
+              "g8h8",
+              "c2g6",
+              "f8f7",
+              "g6f7",
+              "h5g7",
+              "h2c7",
+              "d8e8",
+              "h7g6",
+              "e8f7",
+              "g6f7",
+              "f3g2",
+              "h1g1",
+              "d7f8",
+              "g1g2",
+              "c8f5",
+              "c3a4",
+              "f8e6",
+              "c7b6",
+              "h6h5",
+              "f2f3",
+              "a8f8",
+              "f7e6",
+              "g7e6",
+              "b6c5",
+              "e7c5",
+              "d4c5",
+              "f5h3"
+            ],
+            "nodes": 94875
+          },
+          "played": {
+            "cp": -388,
+            "mate": null,
+            "depth": 15,
+            "pv": [
+              "g8h8",
+              "c2g6",
+              "f8f7",
+              "g6f7",
+              "h5g7",
+              "h2c7",
+              "d8e8",
+              "h7g6",
+              "e8f7",
+              "g6f7",
+              "f3g2",
+              "h1g1",
+              "d7f8",
+              "g1g2",
+              "c8f5",
+              "c3a4",
+              "f8e6",
+              "c7b6",
+              "h6h5",
+              "f2f3",
+              "a8f8",
+              "f7e6",
+              "g7e6",
+              "b6c5",
+              "e7c5",
+              "d4c5",
+              "f5h3"
+            ],
+            "nodes": 94875
+          }
+        }
+      ],
+      "tags": [
+        "middlegame",
+        "defence_in_check"
+      ],
+      "reward": 1.0,
+      "label": "good_move",
+      "policy_target": "g8h8",
+      "policy_weight": 1.0,
+      "regret_cp": [
+        0,
+        0
+      ],
+      "confidence": "two-budget engine estimate",
+      "static_value_target": null,
+      "value_training_note": "Root action reward only; independently label quiet descendants before value fitting."
+    },
+    {
+      "ply": 14,
+      "fullmove": 17,
+      "white": false,
+      "fen": "r1bq1r1k/1p1nb2B/p1p2pQp/3p3n/3P3P/2N1Pp2/PP3PPB/2R1K2R b K - 3 17",
+      "start_fen": "r1bq1rk1/1p1nbppp/p1p2n2/3p2B1/3P4/2NBPN2/PPQ2PPP/2R1K2R b K - 1 10",
+      "history": [
+        "h7h6",
+        "g5h4",
+        "g7g5",
+        "h4g3",
+        "f6h5",
+        "g3e5",
+        "f7f6",
+        "h2h4",
+        "g5g4",
+        "e5h2",
+        "g4f3",
+        "d3h7",
+        "g8h8",
+        "c2g6"
+      ],
+      "played": "f3g2",
+      "san": "fxg2",
+      "clock_after_seconds": 91.282,
+      "labels": [
+        {
+          "nodes": 80000,
+          "best": {
+            "cp": -315,
+            "mate": null,
+            "depth": 15,
+            "pv": [
+              "f8f7",
+              "g6f7",
+              "h5g7",
+              "h2c7",
+              "f3g2",
+              "h1g1",
+              "d8e8",
+              "h7g6",
+              "e8f7",
+              "g6f7",
+              "d7f8",
+              "g1g2",
+              "c8e6",
+              "f7e6",
+              "f8e6",
+              "c7h2"
+            ],
+            "nodes": 80024
+          },
+          "played": {
+            "cp": -684,
+            "mate": null,
+            "depth": 15,
+            "pv": [
+              "f3g2",
+              "h1g1",
+              "f8f7",
+              "g6f7",
+              "h5g7",
+              "h7b1",
+              "d8e8",
+              "f7e8",
+              "g7e8",
+              "g1g2",
+              "d7e5",
+              "d4e5",
+              "c8f5",
+              "b1f5"
+            ],
+            "nodes": 80002
+          }
+        },
+        {
+          "nodes": 320000,
+          "best": {
+            "cp": -325,
+            "mate": null,
+            "depth": 17,
+            "pv": [
+              "f8f7",
+              "g6f7",
+              "h5g7",
+              "h2c7",
+              "d8f8",
+              "h7g6",
+              "f3g2",
+              "h1g1",
+              "f8f7",
+              "g6f7",
+              "d7f8",
+              "g1g2",
+              "c8e6",
+              "f7e6",
+              "f8e6",
+              "c7h2"
+            ],
+            "nodes": 257255
+          },
+          "played": {
+            "cp": -745,
+            "mate": null,
+            "depth": 25,
+            "pv": [
+              "f3g2",
+              "h1g1",
+              "f8f7",
+              "g6f7",
+              "h5g7",
+              "g1g2",
+              "d8f8",
+              "f7g6",
+              "g7f5",
+              "g6f5",
+              "d7e5",
+              "f5h5",
+              "c8g4",
+              "g2g4",
+              "e5g4",
+              "h5g4",
+              "h8h7",
+              "e1e2",
+              "f8g7",
+              "g4g7",
+              "h7g7",
+              "h2f4",
+              "g7f7"
+            ],
+            "nodes": 320032
+          }
+        }
+      ],
+      "tags": [
+        "middlegame",
+        "capture_or_exchange"
+      ],
+      "reward": -1.0,
+      "label": "major_mistake",
+      "policy_target": "f8f7",
+      "policy_weight": 1.0,
+      "regret_cp": [
+        369,
+        420
+      ],
+      "confidence": "two-budget engine estimate",
+      "static_value_target": null,
+      "value_training_note": "Root action reward only; independently label quiet descendants before value fitting."
+    },
+    {
+      "ply": 16,
+      "fullmove": 18,
+      "white": false,
+      "fen": "r1bq1r1k/1p1nb2B/p1p2pQp/3p3n/3P3P/2N1P3/PP3PpB/2R1K1R1 b - - 1 18",
+      "start_fen": "r1bq1rk1/1p1nbppp/p1p2n2/3p2B1/3P4/2NBPN2/PPQ2PPP/2R1K2R b K - 1 10",
+      "history": [
+        "h7h6",
+        "g5h4",
+        "g7g5",
+        "h4g3",
+        "f6h5",
+        "g3e5",
+        "f7f6",
+        "h2h4",
+        "g5g4",
+        "e5h2",
+        "g4f3",
+        "d3h7",
+        "g8h8",
+        "c2g6",
+        "f3g2",
+        "h1g1"
+      ],
+      "played": "e7b4",
+      "san": "Bb4",
+      "clock_after_seconds": 88.976,
+      "labels": [
+        {
+          "nodes": 80000,
+          "best": {
+            "cp": -630,
+            "mate": null,
+            "depth": 14,
+            "pv": [
+              "d7e5",
+              "d4e5",
+              "c8f5",
+              "g6f5",
+              "f6e5",
+              "f5h5",
+              "h8h7",
+              "g1g2",
+              "d8e8",
+              "h5e5",
+              "e7f6",
+              "e5f5",
+              "h7h8",
+              "f5g6",
+              "e8g6",
+              "g2g6",
+              "d5d4",
+              "c3e4",
+              "d4d3",
+              "g6h6",
+              "h8g7",
+              "h6f6",
+              "d3d2",
+              "e1d2"
+            ],
+            "nodes": 80061
+          },
+          "played": {
+            "cp": -819,
+            "mate": null,
+            "depth": 24,
+            "pv": [
+              "e7b4",
+              "g6h6",
+              "f8f7",
+              "h7g6",
+              "h8g8",
+              "g6f7",
+              "g8f7",
+              "h6h5",
+              "f7e6",
+              "g1g2",
+              "d8f8",
+              "h5h7",
+              "d7b6",
+              "e1e2",
+              "b4d6",
+              "h2d6",
+              "e6d6",
+              "g2g7"
+            ],
+            "nodes": 80090
+          }
+        },
+        {
+          "nodes": 320000,
+          "best": {
+            "cp": -734,
+            "mate": null,
+            "depth": 18,
+            "pv": [
+              "d7e5",
+              "d4e5",
+              "f8g8",
+              "h7g8",
+              "d8g8",
+              "g6h5",
+              "h8h7",
+              "h5f3",
+              "f6e5",
+              "g1g2",
+              "e5e4",
+              "g2g8",
+              "e4f3",
+              "g8e8",
+              "e7f6",
+              "h2e5",
+              "c8f5"
+            ],
+            "nodes": 320384
+          },
+          "played": {
+            "cp": -838,
+            "mate": null,
+            "depth": 28,
+            "pv": [
+              "e7b4",
+              "g6h6",
+              "f8f7",
+              "h7g6",
+              "h8g8",
+              "g6f7",
+              "g8f7",
+              "h6h5",
+              "f7e6",
+              "g1g2",
+              "d8f8",
+              "g2g6",
+              "b4d6",
+              "f2f4",
+              "f8f7",
+              "f4f5",
+              "e6e7",
+              "h2d6",
+              "e7d6",
+              "h5g4",
+              "d6c7",
+              "g6g7",
+              "f7f8",
+              "h4h5"
+            ],
+            "nodes": 320079
+          }
+        }
+      ],
+      "tags": [
+        "middlegame"
+      ],
+      "reward": null,
+      "label": "uncertain",
+      "policy_target": null,
+      "policy_weight": 0.0,
+      "regret_cp": [
+        189,
+        104
+      ],
+      "confidence": "two-budget engine estimate",
+      "static_value_target": null,
+      "value_training_note": "Root action reward only; independently label quiet descendants before value fitting."
+    },
+    {
+      "ply": 18,
+      "fullmove": 19,
+      "white": false,
+      "fen": "r1bq1r1k/1p1n3B/p1p2p1Q/3p3n/1b1P3P/2N1P3/PP3PpB/2R1K1R1 b - - 0 19",
+      "start_fen": "r1bq1rk1/1p1nbppp/p1p2n2/3p2B1/3P4/2NBPN2/PPQ2PPP/2R1K2R b K - 1 10",
+      "history": [
+        "h7h6",
+        "g5h4",
+        "g7g5",
+        "h4g3",
+        "f6h5",
+        "g3e5",
+        "f7f6",
+        "h2h4",
+        "g5g4",
+        "e5h2",
+        "g4f3",
+        "d3h7",
+        "g8h8",
+        "c2g6",
+        "f3g2",
+        "h1g1",
+        "e7b4",
+        "g6h6"
+      ],
+      "played": "b4c3",
+      "san": "Bxc3+",
+      "clock_after_seconds": 85.443,
+      "labels": [
+        {
+          "nodes": 80000,
+          "best": {
+            "cp": -831,
+            "mate": null,
+            "depth": 22,
+            "pv": [
+              "f8f7",
+              "h7g6",
+              "h8g8",
+              "g6f7",
+              "g8f7",
+              "g1g2",
+              "f7e6",
+              "h6h5",
+              "d8e7",
+              "g2g6",
+              "e7f8",
+              "h5h7",
+              "a6a5",
+              "g6g8"
+            ],
+            "nodes": 80023
+          },
+          "played": {
+            "cp": -858,
+            "mate": null,
+            "depth": 14,
+            "pv": [
+              "b4c3",
+              "c1c3",
+              "f8f7",
+              "h7g6",
+              "h8g8",
+              "g6f7",
+              "g8f7",
+              "h6h5",
+              "f7e6",
+              "g1g2",
+              "d8f8",
+              "c3b3",
+              "e6e7",
+              "h5h7",
+              "f8f7"
+            ],
+            "nodes": 80021
+          }
+        },
+        {
+          "nodes": 320000,
+          "best": {
+            "cp": -816,
+            "mate": null,
+            "depth": 25,
+            "pv": [
+              "f8f7",
+              "h7g6",
+              "h8g8",
+              "g1g2",
+              "f7g7",
+              "g6h7",
+              "g8f8",
+              "g2g7",
+              "h5g7",
+              "h7g6",
+              "d7e5",
+              "h6h8",
+              "f8e7",
+              "h8g7",
+              "e7e6",
+              "d4e5",
+              "d8f8",
+              "e5f6",
+              "f8g7",
+              "f6g7",
+              "c8d7"
+            ],
+            "nodes": 320076
+          },
+          "played": {
+            "cp": -858,
+            "mate": null,
+            "depth": 14,
+            "pv": [
+              "b4c3",
+              "c1c3",
+              "f8f7",
+              "h7g6",
+              "h8g8",
+              "g6f7",
+              "g8f7",
+              "h6h5",
+              "f7e6",
+              "g1g2",
+              "d8f8",
+              "c3b3",
+              "e6e7",
+              "h5h7",
+              "f8f7"
+            ],
+            "nodes": 320099
+          }
+        }
+      ],
+      "tags": [
+        "middlegame",
+        "forcing_check",
+        "capture_or_exchange"
+      ],
+      "reward": 0.0,
+      "label": "small_or_uncertain_difference",
+      "policy_target": null,
+      "policy_weight": 0.0,
+      "regret_cp": [
+        27,
+        42
+      ],
+      "confidence": "two-budget engine estimate",
+      "static_value_target": null,
+      "value_training_note": "Root action reward only; independently label quiet descendants before value fitting."
+    },
+    {
+      "ply": 20,
+      "fullmove": 20,
+      "white": false,
+      "fen": "r1bq1r1k/1p1n3B/p1p2p1Q/3p3n/3P3P/2P1P3/P4PpB/2R1K1R1 b - - 0 20",
+      "start_fen": "r1bq1rk1/1p1nbppp/p1p2n2/3p2B1/3P4/2NBPN2/PPQ2PPP/2R1K2R b K - 1 10",
+      "history": [
+        "h7h6",
+        "g5h4",
+        "g7g5",
+        "h4g3",
+        "f6h5",
+        "g3e5",
+        "f7f6",
+        "h2h4",
+        "g5g4",
+        "e5h2",
+        "g4f3",
+        "d3h7",
+        "g8h8",
+        "c2g6",
+        "f3g2",
+        "h1g1",
+        "e7b4",
+        "g6h6",
+        "b4c3",
+        "b2c3"
+      ],
+      "played": "f8f7",
+      "san": "Rf7",
+      "clock_after_seconds": 83.049,
+      "labels": [
+        {
+          "nodes": 80000,
+          "best": {
+            "cp": -958,
+            "mate": null,
+            "depth": 20,
+            "pv": [
+              "f8f7",
+              "h7f5",
+              "h8g8",
+              "g1g2",
+              "h5g7",
+              "h6h7",
+              "g8f8",
+              "h2d6",
+              "f8e8",
+              "h7g8",
+              "d7f8",
+              "g2g7",
+              "d8d6",
+              "g8f7",
+              "e8d8",
+              "g7g8",
+              "d6a3",
+              "g8f8",
+              "a3f8",
+              "f7f8",
+              "d8c7"
+            ],
+            "nodes": 80037
+          },
+          "played": {
+            "cp": -958,
+            "mate": null,
+            "depth": 20,
+            "pv": [
+              "f8f7",
+              "h7f5",
+              "h8g8",
+              "g1g2",
+              "h5g7",
+              "h6h7",
+              "g8f8",
+              "h2d6",
+              "f8e8",
+              "h7g8",
+              "d7f8",
+              "g2g7",
+              "d8d6",
+              "g8f7",
+              "e8d8",
+              "g7g8",
+              "d6a3",
+              "g8f8",
+              "a3f8",
+              "f7f8",
+              "d8c7"
+            ],
+            "nodes": 80037
+          }
+        },
+        {
+          "nodes": 320000,
+          "best": {
+            "cp": -1632,
+            "mate": null,
+            "depth": 26,
+            "pv": [
+              "f8f7",
+              "h7g6",
+              "h8g8",
+              "g1g2",
+              "f7g7",
+              "g6h7",
+              "g8f8",
+              "g2g7",
+              "h5g7",
+              "h7g6",
+              "d7e5",
+              "h6h8",
+              "f8e7",
+              "h8g7",
+              "e7e6",
+              "d4e5",
+              "d8e7",
+              "g7g8",
+              "e6d7",
+              "e5f6",
+              "e7d6",
+              "g8f7",
+              "d7d8",
+              "f7e8",
+              "d8c7",
+              "h2d6",
+              "c7b6",
+              "e8d8"
+            ],
+            "nodes": 251690
+          },
+          "played": {
+            "cp": -1632,
+            "mate": null,
+            "depth": 26,
+            "pv": [
+              "f8f7",
+              "h7g6",
+              "h8g8",
+              "g1g2",
+              "f7g7",
+              "g6h7",
+              "g8f8",
+              "g2g7",
+              "h5g7",
+              "h7g6",
+              "d7e5",
+              "h6h8",
+              "f8e7",
+              "h8g7",
+              "e7e6",
+              "d4e5",
+              "d8e7",
+              "g7g8",
+              "e6d7",
+              "e5f6",
+              "e7d6",
+              "g8f7",
+              "d7d8",
+              "f7e8",
+              "d8c7",
+              "h2d6",
+              "c7b6",
+              "e8d8"
+            ],
+            "nodes": 251690
+          }
+        }
+      ],
+      "tags": [
+        "middlegame"
+      ],
+      "reward": null,
+      "label": "uncertain",
+      "policy_target": null,
+      "policy_weight": 0.0,
+      "regret_cp": [
+        0,
+        0
+      ],
+      "confidence": "two-budget engine estimate",
+      "static_value_target": null,
+      "value_training_note": "Root action reward only; independently label quiet descendants before value fitting."
+    },
+    {
+      "ply": 22,
+      "fullmove": 21,
+      "white": false,
+      "fen": "r1bq3k/1p1n1r2/p1p2p1Q/3p1B1n/3P3P/2P1P3/P4PpB/2R1K1R1 b - - 2 21",
+      "start_fen": "r1bq1rk1/1p1nbppp/p1p2n2/3p2B1/3P4/2NBPN2/PPQ2PPP/2R1K2R b K - 1 10",
+      "history": [
+        "h7h6",
+        "g5h4",
+        "g7g5",
+        "h4g3",
+        "f6h5",
+        "g3e5",
+        "f7f6",
+        "h2h4",
+        "g5g4",
+        "e5h2",
+        "g4f3",
+        "d3h7",
+        "g8h8",
+        "c2g6",
+        "f3g2",
+        "h1g1",
+        "e7b4",
+        "g6h6",
+        "b4c3",
+        "b2c3",
+        "f8f7",
+        "h7f5"
+      ],
+      "played": "h8g8",
+      "san": "Kg8",
+      "clock_after_seconds": 80.638,
+      "labels": [
+        {
+          "nodes": 80000,
+          "best": {
+            "cp": -993,
+            "mate": null,
+            "depth": 14,
+            "pv": [
+              "h8g8",
+              "g1g2",
+              "h5g7",
+              "h6h7",
+              "g8f8",
+              "h2d6",
+              "f8e8",
+              "g2g7",
+              "d7f8",
+              "h7g8",
+              "d8d6",
+              "g8f7",
+              "e8d8",
+              "f5c8",
+              "a8c8",
+              "e1e2",
+              "a6a5"
+            ],
+            "nodes": 80064
+          },
+          "played": {
+            "cp": -993,
+            "mate": null,
+            "depth": 14,
+            "pv": [
+              "h8g8",
+              "g1g2",
+              "h5g7",
+              "h6h7",
+              "g8f8",
+              "h2d6",
+              "f8e8",
+              "g2g7",
+              "d7f8",
+              "h7g8",
+              "d8d6",
+              "g8f7",
+              "e8d8",
+              "f5c8",
+              "a8c8",
+              "e1e2",
+              "a6a5"
+            ],
+            "nodes": 80064
+          }
+        },
+        {
+          "nodes": 320000,
+          "best": {
+            "cp": -1040,
+            "mate": null,
+            "depth": 15,
+            "pv": [
+              "h8g8",
+              "g1g2",
+              "h5g7",
+              "h6h7",
+              "g8f8",
+              "h2d6",
+              "f8e8",
+              "g2g7",
+              "d7f8",
+              "h7g8",
+              "d8d6",
+              "g8f7",
+              "e8d8",
+              "g7g8",
+              "b7b5",
+              "g8f8"
+            ],
+            "nodes": 320383
+          },
+          "played": {
+            "cp": -1040,
+            "mate": null,
+            "depth": 15,
+            "pv": [
+              "h8g8",
+              "g1g2",
+              "h5g7",
+              "h6h7",
+              "g8f8",
+              "h2d6",
+              "f8e8",
+              "g2g7",
+              "d7f8",
+              "h7g8",
+              "d8d6",
+              "g8f7",
+              "e8d8",
+              "g7g8",
+              "b7b5",
+              "g8f8"
+            ],
+            "nodes": 320383
+          }
+        }
+      ],
+      "tags": [
+        "middlegame",
+        "defence_in_check"
+      ],
+      "reward": 1.0,
+      "label": "good_move",
+      "policy_target": "h8g8",
+      "policy_weight": 1.0,
+      "regret_cp": [
+        0,
+        0
+      ],
+      "confidence": "two-budget engine estimate",
+      "static_value_target": null,
+      "value_training_note": "Root action reward only; independently label quiet descendants before value fitting."
+    },
+    {
+      "ply": 24,
+      "fullmove": 22,
+      "white": false,
+      "fen": "r1bq2k1/1p1n1r2/p1p2p1Q/3p1B1n/3P3P/2P1P3/P4PRB/2R1K3 b - - 0 22",
+      "start_fen": "r1bq1rk1/1p1nbppp/p1p2n2/3p2B1/3P4/2NBPN2/PPQ2PPP/2R1K2R b K - 1 10",
+      "history": [
+        "h7h6",
+        "g5h4",
+        "g7g5",
+        "h4g3",
+        "f6h5",
+        "g3e5",
+        "f7f6",
+        "h2h4",
+        "g5g4",
+        "e5h2",
+        "g4f3",
+        "d3h7",
+        "g8h8",
+        "c2g6",
+        "f3g2",
+        "h1g1",
+        "e7b4",
+        "g6h6",
+        "b4c3",
+        "b2c3",
+        "f8f7",
+        "h7f5",
+        "h8g8",
+        "g1g2"
+      ],
+      "played": "h5g7",
+      "san": "Ng7",
+      "clock_after_seconds": 78.305,
+      "labels": [
+        {
+          "nodes": 80000,
+          "best": {
+            "cp": -917,
+            "mate": null,
+            "depth": 12,
+            "pv": [
+              "h5g7",
+              "h6h7",
+              "g8f8",
+              "h2d6",
+              "f8e8",
+              "g2g7",
+              "d7f8",
+              "h7g8",
+              "d8d6",
+              "g8f7",
+              "e8d8",
+              "f5c8",
+              "a8c8",
+              "f7b7",
+              "c8b8",
+              "b7f7",
+              "f8d7"
+            ],
+            "nodes": 80042
+          },
+          "played": {
+            "cp": -917,
+            "mate": null,
+            "depth": 12,
+            "pv": [
+              "h5g7",
+              "h6h7",
+              "g8f8",
+              "h2d6",
+              "f8e8",
+              "g2g7",
+              "d7f8",
+              "h7g8",
+              "d8d6",
+              "g8f7",
+              "e8d8",
+              "f5c8",
+              "a8c8",
+              "f7b7",
+              "c8b8",
+              "b7f7",
+              "f8d7"
+            ],
+            "nodes": 80042
+          }
+        },
+        {
+          "nodes": 320000,
+          "best": {
+            "cp": -1052,
+            "mate": null,
+            "depth": 13,
+            "pv": [
+              "h5g7",
+              "h6h7",
+              "g8f8",
+              "h2d6",
+              "f8e8",
+              "g2g7",
+              "d7f8",
+              "h7g8",
+              "d8d6",
+              "g8f7",
+              "e8d8",
+              "g7g8",
+              "d6h2"
+            ],
+            "nodes": 320139
+          },
+          "played": {
+            "cp": -1052,
+            "mate": null,
+            "depth": 13,
+            "pv": [
+              "h5g7",
+              "h6h7",
+              "g8f8",
+              "h2d6",
+              "f8e8",
+              "g2g7",
+              "d7f8",
+              "h7g8",
+              "d8d6",
+              "g8f7",
+              "e8d8",
+              "g7g8",
+              "d6h2"
+            ],
+            "nodes": 320139
+          }
+        }
+      ],
+      "tags": [
+        "middlegame",
+        "defence_in_check"
+      ],
+      "reward": null,
+      "label": "uncertain",
+      "policy_target": null,
+      "policy_weight": 0.0,
+      "regret_cp": [
+        0,
+        0
+      ],
+      "confidence": "two-budget engine estimate",
+      "static_value_target": null,
+      "value_training_note": "Root action reward only; independently label quiet descendants before value fitting."
+    },
+    {
+      "ply": 26,
+      "fullmove": 23,
+      "white": false,
+      "fen": "r1bq2k1/1p1n1rR1/p1p2p1Q/3p1B2/3P3P/2P1P3/P4P1B/2R1K3 b - - 0 23",
+      "start_fen": "r1bq1rk1/1p1nbppp/p1p2n2/3p2B1/3P4/2NBPN2/PPQ2PPP/2R1K2R b K - 1 10",
+      "history": [
+        "h7h6",
+        "g5h4",
+        "g7g5",
+        "h4g3",
+        "f6h5",
+        "g3e5",
+        "f7f6",
+        "h2h4",
+        "g5g4",
+        "e5h2",
+        "g4f3",
+        "d3h7",
+        "g8h8",
+        "c2g6",
+        "f3g2",
+        "h1g1",
+        "e7b4",
+        "g6h6",
+        "b4c3",
+        "b2c3",
+        "f8f7",
+        "h7f5",
+        "h8g8",
+        "g1g2",
+        "h5g7",
+        "g2g7"
+      ],
+      "played": "f7g7",
+      "san": "Rxg7",
+      "clock_after_seconds": 78.765,
+      "labels": [
+        {
+          "nodes": 80000,
+          "best": {
+            "cp": null,
+            "mate": -4,
+            "depth": 36,
+            "pv": [
+              "f7g7",
+              "f5e6",
+              "g7f7",
+              "e1e2",
+              "d8f8",
+              "c1g1",
+              "f8g7",
+              "h6g7"
+            ],
+            "nodes": 80044
+          },
+          "played": {
+            "cp": null,
+            "mate": -4,
+            "depth": 36,
+            "pv": [
+              "f7g7",
+              "f5e6",
+              "g7f7",
+              "e1e2",
+              "d8f8",
+              "c1g1",
+              "f8g7",
+              "h6g7"
+            ],
+            "nodes": 80044
+          }
+        },
+        {
+          "nodes": 320000,
+          "best": {
+            "cp": null,
+            "mate": -4,
+            "depth": 50,
+            "pv": [
+              "f7g7",
+              "f5e6",
+              "g7f7",
+              "e1e2",
+              "d8f8",
+              "c1g1",
+              "f8g7",
+              "h6g7"
+            ],
+            "nodes": 320203
+          },
+          "played": {
+            "cp": null,
+            "mate": -4,
+            "depth": 50,
+            "pv": [
+              "f7g7",
+              "f5e6",
+              "g7f7",
+              "e1e2",
+              "d8f8",
+              "c1g1",
+              "f8g7",
+              "h6g7"
+            ],
+            "nodes": 320203
+          }
+        }
+      ],
+      "tags": [
+        "middlegame",
+        "defence_in_check",
+        "capture_or_exchange"
+      ],
+      "reward": 0.0,
+      "label": "already_in_engine_forced_loss",
+      "policy_target": null,
+      "policy_weight": 0.0,
+      "regret_cp": null,
+      "confidence": "two-budget engine estimate",
+      "static_value_target": null,
+      "value_training_note": "Root action reward only; independently label quiet descendants before value fitting."
+    },
+    {
+      "ply": 28,
+      "fullmove": 24,
+      "white": false,
+      "fen": "r1bq2k1/1p1n2r1/p1p1Bp1Q/3p4/3P3P/2P1P3/P4P1B/2R1K3 b - - 1 24",
+      "start_fen": "r1bq1rk1/1p1nbppp/p1p2n2/3p2B1/3P4/2NBPN2/PPQ2PPP/2R1K2R b K - 1 10",
+      "history": [
+        "h7h6",
+        "g5h4",
+        "g7g5",
+        "h4g3",
+        "f6h5",
+        "g3e5",
+        "f7f6",
+        "h2h4",
+        "g5g4",
+        "e5h2",
+        "g4f3",
+        "d3h7",
+        "g8h8",
+        "c2g6",
+        "f3g2",
+        "h1g1",
+        "e7b4",
+        "g6h6",
+        "b4c3",
+        "b2c3",
+        "f8f7",
+        "h7f5",
+        "h8g8",
+        "g1g2",
+        "h5g7",
+        "g2g7",
+        "f7g7",
+        "f5e6"
+      ],
+      "played": "g8f8",
+      "san": "Kf8",
+      "clock_after_seconds": 79.261,
+      "labels": [
+        {
+          "nodes": 80000,
+          "best": {
+            "cp": null,
+            "mate": -3,
+            "depth": 66,
+            "pv": [
+              "g7f7",
+              "e1e2",
+              "d8f8",
+              "c1g1",
+              "f8g7",
+              "h6g7"
+            ],
+            "nodes": 80045
+          },
+          "played": {
+            "cp": null,
+            "mate": -3,
+            "depth": 74,
+            "pv": [
+              "g8f8",
+              "h2d6",
+              "f8e8",
+              "h6h5",
+              "g7g6",
+              "h5g6"
+            ],
+            "nodes": 80057
+          }
+        },
+        {
+          "nodes": 320000,
+          "best": {
+            "cp": null,
+            "mate": -3,
+            "depth": 204,
+            "pv": [
+              "g7f7",
+              "e1e2",
+              "d8f8",
+              "c1g1",
+              "f8g7",
+              "h6g7"
+            ],
+            "nodes": 320005
+          },
+          "played": {
+            "cp": null,
+            "mate": -3,
+            "depth": 226,
+            "pv": [
+              "g8f8",
+              "h2d6",
+              "f8e8",
+              "h6h5",
+              "g7g6",
+              "h5g6"
+            ],
+            "nodes": 320123
+          }
+        }
+      ],
+      "tags": [
+        "middlegame",
+        "defence_in_check"
+      ],
+      "reward": 0.0,
+      "label": "already_in_engine_forced_loss",
+      "policy_target": null,
+      "policy_weight": 0.0,
+      "regret_cp": null,
+      "confidence": "two-budget engine estimate",
+      "static_value_target": null,
+      "value_training_note": "Root action reward only; independently label quiet descendants before value fitting."
+    },
+    {
+      "ply": 30,
+      "fullmove": 25,
+      "white": false,
+      "fen": "r1bq1k2/1p1n2r1/p1pBBp1Q/3p4/3P3P/2P1P3/P4P2/2R1K3 b - - 3 25",
+      "start_fen": "r1bq1rk1/1p1nbppp/p1p2n2/3p2B1/3P4/2NBPN2/PPQ2PPP/2R1K2R b K - 1 10",
+      "history": [
+        "h7h6",
+        "g5h4",
+        "g7g5",
+        "h4g3",
+        "f6h5",
+        "g3e5",
+        "f7f6",
+        "h2h4",
+        "g5g4",
+        "e5h2",
+        "g4f3",
+        "d3h7",
+        "g8h8",
+        "c2g6",
+        "f3g2",
+        "h1g1",
+        "e7b4",
+        "g6h6",
+        "b4c3",
+        "b2c3",
+        "f8f7",
+        "h7f5",
+        "h8g8",
+        "g1g2",
+        "h5g7",
+        "g2g7",
+        "f7g7",
+        "f5e6",
+        "g8f8",
+        "h2d6"
+      ],
+      "played": "f8e8",
+      "san": "Ke8",
+      "clock_after_seconds": 79.759,
+      "labels": [
+        {
+          "nodes": 80000,
+          "best": {
+            "cp": null,
+            "mate": -2,
+            "depth": 245,
+            "pv": [
+              "f8e8",
+              "h6h5",
+              "g7g6",
+              "h5g6"
+            ],
+            "nodes": 17650
+          },
+          "played": {
+            "cp": null,
+            "mate": -2,
+            "depth": 245,
+            "pv": [
+              "f8e8",
+              "h6h5",
+              "g7g6",
+              "h5g6"
+            ],
+            "nodes": 17650
+          }
+        },
+        {
+          "nodes": 320000,
+          "best": {
+            "cp": null,
+            "mate": -2,
+            "depth": 245,
+            "pv": [
+              "f8e8",
+              "h6h5",
+              "g7g6",
+              "h5g6"
+            ],
+            "nodes": 17650
+          },
+          "played": {
+            "cp": null,
+            "mate": -2,
+            "depth": 245,
+            "pv": [
+              "f8e8",
+              "h6h5",
+              "g7g6",
+              "h5g6"
+            ],
+            "nodes": 17650
+          }
+        }
+      ],
+      "tags": [
+        "middlegame",
+        "defence_in_check"
+      ],
+      "reward": 0.0,
+      "label": "already_in_engine_forced_loss",
+      "policy_target": null,
+      "policy_weight": 0.0,
+      "regret_cp": null,
+      "confidence": "two-budget engine estimate",
+      "static_value_target": null,
+      "value_training_note": "Root action reward only; independently label quiet descendants before value fitting."
+    },
+    {
+      "ply": 32,
+      "fullmove": 26,
+      "white": false,
+      "fen": "r1bqk3/1p1n2r1/p1pBBp2/3p3Q/3P3P/2P1P3/P4P2/2R1K3 b - - 5 26",
+      "start_fen": "r1bq1rk1/1p1nbppp/p1p2n2/3p2B1/3P4/2NBPN2/PPQ2PPP/2R1K2R b K - 1 10",
+      "history": [
+        "h7h6",
+        "g5h4",
+        "g7g5",
+        "h4g3",
+        "f6h5",
+        "g3e5",
+        "f7f6",
+        "h2h4",
+        "g5g4",
+        "e5h2",
+        "g4f3",
+        "d3h7",
+        "g8h8",
+        "c2g6",
+        "f3g2",
+        "h1g1",
+        "e7b4",
+        "g6h6",
+        "b4c3",
+        "b2c3",
+        "f8f7",
+        "h7f5",
+        "h8g8",
+        "g1g2",
+        "h5g7",
+        "g2g7",
+        "f7g7",
+        "f5e6",
+        "g8f8",
+        "h2d6",
+        "f8e8",
+        "h6h5"
+      ],
+      "played": "g7g6",
+      "san": "Rg6",
+      "clock_after_seconds": 80.258,
+      "labels": [
+        {
+          "nodes": 80000,
+          "best": {
+            "cp": null,
+            "mate": -1,
+            "depth": 245,
+            "pv": [
+              "g7g6",
+              "h5g6"
+            ],
+            "nodes": 978
+          },
+          "played": {
+            "cp": null,
+            "mate": -1,
+            "depth": 245,
+            "pv": [
+              "g7g6",
+              "h5g6"
+            ],
+            "nodes": 978
+          }
+        },
+        {
+          "nodes": 320000,
+          "best": {
+            "cp": null,
+            "mate": -1,
+            "depth": 245,
+            "pv": [
+              "g7g6",
+              "h5g6"
+            ],
+            "nodes": 978
+          },
+          "played": {
+            "cp": null,
+            "mate": -1,
+            "depth": 245,
+            "pv": [
+              "g7g6",
+              "h5g6"
+            ],
+            "nodes": 978
+          }
+        }
+      ],
+      "tags": [
+        "middlegame",
+        "defence_in_check"
+      ],
+      "reward": 0.0,
+      "label": "already_in_engine_forced_loss",
+      "policy_target": null,
+      "policy_weight": 0.0,
+      "regret_cp": null,
+      "confidence": "two-budget engine estimate",
+      "static_value_target": null,
+      "value_training_note": "Root action reward only; independently label quiet descendants before value fitting."
+    }
+  ],
+  "requested_nodes_this_process": 8400000,
+  "own_moves": 17,
+  "labels": {
+    "good_move": 4,
+    "small_or_uncertain_difference": 2,
+    "major_mistake": 3,
+    "uncertain": 4,
+    "already_in_engine_forced_loss": 4
+  },
+  "rewarded": 4,
+  "penalised": 3,
+  "policy_examples": 6,
+  "limitation": "Teacher estimates, not proof of strategy or Elo. Outcome does not determine move reward."
+}
