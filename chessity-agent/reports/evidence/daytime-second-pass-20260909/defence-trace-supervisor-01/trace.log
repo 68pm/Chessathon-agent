@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\daytime_defence_trace.py", line 147, in <module>
+    prepare() if parser.parse_args().prepare else run()
+                                                  ^^^^^
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\daytime_defence_trace.py", line 74, in run
+    import agent
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\runs\daytime-20260909\pawn-extrema-01\prototype\agent.py", line 24, in <module>
+    from engine.compiled_driver import CompiledSearch
+ModuleNotFoundError: No module named 'engine.compiled_driver'
