@@ -1,0 +1,41 @@
+{
+  "identity": {
+    "schema": "stockfish-move-feedback-v1",
+    "game": {
+      "start_fen": "r1bq1rk1/1p1nbppp/p1p2n2/3p2B1/3P4/2NBPN2/PPQ2PPP/2R1K2R b K - 1 10",
+      "moves": [],
+      "candidate_white": false,
+      "score": 0.0,
+      "candidate_version": "runs\\overnight-20260909\\countercheck-leaf-01\\prototype",
+      "source_game_id": "2",
+      "opponent": "stockfish:2400",
+      "termination": "init",
+      "operational_failure": "black",
+      "pgn_sha256": "ea9a6b3556dfa99d7236066c7de08cc210b5c8948a65c67fe0d1543343c8a99b",
+      "game_key": "90dc17494d9bf3e197ccdbfeab48ceaaf2f7cb71b7f96c750bfb06ffd97c9daf"
+    },
+    "teacher": {
+      "schema": "stockfish-move-feedback-v1",
+      "executable_sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0",
+      "evaluate_sha256": "883f9c78c8c890e9ffcad0aca59dbc79f87e832be57e817e1a9f518b26680e33",
+      "settings": {
+        "Threads": 1,
+        "Hash": 32,
+        "UCI_LimitStrength": false
+      }
+    },
+    "reviewer_sha256": "31642a11dcfc7d242b7bae0d093db885ca100d33a4111307974c6c87d6bff1d1",
+    "budgets": [
+      80000,
+      320000
+    ]
+  },
+  "status": "complete",
+  "rows": [],
+  "own_moves": 0,
+  "labels": {},
+  "rewarded": 0,
+  "penalised": 0,
+  "policy_examples": 0,
+  "limitation": "Teacher estimates, not proof of strategy or Elo. Outcome does not determine move reward."
+}

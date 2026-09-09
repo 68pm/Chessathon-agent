@@ -1,0 +1,62 @@
+{
+  "id": 2,
+  "candidate_path": "runs\\overnight-20260909\\countercheck-leaf-01\\prototype",
+  "family": "stockfish:2400",
+  "pair": 0,
+  "opening": [
+    "d2d4",
+    "d7d5",
+    "g1f3",
+    "g8f6",
+    "c2c4",
+    "e7e6",
+    "b1c3",
+    "f8e7",
+    "c1g5",
+    "e8g8",
+    "e2e3",
+    "b8d7",
+    "a1c1",
+    "c7c6",
+    "d1c2",
+    "a7a6",
+    "c4d5",
+    "e6d5",
+    "f1d3"
+  ],
+  "opening_group": "D65",
+  "candidate_white": false,
+  "elo": 2400,
+  "score": 0.0,
+  "termination": "init",
+  "failed_colour": "black",
+  "host_cpu_busy_fraction": 0.2757042253521127,
+  "memory_start": {
+    "utc": "2026-09-09T03:36:28.862049+00:00",
+    "load_percent": 86,
+    "available_mb": 2118.2,
+    "total_mb": 16087.7
+  },
+  "memory_end": {
+    "utc": "2026-09-09T03:38:01.292876+00:00",
+    "load_percent": 86,
+    "available_mb": 2133.2,
+    "total_mb": 16087.7
+  },
+  "failure_detail": {
+    "component": "agent_start",
+    "error": "AgentFailure('init')",
+    "agent_stderr": {
+      "black": ""
+    }
+  },
+  "host_load_scope": "Host-wide average during game and initialization; includes all applications, not per-engine utilization or an isolated-core guarantee.",
+  "moves": [],
+  "init_ms": {
+    "white": 2182.848600030411
+  },
+  "uci_limits": [],
+  "pgn": "[Event \"Chessity fast-chess verified pilot\"]\n[Site \"Local offline\"]\n[Date \"????.??.??\"]\n[Round \"2\"]\n[White \"Stockfish 19 UCI_Elo 2400\"]\n[Black \"prototype\"]\n[Result \"1-0\"]\n[FEN \"r1bq1rk1/1p1nbppp/p1p2n2/3p2B1/3P4/2NBPN2/PPQ2PPP/2R1K2R b K - 1 10\"]\n[SetUp \"1\"]\n[TimeControl \"120+0.5\"]\n[Termination \"init\"]\n[OpeningSetupUCI \"d2d4 d7d5 g1f3 g8f6 c2c4 e7e6 b1c3 f8e7 c1g5 e8g8 e2e3 b8d7 a1c1 c7c6 d1c2 a7a6 c4d5 e6d5 f1d3\"]\n\n1-0",
+  "seconds": 92.43171220005024,
+  "final_fen": "r1bq1rk1/1p1nbppp/p1p2n2/3p2B1/3P4/2NBPN2/PPQ2PPP/2R1K2R b K - 1 10"
+}

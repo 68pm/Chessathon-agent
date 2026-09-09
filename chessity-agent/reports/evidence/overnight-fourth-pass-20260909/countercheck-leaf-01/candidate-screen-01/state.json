@@ -1,0 +1,154 @@
+{
+  "status": "complete",
+  "candidate": "runs\\overnight-20260909\\countercheck-leaf-01\\prototype",
+  "baseline": "runs\\overnight-20260909\\coalesced-search-01\\prototype",
+  "trial_sha256": "bd061fee1d2020f6c9dbc3401d94bd6471f6f369b5ff4259b364c82e86f4f382",
+  "package_sha256": "13bf0d58ac5f0de86f32f454f6db4e1c71b9d106175e9d762a01e0e001f302d8",
+  "source_files": {
+    "scripts\\overnight_portable_screen.py": "f3528d3ee8d2bd71be13fc15337b1f6fc2f0d050f288b758d8b142627effcade",
+    "configs\\overnight-september9-short-openings.json": "778b369e3822cf71129fc024b1324132721035ecfee9b5618e1ab06ba227e302",
+    "scripts\\overnight_clock_quality.py": "92797f1712376c42f21af37f6fb7299dd17de0a1ad2be7d20ce76f38cdc21284",
+    "scripts\\validate_package_staged_fixed.py": "68986b02bb2a5c7b4b63f66ad0df312481201842b62c23323d3c114715334c5c",
+    "scripts\\validate_package.py": "094af1b9bca562ad95715c64d45b524bdddd8bbc1b7e8776d9bc002daa8e6c1b",
+    "scripts\\feedback_matches.py": "64459e542f5056a6f0ab706ebc902d75d3cf45098da85a1ff996266cce05c730",
+    "scripts\\feedback_matches_windows.py": "600243597c52199aa8b27df30938fe4bcec2b61565f8984ada11a72b62ce9c6a",
+    "docs\\OVERNIGHT_PORTABLE_SCREEN_20260909.md": "7ff515995d6b83cea02ac0a3e5efc3ae5c9ce3d612a22a21a4e0ca01b0571d72",
+    "training\\game_feedback.py": "31642a11dcfc7d242b7bae0d093db885ca100d33a4111307974c6c87d6bff1d1",
+    "training\\reward_policy.py": "80306e181a10f248b247804e28fc64f079a4344b2fe0dac62384f881f6338a88",
+    "scripts\\overnight_game.py": "447adfbbb7b2656b0959f498abc313323a1d4b9d804fb7b76d70b41d0698b4bb"
+  },
+  "stages": [
+    {
+      "stage": "clock-quality",
+      "status": "complete",
+      "args": [
+        "scripts.overnight_clock_quality",
+        "--run",
+        "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\overnight-20260909\\countercheck-leaf-01"
+      ],
+      "timeout_seconds": 900,
+      "pid": 2760,
+      "elapsed_seconds": 1.0149999999557622
+    },
+    {
+      "stage": "read-only",
+      "status": "complete",
+      "args": [
+        "scripts.validate_package_staged_fixed",
+        "--zip",
+        "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\overnight-20260909\\countercheck-leaf-01\\prototype.zip",
+        "--out",
+        "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\overnight-20260909\\countercheck-leaf-01\\candidate-screen-01\\validation.json"
+      ],
+      "timeout_seconds": 180,
+      "pid": 12504,
+      "elapsed_seconds": 68.29699999996228
+    },
+    {
+      "stage": "comparison",
+      "status": "complete",
+      "args": [
+        "scripts.feedback_matches_windows",
+        "--candidate",
+        "runs\\overnight-20260909\\countercheck-leaf-01\\prototype",
+        "--opponent",
+        "runs\\overnight-20260909\\coalesced-search-01\\prototype",
+        "--stage",
+        "comparison",
+        "--pairs",
+        "2",
+        "--offset",
+        "0",
+        "--cycle",
+        "overnight9-countercheck-leaf-01-comparison",
+        "--openings",
+        "configs/overnight-september9-short-openings.json"
+      ],
+      "timeout_seconds": 5400,
+      "pid": 32764,
+      "elapsed_seconds": 1794.030999999959
+    },
+    {
+      "stage": "rated-2400",
+      "status": "complete",
+      "args": [
+        "scripts.feedback_matches_windows",
+        "--candidate",
+        "runs\\overnight-20260909\\countercheck-leaf-01\\prototype",
+        "--opponent",
+        "runs\\overnight-20260909\\coalesced-search-01\\prototype",
+        "--stage",
+        "rated",
+        "--pairs",
+        "1",
+        "--offset",
+        "2",
+        "--cycle",
+        "overnight9-countercheck-leaf-01-rated-2400",
+        "--openings",
+        "configs/overnight-september9-short-openings.json",
+        "--levels",
+        "2400"
+      ],
+      "timeout_seconds": 2700,
+      "pid": 5776,
+      "elapsed_seconds": 608.4530000000377
+    }
+  ],
+  "matches": [
+    {
+      "label": "comparison",
+      "result_path": "runs\\improvement-loop-20260907\\overnight9-countercheck-leaf-01-comparison\\comparison-prototype\\results.json",
+      "sha256": "4f6adf5370aefe43bb1654544a19a9b6e9230d959af429e84e965ed03f5ab576",
+      "summary": {
+        "incumbent": {
+          "games": 4,
+          "wins": 2,
+          "draws": 1,
+          "losses": 1,
+          "score": 0.625,
+          "completed_pairs": 2,
+          "pair_bootstrap_95": [
+            0.5,
+            0.75
+          ],
+          "terminations": {
+            "checkmate": 3,
+            "threefold_repetition": 1
+          },
+          "candidate_failures": 0
+        }
+      }
+    },
+    {
+      "label": "rated-2400",
+      "result_path": "runs\\improvement-loop-20260907\\overnight9-countercheck-leaf-01-rated-2400\\rated-prototype\\results.json",
+      "sha256": "c1f2455d44f5514f496dbabc7ec6f39aea09404074d213eb849e402a1c81c302",
+      "summary": {
+        "stockfish:2400": {
+          "games": 2,
+          "wins": 0,
+          "draws": 0,
+          "losses": 2,
+          "score": 0.0,
+          "completed_pairs": 1,
+          "pair_bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "terminations": {
+            "checkmate": 1,
+            "init": 1
+          },
+          "candidate_failures": 1
+        }
+      }
+    }
+  ],
+  "provisional_comparison_passed": true,
+  "scope": "Serial screen versus compiler-repaired v1.53 control, not exact selected v1.53 ZIP. Earlier failures stay recorded. No release selection, automatic competition upload or calibrated Elo.",
+  "quality_sha256": "001a54d7ead2c1aba03399b038f8ef3a505320c87be91b95decab5716b950c65",
+  "decision": "review_all_game_evidence_before_release_selection",
+  "completed_utc": "2026-09-09T03:38:08.743116+00:00",
+  "frozen_candidates": true
+}

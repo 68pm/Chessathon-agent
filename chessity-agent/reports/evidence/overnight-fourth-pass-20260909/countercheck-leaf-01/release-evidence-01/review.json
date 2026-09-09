@@ -1,0 +1,514 @@
+{
+  "status": "complete",
+  "candidate": "runs\\overnight-20260909\\countercheck-leaf-01\\prototype",
+  "control": "runs\\overnight-20260909\\coalesced-search-01\\prototype",
+  "package_sha256": "13bf0d58ac5f0de86f32f454f6db4e1c71b9d106175e9d762a01e0e001f302d8",
+  "source_sha256": {
+    "runs\\improvement-loop-20260907\\overnight9-countercheck-leaf-01-comparison\\comparison-prototype\\results.json": "4f6adf5370aefe43bb1654544a19a9b6e9230d959af429e84e965ed03f5ab576",
+    "runs\\improvement-loop-20260907\\overnight9-countercheck-leaf-01-comparison\\comparison-prototype\\postgame-feedback\\reviews\\games\\6ab3c2d6bd888e1a1ca5e9106a674b95d718760ba3fe92b8b6707094c9b90f37\\review.json": "4ca39b9fe18f9d774238bb5e17416389160bd6f38e2eb23420559fe69beb3880",
+    "runs\\improvement-loop-20260907\\overnight9-countercheck-leaf-01-comparison\\comparison-prototype\\postgame-feedback\\checkpoints\\6ab3c2d6bd888e1a1ca5e9106a674b95d718760ba3fe92b8b6707094c9b90f37\\training.json": "e5d5d61b71a8ea9a7ed226a27728bcd162986cd46747d04a12d19f29bc22e215",
+    "runs\\improvement-loop-20260907\\overnight9-countercheck-leaf-01-comparison\\comparison-prototype\\postgame-feedback\\reviews\\games\\de75c3d31dba757d2453f02571021383c7c345a9764fe7833a2f908c7dd93c2a\\review.json": "fdfa05251fa92177b62b14218b6a2bdc839db1c975ecbb933c001f6d3993379d",
+    "runs\\improvement-loop-20260907\\overnight9-countercheck-leaf-01-comparison\\comparison-prototype\\postgame-feedback\\checkpoints\\de75c3d31dba757d2453f02571021383c7c345a9764fe7833a2f908c7dd93c2a\\training.json": "8e8d091cab882ba79f81a66cb60707ee48ca8cc581d5764f3060a377ecba8df0",
+    "runs\\improvement-loop-20260907\\overnight9-countercheck-leaf-01-comparison\\comparison-prototype\\postgame-feedback\\reviews\\games\\c1089797dae6011e648584af1e741fa94ef4794ef2d34b18d6d3cd4f1677b646\\review.json": "c06b385d706576f945977f00269ccedd269c3e5416204583994402c884358d87",
+    "runs\\improvement-loop-20260907\\overnight9-countercheck-leaf-01-comparison\\comparison-prototype\\postgame-feedback\\checkpoints\\c1089797dae6011e648584af1e741fa94ef4794ef2d34b18d6d3cd4f1677b646\\training.json": "322004c5b87b7f57c813fdfc463e680ef79e6f1057fabb5dbede624bac814f19",
+    "runs\\improvement-loop-20260907\\overnight9-countercheck-leaf-01-comparison\\comparison-prototype\\postgame-feedback\\reviews\\games\\9100fd0cc09244f4a4a2a3262295ada07671da9f99983263abead283a2035d10\\review.json": "b7af789339d6b568c5e27fa7a78b22131fb7c78c741705ecaca5536d5d267930",
+    "runs\\improvement-loop-20260907\\overnight9-countercheck-leaf-01-comparison\\comparison-prototype\\postgame-feedback\\checkpoints\\9100fd0cc09244f4a4a2a3262295ada07671da9f99983263abead283a2035d10\\training.json": "375adfc0081a7e097656832372fd3a002b2611000a887eb1a222870ea3b6de2d",
+    "runs\\improvement-loop-20260907\\overnight9-countercheck-leaf-01-rated-2400\\rated-prototype\\results.json": "c1f2455d44f5514f496dbabc7ec6f39aea09404074d213eb849e402a1c81c302",
+    "runs\\improvement-loop-20260907\\overnight9-countercheck-leaf-01-rated-2400\\rated-prototype\\postgame-feedback\\reviews\\games\\7cc5215268d834ec719795e5610c1abb077d02644598adb7d2bcdac017bfaf57\\review.json": "83e864ce2c7d36a90b54f30b502677e0dcd9c2f0a686cda6d59ffbc70e30ce9f",
+    "runs\\improvement-loop-20260907\\overnight9-countercheck-leaf-01-rated-2400\\rated-prototype\\postgame-feedback\\checkpoints\\7cc5215268d834ec719795e5610c1abb077d02644598adb7d2bcdac017bfaf57\\training.json": "d606a092dd306aa25b9f8c59b4d638d44fcc84a32ff87da0bb1cffd4cf312d36",
+    "runs\\improvement-loop-20260907\\overnight9-countercheck-leaf-01-rated-2400\\rated-prototype\\postgame-feedback\\reviews\\games\\90dc17494d9bf3e197ccdbfeab48ceaaf2f7cb71b7f96c750bfb06ffd97c9daf\\review.json": "447e6fe0bfc92943021348add4b4861ea61ffbc2d99b255971386dd565ff31a3",
+    "runs\\improvement-loop-20260907\\overnight9-countercheck-leaf-01-rated-2400\\rated-prototype\\postgame-feedback\\checkpoints\\90dc17494d9bf3e197ccdbfeab48ceaaf2f7cb71b7f96c750bfb06ffd97c9daf\\training.json": "19e4c6861aa873487dbdaa5e654fe77e8af4a9bde1be3d32955ab2916c92bd84",
+    "runs\\overnight-20260909\\countercheck-leaf-01\\candidate-screen-01\\state.json": "c8313383bcc753efdcb055db9a60ddf6ec0a8bf95799ab848527663cc1d511ef",
+    "runs\\overnight-20260909\\countercheck-leaf-01\\preparation.json": "97cf06438b5408e168390e25a3aecbd31f7dac4bb1f2b31887d8e2cd4786033f",
+    "runs\\overnight-20260909\\countercheck-leaf-01\\candidate-screen-01\\validation.json": "c00cceb5663f7b40be408a688d327f8e2f3b08729caef459a6921a112b13a73d",
+    "scripts\\feedback_screen_review.py": "1c2b9e6ce8801474b2c8b56c469bc4c5b1c25feba3263e2c9710501b3b3261a8",
+    "scripts\\feedback_position_plan.py": "afe4031db7be49aa16ce29a7ee7c6039ecb83f56ff6ebdb2a9a6689a511be35a",
+    "scripts\\overnight_portable_screen.py": "f3528d3ee8d2bd71be13fc15337b1f6fc2f0d050f288b758d8b142627effcade",
+    "tests\\test_feedback_screen_review.py": "5f5d710108aece04bf9ef52d117aadb11b179db97b191205998281d0bab03564",
+    "docs\\OVERNIGHT_FEEDBACK_SCREEN_REVIEW_20260909.md": "e2c6558bcf4d50932c70d3fec4a2c33b6c973415bfa96f7be05a3ddeac992774"
+  },
+  "groups": {
+    "incumbent": {
+      "games": 4,
+      "wins": 2,
+      "draws": 1,
+      "losses": 1,
+      "clean_wins": 2,
+      "operational_games": 0,
+      "by_colour": {
+        "white": {
+          "games": 2,
+          "wins": 2,
+          "draws": 0,
+          "losses": 0,
+          "clean_wins": 2,
+          "operational_games": 0
+        },
+        "black": {
+          "games": 2,
+          "wins": 0,
+          "draws": 1,
+          "losses": 1,
+          "clean_wins": 0,
+          "operational_games": 0
+        }
+      },
+      "terminations": {
+        "checkmate": 3,
+        "threefold_repetition": 1
+      }
+    },
+    "stockfish:2400": {
+      "games": 2,
+      "wins": 0,
+      "draws": 0,
+      "losses": 2,
+      "clean_wins": 0,
+      "operational_games": 1,
+      "by_colour": {
+        "white": {
+          "games": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "clean_wins": 0,
+          "operational_games": 0
+        },
+        "black": {
+          "games": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "clean_wins": 0,
+          "operational_games": 1
+        }
+      },
+      "terminations": {
+        "checkmate": 1,
+        "init": 1
+      }
+    }
+  },
+  "highest_clean_nominal_win": null,
+  "comparison_passed": true,
+  "comparison_points": 2.5,
+  "comparison_signal": "favourable_small_sample",
+  "final_pair_qualifies_for_next": false,
+  "feedback": [
+    {
+      "stage": "comparison",
+      "id": 1,
+      "game_key": "6ab3c2d6bd888e1a1ca5e9106a674b95d718760ba3fe92b8b6707094c9b90f37",
+      "candidate_white": true,
+      "score": 1.0,
+      "own_moves": 52,
+      "rewarded": 39,
+      "penalised": 4,
+      "labels": {
+        "inaccuracy": 4,
+        "good_move": 31,
+        "small_or_uncertain_difference": 3,
+        "uncertain": 6,
+        "preserves_engine_mate": 8
+      },
+      "phases": {
+        "opening": 7,
+        "middlegame": 27,
+        "endgame": 18
+      },
+      "experimental_policy_examples": 42,
+      "experimental_policy_updates": 11,
+      "selected_diagnostic_roots": [
+        {
+          "ply": 0,
+          "fullmove": 6,
+          "played": "Nb3",
+          "target_uci": "f1b5",
+          "phase": "opening",
+          "reason": "first_recoverable_error",
+          "regret_cp": [
+            129,
+            138
+          ],
+          "root_reward": -0.43
+        },
+        {
+          "ply": 60,
+          "fullmove": 36,
+          "played": "Rc1",
+          "target_uci": "c5e7",
+          "phase": "middlegame",
+          "reason": "missed_advantage_conversion",
+          "regret_cp": [
+            174,
+            113
+          ],
+          "root_reward": -0.37666666666666665
+        },
+        {
+          "ply": 4,
+          "fullmove": 8,
+          "played": "Qe2+",
+          "target_uci": "c5a4",
+          "phase": "opening",
+          "reason": "additional_recoverable_error",
+          "regret_cp": [
+            104,
+            73
+          ],
+          "root_reward": -0.24333333333333335
+        },
+        {
+          "ply": 56,
+          "fullmove": 34,
+          "played": "Bc5",
+          "target_uci": "b6c5",
+          "phase": "middlegame",
+          "reason": "supported_good_move_middlegame",
+          "regret_cp": [
+            0,
+            0
+          ],
+          "root_reward": 1.0
+        },
+        {
+          "ply": 74,
+          "fullmove": 43,
+          "played": "Rxf8",
+          "target_uci": "c8f8",
+          "phase": "endgame",
+          "reason": "supported_good_move_endgame",
+          "regret_cp": [
+            0,
+            0
+          ],
+          "root_reward": 1.0
+        }
+      ]
+    },
+    {
+      "stage": "comparison",
+      "id": 2,
+      "game_key": "de75c3d31dba757d2453f02571021383c7c345a9764fe7833a2f908c7dd93c2a",
+      "candidate_white": false,
+      "score": 0.0,
+      "own_moves": 65,
+      "rewarded": 35,
+      "penalised": 6,
+      "labels": {
+        "good_move": 35,
+        "inaccuracy": 6,
+        "small_or_uncertain_difference": 8,
+        "uncertain": 9,
+        "already_in_engine_forced_loss": 7
+      },
+      "phases": {
+        "opening": 7,
+        "middlegame": 16,
+        "endgame": 42
+      },
+      "experimental_policy_examples": 83,
+      "experimental_policy_updates": 14,
+      "selected_diagnostic_roots": [
+        {
+          "ply": 7,
+          "fullmove": 9,
+          "played": "Kd7",
+          "target_uci": "c6e7",
+          "phase": "opening",
+          "reason": "first_recoverable_error",
+          "regret_cp": [
+            75,
+            80
+          ],
+          "root_reward": -0.25
+        },
+        {
+          "ply": 65,
+          "fullmove": 38,
+          "played": "Rh3",
+          "target_uci": "a3a4",
+          "phase": "endgame",
+          "reason": "largest_recoverable_error",
+          "regret_cp": [
+            129,
+            132
+          ],
+          "root_reward": -0.43
+        },
+        {
+          "ply": 9,
+          "fullmove": 10,
+          "played": "Nxe5",
+          "target_uci": "d6e5",
+          "phase": "opening",
+          "reason": "missed_advantage_conversion",
+          "regret_cp": [
+            122,
+            131
+          ],
+          "root_reward": -0.4066666666666667
+        },
+        {
+          "ply": 27,
+          "fullmove": 19,
+          "played": "Re8",
+          "target_uci": "h8e8",
+          "phase": "middlegame",
+          "reason": "supported_good_move_middlegame",
+          "regret_cp": [
+            0,
+            0
+          ],
+          "root_reward": 1.0
+        },
+        {
+          "ply": 75,
+          "fullmove": 43,
+          "played": "Ke7",
+          "target_uci": "d6e7",
+          "phase": "endgame",
+          "reason": "supported_good_move_endgame",
+          "regret_cp": [
+            0,
+            0
+          ],
+          "root_reward": 1.0
+        }
+      ]
+    },
+    {
+      "stage": "comparison",
+      "id": 3,
+      "game_key": "c1089797dae6011e648584af1e741fa94ef4794ef2d34b18d6d3cd4f1677b646",
+      "candidate_white": true,
+      "score": 1.0,
+      "own_moves": 36,
+      "rewarded": 19,
+      "penalised": 5,
+      "labels": {
+        "good_move": 13,
+        "small_or_uncertain_difference": 6,
+        "major_mistake": 1,
+        "inaccuracy": 4,
+        "uncertain": 6,
+        "preserves_engine_mate": 6
+      },
+      "phases": {
+        "opening": 5,
+        "middlegame": 31
+      },
+      "experimental_policy_examples": 107,
+      "experimental_policy_updates": 15,
+      "selected_diagnostic_roots": [
+        {
+          "ply": 14,
+          "fullmove": 15,
+          "played": "Bg5",
+          "target_uci": "d4d5",
+          "phase": "middlegame",
+          "reason": "first_recoverable_error",
+          "regret_cp": [
+            271,
+            328
+          ],
+          "root_reward": -0.9033333333333333
+        },
+        {
+          "ply": 28,
+          "fullmove": 22,
+          "played": "Qe4",
+          "target_uci": "d5e6",
+          "phase": "middlegame",
+          "reason": "additional_recoverable_error",
+          "regret_cp": [
+            190,
+            275
+          ],
+          "root_reward": -0.6333333333333333
+        },
+        {
+          "ply": 38,
+          "fullmove": 27,
+          "played": "Qh3",
+          "target_uci": "g2g3",
+          "phase": "middlegame",
+          "reason": "additional_recoverable_error",
+          "regret_cp": [
+            189,
+            193
+          ],
+          "root_reward": -0.63
+        },
+        {
+          "ply": 40,
+          "fullmove": 28,
+          "played": "Bd3",
+          "target_uci": "c2d3",
+          "phase": "middlegame",
+          "reason": "supported_good_move_middlegame",
+          "regret_cp": [
+            0,
+            0
+          ],
+          "root_reward": 1.0
+        },
+        {
+          "ply": 2,
+          "fullmove": 9,
+          "played": "Bc2",
+          "target_uci": "b3c2",
+          "phase": "opening",
+          "reason": "supported_good_move_opening",
+          "regret_cp": [
+            0,
+            0
+          ],
+          "root_reward": 1.0
+        }
+      ]
+    },
+    {
+      "stage": "comparison",
+      "id": 4,
+      "game_key": "9100fd0cc09244f4a4a2a3262295ada07671da9f99983263abead283a2035d10",
+      "candidate_white": false,
+      "score": 0.5,
+      "own_moves": 22,
+      "rewarded": 12,
+      "penalised": 2,
+      "labels": {
+        "small_or_uncertain_difference": 4,
+        "major_mistake": 1,
+        "inaccuracy": 1,
+        "good_move": 12,
+        "uncertain": 2,
+        "forced_move": 2
+      },
+      "phases": {
+        "opening": 5,
+        "middlegame": 17
+      },
+      "experimental_policy_examples": 121,
+      "experimental_policy_updates": 16,
+      "selected_diagnostic_roots": [
+        {
+          "ply": 5,
+          "fullmove": 10,
+          "played": "Nc6",
+          "target_uci": "d6e7",
+          "phase": "opening",
+          "reason": "first_recoverable_error",
+          "regret_cp": [
+            434,
+            450
+          ],
+          "root_reward": -1.0
+        },
+        {
+          "ply": 23,
+          "fullmove": 19,
+          "played": "Ke7",
+          "target_uci": "e8e7",
+          "phase": "middlegame",
+          "reason": "supported_good_move_middlegame",
+          "regret_cp": [
+            0,
+            0
+          ],
+          "root_reward": 1.0
+        },
+        {
+          "ply": 9,
+          "fullmove": 12,
+          "played": "Nxd4",
+          "target_uci": "c6d4",
+          "phase": "opening",
+          "reason": "supported_good_move_opening",
+          "regret_cp": [
+            24,
+            12
+          ],
+          "root_reward": 1.0
+        }
+      ]
+    },
+    {
+      "stage": "rated-2400",
+      "id": 1,
+      "game_key": "7cc5215268d834ec719795e5610c1abb077d02644598adb7d2bcdac017bfaf57",
+      "candidate_white": true,
+      "score": 0.0,
+      "own_moves": 72,
+      "rewarded": 18,
+      "penalised": 5,
+      "labels": {
+        "good_move": 18,
+        "small_or_uncertain_difference": 17,
+        "uncertain": 10,
+        "major_mistake": 2,
+        "inaccuracy": 2,
+        "allows_engine_mate": 1,
+        "already_in_engine_forced_loss": 18,
+        "forced_move": 4
+      },
+      "phases": {
+        "opening": 2,
+        "middlegame": 56,
+        "endgame": 14
+      },
+      "experimental_policy_examples": 20,
+      "experimental_policy_updates": 10,
+      "selected_diagnostic_roots": [
+        {
+          "ply": 43,
+          "fullmove": 32,
+          "played": "Ng5",
+          "target_uci": "f3g5",
+          "phase": "middlegame",
+          "reason": "supported_good_move_middlegame",
+          "regret_cp": [
+            0,
+            0
+          ],
+          "root_reward": 1.0
+        },
+        {
+          "ply": 1,
+          "fullmove": 11,
+          "played": "Bf4",
+          "target_uci": "g5f4",
+          "phase": "opening",
+          "reason": "supported_good_move_opening",
+          "regret_cp": [
+            22,
+            23
+          ],
+          "root_reward": 1.0
+        }
+      ]
+    },
+    {
+      "stage": "rated-2400",
+      "id": 2,
+      "game_key": "90dc17494d9bf3e197ccdbfeab48ceaaf2f7cb71b7f96c750bfb06ffd97c9daf",
+      "candidate_white": false,
+      "score": 0.0,
+      "own_moves": 0,
+      "rewarded": 0,
+      "penalised": 0,
+      "labels": {},
+      "phases": {},
+      "experimental_policy_examples": 20,
+      "experimental_policy_updates": 10,
+      "selected_diagnostic_roots": []
+    }
+  ],
+  "total_reviewed_moves": 247,
+  "rewarded": 123,
+  "penalised": 22,
+  "calibrated_elo": null,
+  "selected_version": null,
+  "automatic_promotion": false,
+  "limitation": "Small development screen versus compiler-repaired53, not exact selected53 ZIP. Nominal Stockfish settings are not calibrated site/human Elo. Every operational result remains in W/D/L; only clean played wins determine highest beaten setting. Review all evidence before selecting a release."
+}

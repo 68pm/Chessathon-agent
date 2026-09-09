@@ -1,0 +1,33 @@
+{
+  "identity": {
+    "source_files": {
+      "\\\\?\\C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\improvement-loop-20260907\\overnight9-countercheck-leaf-01-comparison\\comparison-prototype\\postgame-feedback\\reviews\\games\\6ab3c2d6bd888e1a1ca5e9106a674b95d718760ba3fe92b8b6707094c9b90f37\\review.json": "4ca39b9fe18f9d774238bb5e17416389160bd6f38e2eb23420559fe69beb3880",
+      "\\\\?\\C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\improvement-loop-20260907\\overnight9-countercheck-leaf-01-comparison\\comparison-prototype\\postgame-feedback\\reviews\\games\\9100fd0cc09244f4a4a2a3262295ada07671da9f99983263abead283a2035d10\\review.json": "b7af789339d6b568c5e27fa7a78b22131fb7c78c741705ecaca5536d5d267930",
+      "\\\\?\\C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\improvement-loop-20260907\\overnight9-countercheck-leaf-01-comparison\\comparison-prototype\\postgame-feedback\\reviews\\games\\c1089797dae6011e648584af1e741fa94ef4794ef2d34b18d6d3cd4f1677b646\\review.json": "c06b385d706576f945977f00269ccedd269c3e5416204583994402c884358d87",
+      "\\\\?\\C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\improvement-loop-20260907\\overnight9-countercheck-leaf-01-comparison\\comparison-prototype\\postgame-feedback\\reviews\\games\\de75c3d31dba757d2453f02571021383c7c345a9764fe7833a2f908c7dd93c2a\\review.json": "fdfa05251fa92177b62b14218b6a2bdc839db1c975ecbb933c001f6d3993379d"
+    },
+    "initial_policy_sha256": "1670b12e42fa7a48502e22d4202d79a809b1a8a0fba2b179a9d1671e53f4b6b7",
+    "trainer_sha256": "80306e181a10f248b247804e28fc64f079a4344b2fe0dac62384f881f6338a88",
+    "epochs": 1,
+    "learning_rate": 5e-05,
+    "seed": 20260908,
+    "anchor_weight": 2.0,
+    "max_per_game": 48
+  },
+  "status": "complete",
+  "trained": true,
+  "updates": 16,
+  "examples": 121,
+  "good_examples": 105,
+  "corrected_bad_examples": 16,
+  "replay_positions": 128,
+  "replay_source_sha256": "2104b888888162a96261f395e82e586ca2717ef81cccb30e57fff6500bc26c5d",
+  "objective_before": 1.038606328717676,
+  "objective_after": 1.0195716870543454,
+  "model_sha256": "d2582a1ae193de9484e3598af48de825dc80a70021c061d9b7d2d90854775415",
+  "architecture": "935 inputs / 64 / 32 / 1 move policy",
+  "promoted": false,
+  "selected_agent_changed": false,
+  "value_weights_changed": false,
+  "limitation": "One bounded supervised reward-weighted policy update. In-sample objective only; no strength or Elo claim. Quiet descendant labels remain necessary for position-value training."
+}

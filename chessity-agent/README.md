@@ -93,3 +93,5 @@ Every-game feedback is now the default local test workflow. [Latest competition 
 [Overnight second checkpoint,9September](reports/OVERNIGHT_SECOND_PASS_20260909.md): measured compiler repair, rejected timed-choice changes and stage-specific value-fit diagnosis. The selected upload remainsv1.53; later matched-defence work is separate.
 
 [Overnight third checkpoint,9September](reports/OVERNIGHT_THIRD_PASS_20260909.md): two fully reviewed compiler-control games (2400:0W1D1L), measured pawn-mask speed and rejected guarded neural integration. v1.53 and all54 numbered releases remain unchanged.
+
+[Overnight fourth checkpoint,9September](reports/OVERNIGHT_FOURTH_PASS_20260909.md): six fully reviewed neural countercheck games (comparison2W1D1L;2400:0W0D2L including one startup failure), independently verified alternatives and a rejected calibrated fit. v1.53 and all54 numbered releases remain unchanged.
