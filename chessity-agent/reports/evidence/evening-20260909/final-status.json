@@ -1,0 +1,297 @@
+{
+  "status": "complete",
+  "completed_utc": "2026-09-09T18:08:29.222504+00:00",
+  "selected_version": "v1.56",
+  "selected_sha256": "e0fb10c7ec482b93fe4bc20bfce7bd790bce78d163e5810a085a2223e795b99d",
+  "new_release_created": false,
+  "site_submission": false,
+  "site_active_version": "unverified",
+  "calibrated_elo": null,
+  "challenger": {
+    "name": "king-step-buffers-01",
+    "wins": 1,
+    "draws": 0,
+    "losses": 3,
+    "required_points": 3,
+    "actual_points": 1.0,
+    "opponent": "exact selected v1.56",
+    "qualification": false,
+    "operational_failures": 0
+  },
+  "trials": [
+    {
+      "name": "repetition-02",
+      "sha256": "d83a9ac52ec6bdaee5c7e87cc7bc583b145e4b0807d25548ecc6f98c6af5d9f3",
+      "passed": false,
+      "decision": "reject_efficiency_gate",
+      "aggregate_cpu_speedup": 1.0010277492291881,
+      "median_cpu_speedup": 0.9875,
+      "clock_mean_depth": {
+        "baseline": 6.125,
+        "prototype": 6.208333333333333
+      }
+    },
+    {
+      "name": "pawn-threat-01",
+      "sha256": "e9b002ab12f4c4fff156b4052139bf0fac87b136b7bb2f1732bb43b8b7fc636c",
+      "passed": false,
+      "decision": "reject_quality_gate",
+      "mean_regret_cp": {
+        "baseline": [
+          121,
+          126.33333333333333
+        ],
+        "prototype": [
+          140.91666666666666,
+          147.41666666666666
+        ]
+      },
+      "regressions": {
+        "major": [
+          "public-round82-move43"
+        ],
+        "mate_loss": []
+      }
+    },
+    {
+      "name": "king-pressure-01",
+      "sha256": "823b445098ef630d0e93b952a16c3f3bd5598651dea229e8ee36a4d6a3a83ab3",
+      "passed": false,
+      "decision": "reject_quality_gate",
+      "mean_regret_cp": {
+        "baseline": [
+          118.5,
+          124.29166666666667
+        ],
+        "prototype": [
+          131.41666666666666,
+          137.375
+        ]
+      },
+      "regressions": {
+        "major": [
+          "public-round82-move43",
+          "round-70-move-15"
+        ],
+        "mate_loss": []
+      }
+    },
+    {
+      "name": "queen-pawns-01",
+      "sha256": "1b4a57ff12acfff7ff59a53e1438e457b767396907d183be99dac02d158d2dc2",
+      "passed": false,
+      "decision": "reject_quality_gate",
+      "mean_regret_cp": {
+        "baseline": [
+          118.5,
+          124.29166666666667
+        ],
+        "prototype": [
+          116,
+          122.25
+        ]
+      },
+      "regressions": {
+        "major": [],
+        "mate_loss": []
+      }
+    },
+    {
+      "name": "deep-exchange-01",
+      "sha256": "8eca612c723323ccaae9d1424e54981faa567a72cfeab7506eb390a034bc4a2b",
+      "passed": false,
+      "decision": "reject_quality_gate",
+      "mean_regret_cp": {
+        "baseline": [
+          116,
+          122.25
+        ],
+        "prototype": [
+          117.91666666666667,
+          123.08333333333333
+        ]
+      },
+      "regressions": {
+        "major": [],
+        "mate_loss": []
+      }
+    },
+    {
+      "name": "king-step-buffers-01",
+      "sha256": "749013919d6c2e330c5305575fa227c40c2a5ad3eb2f7a7aebafdd5e941c9e22",
+      "passed": true,
+      "decision": "needs_teacher_review_and_short_matches",
+      "aggregate_cpu_speedup": 1.248550124275062,
+      "median_cpu_speedup": 1.22371560920831,
+      "clock_mean_depth": {
+        "baseline": 6.791666666666667,
+        "prototype": 7.041666666666667
+      }
+    },
+    {
+      "name": "king-step-buffers-quality-01",
+      "sha256": "8a2d957275dbdd99679b98f2391e19f6629a2eb1609289f68819d12c7fecb389",
+      "passed": true,
+      "decision": "needs_strict_short_matches",
+      "mean_regret_cp": {
+        "baseline": [
+          116,
+          122.25
+        ],
+        "prototype": [
+          116,
+          122.25
+        ]
+      },
+      "regressions": {
+        "major": [],
+        "mate_loss": []
+      }
+    },
+    {
+      "name": "tapered-value-01",
+      "sha256": "f3b5c3a2255a2246704747afff86ce23a9f4b226c6db028adb06101b48257e1e",
+      "passed": false,
+      "decision": "reject_exposed_colours",
+      "broad_before": 92565.453125,
+      "broad_after": 84653.06659972429,
+      "model_sha256": "b5d26985fc47251498fe3150d80a35e360684c43afa0a07a56b86d965d571f2c"
+    }
+  ],
+  "reviewed_games": [
+    {
+      "name": "versus56-b12-game-1",
+      "white": true,
+      "score": 1.0,
+      "termination": "checkmate",
+      "game_key": "e23b4509f8ed222670f934813ac785234a7bc365d4e3c930bc9bf7a7205aabd5",
+      "own_moves": 46,
+      "rewarded": 27,
+      "penalised": 5,
+      "labels": {
+        "small_or_uncertain_difference": 4,
+        "good_move": 20,
+        "inaccuracy": 5,
+        "uncertain": 10,
+        "preserves_engine_mate": 7
+      },
+      "review_sha256": "0827914749cf98d510235fceb257ad5444bc5638325d2e3e913201d019f1e07c",
+      "training_sha256": "ed89193cddb6e50e18315f736c74846e7d30507f0bd7d12cb3b2c9ff7b34d5fb",
+      "correction_phases": {
+        "middlegame": 5
+      }
+    },
+    {
+      "name": "versus56-b12-game-2",
+      "white": false,
+      "score": 0.0,
+      "termination": "checkmate",
+      "game_key": "699c218d957e6ffe75654ab57d7cd2a54c0fc3d519a7e01a3c6d944b5aa5e217",
+      "own_moves": 37,
+      "rewarded": 19,
+      "penalised": 10,
+      "labels": {
+        "small_or_uncertain_difference": 4,
+        "inaccuracy": 5,
+        "good_move": 19,
+        "major_mistake": 4,
+        "uncertain": 1,
+        "allows_engine_mate": 1,
+        "already_in_engine_forced_loss": 2,
+        "forced_move": 1
+      },
+      "review_sha256": "7242d31cab27fdc77d8830a0cdc0ffcc7f5b6416d68aeb3410c0341689b32dcb",
+      "training_sha256": "c2b2c7a37b7c1bc9c9dacdcd636716197d35838be8cab1159cd71a83d05552ba",
+      "correction_phases": {
+        "opening": 5,
+        "middlegame": 5
+      }
+    },
+    {
+      "name": "versus56-d48-game-1",
+      "white": true,
+      "score": 0.0,
+      "termination": "checkmate",
+      "game_key": "a53b98f23a29a10579eb3769fa5099a9aedbda920008b5032fbacfa9b471d62e",
+      "own_moves": 62,
+      "rewarded": 28,
+      "penalised": 9,
+      "labels": {
+        "good_move": 28,
+        "inaccuracy": 6,
+        "small_or_uncertain_difference": 7,
+        "major_mistake": 2,
+        "uncertain": 11,
+        "allows_engine_mate": 1,
+        "already_in_engine_forced_loss": 5,
+        "forced_move": 2
+      },
+      "review_sha256": "c40addffb152827f8ea38f9e722446065e97086a236c5038011aeb9a326cbb97",
+      "training_sha256": "ab7e9056bbcff273ae58635cbd6324ebe6b9d6e849f39498f696508ee8cf6fac",
+      "correction_phases": {
+        "opening": 1,
+        "middlegame": 7,
+        "endgame": 1
+      }
+    },
+    {
+      "name": "versus56-d48-game-2",
+      "white": false,
+      "score": 0.0,
+      "termination": "checkmate",
+      "game_key": "8961a4f716bd0e02e8683861a0a3929210facae6eac35f059a3d9361e926c3d7",
+      "own_moves": 38,
+      "rewarded": 16,
+      "penalised": 6,
+      "labels": {
+        "inaccuracy": 5,
+        "good_move": 16,
+        "small_or_uncertain_difference": 2,
+        "uncertain": 6,
+        "major_mistake": 1,
+        "forced_move": 1,
+        "already_in_engine_forced_loss": 7
+      },
+      "review_sha256": "a0f861f357e9b0777baaf7e04ffb6ec69158a49aacc24040a26d8b219cc4c25d",
+      "training_sha256": "908cc45f3585851ecd2f65c57ea366ceff6af2d97db672cddcb3004f5e57bd92",
+      "correction_phases": {
+        "opening": 1,
+        "middlegame": 5
+      }
+    }
+  ],
+  "reviewed_moves": 183,
+  "positive_labels": 90,
+  "negative_labels": 30,
+  "correction_phases": {
+    "middlegame": 22,
+    "opening": 7,
+    "endgame": 1
+  },
+  "usable_corrections": 24,
+  "sources": {
+    "runs\\improvement-loop-20260907\\e9-king-step-buffers-01-versus56-b12\\comparison-prototype\\results.json": "a45578167f3a59deadde9e3541c68864a4b6ed64656f66e19d5c4cc025d05fa0",
+    "runs\\improvement-loop-20260907\\e9-king-step-buffers-01-versus56-d48\\comparison-prototype\\results.json": "41321afcf89e8908514a55b5aadd818a8372946606591e27cbe9218bedee606e"
+  },
+  "colour_value_check": {
+    "white": {
+      "n": 29,
+      "before_mae_cp": 95.56896551724138,
+      "after_mae_cp": 115.42249803887358,
+      "major_before": 3,
+      "major_after": 4,
+      "passed": false
+    },
+    "black": {
+      "n": 16,
+      "before_mae_cp": 43.5,
+      "after_mae_cp": 68.36009780876338,
+      "major_before": 1,
+      "major_after": 0,
+      "passed": false
+    }
+  },
+  "target_sha256": "71506a2739756584f6615447f2144614441b763537992c6e014454d514acb68d",
+  "rated_games_this_run": 0,
+  "scope": "Small development screen. No calibrated Elo or universal strength proof. No candidate met every promotion gate. Frozen playing weights exclude experimental postgame fits."
+}

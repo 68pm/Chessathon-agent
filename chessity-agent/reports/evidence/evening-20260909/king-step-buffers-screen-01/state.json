@@ -1,0 +1,123 @@
+{
+  "status": "complete",
+  "passed": false,
+  "stages": [
+    {
+      "label": "read-only",
+      "status": "complete",
+      "arguments": [
+        "scripts.validate_package_staged_fixed",
+        "--zip",
+        "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\evening-20260909\\king-step-buffers-screen-01\\challenger.zip",
+        "--out",
+        "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\evening-20260909\\king-step-buffers-screen-01\\validation.json"
+      ],
+      "timeout_seconds": 180,
+      "pid": 13196,
+      "elapsed_seconds": 63.68800000002375
+    },
+    {
+      "label": "versus56-b12",
+      "status": "complete",
+      "arguments": [
+        "scripts.feedback_matches_windows",
+        "--candidate",
+        "runs\\evening-20260909\\king-step-buffers-01\\prototype",
+        "--stage",
+        "comparison",
+        "--pairs",
+        "1",
+        "--offset",
+        "0",
+        "--cycle",
+        "e9-king-step-buffers-01-versus56-b12",
+        "--openings",
+        "configs/evening-september9-gate-openings.json",
+        "--opponent",
+        "runs\\daytime-20260909\\move-buffers-01\\prototype"
+      ],
+      "timeout_seconds": 1500,
+      "pid": 25268,
+      "elapsed_seconds": 817.0939999999828
+    },
+    {
+      "label": "versus56-d48",
+      "status": "complete",
+      "arguments": [
+        "scripts.feedback_matches_windows",
+        "--candidate",
+        "runs\\evening-20260909\\king-step-buffers-01\\prototype",
+        "--stage",
+        "comparison",
+        "--pairs",
+        "1",
+        "--offset",
+        "1",
+        "--cycle",
+        "e9-king-step-buffers-01-versus56-d48",
+        "--openings",
+        "configs/evening-september9-gate-openings.json",
+        "--opponent",
+        "runs\\daytime-20260909\\move-buffers-01\\prototype"
+      ],
+      "timeout_seconds": 1500,
+      "pid": 2728,
+      "elapsed_seconds": 894.9689999999828
+    }
+  ],
+  "matches": [
+    {
+      "label": "versus56-b12",
+      "opponent": "runs\\daytime-20260909\\move-buffers-01\\prototype",
+      "offset": 0,
+      "result_path": "runs\\improvement-loop-20260907\\e9-king-step-buffers-01-versus56-b12\\comparison-prototype\\results.json",
+      "sha256": "a45578167f3a59deadde9e3541c68864a4b6ed64656f66e19d5c4cc025d05fa0",
+      "summary": {
+        "incumbent": {
+          "games": 2,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "score": 0.5,
+          "completed_pairs": 1,
+          "pair_bootstrap_95": [
+            0.5,
+            0.5
+          ],
+          "terminations": {
+            "checkmate": 2
+          },
+          "candidate_failures": 0
+        }
+      }
+    },
+    {
+      "label": "versus56-d48",
+      "opponent": "runs\\daytime-20260909\\move-buffers-01\\prototype",
+      "offset": 1,
+      "result_path": "runs\\improvement-loop-20260907\\e9-king-step-buffers-01-versus56-d48\\comparison-prototype\\results.json",
+      "sha256": "41321afcf89e8908514a55b5aadd818a8372946606591e27cbe9218bedee606e",
+      "summary": {
+        "incumbent": {
+          "games": 2,
+          "wins": 0,
+          "draws": 0,
+          "losses": 2,
+          "score": 0.0,
+          "completed_pairs": 1,
+          "pair_bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "terminations": {
+            "checkmate": 2
+          },
+          "candidate_failures": 0
+        }
+      }
+    }
+  ],
+  "decision": "reject_challenger_gate",
+  "frozen_candidates": true,
+  "finished_utc": "2026-09-09T18:07:00.680835+00:00"
+}

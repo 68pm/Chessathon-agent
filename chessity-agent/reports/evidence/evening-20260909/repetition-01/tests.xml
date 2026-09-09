@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="13" time="6.673" timestamp="2026-09-09T17:56:54.237616+01:00" hostname="MSI"><testcase classname="tests.test_evening_repetition" name="test_legal_history_prefixes[0]" time="1.926" /><testcase classname="tests.test_evening_repetition" name="test_legal_history_prefixes[1]" time="0.535" /><testcase classname="tests.test_evening_repetition" name="test_legal_history_prefixes[2]" time="0.501" /><testcase classname="tests.test_evening_repetition" name="test_legal_history_prefixes[3]" time="0.485" /><testcase classname="tests.test_evening_repetition" name="test_legal_history_prefixes[4]" time="0.509" /><testcase classname="tests.test_evening_repetition" name="test_legal_history_prefixes[5]" time="0.538" /><testcase classname="tests.test_evening_repetition" name="test_repetitions_and_irreversible_boundaries[rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1-moves0]" time="0.012" /><testcase classname="tests.test_evening_repetition" name="test_repetitions_and_irreversible_boundaries[7k/8/8/8/8/8/P7/K7 w - - 0 1-moves1]" time="0.005" /><testcase classname="tests.test_evening_repetition" name="test_repetitions_and_irreversible_boundaries[rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1-moves2]" time="0.014" /><testcase classname="tests.test_evening_repetition" name="test_repetitions_and_irreversible_boundaries[r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1-moves3]" time="0.002"><failure message="chess.IllegalMoveError: illegal uci: 'g1h1' in 2kr3r/8/8/8/8/8/8/R4RK1 w - - 2 2">fen = 'r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1'
+moves = ['e1g1', 'e8c8', 'g1h1', 'c8b8', 'h1g1', 'b8c8', ...]
+
+    @pytest.mark.parametrize('fen,moves',[
+        (chess.STARTING_FEN,['g1f3','g8f6','f3g1','f6g8']*4),
+        ('7k/8/8/8/8/8/P7/K7 w - - 0 1',['a1b1','h8g8','b1a1','g8h8']*3),
+        (chess.STARTING_FEN,['g1f3','g8f6','f3g1','f6g8']*2+['e2e4','e7e5']+['g1f3','g8f6','f3g1','f6g8']*2),
+        ('r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1',['e1g1','e8c8','g1h1','c8b8','h1g1','b8c8']+['g1h1','c8b8','h1g1','b8c8']*2),
+        ('7k/8/8/3pP3/8/8/8/4K3 w - d6 0 1',['e5d6','h8g8','e1f1','g8h8','f1e1']+['h8g8','e1f1','g8h8','f1e1']*2),
+    ])
+    def test_repetitions_and_irreversible_boundaries(fen,moves):
+        board=chess.Board(fen)
+        verify(board)
+        for move in moves:
+&gt;           board.push_uci(move)
+
+tests\test_evening_repetition.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\chess-fast-venv\Lib\site-packages\chess\__init__.py:3284: in push_uci
+    move = self.parse_uci(uci)
+           ^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = Board('2kr3r/8/8/8/8/8/8/R4RK1 w - - 2 2'), uci = 'g1h1'
+
+    def parse_uci(self, uci: str) -&gt; Move:
+        """
+        Parses the given move in UCI notation.
+    
+        Supports both Chess960 and standard UCI notation.
+    
+        The returned move is guaranteed to be either legal or a null move.
+    
+        :raises:
+            :exc:`ValueError` (specifically an exception specified below) if the move is invalid or illegal in the
+            current position (but not a null move).
+    
+            - :exc:`InvalidMoveError` if the UCI is syntactically invalid.
+            - :exc:`IllegalMoveError` if the UCI is illegal.
+        """
+        move = Move.from_uci(uci)
+    
+        if not move:
+            return move
+    
+        move = self._to_chess960(move)
+        move = self._from_chess960(self.chess960, move.from_square, move.to_square, move.promotion, move.drop)
+    
+        if not self.is_legal(move):
+&gt;           raise IllegalMoveError(f"illegal uci: {uci!r} in {self.fen()}")
+E           chess.IllegalMoveError: illegal uci: 'g1h1' in 2kr3r/8/8/8/8/8/8/R4RK1 w - - 2 2
+
+..\..\work\chess-fast-venv\Lib\site-packages\chess\__init__.py:3267: IllegalMoveError</failure></testcase><testcase classname="tests.test_evening_repetition" name="test_repetitions_and_irreversible_boundaries[7k/8/8/3pP3/8/8/8/4K3 w - d6 0 1-moves4]" time="0.006" /><testcase classname="tests.test_evening_repetition" name="test_side_key_disjoint_and_ep_legality" time="0.004" /><testcase classname="tests.test_evening_repetition" name="test_only_repetition_query_changes" time="0.062" /></testsuite></testsuites>

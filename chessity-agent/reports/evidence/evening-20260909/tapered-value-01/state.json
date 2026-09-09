@@ -1,0 +1,83 @@
+{
+  "status": "complete",
+  "passed": false,
+  "broad_before": 92565.453125,
+  "grid": [
+    {
+      "penalty": 10,
+      "blend": 0.25,
+      "broad_mse": 89259.65644377933
+    },
+    {
+      "penalty": 10,
+      "blend": 0.5,
+      "broad_mse": 86802.0853423127
+    },
+    {
+      "penalty": 10,
+      "blend": 1.0,
+      "broad_mse": 84653.06659972429
+    },
+    {
+      "penalty": 100,
+      "blend": 0.25,
+      "broad_mse": 89850.29338511355
+    },
+    {
+      "penalty": 100,
+      "blend": 0.5,
+      "broad_mse": 87744.22800313395
+    },
+    {
+      "penalty": 100,
+      "blend": 1.0,
+      "broad_mse": 85411.33747050016
+    },
+    {
+      "penalty": 1000,
+      "blend": 0.25,
+      "broad_mse": 91109.9510867499
+    },
+    {
+      "penalty": 1000,
+      "blend": 0.5,
+      "broad_mse": 89883.51993749662
+    },
+    {
+      "penalty": 1000,
+      "blend": 1.0,
+      "broad_mse": 88114.78224094024
+    }
+  ],
+  "development_fit_passed": true,
+  "selected_penalty": 10,
+  "value_blend": 1.0,
+  "broad_after": 84653.06659972429,
+  "correction_cohorts": {
+    "negative": {
+      "n": 394,
+      "before": 197.0685272216797,
+      "after": 179.60001306443485
+    },
+    "positive": {
+      "n": 680,
+      "before": 278.2397155761719,
+      "after": 262.1495564053383
+    }
+  },
+  "target_metrics": {
+    "recent": {
+      "n": 42,
+      "before_mae": 115.38095092773438,
+      "after_mae": 91.23019161323707
+    },
+    "gm": {
+      "n": 144,
+      "before_mae": 121.0,
+      "after_mae": 113.89791273699504
+    }
+  },
+  "model_sha256": "b5d26985fc47251498fe3150d80a35e360684c43afa0a07a56b86d965d571f2c",
+  "decision": "reject_exposed_colours",
+  "finished_utc": "2026-09-09T17:22:08.652197+00:00"
+}

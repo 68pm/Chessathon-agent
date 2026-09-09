@@ -60,7 +60,7 @@ inference; existing policy weights retained. Site upload is pending access.
 | [v1.38](versions/v1.38/chessity-agent-v1.38.zip) | Compiled search with elementary endgame tables | conversion drills and read-only checks passed; no ordinary matches |
 | [v1.39](versions/v1.39/chessity-agent-v1.39.zip) | Incremental residual evaluation | numerical and read-only checks passed; no ordinary matches |
 | [v1.40](versions/v1.40/chessity-agent-v1.40.zip) | Efficient quiescence terminal checks | fixed-node parity and read-only checks passed; no ordinary matches |
-| [v1.41](versions/v1.41/chessity-agent-v1.41.zip) | Efficient compiled search with endgame tables | Preserved playing-engine baseline and fallback; selected startup revision is v1.51 |
+| [v1.41](versions/v1.41/chessity-agent-v1.41.zip) | Efficient compiled search with endgame tables | Preserved playing-engine baseline and fallback; historical startup revision was v1.51 |
 | [v1.42](versions/v1.42/chessity-agent-v1.42.zip) | Conservative late quiet move reductions | Former selection after 3W/1D/0L against exact v1.53; historical 2400: 2W/0D/2L, 2600: 1W/2D/1L |
 | [v1.43](versions/v1.43/chessity-agent-v1.43.zip) | Verified rook-bishop conversion tables | 3W1D4L versus v1.41; 1W2D1L at nominal2400; 0W2D2L at nominal2600; not promoted |
 | [v1.44](versions/v1.44/chessity-agent-v1.44.zip) | History-safe transposition move ordering | 2W2D4L versus v1.41; 3W1D0L at nominal2400; 0W0D4L at nominal2600; not promoted |
@@ -70,30 +70,31 @@ inference; existing policy weights retained. Site upload is pending access.
 | [v1.48](versions/v1.48/chessity-agent-v1.48.zip) | Exact legal-pawn proof speeds quiescence | 0W/1D/1L versus v1.41 at120+0.5; exact-work/speed/read-only gates passed; not selected after the short comparison |
 | [v1.49](versions/v1.49/chessity-agent-v1.49.zip) | Queen-aware passed-pawn evaluation | Archival only: 0W0D2L vs41, 0W2D0L vs47, 1W0D1L vs48; two startup losses at2400; 1W1D0L at2600 with opponent flag win; not selected |
 | [v1.50](versions/v1.50/chessity-agent-v1.50.zip) | Complete root compilation before readiness | Archival only: readiness and read-only checks passed; instrumented protocol initialization failed; superseded startup experiment |
-| [v1.51](versions/v1.51/chessity-agent-v1.51.zip) | Completed warmup with plain compiler diagnostics | Preserved v1.51 startup fallback; provisional tactical recommendation is nowv1.52 |
+| [v1.51](versions/v1.51/chessity-agent-v1.51.zip) | Completed warmup with plain compiler diagnostics | Preserved v1.51 startup fallback; historical next tactical experiment was v1.52 |
 | [v1.52](versions/v1.52/chessity-agent-v1.52.zip) | Bounded check search and coordinated king-pressure evaluation | Provisional:1W0D1L vs51; rated2400 0W1D1L and2600 0W0D2L; no Elo established |
 | [v1.53](versions/v1.53/chessity-agent-v1.53.zip) | Bounded forcing checks near the enemy king | Preserved alternative after 0W/1D/3L against exact v1.42; historical 2400: 1W/1D/2L, 2600: 0W/1D/3L |
 | [v1.54](versions/v1.54/chessity-agent-v1.54.zip) | Faster exact passed-pawn evaluation | Former selection after 2W/0D/0L vs exactv1.42 and 1W/1D/0L vs exactv1.53; nominal2400 0W/1D/1L, nominal2600 0W/1D/1L. Small development screen; no calibrated Elo. |
 | [v1.55](versions/v1.55/chessity-agent-v1.55.zip) | Faster pawn evaluation | Former selection after 2W/0D/0L vs exact v1.54 and 2W/0D/0L vs exact v1.53; nominal 2400 0W/0D/2L, nominal 2600 1W/1D/0L. Small development screen; no calibrated Elo. |
 | [v1.56](versions/v1.56/chessity-agent-v1.56.zip) | Reusable search buffers | Selected after 2W/0D/0L vs exact v1.55 and 2W/0D/0L vs exact v1.53; nominal 2400 0W/1D/1L, nominal 2600 0W/1D/1L. Small development screen; no calibrated Elo. |
 
-All 54 numbered versions are retained chronologically. A higher version number alone is not evidence of strength.
+All 57 numbered versions are retained chronologically. A higher version number alone is not evidence of strength.
 
-[Recent competition losses and draw: old/current comparison, verified cases and rejected fixes](reports/COMPETITION_LOSSES_RESULTS_20260908.md). Recommendation remains v1.53.
+[Recent competition losses and draw: old/current comparison, verified cases and rejected fixes](reports/COMPETITION_LOSSES_RESULTS_20260908.md). The recommendation at that historical checkpoint was v1.53.
 
 [Defensive/rook descendant findings](reports/COMPETITION_COUNTERFACTUALS_RESULTS_20260908.md) · [Requested 2400/2600 and conditional 2800 results](reports/COMPETITION_CONDITIONAL_RATED_RESULTS_20260908.md).
 
-Latest loss/draw review: two implemented heuristics and an actually fitted
+Historical 8 September loss/draw review: two implemented heuristics and an actually fitted
 local-value model did not qualify for promotion. The small requested rematch
-and every failure are recorded in the [learning report](reports/E55_LOSSES_DRAW_AND_LEARNING_20260908.md). v1.53 remains
-the recommended upload; no new version is implied by this experiment.
+and every failure are recorded in the [learning report](reports/E55_LOSSES_DRAW_AND_LEARNING_20260908.md). That experiment retained v1.53 at the time; the current recommendation above is v1.56.
 
-Every-game feedback is now the default local test workflow. [Latest competition review and learning results](reports/ALL_GAME_FEEDBACK_RESULTS_20260908.md) cover all 395 moves in eight games. The reward-policy checkpoint remains experimental; v1.53 remains the recommended upload.
+Every-game feedback is now the default local test workflow. [Latest competition review and learning results](reports/ALL_GAME_FEEDBACK_RESULTS_20260908.md) cover all 395 moves in eight games. The reward-policy checkpoint remains experimental; That historical checkpoint retained v1.53.
 
 [Overnight first-pass checkpoint,9September](reports/OVERNIGHT_FIRST_PASS_20260909.md): completed engine trials, independent value fit and638 reviewed competition moves. No successor qualified at this checkpoint; v1.53 and all54 archives remain unchanged.
 
-[Overnight second checkpoint,9September](reports/OVERNIGHT_SECOND_PASS_20260909.md): measured compiler repair, rejected timed-choice changes and stage-specific value-fit diagnosis. The selected upload remainsv1.53; later matched-defence work is separate.
+[Overnight second checkpoint,9September](reports/OVERNIGHT_SECOND_PASS_20260909.md): measured compiler repair, rejected timed-choice changes and stage-specific value-fit diagnosis. At that checkpoint the selected upload remained v1.53; later matched-defence work is separate.
 
-[Overnight third checkpoint,9September](reports/OVERNIGHT_THIRD_PASS_20260909.md): two fully reviewed compiler-control games (2400:0W1D1L), measured pawn-mask speed and rejected guarded neural integration. v1.53 and all54 numbered releases remain unchanged.
+[Overnight third checkpoint,9September](reports/OVERNIGHT_THIRD_PASS_20260909.md): two fully reviewed compiler-control games (2400:0W1D1L), measured pawn-mask speed and rejected guarded neural integration. At that checkpoint, v1.53 and all 54 then-existing numbered releases remained unchanged.
 
-[Overnight fourth checkpoint,9September](reports/OVERNIGHT_FOURTH_PASS_20260909.md): six fully reviewed neural countercheck games (comparison2W1D1L;2400:0W0D2L including one startup failure), independently verified alternatives and a rejected calibrated fit. v1.53 and all54 numbered releases remain unchanged.
+[Overnight fourth checkpoint,9September](reports/OVERNIGHT_FOURTH_PASS_20260909.md): six fully reviewed neural countercheck games (comparison2W1D1L;2400:0W0D2L including one startup failure), independently verified alternatives and a rejected calibrated fit. At that checkpoint, v1.53 and all 54 then-existing numbered releases remained unchanged.
+
+[Evening improvement results, 9 September](reports/EVENING_RESULTS_20260909.md): **v1.56 retained after 3W/0D/1L against the new challenger**. 183 moves reviewed, 90 positive labels, 30 negative labels and 24 supported correction moves. No numbered successor or new competition upload. Earlier checkpoint recommendations are historical.
