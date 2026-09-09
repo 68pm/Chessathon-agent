@@ -1,0 +1,481 @@
+{
+  "status": "complete",
+  "completed_utc": "2026-09-09T20:05:52.200855+00:00",
+  "incumbent": "v1.56",
+  "incumbent_sha256": "e0fb10c7ec482b93fe4bc20bfce7bd790bce78d163e5810a085a2223e795b99d",
+  "challenger_qualified": false,
+  "decision": "reject_challenger_gate_already_impossible",
+  "new_release_created_by_this_audit": false,
+  "site_submission": false,
+  "calibrated_elo": null,
+  "trials": [
+    {
+      "name": "root-pvs-01",
+      "sha256": "d6cbc6ef058071258807ade08288b1704f2745f54bbde10b9652dfa71062e268",
+      "passed": false,
+      "decision": "reject_quality_gate",
+      "mean_regret_cp": {
+        "baseline": [
+          200,
+          213.95833333333334
+        ],
+        "prototype": [
+          245.5,
+          268.1666666666667
+        ]
+      },
+      "regressions": {
+        "major": [
+          "versus56-b12-game-2-move9",
+          "versus56-d48-game-2-move24",
+          "public-round82-move43"
+        ],
+        "mate_loss": []
+      }
+    },
+    {
+      "name": "pv-guard-01",
+      "sha256": "6a12d8d15accb24169b5abdcabe164471e21033212ba570a2d63d7f951da3d36",
+      "passed": false,
+      "decision": "reject_quality_gate",
+      "mean_regret_cp": {
+        "baseline": [
+          161.58333333333334,
+          168.33333333333334
+        ],
+        "prototype": [
+          174.25,
+          192.08333333333334
+        ]
+      },
+      "regressions": {
+        "major": [
+          "versus56-b12-game-2-move9"
+        ],
+        "mate_loss": []
+      }
+    },
+    {
+      "name": "safe-mobility-01",
+      "sha256": "ee7c2549d28388cbb9d39c7d4a18f232c8377367e2bcbab6cd93f35006374ff5",
+      "passed": false,
+      "decision": "reject_quality_gate",
+      "mean_regret_cp": {
+        "baseline": [
+          161.58333333333334,
+          168.33333333333334
+        ],
+        "prototype": [
+          192.54166666666666,
+          209.04166666666666
+        ]
+      },
+      "regressions": {
+        "major": [
+          "versus56-b12-game-2-move9"
+        ],
+        "mate_loss": []
+      }
+    },
+    {
+      "name": "context-value-01",
+      "sha256": "04497af7bcef472e767c6a8dabf7aacd3623c5b0ea6fe3f064946e82e3e4a379",
+      "passed": false,
+      "decision": "reject_development_fit",
+      "model_sha256": "a5b8e7fa8200abd87bdb52e140457a406650f094fc40ab32acc03fc40ed95dbf",
+      "colours": {
+        "white": {
+          "n": 620,
+          "before_mae": 212.6483870967742,
+          "after_mae": 211.04497861534836,
+          "major_before": 244,
+          "major_after": 244
+        },
+        "black": {
+          "n": 580,
+          "before_mae": 235.28620689655173,
+          "after_mae": 236.9582478160425,
+          "major_before": 263,
+          "major_after": 260
+        }
+      },
+      "broad_mse_before": 92565.4575,
+      "broad_mse_after": 92222.56735168403,
+      "target_metrics": {
+        "gm": {
+          "n": 144,
+          "before_mae": 121.0,
+          "after_mae": 122.13461417293274
+        },
+        "recent": {
+          "n": 42,
+          "before_mae": 115.38095238095238,
+          "after_mae": 114.63603661195062
+        },
+        "latest": {
+          "n": 40,
+          "before_mae": 239.7125,
+          "after_mae": 232.2318957852558
+        }
+      }
+    },
+    {
+      "name": "reward-policy-01",
+      "sha256": "48e5ea5b04a19ad558d916f5b608459cbdb1ded0aedc205f14eaf2171e3bf956",
+      "passed": false,
+      "decision": "needs_frozen_quality_and_match_gates",
+      "model_sha256": "dc65dbe2942686f51232e089d270763b80ebc1382a647f8222ac35701ab815e4",
+      "objective_before": 1.2062588963423202,
+      "objective_after": 0.8466602709895906,
+      "good": 132,
+      "corrections": 34,
+      "broad_replay": 128
+    },
+    {
+      "name": "reviewed-policy-01",
+      "sha256": "4a42ec0f933a3d6e453da5b2b36d35b5584555d17ac356765adcfef890cc56f9",
+      "passed": false,
+      "decision": "reject_quality_gate",
+      "mean_regret_cp": {
+        "baseline": [
+          163.79166666666666,
+          168.5
+        ],
+        "prototype": [
+          168.91666666666666,
+          185.16666666666666
+        ]
+      },
+      "regressions": {
+        "major": [
+          "versus56-b12-game-2-move9",
+          "versus56-d48-game-2-move24"
+        ],
+        "mate_loss": []
+      }
+    },
+    {
+      "name": "root-verification-01",
+      "sha256": "80073e7026b588f765b7154d430dbe691a685d23869bc145b388975bf3df436a",
+      "passed": true,
+      "decision": "needs_read_only_and_short_matches",
+      "mean_regret_cp": {
+        "baseline": [
+          158.25,
+          164
+        ],
+        "prototype": [
+          143.66666666666666,
+          147.41666666666666
+        ]
+      },
+      "regressions": {
+        "major": [],
+        "mate_loss": []
+      }
+    }
+  ],
+  "groups": {
+    "v156-development2400": {
+      "games": 2,
+      "wins": 0,
+      "draws": 0,
+      "losses": 2,
+      "terminations": {
+        "checkmate": 2
+      }
+    },
+    "versus56-c42": {
+      "games": 2,
+      "wins": 0,
+      "draws": 2,
+      "losses": 0,
+      "terminations": {
+        "threefold_repetition": 2
+      }
+    },
+    "versus56-e04": {
+      "games": 2,
+      "wins": 2,
+      "draws": 0,
+      "losses": 0,
+      "terminations": {
+        "checkmate": 2
+      }
+    },
+    "versus56-b33": {
+      "games": 2,
+      "wins": 1,
+      "draws": 0,
+      "losses": 1,
+      "terminations": {
+        "checkmate": 2
+      }
+    },
+    "challenger-versus56": {
+      "games": 6,
+      "wins": 3,
+      "draws": 2,
+      "losses": 1,
+      "terminations": {
+        "threefold_repetition": 2,
+        "checkmate": 4
+      }
+    }
+  },
+  "reviewed_games": [
+    {
+      "name": "v156-development2400-game-1",
+      "candidate": "exact selected v1.56",
+      "white": true,
+      "score": 0.0,
+      "termination": "checkmate",
+      "game_key": "79dcb74c83504374ff2c73659b36d1a9447ff961d68277a6c98d00e00db36b3a",
+      "own_moves": 64,
+      "rewarded": 22,
+      "penalised": 10,
+      "review_sha256": "12a66903e9084f24abbb4ac7e59e06043405e2fa27306aed976449399f29c4a0",
+      "training_sha256": "d48401055df92c8c6abfaea512c53b2b83ac9220fac2d25da93211cead7d5c48",
+      "correction_phases": {
+        "middlegame": 10
+      }
+    },
+    {
+      "name": "v156-development2400-game-2",
+      "candidate": "exact selected v1.56",
+      "white": false,
+      "score": 0.0,
+      "termination": "checkmate",
+      "game_key": "ee9c1eb9903da3a193368be1102bd3ee5d1a469e0aea279d693d3765cfbac270",
+      "own_moves": 48,
+      "rewarded": 20,
+      "penalised": 4,
+      "review_sha256": "91d971bf05636ccff23febbde23c5e50def00ed6aafa98f7d75808e8be96388a",
+      "training_sha256": "5bbc94c2c3749157efd725b53ed16e13496e4ef6bc6a7caaf6f7ca669747b6b6",
+      "correction_phases": {
+        "middlegame": 4
+      }
+    },
+    {
+      "name": "versus56-c42-game-1",
+      "candidate": "root-verification-01",
+      "white": true,
+      "score": 0.5,
+      "termination": "threefold_repetition",
+      "game_key": "42252ff1128f37066c36d58d8c00e1e250f5143c34fa7c1d2f7223086b5e4cdb",
+      "own_moves": 56,
+      "rewarded": 50,
+      "penalised": 0,
+      "review_sha256": "b66fcfad5d5965f5ba2bfc2d1f8200f633ce87a0d97bfb585995696e9bb8ce1f",
+      "training_sha256": "47924607578b9b468a13dc1d10e6b55244c29e4317569ceb34da5ef561a94a78",
+      "correction_phases": {}
+    },
+    {
+      "name": "versus56-c42-game-2",
+      "candidate": "root-verification-01",
+      "white": false,
+      "score": 0.5,
+      "termination": "threefold_repetition",
+      "game_key": "6a085e67cc4045759af5f8f62a3cc124e99d39d9e56c8e8e159479f8d2cb5d1d",
+      "own_moves": 60,
+      "rewarded": 55,
+      "penalised": 0,
+      "review_sha256": "4983aa3f7716c35ffb7f87ab762b32133ca0835a62f14331813576e4d65789b0",
+      "training_sha256": "2c40007c9d67e70a8a6583f785a74422a45949d6ed5f57b330e451c3c3cc9fac",
+      "correction_phases": {}
+    },
+    {
+      "name": "versus56-e04-game-1",
+      "candidate": "root-verification-01",
+      "white": true,
+      "score": 1.0,
+      "termination": "checkmate",
+      "game_key": "d205dbd537bbe55835371536b38f52cfc6ae087cc072387cd1d2aaab21a07abe",
+      "own_moves": 61,
+      "rewarded": 39,
+      "penalised": 3,
+      "review_sha256": "d9726aac68bd1ea75d4df1e346fb59752920c0d23c35b07c43867892efdbe9a0",
+      "training_sha256": "46743bb24f55a0e2565b4ab8132560ffa053f7cdaf26461d8987e40c1d7f8ec8",
+      "correction_phases": {
+        "middlegame": 2,
+        "endgame": 1
+      }
+    },
+    {
+      "name": "versus56-e04-game-2",
+      "candidate": "root-verification-01",
+      "white": false,
+      "score": 1.0,
+      "termination": "checkmate",
+      "game_key": "c3d21573e31024ad5a147417b7db93ae7a20f77490e90c6bbd02b5bd2b131778",
+      "own_moves": 58,
+      "rewarded": 39,
+      "penalised": 4,
+      "review_sha256": "1652b4b87b5077643c304069f10c9bb61d712ef13dd545cfe3417159b1d2eba5",
+      "training_sha256": "72ec7a2526d5724dd59d79b0e9099952cf56fe3ba747ef7fc5810e0daf510157",
+      "correction_phases": {
+        "middlegame": 1,
+        "endgame": 3
+      }
+    },
+    {
+      "name": "versus56-b33-game-1",
+      "candidate": "root-verification-01",
+      "white": true,
+      "score": 0.0,
+      "termination": "checkmate",
+      "game_key": "f01822e6795c8162d22ccd4d4e57754e436a4c5b856ca2d41448abdc3a8c3a6d",
+      "own_moves": 32,
+      "rewarded": 10,
+      "penalised": 7,
+      "review_sha256": "cd8ba0f58b205280dda5971758f1cb1d28f1d9d0dc5f331db022440d8039b01d",
+      "training_sha256": "8a8bccf5c3ecb4757ada55fb4316464706af21c817d2cd453fbd1e6da5114272",
+      "correction_phases": {
+        "middlegame": 7
+      }
+    },
+    {
+      "name": "versus56-b33-game-2",
+      "candidate": "root-verification-01",
+      "white": false,
+      "score": 1.0,
+      "termination": "checkmate",
+      "game_key": "ce7f07c271df0b3263602d2e8ddee648873210cdc1e6bf1f67352a1c7c03d942",
+      "own_moves": 32,
+      "rewarded": 23,
+      "penalised": 2,
+      "review_sha256": "6f134593a5a37a71a78a3d992f375b6cadfccf730499e097fe3bf9d6f5769e51",
+      "training_sha256": "5aa2519665d239fb7e97e72e2440098dc7e9ea00a5cd02cd963d5356e5d188d9",
+      "correction_phases": {
+        "middlegame": 2
+      }
+    }
+  ],
+  "reviewed_moves": 411,
+  "positive_labels": 258,
+  "negative_labels": 30,
+  "usable_corrections": 22,
+  "correction_phases": {
+    "middlegame": 26,
+    "endgame": 4
+  },
+  "sources": {
+    "runs\\improvement-loop-20260907\\p9-v156-development2400-01\\rated-prototype\\results.json": "ad0bd9fb3c3cec872bcd0e1022506ec63a400a3ba9984869012f514a5f4968e6",
+    "runs\\improvement-loop-20260907\\p9-root-verification-01-versus56-c42\\comparison-prototype\\results.json": "b69a9c73e7331df88dcf28aea87a02b68d39c9ee259e2fd19be296bd78da2f1a",
+    "runs\\improvement-loop-20260907\\p9-root-verification-01-versus56-e04\\comparison-prototype\\results.json": "3b485ab1b95d6af6139a384c57010a75f355d042580f25cb0e45cfb4ac4c31ec",
+    "runs\\improvement-loop-20260907\\p9-root-verification-01-versus56-b33\\comparison-prototype\\results.json": "8ad5fc90941fd80c3d1de4c12de84eb0b9957073dcc9652a74d4e07833c6b87d"
+  },
+  "public_reviews": [
+    {
+      "label": "own",
+      "round": 88,
+      "url": "https://aichessathon.com/game/c37c9f4b-6cff-4539-9691-edf3f90d5ed4",
+      "opponent": "SearchMate",
+      "score": 1.0,
+      "white": true,
+      "version": "Public game; submission SHA256 unverified",
+      "game_key": "d92d979da88ceb51c462815d0526feca198199c3e1f8f0a1bd3886c7dc84773b",
+      "own_moves": 41,
+      "rewarded": 22,
+      "penalised": 7,
+      "review_sha256": "470e471832fec44dab613d24b614b06d3f24e64bac86925c9b06490fd1dd80bf",
+      "model_sha256": "72ca73d27090618815a7c4d3bbeeb4956b884165772f8ba46e51fc4625908fbb",
+      "correction_phases": {
+        "middlegame": 7
+      }
+    },
+    {
+      "label": "own",
+      "round": 87,
+      "url": "https://aichessathon.com/game/2aac9d88-6bd8-476b-aa6b-aa2c2f3590b4",
+      "opponent": "Team7347",
+      "score": 0.0,
+      "white": false,
+      "version": "Public game; submission SHA256 unverified",
+      "game_key": "e268cab11a33c2a16c3138011072580ef1f13b6ca727e4e15ac7dcc0b3455717",
+      "own_moves": 52,
+      "rewarded": 23,
+      "penalised": 5,
+      "review_sha256": "b936c144e92a0256ba1af17cd61be84447345878b2c910b9edf8f092e8c1cc1e",
+      "model_sha256": "72ca73d27090618815a7c4d3bbeeb4956b884165772f8ba46e51fc4625908fbb",
+      "correction_phases": {
+        "opening": 1,
+        "middlegame": 4
+      }
+    },
+    {
+      "label": "own",
+      "round": 86,
+      "url": "https://aichessathon.com/game/1d2df53f-aa3c-48ff-8388-45f43b1c8f08",
+      "opponent": "lefischer",
+      "score": 0.0,
+      "white": true,
+      "version": "Public game; submission SHA256 unverified",
+      "game_key": "0347cdc1a2f42f5cf64006eda1b8266056f1b9fdaea262fad5cb31f58d25f275",
+      "own_moves": 46,
+      "rewarded": 21,
+      "penalised": 3,
+      "review_sha256": "914ddddc8216e30ac874f8d6863ab7b9e09308504b2300b1298ae3b7e69d62ab",
+      "model_sha256": "72ca73d27090618815a7c4d3bbeeb4956b884165772f8ba46e51fc4625908fbb",
+      "correction_phases": {
+        "middlegame": 3
+      }
+    },
+    {
+      "label": "own",
+      "round": 85,
+      "url": "https://aichessathon.com/game/c0ffc387-1c3c-469d-8e58-588fac84c53c",
+      "opponent": "this team",
+      "score": 1.0,
+      "white": false,
+      "version": "Public game; submission SHA256 unverified",
+      "game_key": "2a174ce25fc1c85f8127b9ae33b95655e752f1804431c8927881c6bd7e0a0d9b",
+      "own_moves": 42,
+      "rewarded": 31,
+      "penalised": 2,
+      "review_sha256": "a345f1f77b849bfc06989fde7d451c68daa4484ed2d6db02d8dce55273d81b6e",
+      "model_sha256": "72ca73d27090618815a7c4d3bbeeb4956b884165772f8ba46e51fc4625908fbb",
+      "correction_phases": {
+        "middlegame": 2
+      }
+    },
+    {
+      "label": "leader",
+      "round": 88,
+      "url": "https://aichessathon.com/game/f64d9362-ec66-4646-8832-4d4aff95a868",
+      "opponent": "Emile Andrieu",
+      "score": 0.0,
+      "white": true,
+      "version": "Public game; submission SHA256 unverified",
+      "game_key": "bea6821efe120109c69159ca7502af4dd67e6e8315dad8900d3d0aa0e8478abb",
+      "own_moves": 76,
+      "rewarded": 50,
+      "penalised": 1,
+      "review_sha256": "bad7dfc5bb64b84d6a7268756dadaaedac4aefd01758e3414ed05aa826435df5",
+      "model_sha256": "72ca7a7372a9865996caad4669fb931ca738c5174d87393681f0afdcf3ba9f2f",
+      "correction_phases": {
+        "middlegame": 1
+      }
+    },
+    {
+      "label": "leader",
+      "round": 87,
+      "url": "https://aichessathon.com/game/216a343d-fc0d-4c8c-a080-0f4797da07c0",
+      "opponent": "Ryan Vincent",
+      "score": 0.5,
+      "white": false,
+      "version": "Public game; submission SHA256 unverified",
+      "game_key": "3e909620fdd376112688971a8b6ca119cdb860d9051c04f308f30abe44f9cf1e",
+      "own_moves": 104,
+      "rewarded": 97,
+      "penalised": 0,
+      "review_sha256": "88605c46147e72e5a6235e077f4822a3055dc9fdcbb2239ea55246dff9335121",
+      "model_sha256": "72ca7a7372a9865996caad4669fb931ca738c5174d87393681f0afdcf3ba9f2f",
+      "correction_phases": {}
+    }
+  ],
+  "public_source_sha256": "b9fe052e6b70d15aaf40d947d933d93f145cf9a8f2786ab222d2333ed0c82b25",
+  "public_targets_sha256": "b7bc353ce1f16892e36c27ee54818b4443e736b481f2ea73ffde2c9a57e1c9e5",
+  "targets_sha256": "57b72464746a72e162f2307a930aabb29aec17f98bd247209355b8e8d5bc21d8",
+  "scope": "Short practical gates, no universal strength proof or calibrated Elo. All playing manifests stayed frozen; postgame policy fits remain experimental."
+}

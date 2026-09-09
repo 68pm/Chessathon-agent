@@ -98,3 +98,5 @@ Every-game feedback is now the default local test workflow. [Latest competition 
 [Overnight fourth checkpoint,9September](reports/OVERNIGHT_FOURTH_PASS_20260909.md): six fully reviewed neural countercheck games (comparison2W1D1L;2400:0W0D2L including one startup failure), independently verified alternatives and a rejected calibrated fit. At that checkpoint, v1.53 and all 54 then-existing numbered releases remained unchanged.
 
 [Evening improvement results, 9 September](reports/EVENING_RESULTS_20260909.md): **v1.56 retained after 3W/0D/1L against the new challenger**. 183 moves reviewed, 90 positive labels, 30 negative labels and 24 supported correction moves. No numbered successor or new competition upload. Earlier checkpoint recommendations are historical.
+
+Progression update, 9 September: the new search challenger scored **3W/2D/1L against v1.56** and did not qualify. All 411 candidate moves across the new development and comparison games were reviewed. The current v1.56 separately lost both new nominal2400 development games; these results are not an Elo rating. [Results and correction data](reports/PROGRESSION_RESULTS_20260909.md).

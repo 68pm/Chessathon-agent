@@ -1,0 +1,172 @@
+{
+  "status": "complete",
+  "passed": false,
+  "stages": [
+    {
+      "label": "read-only",
+      "status": "complete",
+      "arguments": [
+        "scripts.validate_package_staged_fixed",
+        "--zip",
+        "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\progression-20260909\\root-verification-01-screen-01\\challenger.zip",
+        "--out",
+        "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\progression-20260909\\root-verification-01-screen-01\\validation.json"
+      ],
+      "timeout_seconds": 180,
+      "pid": 16780,
+      "elapsed_seconds": 48.125
+    },
+    {
+      "label": "versus56-c42",
+      "status": "complete",
+      "arguments": [
+        "scripts.feedback_matches_windows",
+        "--candidate",
+        "runs\\progression-20260909\\root-verification-01\\prototype",
+        "--stage",
+        "comparison",
+        "--pairs",
+        "1",
+        "--offset",
+        "0",
+        "--cycle",
+        "p9-root-verification-01-versus56-c42",
+        "--openings",
+        "configs/progression-september9-openings.json",
+        "--opponent",
+        "runs\\daytime-20260909\\move-buffers-01\\prototype"
+      ],
+      "timeout_seconds": 1500,
+      "pid": 30896,
+      "elapsed_seconds": 789.515000000014
+    },
+    {
+      "label": "versus56-e04",
+      "status": "complete",
+      "arguments": [
+        "scripts.feedback_matches_windows",
+        "--candidate",
+        "runs\\progression-20260909\\root-verification-01\\prototype",
+        "--stage",
+        "comparison",
+        "--pairs",
+        "1",
+        "--offset",
+        "1",
+        "--cycle",
+        "p9-root-verification-01-versus56-e04",
+        "--openings",
+        "configs/progression-september9-openings.json",
+        "--opponent",
+        "runs\\daytime-20260909\\move-buffers-01\\prototype"
+      ],
+      "timeout_seconds": 1500,
+      "pid": 10076,
+      "elapsed_seconds": 769.9679999999935
+    },
+    {
+      "label": "versus56-b33",
+      "status": "complete",
+      "arguments": [
+        "scripts.feedback_matches_windows",
+        "--candidate",
+        "runs\\progression-20260909\\root-verification-01\\prototype",
+        "--stage",
+        "comparison",
+        "--pairs",
+        "1",
+        "--offset",
+        "2",
+        "--cycle",
+        "p9-root-verification-01-versus56-b33",
+        "--openings",
+        "configs/progression-september9-openings.json",
+        "--opponent",
+        "runs\\daytime-20260909\\move-buffers-01\\prototype"
+      ],
+      "timeout_seconds": 1500,
+      "pid": 29648,
+      "elapsed_seconds": 616.1410000000033
+    }
+  ],
+  "matches": [
+    {
+      "label": "versus56-c42",
+      "opponent": "runs\\daytime-20260909\\move-buffers-01\\prototype",
+      "offset": 0,
+      "result_path": "runs\\improvement-loop-20260907\\p9-root-verification-01-versus56-c42\\comparison-prototype\\results.json",
+      "sha256": "b69a9c73e7331df88dcf28aea87a02b68d39c9ee259e2fd19be296bd78da2f1a",
+      "summary": {
+        "incumbent": {
+          "games": 2,
+          "wins": 0,
+          "draws": 2,
+          "losses": 0,
+          "score": 0.5,
+          "completed_pairs": 1,
+          "pair_bootstrap_95": [
+            0.5,
+            0.5
+          ],
+          "terminations": {
+            "threefold_repetition": 2
+          },
+          "candidate_failures": 0
+        }
+      }
+    },
+    {
+      "label": "versus56-e04",
+      "opponent": "runs\\daytime-20260909\\move-buffers-01\\prototype",
+      "offset": 1,
+      "result_path": "runs\\improvement-loop-20260907\\p9-root-verification-01-versus56-e04\\comparison-prototype\\results.json",
+      "sha256": "3b485ab1b95d6af6139a384c57010a75f355d042580f25cb0e45cfb4ac4c31ec",
+      "summary": {
+        "incumbent": {
+          "games": 2,
+          "wins": 2,
+          "draws": 0,
+          "losses": 0,
+          "score": 1.0,
+          "completed_pairs": 1,
+          "pair_bootstrap_95": [
+            1.0,
+            1.0
+          ],
+          "terminations": {
+            "checkmate": 2
+          },
+          "candidate_failures": 0
+        }
+      }
+    },
+    {
+      "label": "versus56-b33",
+      "opponent": "runs\\daytime-20260909\\move-buffers-01\\prototype",
+      "offset": 2,
+      "result_path": "runs\\improvement-loop-20260907\\p9-root-verification-01-versus56-b33\\comparison-prototype\\results.json",
+      "sha256": "8ad5fc90941fd80c3d1de4c12de84eb0b9957073dcc9652a74d4e07833c6b87d",
+      "summary": {
+        "incumbent": {
+          "games": 2,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "score": 0.5,
+          "completed_pairs": 1,
+          "pair_bootstrap_95": [
+            0.5,
+            0.5
+          ],
+          "terminations": {
+            "checkmate": 2
+          },
+          "candidate_failures": 0
+        }
+      }
+    }
+  ],
+  "decision": "reject_challenger_gate_already_impossible",
+  "frozen_candidates": true,
+  "finished_utc": "2026-09-09T19:56:54.326418+00:00"
+}
