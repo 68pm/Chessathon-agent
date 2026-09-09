@@ -1,0 +1,286 @@
+{
+  "status": "complete",
+  "completed_utc": "2026-09-09T16:13:34.283912+00:00",
+  "selected_version": "v1.56",
+  "selected_sha256": "e0fb10c7ec482b93fe4bc20bfce7bd790bce78d163e5810a085a2223e795b99d",
+  "selected_zip_size_bytes": 272750,
+  "own_games": [
+    {
+      "round": 83,
+      "opponent": "Stockfish's Nightmare",
+      "candidate_white": false,
+      "score": 0.0,
+      "source_game_id": "chessathon:c4f0ece0-b87b-4eda-b301-a4f0bd573af4",
+      "submission_sha256": null,
+      "moves": 52,
+      "positive": 21,
+      "negative": 3,
+      "annotated_file": "round-83-annotated.pgn",
+      "annotated_sha256": "51770987c4b74b6276f133b4090519df0e2e9515b112326000e9791d9ebf345f",
+      "original_file": "round-83-original.pgn",
+      "original_sha256": "b6f5f9132af877c7da4e359eee3200092c09f7f5ee1f3aa32505b678a43c3e8e"
+    },
+    {
+      "round": 82,
+      "opponent": "Jakub",
+      "candidate_white": true,
+      "score": 0.0,
+      "source_game_id": "chessathon:4614d5ac-4214-4430-aa97-9d76bfa652ca",
+      "submission_sha256": null,
+      "moves": 46,
+      "positive": 19,
+      "negative": 7,
+      "annotated_file": "round-82-annotated.pgn",
+      "annotated_sha256": "dab032d93217d177deef55b24b28b252f94116a6fb4150ef0a0beb9c33a0ffa5",
+      "original_file": "round-82-original.pgn",
+      "original_sha256": "650fff9e588aeff5e84857536a2f7640ea1e5d007e3f63b2d1888f9008476a01"
+    },
+    {
+      "round": 81,
+      "opponent": "CCC",
+      "candidate_white": true,
+      "score": 0.5,
+      "source_game_id": "chessathon:e0f6469d-b81e-47e9-b7cf-a7a90af90348",
+      "submission_sha256": null,
+      "moves": 158,
+      "positive": 133,
+      "negative": 11,
+      "annotated_file": "round-81-annotated.pgn",
+      "annotated_sha256": "1cb044caa48da92830b3e4f39051b98e5e30bf4b62c08f1216b16acb728309f7",
+      "original_file": "round-81-original.pgn",
+      "original_sha256": "0a11805c34cac2e3162ac9b0161f226361afbc1a22a0491cb60d54cfc9b8a329"
+    }
+  ],
+  "leader_reviewed_games": 3,
+  "own_primary_review": {
+    "moves": 256,
+    "positive": 173,
+    "negative": 21,
+    "negative_phases": {
+      "opening": 1,
+      "middlegame": 14,
+      "endgame": 6
+    }
+  },
+  "supplemental_major_mistake": {
+    "round": 83,
+    "move": "23...Re6",
+    "reply": "24.a5",
+    "regret_cp": [
+      371,
+      344
+    ],
+    "policy_target": null,
+    "reason": "Bad move verified, best alternative differs between budgets."
+  },
+  "speed_trial": {
+    "passed": false,
+    "aggregate_cpu_speedup": 1.0304568527918783,
+    "minimum_required": 1.05
+  },
+  "value_trials": [
+    {
+      "trial": 1,
+      "completed": true,
+      "qualified_for_runtime": false,
+      "selected": false,
+      "model_sha256": "877c0f44073ec00705f35570074cb4e281d8fa61e651ce32a8cf9801334d5060",
+      "selected_epoch": 24,
+      "value_blend": 0.5,
+      "broad_before": 92565.453125,
+      "broad_after": 84280.34375,
+      "development_metrics": {
+        "capped_mse_cp": 84280.34375,
+        "cohorts": {
+          "negative": {
+            "n": 394,
+            "before": 197.0685272216797,
+            "after": 193.34930419921875
+          },
+          "positive": {
+            "n": 680,
+            "before": 278.2397155761719,
+            "after": 256.4544677734375
+          }
+        },
+        "phases": {
+          "endgame": {
+            "n": 300,
+            "before": 202.1199951171875,
+            "after": 200.8111572265625
+          },
+          "other": {
+            "n": 900,
+            "before": 230.74667358398438,
+            "after": 216.27975463867188
+          }
+        },
+        "recent_mae_cp": 74.62847900390625,
+        "gm_mae_cp": 73.39884948730469,
+        "eligible": true
+      },
+      "colour_gate": {
+        "white": {
+          "n": 29,
+          "before_mae_cp": 95.56896551724138,
+          "after_mae_cp": 93.76304223619658
+        },
+        "black": {
+          "eligible": 16,
+          "before_mae_cp": 43.5,
+          "after_mae_cp": 64.18613064289093,
+          "major_before": 1,
+          "major_after": 1
+        }
+      },
+      "explanation": "Initial White-position pass superseded by separate failed Black gate"
+    },
+    {
+      "trial": 2,
+      "completed": true,
+      "qualified_for_runtime": false,
+      "selected": false,
+      "model_sha256": "51c5d7a8ed6a0da03004cc9313f81b5f14bbfbd0c1f4cc6b99462a42b64d38d1",
+      "selected_epoch": 21,
+      "value_blend": 0.5,
+      "broad_before": 92565.453125,
+      "broad_after": 85081.6640625,
+      "development_metrics": {
+        "capped_mse_cp": 85081.6640625,
+        "cohorts": {
+          "negative": {
+            "n": 394,
+            "before": 197.0685272216797,
+            "after": 196.01351928710938
+          },
+          "positive": {
+            "n": 680,
+            "before": 278.2397155761719,
+            "after": 256.3555603027344
+          }
+        },
+        "phases": {
+          "endgame": {
+            "n": 300,
+            "before": 202.1199951171875,
+            "after": 201.7051239013672
+          },
+          "other": {
+            "n": 900,
+            "before": 230.74667358398438,
+            "after": 217.24014282226562
+          }
+        },
+        "recent_mae_cp": 76.18096923828125,
+        "gm_mae_cp": 84.4444580078125,
+        "eligible": true
+      },
+      "colour_gate": {
+        "white": {
+          "n": 29,
+          "before_mae_cp": 95.56896551724138,
+          "after_mae_cp": 93.89392972814626,
+          "major_before": 3,
+          "major_after": 2,
+          "passed": true
+        },
+        "black": {
+          "n": 16,
+          "before_mae_cp": 43.5,
+          "after_mae_cp": 60.168830156326294,
+          "major_before": 1,
+          "major_after": 1,
+          "passed": false
+        }
+      },
+      "explanation": "reject_exposed_colour_development"
+    },
+    {
+      "trial": 3,
+      "completed": true,
+      "qualified_for_runtime": false,
+      "selected": false,
+      "model_sha256": "968615bcd7412b46a7316f519302be9a16cf0955f98ecb1cb7493138e61ab470",
+      "selected_epoch": 3,
+      "value_blend": 0.5,
+      "broad_before": 92565.453125,
+      "broad_after": 88658.90625,
+      "development_metrics": {
+        "capped_mse_cp": 88658.90625,
+        "cohorts": {
+          "negative": {
+            "n": 394,
+            "before": 197.0685272216797,
+            "after": 188.9794921875
+          },
+          "positive": {
+            "n": 680,
+            "before": 278.2397155761719,
+            "after": 271.6528625488281
+          }
+        },
+        "phases": {
+          "endgame": {
+            "n": 300,
+            "before": 202.1199951171875,
+            "after": 202.065185546875
+          },
+          "other": {
+            "n": 900,
+            "before": 230.74667358398438,
+            "after": 224.506591796875
+          }
+        },
+        "recent_mae_cp": 88.07003021240234,
+        "gm_mae_cp": 101.9432144165039,
+        "eligible": true
+      },
+      "colour_gate": {
+        "white": {
+          "n": 29,
+          "before_mae_cp": 95.56896551724138,
+          "after_mae_cp": 96.36558544224707,
+          "major_before": 3,
+          "major_after": 2,
+          "passed": false
+        },
+        "black": {
+          "n": 16,
+          "before_mae_cp": 43.5,
+          "after_mae_cp": 44.94109088182449,
+          "major_before": 1,
+          "major_after": 1,
+          "passed": false
+        }
+      },
+      "explanation": "reject_exposed_colour_development"
+    }
+  ],
+  "training_games": 14,
+  "exposed_reserved_games": 3,
+  "new_unlabelled_reserved_games": 3,
+  "gm_families": {
+    "Petroff": 4,
+    "Catalan": 5,
+    "Italian": 6,
+    "Closed_Sicilian": 2
+  },
+  "new_competitive_benchmark_games": 0,
+  "new_release_created": false,
+  "site_upload_performed": false,
+  "browser_state": "Existing missing-kernel-assets blocker; no successful browser recovery or active version verification.",
+  "publication_note": "Only code, reports and public competition evidence are publishable here; raw TWIC PGNs and labelled GM histories stay local.",
+  "automation_status": "PAUSED; no new scheduler or continuing worker",
+  "source_sha256": {
+    "runs\\continuation-20260909\\field-review-01\\state.json": "ed31e2bcbec31c1f92b1c5ff256958c341318088172fe5b250d90fbb6a6715d4",
+    "runs\\continuation-20260909\\legal-buffers-01\\state.json": "9b1db816452a4d74f1ac7bd0b8753e0484f9cd87443948868eabf5b0463d089e",
+    "runs\\continuation-20260909\\student-descendants-01\\teacher.json": "47339a631f37888c4df76203774325f0ca46b6bfa5277e01d3e6fab95975afec",
+    "runs\\continuation-20260909\\student-value-diagnosis-01\\diagnosis.json": "a39c7e68825045371b2a3ecebfda4b92486947a465891f9a3248546178b610a9",
+    "runs\\continuation-20260909\\petroff-turning-point-02\\state.json": "d1c17270d7ad34bd62df2de575b7b5b83b80555b828df2df8737245620bacc49",
+    "runs\\continuation-20260909\\opening-curriculum-03\\state.json": "a2ae54e094f63d40084e17bb4ae76865c994bebb8a151c3b75be6d8e42f50bd9",
+    "runs\\continuation-20260909\\gm-colour-values-01\\preparation.json": "1b79b1df4cc6ed7f8490af82928dc2c8405c636de9505078121b81ba688691bc",
+    "runs\\continuation-20260909\\curriculum-value-01\\state.json": "3b9b3f611c3d8a4ece328a4e6a8ba6da2bcf0c34ae70a76b1fc3480020ab0632",
+    "runs\\continuation-20260909\\curriculum-value-02\\state.json": "47a2591b14e3473fcea1007adfd4d20aab0141de6255bc468999c84660e9dc90",
+    "runs\\continuation-20260909\\curriculum-value-03\\state.json": "2b54042ff819a9843518e46c26cfeebd7a53814745ecd408b28df37016afb00a"
+  }
+}
