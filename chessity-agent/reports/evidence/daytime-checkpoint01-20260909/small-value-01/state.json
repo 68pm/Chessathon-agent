@@ -1,0 +1,1091 @@
+{
+  "status": "complete",
+  "passed": false,
+  "epochs": [
+    {
+      "epoch": 1,
+      "validation_capped_mse_cp": {
+        "0.25": 93745.1171875,
+        "0.5": 91161.765625
+      }
+    },
+    {
+      "epoch": 2,
+      "validation_capped_mse_cp": {
+        "0.25": 93041.6484375,
+        "0.5": 89922.2109375
+      }
+    },
+    {
+      "epoch": 3,
+      "validation_capped_mse_cp": {
+        "0.25": 92256.71875,
+        "0.5": 88455.4765625
+      }
+    },
+    {
+      "epoch": 4,
+      "validation_capped_mse_cp": {
+        "0.25": 91240.4765625,
+        "0.5": 86714.84375
+      }
+    },
+    {
+      "epoch": 5,
+      "validation_capped_mse_cp": {
+        "0.25": 90696.453125,
+        "0.5": 85804.40625
+      }
+    },
+    {
+      "epoch": 6,
+      "validation_capped_mse_cp": {
+        "0.25": 90423.5078125,
+        "0.5": 85319.2109375
+      }
+    },
+    {
+      "epoch": 7,
+      "validation_capped_mse_cp": {
+        "0.25": 90478.8359375,
+        "0.5": 85362.921875
+      }
+    },
+    {
+      "epoch": 8,
+      "validation_capped_mse_cp": {
+        "0.25": 90138.90625,
+        "0.5": 84813.4765625
+      }
+    },
+    {
+      "epoch": 9,
+      "validation_capped_mse_cp": {
+        "0.25": 89913.9296875,
+        "0.5": 84454.8828125
+      }
+    },
+    {
+      "epoch": 10,
+      "validation_capped_mse_cp": {
+        "0.25": 89838.0625,
+        "0.5": 84319.9375
+      }
+    },
+    {
+      "epoch": 11,
+      "validation_capped_mse_cp": {
+        "0.25": 89377.9765625,
+        "0.5": 83614.6015625
+      }
+    },
+    {
+      "epoch": 12,
+      "validation_capped_mse_cp": {
+        "0.25": 89256.5703125,
+        "0.5": 83425.53125
+      }
+    },
+    {
+      "epoch": 13,
+      "validation_capped_mse_cp": {
+        "0.25": 89098.2109375,
+        "0.5": 83176.71875
+      }
+    },
+    {
+      "epoch": 14,
+      "validation_capped_mse_cp": {
+        "0.25": 89077.2421875,
+        "0.5": 83129.703125
+      }
+    },
+    {
+      "epoch": 15,
+      "validation_capped_mse_cp": {
+        "0.25": 89186.9453125,
+        "0.5": 83289.2109375
+      }
+    },
+    {
+      "epoch": 16,
+      "validation_capped_mse_cp": {
+        "0.25": 89099.796875,
+        "0.5": 83149.1953125
+      }
+    }
+  ],
+  "holdout": [
+    {
+      "source_index": 58058,
+      "group": "B01",
+      "start_fen": "1r1qkb1r/p4ppp/4pn2/2p5/2PnB3/2NPB3/PP3PPP/R2Q1RK1 b k - 2 12",
+      "history": [
+        "d8d7",
+        "a1b1",
+        "f8e7",
+        "c3e2"
+      ],
+      "fen": "1r2k2r/p2qbppp/4pn2/2p5/2PnB3/3PB3/PP2NPPP/1R1Q1RK1 b k - 6 14",
+      "eligible": true,
+      "teacher": [
+        {
+          "cp": -147,
+          "mate": null,
+          "depth": 15,
+          "pv": [
+            "e8g8",
+            "e2d4",
+            "c5d4",
+            "e3f4",
+            "e7d6",
+            "f4d6",
+            "d7d6",
+            "e4f3",
+            "f6d7",
+            "d1d2",
+            "d7e5",
+            "f3d1",
+            "d6b4",
+            "d2b4",
+            "b8b4",
+            "a2a3",
+            "b4b8",
+            "b2b4",
+            "e5d3",
+            "f2f4"
+          ],
+          "nodes": 80030
+        },
+        {
+          "cp": -151,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "e8g8",
+            "e2d4",
+            "c5d4",
+            "e3f4",
+            "e7d6",
+            "f4d6",
+            "d7d6",
+            "e4f3",
+            "f6d7",
+            "d1d2",
+            "d6b4",
+            "d2f4",
+            "b4c5",
+            "b2b4",
+            "b8b4",
+            "b1b4",
+            "c5b4",
+            "f4d4",
+            "f8d8",
+            "d4a7",
+            "d7e5",
+            "f3e2"
+          ],
+          "nodes": 220168
+        }
+      ],
+      "target_cp": -149.0,
+      "baseline_cp": -211,
+      "prediction_cp": -164,
+      "before_error": 62.0,
+      "after_error": 15.0
+    },
+    {
+      "source_index": 169930,
+      "group": "B06",
+      "start_fen": "2r1r3/4Bk1p/6p1/p2nR3/3N4/1P5P/P1P2PP1/6K1 b - - 8 29",
+      "history": [
+        "d5e7",
+        "e5a5",
+        "c8a8",
+        "a5a8"
+      ],
+      "fen": "R3r3/4nk1p/6p1/8/3N4/1P5P/P1P2PP1/6K1 b - - 0 31",
+      "eligible": false
+    },
+    {
+      "source_index": 109947,
+      "group": "B01",
+      "start_fen": "r1b1k2r/1p2bppp/p1q1p3/2p1n3/P2P1B2/1QP3P1/1P3P1P/R5K1 w kq - 0 19",
+      "history": [
+        "f4e5",
+        "c5c4",
+        "b3c2",
+        "b7b5"
+      ],
+      "fen": "r1b1k2r/4bppp/p1q1p3/1p2B3/P1pP4/2P3P1/1PQ2P1P/R5K1 w kq - 0 21",
+      "eligible": true,
+      "teacher": [
+        {
+          "cp": -867,
+          "mate": null,
+          "depth": 15,
+          "pv": [
+            "a4b5",
+            "c6f3",
+            "b5a6",
+            "f7f6",
+            "c2d1",
+            "f3d1",
+            "a1d1",
+            "c8d7",
+            "e5f4"
+          ],
+          "nodes": 80061
+        },
+        {
+          "cp": -867,
+          "mate": null,
+          "depth": 15,
+          "pv": [
+            "a4b5",
+            "c6f3",
+            "b5a6",
+            "f7f6",
+            "c2d1",
+            "f3d1",
+            "a1d1",
+            "c8d7",
+            "e5f4"
+          ],
+          "nodes": 320056
+        }
+      ],
+      "target_cp": -867.0,
+      "baseline_cp": -845,
+      "prediction_cp": -771,
+      "before_error": 22.0,
+      "after_error": 96.0
+    },
+    {
+      "source_index": 9211,
+      "group": "B44",
+      "start_fen": "4r1k1/6p1/b1p4p/3p4/1Pq2p2/5P1P/2PQNKP1/4R3 b - - 2 29",
+      "history": [
+        "e8e3",
+        "c2c3",
+        "g8f7",
+        "h3h4"
+      ],
+      "fen": "8/5kp1/b1p4p/3p4/1Pq2p1P/2P1rP2/3QNKP1/4R3 b - - 0 31",
+      "eligible": true,
+      "teacher": [
+        {
+          "cp": 32,
+          "mate": null,
+          "depth": 13,
+          "pv": [
+            "g7g5",
+            "h4h5",
+            "a6b5",
+            "d2c2",
+            "c4d3",
+            "c2d3",
+            "e3d3",
+            "e2d4",
+            "d3c3",
+            "d4b5",
+            "c3c2",
+            "f2f1",
+            "c6b5",
+            "e1a1",
+            "c2b2",
+            "a1a6",
+            "b2b4",
+            "a6h6",
+            "b4b1",
+            "f1f2"
+          ],
+          "nodes": 51287
+        },
+        {
+          "cp": 32,
+          "mate": null,
+          "depth": 18,
+          "pv": [
+            "g7g5",
+            "d2c2",
+            "c4d3",
+            "c2d3",
+            "e3d3",
+            "e1a1",
+            "a6c4",
+            "f2g1",
+            "d3e3",
+            "e2d4",
+            "e3c3",
+            "d4c6",
+            "f7f6",
+            "a1e1",
+            "c4d3"
+          ],
+          "nodes": 302978
+        }
+      ],
+      "target_cp": 32.0,
+      "baseline_cp": 30,
+      "prediction_cp": 94,
+      "before_error": 2.0,
+      "after_error": 62.0
+    },
+    {
+      "source_index": 54299,
+      "group": "B44",
+      "start_fen": "2rq2k1/pb1p2p1/1p2p2p/4P1p1/3N1r2/2P2PQ1/PP4PP/R3R1K1 b - - 0 20",
+      "history": [
+        "b6b5",
+        "a2a3",
+        "a7a5",
+        "h2h3"
+      ],
+      "fen": "2rq2k1/1b1p2p1/4p2p/pp2P1p1/3N1r2/P1P2PQP/1P4P1/R3R1K1 b - - 0 22",
+      "eligible": true,
+      "teacher": [
+        {
+          "cp": 42,
+          "mate": null,
+          "depth": 15,
+          "pv": [
+            "b5b4",
+            "d4e2",
+            "f4f5",
+            "e2d4",
+            "f5f8",
+            "c3b4",
+            "a5b4",
+            "g3f2",
+            "b4a3",
+            "a1a3",
+            "b7d5",
+            "a3c3"
+          ],
+          "nodes": 66995
+        },
+        {
+          "cp": 23,
+          "mate": null,
+          "depth": 18,
+          "pv": [
+            "b5b4",
+            "a3b4",
+            "a5b4",
+            "e1e3",
+            "b4c3",
+            "b2c3",
+            "b7d5",
+            "g1h2",
+            "c8b8",
+            "g3e1",
+            "d8c7",
+            "e1d2",
+            "f4f8",
+            "a1a4",
+            "f8c8"
+          ],
+          "nodes": 243720
+        }
+      ],
+      "target_cp": 32.5,
+      "baseline_cp": 0,
+      "prediction_cp": 0,
+      "before_error": 32.5,
+      "after_error": 32.5
+    },
+    {
+      "source_index": 46684,
+      "group": "B06",
+      "start_fen": "r1b2r2/ppp1p1k1/3q1npp/8/3p3P/1B3N2/PPP2PP1/2RQ1RK1 b - - 1 17",
+      "history": [
+        "e7e5",
+        "f3d2",
+        "e5e4",
+        "f2f3"
+      ],
+      "fen": "r1b2r2/ppp3k1/3q1npp/8/3pp2P/1B3P2/PPPN2P1/2RQ1RK1 b - - 0 19",
+      "eligible": true,
+      "teacher": [
+        {
+          "cp": 412,
+          "mate": null,
+          "depth": 16,
+          "pv": [
+            "e4e3",
+            "d2e4",
+            "f6e4",
+            "f3e4",
+            "c8d7",
+            "d1e2",
+            "h6h5",
+            "c2c3",
+            "d7g4",
+            "e2d3",
+            "c7c5",
+            "c3d4",
+            "d6d4",
+            "b3c4",
+            "f8f1",
+            "c1f1",
+            "a8f8",
+            "d3d4",
+            "c5d4"
+          ],
+          "nodes": 80075
+        },
+        {
+          "cp": 396,
+          "mate": null,
+          "depth": 19,
+          "pv": [
+            "e4e3",
+            "d2e4",
+            "f6e4",
+            "f3e4",
+            "c8d7",
+            "d1d3",
+            "d7g4",
+            "c2c3",
+            "c7c5",
+            "c3d4",
+            "d6d4",
+            "d3d4",
+            "c5d4",
+            "c1c7",
+            "g7h8",
+            "b3c4",
+            "f8f1",
+            "g1f1",
+            "a8f8",
+            "f1e1",
+            "f8f2",
+            "c7b7",
+            "f2g2",
+            "b7b8",
+            "h8h7"
+          ],
+          "nodes": 320361
+        }
+      ],
+      "target_cp": 404.0,
+      "baseline_cp": 158,
+      "prediction_cp": 181,
+      "before_error": 246.0,
+      "after_error": 223.0
+    },
+    {
+      "source_index": 35855,
+      "group": "C10",
+      "start_fen": "rn1q1rk1/pb2n1pp/1p2p3/3pPpN1/1bpP4/2N5/PPPBBPPP/R2Q1RK1 w - f6 0 11",
+      "history": [
+        "g5e6",
+        "d8d7",
+        "e6f8",
+        "g8f8"
+      ],
+      "fen": "rn3k2/pb1qn1pp/1p6/3pPp2/1bpP4/2N5/PPPBBPPP/R2Q1RK1 w - - 0 13",
+      "eligible": true,
+      "teacher": [
+        {
+          "cp": 624,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "e2f3",
+            "b8c6",
+            "c3e2",
+            "b4d2",
+            "d1d2",
+            "e7g6",
+            "f3h5",
+            "g6h4",
+            "f2f4",
+            "g7g6",
+            "h5f3",
+            "h4f3",
+            "f1f3"
+          ],
+          "nodes": 80065
+        },
+        {
+          "cp": 672,
+          "mate": null,
+          "depth": 20,
+          "pv": [
+            "c3b1",
+            "b4d2",
+            "d1d2",
+            "b8a6",
+            "c2c3",
+            "f8g8",
+            "b1a3",
+            "a6c7",
+            "a3c2",
+            "b6b5",
+            "h2h4",
+            "g8h8",
+            "h4h5",
+            "a7a5",
+            "a2a3",
+            "a5a4"
+          ],
+          "nodes": 320294
+        }
+      ],
+      "target_cp": 648.0,
+      "baseline_cp": 389,
+      "prediction_cp": 465,
+      "before_error": 259.0,
+      "after_error": 183.0
+    },
+    {
+      "source_index": 42037,
+      "group": "C10",
+      "start_fen": "r6k/pR4pp/4Q3/2r5/8/q6P/P1P2PP1/5RK1 b - - 0 24",
+      "history": [
+        "a8g8",
+        "f1e1",
+        "c5c8",
+        "e6b3"
+      ],
+      "fen": "2r3rk/pR4pp/8/8/8/qQ5P/P1P2PP1/4R1K1 b - - 4 26",
+      "eligible": true,
+      "teacher": [
+        {
+          "cp": -470,
+          "mate": null,
+          "depth": 15,
+          "pv": [
+            "a3c5",
+            "e1e4",
+            "c8f8",
+            "e4e2",
+            "h7h6",
+            "c2c3",
+            "f8f6",
+            "b7b8",
+            "g8b8",
+            "b3b8",
+            "f6f8"
+          ],
+          "nodes": 80068
+        },
+        {
+          "cp": -454,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "a3c5",
+            "c2c4",
+            "c5d4",
+            "e1c1",
+            "g8f8",
+            "b3b2",
+            "d4b2",
+            "b7b2",
+            "f8f6",
+            "b2d2",
+            "f6c6",
+            "c1c2",
+            "h8g8",
+            "d2d4",
+            "g8f7",
+            "f2f3"
+          ],
+          "nodes": 320025
+        }
+      ],
+      "target_cp": -462.0,
+      "baseline_cp": -318,
+      "prediction_cp": -288,
+      "before_error": 144.0,
+      "after_error": 174.0
+    },
+    {
+      "source_index": 13462,
+      "group": "D30",
+      "start_fen": "rn1qr1k1/4bp1p/2p1p1PB/p3P3/1pbPQ3/2P2N2/P1B2PP1/R3K2R b KQ - 0 17",
+      "history": [
+        "h7g6",
+        "e4g4",
+        "e7f8",
+        "h6g5"
+      ],
+      "fen": "rn1qrbk1/5p2/2p1p1p1/p3P1B1/1pbP2Q1/2P2N2/P1B2PP1/R3K2R b KQ - 3 19",
+      "eligible": true,
+      "teacher": [
+        {
+          "cp": -953,
+          "mate": null,
+          "depth": 14,
+          "pv": [
+            "b8a6",
+            "g5d8",
+            "e8d8",
+            "c2g6",
+            "f7g6",
+            "g4g6",
+            "f8g7",
+            "g6h7",
+            "g8f8",
+            "f3g5",
+            "c6c5",
+            "h7g6"
+          ],
+          "nodes": 80014
+        },
+        {
+          "cp": -1005,
+          "mate": null,
+          "depth": 19,
+          "pv": [
+            "b8d7",
+            "g5d8",
+            "f8g7",
+            "c2g6",
+            "f7g6",
+            "d8f6",
+            "d7f6",
+            "e5f6",
+            "c4d3",
+            "f6g7",
+            "g8g7",
+            "g4h4",
+            "e8h8",
+            "h4e7",
+            "g7g8",
+            "h1h8",
+            "g8h8"
+          ],
+          "nodes": 320059
+        }
+      ],
+      "target_cp": -979.0,
+      "baseline_cp": -24,
+      "prediction_cp": -24,
+      "before_error": 955.0,
+      "after_error": 955.0
+    },
+    {
+      "source_index": 31501,
+      "group": "B56",
+      "start_fen": "r1b2rk1/p4pbp/3ppqp1/2p5/2B1P3/2P2P2/PP4PP/R1BQ1RK1 w - - 1 13",
+      "history": [
+        "d1d6",
+        "a7a5",
+        "d6c5",
+        "c8a6"
+      ],
+      "fen": "r4rk1/5pbp/b3pqp1/p1Q5/2B1P3/2P2P2/PP4PP/R1B2RK1 w - - 1 15",
+      "eligible": true,
+      "teacher": [
+        {
+          "cp": 403,
+          "mate": null,
+          "depth": 16,
+          "pv": [
+            "c4a6",
+            "a8a6",
+            "c1g5",
+            "f6e5",
+            "c5e5",
+            "g7e5",
+            "a1c1",
+            "f8b8",
+            "c1c2",
+            "a6d6",
+            "g2g3",
+            "a5a4",
+            "g1f2",
+            "f7f6",
+            "g5e3"
+          ],
+          "nodes": 80070
+        },
+        {
+          "cp": 421,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "c4a6",
+            "a8a6",
+            "c1g5",
+            "f6e5",
+            "c5e5",
+            "g7e5",
+            "a1c1",
+            "f8c8",
+            "g5e3",
+            "a5a4",
+            "c1c2",
+            "a6c6",
+            "a2a3",
+            "f7f5",
+            "e4f5",
+            "g6f5",
+            "f1d1",
+            "h7h5",
+            "d1d7",
+            "c6d6",
+            "d7d6",
+            "e5d6"
+          ],
+          "nodes": 320319
+        }
+      ],
+      "target_cp": 412.0,
+      "baseline_cp": 285,
+      "prediction_cp": 285,
+      "before_error": 127.0,
+      "after_error": 127.0
+    },
+    {
+      "source_index": 94517,
+      "group": "A11",
+      "start_fen": "5r2/3np1kp/r1pq1pp1/pp6/4P3/1PR2P2/2QPBP1P/5RK1 w - - 2 23",
+      "history": [
+        "d2d4",
+        "f8b8",
+        "f1d1",
+        "d7f8"
+      ],
+      "fen": "1r3n2/4p1kp/r1pq1pp1/pp6/3PP3/1PR2P2/2Q1BP1P/3R2K1 w - - 3 25",
+      "eligible": true,
+      "teacher": [
+        {
+          "cp": -71,
+          "mate": null,
+          "depth": 15,
+          "pv": [
+            "d4d5",
+            "c6d5",
+            "d1d5",
+            "d6b4",
+            "e4e5",
+            "f6f5",
+            "c3c8",
+            "a6b6",
+            "c8b8",
+            "b6b8",
+            "c2c7",
+            "b8e8",
+            "d5b5",
+            "b4d2",
+            "e2c4",
+            "d2c1",
+            "g1g2"
+          ],
+          "nodes": 44321
+        },
+        {
+          "cp": -56,
+          "mate": null,
+          "depth": 19,
+          "pv": [
+            "d4d5",
+            "c6d5",
+            "d1d5",
+            "d6b4",
+            "e4e5",
+            "f6f5",
+            "c3c8",
+            "b8c8",
+            "c2c8",
+            "a6b6",
+            "c8c7",
+            "b6e6",
+            "d5b5",
+            "b4e1",
+            "e2f1",
+            "g6g5",
+            "c7a5",
+            "e1d1",
+            "a5a8",
+            "f8g6",
+            "a8d5",
+            "d1d5",
+            "b5d5",
+            "g6e5",
+            "f1e2"
+          ],
+          "nodes": 272142
+        }
+      ],
+      "target_cp": -63.5,
+      "baseline_cp": -85,
+      "prediction_cp": 43,
+      "before_error": 21.5,
+      "after_error": 106.5
+    },
+    {
+      "source_index": 14682,
+      "group": "A46",
+      "start_fen": "r4rk1/2qnbppp/pp1ppn2/8/P2P4/2P2N1P/1P1NQPPB/R4RK1 w - - 1 14",
+      "history": [
+        "g2g4",
+        "h7h6",
+        "f3e1",
+        "f6h7"
+      ],
+      "fen": "r4rk1/2qnbppn/pp1pp2p/8/P2P2P1/2P4P/1P1NQP1B/R3NRK1 w - - 2 16",
+      "eligible": true,
+      "teacher": [
+        {
+          "cp": 25,
+          "mate": null,
+          "depth": 13,
+          "pv": [
+            "f2f4",
+            "f8e8",
+            "e2g2",
+            "d7f8",
+            "e1c2",
+            "a8c8",
+            "c2e3",
+            "b6b5",
+            "a4b5",
+            "a6b5",
+            "d2f3",
+            "c8a8"
+          ],
+          "nodes": 55073
+        },
+        {
+          "cp": 39,
+          "mate": null,
+          "depth": 18,
+          "pv": [
+            "e1d3",
+            "f8e8",
+            "f2f4",
+            "a8c8",
+            "h2g3",
+            "d7f6",
+            "h3h4",
+            "e7f8",
+            "g4g5",
+            "f6d5",
+            "c3c4"
+          ],
+          "nodes": 320248
+        }
+      ],
+      "target_cp": 32.0,
+      "baseline_cp": 30,
+      "prediction_cp": 30,
+      "before_error": 2.0,
+      "after_error": 2.0
+    },
+    {
+      "source_index": 145267,
+      "group": "A46",
+      "start_fen": "4r1k1/2pbq2p/1p3p2/p2P1p2/2P2P2/P1Q1p3/1P2B1PP/4R1K1 w - - 1 23",
+      "history": [
+        "e2h5",
+        "e8d8",
+        "c3e3",
+        "e7e3"
+      ],
+      "fen": "3r2k1/2pb3p/1p3p2/p2P1p1B/2P2P2/P3q3/1P4PP/4R1K1 w - - 0 25",
+      "eligible": false
+    },
+    {
+      "source_index": 91338,
+      "group": "A20",
+      "start_fen": "r2qk2r/ppp2ppp/3p1n2/4pb2/1nP5/2N1P1P1/3PNPBP/R1BQK2R w KQkq - 0 10",
+      "history": [
+        "d1a4",
+        "b4c6",
+        "d2d4",
+        "e8g8"
+      ],
+      "fen": "r2q1rk1/ppp2ppp/2np1n2/4pb2/Q1PP4/2N1P1P1/4NPBP/R1B1K2R w KQ - 1 12",
+      "eligible": true,
+      "teacher": [
+        {
+          "cp": 541,
+          "mate": null,
+          "depth": 16,
+          "pv": [
+            "d4d5",
+            "c6b8",
+            "e3e4",
+            "f5g6",
+            "e1g1",
+            "a7a5",
+            "a4d1",
+            "h7h6",
+            "f2f3"
+          ],
+          "nodes": 80001
+        },
+        {
+          "cp": 552,
+          "mate": null,
+          "depth": 18,
+          "pv": [
+            "d4d5",
+            "c6b8",
+            "e3e4",
+            "f5g6",
+            "e1g1",
+            "b8a6",
+            "f2f3",
+            "f6d7",
+            "g2h3",
+            "d7b6",
+            "a4b3",
+            "a6c5",
+            "b3a2",
+            "a7a5",
+            "c1e3",
+            "a5a4",
+            "e3c5",
+            "d6c5",
+            "f3f4",
+            "c7c6",
+            "f4f5"
+          ],
+          "nodes": 320294
+        }
+      ],
+      "target_cp": 546.5,
+      "baseline_cp": 108,
+      "prediction_cp": 149,
+      "before_error": 438.5,
+      "after_error": 397.5
+    },
+    {
+      "source_index": 163554,
+      "group": "A21",
+      "start_fen": "rn1qk2r/pp3ppp/2p2n2/8/NbP5/1P1p2P1/P2PbPBP/R1B1QRK1 w kq - 0 12",
+      "history": [
+        "c1b2",
+        "e8g8",
+        "a2a3",
+        "b4e7"
+      ],
+      "fen": "rn1q1rk1/pp2bppp/2p2n2/8/N1P5/PP1p2P1/1B1PbPBP/R3QRK1 w - - 1 14",
+      "eligible": true,
+      "teacher": [
+        {
+          "cp": -767,
+          "mate": null,
+          "depth": 15,
+          "pv": [
+            "e1c1",
+            "e2f1",
+            "c1f1",
+            "g8h8",
+            "a1e1",
+            "f6g8",
+            "b3b4",
+            "e7f6",
+            "b2f6",
+            "g8f6",
+            "e1e3",
+            "d8c7",
+            "f1d3"
+          ],
+          "nodes": 80029
+        },
+        {
+          "cp": -748,
+          "mate": null,
+          "depth": 18,
+          "pv": [
+            "e1b1",
+            "e2f1",
+            "b1f1",
+            "f8e8",
+            "a1e1",
+            "b8d7",
+            "e1e3"
+          ],
+          "nodes": 320081
+        }
+      ],
+      "target_cp": -757.5,
+      "baseline_cp": -360,
+      "prediction_cp": -268,
+      "before_error": 397.5,
+      "after_error": 489.5
+    },
+    {
+      "source_index": 294342,
+      "group": "A50",
+      "start_fen": "r1bq1N2/1pp1bpk1/p1npp3/8/2PP3B/2NBP3/PP3PPP/R2Q1RK1 b - - 0 14",
+      "history": [
+        "e7h4",
+        "f8e6",
+        "c8e6",
+        "d4d5"
+      ],
+      "fen": "r2q4/1pp2pk1/p1npb3/3P4/2P4b/2NBP3/PP3PPP/R2Q1RK1 b - - 0 16",
+      "eligible": true,
+      "teacher": [
+        {
+          "cp": -900,
+          "mate": null,
+          "depth": 18,
+          "pv": [
+            "d8h8",
+            "d5e6",
+            "f7e6",
+            "f2f4",
+            "a8g8",
+            "f1f3",
+            "g7f8",
+            "f3h3",
+            "f8e7",
+            "g2g3",
+            "h4g3",
+            "h3h8",
+            "g8h8"
+          ],
+          "nodes": 80075
+        },
+        {
+          "cp": -884,
+          "mate": null,
+          "depth": 19,
+          "pv": [
+            "e6d7",
+            "d5c6",
+            "d7c6",
+            "d1g4",
+            "d8g5",
+            "g4g5",
+            "h4g5",
+            "f1b1",
+            "a8h8"
+          ],
+          "nodes": 320294
+        }
+      ],
+      "target_cp": -892.0,
+      "baseline_cp": -543,
+      "prediction_cp": -505,
+      "before_error": 349.0,
+      "after_error": 387.0
+    }
+  ],
+  "model_sha256": "113efd4afe68d258c799542bdc03311223719e12a5aff30fec5172ef6a9684fe",
+  "updates": 752,
+  "selected_epoch": 14,
+  "value_blend": 0.5,
+  "broad_before": 96939.5625,
+  "broad_after": 83129.703125,
+  "target_before": 175.1219482421875,
+  "target_after": 106.50371551513672,
+  "holdout_eligible": 14,
+  "holdout_before": 218.42857142857142,
+  "holdout_after": 232.14285714285714,
+  "holdout_errors_before": 6,
+  "holdout_errors_after": 5,
+  "decision": "retain_classical_v142",
+  "teacher_requested_nodes": 6880000,
+  "finished_utc": "2026-09-09T07:02:00.414448+00:00"
+}

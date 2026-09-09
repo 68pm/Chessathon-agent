@@ -1,0 +1,272 @@
+FFFFFFF......                                                            [100%]
+================================== FAILURES ===================================
+_____________ test_seeded_legal_children_match_full_recomputation _____________
+
+    def test_seeded_legal_children_match_full_recomputation():
+        rng = random.Random(2026090718)
+        position = chess.Board()
+        total = 0
+        for _ in range(240):
+            if position.is_game_over(claim_draw=True) or position.ply() >= 180:
+                position = chess.Board()
+>           count, _ = verify_children(position)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_daytime_incremental_hash.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+position = Board('rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1')
+
+    def verify_children(position):
+        board, state = arrays(position)
+        original, original_state = board.copy(), state.copy()
+        parent = np.uint64(core.position_hash(board, state))
+        parent_ep = core.ep_hash(board, state)
+        count = 0
+        flags = set()
+        for move in core.legal_moves(board, state):
+            old = core.make(board, state, move)
+            child = core.hash_after_move(parent, parent_ep, board, state, move, old)
+>           assert child == core.position_hash(board, state)
+E           assert -3082191061517632316 == 15364553012191919300
+E            +  where 15364553012191919300 = CPUDispatcher(<function position_hash at 0x0000026140BC6E80>)(array([ 4,  0,  3,  5,  6,  3,  2,  4,  0,  0,  0,  0,  0,  0,  0,  0,  1,\n        1,  1,  1,  1,  1,  1,  1,  0,  0, ...\n       -1, -1,  0,  0,  0,  0,  0,  0,  0,  0, -4, -2, -3, -5, -6, -3, -2,\n       -4,  0,  0,  0,  0,  0,  0,  0,  0]), array([ -1,  15,  -1,   1,   4, 116]))
+E            +    where CPUDispatcher(<function position_hash at 0x0000026140BC6E80>) = core.position_hash
+
+tests\test_daytime_incremental_hash.py:25: AssertionError
+____________ test_castling_capture_promotions_and_ep_normalisation ____________
+
+    def test_castling_capture_promotions_and_ep_normalisation():
+        fens = [
+            'r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1',
+            '1r2k3/P7/8/8/8/8/1p6/4K3 w - - 0 1',
+            '8/8/8/r4pPK/8/8/8/4k3 w - f6 0 1',
+            '4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1',
+            'rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq e3 0 1',
+        ]
+        flags, total = set(), 0
+        for fen in fens:
+            for position in [chess.Board(fen), chess.Board(fen).mirror()]:
+                assert position.is_valid()
+>               count, seen = verify_children(position)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_daytime_incremental_hash.py:65: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+position = Board('r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1')
+
+    def verify_children(position):
+        board, state = arrays(position)
+        original, original_state = board.copy(), state.copy()
+        parent = np.uint64(core.position_hash(board, state))
+        parent_ep = core.ep_hash(board, state)
+        count = 0
+        flags = set()
+        for move in core.legal_moves(board, state):
+            old = core.make(board, state, move)
+            child = core.hash_after_move(parent, parent_ep, board, state, move, old)
+>           assert child == core.position_hash(board, state)
+E           assert -344877668248275728 == 18101866405461275888
+E            +  where 18101866405461275888 = CPUDispatcher(<function position_hash at 0x0000026140BC6E80>)(array([ 0,  4,  0,  0,  6,  0,  0,  4,  0,  0,  0,  0,  0,  0,  0,  0,  0,\n        0,  0,  0,  0,  0,  0,  0,  0,  0, ...\n        0,  0,  0,  0,  0,  0,  0,  0,  0,  0, -4,  0,  0,  0, -6,  0,  0,\n       -4,  0,  0,  0,  0,  0,  0,  0,  0]), array([ -1,  13,  -1,   1,   4, 116]))
+E            +    where CPUDispatcher(<function position_hash at 0x0000026140BC6E80>) = core.position_hash
+
+tests\test_daytime_incremental_hash.py:25: AssertionError
+_ test_special_children_both_colours[False-r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1] _
+
+fen = 'r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1', mirror = False
+
+    @pytest.mark.parametrize('fen', [
+        'r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1',
+        '1r2k3/P7/8/8/8/8/1p6/4K3 w - - 0 1',
+        '8/8/8/r4pPK/8/8/8/4k3 w - f6 0 1',
+        '4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1',
+        chess.STARTING_FEN,
+    ])
+    @pytest.mark.parametrize('mirror', [False, True])
+    def test_special_children_both_colours(fen, mirror):
+        board = chess.Board(fen)
+>       assert verify_children(board.mirror() if mirror else board)[0] > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_daytime_incremental_hash.py:91: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+position = Board('r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1')
+
+    def verify_children(position):
+        board, state = arrays(position)
+        original, original_state = board.copy(), state.copy()
+        parent = np.uint64(core.position_hash(board, state))
+        parent_ep = core.ep_hash(board, state)
+        count = 0
+        flags = set()
+        for move in core.legal_moves(board, state):
+            old = core.make(board, state, move)
+            child = core.hash_after_move(parent, parent_ep, board, state, move, old)
+>           assert child == core.position_hash(board, state)
+E           assert -344877668248275728 == 18101866405461275888
+E            +  where 18101866405461275888 = CPUDispatcher(<function position_hash at 0x0000026140BC6E80>)(array([ 0,  4,  0,  0,  6,  0,  0,  4,  0,  0,  0,  0,  0,  0,  0,  0,  0,\n        0,  0,  0,  0,  0,  0,  0,  0,  0, ...\n        0,  0,  0,  0,  0,  0,  0,  0,  0,  0, -4,  0,  0,  0, -6,  0,  0,\n       -4,  0,  0,  0,  0,  0,  0,  0,  0]), array([ -1,  13,  -1,   1,   4, 116]))
+E            +    where CPUDispatcher(<function position_hash at 0x0000026140BC6E80>) = core.position_hash
+
+tests\test_daytime_incremental_hash.py:25: AssertionError
+_ test_special_children_both_colours[False-1r2k3/P7/8/8/8/8/1p6/4K3 w - - 0 1] _
+
+fen = '1r2k3/P7/8/8/8/8/1p6/4K3 w - - 0 1', mirror = False
+
+    @pytest.mark.parametrize('fen', [
+        'r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1',
+        '1r2k3/P7/8/8/8/8/1p6/4K3 w - - 0 1',
+        '8/8/8/r4pPK/8/8/8/4k3 w - f6 0 1',
+        '4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1',
+        chess.STARTING_FEN,
+    ])
+    @pytest.mark.parametrize('mirror', [False, True])
+    def test_special_children_both_colours(fen, mirror):
+        board = chess.Board(fen)
+>       assert verify_children(board.mirror() if mirror else board)[0] > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_daytime_incremental_hash.py:91: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+position = Board('1r2k3/P7/8/8/8/8/1p6/4K3 w - - 0 1')
+
+    def verify_children(position):
+        board, state = arrays(position)
+        original, original_state = board.copy(), state.copy()
+        parent = np.uint64(core.position_hash(board, state))
+        parent_ep = core.ep_hash(board, state)
+        count = 0
+        flags = set()
+        for move in core.legal_moves(board, state):
+            old = core.make(board, state, move)
+            child = core.hash_after_move(parent, parent_ep, board, state, move, old)
+>           assert child == core.position_hash(board, state)
+E           assert -5793060971197598473 == 12653683102511953143
+E            +  where 12653683102511953143 = CPUDispatcher(<function position_hash at 0x0000026140BC6E80>)(array([ 0,  0,  0,  6,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,\n       -1,  0,  0,  0,  0,  0,  0,  0,  0, ...\n        0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0, -4,  0,  0, -6,  0,  0,\n        0,  0,  0,  0,  0,  0,  0,  0,  0]), array([ -1,   0,  -1,   1,   3, 116]))
+E            +    where CPUDispatcher(<function position_hash at 0x0000026140BC6E80>) = core.position_hash
+
+tests\test_daytime_incremental_hash.py:25: AssertionError
+_ test_special_children_both_colours[False-8/8/8/r4pPK/8/8/8/4k3 w - f6 0 1] __
+
+fen = '8/8/8/r4pPK/8/8/8/4k3 w - f6 0 1', mirror = False
+
+    @pytest.mark.parametrize('fen', [
+        'r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1',
+        '1r2k3/P7/8/8/8/8/1p6/4K3 w - - 0 1',
+        '8/8/8/r4pPK/8/8/8/4k3 w - f6 0 1',
+        '4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1',
+        chess.STARTING_FEN,
+    ])
+    @pytest.mark.parametrize('mirror', [False, True])
+    def test_special_children_both_colours(fen, mirror):
+        board = chess.Board(fen)
+>       assert verify_children(board.mirror() if mirror else board)[0] > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_daytime_incremental_hash.py:91: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+position = Board('8/8/8/r4pPK/8/8/8/4k3 w - - 0 1')
+
+    def verify_children(position):
+        board, state = arrays(position)
+        original, original_state = board.copy(), state.copy()
+        parent = np.uint64(core.position_hash(board, state))
+        parent_ep = core.ep_hash(board, state)
+        count = 0
+        flags = set()
+        for move in core.legal_moves(board, state):
+            old = core.make(board, state, move)
+            child = core.hash_after_move(parent, parent_ep, board, state, move, old)
+>           assert child == core.position_hash(board, state)
+E           assert -3420862073670865262 == 15025882000038686354
+E            +  where 15025882000038686354 = CPUDispatcher(<function position_hash at 0x0000026140BC6E80>)(array([ 0,  0,  0,  0, -6,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,\n        0,  0,  0,  0,  0,  0,  0,  0,  0, ...\n        0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,\n        0,  0,  0,  0,  0,  0,  0,  0,  0]), array([-1,  0, -1,  0, 71,  4]))
+E            +    where CPUDispatcher(<function position_hash at 0x0000026140BC6E80>) = core.position_hash
+
+tests\test_daytime_incremental_hash.py:25: AssertionError
+_ test_special_children_both_colours[False-4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1] _
+
+fen = '4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1', mirror = False
+
+    @pytest.mark.parametrize('fen', [
+        'r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1',
+        '1r2k3/P7/8/8/8/8/1p6/4K3 w - - 0 1',
+        '8/8/8/r4pPK/8/8/8/4k3 w - f6 0 1',
+        '4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1',
+        chess.STARTING_FEN,
+    ])
+    @pytest.mark.parametrize('mirror', [False, True])
+    def test_special_children_both_colours(fen, mirror):
+        board = chess.Board(fen)
+>       assert verify_children(board.mirror() if mirror else board)[0] > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_daytime_incremental_hash.py:91: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+position = Board('4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1')
+
+    def verify_children(position):
+        board, state = arrays(position)
+        original, original_state = board.copy(), state.copy()
+        parent = np.uint64(core.position_hash(board, state))
+        parent_ep = core.ep_hash(board, state)
+        count = 0
+        flags = set()
+        for move in core.legal_moves(board, state):
+            old = core.make(board, state, move)
+            child = core.hash_after_move(parent, parent_ep, board, state, move, old)
+>           assert child == core.position_hash(board, state)
+E           assert -2060319040991070834 == 16386425032718480782
+E            +  where 16386425032718480782 = CPUDispatcher(<function position_hash at 0x0000026140BC6E80>)(array([ 0,  0,  0,  6,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,\n        0,  0,  0,  0,  0,  0,  0,  0,  0, ...\n        0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0, -6,  0,  0,\n        0,  0,  0,  0,  0,  0,  0,  0,  0]), array([ -1,   0,  -1,   1,   3, 116]))
+E            +    where CPUDispatcher(<function position_hash at 0x0000026140BC6E80>) = core.position_hash
+
+tests\test_daytime_incremental_hash.py:25: AssertionError
+_ test_special_children_both_colours[False-rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1] _
+
+fen = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1', mirror = False
+
+    @pytest.mark.parametrize('fen', [
+        'r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1',
+        '1r2k3/P7/8/8/8/8/1p6/4K3 w - - 0 1',
+        '8/8/8/r4pPK/8/8/8/4k3 w - f6 0 1',
+        '4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1',
+        chess.STARTING_FEN,
+    ])
+    @pytest.mark.parametrize('mirror', [False, True])
+    def test_special_children_both_colours(fen, mirror):
+        board = chess.Board(fen)
+>       assert verify_children(board.mirror() if mirror else board)[0] > 0
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_daytime_incremental_hash.py:91: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+position = Board('rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1')
+
+    def verify_children(position):
+        board, state = arrays(position)
+        original, original_state = board.copy(), state.copy()
+        parent = np.uint64(core.position_hash(board, state))
+        parent_ep = core.ep_hash(board, state)
+        count = 0
+        flags = set()
+        for move in core.legal_moves(board, state):
+            old = core.make(board, state, move)
+            child = core.hash_after_move(parent, parent_ep, board, state, move, old)
+>           assert child == core.position_hash(board, state)
+E           assert -3082191061517632316 == 15364553012191919300
+E            +  where 15364553012191919300 = CPUDispatcher(<function position_hash at 0x0000026140BC6E80>)(array([ 4,  0,  3,  5,  6,  3,  2,  4,  0,  0,  0,  0,  0,  0,  0,  0,  1,\n        1,  1,  1,  1,  1,  1,  1,  0,  0, ...\n       -1, -1,  0,  0,  0,  0,  0,  0,  0,  0, -4, -2, -3, -5, -6, -3, -2,\n       -4,  0,  0,  0,  0,  0,  0,  0,  0]), array([ -1,  15,  -1,   1,   4, 116]))
+E            +    where CPUDispatcher(<function position_hash at 0x0000026140BC6E80>) = core.position_hash
+
+tests\test_daytime_incremental_hash.py:25: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_daytime_incremental_hash.py::test_seeded_legal_children_match_full_recomputation
+FAILED tests/test_daytime_incremental_hash.py::test_castling_capture_promotions_and_ep_normalisation
+FAILED tests/test_daytime_incremental_hash.py::test_special_children_both_colours[False-r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1]
+FAILED tests/test_daytime_incremental_hash.py::test_special_children_both_colours[False-1r2k3/P7/8/8/8/8/1p6/4K3 w - - 0 1]
+FAILED tests/test_daytime_incremental_hash.py::test_special_children_both_colours[False-8/8/8/r4pPK/8/8/8/4k3 w - f6 0 1]
+FAILED tests/test_daytime_incremental_hash.py::test_special_children_both_colours[False-4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1]
+FAILED tests/test_daytime_incremental_hash.py::test_special_children_both_colours[False-rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1]
+7 failed, 6 passed in 5.10s

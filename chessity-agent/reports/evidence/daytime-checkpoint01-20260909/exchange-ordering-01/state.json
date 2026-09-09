@@ -1,0 +1,6362 @@
+{
+  "status": "complete",
+  "passed": false,
+  "workers": {
+    "prototype": {
+      "pid": 19068,
+      "status": "ready",
+      "init_seconds": 21.5696362000308,
+      "compiled_search_variants": 3,
+      "search_signatures": [
+        "(Array(int64, 1, 'C', False, aligned=True), Array(int64, 1, 'C', False, aligned=True), int64, int64, int64, int64, Literal[int](0), Array(uint64, 1, 'C', False, aligned=True), int64, uint64, Array(uint64, 1, 'C', False, aligned=True), Array(uint64, 1, 'C', False, aligned=True), Array(int64, 2, 'C', False, aligned=True), Array(int64, 2, 'C', False, aligned=True), Array(int64, 3, 'C', False, aligned=True), Array(int64, 1, 'C', False, aligned=True), float64, Array(float32, 2, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), float64, bool, bool, Array(float64, 2, 'C', False, aligned=True))",
+        "(Array(int64, 1, 'C', False, aligned=True), Array(int64, 1, 'C', False, aligned=True), int64, int64, int64, int64, int64, Array(uint64, 1, 'C', False, aligned=True), int64, uint64, Array(uint64, 1, 'C', False, aligned=True), Array(uint64, 1, 'C', False, aligned=True), Array(int64, 2, 'C', False, aligned=True), Array(int64, 2, 'C', False, aligned=True), Array(int64, 3, 'C', False, aligned=True), Array(int64, 1, 'C', False, aligned=True), float64, Array(float32, 2, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), float64, bool, bool, Array(float64, 2, 'C', False, aligned=True))",
+        "(Array(int64, 1, 'C', False, aligned=True), Array(int64, 1, 'C', False, aligned=True), int64, Literal[int](-31000), int64, Literal[int](1), Literal[int](0), Array(uint64, 1, 'C', False, aligned=True), int64, uint64, Array(uint64, 1, 'C', False, aligned=True), Array(uint64, 1, 'C', False, aligned=True), Array(int64, 2, 'C', False, aligned=True), Array(int64, 2, 'C', False, aligned=True), Array(int64, 3, 'C', False, aligned=True), Array(int64, 1, 'C', False, aligned=True), float64, Array(float32, 2, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), float64, bool, bool, Array(float64, 2, 'C', False, aligned=True))"
+      ]
+    },
+    "baseline": {
+      "pid": 17648,
+      "status": "ready",
+      "init_seconds": 18.99369840003783,
+      "compiled_search_variants": 3,
+      "search_signatures": [
+        "(Array(int64, 1, 'C', False, aligned=True), Array(int64, 1, 'C', False, aligned=True), int64, int64, int64, int64, Literal[int](0), Array(uint64, 1, 'C', False, aligned=True), int64, uint64, Array(uint64, 1, 'C', False, aligned=True), Array(uint64, 1, 'C', False, aligned=True), Array(int64, 2, 'C', False, aligned=True), Array(int64, 2, 'C', False, aligned=True), Array(int64, 3, 'C', False, aligned=True), Array(int64, 1, 'C', False, aligned=True), float64, Array(float32, 2, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), float64, bool, bool, Array(float64, 2, 'C', False, aligned=True))",
+        "(Array(int64, 1, 'C', False, aligned=True), Array(int64, 1, 'C', False, aligned=True), int64, int64, int64, int64, int64, Array(uint64, 1, 'C', False, aligned=True), int64, uint64, Array(uint64, 1, 'C', False, aligned=True), Array(uint64, 1, 'C', False, aligned=True), Array(int64, 2, 'C', False, aligned=True), Array(int64, 2, 'C', False, aligned=True), Array(int64, 3, 'C', False, aligned=True), Array(int64, 1, 'C', False, aligned=True), float64, Array(float32, 2, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), float64, bool, bool, Array(float64, 2, 'C', False, aligned=True))",
+        "(Array(int64, 1, 'C', False, aligned=True), Array(int64, 1, 'C', False, aligned=True), int64, Literal[int](-31000), int64, Literal[int](1), Literal[int](0), Array(uint64, 1, 'C', False, aligned=True), int64, uint64, Array(uint64, 1, 'C', False, aligned=True), Array(uint64, 1, 'C', False, aligned=True), Array(int64, 2, 'C', False, aligned=True), Array(int64, 2, 'C', False, aligned=True), Array(int64, 3, 'C', False, aligned=True), Array(int64, 1, 'C', False, aligned=True), float64, Array(float32, 2, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), Array(float32, 1, 'C', False, aligned=True), float64, bool, bool, Array(float64, 2, 'C', False, aligned=True))"
+      ]
+    }
+  },
+  "rows": [
+    {
+      "root": 0,
+      "regime": "clock",
+      "block": 0,
+      "id": "round-68-move-25",
+      "label": "baseline",
+      "uci": "f1e1",
+      "score": 93,
+      "depth": 8,
+      "nodes": 585728,
+      "seconds": 1.0018002999713644,
+      "cpu_seconds": 0.953125
+    },
+    {
+      "root": 0,
+      "regime": "clock",
+      "block": 1,
+      "id": "round-68-move-25",
+      "label": "prototype",
+      "uci": "f1e1",
+      "score": 93,
+      "depth": 8,
+      "nodes": 558080,
+      "seconds": 1.000659400015138,
+      "cpu_seconds": 0.9375
+    },
+    {
+      "root": 0,
+      "regime": "clock",
+      "block": 2,
+      "id": "round-68-move-25",
+      "label": "prototype",
+      "uci": "f1e1",
+      "score": 93,
+      "depth": 8,
+      "nodes": 556032,
+      "seconds": 1.0014115000376478,
+      "cpu_seconds": 0.9375
+    },
+    {
+      "root": 0,
+      "regime": "clock",
+      "block": 3,
+      "id": "round-68-move-25",
+      "label": "baseline",
+      "uci": "f1e1",
+      "score": 93,
+      "depth": 8,
+      "nodes": 580608,
+      "seconds": 1.0007403999916278,
+      "cpu_seconds": 0.984375
+    },
+    {
+      "root": 1,
+      "regime": "clock",
+      "block": 0,
+      "id": "round-68-move-51",
+      "label": "baseline",
+      "uci": "c1g1",
+      "score": 148,
+      "depth": 9,
+      "nodes": 703488,
+      "seconds": 1.0004449000116438,
+      "cpu_seconds": 0.953125
+    },
+    {
+      "root": 1,
+      "regime": "clock",
+      "block": 1,
+      "id": "round-68-move-51",
+      "label": "prototype",
+      "uci": "c1g1",
+      "score": 148,
+      "depth": 9,
+      "nodes": 627712,
+      "seconds": 1.0012579999747686,
+      "cpu_seconds": 0.96875
+    },
+    {
+      "root": 1,
+      "regime": "clock",
+      "block": 2,
+      "id": "round-68-move-51",
+      "label": "prototype",
+      "uci": "c1g1",
+      "score": 148,
+      "depth": 9,
+      "nodes": 568320,
+      "seconds": 1.0013387000071816,
+      "cpu_seconds": 0.953125
+    },
+    {
+      "root": 1,
+      "regime": "clock",
+      "block": 3,
+      "id": "round-68-move-51",
+      "label": "baseline",
+      "uci": "c1g1",
+      "score": 148,
+      "depth": 9,
+      "nodes": 684032,
+      "seconds": 1.0016340999864042,
+      "cpu_seconds": 0.984375
+    },
+    {
+      "root": 2,
+      "regime": "clock",
+      "block": 0,
+      "id": "round-68-move-80",
+      "label": "baseline",
+      "uci": "d1a1",
+      "score": 0,
+      "depth": 10,
+      "nodes": 706560,
+      "seconds": 1.0009394000517204,
+      "cpu_seconds": 0.953125
+    },
+    {
+      "root": 2,
+      "regime": "clock",
+      "block": 1,
+      "id": "round-68-move-80",
+      "label": "prototype",
+      "uci": "d1a1",
+      "score": 0,
+      "depth": 10,
+      "nodes": 677888,
+      "seconds": 1.0011572999646887,
+      "cpu_seconds": 0.953125
+    },
+    {
+      "root": 2,
+      "regime": "clock",
+      "block": 2,
+      "id": "round-68-move-80",
+      "label": "prototype",
+      "uci": "d1a1",
+      "score": 0,
+      "depth": 10,
+      "nodes": 687104,
+      "seconds": 1.0013427999801934,
+      "cpu_seconds": 1.0
+    },
+    {
+      "root": 2,
+      "regime": "clock",
+      "block": 3,
+      "id": "round-68-move-80",
+      "label": "baseline",
+      "uci": "d1a1",
+      "score": 0,
+      "depth": 10,
+      "nodes": 729088,
+      "seconds": 1.00117829994997,
+      "cpu_seconds": 0.953125
+    },
+    {
+      "root": 3,
+      "regime": "clock",
+      "block": 0,
+      "id": "round-70-move-14",
+      "label": "baseline",
+      "uci": "d7h3",
+      "score": 45,
+      "depth": 7,
+      "nodes": 566272,
+      "seconds": 1.0009319999953732,
+      "cpu_seconds": 1.0
+    },
+    {
+      "root": 3,
+      "regime": "clock",
+      "block": 1,
+      "id": "round-70-move-14",
+      "label": "prototype",
+      "uci": "d7h3",
+      "score": 45,
+      "depth": 7,
+      "nodes": 539648,
+      "seconds": 1.000769299978856,
+      "cpu_seconds": 0.96875
+    },
+    {
+      "root": 3,
+      "regime": "clock",
+      "block": 2,
+      "id": "round-70-move-14",
+      "label": "prototype",
+      "uci": "d7h3",
+      "score": 45,
+      "depth": 7,
+      "nodes": 522240,
+      "seconds": 1.0020511000184342,
+      "cpu_seconds": 0.90625
+    },
+    {
+      "root": 3,
+      "regime": "clock",
+      "block": 3,
+      "id": "round-70-move-14",
+      "label": "baseline",
+      "uci": "d7h3",
+      "score": 45,
+      "depth": 7,
+      "nodes": 568320,
+      "seconds": 1.001299099996686,
+      "cpu_seconds": 0.96875
+    },
+    {
+      "root": 4,
+      "regime": "clock",
+      "block": 0,
+      "id": "round-70-move-15",
+      "label": "baseline",
+      "uci": "d6b4",
+      "score": -2,
+      "depth": 6,
+      "nodes": 542720,
+      "seconds": 1.00121489999583,
+      "cpu_seconds": 0.984375
+    },
+    {
+      "root": 4,
+      "regime": "clock",
+      "block": 1,
+      "id": "round-70-move-15",
+      "label": "prototype",
+      "uci": "d6b4",
+      "score": -2,
+      "depth": 6,
+      "nodes": 528384,
+      "seconds": 1.0015551999676973,
+      "cpu_seconds": 0.953125
+    },
+    {
+      "root": 4,
+      "regime": "clock",
+      "block": 2,
+      "id": "round-70-move-15",
+      "label": "prototype",
+      "uci": "d6b4",
+      "score": -2,
+      "depth": 6,
+      "nodes": 474112,
+      "seconds": 1.0008383000385948,
+      "cpu_seconds": 0.953125
+    },
+    {
+      "root": 4,
+      "regime": "clock",
+      "block": 3,
+      "id": "round-70-move-15",
+      "label": "baseline",
+      "uci": "d6b4",
+      "score": -2,
+      "depth": 6,
+      "nodes": 520192,
+      "seconds": 1.0013432000414468,
+      "cpu_seconds": 0.984375
+    },
+    {
+      "root": 5,
+      "regime": "clock",
+      "block": 0,
+      "id": "round-70-move-25",
+      "label": "baseline",
+      "uci": "e6d5",
+      "score": 489,
+      "depth": 7,
+      "nodes": 571392,
+      "seconds": 1.0025273999781348,
+      "cpu_seconds": 0.96875
+    },
+    {
+      "root": 5,
+      "regime": "clock",
+      "block": 1,
+      "id": "round-70-move-25",
+      "label": "prototype",
+      "uci": "e6d5",
+      "score": 489,
+      "depth": 7,
+      "nodes": 536576,
+      "seconds": 1.0012797999661416,
+      "cpu_seconds": 0.984375
+    },
+    {
+      "root": 5,
+      "regime": "clock",
+      "block": 2,
+      "id": "round-70-move-25",
+      "label": "prototype",
+      "uci": "e6d5",
+      "score": 489,
+      "depth": 7,
+      "nodes": 535552,
+      "seconds": 1.000263299967628,
+      "cpu_seconds": 0.984375
+    },
+    {
+      "root": 5,
+      "regime": "clock",
+      "block": 3,
+      "id": "round-70-move-25",
+      "label": "baseline",
+      "uci": "e6d5",
+      "score": 489,
+      "depth": 7,
+      "nodes": 558080,
+      "seconds": 1.0012384000001475,
+      "cpu_seconds": 0.96875
+    },
+    {
+      "root": 6,
+      "regime": "clock",
+      "block": 0,
+      "id": "round-71-move-18",
+      "label": "baseline",
+      "uci": "f2f3",
+      "score": -44,
+      "depth": 5,
+      "nodes": 447488,
+      "seconds": 1.0013679999974556,
+      "cpu_seconds": 0.953125
+    },
+    {
+      "root": 6,
+      "regime": "clock",
+      "block": 1,
+      "id": "round-71-move-18",
+      "label": "prototype",
+      "uci": "f2f3",
+      "score": -44,
+      "depth": 5,
+      "nodes": 411648,
+      "seconds": 1.0032266000052914,
+      "cpu_seconds": 0.9375
+    },
+    {
+      "root": 6,
+      "regime": "clock",
+      "block": 2,
+      "id": "round-71-move-18",
+      "label": "prototype",
+      "uci": "f2f3",
+      "score": -44,
+      "depth": 5,
+      "nodes": 457728,
+      "seconds": 1.0009231999865733,
+      "cpu_seconds": 0.96875
+    },
+    {
+      "root": 6,
+      "regime": "clock",
+      "block": 3,
+      "id": "round-71-move-18",
+      "label": "baseline",
+      "uci": "f2f3",
+      "score": -44,
+      "depth": 5,
+      "nodes": 491520,
+      "seconds": 1.0015293000033125,
+      "cpu_seconds": 0.953125
+    },
+    {
+      "root": 7,
+      "regime": "clock",
+      "block": 0,
+      "id": "round-71-move-30",
+      "label": "baseline",
+      "uci": "e4f6",
+      "score": 267,
+      "depth": 7,
+      "nodes": 578560,
+      "seconds": 1.0022564999526367,
+      "cpu_seconds": 0.96875
+    },
+    {
+      "root": 7,
+      "regime": "clock",
+      "block": 1,
+      "id": "round-71-move-30",
+      "label": "prototype",
+      "uci": "e4f6",
+      "score": 267,
+      "depth": 7,
+      "nodes": 514048,
+      "seconds": 1.0004851999692619,
+      "cpu_seconds": 0.96875
+    },
+    {
+      "root": 7,
+      "regime": "clock",
+      "block": 2,
+      "id": "round-71-move-30",
+      "label": "prototype",
+      "uci": "e4f6",
+      "score": 267,
+      "depth": 7,
+      "nodes": 513024,
+      "seconds": 1.0008709999965504,
+      "cpu_seconds": 0.96875
+    },
+    {
+      "root": 7,
+      "regime": "clock",
+      "block": 3,
+      "id": "round-71-move-30",
+      "label": "baseline",
+      "uci": "e4f6",
+      "score": 267,
+      "depth": 7,
+      "nodes": 592896,
+      "seconds": 1.0004516000044532,
+      "cpu_seconds": 0.9375
+    },
+    {
+      "root": 8,
+      "regime": "clock",
+      "block": 0,
+      "id": "round-71-move-34",
+      "label": "baseline",
+      "uci": "c4f4",
+      "score": 268,
+      "depth": 8,
+      "nodes": 651264,
+      "seconds": 1.0003448000061326,
+      "cpu_seconds": 0.96875
+    },
+    {
+      "root": 8,
+      "regime": "clock",
+      "block": 1,
+      "id": "round-71-move-34",
+      "label": "prototype",
+      "uci": "c4f4",
+      "score": 268,
+      "depth": 8,
+      "nodes": 596992,
+      "seconds": 1.0003461000160314,
+      "cpu_seconds": 0.953125
+    },
+    {
+      "root": 8,
+      "regime": "clock",
+      "block": 2,
+      "id": "round-71-move-34",
+      "label": "prototype",
+      "uci": "c4f4",
+      "score": 268,
+      "depth": 8,
+      "nodes": 590848,
+      "seconds": 1.0001058999914676,
+      "cpu_seconds": 0.953125
+    },
+    {
+      "root": 8,
+      "regime": "clock",
+      "block": 3,
+      "id": "round-71-move-34",
+      "label": "baseline",
+      "uci": "c4f4",
+      "score": 268,
+      "depth": 8,
+      "nodes": 641024,
+      "seconds": 1.0010366999777034,
+      "cpu_seconds": 0.96875
+    },
+    {
+      "root": 9,
+      "regime": "clock",
+      "block": 0,
+      "id": "round-72-move-18",
+      "label": "baseline",
+      "uci": "b8b7",
+      "score": -84,
+      "depth": 7,
+      "nodes": 526336,
+      "seconds": 1.001462000014726,
+      "cpu_seconds": 0.96875
+    },
+    {
+      "root": 9,
+      "regime": "clock",
+      "block": 1,
+      "id": "round-72-move-18",
+      "label": "prototype",
+      "uci": "b8b7",
+      "score": -84,
+      "depth": 7,
+      "nodes": 503808,
+      "seconds": 1.0007312000379898,
+      "cpu_seconds": 0.96875
+    },
+    {
+      "root": 9,
+      "regime": "clock",
+      "block": 2,
+      "id": "round-72-move-18",
+      "label": "prototype",
+      "uci": "b8b7",
+      "score": -84,
+      "depth": 7,
+      "nodes": 503808,
+      "seconds": 1.0009749000309967,
+      "cpu_seconds": 0.96875
+    },
+    {
+      "root": 9,
+      "regime": "clock",
+      "block": 3,
+      "id": "round-72-move-18",
+      "label": "baseline",
+      "uci": "b8b7",
+      "score": -84,
+      "depth": 7,
+      "nodes": 523264,
+      "seconds": 1.00007359997835,
+      "cpu_seconds": 0.953125
+    },
+    {
+      "root": 10,
+      "regime": "clock",
+      "block": 0,
+      "id": "round-72-move-24",
+      "label": "baseline",
+      "uci": "b4c3",
+      "score": -64,
+      "depth": 7,
+      "nodes": 526336,
+      "seconds": 1.001215800002683,
+      "cpu_seconds": 0.984375
+    },
+    {
+      "root": 10,
+      "regime": "clock",
+      "block": 1,
+      "id": "round-72-move-24",
+      "label": "prototype",
+      "uci": "b4c3",
+      "score": -64,
+      "depth": 7,
+      "nodes": 516096,
+      "seconds": 1.0019702999852598,
+      "cpu_seconds": 0.953125
+    },
+    {
+      "root": 10,
+      "regime": "clock",
+      "block": 2,
+      "id": "round-72-move-24",
+      "label": "prototype",
+      "uci": "b4c3",
+      "score": -64,
+      "depth": 7,
+      "nodes": 519168,
+      "seconds": 1.0009116999572143,
+      "cpu_seconds": 0.9375
+    },
+    {
+      "root": 10,
+      "regime": "clock",
+      "block": 3,
+      "id": "round-72-move-24",
+      "label": "baseline",
+      "uci": "b4c3",
+      "score": -64,
+      "depth": 7,
+      "nodes": 544768,
+      "seconds": 1.0020162000437267,
+      "cpu_seconds": 0.9375
+    },
+    {
+      "root": 11,
+      "regime": "clock",
+      "block": 0,
+      "id": "round-72-move-9",
+      "label": "baseline",
+      "uci": "c6d5",
+      "score": -18,
+      "depth": 7,
+      "nodes": 505856,
+      "seconds": 1.0002619999577291,
+      "cpu_seconds": 0.984375
+    },
+    {
+      "root": 11,
+      "regime": "clock",
+      "block": 1,
+      "id": "round-72-move-9",
+      "label": "prototype",
+      "uci": "c6d5",
+      "score": -18,
+      "depth": 7,
+      "nodes": 486400,
+      "seconds": 1.0004608999588527,
+      "cpu_seconds": 0.921875
+    },
+    {
+      "root": 11,
+      "regime": "clock",
+      "block": 2,
+      "id": "round-72-move-9",
+      "label": "prototype",
+      "uci": "c6d5",
+      "score": -18,
+      "depth": 7,
+      "nodes": 477184,
+      "seconds": 1.0000727000297047,
+      "cpu_seconds": 0.96875
+    },
+    {
+      "root": 11,
+      "regime": "clock",
+      "block": 3,
+      "id": "round-72-move-9",
+      "label": "baseline",
+      "uci": "c6d5",
+      "score": -18,
+      "depth": 7,
+      "nodes": 479232,
+      "seconds": 1.0000211999868043,
+      "cpu_seconds": 0.96875
+    },
+    {
+      "root": 12,
+      "regime": "clock",
+      "block": 0,
+      "id": "archive42-game1-ply20",
+      "label": "baseline",
+      "uci": "d3b5",
+      "score": -43,
+      "depth": 6,
+      "nodes": 430080,
+      "seconds": 1.0014109999756329,
+      "cpu_seconds": 0.890625
+    },
+    {
+      "root": 12,
+      "regime": "clock",
+      "block": 1,
+      "id": "archive42-game1-ply20",
+      "label": "prototype",
+      "uci": "d3b5",
+      "score": -43,
+      "depth": 6,
+      "nodes": 425984,
+      "seconds": 1.001421199995093,
+      "cpu_seconds": 0.921875
+    },
+    {
+      "root": 12,
+      "regime": "clock",
+      "block": 2,
+      "id": "archive42-game1-ply20",
+      "label": "prototype",
+      "uci": "d3b5",
+      "score": -43,
+      "depth": 6,
+      "nodes": 462848,
+      "seconds": 1.0002388000139035,
+      "cpu_seconds": 0.984375
+    },
+    {
+      "root": 12,
+      "regime": "clock",
+      "block": 3,
+      "id": "archive42-game1-ply20",
+      "label": "baseline",
+      "uci": "d3b5",
+      "score": -43,
+      "depth": 6,
+      "nodes": 517120,
+      "seconds": 1.0003272999892943,
+      "cpu_seconds": 0.953125
+    },
+    {
+      "root": 13,
+      "regime": "clock",
+      "block": 0,
+      "id": "archive42-game2-ply11",
+      "label": "baseline",
+      "uci": "a5b6",
+      "score": 116,
+      "depth": 7,
+      "nodes": 500736,
+      "seconds": 1.0008764999802224,
+      "cpu_seconds": 0.96875
+    },
+    {
+      "root": 13,
+      "regime": "clock",
+      "block": 1,
+      "id": "archive42-game2-ply11",
+      "label": "prototype",
+      "uci": "a5b6",
+      "score": 116,
+      "depth": 7,
+      "nodes": 464896,
+      "seconds": 1.0006315999780782,
+      "cpu_seconds": 0.9375
+    },
+    {
+      "root": 13,
+      "regime": "clock",
+      "block": 2,
+      "id": "archive42-game2-ply11",
+      "label": "prototype",
+      "uci": "a5b6",
+      "score": 116,
+      "depth": 7,
+      "nodes": 493568,
+      "seconds": 1.0013771999510936,
+      "cpu_seconds": 0.953125
+    },
+    {
+      "root": 13,
+      "regime": "clock",
+      "block": 3,
+      "id": "archive42-game2-ply11",
+      "label": "baseline",
+      "uci": "a5b6",
+      "score": 116,
+      "depth": 7,
+      "nodes": 495616,
+      "seconds": 1.0003393000224605,
+      "cpu_seconds": 0.953125
+    },
+    {
+      "root": 14,
+      "regime": "clock",
+      "block": 0,
+      "id": "archive42-game3-ply10",
+      "label": "baseline",
+      "uci": "d2c4",
+      "score": 27,
+      "depth": 6,
+      "nodes": 486400,
+      "seconds": 1.0007721000001766,
+      "cpu_seconds": 0.90625
+    },
+    {
+      "root": 14,
+      "regime": "clock",
+      "block": 1,
+      "id": "archive42-game3-ply10",
+      "label": "prototype",
+      "uci": "d2b3",
+      "score": 19,
+      "depth": 6,
+      "nodes": 471040,
+      "seconds": 1.0011510999756865,
+      "cpu_seconds": 0.9375
+    },
+    {
+      "root": 14,
+      "regime": "clock",
+      "block": 2,
+      "id": "archive42-game3-ply10",
+      "label": "prototype",
+      "uci": "d2b3",
+      "score": 19,
+      "depth": 6,
+      "nodes": 481280,
+      "seconds": 1.0004114999901503,
+      "cpu_seconds": 0.953125
+    },
+    {
+      "root": 14,
+      "regime": "clock",
+      "block": 3,
+      "id": "archive42-game3-ply10",
+      "label": "baseline",
+      "uci": "d2c4",
+      "score": 27,
+      "depth": 6,
+      "nodes": 499712,
+      "seconds": 1.0011027000145987,
+      "cpu_seconds": 0.96875
+    },
+    {
+      "root": 15,
+      "regime": "clock",
+      "block": 0,
+      "id": "archive42-game4-ply19",
+      "label": "baseline",
+      "uci": "c8d7",
+      "score": 59,
+      "depth": 6,
+      "nodes": 515072,
+      "seconds": 1.0005304999649525,
+      "cpu_seconds": 0.96875
+    },
+    {
+      "root": 15,
+      "regime": "clock",
+      "block": 1,
+      "id": "archive42-game4-ply19",
+      "label": "prototype",
+      "uci": "c8d7",
+      "score": 59,
+      "depth": 6,
+      "nodes": 505856,
+      "seconds": 1.0021439000265673,
+      "cpu_seconds": 1.0
+    },
+    {
+      "root": 15,
+      "regime": "clock",
+      "block": 2,
+      "id": "archive42-game4-ply19",
+      "label": "prototype",
+      "uci": "c8d7",
+      "score": 59,
+      "depth": 6,
+      "nodes": 499712,
+      "seconds": 1.0015687000122853,
+      "cpu_seconds": 0.96875
+    },
+    {
+      "root": 15,
+      "regime": "clock",
+      "block": 3,
+      "id": "archive42-game4-ply19",
+      "label": "baseline",
+      "uci": "c8d7",
+      "score": 59,
+      "depth": 6,
+      "nodes": 509952,
+      "seconds": 1.0008180000004359,
+      "cpu_seconds": 0.96875
+    }
+  ],
+  "review": [
+    {
+      "id": "round-68-move-25",
+      "best": [
+        {
+          "cp": 94,
+          "mate": null,
+          "depth": 16,
+          "pv": [
+            "f1e1",
+            "d1c2",
+            "h1g1",
+            "g4f6",
+            "e1c1",
+            "c8c4",
+            "d2c4",
+            "c2d3",
+            "c4d6",
+            "d3e4",
+            "d6e4",
+            "f6e4",
+            "c1d1",
+            "f8c8",
+            "d1d7",
+            "e4c5",
+            "d7d6",
+            "g8f8",
+            "c3c4",
+            "c8c7",
+            "d6b6",
+            "f8e7",
+            "a3a2"
+          ],
+          "nodes": 80005
+        },
+        {
+          "cp": 119,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "f1e1",
+            "d1c2",
+            "h1g1",
+            "c8c4",
+            "d2c4",
+            "f7f5",
+            "c4d6",
+            "f8d8",
+            "d6f5",
+            "d8d3",
+            "a3a2",
+            "c2b3",
+            "a2b2",
+            "b3a4",
+            "f5e7",
+            "g8h7",
+            "e7d5",
+            "a4d1",
+            "d5b6",
+            "a5a4",
+            "b6d5",
+            "d1b3"
+          ],
+          "nodes": 280743
+        }
+      ],
+      "choices": [
+        {
+          "root": 0,
+          "regime": "clock",
+          "block": 0,
+          "id": "round-68-move-25",
+          "label": "baseline",
+          "uci": "f1e1",
+          "score": 93,
+          "depth": 8,
+          "nodes": 585728,
+          "seconds": 1.0018002999713644,
+          "cpu_seconds": 0.953125,
+          "values": [
+            {
+              "cp": 94,
+              "mate": null,
+              "depth": 16,
+              "pv": [
+                "f1e1",
+                "d1c2",
+                "h1g1",
+                "g4f6",
+                "e1c1",
+                "c8c4",
+                "d2c4",
+                "c2d3",
+                "c4d6",
+                "d3e4",
+                "d6e4",
+                "f6e4",
+                "c1d1",
+                "f8c8",
+                "d1d7",
+                "e4c5",
+                "d7d6",
+                "g8f8",
+                "c3c4",
+                "c8c7",
+                "d6b6",
+                "f8e7",
+                "a3a2"
+              ],
+              "nodes": 80005
+            },
+            {
+              "cp": 119,
+              "mate": null,
+              "depth": 17,
+              "pv": [
+                "f1e1",
+                "d1c2",
+                "h1g1",
+                "c8c4",
+                "d2c4",
+                "f7f5",
+                "c4d6",
+                "f8d8",
+                "d6f5",
+                "d8d3",
+                "a3a2",
+                "c2b3",
+                "a2b2",
+                "b3a4",
+                "f5e7",
+                "g8h7",
+                "e7d5",
+                "a4d1",
+                "d5b6",
+                "a5a4",
+                "b6d5",
+                "d1b3"
+              ],
+              "nodes": 280743
+            }
+          ],
+          "regret_cp": [
+            0,
+            0
+          ],
+          "major": false,
+          "mate_loss": false
+        },
+        {
+          "root": 0,
+          "regime": "clock",
+          "block": 1,
+          "id": "round-68-move-25",
+          "label": "prototype",
+          "uci": "f1e1",
+          "score": 93,
+          "depth": 8,
+          "nodes": 558080,
+          "seconds": 1.000659400015138,
+          "cpu_seconds": 0.9375,
+          "values": [
+            {
+              "cp": 94,
+              "mate": null,
+              "depth": 16,
+              "pv": [
+                "f1e1",
+                "d1c2",
+                "h1g1",
+                "g4f6",
+                "e1c1",
+                "c8c4",
+                "d2c4",
+                "c2d3",
+                "c4d6",
+                "d3e4",
+                "d6e4",
+                "f6e4",
+                "c1d1",
+                "f8c8",
+                "d1d7",
+                "e4c5",
+                "d7d6",
+                "g8f8",
+                "c3c4",
+                "c8c7",
+                "d6b6",
+                "f8e7",
+                "a3a2"
+              ],
+              "nodes": 80005
+            },
+            {
+              "cp": 119,
+              "mate": null,
+              "depth": 17,
+              "pv": [
+                "f1e1",
+                "d1c2",
+                "h1g1",
+                "c8c4",
+                "d2c4",
+                "f7f5",
+                "c4d6",
+                "f8d8",
+                "d6f5",
+                "d8d3",
+                "a3a2",
+                "c2b3",
+                "a2b2",
+                "b3a4",
+                "f5e7",
+                "g8h7",
+                "e7d5",
+                "a4d1",
+                "d5b6",
+                "a5a4",
+                "b6d5",
+                "d1b3"
+              ],
+              "nodes": 280743
+            }
+          ],
+          "regret_cp": [
+            0,
+            0
+          ],
+          "major": false,
+          "mate_loss": false
+        },
+        {
+          "root": 0,
+          "regime": "clock",
+          "block": 2,
+          "id": "round-68-move-25",
+          "label": "prototype",
+          "uci": "f1e1",
+          "score": 93,
+          "depth": 8,
+          "nodes": 556032,
+          "seconds": 1.0014115000376478,
+          "cpu_seconds": 0.9375,
+          "values": [
+            {
+              "cp": 94,
+              "mate": null,
+              "depth": 16,
+              "pv": [
+                "f1e1",
+                "d1c2",
+                "h1g1",
+                "g4f6",
+                "e1c1",
+                "c8c4",
+                "d2c4",
+                "c2d3",
+                "c4d6",
+                "d3e4",
+                "d6e4",
+                "f6e4",
+                "c1d1",
+                "f8c8",
+                "d1d7",
+                "e4c5",
+                "d7d6",
+                "g8f8",
+                "c3c4",
+                "c8c7",
+                "d6b6",
+                "f8e7",
+                "a3a2"
+              ],
+              "nodes": 80005
+            },
+            {
+              "cp": 119,
+              "mate": null,
+              "depth": 17,
+              "pv": [
+                "f1e1",
+                "d1c2",
+                "h1g1",
+                "c8c4",
+                "d2c4",
+                "f7f5",
+                "c4d6",
+                "f8d8",
+                "d6f5",
+                "d8d3",
+                "a3a2",
+                "c2b3",
+                "a2b2",
+                "b3a4",
+                "f5e7",
+                "g8h7",
+                "e7d5",
+                "a4d1",
+                "d5b6",
+                "a5a4",
+                "b6d5",
+                "d1b3"
+              ],
+              "nodes": 280743
+            }
+          ],
+          "regret_cp": [
+            0,
+            0
+          ],
+          "major": false,
+          "mate_loss": false
+        },
+        {
+          "root": 0,
+          "regime": "clock",
+          "block": 3,
+          "id": "round-68-move-25",
+          "label": "baseline",
+          "uci": "f1e1",
+          "score": 93,
+          "depth": 8,
+          "nodes": 580608,
+          "seconds": 1.0007403999916278,
+          "cpu_seconds": 0.984375,
+          "values": [
+            {
+              "cp": 94,
+              "mate": null,
+              "depth": 16,
+              "pv": [
+                "f1e1",
+                "d1c2",
+                "h1g1",
+                "g4f6",
+                "e1c1",
+                "c8c4",
+                "d2c4",
+                "c2d3",
+                "c4d6",
+                "d3e4",
+                "d6e4",
+                "f6e4",
+                "c1d1",
+                "f8c8",
+                "d1d7",
+                "e4c5",
+                "d7d6",
+                "g8f8",
+                "c3c4",
+                "c8c7",
+                "d6b6",
+                "f8e7",
+                "a3a2"
+              ],
+              "nodes": 80005
+            },
+            {
+              "cp": 119,
+              "mate": null,
+              "depth": 17,
+              "pv": [
+                "f1e1",
+                "d1c2",
+                "h1g1",
+                "c8c4",
+                "d2c4",
+                "f7f5",
+                "c4d6",
+                "f8d8",
+                "d6f5",
+                "d8d3",
+                "a3a2",
+                "c2b3",
+                "a2b2",
+                "b3a4",
+                "f5e7",
+                "g8h7",
+                "e7d5",
+                "a4d1",
+                "d5b6",
+                "a5a4",
+                "b6d5",
+                "d1b3"
+              ],
+              "nodes": 280743
+            }
+          ],
+          "regret_cp": [
+            0,
+            0
+          ],
+          "major": false,
+          "mate_loss": false
+        }
+      ]
+    },
+    {
+      "id": "round-68-move-51",
+      "best": [
+        {
+          "cp": 214,
+          "mate": null,
+          "depth": 14,
+          "pv": [
+            "f3g4",
+            "e7f7",
+            "c1f1",
+            "f7g7",
+            "f1d1",
+            "e6d4",
+            "d1d3",
+            "g7f7",
+            "d3g3",
+            "f7g7",
+            "g3c3",
+            "g7f7",
+            "c3d3",
+            "f7f8",
+            "d3h3",
+            "d4e6"
+          ],
+          "nodes": 59092
+        },
+        {
+          "cp": 173,
+          "mate": null,
+          "depth": 18,
+          "pv": [
+            "f3g4",
+            "e7f7",
+            "c1f1",
+            "f7g7",
+            "f1d1",
+            "e6d4",
+            "d1d3",
+            "g7f8",
+            "d3g3",
+            "f8g7",
+            "g3g1",
+            "g7f7",
+            "g1g2",
+            "f7g7",
+            "g2d2",
+            "g7f6",
+            "d2f2",
+            "f6g7",
+            "h4h5",
+            "d4e6"
+          ],
+          "nodes": 224553
+        }
+      ],
+      "choices": [
+        {
+          "root": 1,
+          "regime": "clock",
+          "block": 0,
+          "id": "round-68-move-51",
+          "label": "baseline",
+          "uci": "c1g1",
+          "score": 148,
+          "depth": 9,
+          "nodes": 703488,
+          "seconds": 1.0004449000116438,
+          "cpu_seconds": 0.953125,
+          "values": [
+            {
+              "cp": 268,
+              "mate": null,
+              "depth": 15,
+              "pv": [
+                "c1g1",
+                "e7f6",
+                "g1d1",
+                "e6d4",
+                "f3g4",
+                "f6g7",
+                "d1d2",
+                "g7f6",
+                "d2f2",
+                "f6g7",
+                "f2g2",
+                "d4b3",
+                "h4h5",
+                "g6h5",
+                "g4h5",
+                "g7f7"
+              ],
+              "nodes": 56328
+            },
+            {
+              "cp": 325,
+              "mate": null,
+              "depth": 18,
+              "pv": [
+                "c1g1",
+                "e7f6",
+                "g1d1",
+                "e6d4",
+                "f3g4",
+                "f6g7",
+                "d1d2",
+                "g7f6",
+                "d2f2",
+                "f6g7",
+                "h4h5",
+                "d4b3",
+                "h5h6",
+                "g7h6",
+                "f2f6",
+                "b3d2",
+                "f6f7",
+                "d6d5",
+                "e4d5",
+                "d2c4",
+                "f7d7",
+                "e5e4",
+                "g4f4",
+                "e4e3",
+                "d7e7",
+                "g6g5",
+                "f4f3"
+              ],
+              "nodes": 253736
+            }
+          ],
+          "regret_cp": [
+            0,
+            0
+          ],
+          "major": false,
+          "mate_loss": false
+        },
+        {
+          "root": 1,
+          "regime": "clock",
+          "block": 1,
+          "id": "round-68-move-51",
+          "label": "prototype",
+          "uci": "c1g1",
+          "score": 148,
+          "depth": 9,
+          "nodes": 627712,
+          "seconds": 1.0012579999747686,
+          "cpu_seconds": 0.96875,
+          "values": [
+            {
+              "cp": 268,
+              "mate": null,
+              "depth": 15,
+              "pv": [
+                "c1g1",
+                "e7f6",
+                "g1d1",
+                "e6d4",
+                "f3g4",
+                "f6g7",
+                "d1d2",
+                "g7f6",
+                "d2f2",
+                "f6g7",
+                "f2g2",
+                "d4b3",
+                "h4h5",
+                "g6h5",
+                "g4h5",
+                "g7f7"
+              ],
+              "nodes": 56328
+            },
+            {
+              "cp": 325,
+              "mate": null,
+              "depth": 18,
+              "pv": [
+                "c1g1",
+                "e7f6",
+                "g1d1",
+                "e6d4",
+                "f3g4",
+                "f6g7",
+                "d1d2",
+                "g7f6",
+                "d2f2",
+                "f6g7",
+                "h4h5",
+                "d4b3",
+                "h5h6",
+                "g7h6",
+                "f2f6",
+                "b3d2",
+                "f6f7",
+                "d6d5",
+                "e4d5",
+                "d2c4",
+                "f7d7",
+                "e5e4",
+                "g4f4",
+                "e4e3",
+                "d7e7",
+                "g6g5",
+                "f4f3"
+              ],
+              "nodes": 253736
+            }
+          ],
+          "regret_cp": [
+            0,
+            0
+          ],
+          "major": false,
+          "mate_loss": false
+        },
+        {
+          "root": 1,
+          "regime": "clock",
+          "block": 2,
+          "id": "round-68-move-51",
+          "label": "prototype",
+          "uci": "c1g1",
+          "score": 148,
+          "depth": 9,
+          "nodes": 568320,
+          "seconds": 1.0013387000071816,
+          "cpu_seconds": 0.953125,
+          "values": [
+            {
+              "cp": 268,
+              "mate": null,
+              "depth": 15,
+              "pv": [
+                "c1g1",
+                "e7f6",
+                "g1d1",
+                "e6d4",
+                "f3g4",
+                "f6g7",
+                "d1d2",
+                "g7f6",
+                "d2f2",
+                "f6g7",
+                "f2g2",
+                "d4b3",
+                "h4h5",
+                "g6h5",
+                "g4h5",
+                "g7f7"
+              ],
+              "nodes": 56328
+            },
+            {
+              "cp": 325,
+              "mate": null,
+              "depth": 18,
+              "pv": [
+                "c1g1",
+                "e7f6",
+                "g1d1",
+                "e6d4",
+                "f3g4",
+                "f6g7",
+                "d1d2",
+                "g7f6",
+                "d2f2",
+                "f6g7",
+                "h4h5",
+                "d4b3",
+                "h5h6",
+                "g7h6",
+                "f2f6",
+                "b3d2",
+                "f6f7",
+                "d6d5",
+                "e4d5",
+                "d2c4",
+                "f7d7",
+                "e5e4",
+                "g4f4",
+                "e4e3",
+                "d7e7",
+                "g6g5",
+                "f4f3"
+              ],
+              "nodes": 253736
+            }
+          ],
+          "regret_cp": [
+            0,
+            0
+          ],
+          "major": false,
+          "mate_loss": false
+        },
+        {
+          "root": 1,
+          "regime": "clock",
+          "block": 3,
+          "id": "round-68-move-51",
+          "label": "baseline",
+          "uci": "c1g1",
+          "score": 148,
+          "depth": 9,
+          "nodes": 684032,
+          "seconds": 1.0016340999864042,
+          "cpu_seconds": 0.984375,
+          "values": [
+            {
+              "cp": 268,
+              "mate": null,
+              "depth": 15,
+              "pv": [
+                "c1g1",
+                "e7f6",
+                "g1d1",
+                "e6d4",
+                "f3g4",
+                "f6g7",
+                "d1d2",
+                "g7f6",
+                "d2f2",
+                "f6g7",
+                "f2g2",
+                "d4b3",
+                "h4h5",
+                "g6h5",
+                "g4h5",
+                "g7f7"
+              ],
+              "nodes": 56328
+            },
+            {
+              "cp": 325,
+              "mate": null,
+              "depth": 18,
+              "pv": [
+                "c1g1",
+                "e7f6",
+                "g1d1",
+                "e6d4",
+                "f3g4",
+                "f6g7",
+                "d1d2",
+                "g7f6",
+                "d2f2",
+                "f6g7",
+                "h4h5",
+                "d4b3",
+                "h5h6",
+                "g7h6",
+                "f2f6",
+                "b3d2",
+                "f6f7",
+                "d6d5",
+                "e4d5",
+                "d2c4",
+                "f7d7",
+                "e5e4",
+                "g4f4",
+                "e4e3",
+                "d7e7",
+                "g6g5",
+                "f4f3"
+              ],
+              "nodes": 253736
+            }
+          ],
+          "regret_cp": [
+            0,
+            0
+          ],
+          "major": false,
+          "mate_loss": false
+        }
+      ]
+    },
+    {
+      "id": "round-68-move-80",
+      "best": [
+        {
+          "cp": 209,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "d1f1",
+            "e7e6",
+            "f1e1",
+            "c5a4",
+            "f3g4",
+            "e6f7",
+            "e1d1",
+            "a4c5",
+            "d1d6",
+            "a5a4",
+            "d6d1",
+            "f7g7",
+            "d1d2",
+            "g7h6",
+            "d2a2",
+            "h6g7",
+            "a2a3",
+            "g7f7",
+            "a3a1",
+            "c5e4",
+            "a1a4"
+          ],
+          "nodes": 80076
+        },
+        {
+          "cp": 204,
+          "mate": null,
+          "depth": 20,
+          "pv": [
+            "d1e1",
+            "c5a4",
+            "f3g4",
+            "e7f7",
+            "e1d1",
+            "a4c5",
+            "d1d6",
+            "a5a4",
+            "h4h5",
+            "g6h5",
+            "g4f5",
+            "f7e7",
+            "d6d2",
+            "c5b3",
+            "d2a2",
+            "e7d6",
+            "a2a4",
+            "b3a5",
+            "c4c5",
+            "d6c5",
+            "f5e5",
+            "c5b5",
+            "a4a1",
+            "b5c4",
+            "e5f6"
+          ],
+          "nodes": 215809
+        }
+      ],
+      "choices": [
+        {
+          "root": 2,
+          "regime": "clock",
+          "block": 0,
+          "id": "round-68-move-80",
+          "label": "baseline",
+          "uci": "d1a1",
+          "score": 0,
+          "depth": 10,
+          "nodes": 706560,
+          "seconds": 1.0009394000517204,
+          "cpu_seconds": 0.953125,
+          "values": [
+            {
+              "cp": 0,
+              "mate": null,
+              "depth": 78,
+              "pv": [
+                "d1a1",
+                "e7f6"
+              ],
+              "nodes": 80015
+            },
+            {
+              "cp": 0,
+              "mate": null,
+              "depth": 94,
+              "pv": [
+                "d1a1",
+                "e7f6"
+              ],
+              "nodes": 320148
+            }
+          ],
+          "regret_cp": [
+            209,
+            204
+          ],
+          "major": true,
+          "mate_loss": false
+        },
+        {
+          "root": 2,
+          "regime": "clock",
+          "block": 1,
+          "id": "round-68-move-80",
+          "label": "prototype",
+          "uci": "d1a1",
+          "score": 0,
+          "depth": 10,
+          "nodes": 677888,
+          "seconds": 1.0011572999646887,
+          "cpu_seconds": 0.953125,
+          "values": [
+            {
+              "cp": 0,
+              "mate": null,
+              "depth": 78,
+              "pv": [
+                "d1a1",
+                "e7f6"
+              ],
+              "nodes": 80015
+            },
+            {
+              "cp": 0,
+              "mate": null,
+              "depth": 94,
+              "pv": [
+                "d1a1",
+                "e7f6"
+              ],
+              "nodes": 320148
+            }
+          ],
+          "regret_cp": [
+            209,
+            204
+          ],
+          "major": true,
+          "mate_loss": false
+        },
+        {
+          "root": 2,
+          "regime": "clock",
+          "block": 2,
+          "id": "round-68-move-80",
+          "label": "prototype",
+          "uci": "d1a1",
+          "score": 0,
+          "depth": 10,
+          "nodes": 687104,
+          "seconds": 1.0013427999801934,
+          "cpu_seconds": 1.0,
+          "values": [
+            {
+              "cp": 0,
+              "mate": null,
+              "depth": 78,
+              "pv": [
+                "d1a1",
+                "e7f6"
+              ],
+              "nodes": 80015
+            },
+            {
+              "cp": 0,
+              "mate": null,
+              "depth": 94,
+              "pv": [
+                "d1a1",
+                "e7f6"
+              ],
+              "nodes": 320148
+            }
+          ],
+          "regret_cp": [
+            209,
+            204
+          ],
+          "major": true,
+          "mate_loss": false
+        },
+        {
+          "root": 2,
+          "regime": "clock",
+          "block": 3,
+          "id": "round-68-move-80",
+          "label": "baseline",
+          "uci": "d1a1",
+          "score": 0,
+          "depth": 10,
+          "nodes": 729088,
+          "seconds": 1.00117829994997,
+          "cpu_seconds": 0.953125,
+          "values": [
+            {
+              "cp": 0,
+              "mate": null,
+              "depth": 78,
+              "pv": [
+                "d1a1",
+                "e7f6"
+              ],
+              "nodes": 80015
+            },
+            {
+              "cp": 0,
+              "mate": null,
+              "depth": 94,
+              "pv": [
+                "d1a1",
+                "e7f6"
+              ],
+              "nodes": 320148
+            }
+          ],
+          "regret_cp": [
+            209,
+            204
+          ],
+          "major": true,
+          "mate_loss": false
+        }
+      ]
+    },
+    {
+      "id": "round-70-move-14",
+      "best": [
+        {
+          "cp": 284,
+          "mate": null,
+          "depth": 15,
+          "pv": [
+            "d7h3",
+            "f1e1",
+            "d8d7",
+            "e1e4",
+            "a8e8",
+            "e4h4",
+            "c6e7",
+            "d5e4",
+            "h3f5",
+            "d1d3",
+            "f5e4",
+            "d3e4",
+            "e7f5",
+            "e4g4",
+            "g7g6",
+            "c1d2"
+          ],
+          "nodes": 80070
+        },
+        {
+          "cp": 266,
+          "mate": null,
+          "depth": 18,
+          "pv": [
+            "d7h3",
+            "f1e1",
+            "d8d7",
+            "e1e4",
+            "a8e8",
+            "e4h4",
+            "c6e7",
+            "d5e4",
+            "h3f5",
+            "d1c2",
+            "f5e4",
+            "c2e4",
+            "e7g6",
+            "e4g4",
+            "d7g4",
+            "h4g4",
+            "f7f5",
+            "g5f6",
+            "f8f6",
+            "f3e5",
+            "d6e5",
+            "d4e5",
+            "g6e5",
+            "g4g3",
+            "e5f3",
+            "g1g2",
+            "f3h4",
+            "g2h3",
+            "h4f5",
+            "c1g5"
+          ],
+          "nodes": 320088
+        }
+      ],
+      "choices": [
+        {
+          "root": 3,
+          "regime": "clock",
+          "block": 0,
+          "id": "round-70-move-14",
+          "label": "baseline",
+          "uci": "d7h3",
+          "score": 45,
+          "depth": 7,
+          "nodes": 566272,
+          "seconds": 1.0009319999953732,
+          "cpu_seconds": 1.0,
+          "values": [
+            {
+              "cp": 284,
+              "mate": null,
+              "depth": 15,
+              "pv": [
+                "d7h3",
+                "f1e1",
+                "d8d7",
+                "e1e4",
+                "a8e8",
+                "e4h4",
+                "c6e7",
+                "d5e4",
+                "h3f5",
+                "d1d3",
+                "f5e4",
+                "d3e4",
+                "e7f5",
+                "e4g4",
+                "g7g6",
+                "c1d2"
+              ],
+              "nodes": 80070
+            },
+            {
+              "cp": 266,
+              "mate": null,
+              "depth": 18,
+              "pv": [
+                "d7h3",
+                "f1e1",
+                "d8d7",
+                "e1e4",
+                "a8e8",
+                "e4h4",
+                "c6e7",
+                "d5e4",
+                "h3f5",
+                "d1c2",
+                "f5e4",
+                "c2e4",
+                "e7g6",
+                "e4g4",
+                "d7g4",
+                "h4g4",
+                "f7f5",
+                "g5f6",
+                "f8f6",
+                "f3e5",
+                "d6e5",
+                "d4e5",
+                "g6e5",
+                "g4g3",
+                "e5f3",
+                "g1g2",
+                "f3h4",
+                "g2h3",
+                "h4f5",
+                "c1g5"
+              ],
+              "nodes": 320088
+            }
+          ],
+          "regret_cp": [
+            0,
+            0
+          ],
+          "major": false,
+          "mate_loss": false
+        },
+        {
+          "root": 3,
+          "regime": "clock",
+          "block": 1,
+          "id": "round-70-move-14",
+          "label": "prototype",
+          "uci": "d7h3",
+          "score": 45,
+          "depth": 7,
+          "nodes": 539648,
+          "seconds": 1.000769299978856,
+          "cpu_seconds": 0.96875,
+          "values": [
+            {
+              "cp": 284,
+              "mate": null,
+              "depth": 15,
+              "pv": [
+                "d7h3",
+                "f1e1",
+                "d8d7",
+                "e1e4",
+                "a8e8",
+                "e4h4",
+                "c6e7",
+                "d5e4",
+                "h3f5",
+                "d1d3",
+                "f5e4",
+                "d3e4",
+                "e7f5",
+                "e4g4",
+                "g7g6",
+                "c1d2"
+              ],
+              "nodes": 80070
+            },
+            {
+              "cp": 266,
+              "mate": null,
+              "depth": 18,
+              "pv": [
+                "d7h3",
+                "f1e1",
+                "d8d7",
+                "e1e4",
+                "a8e8",
+                "e4h4",
+                "c6e7",
+                "d5e4",
+                "h3f5",
+                "d1c2",
+                "f5e4",
+                "c2e4",
+                "e7g6",
+                "e4g4",
+                "d7g4",
+                "h4g4",
+                "f7f5",
+                "g5f6",
+                "f8f6",
+                "f3e5",
+                "d6e5",
+                "d4e5",
+                "g6e5",
+                "g4g3",
+                "e5f3",
+                "g1g2",
+                "f3h4",
+                "g2h3",
+                "h4f5",
+                "c1g5"
+              ],
+              "nodes": 320088
+            }
+          ],
+          "regret_cp": [
+            0,
+            0
+          ],
+          "major": false,
+          "mate_loss": false
+        },
+        {
+          "root": 3,
+          "regime": "clock",
+          "block": 2,
+          "id": "round-70-move-14",
+          "label": "prototype",
+          "uci": "d7h3",
+          "score": 45,
+          "depth": 7,
+          "nodes": 522240,
+          "seconds": 1.0020511000184342,
+          "cpu_seconds": 0.90625,
+          "values": [
+            {
+              "cp": 284,
+              "mate": null,
+              "depth": 15,
+              "pv": [
+                "d7h3",
+                "f1e1",
+                "d8d7",
+                "e1e4",
+                "a8e8",
+                "e4h4",
+                "c6e7",
+                "d5e4",
+                "h3f5",
+                "d1d3",
+                "f5e4",
+                "d3e4",
+                "e7f5",
+                "e4g4",
+                "g7g6",
+                "c1d2"
+              ],
+              "nodes": 80070
+            },
+            {
+              "cp": 266,
+              "mate": null,
+              "depth": 18,
+              "pv": [
+                "d7h3",
+                "f1e1",
+                "d8d7",
+                "e1e4",
+                "a8e8",
+                "e4h4",
+                "c6e7",
+                "d5e4",
+                "h3f5",
+                "d1c2",
+                "f5e4",
+                "c2e4",
+                "e7g6",
+                "e4g4",
+                "d7g4",
+                "h4g4",
+                "f7f5",
+                "g5f6",
+                "f8f6",
+                "f3e5",
+                "d6e5",
+                "d4e5",
+                "g6e5",
+                "g4g3",
+                "e5f3",
+                "g1g2",
+                "f3h4",
+                "g2h3",
+                "h4f5",
+                "c1g5"
+              ],
+              "nodes": 320088
+            }
+          ],
+          "regret_cp": [
+            0,
+            0
+          ],
+          "major": false,
+          "mate_loss": false
+        },
+        {
+          "root": 3,
+          "regime": "clock",
+          "block": 3,
+          "id": "round-70-move-14",
+          "label": "baseline",
+          "uci": "d7h3",
+          "score": 45,
+          "depth": 7,
+          "nodes": 568320,
+          "seconds": 1.001299099996686,
+          "cpu_seconds": 0.96875,
+          "values": [
+            {
+              "cp": 284,
+              "mate": null,
+              "depth": 15,
+              "pv": [
+                "d7h3",
+                "f1e1",
+                "d8d7",
+                "e1e4",
+                "a8e8",
+                "e4h4",
+                "c6e7",
+                "d5e4",
+                "h3f5",
+                "d1d3",
+                "f5e4",
+                "d3e4",
+                "e7f5",
+                "e4g4",
+                "g7g6",
+                "c1d2"
+              ],
+              "nodes": 80070
+            },
+            {
+              "cp": 266,
+              "mate": null,
+              "depth": 18,
+              "pv": [
+                "d7h3",
+                "f1e1",
+                "d8d7",
+                "e1e4",
+                "a8e8",
+                "e4h4",
+                "c6e7",
+                "d5e4",
+                "h3f5",
+                "d1c2",
+                "f5e4",
+                "c2e4",
+                "e7g6",
+                "e4g4",
+                "d7g4",
+                "h4g4",
+                "f7f5",
+                "g5f6",
+                "f8f6",
+                "f3e5",
+                "d6e5",
+                "d4e5",
+                "g6e5",
+                "g4g3",
+                "e5f3",
+                "g1g2",
+                "f3h4",
+                "g2h3",
+                "h4f5",
+                "c1g5"
+              ],
+              "nodes": 320088
+            }
+          ],
+          "regret_cp": [
+            0,
+            0
+          ],
+          "major": false,
+          "mate_loss": false
+        }
+      ]
+    },
+    {
+      "id": "round-70-move-15",
+      "best": [
+        {
+          "cp": 268,
+          "mate": null,
+          "depth": 15,
+          "pv": [
+            "d8d7",
+            "e1e4",
+            "c6b4",
+            "d5c4",
+            "a8c8",
+            "b2b3",
+            "b7b5",
+            "a4b5",
+            "a6b5",
+            "c4f1",
+            "d7f5",
+            "d1e2",
+            "h3f1",
+            "g1f1",
+            "f7f6"
+          ],
+          "nodes": 80007
+        },
+        {
+          "cp": 319,
+          "mate": null,
+          "depth": 16,
+          "pv": [
+            "d8d7",
+            "f3h4",
+            "d6b4",
+            "e1e3",
+            "d7d5",
+            "e3h3",
+            "c6d4",
+            "c1e3",
+            "a8d8",
+            "e3d4",
+            "d5d4",
+            "d1h5"
+          ],
+          "nodes": 154954
+        }
+      ],
+      "choices": [
+        {
+          "root": 4,
+          "regime": "clock",
+          "block": 0,
+          "id": "round-70-move-15",
+          "label": "baseline",
+          "uci": "d6b4",
+          "score": -2,
+          "depth": 6,
+          "nodes": 542720,
+          "seconds": 1.00121489999583,
+          "cpu_seconds": 0.984375,
+          "values": [
+            {
+              "cp": 168,
+              "mate": null,
+              "depth": 18,
+              "pv": [
+                "d6b4",
+                "d5c6",
+                "b7c6",
+                "c1d2",
+                "a8b8",
+                "d2b4",
+                "b8b4",
+                "a1c1",
+                "h3e6",
+                "c1c6",
+                "e6d5",
+                "c6c5",
+                "b4b2",
+                "d1c1",
+                "b2b4",
+                "c1d2",
+                "b4b3",
+                "e1e3",
+                "b3b1",
+                "e3e1",
+                "d8d7"
+              ],
+              "nodes": 80049
+            },
+            {
+              "cp": 178,
+              "mate": null,
+              "depth": 20,
+              "pv": [
+                "d6b4",
+                "d5c6",
+                "b7c6",
+                "c1d2",
+                "a8b8",
+                "a1c1",
+                "h3g4",
+                "e1e3",
+                "b4e7",
+                "d1c2",
+                "g4f3",
+                "e3f3",
+                "e7g5",
+                "d2g5",
+                "d8g5",
+                "f3g3",
+                "g5d5"
+              ],
+              "nodes": 320362
+            }
+          ],
+          "regret_cp": [
+            100,
+            141
+          ],
+          "major": false,
+          "mate_loss": false
+        },
+        {
+          "root": 4,
+          "regime": "clock",
+          "block": 1,
+          "id": "round-70-move-15",
+          "label": "prototype",
+          "uci": "d6b4",
+          "score": -2,
+          "depth": 6,
+          "nodes": 528384,
+          "seconds": 1.0015551999676973,
+          "cpu_seconds": 0.953125,
+          "values": [
+            {
+              "cp": 168,
+              "mate": null,
+              "depth": 18,
+              "pv": [
+                "d6b4",
+                "d5c6",
+                "b7c6",
+                "c1d2",
+                "a8b8",
+                "d2b4",
+                "b8b4",
+                "a1c1",
+                "h3e6",
+                "c1c6",
+                "e6d5",
+                "c6c5",
+                "b4b2",
+                "d1c1",
+                "b2b4",
+                "c1d2",
+                "b4b3",
+                "e1e3",
+                "b3b1",
+                "e3e1",
+                "d8d7"
+              ],
+              "nodes": 80049
+            },
+            {
+              "cp": 178,
+              "mate": null,
+              "depth": 20,
+              "pv": [
+                "d6b4",
+                "d5c6",
+                "b7c6",
+                "c1d2",
+                "a8b8",
+                "a1c1",
+                "h3g4",
+                "e1e3",
+                "b4e7",
+                "d1c2",
+                "g4f3",
+                "e3f3",
+                "e7g5",
+                "d2g5",
+                "d8g5",
+                "f3g3",
+                "g5d5"
+              ],
+              "nodes": 320362
+            }
+          ],
+          "regret_cp": [
+            100,
+            141
+          ],
+          "major": false,
+          "mate_loss": false
+        },
+        {
+          "root": 4,
+          "regime": "clock",
+          "block": 2,
+          "id": "round-70-move-15",
+          "label": "prototype",
+          "uci": "d6b4",
+          "score": -2,
+          "depth": 6,
+          "nodes": 474112,
+          "seconds": 1.0008383000385948,
+          "cpu_seconds": 0.953125,
+          "values": [
+            {
+              "cp": 168,
+              "mate": null,
+              "depth": 18,
+              "pv": [
+                "d6b4",
+                "d5c6",
+                "b7c6",
+                "c1d2",
+                "a8b8",
+                "d2b4",
+                "b8b4",
+                "a1c1",
+                "h3e6",
+                "c1c6",
+                "e6d5",
+                "c6c5",
+                "b4b2",
+                "d1c1",
+                "b2b4",
+                "c1d2",
+                "b4b3",
+                "e1e3",
+                "b3b1",
+                "e3e1",
+                "d8d7"
+              ],
+              "nodes": 80049
+            },
+            {
+              "cp": 178,
+              "mate": null,
+              "depth": 20,
+              "pv": [
+                "d6b4",
+                "d5c6",
+                "b7c6",
+                "c1d2",
+                "a8b8",
+                "a1c1",
+                "h3g4",
+                "e1e3",
+                "b4e7",
+                "d1c2",
+                "g4f3",
+                "e3f3",
+                "e7g5",
+                "d2g5",
+                "d8g5",
+                "f3g3",
+                "g5d5"
+              ],
+              "nodes": 320362
+            }
+          ],
+          "regret_cp": [
+            100,
+            141
+          ],
+          "major": false,
+          "mate_loss": false
+        },
+        {
+          "root": 4,
+          "regime": "clock",
+          "block": 3,
+          "id": "round-70-move-15",
+          "label": "baseline",
+          "uci": "d6b4",
+          "score": -2,
+          "depth": 6,
+          "nodes": 520192,
+          "seconds": 1.0013432000414468,
+          "cpu_seconds": 0.984375,
+          "values": [
+            {
+              "cp": 168,
+              "mate": null,
+              "depth": 18,
+              "pv": [
+                "d6b4",
+                "d5c6",
+                "b7c6",
+                "c1d2",
+                "a8b8",
+                "d2b4",
+                "b8b4",
+                "a1c1",
+                "h3e6",
+                "c1c6",
+                "e6d5",
+                "c6c5",
+                "b4b2",
+                "d1c1",
+                "b2b4",
+                "c1d2",
+                "b4b3",
+                "e1e3",
+                "b3b1",
+                "e3e1",
+                "d8d7"
+              ],
+              "nodes": 80049
+            },
+            {
+              "cp": 178,
+              "mate": null,
+              "depth": 20,
+              "pv": [
+                "d6b4",
+                "d5c6",
+                "b7c6",
+                "c1d2",
+                "a8b8",
+                "a1c1",
+                "h3g4",
+                "e1e3",
+                "b4e7",
+                "d1c2",
+                "g4f3",
+                "e3f3",
+                "e7g5",
+                "d2g5",
+                "d8g5",
+                "f3g3",
+                "g5d5"
+              ],
+              "nodes": 320362
+            }
+          ],
+          "regret_cp": [
+            100,
+            141
+          ],
+          "major": false,
+          "mate_loss": false
+        }
+      ]
+    },
+    {
+      "id": "round-70-move-25",
+      "best": [
+        {
+          "cp": 946,
+          "mate": null,
+          "depth": 15,
+          "pv": [
+            "e6d5",
+            "f2f3",
+            "d5b3",
+            "d1b3",
+            "h3g3",
+            "g1f1",
+            "g3f3",
+            "e3f2",
+            "f3h1",
+            "f2g1",
+            "h1h3",
+            "f1f2",
+            "d8e8"
+          ],
+          "nodes": 80048
+        },
+        {
+          "cp": 929,
+          "mate": null,
+          "depth": 24,
+          "pv": [
+            "e6d5",
+            "f2f3",
+            "h3g3",
+            "g1f1",
+            "d5b3",
+            "d1b3",
+            "g3f3",
+            "d3f2",
+            "d8d4",
+            "f1g1",
+            "d4d8",
+            "g5g6",
+            "f3g3",
+            "g1f1",
+            "g3g6",
+            "b3b7",
+            "g6b1",
+            "f1g2"
+          ],
+          "nodes": 320077
+        }
+      ],
+      "choices": [
+        {
+          "root": 5,
+          "regime": "clock",
+          "block": 0,
+          "id": "round-70-move-25",
+          "label": "baseline",
+          "uci": "e6d5",
+          "score": 489,
+          "depth": 7,
+          "nodes": 571392,
+          "seconds": 1.0025273999781348,
+          "cpu_seconds": 0.96875,
+          "values": [
+            {
+              "cp": 946,
+              "mate": null,
+              "depth": 15,
+              "pv": [
+                "e6d5",
+                "f2f3",
+                "d5b3",
+                "d1b3",
+                "h3g3",
+                "g1f1",
+                "g3f3",
+                "e3f2",
+                "f3h1",
+                "f2g1",
+                "h1h3",
+                "f1f2",
+                "d8e8"
+              ],
+              "nodes": 80048
+            },
+            {
+              "cp": 929,
+              "mate": null,
+              "depth": 24,
+              "pv": [
+                "e6d5",
+                "f2f3",
+                "h3g3",
+                "g1f1",
+                "d5b3",
+                "d1b3",
+                "g3f3",
+                "d3f2",
+                "d8d4",
+                "f1g1",
+                "d4d8",
+                "g5g6",
+                "f3g3",
+                "g1f1",
+                "g3g6",
+                "b3b7",
+                "g6b1",
+                "f1g2"
+              ],
+              "nodes": 320077
+            }
+          ],
+          "regret_cp": [
+            0,
+            0
+          ],
+          "major": false,
+          "mate_loss": false
+        },
+        {
+          "root": 5,
+          "regime": "clock",
+          "block": 1,
+          "id": "round-70-move-25",
+          "label": "prototype",
+          "uci": "e6d5",
+          "score": 489,
+          "depth": 7,
+          "nodes": 536576,
+          "seconds": 1.0012797999661416,
+          "cpu_seconds": 0.984375,
+          "values": [
+            {
+              "cp": 946,
+              "mate": null,
+              "depth": 15,
+              "pv": [
+                "e6d5",
+                "f2f3",
+                "d5b3",
+                "d1b3",
+                "h3g3",
+                "g1f1",
+                "g3f3",
+                "e3f2",
+                "f3h1",
+                "f2g1",
+                "h1h3",
+                "f1f2",
+                "d8e8"
+              ],
+              "nodes": 80048
+            },
+            {
+              "cp": 929,
+              "mate": null,
+              "depth": 24,
+              "pv": [
+                "e6d5",
+                "f2f3",
+                "h3g3",
+                "g1f1",
+                "d5b3",
+                "d1b3",
+                "g3f3",
+                "d3f2",
+                "d8d4",
+                "f1g1",
+                "d4d8",
+                "g5g6",
+                "f3g3",
+                "g1f1",
+                "g3g6",
+                "b3b7",
+                "g6b1",
+                "f1g2"
+              ],
+              "nodes": 320077
+            }
+          ],
+          "regret_cp": [
+            0,
+            0
+          ],
+          "major": false,
+          "mate_loss": false
+        },
+        {
+          "root": 5,
+          "regime": "clock",
+          "block": 2,
+          "id": "round-70-move-25",
+          "label": "prototype",
+          "uci": "e6d5",
+          "score": 489,
+          "depth": 7,
+          "nodes": 535552,
+          "seconds": 1.000263299967628,
+          "cpu_seconds": 0.984375,
+          "values": [
+            {
+              "cp": 946,
+              "mate": null,
+              "depth": 15,
+              "pv": [
+                "e6d5",
+                "f2f3",
+                "d5b3",
+                "d1b3",
+                "h3g3",
+                "g1f1",
+                "g3f3",
+                "e3f2",
+                "f3h1",
+                "f2g1",
+                "h1h3",
+                "f1f2",
+                "d8e8"
+              ],
+              "nodes": 80048
+            },
+            {
+              "cp": 929,
+              "mate": null,
+              "depth": 24,
+              "pv": [
+                "e6d5",
+                "f2f3",
+                "h3g3",
+                "g1f1",
+                "d5b3",
+                "d1b3",
+                "g3f3",
+                "d3f2",
+                "d8d4",
+                "f1g1",
+                "d4d8",
+                "g5g6",
+                "f3g3",
+                "g1f1",
+                "g3g6",
+                "b3b7",
+                "g6b1",
+                "f1g2"
+              ],
+              "nodes": 320077
+            }
+          ],
+          "regret_cp": [
+            0,
+            0
+          ],
+          "major": false,
+          "mate_loss": false
+        },
+        {
+          "root": 5,
+          "regime": "clock",
+          "block": 3,
+          "id": "round-70-move-25",
+          "label": "baseline",
+          "uci": "e6d5",
+          "score": 489,
+          "depth": 7,
+          "nodes": 558080,
+          "seconds": 1.0012384000001475,
+          "cpu_seconds": 0.96875,
+          "values": [
+            {
+              "cp": 946,
+              "mate": null,
+              "depth": 15,
+              "pv": [
+                "e6d5",
+                "f2f3",
+                "d5b3",
+                "d1b3",
+                "h3g3",
+                "g1f1",
+                "g3f3",
+                "e3f2",
+                "f3h1",
+                "f2g1",
+                "h1h3",
+                "f1f2",
+                "d8e8"
+              ],
+              "nodes": 80048
+            },
+            {
+              "cp": 929,
+              "mate": null,
+              "depth": 24,
+              "pv": [
+                "e6d5",
+                "f2f3",
+                "h3g3",
+                "g1f1",
+                "d5b3",
+                "d1b3",
+                "g3f3",
+                "d3f2",
+                "d8d4",
+                "f1g1",
+                "d4d8",
+                "g5g6",
+                "f3g3",
+                "g1f1",
+                "g3g6",
+                "b3b7",
+                "g6b1",
+                "f1g2"
+              ],
+              "nodes": 320077
+            }
+          ],
+          "regret_cp": [
+            0,
+            0
+          ],
+          "major": false,
+          "mate_loss": false
+        }
+      ]
+    },
+    {
+      "id": "round-71-move-18",
+      "best": [
+        {
+          "cp": -13,
+          "mate": null,
+          "depth": 16,
+          "pv": [
+            "f4d2",
+            "c5d4",
+            "c3d4",
+            "f6d5",
+            "a1c1",
+            "c7b7",
+            "d1c2",
+            "f8e8",
+            "e2f4",
+            "d5f4",
+            "d2f4",
+            "c8e6",
+            "c2c6"
+          ],
+          "nodes": 80048
+        },
+        {
+          "cp": -8,
+          "mate": null,
+          "depth": 18,
+          "pv": [
+            "f4d2",
+            "c5d4",
+            "c3d4",
+            "f6d5",
+            "a1c1",
+            "c7b7",
+            "d1c2",
+            "f8e8",
+            "e5c4",
+            "b7d7",
+            "c4d6",
+            "d7d6",
+            "c2c5",
+            "d6d7",
+            "c5c6",
+            "d7c6",
+            "c1c6",
+            "b8b5"
+          ],
+          "nodes": 271023
+        }
+      ],
+      "choices": [
+        {
+          "root": 6,
+          "regime": "clock",
+          "block": 0,
+          "id": "round-71-move-18",
+          "label": "baseline",
+          "uci": "f2f3",
+          "score": -44,
+          "depth": 5,
+          "nodes": 447488,
+          "seconds": 1.0013679999974556,
+          "cpu_seconds": 0.953125,
+          "values": [
+            {
+              "cp": -363,
+              "mate": null,
+              "depth": 16,
+              "pv": [
+                "f2f3",
+                "e4f3",
+                "g2f3",
+                "b4c3",
+                "b2c3",
+                "f6h5",
+                "f4h2",
+                "c5d4",
+                "c3d4",
+                "c7d8",
+                "e2g3",
+                "h5g3",
+                "h2g3",
+                "b8b5",
+                "d1d3",
+                "c8b7"
+              ],
+              "nodes": 80053
+            },
+            {
+              "cp": -381,
+              "mate": null,
+              "depth": 18,
+              "pv": [
+                "f2f3",
+                "e4f3",
+                "g2f3",
+                "b4c3",
+                "b2c3",
+                "f6h5",
+                "f4h2",
+                "c5d4",
+                "c3d4",
+                "b8b6",
+                "g1h1",
+                "c8b7",
+                "a1c1",
+                "c7d8",
+                "d4d5",
+                "b6b5"
+              ],
+              "nodes": 320317
+            }
+          ],
+          "regret_cp": [
+            350,
+            373
+          ],
+          "major": true,
+          "mate_loss": false
+        },
+        {
+          "root": 6,
+          "regime": "clock",
+          "block": 1,
+          "id": "round-71-move-18",
+          "label": "prototype",
+          "uci": "f2f3",
+          "score": -44,
+          "depth": 5,
+          "nodes": 411648,
+          "seconds": 1.0032266000052914,
+          "cpu_seconds": 0.9375,
+          "values": [
+            {
+              "cp": -363,
+              "mate": null,
+              "depth": 16,
+              "pv": [
+                "f2f3",
+                "e4f3",
+                "g2f3",
+                "b4c3",
+                "b2c3",
+                "f6h5",
+                "f4h2",
+                "c5d4",
+                "c3d4",
+                "c7d8",
+                "e2g3",
+                "h5g3",
+                "h2g3",
+                "b8b5",
+                "d1d3",
+                "c8b7"
+              ],
+              "nodes": 80053
+            },
+            {
+              "cp": -381,
+              "mate": null,
+              "depth": 18,
+              "pv": [
+                "f2f3",
+                "e4f3",
+                "g2f3",
+                "b4c3",
+                "b2c3",
+                "f6h5",
+                "f4h2",
+                "c5d4",
+                "c3d4",
+                "b8b6",
+                "g1h1",
+                "c8b7",
+                "a1c1",
+                "c7d8",
+                "d4d5",
+                "b6b5"
+              ],
+              "nodes": 320317
+            }
+          ],
+          "regret_cp": [
+            350,
+            373
+          ],
+          "major": true,
+          "mate_loss": false
+        },
+        {
+          "root": 6,
+          "regime": "clock",
+          "block": 2,
+          "id": "round-71-move-18",
+          "label": "prototype",
+          "uci": "f2f3",
+          "score": -44,
+          "depth": 5,
+          "nodes": 457728,
+          "seconds": 1.0009231999865733,
+          "cpu_seconds": 0.96875,
+          "values": [
+            {
+              "cp": -363,
+              "mate": null,
+              "depth": 16,
+              "pv": [
+                "f2f3",
+                "e4f3",
+                "g2f3",
+                "b4c3",
+                "b2c3",
+                "f6h5",
+                "f4h2",
+                "c5d4",
+                "c3d4",
+                "c7d8",
+                "e2g3",
+                "h5g3",
+                "h2g3",
+                "b8b5",
+                "d1d3",
+                "c8b7"
+              ],
+              "nodes": 80053
+            },
+            {
+              "cp": -381,
+              "mate": null,
+              "depth": 18,
+              "pv": [
+                "f2f3",
+                "e4f3",
+                "g2f3",
+                "b4c3",
+                "b2c3",
+                "f6h5",
+                "f4h2",
+                "c5d4",
+                "c3d4",
+                "b8b6",
+                "g1h1",
+                "c8b7",
+                "a1c1",
+                "c7d8",
+                "d4d5",
+                "b6b5"
+              ],
+              "nodes": 320317
+            }
+          ],
+          "regret_cp": [
+            350,
+            373
+          ],
+          "major": true,
+          "mate_loss": false
+        },
+        {
+          "root": 6,
+          "regime": "clock",
+          "block": 3,
+          "id": "round-71-move-18",
+          "label": "baseline",
+          "uci": "f2f3",
+          "score": -44,
+          "depth": 5,
+          "nodes": 491520,
+          "seconds": 1.0015293000033125,
+          "cpu_seconds": 0.953125,
+          "values": [
+            {
+              "cp": -363,
+              "mate": null,
+              "depth": 16,
+              "pv": [
+                "f2f3",
+                "e4f3",
+                "g2f3",
+                "b4c3",
+                "b2c3",
+                "f6h5",
+                "f4h2",
+                "c5d4",
+                "c3d4",
+                "c7d8",
+                "e2g3",
+                "h5g3",
+                "h2g3",
+                "b8b5",
+                "d1d3",
+                "c8b7"
+              ],
+              "nodes": 80053
+            },
+            {
+              "cp": -381,
+              "mate": null,
+              "depth": 18,
+              "pv": [
+                "f2f3",
+                "e4f3",
+                "g2f3",
+                "b4c3",
+                "b2c3",
+                "f6h5",
+                "f4h2",
+                "c5d4",
+                "c3d4",
+                "b8b6",
+                "g1h1",
+                "c8b7",
+                "a1c1",
+                "c7d8",
+                "d4d5",
+                "b6b5"
+              ],
+              "nodes": 320317
+            }
+          ],
+          "regret_cp": [
+            350,
+            373
+          ],
+          "major": true,
+          "mate_loss": false
+        }
+      ]
+    },
+    {
+      "id": "round-71-move-30",
+      "best": [
+        {
+          "cp": 298,
+          "mate": null,
+          "depth": 15,
+          "pv": [
+            "e4f6",
+            "h4f6",
+            "d6f6",
+            "g7f6",
+            "c5c6",
+            "a6a5",
+            "c6c7",
+            "e8c8",
+            "c4g4",
+            "g8f8",
+            "g4d7",
+            "f8g7",
+            "g1h2",
+            "g7g6"
+          ],
+          "nodes": 61515
+        },
+        {
+          "cp": 265,
+          "mate": null,
+          "depth": 20,
+          "pv": [
+            "e4f6",
+            "h4f6",
+            "d6f6",
+            "g7f6",
+            "c5c6",
+            "a6a5",
+            "c6c7",
+            "e8c8",
+            "c4g4",
+            "g8h8",
+            "g4d7",
+            "h8g7",
+            "g1f2",
+            "c8e8",
+            "f2g3",
+            "h7h5",
+            "g3f2",
+            "g7g6",
+            "b3b4"
+          ],
+          "nodes": 320256
+        }
+      ],
+      "choices": [
+        {
+          "root": 7,
+          "regime": "clock",
+          "block": 0,
+          "id": "round-71-move-30",
+          "label": "baseline",
+          "uci": "e4f6",
+          "score": 267,
+          "depth": 7,
+          "nodes": 578560,
+          "seconds": 1.0022564999526367,
+          "cpu_seconds": 0.96875,
+          "values": [
+            {
+              "cp": 298,
+              "mate": null,
+              "depth": 15,
+              "pv": [
+                "e4f6",
+                "h4f6",
+                "d6f6",
+                "g7f6",
+                "c5c6",
+                "a6a5",
+                "c6c7",
+                "e8c8",
+                "c4g4",
+                "g8f8",
+                "g4d7",
+                "f8g7",
+                "g1h2",
+                "g7g6"
+              ],
+              "nodes": 61515
+            },
+            {
+              "cp": 265,
+              "mate": null,
+              "depth": 20,
+              "pv": [
+                "e4f6",
+                "h4f6",
+                "d6f6",
+                "g7f6",
+                "c5c6",
+                "a6a5",
+                "c6c7",
+                "e8c8",
+                "c4g4",
+                "g8h8",
+                "g4d7",
+                "h8g7",
+                "g1f2",
+                "c8e8",
+                "f2g3",
+                "h7h5",
+                "g3f2",
+                "g7g6",
+                "b3b4"
+              ],
+              "nodes": 320256
+            }
+          ],
+          "regret_cp": [
+            0,
+            0
+          ],
+          "major": false,
+          "mate_loss": false
+        },
+        {
+          "root": 7,
+          "regime": "clock",
+          "block": 1,
+          "id": "round-71-move-30",
+          "label": "prototype",
+          "uci": "e4f6",
+          "score": 267,
+          "depth": 7,
+          "nodes": 514048,
+          "seconds": 1.0004851999692619,
+          "cpu_seconds": 0.96875,
+          "values": [
+            {
+              "cp": 298,
+              "mate": null,
+              "depth": 15,
+              "pv": [
+                "e4f6",
+                "h4f6",
+                "d6f6",
+                "g7f6",
+                "c5c6",
+                "a6a5",
+                "c6c7",
+                "e8c8",
+                "c4g4",
+                "g8f8",
+                "g4d7",
+                "f8g7",
+                "g1h2",
+                "g7g6"
+              ],
+              "nodes": 61515
+            },
+            {
+              "cp": 265,
+              "mate": null,
+              "depth": 20,
+              "pv": [
+                "e4f6",
+                "h4f6",
+                "d6f6",
+                "g7f6",
+                "c5c6",
+                "a6a5",
+                "c6c7",
+                "e8c8",
+                "c4g4",
+                "g8h8",
+                "g4d7",
+                "h8g7",
+                "g1f2",
+                "c8e8",
+                "f2g3",
+                "h7h5",
+                "g3f2",
+                "g7g6",
+                "b3b4"
+              ],
+              "nodes": 320256
+            }
+          ],
+          "regret_cp": [
+            0,
+            0
+          ],
+          "major": false,
+          "mate_loss": false
+        },
+        {
+          "root": 7,
+          "regime": "clock",
+          "block": 2,
+          "id": "round-71-move-30",
+          "label": "prototype",
+          "uci": "e4f6",
+          "score": 267,
+          "depth": 7,
+          "nodes": 513024,
+          "seconds": 1.0008709999965504,
+          "cpu_seconds": 0.96875,
+          "values": [
+            {
+              "cp": 298,
+              "mate": null,
+              "depth": 15,
+              "pv": [
+                "e4f6",
+                "h4f6",
+                "d6f6",
+                "g7f6",
+                "c5c6",
+                "a6a5",
+                "c6c7",
+                "e8c8",
+                "c4g4",
+                "g8f8",
+                "g4d7",
+                "f8g7",
+                "g1h2",
+                "g7g6"
+              ],
+              "nodes": 61515
+            },
+            {
+              "cp": 265,
+              "mate": null,
+              "depth": 20,
+              "pv": [
+                "e4f6",
+                "h4f6",
+                "d6f6",
+                "g7f6",
+                "c5c6",
+                "a6a5",
+                "c6c7",
+                "e8c8",
+                "c4g4",
+                "g8h8",
+                "g4d7",
+                "h8g7",
+                "g1f2",
+                "c8e8",
+                "f2g3",
+                "h7h5",
+                "g3f2",
+                "g7g6",
+                "b3b4"
+              ],
+              "nodes": 320256
+            }
+          ],
+          "regret_cp": [
+            0,
+            0
+          ],
+          "major": false,
+          "mate_loss": false
+        },
+        {
+          "root": 7,
+          "regime": "clock",
+          "block": 3,
+          "id": "round-71-move-30",
+          "label": "baseline",
+          "uci": "e4f6",
+          "score": 267,
+          "depth": 7,
+          "nodes": 592896,
+          "seconds": 1.0004516000044532,
+          "cpu_seconds": 0.9375,
+          "values": [
+            {
+              "cp": 298,
+              "mate": null,
+              "depth": 15,
+              "pv": [
+                "e4f6",
+                "h4f6",
+                "d6f6",
+                "g7f6",
+                "c5c6",
+                "a6a5",
+                "c6c7",
+                "e8c8",
+                "c4g4",
+                "g8f8",
+                "g4d7",
+                "f8g7",
+                "g1h2",
+                "g7g6"
+              ],
+              "nodes": 61515
+            },
+            {
+              "cp": 265,
+              "mate": null,
+              "depth": 20,
+              "pv": [
+                "e4f6",
+                "h4f6",
+                "d6f6",
+                "g7f6",
+                "c5c6",
+                "a6a5",
+                "c6c7",
+                "e8c8",
+                "c4g4",
+                "g8h8",
+                "g4d7",
+                "h8g7",
+                "g1f2",
+                "c8e8",
+                "f2g3",
+                "h7h5",
+                "g3f2",
+                "g7g6",
+                "b3b4"
+              ],
+              "nodes": 320256
+            }
+          ],
+          "regret_cp": [
+            0,
+            0
+          ],
+          "major": false,
+          "mate_loss": false
+        }
+      ]
+    },
+    {
+      "id": "round-71-move-34",
+      "best": [
+        {
+          "cp": 393,
+          "mate": null,
+          "depth": 16,
+          "pv": [
+            "c4c5",
+            "a6a5",
+            "c5d6",
+            "c8a8",
+            "d6d7",
+            "f5f4",
+            "g1f2",
+            "f7f6",
+            "d7g4",
+            "g8f7",
+            "g4f4",
+            "f7e7",
+            "f4e4",
+            "e7d7"
+          ],
+          "nodes": 80022
+        },
+        {
+          "cp": 449,
+          "mate": null,
+          "depth": 18,
+          "pv": [
+            "c4c5",
+            "a6a5",
+            "g1f2",
+            "f5f4",
+            "c5g5",
+            "g8f8",
+            "g5h6",
+            "f8e7",
+            "h6f4",
+            "h7h6",
+            "c3c4",
+            "e8g8",
+            "f4h6",
+            "c8c7",
+            "h6e3",
+            "e7d8",
+            "e3d2",
+            "d8c8",
+            "d2a5",
+            "g8g6",
+            "a5c3",
+            "g6c6",
+            "g2g4"
+          ],
+          "nodes": 320292
+        }
+      ],
+      "choices": [
+        {
+          "root": 8,
+          "regime": "clock",
+          "block": 0,
+          "id": "round-71-move-34",
+          "label": "baseline",
+          "uci": "c4f4",
+          "score": 268,
+          "depth": 8,
+          "nodes": 651264,
+          "seconds": 1.0003448000061326,
+          "cpu_seconds": 0.96875,
+          "values": [
+            {
+              "cp": 138,
+              "mate": null,
+              "depth": 16,
+              "pv": [
+                "c4f4",
+                "e8e1",
+                "g1h2",
+                "e1e7",
+                "f4g5",
+                "g8f8",
+                "g5h6",
+                "f8g8",
+                "h6a6",
+                "e7c7",
+                "c3c4",
+                "c7c6",
+                "a6b5",
+                "c6c5",
+                "b5d7",
+                "c8c6"
+              ],
+              "nodes": 63385
+            },
+            {
+              "cp": 133,
+              "mate": null,
+              "depth": 20,
+              "pv": [
+                "c4f4",
+                "e8e7",
+                "f4g5",
+                "g8f8",
+                "g5h6",
+                "f8g8",
+                "c3c4",
+                "e7c7",
+                "h6a6",
+                "c8b8",
+                "a6f6",
+                "c7b7",
+                "f6g5",
+                "g8f8",
+                "g5f5",
+                "b7b3",
+                "c4c5",
+                "b3b1",
+                "g1h2",
+                "b1c1",
+                "f5h7",
+                "b8b1",
+                "h7h8",
+                "f8e7"
+              ],
+              "nodes": 181046
+            }
+          ],
+          "regret_cp": [
+            255,
+            316
+          ],
+          "major": true,
+          "mate_loss": false
+        },
+        {
+          "root": 8,
+          "regime": "clock",
+          "block": 1,
+          "id": "round-71-move-34",
+          "label": "prototype",
+          "uci": "c4f4",
+          "score": 268,
+          "depth": 8,
+          "nodes": 596992,
+          "seconds": 1.0003461000160314,
+          "cpu_seconds": 0.953125,
+          "values": [
+            {
+              "cp": 138,
+              "mate": null,
+              "depth": 16,
+              "pv": [
+                "c4f4",
+                "e8e1",
+                "g1h2",
+                "e1e7",
+                "f4g5",
+                "g8f8",
+                "g5h6",
+                "f8g8",
+                "h6a6",
+                "e7c7",
+                "c3c4",
+                "c7c6",
+                "a6b5",
+                "c6c5",
+                "b5d7",
+                "c8c6"
+              ],
+              "nodes": 63385
+            },
+            {
+              "cp": 133,
+              "mate": null,
+              "depth": 20,
+              "pv": [
+                "c4f4",
+                "e8e7",
+                "f4g5",
+                "g8f8",
+                "g5h6",
+                "f8g8",
+                "c3c4",
+                "e7c7",
+                "h6a6",
+                "c8b8",
+                "a6f6",
+                "c7b7",
+                "f6g5",
+                "g8f8",
+                "g5f5",
+                "b7b3",
+                "c4c5",
+                "b3b1",
+                "g1h2",
+                "b1c1",
+                "f5h7",
+                "b8b1",
+                "h7h8",
+                "f8e7"
+              ],
+              "nodes": 181046
+            }
+          ],
+          "regret_cp": [
+            255,
+            316
+          ],
+          "major": true,
+          "mate_loss": false
+        },
+        {
+          "root": 8,
+          "regime": "clock",
+          "block": 2,
+          "id": "round-71-move-34",
+          "label": "prototype",
+          "uci": "c4f4",
+          "score": 268,
+          "depth": 8,
+          "nodes": 590848,
+          "seconds": 1.0001058999914676,
+          "cpu_seconds": 0.953125,
+          "values": [
+            {
+              "cp": 138,
+              "mate": null,
+              "depth": 16,
+              "pv": [
+                "c4f4",
+                "e8e1",
+                "g1h2",
+                "e1e7",
+                "f4g5",
+                "g8f8",
+                "g5h6",
+                "f8g8",
+                "h6a6",
+                "e7c7",
+                "c3c4",
+                "c7c6",
+                "a6b5",
+                "c6c5",
+                "b5d7",
+                "c8c6"
+              ],
+              "nodes": 63385
+            },
+            {
+              "cp": 133,
+              "mate": null,
+              "depth": 20,
+              "pv": [
+                "c4f4",
+                "e8e7",
+                "f4g5",
+                "g8f8",
+                "g5h6",
+                "f8g8",
+                "c3c4",
+                "e7c7",
+                "h6a6",
+                "c8b8",
+                "a6f6",
+                "c7b7",
+                "f6g5",
+                "g8f8",
+                "g5f5",
+                "b7b3",
+                "c4c5",
+                "b3b1",
+                "g1h2",
+                "b1c1",
+                "f5h7",
+                "b8b1",
+                "h7h8",
+                "f8e7"
+              ],
+              "nodes": 181046
+            }
+          ],
+          "regret_cp": [
+            255,
+            316
+          ],
+          "major": true,
+          "mate_loss": false
+        },
+        {
+          "root": 8,
+          "regime": "clock",
+          "block": 3,
+          "id": "round-71-move-34",
+          "label": "baseline",
+          "uci": "c4f4",
+          "score": 268,
+          "depth": 8,
+          "nodes": 641024,
+          "seconds": 1.0010366999777034,
+          "cpu_seconds": 0.96875,
+          "values": [
+            {
+              "cp": 138,
+              "mate": null,
+              "depth": 16,
+              "pv": [
+                "c4f4",
+                "e8e1",
+                "g1h2",
+                "e1e7",
+                "f4g5",
+                "g8f8",
+                "g5h6",
+                "f8g8",
+                "h6a6",
+                "e7c7",
+                "c3c4",
+                "c7c6",
+                "a6b5",
+                "c6c5",
+                "b5d7",
+                "c8c6"
+              ],
+              "nodes": 63385
+            },
+            {
+              "cp": 133,
+              "mate": null,
+              "depth": 20,
+              "pv": [
+                "c4f4",
+                "e8e7",
+                "f4g5",
+                "g8f8",
+                "g5h6",
+                "f8g8",
+                "c3c4",
+                "e7c7",
+                "h6a6",
+                "c8b8",
+                "a6f6",
+                "c7b7",
+                "f6g5",
+                "g8f8",
+                "g5f5",
+                "b7b3",
+                "c4c5",
+                "b3b1",
+                "g1h2",
+                "b1c1",
+                "f5h7",
+                "b8b1",
+                "h7h8",
+                "f8e7"
+              ],
+              "nodes": 181046
+            }
+          ],
+          "regret_cp": [
+            255,
+            316
+          ],
+          "major": true,
+          "mate_loss": false
+        }
+      ]
+    },
+    {
+      "id": "round-72-move-18",
+      "best": [
+        {
+          "cp": 95,
+          "mate": null,
+          "depth": 14,
+          "pv": [
+            "a6b6",
+            "b2a3",
+            "e8f7",
+            "a3b4"
+          ],
+          "nodes": 49376
+        },
+        {
+          "cp": 140,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "a6b6",
+            "b2a3",
+            "e8f7",
+            "c1d2",
+            "h8d8",
+            "d2e1",
+            "d8d1",
+            "e1d1",
+            "b6b1",
+            "a3c1",
+            "b8b2",
+            "e2e3",
+            "b2a2",
+            "e3c5",
+            "a2d5",
+            "c5d5",
+            "e6d5",
+            "c3c4",
+            "d5c4",
+            "h1e1",
+            "a7a5",
+            "c2c3",
+            "b1b3",
+            "e1e5",
+            "a5a4",
+            "d1c2",
+            "a4a3",
+            "f2f3"
+          ],
+          "nodes": 320256
+        }
+      ],
+      "choices": [
+        {
+          "root": 9,
+          "regime": "clock",
+          "block": 0,
+          "id": "round-72-move-18",
+          "label": "baseline",
+          "uci": "b8b7",
+          "score": -84,
+          "depth": 7,
+          "nodes": 526336,
+          "seconds": 1.001462000014726,
+          "cpu_seconds": 0.96875,
+          "values": [
+            {
+              "cp": -104,
+              "mate": null,
+              "depth": 14,
+              "pv": [
+                "b8b7",
+                "c3c4",
+                "e8g8",
+                "e2e5",
+                "a6a2",
+                "d1d3",
+                "b7c6",
+                "h1e1",
+                "c6c4",
+                "d3c3"
+              ],
+              "nodes": 32479
+            },
+            {
+              "cp": -100,
+              "mate": null,
+              "depth": 19,
+              "pv": [
+                "b8b7",
+                "c3c4",
+                "e8g8",
+                "e2e5",
+                "b7c6",
+                "e5b5",
+                "c6b5",
+                "c4b5",
+                "a6a2",
+                "h1e1",
+                "g8f7",
+                "d1d4"
+              ],
+              "nodes": 320252
+            }
+          ],
+          "regret_cp": [
+            199,
+            240
+          ],
+          "major": false,
+          "mate_loss": false
+        },
+        {
+          "root": 9,
+          "regime": "clock",
+          "block": 1,
+          "id": "round-72-move-18",
+          "label": "prototype",
+          "uci": "b8b7",
+          "score": -84,
+          "depth": 7,
+          "nodes": 503808,
+          "seconds": 1.0007312000379898,
+          "cpu_seconds": 0.96875,
+          "values": [
+            {
+              "cp": -104,
+              "mate": null,
+              "depth": 14,
+              "pv": [
+                "b8b7",
+                "c3c4",
+                "e8g8",
+                "e2e5",
+                "a6a2",
+                "d1d3",
+                "b7c6",
+                "h1e1",
+                "c6c4",
+                "d3c3"
+              ],
+              "nodes": 32479
+            },
+            {
+              "cp": -100,
+              "mate": null,
+              "depth": 19,
+              "pv": [
+                "b8b7",
+                "c3c4",
+                "e8g8",
+                "e2e5",
+                "b7c6",
+                "e5b5",
+                "c6b5",
+                "c4b5",
+                "a6a2",
+                "h1e1",
+                "g8f7",
+                "d1d4"
+              ],
+              "nodes": 320252
+            }
+          ],
+          "regret_cp": [
+            199,
+            240
+          ],
+          "major": false,
+          "mate_loss": false
+        },
+        {
+          "root": 9,
+          "regime": "clock",
+          "block": 2,
+          "id": "round-72-move-18",
+          "label": "prototype",
+          "uci": "b8b7",
+          "score": -84,
+          "depth": 7,
+          "nodes": 503808,
+          "seconds": 1.0009749000309967,
+          "cpu_seconds": 0.96875,
+          "values": [
+            {
+              "cp": -104,
+              "mate": null,
+              "depth": 14,
+              "pv": [
+                "b8b7",
+                "c3c4",
+                "e8g8",
+                "e2e5",
+                "a6a2",
+                "d1d3",
+                "b7c6",
+                "h1e1",
+                "c6c4",
+                "d3c3"
+              ],
+              "nodes": 32479
+            },
+            {
+              "cp": -100,
+              "mate": null,
+              "depth": 19,
+              "pv": [
+                "b8b7",
+                "c3c4",
+                "e8g8",
+                "e2e5",
+                "b7c6",
+                "e5b5",
+                "c6b5",
+                "c4b5",
+                "a6a2",
+                "h1e1",
+                "g8f7",
+                "d1d4"
+              ],
+              "nodes": 320252
+            }
+          ],
+          "regret_cp": [
+            199,
+            240
+          ],
+          "major": false,
+          "mate_loss": false
+        },
+        {
+          "root": 9,
+          "regime": "clock",
+          "block": 3,
+          "id": "round-72-move-18",
+          "label": "baseline",
+          "uci": "b8b7",
+          "score": -84,
+          "depth": 7,
+          "nodes": 523264,
+          "seconds": 1.00007359997835,
+          "cpu_seconds": 0.953125,
+          "values": [
+            {
+              "cp": -104,
+              "mate": null,
+              "depth": 14,
+              "pv": [
+                "b8b7",
+                "c3c4",
+                "e8g8",
+                "e2e5",
+                "a6a2",
+                "d1d3",
+                "b7c6",
+                "h1e1",
+                "c6c4",
+                "d3c3"
+              ],
+              "nodes": 32479
+            },
+            {
+              "cp": -100,
+              "mate": null,
+              "depth": 19,
+              "pv": [
+                "b8b7",
+                "c3c4",
+                "e8g8",
+                "e2e5",
+                "b7c6",
+                "e5b5",
+                "c6b5",
+                "c4b5",
+                "a6a2",
+                "h1e1",
+                "g8f7",
+                "d1d4"
+              ],
+              "nodes": 320252
+            }
+          ],
+          "regret_cp": [
+            199,
+            240
+          ],
+          "major": false,
+          "mate_loss": false
+        }
+      ]
+    },
+    {
+      "id": "round-72-move-24",
+      "best": [
+        {
+          "cp": -19,
+          "mate": null,
+          "depth": 14,
+          "pv": [
+            "a6a5",
+            "h5h4",
+            "f6g6",
+            "h4g3",
+            "g6f6",
+            "h1e1",
+            "h7h6",
+            "e3f2",
+            "b4c5",
+            "f2f1",
+            "c5c4",
+            "f1g1",
+            "a5d5",
+            "d1d5",
+            "c4d5",
+            "g3c3",
+            "f6g6",
+            "c3c7"
+          ],
+          "nodes": 68617
+        },
+        {
+          "cp": -21,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "a6a5",
+            "h5h4",
+            "f6g6",
+            "h4g3",
+            "g6f6",
+            "h1e1",
+            "h7h6",
+            "e3f2",
+            "b4c5",
+            "f2f1",
+            "c5c4",
+            "f1g1",
+            "c4c6",
+            "d1d3",
+            "f6f7",
+            "h2h3",
+            "a5f5"
+          ],
+          "nodes": 236587
+        }
+      ],
+      "choices": [
+        {
+          "root": 10,
+          "regime": "clock",
+          "block": 0,
+          "id": "round-72-move-24",
+          "label": "baseline",
+          "uci": "b4c3",
+          "score": -64,
+          "depth": 7,
+          "nodes": 526336,
+          "seconds": 1.001215800002683,
+          "cpu_seconds": 0.984375,
+          "values": [
+            {
+              "cp": -287,
+              "mate": null,
+              "depth": 12,
+              "pv": [
+                "b4c3",
+                "d1d3",
+                "c3b2",
+                "h1d1",
+                "b8f8",
+                "d3d7",
+                "h7h6",
+                "e3f2",
+                "a6a2",
+                "f2g3",
+                "a2a3",
+                "d1d3",
+                "a3d3",
+                "c2d3",
+                "b2c3",
+                "g3h3",
+                "c3e1",
+                "h5c5"
+              ],
+              "nodes": 49097
+            },
+            {
+              "cp": -552,
+              "mate": null,
+              "depth": 17,
+              "pv": [
+                "b4c3",
+                "d1d3",
+                "c3a5",
+                "c4c5",
+                "h7h6",
+                "h1d1",
+                "a5b4",
+                "h5e5",
+                "f6g6",
+                "d3b3",
+                "a6a3",
+                "e3f2",
+                "a3b3",
+                "d1d7",
+                "b8g8",
+                "a2b3",
+                "a7a5"
+              ],
+              "nodes": 320258
+            }
+          ],
+          "regret_cp": [
+            268,
+            531
+          ],
+          "major": true,
+          "mate_loss": false
+        },
+        {
+          "root": 10,
+          "regime": "clock",
+          "block": 1,
+          "id": "round-72-move-24",
+          "label": "prototype",
+          "uci": "b4c3",
+          "score": -64,
+          "depth": 7,
+          "nodes": 516096,
+          "seconds": 1.0019702999852598,
+          "cpu_seconds": 0.953125,
+          "values": [
+            {
+              "cp": -287,
+              "mate": null,
+              "depth": 12,
+              "pv": [
+                "b4c3",
+                "d1d3",
+                "c3b2",
+                "h1d1",
+                "b8f8",
+                "d3d7",
+                "h7h6",
+                "e3f2",
+                "a6a2",
+                "f2g3",
+                "a2a3",
+                "d1d3",
+                "a3d3",
+                "c2d3",
+                "b2c3",
+                "g3h3",
+                "c3e1",
+                "h5c5"
+              ],
+              "nodes": 49097
+            },
+            {
+              "cp": -552,
+              "mate": null,
+              "depth": 17,
+              "pv": [
+                "b4c3",
+                "d1d3",
+                "c3a5",
+                "c4c5",
+                "h7h6",
+                "h1d1",
+                "a5b4",
+                "h5e5",
+                "f6g6",
+                "d3b3",
+                "a6a3",
+                "e3f2",
+                "a3b3",
+                "d1d7",
+                "b8g8",
+                "a2b3",
+                "a7a5"
+              ],
+              "nodes": 320258
+            }
+          ],
+          "regret_cp": [
+            268,
+            531
+          ],
+          "major": true,
+          "mate_loss": false
+        },
+        {
+          "root": 10,
+          "regime": "clock",
+          "block": 2,
+          "id": "round-72-move-24",
+          "label": "prototype",
+          "uci": "b4c3",
+          "score": -64,
+          "depth": 7,
+          "nodes": 519168,
+          "seconds": 1.0009116999572143,
+          "cpu_seconds": 0.9375,
+          "values": [
+            {
+              "cp": -287,
+              "mate": null,
+              "depth": 12,
+              "pv": [
+                "b4c3",
+                "d1d3",
+                "c3b2",
+                "h1d1",
+                "b8f8",
+                "d3d7",
+                "h7h6",
+                "e3f2",
+                "a6a2",
+                "f2g3",
+                "a2a3",
+                "d1d3",
+                "a3d3",
+                "c2d3",
+                "b2c3",
+                "g3h3",
+                "c3e1",
+                "h5c5"
+              ],
+              "nodes": 49097
+            },
+            {
+              "cp": -552,
+              "mate": null,
+              "depth": 17,
+              "pv": [
+                "b4c3",
+                "d1d3",
+                "c3a5",
+                "c4c5",
+                "h7h6",
+                "h1d1",
+                "a5b4",
+                "h5e5",
+                "f6g6",
+                "d3b3",
+                "a6a3",
+                "e3f2",
+                "a3b3",
+                "d1d7",
+                "b8g8",
+                "a2b3",
+                "a7a5"
+              ],
+              "nodes": 320258
+            }
+          ],
+          "regret_cp": [
+            268,
+            531
+          ],
+          "major": true,
+          "mate_loss": false
+        },
+        {
+          "root": 10,
+          "regime": "clock",
+          "block": 3,
+          "id": "round-72-move-24",
+          "label": "baseline",
+          "uci": "b4c3",
+          "score": -64,
+          "depth": 7,
+          "nodes": 544768,
+          "seconds": 1.0020162000437267,
+          "cpu_seconds": 0.9375,
+          "values": [
+            {
+              "cp": -287,
+              "mate": null,
+              "depth": 12,
+              "pv": [
+                "b4c3",
+                "d1d3",
+                "c3b2",
+                "h1d1",
+                "b8f8",
+                "d3d7",
+                "h7h6",
+                "e3f2",
+                "a6a2",
+                "f2g3",
+                "a2a3",
+                "d1d3",
+                "a3d3",
+                "c2d3",
+                "b2c3",
+                "g3h3",
+                "c3e1",
+                "h5c5"
+              ],
+              "nodes": 49097
+            },
+            {
+              "cp": -552,
+              "mate": null,
+              "depth": 17,
+              "pv": [
+                "b4c3",
+                "d1d3",
+                "c3a5",
+                "c4c5",
+                "h7h6",
+                "h1d1",
+                "a5b4",
+                "h5e5",
+                "f6g6",
+                "d3b3",
+                "a6a3",
+                "e3f2",
+                "a3b3",
+                "d1d7",
+                "b8g8",
+                "a2b3",
+                "a7a5"
+              ],
+              "nodes": 320258
+            }
+          ],
+          "regret_cp": [
+            268,
+            531
+          ],
+          "major": true,
+          "mate_loss": false
+        }
+      ]
+    },
+    {
+      "id": "round-72-move-9",
+      "best": [
+        {
+          "cp": -25,
+          "mate": null,
+          "depth": 16,
+          "pv": [
+            "e8g8",
+            "e1g1",
+            "c6d5",
+            "c1a3",
+            "f8e8",
+            "f1e1",
+            "a7a5",
+            "d1d2",
+            "h7h6",
+            "d2f4"
+          ],
+          "nodes": 80083
+        },
+        {
+          "cp": -28,
+          "mate": null,
+          "depth": 19,
+          "pv": [
+            "e8g8",
+            "e1g1",
+            "c6d5",
+            "f1e1",
+            "c7c5",
+            "c1g5",
+            "h7h6",
+            "g5h4",
+            "a8b8",
+            "a2a4",
+            "c5c4",
+            "d3f1",
+            "c8f5",
+            "e1e5",
+            "f5g6",
+            "h2h3",
+            "d8d6",
+            "h4f6",
+            "d6f6",
+            "d1d5",
+            "g6c2"
+          ],
+          "nodes": 320141
+        }
+      ],
+      "choices": [
+        {
+          "root": 11,
+          "regime": "clock",
+          "block": 0,
+          "id": "round-72-move-9",
+          "label": "baseline",
+          "uci": "c6d5",
+          "score": -18,
+          "depth": 7,
+          "nodes": 505856,
+          "seconds": 1.0002619999577291,
+          "cpu_seconds": 0.984375,
+          "values": [
+            {
+              "cp": -262,
+              "mate": null,
+              "depth": 15,
+              "pv": [
+                "c6d5",
+                "c1a3",
+                "c7c5",
+                "d1e2",
+                "c8e6",
+                "a3c5",
+                "d8c7",
+                "c5d4",
+                "e8g8",
+                "d4f6",
+                "g7f6",
+                "e1g1",
+                "c7e5",
+                "e2d2",
+                "g8g7",
+                "a1e1",
+                "e5g5"
+              ],
+              "nodes": 80026
+            },
+            {
+              "cp": -275,
+              "mate": null,
+              "depth": 18,
+              "pv": [
+                "c6d5",
+                "c1a3",
+                "c8e6",
+                "e1g1",
+                "d8d7",
+                "d1c1",
+                "a7a6",
+                "c1g5",
+                "h8g8",
+                "f1e1",
+                "d7a4",
+                "a3b4",
+                "a4c6",
+                "a1b1",
+                "e8c8"
+              ],
+              "nodes": 320256
+            }
+          ],
+          "regret_cp": [
+            237,
+            247
+          ],
+          "major": true,
+          "mate_loss": false
+        },
+        {
+          "root": 11,
+          "regime": "clock",
+          "block": 1,
+          "id": "round-72-move-9",
+          "label": "prototype",
+          "uci": "c6d5",
+          "score": -18,
+          "depth": 7,
+          "nodes": 486400,
+          "seconds": 1.0004608999588527,
+          "cpu_seconds": 0.921875,
+          "values": [
+            {
+              "cp": -262,
+              "mate": null,
+              "depth": 15,
+              "pv": [
+                "c6d5",
+                "c1a3",
+                "c7c5",
+                "d1e2",
+                "c8e6",
+                "a3c5",
+                "d8c7",
+                "c5d4",
+                "e8g8",
+                "d4f6",
+                "g7f6",
+                "e1g1",
+                "c7e5",
+                "e2d2",
+                "g8g7",
+                "a1e1",
+                "e5g5"
+              ],
+              "nodes": 80026
+            },
+            {
+              "cp": -275,
+              "mate": null,
+              "depth": 18,
+              "pv": [
+                "c6d5",
+                "c1a3",
+                "c8e6",
+                "e1g1",
+                "d8d7",
+                "d1c1",
+                "a7a6",
+                "c1g5",
+                "h8g8",
+                "f1e1",
+                "d7a4",
+                "a3b4",
+                "a4c6",
+                "a1b1",
+                "e8c8"
+              ],
+              "nodes": 320256
+            }
+          ],
+          "regret_cp": [
+            237,
+            247
+          ],
+          "major": true,
+          "mate_loss": false
+        },
+        {
+          "root": 11,
+          "regime": "clock",
+          "block": 2,
+          "id": "round-72-move-9",
+          "label": "prototype",
+          "uci": "c6d5",
+          "score": -18,
+          "depth": 7,
+          "nodes": 477184,
+          "seconds": 1.0000727000297047,
+          "cpu_seconds": 0.96875,
+          "values": [
+            {
+              "cp": -262,
+              "mate": null,
+              "depth": 15,
+              "pv": [
+                "c6d5",
+                "c1a3",
+                "c7c5",
+                "d1e2",
+                "c8e6",
+                "a3c5",
+                "d8c7",
+                "c5d4",
+                "e8g8",
+                "d4f6",
+                "g7f6",
+                "e1g1",
+                "c7e5",
+                "e2d2",
+                "g8g7",
+                "a1e1",
+                "e5g5"
+              ],
+              "nodes": 80026
+            },
+            {
+              "cp": -275,
+              "mate": null,
+              "depth": 18,
+              "pv": [
+                "c6d5",
+                "c1a3",
+                "c8e6",
+                "e1g1",
+                "d8d7",
+                "d1c1",
+                "a7a6",
+                "c1g5",
+                "h8g8",
+                "f1e1",
+                "d7a4",
+                "a3b4",
+                "a4c6",
+                "a1b1",
+                "e8c8"
+              ],
+              "nodes": 320256
+            }
+          ],
+          "regret_cp": [
+            237,
+            247
+          ],
+          "major": true,
+          "mate_loss": false
+        },
+        {
+          "root": 11,
+          "regime": "clock",
+          "block": 3,
+          "id": "round-72-move-9",
+          "label": "baseline",
+          "uci": "c6d5",
+          "score": -18,
+          "depth": 7,
+          "nodes": 479232,
+          "seconds": 1.0000211999868043,
+          "cpu_seconds": 0.96875,
+          "values": [
+            {
+              "cp": -262,
+              "mate": null,
+              "depth": 15,
+              "pv": [
+                "c6d5",
+                "c1a3",
+                "c7c5",
+                "d1e2",
+                "c8e6",
+                "a3c5",
+                "d8c7",
+                "c5d4",
+                "e8g8",
+                "d4f6",
+                "g7f6",
+                "e1g1",
+                "c7e5",
+                "e2d2",
+                "g8g7",
+                "a1e1",
+                "e5g5"
+              ],
+              "nodes": 80026
+            },
+            {
+              "cp": -275,
+              "mate": null,
+              "depth": 18,
+              "pv": [
+                "c6d5",
+                "c1a3",
+                "c8e6",
+                "e1g1",
+                "d8d7",
+                "d1c1",
+                "a7a6",
+                "c1g5",
+                "h8g8",
+                "f1e1",
+                "d7a4",
+                "a3b4",
+                "a4c6",
+                "a1b1",
+                "e8c8"
+              ],
+              "nodes": 320256
+            }
+          ],
+          "regret_cp": [
+            237,
+            247
+          ],
+          "major": true,
+          "mate_loss": false
+        }
+      ]
+    },
+    {
+      "id": "archive42-game1-ply20",
+      "best": [
+        {
+          "cp": -81,
+          "mate": null,
+          "depth": 14,
+          "pv": [
+            "h2h3",
+            "b7b6",
+            "g2g3",
+            "a7a5",
+            "g1g2",
+            "e8e4",
+            "a1d1",
+            "d6c5",
+            "c2c3",
+            "c8a6",
+            "d3d2",
+            "a6c4",
+            "a2a3"
+          ],
+          "nodes": 73406
+        },
+        {
+          "cp": -73,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "h2h3",
+            "a7a5",
+            "g2g3",
+            "b7b6",
+            "g1g2",
+            "e8e4",
+            "a1d1",
+            "c8a6",
+            "d3b3",
+            "a8b8",
+            "c2c3",
+            "a6c4",
+            "b3c2",
+            "b8e8",
+            "d1d2",
+            "g7g5",
+            "a2a3"
+          ],
+          "nodes": 194682
+        }
+      ],
+      "choices": [
+        {
+          "root": 12,
+          "regime": "clock",
+          "block": 0,
+          "id": "archive42-game1-ply20",
+          "label": "baseline",
+          "uci": "d3b5",
+          "score": -43,
+          "depth": 6,
+          "nodes": 430080,
+          "seconds": 1.0014109999756329,
+          "cpu_seconds": 0.890625,
+          "values": [
+            {
+              "cp": -191,
+              "mate": null,
+              "depth": 17,
+              "pv": [
+                "d3b5",
+                "c8g4",
+                "c2c3",
+                "a7a6",
+                "b5d3",
+                "d6c5",
+                "h2h3",
+                "g4h5",
+                "g1h2",
+                "c5d4",
+                "d3d4"
+              ],
+              "nodes": 80006
+            },
+            {
+              "cp": -188,
+              "mate": null,
+              "depth": 19,
+              "pv": [
+                "d3b5",
+                "c8g4",
+                "c2c3",
+                "a8d8",
+                "h2h3",
+                "g4h5",
+                "a1e1",
+                "e8e1",
+                "f3e1",
+                "a7a6",
+                "b5d3",
+                "d8e8",
+                "e1c2",
+                "h5g6",
+                "d3d2",
+                "g6c2",
+                "d4c2",
+                "d6f4",
+                "d2d3",
+                "f4c1",
+                "c2e3",
+                "c1b2",
+                "e3d5",
+                "e8e1",
+                "g1h2",
+                "f6f2",
+                "h1e1",
+                "f2e1",
+                "d3f5"
+              ],
+              "nodes": 320145
+            }
+          ],
+          "regret_cp": [
+            110,
+            115
+          ],
+          "major": false,
+          "mate_loss": false
+        },
+        {
+          "root": 12,
+          "regime": "clock",
+          "block": 1,
+          "id": "archive42-game1-ply20",
+          "label": "prototype",
+          "uci": "d3b5",
+          "score": -43,
+          "depth": 6,
+          "nodes": 425984,
+          "seconds": 1.001421199995093,
+          "cpu_seconds": 0.921875,
+          "values": [
+            {
+              "cp": -191,
+              "mate": null,
+              "depth": 17,
+              "pv": [
+                "d3b5",
+                "c8g4",
+                "c2c3",
+                "a7a6",
+                "b5d3",
+                "d6c5",
+                "h2h3",
+                "g4h5",
+                "g1h2",
+                "c5d4",
+                "d3d4"
+              ],
+              "nodes": 80006
+            },
+            {
+              "cp": -188,
+              "mate": null,
+              "depth": 19,
+              "pv": [
+                "d3b5",
+                "c8g4",
+                "c2c3",
+                "a8d8",
+                "h2h3",
+                "g4h5",
+                "a1e1",
+                "e8e1",
+                "f3e1",
+                "a7a6",
+                "b5d3",
+                "d8e8",
+                "e1c2",
+                "h5g6",
+                "d3d2",
+                "g6c2",
+                "d4c2",
+                "d6f4",
+                "d2d3",
+                "f4c1",
+                "c2e3",
+                "c1b2",
+                "e3d5",
+                "e8e1",
+                "g1h2",
+                "f6f2",
+                "h1e1",
+                "f2e1",
+                "d3f5"
+              ],
+              "nodes": 320145
+            }
+          ],
+          "regret_cp": [
+            110,
+            115
+          ],
+          "major": false,
+          "mate_loss": false
+        },
+        {
+          "root": 12,
+          "regime": "clock",
+          "block": 2,
+          "id": "archive42-game1-ply20",
+          "label": "prototype",
+          "uci": "d3b5",
+          "score": -43,
+          "depth": 6,
+          "nodes": 462848,
+          "seconds": 1.0002388000139035,
+          "cpu_seconds": 0.984375,
+          "values": [
+            {
+              "cp": -191,
+              "mate": null,
+              "depth": 17,
+              "pv": [
+                "d3b5",
+                "c8g4",
+                "c2c3",
+                "a7a6",
+                "b5d3",
+                "d6c5",
+                "h2h3",
+                "g4h5",
+                "g1h2",
+                "c5d4",
+                "d3d4"
+              ],
+              "nodes": 80006
+            },
+            {
+              "cp": -188,
+              "mate": null,
+              "depth": 19,
+              "pv": [
+                "d3b5",
+                "c8g4",
+                "c2c3",
+                "a8d8",
+                "h2h3",
+                "g4h5",
+                "a1e1",
+                "e8e1",
+                "f3e1",
+                "a7a6",
+                "b5d3",
+                "d8e8",
+                "e1c2",
+                "h5g6",
+                "d3d2",
+                "g6c2",
+                "d4c2",
+                "d6f4",
+                "d2d3",
+                "f4c1",
+                "c2e3",
+                "c1b2",
+                "e3d5",
+                "e8e1",
+                "g1h2",
+                "f6f2",
+                "h1e1",
+                "f2e1",
+                "d3f5"
+              ],
+              "nodes": 320145
+            }
+          ],
+          "regret_cp": [
+            110,
+            115
+          ],
+          "major": false,
+          "mate_loss": false
+        },
+        {
+          "root": 12,
+          "regime": "clock",
+          "block": 3,
+          "id": "archive42-game1-ply20",
+          "label": "baseline",
+          "uci": "d3b5",
+          "score": -43,
+          "depth": 6,
+          "nodes": 517120,
+          "seconds": 1.0003272999892943,
+          "cpu_seconds": 0.953125,
+          "values": [
+            {
+              "cp": -191,
+              "mate": null,
+              "depth": 17,
+              "pv": [
+                "d3b5",
+                "c8g4",
+                "c2c3",
+                "a7a6",
+                "b5d3",
+                "d6c5",
+                "h2h3",
+                "g4h5",
+                "g1h2",
+                "c5d4",
+                "d3d4"
+              ],
+              "nodes": 80006
+            },
+            {
+              "cp": -188,
+              "mate": null,
+              "depth": 19,
+              "pv": [
+                "d3b5",
+                "c8g4",
+                "c2c3",
+                "a8d8",
+                "h2h3",
+                "g4h5",
+                "a1e1",
+                "e8e1",
+                "f3e1",
+                "a7a6",
+                "b5d3",
+                "d8e8",
+                "e1c2",
+                "h5g6",
+                "d3d2",
+                "g6c2",
+                "d4c2",
+                "d6f4",
+                "d2d3",
+                "f4c1",
+                "c2e3",
+                "c1b2",
+                "e3d5",
+                "e8e1",
+                "g1h2",
+                "f6f2",
+                "h1e1",
+                "f2e1",
+                "d3f5"
+              ],
+              "nodes": 320145
+            }
+          ],
+          "regret_cp": [
+            110,
+            115
+          ],
+          "major": false,
+          "mate_loss": false
+        }
+      ]
+    },
+    {
+      "id": "archive42-game2-ply11",
+      "best": [
+        {
+          "cp": 518,
+          "mate": null,
+          "depth": 16,
+          "pv": [
+            "d6b4",
+            "c3b4",
+            "c6b4",
+            "a1b1",
+            "b4d3",
+            "e2d3",
+            "c4d3",
+            "f1d3",
+            "g7g6",
+            "e1g1",
+            "f8g7",
+            "h2h3",
+            "a5d8",
+            "f3e5",
+            "f6e8",
+            "d2f3"
+          ],
+          "nodes": 80069
+        },
+        {
+          "cp": 511,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "d6b4",
+            "c3b4",
+            "c6b4",
+            "a1b1",
+            "b4d3",
+            "e2d3",
+            "c4d3",
+            "f1d3",
+            "g7g6",
+            "e1g1",
+            "f8g7",
+            "d2b3",
+            "a5c7",
+            "f3e5",
+            "h8e8",
+            "c1g5",
+            "c7d6",
+            "b1c1",
+            "c8f5",
+            "d3f5",
+            "g6f5"
+          ],
+          "nodes": 320281
+        }
+      ],
+      "choices": [
+        {
+          "root": 13,
+          "regime": "clock",
+          "block": 0,
+          "id": "archive42-game2-ply11",
+          "label": "baseline",
+          "uci": "a5b6",
+          "score": 116,
+          "depth": 7,
+          "nodes": 500736,
+          "seconds": 1.0008764999802224,
+          "cpu_seconds": 0.96875,
+          "values": [
+            {
+              "cp": 170,
+              "mate": null,
+              "depth": 16,
+              "pv": [
+                "a5b6",
+                "e2d1",
+                "a7a5",
+                "b4b5",
+                "b6b5",
+                "a2a4",
+                "b5a6",
+                "d2b1",
+                "c8f5",
+                "f1e2",
+                "h7h5",
+                "f3h4",
+                "f5g4",
+                "e1g1",
+                "a8e8",
+                "e2f3",
+                "g7g6",
+                "b1a3",
+                "f8g7",
+                "a3b5",
+                "d6b8",
+                "g2g3",
+                "c6e7",
+                "a1b1"
+              ],
+              "nodes": 80017
+            },
+            {
+              "cp": 159,
+              "mate": null,
+              "depth": 18,
+              "pv": [
+                "a5b6",
+                "e2d1",
+                "a7a5",
+                "b4b5",
+                "b6b5",
+                "a2a4",
+                "b5a6",
+                "f1e2",
+                "g7g6",
+                "d2b1",
+                "f8g7",
+                "b1a3",
+                "h8e8",
+                "e1g1",
+                "f6e4",
+                "a3b5",
+                "d6f8"
+              ],
+              "nodes": 209959
+            }
+          ],
+          "regret_cp": [
+            348,
+            352
+          ],
+          "major": true,
+          "mate_loss": false
+        },
+        {
+          "root": 13,
+          "regime": "clock",
+          "block": 1,
+          "id": "archive42-game2-ply11",
+          "label": "prototype",
+          "uci": "a5b6",
+          "score": 116,
+          "depth": 7,
+          "nodes": 464896,
+          "seconds": 1.0006315999780782,
+          "cpu_seconds": 0.9375,
+          "values": [
+            {
+              "cp": 170,
+              "mate": null,
+              "depth": 16,
+              "pv": [
+                "a5b6",
+                "e2d1",
+                "a7a5",
+                "b4b5",
+                "b6b5",
+                "a2a4",
+                "b5a6",
+                "d2b1",
+                "c8f5",
+                "f1e2",
+                "h7h5",
+                "f3h4",
+                "f5g4",
+                "e1g1",
+                "a8e8",
+                "e2f3",
+                "g7g6",
+                "b1a3",
+                "f8g7",
+                "a3b5",
+                "d6b8",
+                "g2g3",
+                "c6e7",
+                "a1b1"
+              ],
+              "nodes": 80017
+            },
+            {
+              "cp": 159,
+              "mate": null,
+              "depth": 18,
+              "pv": [
+                "a5b6",
+                "e2d1",
+                "a7a5",
+                "b4b5",
+                "b6b5",
+                "a2a4",
+                "b5a6",
+                "f1e2",
+                "g7g6",
+                "d2b1",
+                "f8g7",
+                "b1a3",
+                "h8e8",
+                "e1g1",
+                "f6e4",
+                "a3b5",
+                "d6f8"
+              ],
+              "nodes": 209959
+            }
+          ],
+          "regret_cp": [
+            348,
+            352
+          ],
+          "major": true,
+          "mate_loss": false
+        },
+        {
+          "root": 13,
+          "regime": "clock",
+          "block": 2,
+          "id": "archive42-game2-ply11",
+          "label": "prototype",
+          "uci": "a5b6",
+          "score": 116,
+          "depth": 7,
+          "nodes": 493568,
+          "seconds": 1.0013771999510936,
+          "cpu_seconds": 0.953125,
+          "values": [
+            {
+              "cp": 170,
+              "mate": null,
+              "depth": 16,
+              "pv": [
+                "a5b6",
+                "e2d1",
+                "a7a5",
+                "b4b5",
+                "b6b5",
+                "a2a4",
+                "b5a6",
+                "d2b1",
+                "c8f5",
+                "f1e2",
+                "h7h5",
+                "f3h4",
+                "f5g4",
+                "e1g1",
+                "a8e8",
+                "e2f3",
+                "g7g6",
+                "b1a3",
+                "f8g7",
+                "a3b5",
+                "d6b8",
+                "g2g3",
+                "c6e7",
+                "a1b1"
+              ],
+              "nodes": 80017
+            },
+            {
+              "cp": 159,
+              "mate": null,
+              "depth": 18,
+              "pv": [
+                "a5b6",
+                "e2d1",
+                "a7a5",
+                "b4b5",
+                "b6b5",
+                "a2a4",
+                "b5a6",
+                "f1e2",
+                "g7g6",
+                "d2b1",
+                "f8g7",
+                "b1a3",
+                "h8e8",
+                "e1g1",
+                "f6e4",
+                "a3b5",
+                "d6f8"
+              ],
+              "nodes": 209959
+            }
+          ],
+          "regret_cp": [
+            348,
+            352
+          ],
+          "major": true,
+          "mate_loss": false
+        },
+        {
+          "root": 13,
+          "regime": "clock",
+          "block": 3,
+          "id": "archive42-game2-ply11",
+          "label": "baseline",
+          "uci": "a5b6",
+          "score": 116,
+          "depth": 7,
+          "nodes": 495616,
+          "seconds": 1.0003393000224605,
+          "cpu_seconds": 0.953125,
+          "values": [
+            {
+              "cp": 170,
+              "mate": null,
+              "depth": 16,
+              "pv": [
+                "a5b6",
+                "e2d1",
+                "a7a5",
+                "b4b5",
+                "b6b5",
+                "a2a4",
+                "b5a6",
+                "d2b1",
+                "c8f5",
+                "f1e2",
+                "h7h5",
+                "f3h4",
+                "f5g4",
+                "e1g1",
+                "a8e8",
+                "e2f3",
+                "g7g6",
+                "b1a3",
+                "f8g7",
+                "a3b5",
+                "d6b8",
+                "g2g3",
+                "c6e7",
+                "a1b1"
+              ],
+              "nodes": 80017
+            },
+            {
+              "cp": 159,
+              "mate": null,
+              "depth": 18,
+              "pv": [
+                "a5b6",
+                "e2d1",
+                "a7a5",
+                "b4b5",
+                "b6b5",
+                "a2a4",
+                "b5a6",
+                "f1e2",
+                "g7g6",
+                "d2b1",
+                "f8g7",
+                "b1a3",
+                "h8e8",
+                "e1g1",
+                "f6e4",
+                "a3b5",
+                "d6f8"
+              ],
+              "nodes": 209959
+            }
+          ],
+          "regret_cp": [
+            348,
+            352
+          ],
+          "major": true,
+          "mate_loss": false
+        }
+      ]
+    },
+    {
+      "id": "archive42-game3-ply10",
+      "best": [
+        {
+          "cp": 92,
+          "mate": null,
+          "depth": 14,
+          "pv": [
+            "d2b3",
+            "c5b6",
+            "h2h3",
+            "e8g8",
+            "e3e4",
+            "f6h5",
+            "a4a5",
+            "c6a5",
+            "b3a5",
+            "b6a5",
+            "e4e5",
+            "g7g6"
+          ],
+          "nodes": 64246
+        },
+        {
+          "cp": 92,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "d2b3",
+            "c5b6",
+            "h2h3",
+            "e8g8",
+            "e3e4",
+            "f6h5",
+            "a4a5",
+            "b6a7",
+            "e4e5",
+            "h7h6",
+            "e2e4",
+            "f7f5",
+            "e5f6",
+            "h5f6",
+            "e4e6",
+            "g8h8",
+            "c1e3",
+            "f8e8",
+            "e3b6",
+            "a7b6",
+            "a5b6",
+            "c7b6",
+            "e6d6",
+            "b6a7",
+            "d6g3",
+            "a8d8",
+            "a1c1",
+            "a7b8",
+            "b3c5",
+            "b8g3",
+            "f2g3"
+          ],
+          "nodes": 229981
+        }
+      ],
+      "choices": [
+        {
+          "root": 14,
+          "regime": "clock",
+          "block": 0,
+          "id": "archive42-game3-ply10",
+          "label": "baseline",
+          "uci": "d2c4",
+          "score": 27,
+          "depth": 6,
+          "nodes": 486400,
+          "seconds": 1.0007721000001766,
+          "cpu_seconds": 0.90625,
+          "values": [
+            {
+              "cp": 14,
+              "mate": null,
+              "depth": 14,
+              "pv": [
+                "d2c4",
+                "a8d8",
+                "e3e4",
+                "f6g4",
+                "c1e3",
+                "c5e3",
+                "f2e3",
+                "e8g8",
+                "a1c1",
+                "a6a5"
+              ],
+              "nodes": 60358
+            },
+            {
+              "cp": 2,
+              "mate": null,
+              "depth": 17,
+              "pv": [
+                "d2c4",
+                "e8g8",
+                "b2b3",
+                "f6d5",
+                "c1b2",
+                "d5c3",
+                "b2c3",
+                "b4c3",
+                "e2c2",
+                "c5e7",
+                "c2c3",
+                "e7f6",
+                "f3d4",
+                "f8d8"
+              ],
+              "nodes": 253878
+            }
+          ],
+          "regret_cp": [
+            78,
+            90
+          ],
+          "major": false,
+          "mate_loss": false
+        },
+        {
+          "root": 14,
+          "regime": "clock",
+          "block": 1,
+          "id": "archive42-game3-ply10",
+          "label": "prototype",
+          "uci": "d2b3",
+          "score": 19,
+          "depth": 6,
+          "nodes": 471040,
+          "seconds": 1.0011510999756865,
+          "cpu_seconds": 0.9375,
+          "values": [
+            {
+              "cp": 92,
+              "mate": null,
+              "depth": 14,
+              "pv": [
+                "d2b3",
+                "c5b6",
+                "h2h3",
+                "e8g8",
+                "e3e4",
+                "f6h5",
+                "a4a5",
+                "c6a5",
+                "b3a5",
+                "b6a5",
+                "e4e5",
+                "g7g6"
+              ],
+              "nodes": 64246
+            },
+            {
+              "cp": 92,
+              "mate": null,
+              "depth": 17,
+              "pv": [
+                "d2b3",
+                "c5b6",
+                "h2h3",
+                "e8g8",
+                "e3e4",
+                "f6h5",
+                "a4a5",
+                "b6a7",
+                "e4e5",
+                "h7h6",
+                "e2e4",
+                "f7f5",
+                "e5f6",
+                "h5f6",
+                "e4e6",
+                "g8h8",
+                "c1e3",
+                "f8e8",
+                "e3b6",
+                "a7b6",
+                "a5b6",
+                "c7b6",
+                "e6d6",
+                "b6a7",
+                "d6g3",
+                "a8d8",
+                "a1c1",
+                "a7b8",
+                "b3c5",
+                "b8g3",
+                "f2g3"
+              ],
+              "nodes": 229981
+            }
+          ],
+          "regret_cp": [
+            0,
+            0
+          ],
+          "major": false,
+          "mate_loss": false
+        },
+        {
+          "root": 14,
+          "regime": "clock",
+          "block": 2,
+          "id": "archive42-game3-ply10",
+          "label": "prototype",
+          "uci": "d2b3",
+          "score": 19,
+          "depth": 6,
+          "nodes": 481280,
+          "seconds": 1.0004114999901503,
+          "cpu_seconds": 0.953125,
+          "values": [
+            {
+              "cp": 92,
+              "mate": null,
+              "depth": 14,
+              "pv": [
+                "d2b3",
+                "c5b6",
+                "h2h3",
+                "e8g8",
+                "e3e4",
+                "f6h5",
+                "a4a5",
+                "c6a5",
+                "b3a5",
+                "b6a5",
+                "e4e5",
+                "g7g6"
+              ],
+              "nodes": 64246
+            },
+            {
+              "cp": 92,
+              "mate": null,
+              "depth": 17,
+              "pv": [
+                "d2b3",
+                "c5b6",
+                "h2h3",
+                "e8g8",
+                "e3e4",
+                "f6h5",
+                "a4a5",
+                "b6a7",
+                "e4e5",
+                "h7h6",
+                "e2e4",
+                "f7f5",
+                "e5f6",
+                "h5f6",
+                "e4e6",
+                "g8h8",
+                "c1e3",
+                "f8e8",
+                "e3b6",
+                "a7b6",
+                "a5b6",
+                "c7b6",
+                "e6d6",
+                "b6a7",
+                "d6g3",
+                "a8d8",
+                "a1c1",
+                "a7b8",
+                "b3c5",
+                "b8g3",
+                "f2g3"
+              ],
+              "nodes": 229981
+            }
+          ],
+          "regret_cp": [
+            0,
+            0
+          ],
+          "major": false,
+          "mate_loss": false
+        },
+        {
+          "root": 14,
+          "regime": "clock",
+          "block": 3,
+          "id": "archive42-game3-ply10",
+          "label": "baseline",
+          "uci": "d2c4",
+          "score": 27,
+          "depth": 6,
+          "nodes": 499712,
+          "seconds": 1.0011027000145987,
+          "cpu_seconds": 0.96875,
+          "values": [
+            {
+              "cp": 14,
+              "mate": null,
+              "depth": 14,
+              "pv": [
+                "d2c4",
+                "a8d8",
+                "e3e4",
+                "f6g4",
+                "c1e3",
+                "c5e3",
+                "f2e3",
+                "e8g8",
+                "a1c1",
+                "a6a5"
+              ],
+              "nodes": 60358
+            },
+            {
+              "cp": 2,
+              "mate": null,
+              "depth": 17,
+              "pv": [
+                "d2c4",
+                "e8g8",
+                "b2b3",
+                "f6d5",
+                "c1b2",
+                "d5c3",
+                "b2c3",
+                "b4c3",
+                "e2c2",
+                "c5e7",
+                "c2c3",
+                "e7f6",
+                "f3d4",
+                "f8d8"
+              ],
+              "nodes": 253878
+            }
+          ],
+          "regret_cp": [
+            78,
+            90
+          ],
+          "major": false,
+          "mate_loss": false
+        }
+      ]
+    },
+    {
+      "id": "archive42-game4-ply19",
+      "best": [
+        {
+          "cp": 223,
+          "mate": null,
+          "depth": 15,
+          "pv": [
+            "g7g6",
+            "h5f3",
+            "b4b3",
+            "e4f6",
+            "g8g7",
+            "e3e4",
+            "b3a2",
+            "c1f4",
+            "e6e5",
+            "f6d5",
+            "c7b7",
+            "f4e5",
+            "f7f6",
+            "e5c3",
+            "a5c6",
+            "d5e7",
+            "c6e7",
+            "a1a2"
+          ],
+          "nodes": 80034
+        },
+        {
+          "cp": 271,
+          "mate": null,
+          "depth": 16,
+          "pv": [
+            "g7g6",
+            "h5e2",
+            "c8b7",
+            "e4g3",
+            "f8d8",
+            "c1d2",
+            "c7c2",
+            "d2e1",
+            "c2a4",
+            "d1c1",
+            "a4b5",
+            "e2b5",
+            "a6b5",
+            "c1c7",
+            "g8f8",
+            "a2e6",
+            "f7e6"
+          ],
+          "nodes": 169853
+        }
+      ],
+      "choices": [
+        {
+          "root": 15,
+          "regime": "clock",
+          "block": 0,
+          "id": "archive42-game4-ply19",
+          "label": "baseline",
+          "uci": "c8d7",
+          "score": 59,
+          "depth": 6,
+          "nodes": 515072,
+          "seconds": 1.0005304999649525,
+          "cpu_seconds": 0.96875,
+          "values": [
+            {
+              "cp": 142,
+              "mate": null,
+              "depth": 14,
+              "pv": [
+                "c8d7",
+                "c1d2",
+                "d7a4",
+                "d1c1",
+                "c7b6",
+                "e4g5",
+                "h7h6",
+                "g5f3",
+                "a8c8",
+                "e3e4",
+                "a5b3",
+                "a2b3",
+                "a4b3",
+                "d2e3"
+              ],
+              "nodes": 49044
+            },
+            {
+              "cp": 115,
+              "mate": null,
+              "depth": 16,
+              "pv": [
+                "c8d7",
+                "b2b3",
+                "d7c6",
+                "e4g3",
+                "e7f6",
+                "a1b1",
+                "g7g6",
+                "h5e2",
+                "h7h5",
+                "c1b2",
+                "f6b2",
+                "e2b2"
+              ],
+              "nodes": 218672
+            }
+          ],
+          "regret_cp": [
+            81,
+            156
+          ],
+          "major": false,
+          "mate_loss": false
+        },
+        {
+          "root": 15,
+          "regime": "clock",
+          "block": 1,
+          "id": "archive42-game4-ply19",
+          "label": "prototype",
+          "uci": "c8d7",
+          "score": 59,
+          "depth": 6,
+          "nodes": 505856,
+          "seconds": 1.0021439000265673,
+          "cpu_seconds": 1.0,
+          "values": [
+            {
+              "cp": 142,
+              "mate": null,
+              "depth": 14,
+              "pv": [
+                "c8d7",
+                "c1d2",
+                "d7a4",
+                "d1c1",
+                "c7b6",
+                "e4g5",
+                "h7h6",
+                "g5f3",
+                "a8c8",
+                "e3e4",
+                "a5b3",
+                "a2b3",
+                "a4b3",
+                "d2e3"
+              ],
+              "nodes": 49044
+            },
+            {
+              "cp": 115,
+              "mate": null,
+              "depth": 16,
+              "pv": [
+                "c8d7",
+                "b2b3",
+                "d7c6",
+                "e4g3",
+                "e7f6",
+                "a1b1",
+                "g7g6",
+                "h5e2",
+                "h7h5",
+                "c1b2",
+                "f6b2",
+                "e2b2"
+              ],
+              "nodes": 218672
+            }
+          ],
+          "regret_cp": [
+            81,
+            156
+          ],
+          "major": false,
+          "mate_loss": false
+        },
+        {
+          "root": 15,
+          "regime": "clock",
+          "block": 2,
+          "id": "archive42-game4-ply19",
+          "label": "prototype",
+          "uci": "c8d7",
+          "score": 59,
+          "depth": 6,
+          "nodes": 499712,
+          "seconds": 1.0015687000122853,
+          "cpu_seconds": 0.96875,
+          "values": [
+            {
+              "cp": 142,
+              "mate": null,
+              "depth": 14,
+              "pv": [
+                "c8d7",
+                "c1d2",
+                "d7a4",
+                "d1c1",
+                "c7b6",
+                "e4g5",
+                "h7h6",
+                "g5f3",
+                "a8c8",
+                "e3e4",
+                "a5b3",
+                "a2b3",
+                "a4b3",
+                "d2e3"
+              ],
+              "nodes": 49044
+            },
+            {
+              "cp": 115,
+              "mate": null,
+              "depth": 16,
+              "pv": [
+                "c8d7",
+                "b2b3",
+                "d7c6",
+                "e4g3",
+                "e7f6",
+                "a1b1",
+                "g7g6",
+                "h5e2",
+                "h7h5",
+                "c1b2",
+                "f6b2",
+                "e2b2"
+              ],
+              "nodes": 218672
+            }
+          ],
+          "regret_cp": [
+            81,
+            156
+          ],
+          "major": false,
+          "mate_loss": false
+        },
+        {
+          "root": 15,
+          "regime": "clock",
+          "block": 3,
+          "id": "archive42-game4-ply19",
+          "label": "baseline",
+          "uci": "c8d7",
+          "score": 59,
+          "depth": 6,
+          "nodes": 509952,
+          "seconds": 1.0008180000004359,
+          "cpu_seconds": 0.96875,
+          "values": [
+            {
+              "cp": 142,
+              "mate": null,
+              "depth": 14,
+              "pv": [
+                "c8d7",
+                "c1d2",
+                "d7a4",
+                "d1c1",
+                "c7b6",
+                "e4g5",
+                "h7h6",
+                "g5f3",
+                "a8c8",
+                "e3e4",
+                "a5b3",
+                "a2b3",
+                "a4b3",
+                "d2e3"
+              ],
+              "nodes": 49044
+            },
+            {
+              "cp": 115,
+              "mate": null,
+              "depth": 16,
+              "pv": [
+                "c8d7",
+                "b2b3",
+                "d7c6",
+                "e4g3",
+                "e7f6",
+                "a1b1",
+                "g7g6",
+                "h5e2",
+                "h7h5",
+                "c1b2",
+                "f6b2",
+                "e2b2"
+              ],
+              "nodes": 218672
+            }
+          ],
+          "regret_cp": [
+            81,
+            156
+          ],
+          "major": false,
+          "mate_loss": false
+        }
+      ]
+    }
+  ],
+  "mean_regret_cp": {
+    "prototype": [
+      134.8125,
+      167.1875
+    ],
+    "baseline": [
+      139.6875,
+      172.8125
+    ]
+  },
+  "new_major": [],
+  "new_mate": [],
+  "repaired": [],
+  "target_depths": {
+    "prototype": 7,
+    "baseline": 7
+  },
+  "requested_teacher_nodes": 800000,
+  "decision": "reject_quality_gate",
+  "completed_utc": "2026-09-09T06:55:17.799495+00:00",
+  "frozen_candidates": true
+}

@@ -40,3 +40,12 @@ independent descendant-value learning, then field preparation, in that order.
 Use a new bounded run, small colour-balanced checks, and conditional ascent after
 a clean played win. Prepare the best retained ZIP and exact results for07:20 BST
 on9September; stop starting heavy work at06:40. Earlier cancelled jobs stay stopped.
+
+For the newly authorised 9 September daytime run, follow
+`../../work/daytime-20260909.md` through 16:00 BST. Work through isolated hash
+efficiency, exchange-aware ordering, independent value learning, then field
+preparation in that order. Retain v1.42 until the declared short checks justify
+a successor. The user explicitly authorises automatic competition upload of a
+qualified stronger successor; verify validation and active version afterward.
+This daytime authorisation replaces the expired overnight deadline for NEW
+daytime jobs only. Keep old preparations and failed sources immutable.
