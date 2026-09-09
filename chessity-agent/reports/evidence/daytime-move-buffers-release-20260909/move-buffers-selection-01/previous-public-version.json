@@ -1,0 +1,89 @@
+{
+  "version": "v1.55",
+  "name": "chessity-agent",
+  "title": "Faster pawn evaluation",
+  "status": "Selected after 2W/0D/0L vs exact v1.54 and 2W/0D/0L vs exact v1.53; nominal 2400 0W/0D/2L, nominal 2600 1W/1D/0L. Small development screen; no calibrated Elo.",
+  "recommended": true,
+  "source_version": "runs\\daytime-20260909\\pawn-bitboards-01\\prototype",
+  "sha256": "29b322dba4ea61d0fce1709327810e8f9f199df79cf40cc92290ddf9ec083fc1",
+  "zip_bytes": 272479,
+  "created_utc": "2026-09-09T09:42:05.569934+00:00",
+  "selection_utc": "2026-09-09T09:42:05.569934+00:00",
+  "archive": "versions/v1.55/chessity-agent-v1.55.zip",
+  "read_only_smoke_calls": 2,
+  "read_only_status": "passed",
+  "archive_json_formatting_differs_from_local_folder": [],
+  "current_results": {
+    "versus54": {
+      "games": 2,
+      "wins": 2,
+      "draws": 0,
+      "losses": 0,
+      "terminations": {
+        "checkmate": 2
+      },
+      "operational_games": 0
+    },
+    "versus53": {
+      "games": 2,
+      "wins": 2,
+      "draws": 0,
+      "losses": 0,
+      "terminations": {
+        "checkmate": 2
+      },
+      "operational_games": 0
+    },
+    "rated2400": {
+      "games": 2,
+      "wins": 0,
+      "draws": 0,
+      "losses": 2,
+      "terminations": {
+        "checkmate": 2
+      },
+      "operational_games": 0
+    },
+    "rated2600": {
+      "games": 2,
+      "wins": 1,
+      "draws": 1,
+      "losses": 0,
+      "terminations": {
+        "checkmate": 1,
+        "threefold_repetition": 1
+      },
+      "operational_games": 0
+    },
+    "rated2800": {
+      "games": 2,
+      "wins": 0,
+      "draws": 1,
+      "losses": 1,
+      "terminations": {
+        "threefold_repetition": 1,
+        "checkmate": 1
+      },
+      "operational_games": 0
+    }
+  },
+  "highest_nominal_opponent_defeated": 2600,
+  "calibrated_elo": null,
+  "time_control": "120+0.5",
+  "selection_evidence": "reports/DAYTIME_PAWN_BITBOARDS_RELEASE_20260909.md",
+  "current_comparison_scope": "Exact archived opponents, both colours, frozen playing weights; exposed development openings.",
+  "latest_read_only_check": {
+    "init_ms": 18225.655199959874,
+    "legal_calls": 2,
+    "read_only_checks": {
+      "create_file": "blocked",
+      "delete_file": "blocked",
+      "create_directory": "blocked",
+      "rename_file": "blocked"
+    },
+    "peak_working_set_bytes": 223309824
+  },
+  "architecture": "Original classical searched-position evaluator with existing learned root policy. No new value model included.",
+  "website_submission_status": "not yet submitted or validated",
+  "goal_achieved": false
+}

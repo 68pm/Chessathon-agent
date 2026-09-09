@@ -1,10 +1,10 @@
 # Chess agent
 
-**Selected upload: chessity-agent v1.55** at `../chessity-agent.zip`.
+**Selected upload: chessity-agent v1.56** at `../chessity-agent.zip`.
 
-Selected after 2W/0D/0L vs exact v1.54 and 2W/0D/0L vs exact v1.53; nominal 2400 0W/0D/2L, nominal 2600 1W/1D/0L. Small development screen; no calibrated Elo.
+Selected after 2W/0D/0L vs exact v1.55 and 2W/0D/0L vs exact v1.53; nominal 2400 0W/1D/1L, nominal 2600 0W/1D/1L. Small development screen; no calibrated Elo.
 
-[Release report](docs/DAYTIME_PAWN_BITBOARDS_RELEASE_20260909.md).
+[Release report](docs/DAYTIME_MOVE_BUFFERS_RELEASE_20260909.md).
 
 Source-only read-only inference; no Stockfish, networking or online training.
 Site submission remains pending access. Earlier work follows as history.

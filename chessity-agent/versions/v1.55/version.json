@@ -3,7 +3,7 @@
   "name": "chessity-agent",
   "title": "Faster pawn evaluation",
   "status": "Selected after 2W/0D/0L vs exact v1.54 and 2W/0D/0L vs exact v1.53; nominal 2400 0W/0D/2L, nominal 2600 1W/1D/0L. Small development screen; no calibrated Elo.",
-  "recommended": true,
+  "recommended": false,
   "source_version": "runs\\daytime-20260909\\pawn-bitboards-01\\prototype",
   "sha256": "29b322dba4ea61d0fce1709327810e8f9f199df79cf40cc92290ddf9ec083fc1",
   "zip_bytes": 272479,
@@ -85,5 +85,6 @@
   },
   "architecture": "Original classical searched-position evaluator with existing learned root policy. No new value model included.",
   "website_submission_status": "not yet submitted or validated",
-  "goal_achieved": false
+  "goal_achieved": false,
+  "selection_note": "Preserved former selection; the new buffered-search candidate passed the declared short comparison. Prior rating evidence remains historical."
 }
