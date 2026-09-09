@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\training\daytime_antisymmetric_value.py", line 242, in <module>
+    fit(prepare())
+        ^^^^^^^^^
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\training\daytime_antisymmetric_value.py", line 102, in prepare
+    assert len(heldout)==24, 'Insufficient new reservation groups; do not reuse exposed data.'
+           ^^^^^^^^^^^^^^^^
+AssertionError: Insufficient new reservation groups; do not reuse exposed data.

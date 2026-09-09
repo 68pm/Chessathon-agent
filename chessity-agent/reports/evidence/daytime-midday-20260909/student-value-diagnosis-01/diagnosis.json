@@ -1,0 +1,5298 @@
+{
+  "status": "complete",
+  "selected_version": "v1.55",
+  "selected_sha256": "29b322dba4ea61d0fce1709327810e8f9f199df79cf40cc92290ddf9ec083fc1",
+  "source_sha256": {
+    "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\daytime-20260909\\student-descendants-01\\preparation.json": "80ddbee85f4c8363c604abf265f8ebdbaaf257174e974812c5a4cb8dbf4ed0fc",
+    "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\daytime-20260909\\student-descendants-01\\student.json": "d6bece1230a8cbf88d048d640e3730e511b99c54d7891d2e14f6d8fa05463432",
+    "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\daytime-20260909\\student-descendants-01\\teacher.json": "031185dc709c13854dbe182567f01ec4841011d2dda8470a2b076a01f3be229c",
+    "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\scripts\\daytime_student_value_diagnosis.py": "607675b943f5203c8ba22bfd63a3874891acaae49b0a368847355fc4bbedf872"
+  },
+  "independent_teacher_nodes": 23200000,
+  "scope": "Exposed diagnostic positions with independent labels; no fit, held-out validation or rating claim.",
+  "total_leaves": 62,
+  "eligible": 42,
+  "correction_cohorts": {
+    "positive": 21,
+    "near_zero": 3,
+    "negative": 18
+  },
+  "matched_eligible_static_absolute_error": {
+    "n": 42,
+    "mean": 291.2738095238095,
+    "median": 276.5,
+    "maximum": 858.5
+  },
+  "matched_eligible_quiescence_absolute_error": {
+    "n": 42,
+    "mean": 267.2261904761905,
+    "median": 207.75,
+    "maximum": 850.0
+  },
+  "branches": [
+    {
+      "root_id": "rated2400-True-24",
+      "branch": "played",
+      "depth": 8,
+      "full_requested_depth": true,
+      "stop": "quiescence_boundary",
+      "nodes": 662475,
+      "seconds": 1.2389683999936096,
+      "score_root": 2,
+      "leaves": 4,
+      "eligible": 4,
+      "static_absolute_error": {
+        "n": 4,
+        "mean": 208.5,
+        "median": 82.75,
+        "maximum": 667.0
+      },
+      "quiescence_absolute_error": {
+        "n": 4,
+        "mean": 177.0,
+        "median": 82.75,
+        "maximum": 541.0
+      }
+    },
+    {
+      "root_id": "rated2400-True-24",
+      "branch": "defence",
+      "depth": 8,
+      "full_requested_depth": true,
+      "stop": "missing_or_nonexact_transposition",
+      "nodes": 432564,
+      "seconds": 0.795210300013423,
+      "score_root": -27,
+      "leaves": 2,
+      "eligible": 2,
+      "static_absolute_error": {
+        "n": 2,
+        "mean": 88.0,
+        "median": 88.0,
+        "maximum": 107.5
+      },
+      "quiescence_absolute_error": {
+        "n": 2,
+        "mean": 88.0,
+        "median": 88.0,
+        "maximum": 107.5
+      }
+    },
+    {
+      "root_id": "rated2600-False-23",
+      "branch": "played",
+      "depth": 8,
+      "full_requested_depth": true,
+      "stop": "missing_or_nonexact_transposition",
+      "nodes": 1074058,
+      "seconds": 1.794836800021585,
+      "score_root": 210,
+      "leaves": 1,
+      "eligible": 1,
+      "static_absolute_error": {
+        "n": 1,
+        "mean": 378.5,
+        "median": 378.5,
+        "maximum": 378.5
+      },
+      "quiescence_absolute_error": {
+        "n": 1,
+        "mean": 348.5,
+        "median": 348.5,
+        "maximum": 348.5
+      }
+    },
+    {
+      "root_id": "rated2600-False-23",
+      "branch": "defence",
+      "depth": 8,
+      "full_requested_depth": true,
+      "stop": "missing_or_nonexact_transposition",
+      "nodes": 183645,
+      "seconds": 0.29738579998956993,
+      "score_root": 12,
+      "leaves": 1,
+      "eligible": 0,
+      "static_absolute_error": {
+        "n": 1,
+        "mean": 593.5,
+        "median": 593.5,
+        "maximum": 593.5
+      },
+      "quiescence_absolute_error": {
+        "n": 1,
+        "mean": 245.5,
+        "median": 245.5,
+        "maximum": 245.5
+      }
+    },
+    {
+      "root_id": "field-own-33",
+      "branch": "played",
+      "depth": 8,
+      "full_requested_depth": true,
+      "stop": "quiescence_boundary",
+      "nodes": 320623,
+      "seconds": 0.5205261000082828,
+      "score_root": 9,
+      "leaves": 4,
+      "eligible": 4,
+      "static_absolute_error": {
+        "n": 4,
+        "mean": 501.375,
+        "median": 501.0,
+        "maximum": 534.0
+      },
+      "quiescence_absolute_error": {
+        "n": 4,
+        "mean": 501.375,
+        "median": 501.0,
+        "maximum": 534.0
+      }
+    },
+    {
+      "root_id": "field-own-33",
+      "branch": "defence",
+      "depth": 8,
+      "full_requested_depth": true,
+      "stop": "quiescence_boundary",
+      "nodes": 313010,
+      "seconds": 0.5102875999873504,
+      "score_root": 30,
+      "leaves": 4,
+      "eligible": 3,
+      "static_absolute_error": {
+        "n": 4,
+        "mean": 532.375,
+        "median": 514.25,
+        "maximum": 598.5
+      },
+      "quiescence_absolute_error": {
+        "n": 4,
+        "mean": 532.375,
+        "median": 514.25,
+        "maximum": 598.5
+      }
+    },
+    {
+      "root_id": "field-own-44",
+      "branch": "played",
+      "depth": 8,
+      "full_requested_depth": true,
+      "stop": "quiescence_boundary",
+      "nodes": 39541,
+      "seconds": 0.053707199986092746,
+      "score_root": 337,
+      "leaves": 4,
+      "eligible": 2,
+      "static_absolute_error": {
+        "n": 3,
+        "mean": 541.3333333333334,
+        "median": 493.5,
+        "maximum": 740.0
+      },
+      "quiescence_absolute_error": {
+        "n": 3,
+        "mean": 541.3333333333334,
+        "median": 493.5,
+        "maximum": 740.0
+      }
+    },
+    {
+      "root_id": "field-own-44",
+      "branch": "defence",
+      "depth": 8,
+      "full_requested_depth": true,
+      "stop": "quiescence_boundary",
+      "nodes": 54648,
+      "seconds": 0.09882189997006208,
+      "score_root": 250,
+      "leaves": 4,
+      "eligible": 0,
+      "static_absolute_error": {
+        "n": 4,
+        "mean": 461.125,
+        "median": 467.25,
+        "maximum": 505.0
+      },
+      "quiescence_absolute_error": {
+        "n": 4,
+        "mean": 461.125,
+        "median": 467.25,
+        "maximum": 505.0
+      }
+    },
+    {
+      "root_id": "bitboards2400-False-15",
+      "branch": "played",
+      "depth": 8,
+      "full_requested_depth": true,
+      "stop": "missing_or_nonexact_transposition",
+      "nodes": 258505,
+      "seconds": 0.4620924999471754,
+      "score_root": 141,
+      "leaves": 2,
+      "eligible": 2,
+      "static_absolute_error": {
+        "n": 2,
+        "mean": 121.75,
+        "median": 121.75,
+        "maximum": 131.5
+      },
+      "quiescence_absolute_error": {
+        "n": 2,
+        "mean": 117.25,
+        "median": 117.25,
+        "maximum": 131.5
+      }
+    },
+    {
+      "root_id": "bitboards2400-False-15",
+      "branch": "defence",
+      "depth": 8,
+      "full_requested_depth": true,
+      "stop": "quiescence_boundary",
+      "nodes": 267102,
+      "seconds": 0.46577830001479015,
+      "score_root": 17,
+      "leaves": 4,
+      "eligible": 4,
+      "static_absolute_error": {
+        "n": 4,
+        "mean": 88.625,
+        "median": 58.75,
+        "maximum": 224.5
+      },
+      "quiescence_absolute_error": {
+        "n": 4,
+        "mean": 122.875,
+        "median": 126.75,
+        "maximum": 225.5
+      }
+    },
+    {
+      "root_id": "bitboards2400-True-35",
+      "branch": "played",
+      "depth": 8,
+      "full_requested_depth": true,
+      "stop": "quiescence_boundary",
+      "nodes": 114930,
+      "seconds": 0.18009929999243468,
+      "score_root": -13,
+      "leaves": 4,
+      "eligible": 2,
+      "static_absolute_error": {
+        "n": 4,
+        "mean": 341.75,
+        "median": 246.75,
+        "maximum": 858.5
+      },
+      "quiescence_absolute_error": {
+        "n": 4,
+        "mean": 122.5,
+        "median": 15.5,
+        "maximum": 451.5
+      }
+    },
+    {
+      "root_id": "bitboards2400-True-35",
+      "branch": "defence",
+      "depth": 8,
+      "full_requested_depth": true,
+      "stop": "quiescence_boundary",
+      "nodes": 110140,
+      "seconds": 0.16011500003514811,
+      "score_root": -178,
+      "leaves": 4,
+      "eligible": 2,
+      "static_absolute_error": {
+        "n": 4,
+        "mean": 105.0,
+        "median": 27.25,
+        "maximum": 356.5
+      },
+      "quiescence_absolute_error": {
+        "n": 4,
+        "mean": 52.0,
+        "median": 15.75,
+        "maximum": 167.5
+      }
+    }
+  ],
+  "rows": [
+    {
+      "id": "1b38fbb788a3fe77b92722ac3799ac9586d410b8ed415f9b5606d4e3b9e4fab0",
+      "root_id": "rated2400-True-24",
+      "fen": "r2qr1k1/1p1b1p2/1np3pB/p2p3n/Pb1P3P/1QNBPP1N/1P4P1/2R1R1K1 b - - 0 25",
+      "origins": [
+        {
+          "kind": "student-intermediate",
+          "branch": "played",
+          "plies": 3
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": 508,
+          "mate": null,
+          "depth": 16,
+          "pv": [
+            "d7h3",
+            "h6g5",
+            "d8d6",
+            "b3c2",
+            "h3f5",
+            "d3f5",
+            "g6f5",
+            "c2f5",
+            "h5g7",
+            "f5f6",
+            "d6f6",
+            "g5f6",
+            "b6c4",
+            "e3e4",
+            "d5e4",
+            "f3e4",
+            "c6c5",
+            "e4e5",
+            "c5d4"
+          ],
+          "nodes": 80100
+        },
+        {
+          "cp": 536,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "d7h3",
+            "h6g5",
+            "d8d6",
+            "c3e2",
+            "h3f5",
+            "d3f5",
+            "g6f5",
+            "e2f4",
+            "h5f4",
+            "g5f4",
+            "d6d7",
+            "e1e2"
+          ],
+          "nodes": 320089
+        }
+      ],
+      "static_stm_cp": -145,
+      "quiescence": {
+        "complete": true,
+        "engine_score": -19,
+        "mate_band": false,
+        "score_stm_cp": -19,
+        "nodes": 266,
+        "seconds": 0.0005942000425420702
+      },
+      "teacher_mean_stm_cp": 522,
+      "static_error_cp": -667,
+      "teacher_disagreement_cp": 28,
+      "quiescence_error_cp": -541
+    },
+    {
+      "id": "645ee9cae27e8d5dd5931bded888d6e09a852e6513b6653cd445a9fe9e421e2d",
+      "root_id": "rated2400-True-24",
+      "fen": "r3r1k1/1p1b1p2/1np3p1/p2p2Bn/Pb1P3q/1QNBPP1N/1P4P1/2R1R1K1 b - - 1 26",
+      "origins": [
+        {
+          "kind": "student-intermediate",
+          "branch": "played",
+          "plies": 5
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": 78,
+          "mate": null,
+          "depth": 13,
+          "pv": [
+            "h4g3",
+            "c3e2",
+            "g3d6",
+            "h3f4",
+            "h5g7",
+            "g1f2",
+            "c6c5",
+            "d4c5",
+            "b4c5",
+            "e2d4"
+          ],
+          "nodes": 40340
+        },
+        {
+          "cp": 81,
+          "mate": null,
+          "depth": 19,
+          "pv": [
+            "h4g3",
+            "c3e2",
+            "g3d6",
+            "h3f4",
+            "c6c5",
+            "f4h5",
+            "c5c4",
+            "b3d1",
+            "d7a4",
+            "d3c2",
+            "a4c2",
+            "c1c2",
+            "g6h5",
+            "e1f1",
+            "d6g6",
+            "g5f4",
+            "g6d3",
+            "g1f2",
+            "e8e6"
+          ],
+          "nodes": 320025
+        }
+      ],
+      "static_stm_cp": -25,
+      "quiescence": {
+        "complete": true,
+        "engine_score": -25,
+        "mate_band": false,
+        "score_stm_cp": -25,
+        "nodes": 61,
+        "seconds": 0.0001474000164307654
+      },
+      "teacher_mean_stm_cp": 79.5,
+      "static_error_cp": -104.5,
+      "teacher_disagreement_cp": 3,
+      "quiescence_error_cp": -104.5
+    },
+    {
+      "id": "5dc1bab14158cd234a589ef1677d66b7508b5f1d19e6e87db53abb3bafffda0a",
+      "root_id": "rated2400-True-24",
+      "fen": "r3r1k1/1p1b1p2/1np3p1/p2p2Bn/Pb1P4/1Q1BPPqN/1P2N1P1/2R1R1K1 b - - 3 27",
+      "origins": [
+        {
+          "kind": "student-intermediate",
+          "branch": "played",
+          "plies": 7
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": 69,
+          "mate": null,
+          "depth": 14,
+          "pv": [
+            "g3d6",
+            "g2g4",
+            "h5g7",
+            "g5f4",
+            "d6e7",
+            "e2c3",
+            "g7e6",
+            "f4g3",
+            "c6c5",
+            "b3d1",
+            "d7c6",
+            "g1g2",
+            "a8c8",
+            "h3f4",
+            "c5d4"
+          ],
+          "nodes": 45117
+        },
+        {
+          "cp": 63,
+          "mate": null,
+          "depth": 18,
+          "pv": [
+            "g3d6",
+            "g2g4",
+            "h5g7",
+            "g5f4",
+            "d6e7",
+            "e2c3",
+            "g7e6",
+            "g1g2",
+            "c6c5",
+            "d4c5",
+            "e6c5",
+            "b3c2",
+            "d7a4",
+            "c3a4",
+            "c5a4",
+            "e1h1",
+            "e8c8",
+            "c2b1",
+            "c8c1",
+            "b1c1",
+            "a8c8",
+            "c1b1",
+            "e7f6",
+            "h3f2",
+            "f6b2"
+          ],
+          "nodes": 320235
+        }
+      ],
+      "static_stm_cp": 5,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 5,
+        "mate_band": false,
+        "score_stm_cp": 5,
+        "nodes": 74,
+        "seconds": 0.00022029998945072293
+      },
+      "teacher_mean_stm_cp": 66,
+      "static_error_cp": -61,
+      "teacher_disagreement_cp": 6,
+      "quiescence_error_cp": -61
+    },
+    {
+      "id": "494f87fe79004cbae2037cbfbcb976c70e851c2f9014075b71127ca75894284f",
+      "root_id": "rated2400-True-24",
+      "fen": "r3r1k1/1pqb1p2/1np3p1/p2p2Bn/Pb1P4/1Q1BPP1N/1P2N1P1/2R1R1K1 w - - 4 28",
+      "origins": [
+        {
+          "kind": "student-endpoint",
+          "branch": "played",
+          "plies": 8,
+          "stop": "quiescence_boundary"
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": 28,
+          "mate": null,
+          "depth": 13,
+          "pv": [
+            "h3f4",
+            "h5f4",
+            "e2f4",
+            "c6c5"
+          ],
+          "nodes": 66736
+        },
+        {
+          "cp": -21,
+          "mate": null,
+          "depth": 16,
+          "pv": [
+            "g2g4",
+            "b4d2",
+            "b3c2",
+            "d2e3",
+            "g5e3",
+            "e8e3",
+            "d3g6",
+            "d7g4",
+            "g6h5",
+            "g4h3",
+            "g1h1",
+            "g8h8",
+            "e1g1",
+            "c7d6",
+            "e2g3",
+            "d6h6",
+            "c2h2",
+            "h3d7",
+            "g1g2",
+            "a8g8",
+            "c1g1",
+            "g8g5",
+            "f3f4",
+            "g5g7",
+            "g3f5"
+          ],
+          "nodes": 293751
+        }
+      ],
+      "static_stm_cp": 2,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 2,
+        "mate_band": false,
+        "score_stm_cp": 2,
+        "nodes": 42,
+        "seconds": 0.00012390001211315393
+      },
+      "teacher_mean_stm_cp": 3.5,
+      "static_error_cp": -1.5,
+      "teacher_disagreement_cp": 49,
+      "quiescence_error_cp": -1.5
+    },
+    {
+      "id": "8724c18030b25ff4a8f2eb05560823cd52b79f2b110a602ab5c7dffd0d08baa8",
+      "root_id": "rated2400-True-24",
+      "fen": "r2qr3/1p1b1k2/1np2npp/p2p4/Pb1P1B1P/2NBPP2/1PQ3P1/2R1R1K1 b - - 1 25",
+      "origins": [
+        {
+          "kind": "student-intermediate",
+          "branch": "defence",
+          "plies": 3
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": 182,
+          "mate": null,
+          "depth": 14,
+          "pv": [
+            "d7f5",
+            "d3f5",
+            "g6f5",
+            "c2f5",
+            "d8d7",
+            "f5d7",
+            "f6d7",
+            "f4h6",
+            "b4c3",
+            "c1c3",
+            "b6a4",
+            "c3c2",
+            "a4b6",
+            "g2g4",
+            "a5a4",
+            "h6f4"
+          ],
+          "nodes": 43089
+        },
+        {
+          "cp": 197,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "d7f5",
+            "d3f5",
+            "g6f5",
+            "c2f5",
+            "d8d7",
+            "f5d7",
+            "f6d7",
+            "f4h6",
+            "b4c3",
+            "c1c3",
+            "b6a4",
+            "c3c2",
+            "a4b6",
+            "g2g4",
+            "a5a4",
+            "g1f2"
+          ],
+          "nodes": 165783
+        }
+      ],
+      "static_stm_cp": 121,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 121,
+        "mate_band": false,
+        "score_stm_cp": 121,
+        "nodes": 20,
+        "seconds": 7.539999205619097e-05
+      },
+      "teacher_mean_stm_cp": 189.5,
+      "static_error_cp": -68.5,
+      "teacher_disagreement_cp": 15,
+      "quiescence_error_cp": -68.5
+    },
+    {
+      "id": "e8754d306ab51be890b933bd536049102a5bd187af771c2e7d217369fc05d2eb",
+      "root_id": "rated2400-True-24",
+      "fen": "r2q2r1/1p1b1k2/1np2npB/p2p4/Pb1P3P/2NBPP2/1PQ3P1/2R1R1K1 b - - 0 26",
+      "origins": [
+        {
+          "kind": "student-intermediate",
+          "branch": "defence",
+          "plies": 5
+        },
+        {
+          "kind": "student-endpoint",
+          "branch": "defence",
+          "plies": 5,
+          "stop": "missing_or_nonexact_transposition"
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": 116,
+          "mate": null,
+          "depth": 13,
+          "pv": [
+            "f6h5",
+            "h6g5",
+            "b4e7",
+            "f3f4",
+            "a8c8",
+            "e3e4",
+            "e7g5",
+            "f4g5",
+            "f7g7",
+            "e4d5",
+            "c6d5",
+            "d3g6",
+            "h5f4",
+            "g6f5"
+          ],
+          "nodes": 63880
+        },
+        {
+          "cp": 117,
+          "mate": null,
+          "depth": 18,
+          "pv": [
+            "f6h5",
+            "h6g5",
+            "b4e7",
+            "f3f4",
+            "g8g7",
+            "e3e4",
+            "f7g8",
+            "e4e5",
+            "e7g5",
+            "f4g5",
+            "h5f4",
+            "e1f1",
+            "f4d3",
+            "c2d3",
+            "d8e7",
+            "c3e2",
+            "a8f8",
+            "f1f6",
+            "d7f5",
+            "d3g3",
+            "e7b4"
+          ],
+          "nodes": 320203
+        }
+      ],
+      "static_stm_cp": 9,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 9,
+        "mate_band": false,
+        "score_stm_cp": 9,
+        "nodes": 9,
+        "seconds": 6.160000339150429e-05
+      },
+      "teacher_mean_stm_cp": 116.5,
+      "static_error_cp": -107.5,
+      "teacher_disagreement_cp": 1,
+      "quiescence_error_cp": -107.5
+    },
+    {
+      "id": "1e7d4088cc1cb9fbedaebd956dc12e96f3f965021a139c8dc4f77e56c0912a81",
+      "root_id": "rated2600-False-23",
+      "fen": "r4rk1/2q5/2p1bp1Q/1p1p4/3P4/3BP1b1/PP1K2Pp/2R4R w - - 0 25",
+      "origins": [
+        {
+          "kind": "student-intermediate",
+          "branch": "played",
+          "plies": 3
+        },
+        {
+          "kind": "student-endpoint",
+          "branch": "played",
+          "plies": 3,
+          "stop": "missing_or_nonexact_transposition"
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -171,
+          "mate": null,
+          "depth": 14,
+          "pv": [
+            "c1c6",
+            "c7g7",
+            "h6g7",
+            "g8g7",
+            "c6e6",
+            "a8a2",
+            "e6e7",
+            "f8f7",
+            "e7f7",
+            "g7f7",
+            "d2c2",
+            "b5b4",
+            "d3f5",
+            "f7g7",
+            "c2b3",
+            "a2a8",
+            "b3b4",
+            "a8e8",
+            "b4c5",
+            "e8e3",
+            "c5d5",
+            "g7h6"
+          ],
+          "nodes": 53606
+        },
+        {
+          "cp": -156,
+          "mate": null,
+          "depth": 21,
+          "pv": [
+            "c1c6",
+            "c7g7",
+            "h6g7",
+            "g8g7",
+            "c6e6",
+            "a8a2",
+            "e6e7",
+            "f8f7",
+            "e7f7",
+            "g7f7",
+            "d2c2",
+            "b5b4",
+            "d3f5",
+            "f7e7",
+            "f5h3",
+            "e7d6",
+            "h3f5",
+            "a2a7",
+            "c2d2",
+            "a7e7",
+            "b2b3",
+            "e7e8",
+            "d2e2"
+          ],
+          "nodes": 296564
+        }
+      ],
+      "static_stm_cp": -542,
+      "quiescence": {
+        "complete": true,
+        "engine_score": -512,
+        "mate_band": false,
+        "score_stm_cp": -512,
+        "nodes": 116,
+        "seconds": 0.0002305000089108944
+      },
+      "teacher_mean_stm_cp": -163.5,
+      "static_error_cp": -378.5,
+      "teacher_disagreement_cp": 15,
+      "quiescence_error_cp": -348.5
+    },
+    {
+      "id": "97787ad06ad8be69afe0dfec33a843fb8ffaa569cb0ee3075aeee6337d9ccc97",
+      "root_id": "rated2600-False-23",
+      "fen": "r4rk1/6Q1/p1p1bp2/1p1p4/3P4/2NBP1bp/PP1K2P1/2R4R b - - 0 24",
+      "origins": [
+        {
+          "kind": "student-endpoint",
+          "branch": "defence",
+          "plies": 2,
+          "stop": "missing_or_nonexact_transposition"
+        }
+      ],
+      "terminal": false,
+      "eligible": false,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -194,
+          "mate": null,
+          "depth": 15,
+          "pv": [
+            "g8g7",
+            "c3e2",
+            "g3b8",
+            "g2h3",
+            "e6d7",
+            "c1g1",
+            "g7f7",
+            "h3h4",
+            "f6f5",
+            "g1g5",
+            "f8g8",
+            "d3f5"
+          ],
+          "nodes": 80091
+        },
+        {
+          "cp": -193,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "g8g7",
+            "c3e2",
+            "g3b8",
+            "g2h3",
+            "e6d7",
+            "c1g1",
+            "g7f7",
+            "h3h4",
+            "f6f5",
+            "g1g5",
+            "f7e7",
+            "e2f4",
+            "b8f4",
+            "e3f4",
+            "f8f7"
+          ],
+          "nodes": 320045
+        }
+      ],
+      "static_stm_cp": -787,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 52,
+        "mate_band": false,
+        "score_stm_cp": 52,
+        "nodes": 23,
+        "seconds": 6.820005364716053e-05
+      },
+      "teacher_mean_stm_cp": -193.5,
+      "static_error_cp": -593.5,
+      "teacher_disagreement_cp": 1,
+      "quiescence_error_cp": 245.5
+    },
+    {
+      "id": "efd6a42b5811fdb88e6663ccd2f44d575ae029ff609b843d8043d734ebfff046",
+      "root_id": "field-own-33",
+      "fen": "8/1Rp2k2/2pq3r/5p2/r1Pp1PnP/3P2P1/P3Q3/R5K1 w - - 1 35",
+      "origins": [
+        {
+          "kind": "student-intermediate",
+          "branch": "played",
+          "plies": 3
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -473,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "a1e1",
+            "a4a8",
+            "a2a4",
+            "g4e3",
+            "e1b1",
+            "a8a4",
+            "b7b8",
+            "a4a6",
+            "b8c8",
+            "d6e7",
+            "e2b2",
+            "a6b6",
+            "c8c7",
+            "e7c7",
+            "b2b6",
+            "c7b6",
+            "b1b6",
+            "e3g4"
+          ],
+          "nodes": 80058
+        },
+        {
+          "cp": -514,
+          "mate": null,
+          "depth": 19,
+          "pv": [
+            "a1e1",
+            "g4e3",
+            "e1b1",
+            "a4a8",
+            "b7b8",
+            "a8b8",
+            "b1b8",
+            "d6e7",
+            "a2a4",
+            "e7a3",
+            "b8b1",
+            "a3a4",
+            "e2b2",
+            "c6c5",
+            "b2b8"
+          ],
+          "nodes": 320238
+        }
+      ],
+      "static_stm_cp": -24,
+      "quiescence": {
+        "complete": true,
+        "engine_score": -24,
+        "mate_band": false,
+        "score_stm_cp": -24,
+        "nodes": 8,
+        "seconds": 0.00014999997802078724
+      },
+      "teacher_mean_stm_cp": -493.5,
+      "static_error_cp": 469.5,
+      "teacher_disagreement_cp": 41,
+      "quiescence_error_cp": 469.5
+    },
+    {
+      "id": "0efc7406eb237fd909e2e4e877b36d02bf3c0ec80e4580d7084c2ed4a41e1a67",
+      "root_id": "field-own-33",
+      "fen": "8/1Rp2k2/2pq3r/r4p2/2Pp1PnP/3P2P1/P1Q5/R5K1 w - - 3 36",
+      "origins": [
+        {
+          "kind": "student-intermediate",
+          "branch": "played",
+          "plies": 5
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -548,
+          "mate": null,
+          "depth": 16,
+          "pv": [
+            "a1e1",
+            "h6e6",
+            "e1e6",
+            "d6e6",
+            "b7c7",
+            "f7g6",
+            "c2d2",
+            "a5a8",
+            "d2b2",
+            "g6h6",
+            "g1g2",
+            "e6e1",
+            "c7c6",
+            "h6h5"
+          ],
+          "nodes": 80062
+        },
+        {
+          "cp": -612,
+          "mate": null,
+          "depth": 18,
+          "pv": [
+            "c2b2",
+            "d6e7",
+            "b7b8",
+            "e7e3",
+            "g1g2",
+            "h6e6",
+            "b8h8",
+            "e3e2",
+            "b2e2",
+            "e6e2",
+            "g2f1",
+            "e2h2",
+            "f1g1",
+            "a5a2",
+            "a1a2",
+            "h2a2",
+            "h8h7",
+            "f7g6",
+            "h7c7"
+          ],
+          "nodes": 320070
+        }
+      ],
+      "static_stm_cp": -46,
+      "quiescence": {
+        "complete": true,
+        "engine_score": -46,
+        "mate_band": false,
+        "score_stm_cp": -46,
+        "nodes": 3,
+        "seconds": 2.829998265951872e-05
+      },
+      "teacher_mean_stm_cp": -580,
+      "static_error_cp": 534,
+      "teacher_disagreement_cp": 64,
+      "quiescence_error_cp": 534
+    },
+    {
+      "id": "61c00c655a7b88980717c0f71e8372850654e70babcdc2e55a3f091ef28093e8",
+      "root_id": "field-own-33",
+      "fen": "8/1Rp2k2/2pq3r/r4p2/P1Pp1P1P/3Pn1P1/2Q5/R5K1 w - - 1 37",
+      "origins": [
+        {
+          "kind": "student-intermediate",
+          "branch": "played",
+          "plies": 7
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -491,
+          "mate": null,
+          "depth": 16,
+          "pv": [
+            "c2b2",
+            "a5a8",
+            "b2b6",
+            "a8c8",
+            "a4a5",
+            "f7f6",
+            "b6a7",
+            "h6g6",
+            "g1f2",
+            "g6g8"
+          ],
+          "nodes": 80020
+        },
+        {
+          "cp": -490,
+          "mate": null,
+          "depth": 18,
+          "pv": [
+            "c2a2",
+            "c6c5",
+            "a2h2",
+            "a5a8",
+            "h2h1",
+            "h6g6",
+            "h1f3",
+            "f7g7",
+            "h4h5",
+            "g6e6",
+            "a4a5",
+            "g7h6"
+          ],
+          "nodes": 271041
+        }
+      ],
+      "static_stm_cp": -14,
+      "quiescence": {
+        "complete": true,
+        "engine_score": -14,
+        "mate_band": false,
+        "score_stm_cp": -14,
+        "nodes": 3,
+        "seconds": 2.789997961372137e-05
+      },
+      "teacher_mean_stm_cp": -490.5,
+      "static_error_cp": 476.5,
+      "teacher_disagreement_cp": 1,
+      "quiescence_error_cp": 476.5
+    },
+    {
+      "id": "0551aa66b67915809d31c2d41da7a489dae44628cf7395aeceb4716b9a0262f9",
+      "root_id": "field-own-33",
+      "fen": "8/1Rp2k2/2pq3r/r4p2/P1Pp1P1P/3Pn1P1/3Q4/R5K1 b - - 2 37",
+      "origins": [
+        {
+          "kind": "student-endpoint",
+          "branch": "played",
+          "plies": 8,
+          "stop": "quiescence_boundary"
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": 559,
+          "mate": null,
+          "depth": 16,
+          "pv": [
+            "a5a8",
+            "c4c5",
+            "d6e7",
+            "a4a5",
+            "a8g8",
+            "d2a2",
+            "e3d5",
+            "g1h2",
+            "h6h4",
+            "h2g2",
+            "h4h6",
+            "a1e1",
+            "e7e1",
+            "b7c7",
+            "f7e8"
+          ],
+          "nodes": 80041
+        },
+        {
+          "cp": 510,
+          "mate": null,
+          "depth": 18,
+          "pv": [
+            "a5a8",
+            "a1b1",
+            "a8a4",
+            "d2b2",
+            "h6e6",
+            "b7b8",
+            "e3g4",
+            "b8h8",
+            "f7g7",
+            "g1f1",
+            "g4f6"
+          ],
+          "nodes": 320099
+        }
+      ],
+      "static_stm_cp": 9,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 9,
+        "mate_band": false,
+        "score_stm_cp": 9,
+        "nodes": 25,
+        "seconds": 8.859997615218163e-05
+      },
+      "teacher_mean_stm_cp": 534.5,
+      "static_error_cp": -525.5,
+      "teacher_disagreement_cp": 49,
+      "quiescence_error_cp": -525.5
+    },
+    {
+      "id": "864af87c6803ffd573949e9fcb548b0be91386a85b345953cb93c524b4a9c826",
+      "root_id": "field-own-33",
+      "fen": "7r/1Rp5/2pq2k1/5p2/r1Pp1PnP/3P2P1/P3Q3/R5K1 w - - 1 35",
+      "origins": [
+        {
+          "kind": "student-intermediate",
+          "branch": "defence",
+          "plies": 3
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -542,
+          "mate": null,
+          "depth": 16,
+          "pv": [
+            "h4h5",
+            "g6h7",
+            "a1b1",
+            "h8g8",
+            "b1b6",
+            "a4a8",
+            "c4c5",
+            "d6d7",
+            "e2e6",
+            "d7e6",
+            "b7c7",
+            "h7h8"
+          ],
+          "nodes": 80073
+        },
+        {
+          "cp": -539,
+          "mate": null,
+          "depth": 18,
+          "pv": [
+            "c4c5",
+            "d6d7",
+            "h4h5",
+            "g6h7",
+            "a1e1",
+            "g4e3",
+            "g3g4",
+            "f5g4",
+            "f4f5",
+            "h8g8",
+            "e2f2",
+            "a4a8",
+            "f2f4",
+            "e3d5",
+            "f4e5",
+            "g8g7",
+            "f5f6",
+            "g7f7",
+            "e5g5",
+            "f7f6"
+          ],
+          "nodes": 320204
+        }
+      ],
+      "static_stm_cp": -37,
+      "quiescence": {
+        "complete": true,
+        "engine_score": -37,
+        "mate_band": false,
+        "score_stm_cp": -37,
+        "nodes": 8,
+        "seconds": 4.740001168102026e-05
+      },
+      "teacher_mean_stm_cp": -540.5,
+      "static_error_cp": 503.5,
+      "teacher_disagreement_cp": 3,
+      "quiescence_error_cp": 503.5
+    },
+    {
+      "id": "993cff1d036719c6f811e0a81313de1e858a4b5e7faea941f2f6dc61e005422c",
+      "root_id": "field-own-33",
+      "fen": "r7/1Rp5/2pq2k1/5p2/r1Pp1PnP/3P2P1/P3Q3/1R4K1 w - - 3 36",
+      "origins": [
+        {
+          "kind": "student-intermediate",
+          "branch": "defence",
+          "plies": 5
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -492,
+          "mate": null,
+          "depth": 14,
+          "pv": [
+            "c4c5",
+            "d6d7",
+            "b7c7",
+            "d7c7",
+            "e2e6",
+            "g4f6",
+            "b1b6",
+            "a8f8",
+            "b6c6",
+            "c7f7",
+            "h4h5",
+            "g6g7",
+            "e6f5",
+            "g7h8",
+            "f5g5",
+            "f6h7"
+          ],
+          "nodes": 44252
+        },
+        {
+          "cp": -576,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "h4h5",
+            "g6h7",
+            "b1b2",
+            "a8g8",
+            "c4c5",
+            "d6d7",
+            "b7b8",
+            "a4a8",
+            "b8g8",
+            "h7g8",
+            "a2a4",
+            "g8h7",
+            "b2b1",
+            "g4e3",
+            "e2a2",
+            "d7d5",
+            "a2d5",
+            "e3d5"
+          ],
+          "nodes": 320291
+        }
+      ],
+      "static_stm_cp": -9,
+      "quiescence": {
+        "complete": true,
+        "engine_score": -9,
+        "mate_band": false,
+        "score_stm_cp": -9,
+        "nodes": 8,
+        "seconds": 4.509999416768551e-05
+      },
+      "teacher_mean_stm_cp": -534,
+      "static_error_cp": 525,
+      "teacher_disagreement_cp": 84,
+      "quiescence_error_cp": 525
+    },
+    {
+      "id": "3bc5d52378e9cdf7ec44f3d3eca8ddc661f9f4a7af941e4c1698527430bcc209",
+      "root_id": "field-own-33",
+      "fen": "r7/1Rp5/3q2k1/2p2p2/r1Pp1PnP/3P2P1/PR2Q3/6K1 w - - 0 37",
+      "origins": [
+        {
+          "kind": "student-intermediate",
+          "branch": "defence",
+          "plies": 7
+        }
+      ],
+      "terminal": false,
+      "eligible": false,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -466,
+          "mate": null,
+          "depth": 15,
+          "pv": [
+            "h4h5",
+            "g6f6",
+            "b7b8",
+            "d6e6",
+            "b8b7",
+            "e6e2",
+            "b2e2",
+            "a4a7",
+            "b7b5",
+            "a7a5",
+            "b5a5",
+            "a8a5",
+            "e2e8",
+            "a5a6",
+            "h5h6",
+            "f6g6",
+            "h6h7",
+            "g6h7"
+          ],
+          "nodes": 80022
+        },
+        {
+          "cp": -587,
+          "mate": null,
+          "depth": 16,
+          "pv": [
+            "h4h5",
+            "g6h5",
+            "e2e1",
+            "h5g6",
+            "b2e2",
+            "g4e3",
+            "e1b1",
+            "a8h8",
+            "b7b8",
+            "a4a8",
+            "b8a8",
+            "h8a8",
+            "e2h2",
+            "a8e8"
+          ],
+          "nodes": 320338
+        }
+      ],
+      "static_stm_cp": -24,
+      "quiescence": {
+        "complete": true,
+        "engine_score": -24,
+        "mate_band": false,
+        "score_stm_cp": -24,
+        "nodes": 8,
+        "seconds": 4.6900007873773575e-05
+      },
+      "teacher_mean_stm_cp": -526.5,
+      "static_error_cp": 502.5,
+      "teacher_disagreement_cp": 121,
+      "quiescence_error_cp": 502.5
+    },
+    {
+      "id": "0ee4784bfe34a45367d8bfc506bbc1bfeb3aa5e21a2d7e6211b7434dc980f413",
+      "root_id": "field-own-33",
+      "fen": "r7/1Rp5/3q2k1/2p2p2/r1Pp1PnP/3P2P1/PR1Q4/6K1 b - - 1 37",
+      "origins": [
+        {
+          "kind": "student-endpoint",
+          "branch": "defence",
+          "plies": 8,
+          "stop": "quiescence_boundary"
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": 629,
+          "mate": null,
+          "depth": 16,
+          "pv": [
+            "a8e8",
+            "h4h5",
+            "g6h5",
+            "b7b8",
+            "d6c6",
+            "b8e8",
+            "c6e8",
+            "d2d1",
+            "h5g6",
+            "b2e2",
+            "g4e3",
+            "g3g4",
+            "g6g7",
+            "d1e1"
+          ],
+          "nodes": 80010
+        },
+        {
+          "cp": 628,
+          "mate": null,
+          "depth": 19,
+          "pv": [
+            "a8e8",
+            "h4h5",
+            "g6f6",
+            "b2b1",
+            "e8e3",
+            "d2g2",
+            "a4a2",
+            "g2h3",
+            "d6c6",
+            "b7b8",
+            "a2h2",
+            "h3h2",
+            "g4h2",
+            "b8h8"
+          ],
+          "nodes": 320042
+        }
+      ],
+      "static_stm_cp": 30,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 30,
+        "mate_band": false,
+        "score_stm_cp": 30,
+        "nodes": 15,
+        "seconds": 5.9500045608729124e-05
+      },
+      "teacher_mean_stm_cp": 628.5,
+      "static_error_cp": -598.5,
+      "teacher_disagreement_cp": 1,
+      "quiescence_error_cp": -598.5
+    },
+    {
+      "id": "8e2de86a3f6a2887e63aaab7ebb7f4b76135c9d047dcd5c5c374e3c6878b6ed9",
+      "root_id": "field-own-44",
+      "fen": "5k2/5n2/2p4r/5Q2/2Pp1P1P/3P2PK/q7/8 w - - 0 46",
+      "origins": [
+        {
+          "kind": "student-intermediate",
+          "branch": "played",
+          "plies": 3
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -745,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "h4h5",
+            "a2a8",
+            "g3g4",
+            "a8a1",
+            "f5c5",
+            "f8e8",
+            "g4g5",
+            "h6h5",
+            "h3g4",
+            "a1d1",
+            "g4f5",
+            "d1d3",
+            "f5g4"
+          ],
+          "nodes": 80118
+        },
+        {
+          "cp": -790,
+          "mate": null,
+          "depth": 23,
+          "pv": [
+            "f5c8",
+            "f8g7",
+            "c8g4",
+            "h6g6",
+            "g4f3",
+            "g7f8",
+            "f4f5",
+            "g6h6",
+            "f3f1",
+            "a2a5",
+            "f1f4",
+            "a5e5",
+            "f4e5",
+            "f7e5",
+            "g3g4",
+            "h6d6",
+            "c4c5",
+            "d6d8",
+            "g4g5",
+            "e5d3"
+          ],
+          "nodes": 320299
+        }
+      ],
+      "static_stm_cp": -377,
+      "quiescence": {
+        "complete": true,
+        "engine_score": -377,
+        "mate_band": false,
+        "score_stm_cp": -377,
+        "nodes": 3,
+        "seconds": 2.5800021830946207e-05
+      },
+      "teacher_mean_stm_cp": -767.5,
+      "static_error_cp": 390.5,
+      "teacher_disagreement_cp": 45,
+      "quiescence_error_cp": 390.5
+    },
+    {
+      "id": "1d61501a8bfbe71fe40c46b706a33bfbb642da0678e67526dd577ec3cfddff98",
+      "root_id": "field-own-44",
+      "fen": "5k2/5n2/2p4r/5Q1P/2Pp1P2/3P2PK/4q3/8 w - - 1 47",
+      "origins": [
+        {
+          "kind": "student-intermediate",
+          "branch": "played",
+          "plies": 5
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -821,
+          "mate": null,
+          "depth": 21,
+          "pv": [
+            "f5c8",
+            "f8g7",
+            "c8g4",
+            "e2g4",
+            "h3g4",
+            "g7f6",
+            "g4f3",
+            "h6h5",
+            "g3g4",
+            "h5h8",
+            "f3e4",
+            "h8d8",
+            "g4g5",
+            "f6e6",
+            "f4f5",
+            "e6e7"
+          ],
+          "nodes": 80048
+        },
+        {
+          "cp": -896,
+          "mate": null,
+          "depth": 23,
+          "pv": [
+            "f5c8",
+            "f8g7",
+            "c8g4",
+            "e2g4",
+            "h3g4",
+            "h6e6",
+            "g4f5",
+            "e6e3",
+            "g3g4",
+            "f7h6",
+            "f5g5",
+            "e3g3",
+            "g5h4",
+            "g3g4",
+            "h4h3",
+            "g7f6",
+            "h3h2",
+            "f6f5"
+          ],
+          "nodes": 320105
+        }
+      ],
+      "static_stm_cp": -365,
+      "quiescence": {
+        "complete": true,
+        "engine_score": -365,
+        "mate_band": false,
+        "score_stm_cp": -365,
+        "nodes": 3,
+        "seconds": 2.8799986466765404e-05
+      },
+      "teacher_mean_stm_cp": -858.5,
+      "static_error_cp": 493.5,
+      "teacher_disagreement_cp": 75,
+      "quiescence_error_cp": 493.5
+    },
+    {
+      "id": "7d515b5a90a962560391efbd398b979be4ad332bd4fe7931e9238f671872a66c",
+      "root_id": "field-own-44",
+      "fen": "5k2/5n2/2p1r3/5Q1P/2Pp1PP1/3P3K/4q3/8 w - - 1 48",
+      "origins": [
+        {
+          "kind": "student-intermediate",
+          "branch": "played",
+          "plies": 7
+        }
+      ],
+      "terminal": false,
+      "eligible": false,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -960,
+          "mate": null,
+          "depth": 15,
+          "pv": [
+            "f5c5",
+            "e6e7",
+            "c5d4",
+            "e7e3",
+            "d4e3",
+            "e2e3",
+            "h3h2",
+            "e3f2",
+            "h2h1",
+            "f2f3",
+            "h1h2",
+            "f3f4",
+            "h2g2",
+            "f4d2",
+            "g2g3",
+            "d2e1",
+            "g3g2"
+          ],
+          "nodes": 80116
+        },
+        {
+          "cp": -1228,
+          "mate": null,
+          "depth": 21,
+          "pv": [
+            "f5e6",
+            "e2e6",
+            "h5h6",
+            "f7h6",
+            "f4f5",
+            "e6e7",
+            "h3g2",
+            "h6g4",
+            "f5f6",
+            "e7e3",
+            "f6f7",
+            "g4h6",
+            "g2h2",
+            "h6f5",
+            "h2h1"
+          ],
+          "nodes": 320006
+        }
+      ],
+      "static_stm_cp": -354,
+      "quiescence": {
+        "complete": true,
+        "engine_score": -354,
+        "mate_band": false,
+        "score_stm_cp": -354,
+        "nodes": 5,
+        "seconds": 3.519997699186206e-05
+      },
+      "teacher_mean_stm_cp": -1094,
+      "static_error_cp": 740,
+      "teacher_disagreement_cp": 268,
+      "quiescence_error_cp": 740
+    },
+    {
+      "id": "31636add073f3e0683da7ce2f1bb7a66c1c35326510a6be056c00b866fd8f921",
+      "root_id": "field-own-44",
+      "fen": "5k2/5n2/2p1r3/2Q4P/2Pp1PP1/3P3K/4q3/8 b - - 2 48",
+      "origins": [
+        {
+          "kind": "student-endpoint",
+          "branch": "played",
+          "plies": 8,
+          "stop": "quiescence_boundary"
+        }
+      ],
+      "terminal": false,
+      "eligible": false,
+      "finite_teacher": false,
+      "teacher": [
+        {
+          "cp": 1056,
+          "mate": null,
+          "depth": 15,
+          "pv": [
+            "f8e8",
+            "c5d4",
+            "e6e3",
+            "d4e3",
+            "e2e3",
+            "h3g2",
+            "e3f4",
+            "g2h1"
+          ],
+          "nodes": 80093
+        },
+        {
+          "cp": null,
+          "mate": 6,
+          "depth": 31,
+          "pv": [
+            "f8g8",
+            "c5d4",
+            "e2f3",
+            "h3h4",
+            "e6e1",
+            "d4d8",
+            "g8h7",
+            "d8g8",
+            "h7g8",
+            "g4g5",
+            "e1h1"
+          ],
+          "nodes": 320322
+        }
+      ],
+      "static_stm_cp": 349,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 337,
+        "mate_band": false,
+        "score_stm_cp": 337,
+        "nodes": 79,
+        "seconds": 0.0003524000057950616
+      }
+    },
+    {
+      "id": "b8ab44c43058b789fe71bf42f2d42715324e2284cf9526f5ff0b5bfe5fb854fa",
+      "root_id": "field-own-44",
+      "fen": "5k2/5n2/2p4r/r7/2Pp1P1P/3P2PK/P3R3/8 w - - 0 46",
+      "origins": [
+        {
+          "kind": "student-intermediate",
+          "branch": "defence",
+          "plies": 3
+        }
+      ],
+      "terminal": false,
+      "eligible": false,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -668,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "g3g4",
+            "a5a3",
+            "g4g5",
+            "a3d3",
+            "h3g4",
+            "h6d6",
+            "e2b2",
+            "d3e3",
+            "g4f5",
+            "d4d3",
+            "g5g6",
+            "d3d2",
+            "b2d2",
+            "d6d2"
+          ],
+          "nodes": 80040
+        },
+        {
+          "cp": -693,
+          "mate": null,
+          "depth": 21,
+          "pv": [
+            "g3g4",
+            "h6f6",
+            "h3g3",
+            "a5a3",
+            "g4g5",
+            "a3d3",
+            "g3g4",
+            "f6d6",
+            "c4c5",
+            "d6d8",
+            "h4h5",
+            "d3e3",
+            "g5g6",
+            "f7h6",
+            "g4g5"
+          ],
+          "nodes": 320159
+        }
+      ],
+      "static_stm_cp": -245,
+      "quiescence": {
+        "complete": true,
+        "engine_score": -245,
+        "mate_band": false,
+        "score_stm_cp": -245,
+        "nodes": 1,
+        "seconds": 2.110004425048828e-05
+      },
+      "teacher_mean_stm_cp": -680.5,
+      "static_error_cp": 435.5,
+      "teacher_disagreement_cp": 25,
+      "quiescence_error_cp": 435.5
+    },
+    {
+      "id": "dc7c342c683cc1130d015fe82da04fd262a88a70d686a0c35c9150a203d3d97f",
+      "root_id": "field-own-44",
+      "fen": "5k2/5n2/2p4r/8/2Pp1PPP/r2P3K/P3R3/8 w - - 1 47",
+      "origins": [
+        {
+          "kind": "student-intermediate",
+          "branch": "defence",
+          "plies": 5
+        }
+      ],
+      "terminal": false,
+      "eligible": false,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -678,
+          "mate": null,
+          "depth": 18,
+          "pv": [
+            "g4g5",
+            "a3d3",
+            "h3g4",
+            "h6d6",
+            "e2b2",
+            "d3e3",
+            "c4c5",
+            "d6d7",
+            "b2b8",
+            "f7d8",
+            "g5g6",
+            "d4d3",
+            "g4g5"
+          ],
+          "nodes": 80025
+        },
+        {
+          "cp": -740,
+          "mate": null,
+          "depth": 21,
+          "pv": [
+            "g4g5",
+            "a3d3",
+            "h3g4",
+            "h6d6",
+            "c4c5",
+            "d6d7",
+            "e2e6",
+            "d3e3",
+            "e6c6",
+            "d4d3",
+            "c6c8",
+            "d7d8",
+            "c8d8",
+            "f7d8",
+            "g4f5",
+            "d3d2",
+            "c5c6",
+            "d8c6"
+          ],
+          "nodes": 320296
+        }
+      ],
+      "static_stm_cp": -204,
+      "quiescence": {
+        "complete": true,
+        "engine_score": -204,
+        "mate_band": false,
+        "score_stm_cp": -204,
+        "nodes": 1,
+        "seconds": 1.9400031305849552e-05
+      },
+      "teacher_mean_stm_cp": -709,
+      "static_error_cp": 505,
+      "teacher_disagreement_cp": 62,
+      "quiescence_error_cp": 505
+    },
+    {
+      "id": "ae757a46eb0ac51bf41fc718204e9d88a645fc3a2ef045c3e4650b9fc2b729ef",
+      "root_id": "field-own-44",
+      "fen": "5k2/8/2pn3r/8/2Pp1PPP/r2P3K/P2R4/8 w - - 3 48",
+      "origins": [
+        {
+          "kind": "student-intermediate",
+          "branch": "defence",
+          "plies": 7
+        }
+      ],
+      "terminal": false,
+      "eligible": false,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -625,
+          "mate": null,
+          "depth": 18,
+          "pv": [
+            "g4g5",
+            "h6e6",
+            "h3g4",
+            "e6e3",
+            "c4c5",
+            "d6e8",
+            "d2b2",
+            "a3d3",
+            "b2b8",
+            "e3e7",
+            "g4f5",
+            "d3d1",
+            "h4h5",
+            "e7f7",
+            "f5g6",
+            "f7g7",
+            "g6f5"
+          ],
+          "nodes": 80075
+        },
+        {
+          "cp": -703,
+          "mate": null,
+          "depth": 21,
+          "pv": [
+            "g4g5",
+            "d6c4",
+            "g5h6",
+            "c4d2",
+            "h3g4",
+            "f8g8",
+            "g4f5",
+            "g8h7",
+            "f5e5",
+            "a3d3",
+            "h4h5"
+          ],
+          "nodes": 320017
+        }
+      ],
+      "static_stm_cp": -259,
+      "quiescence": {
+        "complete": true,
+        "engine_score": -259,
+        "mate_band": false,
+        "score_stm_cp": -259,
+        "nodes": 1,
+        "seconds": 2.3100001271814108e-05
+      },
+      "teacher_mean_stm_cp": -664,
+      "static_error_cp": 405,
+      "teacher_disagreement_cp": 78,
+      "quiescence_error_cp": 405
+    },
+    {
+      "id": "630987493019410d0398b0805d226a01571df70fa8be8dda44d9f116e02d1418",
+      "root_id": "field-own-44",
+      "fen": "5k2/8/2pn3r/2P5/3p1PPP/r2P3K/P2R4/8 b - - 0 48",
+      "origins": [
+        {
+          "kind": "student-endpoint",
+          "branch": "defence",
+          "plies": 8,
+          "stop": "quiescence_boundary"
+        }
+      ],
+      "terminal": false,
+      "eligible": false,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": 734,
+          "mate": null,
+          "depth": 15,
+          "pv": [
+            "d6c4",
+            "g4g5",
+            "h6e6",
+            "d2d1",
+            "c4e3",
+            "d1g1",
+            "a3d3",
+            "h4h5",
+            "e3d5",
+            "h3g4"
+          ],
+          "nodes": 80103
+        },
+        {
+          "cp": 764,
+          "mate": null,
+          "depth": 21,
+          "pv": [
+            "d6e4",
+            "g4g5",
+            "h6h4",
+            "h3h4",
+            "e4d2",
+            "g5g6",
+            "f8g7",
+            "f4f5",
+            "a3d3",
+            "a2a4",
+            "d3e3",
+            "f5f6",
+            "g7g6",
+            "f6f7",
+            "g6f7"
+          ],
+          "nodes": 320059
+        }
+      ],
+      "static_stm_cp": 250,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 250,
+        "mate_band": false,
+        "score_stm_cp": 250,
+        "nodes": 13,
+        "seconds": 4.8499961849302053e-05
+      },
+      "teacher_mean_stm_cp": 749,
+      "static_error_cp": -499,
+      "teacher_disagreement_cp": 30,
+      "quiescence_error_cp": -499
+    },
+    {
+      "id": "4ceaba0f54b388214a71d3749f93f45c992b1e5dbe455e240d00a174d4e3defe",
+      "root_id": "bitboards2400-False-15",
+      "fen": "r1bq1rk1/1p1nb1n1/p1p2p1p/3p4/3P3P/2NBPP2/PPQ2P1B/2R1K2R w K - 1 17",
+      "origins": [
+        {
+          "kind": "student-intermediate",
+          "branch": "played",
+          "plies": 3
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -64,
+          "mate": null,
+          "depth": 13,
+          "pv": [
+            "h1g1",
+            "f6f5",
+            "d3f5",
+            "f8f6",
+            "e1e2",
+            "d8f8",
+            "f5d3",
+            "e7d6",
+            "h2d6",
+            "f6d6",
+            "g1g2",
+            "d7f6",
+            "c1g1"
+          ],
+          "nodes": 65992
+        },
+        {
+          "cp": -25,
+          "mate": null,
+          "depth": 18,
+          "pv": [
+            "h2f4",
+            "f6f5",
+            "f4h6",
+            "f8f6",
+            "h6f4",
+            "g8h8",
+            "e1d2",
+            "g7h5",
+            "f4g5",
+            "f6f7",
+            "c1g1",
+            "d7f6",
+            "d2c1",
+            "d8c7",
+            "e3e4",
+            "f5e4",
+            "f3e4",
+            "d5e4",
+            "c3e4",
+            "f6e4",
+            "d3e4"
+          ],
+          "nodes": 320240
+        }
+      ],
+      "static_stm_cp": -176,
+      "quiescence": {
+        "complete": true,
+        "engine_score": -176,
+        "mate_band": false,
+        "score_stm_cp": -176,
+        "nodes": 11,
+        "seconds": 7.82000133767724e-05
+      },
+      "teacher_mean_stm_cp": -44.5,
+      "static_error_cp": -131.5,
+      "teacher_disagreement_cp": 39,
+      "quiescence_error_cp": -131.5
+    },
+    {
+      "id": "1b72b5631855d5021df9144bbb3acdd3d42e4fc620dd74f3d66cef5602989bdb",
+      "root_id": "bitboards2400-False-15",
+      "fen": "r1bq1rk1/1p1nb1n1/p1p4p/3p1p2/3P3P/2NBPP2/PPQ2P1B/2R1K1R1 w - - 0 18",
+      "origins": [
+        {
+          "kind": "student-intermediate",
+          "branch": "played",
+          "plies": 5
+        },
+        {
+          "kind": "student-endpoint",
+          "branch": "played",
+          "plies": 5,
+          "stop": "missing_or_nonexact_transposition"
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -78,
+          "mate": null,
+          "depth": 14,
+          "pv": [
+            "d3f5",
+            "f8f6",
+            "f5h7",
+            "g8h8",
+            "e1e2",
+            "d7f8",
+            "g1g7",
+            "h8g7",
+            "c1g1",
+            "g7f7",
+            "h2e5",
+            "e7d6",
+            "f3f4",
+            "f7e8",
+            "g1g7",
+            "f6f7"
+          ],
+          "nodes": 65923
+        },
+        {
+          "cp": -56,
+          "mate": null,
+          "depth": 16,
+          "pv": [
+            "d3f5",
+            "f8f6",
+            "h2e5",
+            "d7e5",
+            "f5h7",
+            "g8h8",
+            "d4e5",
+            "f6e6",
+            "f3f4",
+            "c8d7",
+            "g1g2",
+            "d7e8",
+            "c3e2",
+            "e7b4",
+            "e1f1",
+            "d8h4",
+            "a2a3"
+          ],
+          "nodes": 320022
+        }
+      ],
+      "static_stm_cp": -179,
+      "quiescence": {
+        "complete": true,
+        "engine_score": -170,
+        "mate_band": false,
+        "score_stm_cp": -170,
+        "nodes": 71,
+        "seconds": 0.00016310001956298947
+      },
+      "teacher_mean_stm_cp": -67,
+      "static_error_cp": -112,
+      "teacher_disagreement_cp": 22,
+      "quiescence_error_cp": -103
+    },
+    {
+      "id": "64815c5cc45f2c2c7554db831782aeb695daca971ae7db1b13169326c4fff1d1",
+      "root_id": "bitboards2400-False-15",
+      "fen": "r1bq1rk1/1p1nb3/p1p4p/3p3n/3P1ppP/2NBP3/PPQN1PPB/2R1K2R w K - 0 17",
+      "origins": [
+        {
+          "kind": "student-intermediate",
+          "branch": "defence",
+          "plies": 3
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": 6,
+          "mate": null,
+          "depth": 16,
+          "pv": [
+            "d3g6",
+            "f4e3",
+            "f2e3",
+            "e7h4",
+            "e1d1",
+            "h5g7",
+            "g6h7",
+            "g8h8",
+            "h2f4",
+            "h4g5",
+            "c3e2",
+            "a6a5",
+            "g2g3",
+            "a5a4",
+            "c2g6"
+          ],
+          "nodes": 80100
+        },
+        {
+          "cp": 22,
+          "mate": null,
+          "depth": 18,
+          "pv": [
+            "d3g6",
+            "f4e3",
+            "g6h5",
+            "e3d2",
+            "c2d2",
+            "e7h4",
+            "d2h6",
+            "d8e7",
+            "e1d1",
+            "f8f2",
+            "h5g4",
+            "d7f8",
+            "g4c8",
+            "a8c8",
+            "h2e5",
+            "e7g5",
+            "h6g5",
+            "h4g5",
+            "c1c2",
+            "f2c2",
+            "h1h8",
+            "g8f7",
+            "d1c2",
+            "g5f6",
+            "e5f6",
+            "f7f6",
+            "c3a4",
+            "f6g7",
+            "h8h4",
+            "c8e8"
+          ],
+          "nodes": 226372
+        }
+      ],
+      "static_stm_cp": -15,
+      "quiescence": {
+        "complete": true,
+        "engine_score": -15,
+        "mate_band": false,
+        "score_stm_cp": -15,
+        "nodes": 79,
+        "seconds": 0.0004293000092729926
+      },
+      "teacher_mean_stm_cp": 14,
+      "static_error_cp": -29,
+      "teacher_disagreement_cp": 16,
+      "quiescence_error_cp": -29
+    },
+    {
+      "id": "2d35dbe0e29fecfb7e722afa47f570eb7aca1eab9d359fba0d2928f307a2c732",
+      "root_id": "bitboards2400-False-15",
+      "fen": "r1bq1rk1/1p2b3/pnp4p/3p3n/3P1ppP/2NBP3/PP1N1PPB/2RQK2R w K - 2 18",
+      "origins": [
+        {
+          "kind": "student-intermediate",
+          "branch": "defence",
+          "plies": 5
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -13,
+          "mate": null,
+          "depth": 14,
+          "pv": [
+            "h2f4",
+            "f8f4",
+            "e3f4",
+            "h5f4",
+            "d3e2",
+            "f4g2",
+            "e1f1",
+            "g2h4"
+          ],
+          "nodes": 76432
+        },
+        {
+          "cp": -10,
+          "mate": null,
+          "depth": 18,
+          "pv": [
+            "h2f4",
+            "h5f4",
+            "e3f4",
+            "f8f4",
+            "g2g3",
+            "f4f7",
+            "e1g1",
+            "e7d6",
+            "d1c2",
+            "a6a5",
+            "c1e1",
+            "c8d7",
+            "d3g6",
+            "f7g7",
+            "d2b3",
+            "d8f6",
+            "g6d3",
+            "g7f7",
+            "c3d1",
+            "a5a4",
+            "b3c5",
+            "f6d4",
+            "c5d7",
+            "b6d7",
+            "d3f5",
+            "d4f6",
+            "d1e3"
+          ],
+          "nodes": 229718
+        }
+      ],
+      "static_stm_cp": 1,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 1,
+        "mate_band": false,
+        "score_stm_cp": 1,
+        "nodes": 151,
+        "seconds": 0.0004982000100426376
+      },
+      "teacher_mean_stm_cp": -11.5,
+      "static_error_cp": 12.5,
+      "teacher_disagreement_cp": 3,
+      "quiescence_error_cp": 12.5
+    },
+    {
+      "id": "e4105cc3f7abfb83d9524c2aaaf8086b87b5781452cb317fd6a42234f9e48b1d",
+      "root_id": "bitboards2400-False-15",
+      "fen": "r1bq1rk1/1p2b3/pnp4p/3p3n/3P2pP/2NBp1P1/PP1N1P1B/2RQK2R w K - 0 19",
+      "origins": [
+        {
+          "kind": "student-intermediate",
+          "branch": "defence",
+          "plies": 7
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -243,
+          "mate": null,
+          "depth": 15,
+          "pv": [
+            "f2e3",
+            "e7d6",
+            "c3e2",
+            "d8e7",
+            "d1b3",
+            "d6b4",
+            "a2a3",
+            "b4a5",
+            "c1c5",
+            "a5d2",
+            "e1d2",
+            "f8f3",
+            "c5c3",
+            "e7e3",
+            "d2d1",
+            "b6c4"
+          ],
+          "nodes": 80078
+        },
+        {
+          "cp": -242,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "f2e3",
+            "e7d6",
+            "c3e2",
+            "d8e7",
+            "h1f1",
+            "c8e6",
+            "d1b3",
+            "d6b4",
+            "e1d1",
+            "b6c4",
+            "f1f8",
+            "a8f8",
+            "d2c4",
+            "d5c4",
+            "d3c4",
+            "e6c4",
+            "c1c4",
+            "f8f1",
+            "d1c2"
+          ],
+          "nodes": 174280
+        }
+      ],
+      "static_stm_cp": -154,
+      "quiescence": {
+        "complete": true,
+        "engine_score": -17,
+        "mate_band": false,
+        "score_stm_cp": -17,
+        "nodes": 23,
+        "seconds": 9.129999671131372e-05
+      },
+      "teacher_mean_stm_cp": -242.5,
+      "static_error_cp": 88.5,
+      "teacher_disagreement_cp": 1,
+      "quiescence_error_cp": 225.5
+    },
+    {
+      "id": "73df20834d4007b0106a1d0293bf28021dc8d6d14cff4aa7c8f490ca56e9c65b",
+      "root_id": "bitboards2400-False-15",
+      "fen": "r1bq1rk1/1p2b3/pnp4p/3p3n/3P2pP/2NBP1P1/PP1N3B/2RQK2R b K - 0 19",
+      "origins": [
+        {
+          "kind": "student-endpoint",
+          "branch": "defence",
+          "plies": 8,
+          "stop": "quiescence_boundary"
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": 230,
+          "mate": null,
+          "depth": 14,
+          "pv": [
+            "e7d6",
+            "c3e2",
+            "c8d7",
+            "d1b3",
+            "a6a5",
+            "a2a3",
+            "a5a4",
+            "b3c2",
+            "d8f6",
+            "h1f1",
+            "f6e7"
+          ],
+          "nodes": 51794
+        },
+        {
+          "cp": 253,
+          "mate": null,
+          "depth": 19,
+          "pv": [
+            "e7d6",
+            "c3e2",
+            "d8e7",
+            "h1f1",
+            "f8f1",
+            "d2f1",
+            "b6c4",
+            "d3c4",
+            "d5c4",
+            "d1c2",
+            "b7b5",
+            "a2a3",
+            "c8d7",
+            "h2g1"
+          ],
+          "nodes": 320122
+        }
+      ],
+      "static_stm_cp": 17,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 17,
+        "mate_band": false,
+        "score_stm_cp": 17,
+        "nodes": 10,
+        "seconds": 6.67999847792089e-05
+      },
+      "teacher_mean_stm_cp": 241.5,
+      "static_error_cp": -224.5,
+      "teacher_disagreement_cp": 23,
+      "quiescence_error_cp": -224.5
+    },
+    {
+      "id": "776d9727d9f903df6ba0123c9e83b7503bedaf25f07ee8001c9a8ae695c49c88",
+      "root_id": "bitboards2400-True-35",
+      "fen": "5k2/7p/1p2R1p1/pB1p1p2/Pq1PnP2/1Pr4P/6P1/3Q2K1 b - - 1 36",
+      "origins": [
+        {
+          "kind": "student-intermediate",
+          "branch": "played",
+          "plies": 3
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": 432,
+          "mate": null,
+          "depth": 16,
+          "pv": [
+            "c3b3",
+            "g1h2",
+            "b4c3",
+            "d1f3",
+            "c3f3",
+            "g2f3",
+            "e4d2",
+            "h2g2",
+            "d2f3",
+            "e6b6",
+            "f3d4",
+            "h3h4",
+            "b3b4",
+            "b6d6",
+            "d4b5"
+          ],
+          "nodes": 80083
+        },
+        {
+          "cp": 479,
+          "mate": null,
+          "depth": 18,
+          "pv": [
+            "c3b3",
+            "g1h2",
+            "b4c3",
+            "d1f3",
+            "c3f3",
+            "g2f3",
+            "e4d2",
+            "h2g2",
+            "d2f3",
+            "e6b6",
+            "f3d4",
+            "h3h4",
+            "d4e2",
+            "b6a6",
+            "e2f4",
+            "g2f2",
+            "f8g7",
+            "f2e1",
+            "b3a3",
+            "a6a5",
+            "g7f6",
+            "e1d2"
+          ],
+          "nodes": 320253
+        }
+      ],
+      "static_stm_cp": -22,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 4,
+        "mate_band": false,
+        "score_stm_cp": 4,
+        "nodes": 78,
+        "seconds": 0.0001571999746374786
+      },
+      "teacher_mean_stm_cp": 455.5,
+      "static_error_cp": -477.5,
+      "teacher_disagreement_cp": 47,
+      "quiescence_error_cp": -451.5
+    },
+    {
+      "id": "edead6f25d58f497c3b3fbc93ad7252673ae1acb0e3fa964780b4ecda5e27b64",
+      "root_id": "bitboards2400-True-35",
+      "fen": "5k2/7p/1p2R1p1/pB1p1p2/P2PnP2/1Qr4P/6P1/6K1 b - - 0 37",
+      "origins": [
+        {
+          "kind": "student-intermediate",
+          "branch": "played",
+          "plies": 5
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": 12,
+          "mate": null,
+          "depth": 15,
+          "pv": [
+            "c3b3",
+            "e6b6",
+            "e4c3",
+            "b6b8",
+            "f8g7",
+            "b8a8",
+            "c3b5",
+            "a4b5",
+            "b3b5",
+            "g2g4",
+            "g7f6",
+            "g1g2",
+            "f6e7",
+            "a8a7",
+            "e7d6"
+          ],
+          "nodes": 73145
+        },
+        {
+          "cp": 11,
+          "mate": null,
+          "depth": 18,
+          "pv": [
+            "c3b3",
+            "e6b6",
+            "b3b4",
+            "b6b8",
+            "f8g7",
+            "b8b7",
+            "g7h6",
+            "g2g4",
+            "b4b1",
+            "g1g2",
+            "b1b2",
+            "g2f3",
+            "f5g4",
+            "h3g4",
+            "b2b3",
+            "f3e2",
+            "b3g3",
+            "g4g5",
+            "h6h5",
+            "b7d7"
+          ],
+          "nodes": 234690
+        }
+      ],
+      "static_stm_cp": -847,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 4,
+        "mate_band": false,
+        "score_stm_cp": 4,
+        "nodes": 12,
+        "seconds": 4.700000863522291e-05
+      },
+      "teacher_mean_stm_cp": 11.5,
+      "static_error_cp": -858.5,
+      "teacher_disagreement_cp": 1,
+      "quiescence_error_cp": -7.5
+    },
+    {
+      "id": "eff7a5b6111a5deba1d05121ea90546206ed7ecad76105201ec3a292a85b1f06",
+      "root_id": "bitboards2400-True-35",
+      "fen": "5k2/7p/1R4p1/pB1p1p2/P2PnP2/1r5P/6P1/6K1 b - - 0 38",
+      "origins": [
+        {
+          "kind": "student-intermediate",
+          "branch": "played",
+          "plies": 7
+        }
+      ],
+      "terminal": false,
+      "eligible": false,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": 32,
+          "mate": null,
+          "depth": 15,
+          "pv": [
+            "b3b4",
+            "b6b8",
+            "f8g7",
+            "b8a8",
+            "h7h5",
+            "h3h4",
+            "b4d4",
+            "a8a5",
+            "d4d1",
+            "g1h2",
+            "e4f6",
+            "b5e2",
+            "d1a1",
+            "h2g3"
+          ],
+          "nodes": 73893
+        },
+        {
+          "cp": 8,
+          "mate": null,
+          "depth": 18,
+          "pv": [
+            "e4c3",
+            "b6b8",
+            "f8e7",
+            "b8b7",
+            "e7d8",
+            "b7h7",
+            "c3b5",
+            "a4b5",
+            "b3b5",
+            "g2g4",
+            "d8c8",
+            "g1f2",
+            "a5a4",
+            "h7a7",
+            "b5b4",
+            "g4f5",
+            "g6f5",
+            "h3h4",
+            "c8b8",
+            "a7a5",
+            "b8b7"
+          ],
+          "nodes": 283192
+        }
+      ],
+      "static_stm_cp": 4,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 4,
+        "mate_band": false,
+        "score_stm_cp": 4,
+        "nodes": 5,
+        "seconds": 3.549997927621007e-05
+      },
+      "teacher_mean_stm_cp": 20,
+      "static_error_cp": -16,
+      "teacher_disagreement_cp": 24,
+      "quiescence_error_cp": -16
+    },
+    {
+      "id": "cfdc280275da2a947c819be9efeed70516e5e26b2f16facbae79d6b1c14096d0",
+      "root_id": "bitboards2400-True-35",
+      "fen": "8/4k2p/1R4p1/pB1p1p2/P2PnP2/1r5P/6P1/6K1 w - - 1 39",
+      "origins": [
+        {
+          "kind": "student-endpoint",
+          "branch": "played",
+          "plies": 8,
+          "stop": "quiescence_boundary"
+        }
+      ],
+      "terminal": false,
+      "eligible": false,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": 2,
+          "mate": null,
+          "depth": 21,
+          "pv": [
+            "b6b7",
+            "e7f6",
+            "b7h7",
+            "e4c3",
+            "h7a7",
+            "c3b5",
+            "a4b5",
+            "b3b5",
+            "a7a6",
+            "f6g7",
+            "g1f2",
+            "b5b4",
+            "a6a5",
+            "b4d4",
+            "f2g3",
+            "g7f7",
+            "a5a7",
+            "f7f6"
+          ],
+          "nodes": 80013
+        },
+        {
+          "cp": 2,
+          "mate": null,
+          "depth": 24,
+          "pv": [
+            "b6b7",
+            "e7f6",
+            "b7h7",
+            "e4c3",
+            "h7a7",
+            "c3b5",
+            "a4b5",
+            "b3b5",
+            "g1f2",
+            "b5b4",
+            "a7a5",
+            "b4d4",
+            "f2e3",
+            "d4d1",
+            "a5a3",
+            "f6f7",
+            "e3e2",
+            "d1b1",
+            "e2f2",
+            "d5d4"
+          ],
+          "nodes": 256410
+        }
+      ],
+      "static_stm_cp": -13,
+      "quiescence": {
+        "complete": true,
+        "engine_score": -13,
+        "mate_band": false,
+        "score_stm_cp": -13,
+        "nodes": 3,
+        "seconds": 3.120000474154949e-05
+      },
+      "teacher_mean_stm_cp": 2,
+      "static_error_cp": -15,
+      "teacher_disagreement_cp": 0,
+      "quiescence_error_cp": -15
+    },
+    {
+      "id": "8ab6d029b03c6b5688461c632b3521d3a3599067748c3a0ba319967f4684ac79",
+      "root_id": "bitboards2400-True-35",
+      "fen": "5k2/2r4p/1p2R1p1/p2p1p2/Pq1P1P2/1Pn4P/2Q3P1/5BK1 b - - 1 36",
+      "origins": [
+        {
+          "kind": "student-intermediate",
+          "branch": "defence",
+          "plies": 3
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": 319,
+          "mate": null,
+          "depth": 16,
+          "pv": [
+            "f8f7",
+            "e6e5",
+            "b4d4",
+            "c2f2",
+            "d4c5",
+            "g2g4",
+            "f5g4",
+            "f2c5",
+            "b6c5",
+            "f1g2",
+            "c5c4",
+            "b3c4",
+            "c7c4",
+            "e5d5",
+            "g4h3",
+            "d5d7",
+            "f7f6",
+            "g2f1",
+            "c4f4",
+            "d7h7",
+            "f4a4",
+            "h7h3"
+          ],
+          "nodes": 80024
+        },
+        {
+          "cp": 326,
+          "mate": null,
+          "depth": 19,
+          "pv": [
+            "f8f7",
+            "e6e5",
+            "b4d4",
+            "c2f2",
+            "d4c5",
+            "g2g4",
+            "f5g4",
+            "f2c5",
+            "b6c5",
+            "h3g4",
+            "c7e7",
+            "e5e7",
+            "f7e7",
+            "g1g2",
+            "c3e4",
+            "f1d3",
+            "h7h5",
+            "g4g5",
+            "e7f7",
+            "d3a6",
+            "e4d6",
+            "a6d3",
+            "c5c4",
+            "d3c2",
+            "c4c3",
+            "b3b4",
+            "a5b4",
+            "a4a5",
+            "d6b5"
+          ],
+          "nodes": 320204
+        }
+      ],
+      "static_stm_cp": -34,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 155,
+        "mate_band": false,
+        "score_stm_cp": 155,
+        "nodes": 101,
+        "seconds": 0.00022279995027929544
+      },
+      "teacher_mean_stm_cp": 322.5,
+      "static_error_cp": -356.5,
+      "teacher_disagreement_cp": 7,
+      "quiescence_error_cp": -167.5
+    },
+    {
+      "id": "388ca33a661cff700883e133c290728d6aea5e6774378c4029760277b98df840",
+      "root_id": "bitboards2400-True-35",
+      "fen": "5k2/2r4p/1p2R1p1/p2p1p2/P2q1P2/1Pn4P/5QP1/5BK1 b - - 1 37",
+      "origins": [
+        {
+          "kind": "student-intermediate",
+          "branch": "defence",
+          "plies": 5
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": 161,
+          "mate": null,
+          "depth": 16,
+          "pv": [
+            "d4f2",
+            "g1f2",
+            "c3e4",
+            "f2e3",
+            "c7c3",
+            "e3d4",
+            "c3b3",
+            "e6c6",
+            "b3b4",
+            "d4d5",
+            "e4c5",
+            "f1c4",
+            "c5a4"
+          ],
+          "nodes": 68024
+        },
+        {
+          "cp": 180,
+          "mate": null,
+          "depth": 19,
+          "pv": [
+            "d4f2",
+            "g1f2",
+            "c3e4",
+            "f2e3",
+            "c7c3",
+            "e3d4",
+            "c3b3",
+            "f1b5",
+            "b3b4",
+            "d4e5",
+            "e4c3",
+            "e5f6",
+            "c3b5",
+            "a4b5",
+            "b4b5",
+            "e6e7",
+            "h7h5",
+            "e7a7",
+            "f8e8",
+            "f6g6",
+            "d5d4",
+            "g2g4",
+            "h5g4",
+            "h3g4",
+            "f5g4",
+            "f4f5",
+            "b5d5"
+          ],
+          "nodes": 281593
+        }
+      ],
+      "static_stm_cp": 144,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 155,
+        "mate_band": false,
+        "score_stm_cp": 155,
+        "nodes": 15,
+        "seconds": 8.159998105838895e-05
+      },
+      "teacher_mean_stm_cp": 170.5,
+      "static_error_cp": -26.5,
+      "teacher_disagreement_cp": 19,
+      "quiescence_error_cp": -15.5
+    },
+    {
+      "id": "21551cae2480ae01d0be42d89a4414b5c567298d8b19b6a600fa1c3d46f676f0",
+      "root_id": "bitboards2400-True-35",
+      "fen": "5k2/2r4p/1p2R1p1/p2p1p2/P4P2/1Pn4P/5KP1/5B2 b - - 0 38",
+      "origins": [
+        {
+          "kind": "student-intermediate",
+          "branch": "defence",
+          "plies": 7
+        }
+      ],
+      "terminal": false,
+      "eligible": false,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": 142,
+          "mate": null,
+          "depth": 14,
+          "pv": [
+            "d5d4",
+            "f1d3",
+            "c3d1",
+            "f2e1",
+            "d1e3",
+            "g2g3",
+            "c7c3",
+            "d3b5",
+            "c3b3",
+            "e6b6",
+            "e3c2",
+            "e1d2",
+            "c2a3",
+            "b6d6"
+          ],
+          "nodes": 68176
+        },
+        {
+          "cp": 150,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "c3e4",
+            "f2e3",
+            "c7c3",
+            "e3d4",
+            "c3b3",
+            "e6c6",
+            "b3b4",
+            "d4e5",
+            "b4a4",
+            "c6b6",
+            "a4a1",
+            "f1b5",
+            "a1e1",
+            "g2g4",
+            "a5a4",
+            "b6b8",
+            "f8e7",
+            "b8b7",
+            "e7d8",
+            "e5d5",
+            "e4c3",
+            "d5c6",
+            "c3b5",
+            "b7b5",
+            "d8e7",
+            "g4f5",
+            "e7f6"
+          ],
+          "nodes": 145511
+        }
+      ],
+      "static_stm_cp": 155,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 155,
+        "mate_band": false,
+        "score_stm_cp": 155,
+        "nodes": 3,
+        "seconds": 3.470003139227629e-05
+      },
+      "teacher_mean_stm_cp": 146,
+      "static_error_cp": 9,
+      "teacher_disagreement_cp": 8,
+      "quiescence_error_cp": 9
+    },
+    {
+      "id": "543a63e0b16a22a2f050fd9f3ac1f2773e88c84eaac1b11783d9df4cac97a794",
+      "root_id": "bitboards2400-True-35",
+      "fen": "5k2/2r4p/1p2R1p1/p2p1p2/P3nP2/1P5P/5KP1/5B2 w - - 1 39",
+      "origins": [
+        {
+          "kind": "student-endpoint",
+          "branch": "defence",
+          "plies": 8,
+          "stop": "quiescence_boundary"
+        }
+      ],
+      "terminal": false,
+      "eligible": false,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -154,
+          "mate": null,
+          "depth": 16,
+          "pv": [
+            "f2e3",
+            "c7c3",
+            "e3d4",
+            "c3b3",
+            "e6c6",
+            "b3b4",
+            "d4e5",
+            "b4a4",
+            "g2g4",
+            "f5g4",
+            "h3g4",
+            "e4f2",
+            "c6c8",
+            "f8e7",
+            "c8c7",
+            "e7d8",
+            "c7h7",
+            "f2g4",
+            "e5d6",
+            "a4f4"
+          ],
+          "nodes": 80073
+        },
+        {
+          "cp": -170,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "f2e3",
+            "c7c3",
+            "e3d4",
+            "c3b3",
+            "e6c6",
+            "b3b4",
+            "d4d5",
+            "b4a4",
+            "d5e5",
+            "a4a1",
+            "f1c4"
+          ],
+          "nodes": 250372
+        }
+      ],
+      "static_stm_cp": -190,
+      "quiescence": {
+        "complete": true,
+        "engine_score": -178,
+        "mate_band": false,
+        "score_stm_cp": -178,
+        "nodes": 9,
+        "seconds": 3.890000516548753e-05
+      },
+      "teacher_mean_stm_cp": -162,
+      "static_error_cp": -28,
+      "teacher_disagreement_cp": 16,
+      "quiescence_error_cp": -16
+    },
+    {
+      "id": "73c5778c8ce42c3691c210c12e0e28e19dcbf739c4dd4be7c2258ea42ed298d2",
+      "root_id": "rated2400-True-24",
+      "fen": "r2qr3/1p1b1k1n/1np3pB/p2p4/Pb1P3P/1QNBPP2/1P4P1/2R1R1K1 w - - 1 26",
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "best",
+          "plies": 4
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -138,
+          "mate": null,
+          "depth": 13,
+          "pv": [
+            "g2g3",
+            "e8e6",
+            "g1f2",
+            "d8e7",
+            "e3e4",
+            "f7g8",
+            "e4e5",
+            "c6c5",
+            "c3d5",
+            "b6d5",
+            "b3d5",
+            "b4e1",
+            "c1e1"
+          ],
+          "nodes": 80002
+        },
+        {
+          "cp": -170,
+          "mate": null,
+          "depth": 16,
+          "pv": [
+            "g2g3",
+            "e8e6",
+            "g1f2",
+            "d8f6",
+            "h6f4",
+            "a8e8",
+            "e1e2",
+            "g6g5",
+            "f4e5",
+            "e6e5",
+            "d4e5",
+            "e8e5",
+            "d3h7",
+            "g5h4"
+          ],
+          "nodes": 285210
+        }
+      ],
+      "static_stm_cp": 32,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 32,
+        "mate_band": false,
+        "score_stm_cp": 32,
+        "nodes": 96,
+        "seconds": 0.0002106999745592475
+      },
+      "teacher_mean_stm_cp": -154,
+      "static_error_cp": 186,
+      "teacher_disagreement_cp": 32,
+      "quiescence_error_cp": 186
+    },
+    {
+      "id": "3f907d38d2fde5d2e4d1d12c5d2ab4d18ee5ed92e71135ff30e5eb71d6b9b69a",
+      "root_id": "rated2400-True-24",
+      "fen": "r7/1p1bqk1n/1np1r1pB/p2p4/Pb1P3P/1QNBPPP1/1P3K2/2R1R3 w - - 3 28",
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "best",
+          "plies": 8
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -133,
+          "mate": null,
+          "depth": 12,
+          "pv": [
+            "e3e4",
+            "a8e8",
+            "e4e5",
+            "c6c5",
+            "c3d5",
+            "b6d5",
+            "b3d5",
+            "d7c6",
+            "d5b3",
+            "b4e1",
+            "c1e1",
+            "e8d8"
+          ],
+          "nodes": 51985
+        },
+        {
+          "cp": -125,
+          "mate": null,
+          "depth": 14,
+          "pv": [
+            "e1h1",
+            "f7g8",
+            "b3c2",
+            "a8c8",
+            "d3g6",
+            "c6c5",
+            "h6f4",
+            "h7f8",
+            "g6f5",
+            "e6c6",
+            "f4g5"
+          ],
+          "nodes": 238454
+        }
+      ],
+      "static_stm_cp": 15,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 15,
+        "mate_band": false,
+        "score_stm_cp": 15,
+        "nodes": 42,
+        "seconds": 0.0001297999988310039
+      },
+      "teacher_mean_stm_cp": -129,
+      "static_error_cp": 144,
+      "teacher_disagreement_cp": 8,
+      "quiescence_error_cp": 144
+    },
+    {
+      "id": "95a16882da81e55a74dba7083283a25dda758f81a52e937d45bc09f8cc4d35a1",
+      "root_id": "rated2400-True-24",
+      "fen": "r2qr1k1/1p3p2/1np3pp/p2p3n/Pb1P1B1P/1QNBPP1P/1P6/2R1R1K1 w - - 1 26",
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "played",
+          "plies": 4
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -418,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "f4h2",
+            "d8h4",
+            "b3c2",
+            "e8e7",
+            "c2f2",
+            "h4h3",
+            "e1d1",
+            "e7e6",
+            "d3f1",
+            "h3f5",
+            "e3e4",
+            "f5g5",
+            "g1h1"
+          ],
+          "nodes": 80019
+        },
+        {
+          "cp": -415,
+          "mate": null,
+          "depth": 19,
+          "pv": [
+            "f4h2",
+            "d8h4",
+            "e1e2",
+            "e8e6",
+            "c3a2",
+            "a8e8",
+            "a2b4",
+            "e6e3",
+            "e2e3",
+            "h4g5",
+            "g1h1",
+            "g5e3",
+            "b4a2",
+            "e3f3",
+            "h1g1",
+            "h5f4",
+            "h2f4",
+            "f3f4",
+            "c1f1"
+          ],
+          "nodes": 320050
+        }
+      ],
+      "static_stm_cp": 82,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 82,
+        "mate_band": false,
+        "score_stm_cp": 82,
+        "nodes": 130,
+        "seconds": 0.00027000001864507794
+      },
+      "teacher_mean_stm_cp": -416.5,
+      "static_error_cp": 498.5,
+      "teacher_disagreement_cp": 3,
+      "quiescence_error_cp": 498.5
+    },
+    {
+      "id": "9adb602b8c600ee414a8939ba1862cdd4a0eb77e6ae37305b8cf459ac823e3ed",
+      "root_id": "rated2400-True-24",
+      "fen": "r5k1/1p3p2/1np1r1pp/p2p3n/Pb1P3q/2NBPP1P/1PQ4B/2R1R1K1 w - - 0 28",
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "played",
+          "plies": 8
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -376,
+          "mate": null,
+          "depth": 15,
+          "pv": [
+            "c2f2",
+            "h4h3",
+            "d3f1",
+            "h3f5",
+            "e3e4",
+            "d5e4",
+            "f3e4",
+            "f5f2",
+            "g1f2",
+            "h5f6",
+            "f2f3",
+            "a8e8",
+            "e4e5",
+            "f6d5",
+            "e1d1",
+            "e6e7",
+            "c3e4",
+            "e8f8",
+            "e4c5",
+            "b4c5",
+            "d4c5",
+            "b6a4"
+          ],
+          "nodes": 80004
+        },
+        {
+          "cp": -411,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "c2f2",
+            "h4h3",
+            "d3f1",
+            "h3f5",
+            "e3e4",
+            "d5e4",
+            "f3e4",
+            "f5f2",
+            "g1f2",
+            "e6e7",
+            "f2f3",
+            "a8d8",
+            "c1d1",
+            "h5f6",
+            "h2f4",
+            "e7e8"
+          ],
+          "nodes": 320325
+        }
+      ],
+      "static_stm_cp": -65,
+      "quiescence": {
+        "complete": true,
+        "engine_score": -65,
+        "mate_band": false,
+        "score_stm_cp": -65,
+        "nodes": 49,
+        "seconds": 0.00013770000077784061
+      },
+      "teacher_mean_stm_cp": -393.5,
+      "static_error_cp": 328.5,
+      "teacher_disagreement_cp": 35,
+      "quiescence_error_cp": 328.5
+    },
+    {
+      "id": "c4d5ee693169239fa2aaeddc54c6ef3716972d39de3982fbc8a958a973834add",
+      "root_id": "rated2600-False-23",
+      "fen": "r4r2/6k1/p1p1bp2/1p1p4/3P4/3BP1bp/PP1KN1P1/2R4R b - - 1 25",
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "best",
+          "plies": 4
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -126,
+          "mate": null,
+          "depth": 14,
+          "pv": [
+            "g3c7",
+            "c1c6",
+            "c7a5",
+            "b2b4",
+            "a5b4",
+            "d2d1",
+            "g7f7",
+            "c6c7",
+            "f7e8",
+            "g2h3",
+            "a8c8"
+          ],
+          "nodes": 60191
+        },
+        {
+          "cp": -156,
+          "mate": null,
+          "depth": 18,
+          "pv": [
+            "g3c7",
+            "c1c6",
+            "c7a5",
+            "d2d1",
+            "g7f7",
+            "e2f4",
+            "h3g2",
+            "f4g2",
+            "f8h8",
+            "h1h8",
+            "a8h8",
+            "c6a6",
+            "e6g4",
+            "d3e2",
+            "h8h1",
+            "d1c2",
+            "g4e2",
+            "a6a5",
+            "e2c4",
+            "a5a7",
+            "f7f8",
+            "g2f4",
+            "h1h2",
+            "c2c3",
+            "b5b4",
+            "c3b4",
+            "h2b2",
+            "b4c5",
+            "c4a2",
+            "f4h5",
+            "a2c4",
+            "h5f6",
+            "b2b3",
+            "f6d7",
+            "f8e8"
+          ],
+          "nodes": 320013
+        }
+      ],
+      "static_stm_cp": 202,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 300,
+        "mate_band": false,
+        "score_stm_cp": 300,
+        "nodes": 30,
+        "seconds": 7.910002022981644e-05
+      },
+      "teacher_mean_stm_cp": -141,
+      "static_error_cp": 343,
+      "teacher_disagreement_cp": 30,
+      "quiescence_error_cp": 441
+    },
+    {
+      "id": "40d72c6f2c093416f0f5281b54328d81fbaeab17d4b9d646c6d117f23c6ed1eb",
+      "root_id": "rated2600-False-23",
+      "fen": "rb3r2/3b2k1/p1p2p2/1p1p4/3P4/3BP2P/PP1KN3/6RR b - - 2 27",
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "best",
+          "plies": 8
+        }
+      ],
+      "terminal": false,
+      "eligible": false,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -178,
+          "mate": null,
+          "depth": 15,
+          "pv": [
+            "g7f7",
+            "d3g6",
+            "f7e6",
+            "h3h4",
+            "d7e8",
+            "h4h5",
+            "b8d6",
+            "h5h6"
+          ],
+          "nodes": 80053
+        },
+        {
+          "cp": -193,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "g7f7",
+            "h3h4",
+            "f6f5",
+            "g1g5",
+            "b8d6",
+            "d3f5",
+            "d7f5",
+            "g5f5",
+            "f7e6",
+            "f5f8",
+            "a8f8",
+            "h4h5",
+            "a6a5",
+            "h5h6",
+            "e6f6",
+            "e2f4",
+            "f8h8",
+            "h6h7",
+            "d6f4",
+            "e3f4",
+            "f6g7",
+            "d2e3",
+            "h8h7",
+            "h1h7",
+            "g7h7"
+          ],
+          "nodes": 187900
+        }
+      ],
+      "static_stm_cp": 6,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 4,
+        "mate_band": false,
+        "score_stm_cp": 4,
+        "nodes": 22,
+        "seconds": 7.650000043213367e-05
+      },
+      "teacher_mean_stm_cp": -185.5,
+      "static_error_cp": 191.5,
+      "teacher_disagreement_cp": 15,
+      "quiescence_error_cp": 189.5
+    },
+    {
+      "id": "cbd2eb9ab85d6146f25ad2a7a04a7aa6403e01793415ad7a6ce50bf0fa1e3b4b",
+      "root_id": "rated2600-False-23",
+      "fen": "r4r2/2q2k2/p1p1bpQ1/1p1p4/3P4/3BP1b1/PP1KN1Pp/2R4R b - - 3 25",
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "played",
+          "plies": 4
+        }
+      ],
+      "terminal": false,
+      "eligible": false,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -425,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "f7e7",
+            "g6g3",
+            "c7g3",
+            "e2g3",
+            "f8g8",
+            "h1h2",
+            "g8g3",
+            "c1c6",
+            "a8g8",
+            "h2h7",
+            "g8g7",
+            "h7g7",
+            "g3g7",
+            "d3f1",
+            "e6g8"
+          ],
+          "nodes": 80019
+        },
+        {
+          "cp": -445,
+          "mate": null,
+          "depth": 18,
+          "pv": [
+            "f7e7",
+            "g6g3",
+            "c7g3",
+            "e2g3",
+            "f8g8",
+            "h1h2",
+            "g8g3",
+            "c1c6",
+            "g3g7",
+            "d3e2",
+            "e6f5",
+            "e2f3",
+            "a8c8",
+            "c6c8",
+            "f5c8",
+            "h2h5"
+          ],
+          "nodes": 320163
+        }
+      ],
+      "static_stm_cp": 272,
+      "quiescence": {
+        "complete": true,
+        "engine_score": -105,
+        "mate_band": false,
+        "score_stm_cp": -105,
+        "nodes": 20,
+        "seconds": 8.099997648969293e-05
+      },
+      "teacher_mean_stm_cp": -435,
+      "static_error_cp": 707,
+      "teacher_disagreement_cp": 20,
+      "quiescence_error_cp": 330
+    },
+    {
+      "id": "8d6de0aaeaa6a3ea32c027ac7f6abb76670fb2c0369b55aef4eb4d120892da62",
+      "root_id": "rated2600-False-23",
+      "fen": "r4r2/4k3/p1p1bp2/1p1p4/3P4/3BP1N1/PP1K2Pp/2R4R b - - 0 27",
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "played",
+          "plies": 8
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -437,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "f8g8",
+            "h1h2",
+            "g8g3",
+            "c1c6",
+            "e6f7",
+            "d3e2",
+            "f7g6",
+            "e2f3",
+            "g6e4",
+            "f3e4",
+            "d5e4",
+            "h2h7",
+            "e7e8",
+            "c6e6",
+            "e8f8",
+            "e6f6",
+            "f8g8",
+            "h7h2",
+            "g8g7",
+            "f6f4",
+            "a8h8",
+            "h2h8",
+            "g3g2",
+            "d2c3",
+            "b5b4",
+            "c3b3",
+            "g2b2",
+            "b3b2"
+          ],
+          "nodes": 80056
+        },
+        {
+          "cp": -455,
+          "mate": null,
+          "depth": 19,
+          "pv": [
+            "f8g8",
+            "h1h2",
+            "g8g3",
+            "c1c6",
+            "a8a7",
+            "d3e2",
+            "g3g7",
+            "e2f3",
+            "b5b4",
+            "c6b6",
+            "a7c7",
+            "h2h5",
+            "a6a5",
+            "b6a6",
+            "e6g4"
+          ],
+          "nodes": 320048
+        }
+      ],
+      "static_stm_cp": -38,
+      "quiescence": {
+        "complete": true,
+        "engine_score": -38,
+        "mate_band": false,
+        "score_stm_cp": -38,
+        "nodes": 1,
+        "seconds": 2.859998494386673e-05
+      },
+      "teacher_mean_stm_cp": -446,
+      "static_error_cp": 408,
+      "teacher_disagreement_cp": 18,
+      "quiescence_error_cp": 408
+    },
+    {
+      "id": "6427f0b53e67d8699917d2354081a71c395103f9f836b88b0403bd027da9e133",
+      "root_id": "field-own-33",
+      "fen": "r6r/1Rp5/2pq2k1/4np2/P1Pp3P/3P2P1/4QP2/1R4K1 b - - 0 35",
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "best",
+          "plies": 4
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": 392,
+          "mate": null,
+          "depth": 15,
+          "pv": [
+            "c6c5",
+            "b7b3",
+            "a8e8",
+            "a4a5",
+            "e5c4",
+            "e2a2",
+            "c4e5",
+            "b3b5",
+            "e5f3",
+            "g1f1",
+            "f5f4",
+            "b5b6",
+            "c7c6",
+            "a5a6"
+          ],
+          "nodes": 80013
+        },
+        {
+          "cp": 360,
+          "mate": null,
+          "depth": 18,
+          "pv": [
+            "g6f6",
+            "a4a5",
+            "a8a5",
+            "b7b8",
+            "a5a8",
+            "b8a8",
+            "h8a8",
+            "e2h5",
+            "e5f7",
+            "b1e1",
+            "d6d7",
+            "g1f1",
+            "a8g8",
+            "h5f3",
+            "g8g6",
+            "f3e2",
+            "c6c5",
+            "h4h5",
+            "g6g8",
+            "h5h6",
+            "f7h6",
+            "e2h5"
+          ],
+          "nodes": 320289
+        }
+      ],
+      "static_stm_cp": -11,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 147,
+        "mate_band": false,
+        "score_stm_cp": 147,
+        "nodes": 29,
+        "seconds": 7.950002327561378e-05
+      },
+      "teacher_mean_stm_cp": 376,
+      "static_error_cp": -387,
+      "teacher_disagreement_cp": 32,
+      "quiescence_error_cp": -229
+    },
+    {
+      "id": "2197dbbf6b27e7020c92a75a18034ac86399159aa337ed1ba7644d94cfac321f",
+      "root_id": "field-own-33",
+      "fen": "r6r/1Rp5/3q1k2/P1p1np2/2Pp3P/3P2P1/5P2/1R1Q2K1 b - - 0 37",
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "best",
+          "plies": 8
+        }
+      ],
+      "terminal": false,
+      "eligible": false,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": 344,
+          "mate": null,
+          "depth": 14,
+          "pv": [
+            "a8a5",
+            "b7b8",
+            "a5a8",
+            "b8a8",
+            "h8a8",
+            "d1h5",
+            "e5f7",
+            "b1e1",
+            "a8g8",
+            "h5f3",
+            "f7h6",
+            "f3h5",
+            "g8g6",
+            "h5e2",
+            "f5f4",
+            "e2e8",
+            "f4g3",
+            "e8h8",
+            "f6f5",
+            "h8c8",
+            "f5f4"
+          ],
+          "nodes": 25801
+        },
+        {
+          "cp": 466,
+          "mate": null,
+          "depth": 20,
+          "pv": [
+            "a8a5",
+            "b7b8",
+            "h8b8",
+            "b1b8",
+            "d6c6",
+            "b8f8",
+            "e5f7",
+            "f8g8",
+            "a5a8",
+            "g8a8",
+            "c6a8",
+            "g3g4",
+            "f5g4",
+            "d1g4",
+            "a8c6",
+            "h4h5",
+            "c6e6",
+            "g4g6",
+            "f6e7",
+            "g6g3",
+            "e6f5",
+            "g3c7",
+            "e7f6"
+          ],
+          "nodes": 320063
+        }
+      ],
+      "static_stm_cp": -14,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 169,
+        "mate_band": false,
+        "score_stm_cp": 169,
+        "nodes": 21,
+        "seconds": 9.059999138116837e-05
+      },
+      "teacher_mean_stm_cp": 405,
+      "static_error_cp": -419,
+      "teacher_disagreement_cp": 122,
+      "quiescence_error_cp": -236
+    },
+    {
+      "id": "a5bf1275bbb826fd6cbdfac4c0260f5d70d5bfaeec4322be105fd4fbfcad2d72",
+      "root_id": "field-own-33",
+      "fen": "1R6/2p5/2pq1k1r/4np2/r1Pp3P/3P2P1/P3QP2/4R1K1 b - - 18 35",
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "played",
+          "plies": 4
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -60,
+          "mate": null,
+          "depth": 13,
+          "pv": [
+            "e5f7",
+            "b8e8",
+            "f6g7",
+            "g1f1",
+            "d6f6",
+            "e8e7",
+            "a4a8",
+            "e7c7"
+          ],
+          "nodes": 74620
+        },
+        {
+          "cp": -31,
+          "mate": null,
+          "depth": 16,
+          "pv": [
+            "e5f7",
+            "b8g8",
+            "a4a5",
+            "e2e8",
+            "a5e5",
+            "e1e5",
+            "d6e5",
+            "e8c6",
+            "e5d6",
+            "c6e8",
+            "d6e6",
+            "e8b8",
+            "h6g6",
+            "g8g6",
+            "f6g6",
+            "b8c7",
+            "f7e5",
+            "c7d8",
+            "e5f3",
+            "g1f1"
+          ],
+          "nodes": 194839
+        }
+      ],
+      "static_stm_cp": 47,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 47,
+        "mate_band": false,
+        "score_stm_cp": 47,
+        "nodes": 36,
+        "seconds": 9.290000889450312e-05
+      },
+      "teacher_mean_stm_cp": -45.5,
+      "static_error_cp": 92.5,
+      "teacher_disagreement_cp": 29,
+      "quiescence_error_cp": 92.5
+    },
+    {
+      "id": "890dd26227af51277f0d75714d28059a8efd667142d9d27e11e62debc547deed",
+      "root_id": "field-own-33",
+      "fen": "4Q1R1/2p2n2/2pq1k1r/r4p2/2Pp3P/3P2P1/P4P2/4R1K1 b - - 22 37",
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "played",
+          "plies": 8
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -31,
+          "mate": null,
+          "depth": 13,
+          "pv": [
+            "a5e5",
+            "e1e5",
+            "d6e5",
+            "e8c6",
+            "e5d6",
+            "c6f3",
+            "h6g6",
+            "g8g6",
+            "f6g6",
+            "a2a4"
+          ],
+          "nodes": 33670
+        },
+        {
+          "cp": -30,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "a5e5",
+            "e1e5",
+            "d6e5",
+            "e8c6",
+            "e5d6",
+            "c6e8",
+            "d6e6",
+            "e8b8",
+            "h6g6",
+            "g8g6",
+            "f6g6",
+            "b8c7",
+            "f7e5",
+            "c7d8",
+            "e5d3",
+            "d8d4"
+          ],
+          "nodes": 253270
+        }
+      ],
+      "static_stm_cp": 1,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 124,
+        "mate_band": false,
+        "score_stm_cp": 124,
+        "nodes": 13,
+        "seconds": 5.6200020480901e-05
+      },
+      "teacher_mean_stm_cp": -30.5,
+      "static_error_cp": 31.5,
+      "teacher_disagreement_cp": 1,
+      "quiescence_error_cp": 154.5
+    },
+    {
+      "id": "262146bf41b02351b603834068e32264bb041219a1567b8663445685d7326956",
+      "root_id": "field-own-44",
+      "fen": "5k2/5n2/2p4r/r7/2Pp1PPP/3P3K/P3R3/8 b - - 0 46",
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "best",
+          "plies": 4
+        }
+      ],
+      "terminal": false,
+      "eligible": false,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": 641,
+          "mate": null,
+          "depth": 15,
+          "pv": [
+            "a5a3",
+            "g4g5",
+            "h6d6",
+            "c4c5",
+            "a3d3",
+            "h3g4",
+            "d6d8",
+            "g4f5",
+            "d3c3",
+            "e2e6",
+            "c3c5",
+            "f5g4"
+          ],
+          "nodes": 80015
+        },
+        {
+          "cp": 678,
+          "mate": null,
+          "depth": 21,
+          "pv": [
+            "a5a3",
+            "e2d2",
+            "h6f6",
+            "h4h5",
+            "f6f4",
+            "h3g3",
+            "f4f6",
+            "h5h6",
+            "f6h6",
+            "g4g5",
+            "f7g5",
+            "g3g4",
+            "g5h7",
+            "d2f2",
+            "f8g8"
+          ],
+          "nodes": 320230
+        }
+      ],
+      "static_stm_cp": 213,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 213,
+        "mate_band": false,
+        "score_stm_cp": 213,
+        "nodes": 8,
+        "seconds": 3.679998917505145e-05
+      },
+      "teacher_mean_stm_cp": 659.5,
+      "static_error_cp": -446.5,
+      "teacher_disagreement_cp": 37,
+      "quiescence_error_cp": -446.5
+    },
+    {
+      "id": "82aff7484af6722d95ca9982bbffc745a1ebdc0cfc2dd80453f8449a89c9caf5",
+      "root_id": "field-own-44",
+      "fen": "5k2/5n2/2p4r/6P1/2Pp1PKP/3r4/P3R3/8 b - - 1 48",
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "best",
+          "plies": 8
+        }
+      ],
+      "terminal": false,
+      "eligible": false,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": 679,
+          "mate": null,
+          "depth": 15,
+          "pv": [
+            "h6d6",
+            "c4c5",
+            "d6d8",
+            "g4f5",
+            "d3g3",
+            "e2e6",
+            "d8d5",
+            "f5f6",
+            "g3e3",
+            "e6e8",
+            "e3e8"
+          ],
+          "nodes": 80112
+        },
+        {
+          "cp": 744,
+          "mate": null,
+          "depth": 19,
+          "pv": [
+            "h6d6",
+            "e2b2",
+            "d3e3",
+            "g4f5",
+            "d4d3",
+            "c4c5",
+            "d6d7",
+            "g5g6",
+            "d3d2",
+            "f5f6"
+          ],
+          "nodes": 320073
+        }
+      ],
+      "static_stm_cp": 373,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 373,
+        "mate_band": false,
+        "score_stm_cp": 373,
+        "nodes": 8,
+        "seconds": 3.8300000596791506e-05
+      },
+      "teacher_mean_stm_cp": 711.5,
+      "static_error_cp": -338.5,
+      "teacher_disagreement_cp": 65,
+      "quiescence_error_cp": -338.5
+    },
+    {
+      "id": "d1eeb75eeaa24952f71f1c257b15f5b0ebca913d229d183544e6a6860e9e5c5d",
+      "root_id": "field-own-44",
+      "fen": "2Q1R3/q4nk1/2p4r/8/2Pp1P1P/3P2PK/r7/8 b - - 3 46",
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "played",
+          "plies": 4
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": 455,
+          "mate": null,
+          "depth": 13,
+          "pv": [
+            "h6f6",
+            "e8g8",
+            "g7h7",
+            "c8e8",
+            "f7h6",
+            "g8h8",
+            "h7g7",
+            "g3g4",
+            "a7f7",
+            "g4g5",
+            "f7e8",
+            "h8e8",
+            "f6f4"
+          ],
+          "nodes": 52489
+        },
+        {
+          "cp": 543,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "h6f6",
+            "c8g4",
+            "f6g6",
+            "g4c8",
+            "f7h6",
+            "h4h5",
+            "g6d6",
+            "g3g4",
+            "a7d7",
+            "c8d7",
+            "d6d7",
+            "g4g5",
+            "a2a1",
+            "h3g2",
+            "h6f7",
+            "e8e6",
+            "g7f8",
+            "e6c6",
+            "d7d6"
+          ],
+          "nodes": 320323
+        }
+      ],
+      "static_stm_cp": 421,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 421,
+        "mate_band": false,
+        "score_stm_cp": 421,
+        "nodes": 3,
+        "seconds": 2.8800044674426317e-05
+      },
+      "teacher_mean_stm_cp": 499,
+      "static_error_cp": -78,
+      "teacher_disagreement_cp": 88,
+      "quiescence_error_cp": -78
+    },
+    {
+      "id": "134c5d3c1bae94015cee5da026247048e84bfbfca3c61e0117f5f0e6e5730866",
+      "root_id": "field-own-44",
+      "fen": "4R3/q4nk1/2p3r1/5Q2/2Pp1P1P/3P2PK/r7/8 b - - 7 48",
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "played",
+          "plies": 8
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": 525,
+          "mate": null,
+          "depth": 13,
+          "pv": [
+            "g6d6",
+            "f5g4",
+            "d6g6",
+            "g4c8",
+            "f7h6",
+            "h4h5",
+            "g6d6",
+            "f4f5",
+            "a7f7",
+            "g3g4",
+            "a2d2",
+            "c8b8",
+            "d2d3",
+            "h3h4"
+          ],
+          "nodes": 80065
+        },
+        {
+          "cp": 552,
+          "mate": null,
+          "depth": 13,
+          "pv": [
+            "g6d6",
+            "f5g4",
+            "d6g6",
+            "g4c8",
+            "f7h6",
+            "h4h5",
+            "g6d6",
+            "g3g4",
+            "a7d7",
+            "c8d7",
+            "d6d7",
+            "e8e6",
+            "h6g8",
+            "g4g5",
+            "d7f7",
+            "e6c6",
+            "g7h8",
+            "h5h6",
+            "a2e2",
+            "h3g4",
+            "e2g2",
+            "g4f3",
+            "g2h2",
+            "f3g4",
+            "h2d2"
+          ],
+          "nodes": 98501
+        }
+      ],
+      "static_stm_cp": 393,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 393,
+        "mate_band": false,
+        "score_stm_cp": 393,
+        "nodes": 3,
+        "seconds": 2.9399991035461426e-05
+      },
+      "teacher_mean_stm_cp": 538.5,
+      "static_error_cp": -145.5,
+      "teacher_disagreement_cp": 27,
+      "quiescence_error_cp": -145.5
+    },
+    {
+      "id": "d70d354d853d21e85aeb045b546d1bdb72df331209a4a0516a4cd19329fe2b34",
+      "root_id": "bitboards2400-False-15",
+      "fen": "r1bq1rk1/1p1nb3/p1p4p/3pNp1n/3P3P/2NBP1P1/PPQ3PB/2R1K2R b K - 0 17",
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "best",
+          "plies": 4
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -79,
+          "mate": null,
+          "depth": 14,
+          "pv": [
+            "e7d6",
+            "e5g6",
+            "h5g3",
+            "g6f8",
+            "g3h1",
+            "h2d6",
+            "d7f8",
+            "d6f8",
+            "d8h4",
+            "e1d2",
+            "g8f8",
+            "c3e2",
+            "h1f2",
+            "d3f5"
+          ],
+          "nodes": 50914
+        },
+        {
+          "cp": -85,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "e7d6",
+            "e5g6",
+            "f8f6",
+            "g6f4",
+            "d6f4",
+            "g3f4",
+            "d8e7",
+            "c2e2",
+            "h5g7",
+            "g2g4",
+            "f5g4",
+            "e3e4",
+            "f6f7",
+            "f4f5",
+            "e7h4",
+            "e1d2",
+            "h4g5",
+            "d2c2",
+            "d7f6",
+            "c1f1",
+            "d5e4"
+          ],
+          "nodes": 261617
+        }
+      ],
+      "static_stm_cp": -138,
+      "quiescence": {
+        "complete": true,
+        "engine_score": -92,
+        "mate_band": false,
+        "score_stm_cp": -92,
+        "nodes": 261,
+        "seconds": 0.00045769999269396067
+      },
+      "teacher_mean_stm_cp": -82,
+      "static_error_cp": -56,
+      "teacher_disagreement_cp": 6,
+      "quiescence_error_cp": -10
+    },
+    {
+      "id": "93c9caf6e068aaa69e1ad72e073717f8965bc7323149bbe8b73b63b641acf8e6",
+      "root_id": "bitboards2400-False-15",
+      "fen": "r1bq2k1/1p1n4/p1pb1r1p/3p1p1n/3P1N1P/2NBP1P1/PPQ3PB/2R1K2R b K - 4 19",
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "best",
+          "plies": 8
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -73,
+          "mate": null,
+          "depth": 13,
+          "pv": [
+            "d6f4",
+            "g3f4",
+            "f6f7",
+            "d3f5",
+            "d8h4",
+            "g2g3",
+            "h4e7",
+            "g3g4",
+            "e7e3",
+            "c3e2",
+            "d7f6",
+            "f5c8",
+            "a8c8",
+            "g4h5",
+            "f6e4",
+            "c2b3",
+            "e3d2",
+            "e1f1"
+          ],
+          "nodes": 50142
+        },
+        {
+          "cp": -67,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "d6f4",
+            "g3f4",
+            "f6f7",
+            "d3f5",
+            "d8h4",
+            "g2g3",
+            "h4e7",
+            "g3g4",
+            "e7e3",
+            "c3e2",
+            "h5f6",
+            "g4g5",
+            "h6g5",
+            "h2g1",
+            "e3e7",
+            "f4g5",
+            "f6e4",
+            "f5e4",
+            "e7e4",
+            "c2e4",
+            "d5e4",
+            "g1e3",
+            "d7b6",
+            "e2f4",
+            "c8f5",
+            "c1c5",
+            "a8f8",
+            "g5g6"
+          ],
+          "nodes": 272958
+        }
+      ],
+      "static_stm_cp": -94,
+      "quiescence": {
+        "complete": true,
+        "engine_score": -94,
+        "mate_band": false,
+        "score_stm_cp": -94,
+        "nodes": 18,
+        "seconds": 6.890000076964498e-05
+      },
+      "teacher_mean_stm_cp": -70,
+      "static_error_cp": -24,
+      "teacher_disagreement_cp": 6,
+      "quiescence_error_cp": -24
+    },
+    {
+      "id": "fafcbd61a60b2af2fd251a3c5e5f60a874df41021e5533d887711689bacb3e9a",
+      "root_id": "bitboards2400-False-15",
+      "fen": "r1bq1r1k/1p1nb2B/p1p2pQp/3p3n/3P3P/2N1Pp2/PP3PPB/2R1K2R b K - 3 17",
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "played",
+          "plies": 4
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -315,
+          "mate": null,
+          "depth": 15,
+          "pv": [
+            "f8f7",
+            "g6f7",
+            "h5g7",
+            "h2c7",
+            "f3g2",
+            "h1g1",
+            "d8e8",
+            "h7g6",
+            "e8f7",
+            "g6f7",
+            "d7f8",
+            "g1g2",
+            "c8e6",
+            "f7e6",
+            "f8e6",
+            "c7h2"
+          ],
+          "nodes": 80024
+        },
+        {
+          "cp": -325,
+          "mate": null,
+          "depth": 17,
+          "pv": [
+            "f8f7",
+            "g6f7",
+            "h5g7",
+            "h2c7",
+            "d8f8",
+            "h7g6",
+            "f3g2",
+            "h1g1",
+            "f8f7",
+            "g6f7",
+            "d7f8",
+            "g1g2",
+            "c8e6",
+            "f7e6",
+            "f8e6",
+            "c7h2"
+          ],
+          "nodes": 257255
+        }
+      ],
+      "static_stm_cp": 287,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 530,
+        "mate_band": false,
+        "score_stm_cp": 530,
+        "nodes": 30,
+        "seconds": 0.000221800000872463
+      },
+      "teacher_mean_stm_cp": -320,
+      "static_error_cp": 607,
+      "teacher_disagreement_cp": 10,
+      "quiescence_error_cp": 850
+    },
+    {
+      "id": "f9135484d3d66a55496df5eb58effd7de544e1bbafb85ae9d363eb1460d2fa2b",
+      "root_id": "bitboards2400-False-15",
+      "fen": "r1bq3k/1pBnbQnB/p1p2p1p/3p4/3P3P/2N1Pp2/PP3PP1/2R1K2R b K - 2 19",
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "played",
+          "plies": 8
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -317,
+          "mate": null,
+          "depth": 16,
+          "pv": [
+            "d8e8",
+            "h7g6",
+            "f3g2",
+            "h1g1",
+            "e8f7",
+            "g6f7",
+            "d7f8",
+            "g1g2",
+            "c8e6",
+            "f7e6",
+            "f8e6",
+            "c7g3",
+            "h8g8",
+            "e1f1",
+            "g8f7",
+            "c3e2",
+            "g7f5"
+          ],
+          "nodes": 80066
+        },
+        {
+          "cp": -319,
+          "mate": null,
+          "depth": 20,
+          "pv": [
+            "d8e8",
+            "h7g6",
+            "f3g2",
+            "h1g1",
+            "e8f7",
+            "g6f7",
+            "d7f8",
+            "g1g2",
+            "c8e6",
+            "f7e6",
+            "f8e6",
+            "c7g3",
+            "h8g8",
+            "c3e2",
+            "h6h5",
+            "e1f1",
+            "g8f7",
+            "c1c3",
+            "a8d8",
+            "e2f4",
+            "e6f4",
+            "g3f4",
+            "a6a5",
+            "c3b3",
+            "d8d7",
+            "b3d3"
+          ],
+          "nodes": 320019
+        }
+      ],
+      "static_stm_cp": -270,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 8,
+        "mate_band": false,
+        "score_stm_cp": 8,
+        "nodes": 115,
+        "seconds": 0.0002817999920807779
+      },
+      "teacher_mean_stm_cp": -318,
+      "static_error_cp": 48,
+      "teacher_disagreement_cp": 2,
+      "quiescence_error_cp": 326
+    },
+    {
+      "id": "70b20704630d7a1172020463481fb3a4db7e7b8bf709f23abf22822a4ce707f7",
+      "root_id": "bitboards2400-True-35",
+      "fen": "8/2r2k1p/Bp2R1p1/p2p1p2/Pq1P1P2/1Pn4P/2Q3P1/6K1 w - - 2 37",
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "best",
+          "plies": 4
+        }
+      ],
+      "terminal": false,
+      "eligible": false,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -456,
+          "mate": null,
+          "depth": 16,
+          "pv": [
+            "e6e3",
+            "b4d4",
+            "c2d3",
+            "d4d3",
+            "e3d3",
+            "f7e6",
+            "g1f1",
+            "c3e4",
+            "g2g4",
+            "e4c5",
+            "d3e3",
+            "e6d6",
+            "a6e2",
+            "c5e4",
+            "e2d3",
+            "h7h5",
+            "g4h5"
+          ],
+          "nodes": 80048
+        },
+        {
+          "cp": -277,
+          "mate": null,
+          "depth": 19,
+          "pv": [
+            "e6e5",
+            "b4d4",
+            "c2f2",
+            "d4f2",
+            "g1f2",
+            "c3e4",
+            "f2e3",
+            "c7c3",
+            "e3d4",
+            "c3b3",
+            "d4d5",
+            "b3b4",
+            "g2g4",
+            "e4c3",
+            "d5c6",
+            "f5g4",
+            "h3g4",
+            "c3a4",
+            "f4f5",
+            "g6g5",
+            "a6e2",
+            "a4c3",
+            "e2f3",
+            "a5a4",
+            "e5e3",
+            "b4c4",
+            "c6d6",
+            "a4a3",
+            "e3e7",
+            "f7f8",
+            "e7h7"
+          ],
+          "nodes": 320191
+        }
+      ],
+      "static_stm_cp": 51,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 51,
+        "mate_band": false,
+        "score_stm_cp": 51,
+        "nodes": 18,
+        "seconds": 6.78999931551516e-05
+      },
+      "teacher_mean_stm_cp": -366.5,
+      "static_error_cp": 417.5,
+      "teacher_disagreement_cp": 179,
+      "quiescence_error_cp": 417.5
+    },
+    {
+      "id": "ebafedead4b1478f181581f9c154dcd51dabb84e460af1ca04cdafd36a31b34c",
+      "root_id": "bitboards2400-True-35",
+      "fen": "8/2r2k1p/Bp4p1/p2pRp2/P4P2/1Pn4P/5qP1/6K1 w - - 0 39",
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "best",
+          "plies": 8
+        }
+      ],
+      "terminal": false,
+      "eligible": false,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -212,
+          "mate": null,
+          "depth": 15,
+          "pv": [
+            "g1f2",
+            "c3e4",
+            "f2e3",
+            "c7c3",
+            "e3d4",
+            "c3b3",
+            "d4d5",
+            "b3b4",
+            "g2g4",
+            "e4f6",
+            "d5d6",
+            "f5g4",
+            "h3g4",
+            "f6g4",
+            "e5e7",
+            "f7f6",
+            "e7h7",
+            "b4a4",
+            "d6c7",
+            "a4b4",
+            "h7h3"
+          ],
+          "nodes": 48221
+        },
+        {
+          "cp": -377,
+          "mate": null,
+          "depth": 16,
+          "pv": [
+            "g1f2",
+            "c3e4",
+            "f2f1",
+            "e4f6",
+            "f1g1",
+            "c7c3",
+            "a6b7",
+            "c3b3",
+            "b7d5",
+            "f6d5",
+            "e5d5",
+            "f7e6"
+          ],
+          "nodes": 245045
+        }
+      ],
+      "static_stm_cp": -1122,
+      "quiescence": {
+        "complete": true,
+        "engine_score": -154,
+        "mate_band": false,
+        "score_stm_cp": -154,
+        "nodes": 6,
+        "seconds": 3.600004129111767e-05
+      },
+      "teacher_mean_stm_cp": -294.5,
+      "static_error_cp": -827.5,
+      "teacher_disagreement_cp": 165,
+      "quiescence_error_cp": 140.5
+    },
+    {
+      "id": "073e225831f2f39f323650642d26ff8df8ba1dde42d0a7297a54523654c59893",
+      "root_id": "bitboards2400-True-35",
+      "fen": "5k2/7p/1p2R1p1/pB1p1p2/Pq1PnP2/1r5P/6P1/3Q2K1 w - - 0 37",
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "played",
+          "plies": 4
+        }
+      ],
+      "terminal": false,
+      "eligible": false,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -366,
+          "mate": null,
+          "depth": 15,
+          "pv": [
+            "g1h2",
+            "b4c3",
+            "d1f3",
+            "c3f3",
+            "g2f3",
+            "b3f3",
+            "e6b6",
+            "f3f4",
+            "b6a6",
+            "e4g5",
+            "b5c6",
+            "f4f2",
+            "h2g1",
+            "g5h3",
+            "g1h1",
+            "h3f4",
+            "a6a5"
+          ],
+          "nodes": 54863
+        },
+        {
+          "cp": -477,
+          "mate": null,
+          "depth": 18,
+          "pv": [
+            "g1h2",
+            "b4c3",
+            "d1f3",
+            "c3f3",
+            "g2f3",
+            "e4c3",
+            "b5a6",
+            "c3a4",
+            "h2g3",
+            "b3b4",
+            "h3h4",
+            "b4d4",
+            "h4h5",
+            "f8g7",
+            "a6b5",
+            "a4c5",
+            "e6e3"
+          ],
+          "nodes": 320203
+        }
+      ],
+      "static_stm_cp": -90,
+      "quiescence": {
+        "complete": true,
+        "engine_score": 15,
+        "mate_band": false,
+        "score_stm_cp": 15,
+        "nodes": 32,
+        "seconds": 9.290000889450312e-05
+      },
+      "teacher_mean_stm_cp": -421.5,
+      "static_error_cp": 331.5,
+      "teacher_disagreement_cp": 111,
+      "quiescence_error_cp": 436.5
+    },
+    {
+      "id": "24ef3c7ebe218468d1098adff1f723e4981e8c5d3d51bc2990637f174a1bce23",
+      "root_id": "bitboards2400-True-35",
+      "fen": "5k2/7p/1p2R1p1/pB1p1p2/P2PnP2/1r3q1P/6PK/8 w - - 0 39",
+      "origins": [
+        {
+          "kind": "teacher-counterfactual",
+          "branch": "played",
+          "plies": 8
+        }
+      ],
+      "terminal": false,
+      "eligible": true,
+      "finite_teacher": true,
+      "teacher": [
+        {
+          "cp": -461,
+          "mate": null,
+          "depth": 16,
+          "pv": [
+            "g2f3",
+            "e4d2",
+            "h2g2",
+            "d2f3",
+            "e6b6",
+            "f3d4",
+            "b6b7",
+            "d4e6",
+            "b7h7",
+            "e6f4",
+            "g2h2",
+            "g6g5",
+            "h3h4",
+            "b3h3",
+            "h2g1",
+            "h3h4"
+          ],
+          "nodes": 80042
+        },
+        {
+          "cp": -471,
+          "mate": null,
+          "depth": 18,
+          "pv": [
+            "g2f3",
+            "e4c3",
+            "b5a6",
+            "c3a4",
+            "h2g3",
+            "a4c3",
+            "g3h4",
+            "f8g7",
+            "e6e7",
+            "g7f6",
+            "e7c7",
+            "a5a4",
+            "a6b7",
+            "a4a3",
+            "c7c6",
+            "f6e7",
+            "c6c7",
+            "e7d8"
+          ],
+          "nodes": 320156
+        }
+      ],
+      "static_stm_cp": -1100,
+      "quiescence": {
+        "complete": true,
+        "engine_score": -275,
+        "mate_band": false,
+        "score_stm_cp": -275,
+        "nodes": 18,
+        "seconds": 5.909998435527086e-05
+      },
+      "teacher_mean_stm_cp": -466,
+      "static_error_cp": -634,
+      "teacher_disagreement_cp": 10,
+      "quiescence_error_cp": 191
+    }
+  ],
+  "largest_eligible_static_errors": [
+    "edead6f25d58f497c3b3fbc93ad7252673ae1acb0e3fa964780b4ecda5e27b64",
+    "1b38fbb788a3fe77b92722ac3799ac9586d410b8ed415f9b5606d4e3b9e4fab0",
+    "24ef3c7ebe218468d1098adff1f723e4981e8c5d3d51bc2990637f174a1bce23",
+    "fafcbd61a60b2af2fd251a3c5e5f60a874df41021e5533d887711689bacb3e9a",
+    "0ee4784bfe34a45367d8bfc506bbc1bfeb3aa5e21a2d7e6211b7434dc980f413",
+    "0efc7406eb237fd909e2e4e877b36d02bf3c0ec80e4580d7084c2ed4a41e1a67",
+    "0551aa66b67915809d31c2d41da7a489dae44628cf7395aeceb4716b9a0262f9",
+    "993cff1d036719c6f811e0a81313de1e858a4b5e7faea941f2f6dc61e005422c",
+    "864af87c6803ffd573949e9fcb548b0be91386a85b345953cb93c524b4a9c826",
+    "95a16882da81e55a74dba7083283a25dda758f81a52e937d45bc09f8cc4d35a1",
+    "1d61501a8bfbe71fe40c46b706a33bfbb642da0678e67526dd577ec3cfddff98",
+    "776d9727d9f903df6ba0123c9e83b7503bedaf25f07ee8001c9a8ae695c49c88"
+  ]
+}

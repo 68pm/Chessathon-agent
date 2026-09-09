@@ -1,0 +1,224 @@
+{
+  "status": "complete",
+  "stages": [
+    {
+      "label": "read-only",
+      "status": "complete",
+      "arguments": [
+        "scripts.validate_package_staged_fixed",
+        "--zip",
+        "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\daytime-20260909\\fast-legal-screen-01\\fast-legal-candidate.zip",
+        "--out",
+        "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\daytime-20260909\\fast-legal-screen-01\\validation.json"
+      ],
+      "timeout_seconds": 180,
+      "pid": 29392,
+      "elapsed_seconds": 26.06199999997625
+    },
+    {
+      "label": "versus55",
+      "status": "complete",
+      "arguments": [
+        "scripts.feedback_matches_windows",
+        "--candidate",
+        "runs\\daytime-20260909\\fast-legal-01\\prototype",
+        "--stage",
+        "comparison",
+        "--pairs",
+        "1",
+        "--offset",
+        "0",
+        "--cycle",
+        "d9-fast-legal-01-versus55",
+        "--openings",
+        "configs/overnight-september9-short-openings.json",
+        "--opponent",
+        "runs\\daytime-20260909\\pawn-bitboards-01\\prototype"
+      ],
+      "timeout_seconds": 1500,
+      "pid": 26940,
+      "elapsed_seconds": 582.3910000000033
+    },
+    {
+      "label": "versus53",
+      "status": "complete",
+      "arguments": [
+        "scripts.feedback_matches_windows",
+        "--candidate",
+        "runs\\daytime-20260909\\fast-legal-01\\prototype",
+        "--stage",
+        "comparison",
+        "--pairs",
+        "1",
+        "--offset",
+        "1",
+        "--cycle",
+        "d9-fast-legal-01-versus53",
+        "--openings",
+        "configs/overnight-september9-short-openings.json",
+        "--opponent",
+        "candidates\\compiled-near-queen-checks-v1"
+      ],
+      "timeout_seconds": 1500,
+      "pid": 9184,
+      "elapsed_seconds": 571.3279999999795
+    },
+    {
+      "label": "rated2400",
+      "status": "complete",
+      "arguments": [
+        "scripts.feedback_matches_windows",
+        "--candidate",
+        "runs\\daytime-20260909\\fast-legal-01\\prototype",
+        "--stage",
+        "rated",
+        "--pairs",
+        "1",
+        "--offset",
+        "2",
+        "--cycle",
+        "d9-fast-legal-01-rated2400",
+        "--openings",
+        "configs/overnight-september9-short-openings.json",
+        "--levels",
+        "2400"
+      ],
+      "timeout_seconds": 1500,
+      "pid": 33504,
+      "elapsed_seconds": 639.4529999999795
+    },
+    {
+      "label": "rated2600",
+      "status": "complete",
+      "arguments": [
+        "scripts.feedback_matches_windows",
+        "--candidate",
+        "runs\\daytime-20260909\\fast-legal-01\\prototype",
+        "--stage",
+        "rated",
+        "--pairs",
+        "1",
+        "--offset",
+        "2",
+        "--cycle",
+        "d9-fast-legal-01-rated2600",
+        "--openings",
+        "configs/overnight-september9-short-openings.json",
+        "--levels",
+        "2600"
+      ],
+      "timeout_seconds": 1500,
+      "pid": 9176,
+      "elapsed_seconds": 648.984999999986
+    }
+  ],
+  "matches": [
+    {
+      "label": "versus55",
+      "opponent": "runs\\daytime-20260909\\pawn-bitboards-01\\prototype",
+      "offset": 0,
+      "result_path": "runs\\improvement-loop-20260907\\d9-fast-legal-01-versus55\\comparison-prototype\\results.json",
+      "sha256": "31a9e2e894841147eafb238f9d6d7fcc59c5bba406d350625def4877fe1c6638",
+      "summary": {
+        "incumbent": {
+          "games": 2,
+          "wins": 0,
+          "draws": 2,
+          "losses": 0,
+          "score": 0.5,
+          "completed_pairs": 1,
+          "pair_bootstrap_95": [
+            0.5,
+            0.5
+          ],
+          "terminations": {
+            "threefold_repetition": 2
+          },
+          "candidate_failures": 0
+        }
+      }
+    },
+    {
+      "label": "versus53",
+      "opponent": "candidates\\compiled-near-queen-checks-v1",
+      "offset": 1,
+      "result_path": "runs\\improvement-loop-20260907\\d9-fast-legal-01-versus53\\comparison-prototype\\results.json",
+      "sha256": "881a8d9503d4b450ae86e274803c0c55d979ac7e9b4951a545e4fd6364395e52",
+      "summary": {
+        "incumbent": {
+          "games": 2,
+          "wins": 1,
+          "draws": 1,
+          "losses": 0,
+          "score": 0.75,
+          "completed_pairs": 1,
+          "pair_bootstrap_95": [
+            0.75,
+            0.75
+          ],
+          "terminations": {
+            "checkmate": 1,
+            "threefold_repetition": 1
+          },
+          "candidate_failures": 0
+        }
+      }
+    },
+    {
+      "label": "rated2400",
+      "level": 2400,
+      "offset": 2,
+      "result_path": "runs\\improvement-loop-20260907\\d9-fast-legal-01-rated2400\\rated-prototype\\results.json",
+      "sha256": "200d886ced5c76623f8085e6c2cd5dbb9f010fa6a8db31da5bdfa5b069c9c010",
+      "summary": {
+        "stockfish:2400": {
+          "games": 2,
+          "wins": 1,
+          "draws": 1,
+          "losses": 0,
+          "score": 0.75,
+          "completed_pairs": 1,
+          "pair_bootstrap_95": [
+            0.75,
+            0.75
+          ],
+          "terminations": {
+            "checkmate": 1,
+            "threefold_repetition": 1
+          },
+          "candidate_failures": 0
+        }
+      }
+    },
+    {
+      "label": "rated2600",
+      "level": 2600,
+      "offset": 2,
+      "result_path": "runs\\improvement-loop-20260907\\d9-fast-legal-01-rated2600\\rated-prototype\\results.json",
+      "sha256": "21f0f76ac0908d43f03bd4e11e038886139cb49666c6c17ee05e445d9a5af46f",
+      "summary": {
+        "stockfish:2600": {
+          "games": 2,
+          "wins": 0,
+          "draws": 0,
+          "losses": 2,
+          "score": 0.0,
+          "completed_pairs": 1,
+          "pair_bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "terminations": {
+            "checkmate": 2
+          },
+          "candidate_failures": 0
+        }
+      }
+    }
+  ],
+  "passed": false,
+  "package_sha256": "400c5b050aadbfc545477f77635f2bf9312ba9b94d07b252241814cee4e840d9",
+  "decision": "retain_v155_and_diagnose",
+  "finished_utc": "2026-09-09T11:12:28.642761+00:00",
+  "frozen_candidates": true
+}

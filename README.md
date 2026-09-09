@@ -19,3 +19,5 @@ Read-only inference passed local validation. Automatic site upload is authorised
 but pending browser access; no new active submission has been verified.
 
 ZIP SHA256: `29b322dba4ea61d0fce1709327810e8f9f199df79cf40cc92290ddf9ec083fc1`.
+
+[Midday development result](chessity-agent/reports/DAYTIME_FAST_LEGAL_RESULT_20260909.md): the faster candidate did not qualify; v1.55 remains selected. Completed public-game reviews and rejected value trials are preserved in the reports.

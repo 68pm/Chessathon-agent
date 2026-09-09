@@ -1,0 +1,236 @@
+........FFFF.                                                            [100%]
+================================== FAILURES ===================================
+_ test_completed_full_width_score_matches_parent[rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1] _
+
+fen = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1'
+original = <module 'tt_hint_parent' from 'C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\daytime-20260909\\fast-legal-01\\prototype\\engine\\compiled_core.py'>
+
+    @pytest.mark.parametrize('fen',[
+        chess.STARTING_FEN,
+        '4k3/pp3ppp/2n5/3pp3/3PP3/2N5/PPP2PPP/4K3 w - - 0 15',
+        '4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1',
+        'r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1',
+    ])
+    def test_completed_full_width_score_matches_parent(fen,original):
+        position=chess.Board(fen)
+>       a=call(original,position,seed=False,maximum=1000000)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_daytime_tt_hint.py:88: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+module = <module 'tt_hint_parent' from 'C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\daytime-20260909\\fast-legal-01\\prototype\\engine\\compiled_core.py'>
+position = Board('rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1')
+wrong_context = False, wrong_clock = False, illegal_hint = False, seed = False
+maximum = 1000000, depth = 2, uci = None
+
+    def call(module,position,wrong_context=False,wrong_clock=False,illegal_hint=False,
+             seed=True,maximum=100000,depth=2,uci=None):
+        board,state=arrays(position)
+        saved=board.copy(),state.copy()
+        key=np.uint64(module.position_hash(board,state))
+        hashes=np.zeros(800,dtype=np.uint64)
+        hashes[0]=key
+        keys=np.zeros(4096,dtype=np.uint64)
+        contexts=np.zeros(4096,dtype=np.uint64)
+        data=np.zeros((4096,5),dtype=np.int64)
+        slot=int(key)&4095
+        if seed:
+            keys[slot]=key
+            contexts[slot]=np.uint64(int(key)^int(wrong_context))
+            hint=123456789 if illegal_hint else module.legal_moves(board,state)[-1]
+            if uci:
+                move=chess.Move.from_uci(uci)
+                hint=module.encode_move((move.from_square//8)*16+move.from_square%8,
+                    (move.to_square//8)*16+move.to_square%8)
+            data[slot]=[20,12345,0,hint,state[3]+int(wrong_clock)]
+        weights=np.zeros((768,32),dtype=np.float32)
+        bias=np.zeros(32,dtype=np.float32)
+        output=np.zeros(32,dtype=np.float32)
+        killers=np.zeros((100,2),dtype=np.int64)
+        history=np.zeros((2,128,128),dtype=np.int64)
+        control=np.array([0,0,maximum],dtype=np.int64)
+        accumulator=module.build_accumulator(board,weights,bias)
+>       score=module.search(board,state,depth,-31000,31000,0,0,hashes,1,key,
+            keys,contexts,data,killers,history,control,time.perf_counter()+30,
+            weights,bias,output,0.0,False,False,accumulator)
+E       RuntimeError: numba jitted function aborted due to unresolved symbol
+
+tests\test_daytime_tt_hint.py:43: RuntimeError
+_ test_completed_full_width_score_matches_parent[4k3/pp3ppp/2n5/3pp3/3PP3/2N5/PPP2PPP/4K3 w - - 0 15] _
+
+fen = '4k3/pp3ppp/2n5/3pp3/3PP3/2N5/PPP2PPP/4K3 w - - 0 15'
+original = <module 'tt_hint_parent' from 'C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\daytime-20260909\\fast-legal-01\\prototype\\engine\\compiled_core.py'>
+
+    @pytest.mark.parametrize('fen',[
+        chess.STARTING_FEN,
+        '4k3/pp3ppp/2n5/3pp3/3PP3/2N5/PPP2PPP/4K3 w - - 0 15',
+        '4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1',
+        'r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1',
+    ])
+    def test_completed_full_width_score_matches_parent(fen,original):
+        position=chess.Board(fen)
+>       a=call(original,position,seed=False,maximum=1000000)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_daytime_tt_hint.py:88: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+module = <module 'tt_hint_parent' from 'C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\daytime-20260909\\fast-legal-01\\prototype\\engine\\compiled_core.py'>
+position = Board('4k3/pp3ppp/2n5/3pp3/3PP3/2N5/PPP2PPP/4K3 w - - 0 15')
+wrong_context = False, wrong_clock = False, illegal_hint = False, seed = False
+maximum = 1000000, depth = 2, uci = None
+
+    def call(module,position,wrong_context=False,wrong_clock=False,illegal_hint=False,
+             seed=True,maximum=100000,depth=2,uci=None):
+        board,state=arrays(position)
+        saved=board.copy(),state.copy()
+        key=np.uint64(module.position_hash(board,state))
+        hashes=np.zeros(800,dtype=np.uint64)
+        hashes[0]=key
+        keys=np.zeros(4096,dtype=np.uint64)
+        contexts=np.zeros(4096,dtype=np.uint64)
+        data=np.zeros((4096,5),dtype=np.int64)
+        slot=int(key)&4095
+        if seed:
+            keys[slot]=key
+            contexts[slot]=np.uint64(int(key)^int(wrong_context))
+            hint=123456789 if illegal_hint else module.legal_moves(board,state)[-1]
+            if uci:
+                move=chess.Move.from_uci(uci)
+                hint=module.encode_move((move.from_square//8)*16+move.from_square%8,
+                    (move.to_square//8)*16+move.to_square%8)
+            data[slot]=[20,12345,0,hint,state[3]+int(wrong_clock)]
+        weights=np.zeros((768,32),dtype=np.float32)
+        bias=np.zeros(32,dtype=np.float32)
+        output=np.zeros(32,dtype=np.float32)
+        killers=np.zeros((100,2),dtype=np.int64)
+        history=np.zeros((2,128,128),dtype=np.int64)
+        control=np.array([0,0,maximum],dtype=np.int64)
+        accumulator=module.build_accumulator(board,weights,bias)
+>       score=module.search(board,state,depth,-31000,31000,0,0,hashes,1,key,
+            keys,contexts,data,killers,history,control,time.perf_counter()+30,
+            weights,bias,output,0.0,False,False,accumulator)
+E       RuntimeError: numba jitted function aborted due to unresolved symbol
+
+tests\test_daytime_tt_hint.py:43: RuntimeError
+_ test_completed_full_width_score_matches_parent[4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1] _
+
+fen = '4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1'
+original = <module 'tt_hint_parent' from 'C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\daytime-20260909\\fast-legal-01\\prototype\\engine\\compiled_core.py'>
+
+    @pytest.mark.parametrize('fen',[
+        chess.STARTING_FEN,
+        '4k3/pp3ppp/2n5/3pp3/3PP3/2N5/PPP2PPP/4K3 w - - 0 15',
+        '4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1',
+        'r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1',
+    ])
+    def test_completed_full_width_score_matches_parent(fen,original):
+        position=chess.Board(fen)
+>       a=call(original,position,seed=False,maximum=1000000)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_daytime_tt_hint.py:88: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+module = <module 'tt_hint_parent' from 'C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\daytime-20260909\\fast-legal-01\\prototype\\engine\\compiled_core.py'>
+position = Board('4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1'), wrong_context = False
+wrong_clock = False, illegal_hint = False, seed = False, maximum = 1000000
+depth = 2, uci = None
+
+    def call(module,position,wrong_context=False,wrong_clock=False,illegal_hint=False,
+             seed=True,maximum=100000,depth=2,uci=None):
+        board,state=arrays(position)
+        saved=board.copy(),state.copy()
+        key=np.uint64(module.position_hash(board,state))
+        hashes=np.zeros(800,dtype=np.uint64)
+        hashes[0]=key
+        keys=np.zeros(4096,dtype=np.uint64)
+        contexts=np.zeros(4096,dtype=np.uint64)
+        data=np.zeros((4096,5),dtype=np.int64)
+        slot=int(key)&4095
+        if seed:
+            keys[slot]=key
+            contexts[slot]=np.uint64(int(key)^int(wrong_context))
+            hint=123456789 if illegal_hint else module.legal_moves(board,state)[-1]
+            if uci:
+                move=chess.Move.from_uci(uci)
+                hint=module.encode_move((move.from_square//8)*16+move.from_square%8,
+                    (move.to_square//8)*16+move.to_square%8)
+            data[slot]=[20,12345,0,hint,state[3]+int(wrong_clock)]
+        weights=np.zeros((768,32),dtype=np.float32)
+        bias=np.zeros(32,dtype=np.float32)
+        output=np.zeros(32,dtype=np.float32)
+        killers=np.zeros((100,2),dtype=np.int64)
+        history=np.zeros((2,128,128),dtype=np.int64)
+        control=np.array([0,0,maximum],dtype=np.int64)
+        accumulator=module.build_accumulator(board,weights,bias)
+>       score=module.search(board,state,depth,-31000,31000,0,0,hashes,1,key,
+            keys,contexts,data,killers,history,control,time.perf_counter()+30,
+            weights,bias,output,0.0,False,False,accumulator)
+E       RuntimeError: numba jitted function aborted due to unresolved symbol
+
+tests\test_daytime_tt_hint.py:43: RuntimeError
+_ test_completed_full_width_score_matches_parent[r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1] _
+
+fen = 'r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1'
+original = <module 'tt_hint_parent' from 'C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\daytime-20260909\\fast-legal-01\\prototype\\engine\\compiled_core.py'>
+
+    @pytest.mark.parametrize('fen',[
+        chess.STARTING_FEN,
+        '4k3/pp3ppp/2n5/3pp3/3PP3/2N5/PPP2PPP/4K3 w - - 0 15',
+        '4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1',
+        'r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1',
+    ])
+    def test_completed_full_width_score_matches_parent(fen,original):
+        position=chess.Board(fen)
+>       a=call(original,position,seed=False,maximum=1000000)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_daytime_tt_hint.py:88: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+module = <module 'tt_hint_parent' from 'C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\daytime-20260909\\fast-legal-01\\prototype\\engine\\compiled_core.py'>
+position = Board('r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1'), wrong_context = False
+wrong_clock = False, illegal_hint = False, seed = False, maximum = 1000000
+depth = 2, uci = None
+
+    def call(module,position,wrong_context=False,wrong_clock=False,illegal_hint=False,
+             seed=True,maximum=100000,depth=2,uci=None):
+        board,state=arrays(position)
+        saved=board.copy(),state.copy()
+        key=np.uint64(module.position_hash(board,state))
+        hashes=np.zeros(800,dtype=np.uint64)
+        hashes[0]=key
+        keys=np.zeros(4096,dtype=np.uint64)
+        contexts=np.zeros(4096,dtype=np.uint64)
+        data=np.zeros((4096,5),dtype=np.int64)
+        slot=int(key)&4095
+        if seed:
+            keys[slot]=key
+            contexts[slot]=np.uint64(int(key)^int(wrong_context))
+            hint=123456789 if illegal_hint else module.legal_moves(board,state)[-1]
+            if uci:
+                move=chess.Move.from_uci(uci)
+                hint=module.encode_move((move.from_square//8)*16+move.from_square%8,
+                    (move.to_square//8)*16+move.to_square%8)
+            data[slot]=[20,12345,0,hint,state[3]+int(wrong_clock)]
+        weights=np.zeros((768,32),dtype=np.float32)
+        bias=np.zeros(32,dtype=np.float32)
+        output=np.zeros(32,dtype=np.float32)
+        killers=np.zeros((100,2),dtype=np.int64)
+        history=np.zeros((2,128,128),dtype=np.int64)
+        control=np.array([0,0,maximum],dtype=np.int64)
+        accumulator=module.build_accumulator(board,weights,bias)
+>       score=module.search(board,state,depth,-31000,31000,0,0,hashes,1,key,
+            keys,contexts,data,killers,history,control,time.perf_counter()+30,
+            weights,bias,output,0.0,False,False,accumulator)
+E       RuntimeError: numba jitted function aborted due to unresolved symbol
+
+tests\test_daytime_tt_hint.py:43: RuntimeError
+=========================== short test summary info ===========================
+FAILED tests/test_daytime_tt_hint.py::test_completed_full_width_score_matches_parent[rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1]
+FAILED tests/test_daytime_tt_hint.py::test_completed_full_width_score_matches_parent[4k3/pp3ppp/2n5/3pp3/3PP3/2N5/PPP2PPP/4K3 w - - 0 15]
+FAILED tests/test_daytime_tt_hint.py::test_completed_full_width_score_matches_parent[4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1]
+FAILED tests/test_daytime_tt_hint.py::test_completed_full_width_score_matches_parent[r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1]
+4 failed, 9 passed in 26.70s

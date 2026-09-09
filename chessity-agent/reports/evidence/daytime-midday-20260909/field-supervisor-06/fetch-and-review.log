@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\daytime_field_current.py", line 148, in <module>
+    run()
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\daytime_field_current.py", line 60, in run
+    known.update(g['url'] for observation in old.get('observations',[])
+  File "C:\Users\disea\Documents\Codex\2026-09-05\he\outputs\chess-agent\scripts\daytime_field_current.py", line 61, in <genexpr>
+    for g in observation['games'] if g['status'] in ('downloaded','already_reviewed'))
+             ~~~~~~~~~~~^^^^^^^^^
+KeyError: 'games'
