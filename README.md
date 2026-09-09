@@ -1,33 +1,36 @@
 # Chessathon-agent
 
-[Download chessity-agent v1.53 (provisional)](chessity-agent/latest/chessity-agent.zip) ·
-[All 54 versions](chessity-agent/README.md) ·
-[Results and limitations](chessity-agent/reports/IMPROVEMENT_RESULTS.md)
+**Recommended upload: [chessity-agent v1.42](chessity-agent/latest/chessity-agent.zip).**
 
-v1.53 follows bounded forcing checks near the enemy king. The tactical gate and
-read-only validation passed. Its 120s + 0.5s comparison scored **1 win, 0 draws,
-1 loss against v1.52**, with no operational or clock failures. Both Black sides
-won, so this is a provisional update with v1.52 preserved as fallback.
-Latest E55 rated screen: **2400 1W0D1L; 2600 0W1D1L**. [Full results](chessity-agent/reports/COMPETITION_CONDITIONAL_RATED_RESULTS_20260908.md).
-No new neural weights or calibrated Elo are claimed.
+The exact archived v1.42 scored **3 wins, 1 draw, 0 losses against exact v1.53**
+in the completed 9 September comparison at **120s + 0.5s**. Both colours were
+used, with no operational failures. This selects an existing build with unchanged
+code and weights; no new neural model or v1.54 is claimed.
 
-The priority is quick competition improvement before 11 September. The long
-consistency study remains cancelled. No live submission or permission grants.
+| v1.42 opponent | Wins | Draws | Losses | Evidence |
+|---|---:|---:|---:|---|
+| Exact v1.53 | 3 | 1 | 0 | New four-game comparison |
+| Stockfish nominal 2400 | 2 | 0 | 2 | Historical 7 September screen |
+| Stockfish nominal 2600 | 1 | 2 | 1 | Historical 7 September screen |
 
-[Tactical evidence](chessity-agent/reports/NEAR_QUEEN_CHECKS_RESULTS_20260908.md) ·
-[Previous v1.52 rated results](chessity-agent/reports/KING_COORDINATION_RATED_RESULTS_20260908.md)
+The highest verified clean setting win for this upload is **2600 once**. No
+verified 2800/3000 win or calibrated Elo has been established. No new rated pair
+ran this morning. These small development samples do not establish a live
+competition rating or universal superiority.
 
-[Completed rated results](chessity-agent/reports/NEAR_QUEEN_RATED_RESULTS_20260908.md).
+[Morning report](chessity-agent/reports/OVERNIGHT_MORNING_REPORT_20260909.md) ·
+[All 54 versions in order](chessity-agent/README.md) ·
+[Current results](chessity-agent/reports/IMPROVEMENT_RESULTS.md)
 
-[Defensive continuation diagnosis](chessity-agent/reports/DEFENSIVE_DESCENDANTS_RESULTS_20260908.md).
+All 410 moves in the four comparison games were reviewed from both perspectives.
+Independent descendant labelling produced 58 positions, 54 eligible for future
+value training. Experimental policy and value changes remain separate from the
+playing ZIP unless they pass short practical tests.
 
-[Recent competition losses and draw: old/current comparison, verified cases and rejected fixes](chessity-agent/reports/COMPETITION_LOSSES_RESULTS_20260908.md). Recommendation remains v1.53.
+The recommended ZIP passed strict read-only checks. Its SHA256 is
+`114c1688a63d4039d7965670fcab0891bec24d4835dacafa8698e22d0c01f48b`.
+Cold initialization took 82.2 seconds against a 90-second limit, leaving limited
+startup margin. No live competition upload or repository permission change was
+performed; the current site rating and uploaded version remain unverified.
 
-[Defensive/rook descendant findings](chessity-agent/reports/COMPETITION_COUNTERFACTUALS_RESULTS_20260908.md) · [Requested 2400/2600 and conditional 2800 results](chessity-agent/reports/COMPETITION_CONDITIONAL_RATED_RESULTS_20260908.md).
-
-Latest loss/draw review: two implemented heuristics and an actually fitted
-local-value model did not qualify for promotion. The small requested rematch
-and every failure are recorded in the [learning report](chessity-agent/reports/E55_LOSSES_DRAW_AND_LEARNING_20260908.md). v1.53 remains
-the recommended upload; no new version is implied by this experiment.
-
-Every-game feedback is now the default local test workflow. [Latest competition review and learning results](chessity-agent/reports/ALL_GAME_FEEDBACK_RESULTS_20260908.md) cover all 395 moves in eight games. The reward-policy checkpoint remains experimental; v1.53 remains the recommended upload.
+[Archived pre-selection repository overview and earlier results](chessity-agent/reports/ARCHIVED_REPOSITORY_README_BEFORE_20260909.md)
