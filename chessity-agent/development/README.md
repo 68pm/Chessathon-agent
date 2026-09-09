@@ -1,18 +1,13 @@
 # Chess agent
 
-**Selected upload: chessity-agent v1.42** at `../chessity-agent.zip`.
-The exact archived build scored 3W/1D/0L against exact v1.53 at 120s + 0.5s in the
-completed 9 September short comparison, with no operational failures. Its code
-and weights are unchanged. The morning report separates historical rated games,
-new comparison results and experimental learning; no calibrated Elo is claimed.
+**Selected upload: chessity-agent v1.54** at `../chessity-agent.zip`.
 
-[Current results](docs/IMPROVEMENT_RESULTS.md) ·
-[Morning report](docs/OVERNIGHT_MORNING_REPORT_20260909.md) ·
-[All versions](https://github.com/68pm/Chessathon-agent/tree/main/chessity-agent)
+Selected after 2W/0D/0L vs exactv1.42 and 1W/1D/0L vs exactv1.53; nominal2400 0W/1D/1L, nominal2600 0W/1D/1L. Small development screen; no calibrated Elo.
 
-Use Python 3.12 and requirements-compiled.txt for development. Submitted inference
-is read-only without networking, subprocesses or training. Stockfish is used
-offline in development. The cancelled long consistency study stays stopped.
+[Release report](docs/DAYTIME_PAWN_RELEASE_20260909.md).
+
+Source-only read-only inference; no Stockfish, networking or online training.
+Site submission remains pending access. Earlier work follows as history.
 
 <!-- ELITE_SESSION_START -->
 ## Earlier phase and elite selection: chessity-agent v1.14

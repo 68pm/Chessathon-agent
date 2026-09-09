@@ -1,0 +1,140 @@
+{
+  "version": "v1.42",
+  "name": "chessity-agent",
+  "title": "Conservative late quiet move reductions",
+  "status": "Recommended after 3W1D0L against exact v1.53 on 9 September. Historical nominal2400:2W0D2L; nominal2600:1W2D1L. Small development samples; no calibrated Elo.",
+  "recommended": true,
+  "source_version": "candidates/compiled-reductions-v1",
+  "sha256": "114c1688a63d4039d7965670fcab0891bec24d4835dacafa8698e22d0c01f48b",
+  "zip_bytes": 272441,
+  "created_utc": "2026-09-07T09:57:58.535924+00:00",
+  "archive": "versions/v1.42/chessity-agent-v1.42.zip",
+  "read_only_smoke_calls": 2,
+  "read_only_status": "passed",
+  "archive_json_formatting_differs_from_local_folder": [],
+  "prior_selection_status": "1W5D2L versus v1.41; 2W0D2L at nominal2400; 1W2D1L at nominal2600; not promoted",
+  "selection_utc": "2026-09-09T05:22:52.533443+00:00",
+  "selection_evidence": "reports/OVERNIGHT_MORNING_REPORT_20260909.md",
+  "selection_note": "Existing v1.42 source and weights selected after a new direct comparison; no v1.54 or new neural model is claimed.",
+  "current_comparison": {
+    "opponent": "exactv1.53",
+    "games": 4,
+    "wins": 3,
+    "draws": 1,
+    "losses": 0,
+    "clean_wins": 3,
+    "operational_games": 0,
+    "by_colour": {
+      "white": {
+        "games": 2,
+        "wins": 2,
+        "draws": 0,
+        "losses": 0,
+        "clean_wins": 2,
+        "operational_games": 0
+      },
+      "black": {
+        "games": 2,
+        "wins": 1,
+        "draws": 1,
+        "losses": 0,
+        "clean_wins": 1,
+        "operational_games": 0
+      }
+    },
+    "terminations": {
+      "checkmate": 3,
+      "threefold_repetition": 1
+    }
+  },
+  "historical_rated_results": {
+    "stockfish:2400": {
+      "games": 4,
+      "wins": 2,
+      "draws": 0,
+      "losses": 2,
+      "score": 0.5,
+      "completed_pairs": 2,
+      "pair_bootstrap_95": [
+        0.0,
+        1.0
+      ],
+      "terminations": {
+        "checkmate": 4
+      },
+      "candidate_failures": 0
+    },
+    "stockfish:2600": {
+      "games": 4,
+      "wins": 1,
+      "draws": 2,
+      "losses": 1,
+      "score": 0.5,
+      "completed_pairs": 2,
+      "pair_bootstrap_95": [
+        0.25,
+        0.75
+      ],
+      "terminations": {
+        "checkmate": 2,
+        "threefold_repetition": 1,
+        "insufficient_material": 1
+      },
+      "candidate_failures": 0
+    }
+  },
+  "highest_nominal_opponent_defeated": 2600,
+  "highest_win_scope": "Historical cycle03 game5: clean checkmate at the nominal2600 setting. No new rated pair ran this morning.",
+  "calibrated_elo": null,
+  "time_control": "120+0.5",
+  "latest_read_only_check": {
+    "init_ms": 82192.07869999809,
+    "legal_calls": 2,
+    "read_only_checks": {
+      "create_file": "blocked",
+      "delete_file": "blocked",
+      "create_directory": "blocked",
+      "rename_file": "blocked"
+    },
+    "evidence": "reports/evidence/overnight-morning-20260909/archive-challenge-01/validation.json"
+  },
+  "source_candidate": "compiled-reductions-v1",
+  "results": {
+    "stockfish:2400": {
+      "games": 4,
+      "wins": 2,
+      "draws": 0,
+      "losses": 2,
+      "score": 0.5,
+      "completed_pairs": 2,
+      "pair_bootstrap_95": [
+        0.0,
+        1.0
+      ],
+      "terminations": {
+        "checkmate": 4
+      },
+      "candidate_failures": 0
+    },
+    "stockfish:2600": {
+      "games": 4,
+      "wins": 1,
+      "draws": 2,
+      "losses": 1,
+      "score": 0.5,
+      "completed_pairs": 2,
+      "pair_bootstrap_95": [
+        0.25,
+        0.75
+      ],
+      "terminations": {
+        "checkmate": 2,
+        "threefold_repetition": 1,
+        "insufficient_material": 1
+      },
+      "candidate_failures": 0
+    }
+  },
+  "selected_evidence": "docs/OVERNIGHT_MORNING_REPORT_20260909.md",
+  "goal_achieved": false
+}

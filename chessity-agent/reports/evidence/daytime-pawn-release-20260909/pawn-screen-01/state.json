@@ -1,0 +1,225 @@
+{
+  "status": "complete",
+  "stages": [
+    {
+      "label": "read-only",
+      "status": "complete",
+      "arguments": [
+        "scripts.validate_package_staged_fixed",
+        "--zip",
+        "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\daytime-20260909\\pawn-screen-01\\pawn-extrema-candidate.zip",
+        "--out",
+        "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\daytime-20260909\\pawn-screen-01\\validation.json"
+      ],
+      "timeout_seconds": 180,
+      "pid": 10056,
+      "elapsed_seconds": 25.04699999996228
+    },
+    {
+      "label": "versus42",
+      "status": "complete",
+      "arguments": [
+        "scripts.feedback_matches_windows",
+        "--candidate",
+        "runs\\daytime-20260909\\pawn-extrema-01\\prototype",
+        "--stage",
+        "comparison",
+        "--pairs",
+        "1",
+        "--offset",
+        "0",
+        "--cycle",
+        "d9-pawn-01-versus42",
+        "--openings",
+        "configs/overnight-september9-short-openings.json",
+        "--opponent",
+        "candidates\\compiled-reductions-v1"
+      ],
+      "timeout_seconds": 1500,
+      "pid": 7844,
+      "elapsed_seconds": 736.1870000000345
+    },
+    {
+      "label": "versus53",
+      "status": "complete",
+      "arguments": [
+        "scripts.feedback_matches_windows",
+        "--candidate",
+        "runs\\daytime-20260909\\pawn-extrema-01\\prototype",
+        "--stage",
+        "comparison",
+        "--pairs",
+        "1",
+        "--offset",
+        "1",
+        "--cycle",
+        "d9-pawn-01-versus53",
+        "--openings",
+        "configs/overnight-september9-short-openings.json",
+        "--opponent",
+        "candidates\\compiled-near-queen-checks-v1"
+      ],
+      "timeout_seconds": 1500,
+      "pid": 16280,
+      "elapsed_seconds": 679.5939999999828
+    },
+    {
+      "label": "rated2400",
+      "status": "complete",
+      "arguments": [
+        "scripts.feedback_matches_windows",
+        "--candidate",
+        "runs\\daytime-20260909\\pawn-extrema-01\\prototype",
+        "--stage",
+        "rated",
+        "--pairs",
+        "1",
+        "--offset",
+        "2",
+        "--cycle",
+        "d9-pawn-01-rated2400",
+        "--openings",
+        "configs/overnight-september9-short-openings.json",
+        "--levels",
+        "2400"
+      ],
+      "timeout_seconds": 1500,
+      "pid": 2336,
+      "elapsed_seconds": 1293.875
+    },
+    {
+      "label": "rated2600",
+      "status": "complete",
+      "arguments": [
+        "scripts.feedback_matches_windows",
+        "--candidate",
+        "runs\\daytime-20260909\\pawn-extrema-01\\prototype",
+        "--stage",
+        "rated",
+        "--pairs",
+        "1",
+        "--offset",
+        "2",
+        "--cycle",
+        "d9-pawn-01-rated2600",
+        "--openings",
+        "configs/overnight-september9-short-openings.json",
+        "--levels",
+        "2600"
+      ],
+      "timeout_seconds": 1500,
+      "pid": 19532,
+      "elapsed_seconds": 696.7660000000033
+    }
+  ],
+  "matches": [
+    {
+      "label": "versus42",
+      "opponent": "candidates\\compiled-reductions-v1",
+      "offset": 0,
+      "result_path": "runs\\improvement-loop-20260907\\d9-pawn-01-versus42\\comparison-prototype\\results.json",
+      "sha256": "b28d103e00fe2dc56f9bebfae016b36d09c412e713e730f92372c498fda6d67d",
+      "summary": {
+        "incumbent": {
+          "games": 2,
+          "wins": 2,
+          "draws": 0,
+          "losses": 0,
+          "score": 1.0,
+          "completed_pairs": 1,
+          "pair_bootstrap_95": [
+            1.0,
+            1.0
+          ],
+          "terminations": {
+            "checkmate": 2
+          },
+          "candidate_failures": 0
+        }
+      }
+    },
+    {
+      "label": "versus53",
+      "opponent": "candidates\\compiled-near-queen-checks-v1",
+      "offset": 1,
+      "result_path": "runs\\improvement-loop-20260907\\d9-pawn-01-versus53\\comparison-prototype\\results.json",
+      "sha256": "de82f4fb1e23adbc04b3666c082359cb7efdf94e1ef76554a7efc8f336b0dd17",
+      "summary": {
+        "incumbent": {
+          "games": 2,
+          "wins": 1,
+          "draws": 1,
+          "losses": 0,
+          "score": 0.75,
+          "completed_pairs": 1,
+          "pair_bootstrap_95": [
+            0.75,
+            0.75
+          ],
+          "terminations": {
+            "checkmate": 1,
+            "insufficient_material": 1
+          },
+          "candidate_failures": 0
+        }
+      }
+    },
+    {
+      "label": "rated2400",
+      "level": 2400,
+      "offset": 2,
+      "result_path": "runs\\improvement-loop-20260907\\d9-pawn-01-rated2400\\rated-prototype\\results.json",
+      "sha256": "367a003c67db0541b77d2ef639c3499dcb22ae96d5d989222410e2d4119c4e89",
+      "summary": {
+        "stockfish:2400": {
+          "games": 2,
+          "wins": 0,
+          "draws": 1,
+          "losses": 1,
+          "score": 0.25,
+          "completed_pairs": 1,
+          "pair_bootstrap_95": [
+            0.25,
+            0.25
+          ],
+          "terminations": {
+            "checkmate": 1,
+            "threefold_repetition": 1
+          },
+          "candidate_failures": 0
+        }
+      }
+    },
+    {
+      "label": "rated2600",
+      "level": 2600,
+      "offset": 2,
+      "result_path": "runs\\improvement-loop-20260907\\d9-pawn-01-rated2600\\rated-prototype\\results.json",
+      "sha256": "53c8c02957bf9eade2fa0094bca3a6f0f29aa87a6305e67f1407499dab519099",
+      "summary": {
+        "stockfish:2600": {
+          "games": 2,
+          "wins": 0,
+          "draws": 1,
+          "losses": 1,
+          "score": 0.25,
+          "completed_pairs": 1,
+          "pair_bootstrap_95": [
+            0.25,
+            0.25
+          ],
+          "terminations": {
+            "fifty_moves": 1,
+            "checkmate": 1
+          },
+          "candidate_failures": 0
+        }
+      }
+    }
+  ],
+  "passed": true,
+  "package_sha256": "9c5707d4dc4aa918ecb01ba284f9dd4f7469b22d50afd4b6a6d425e6f44c585e",
+  "decision": "review_for_qualified_release_and_authorised_upload",
+  "finished_utc": "2026-09-09T08:16:57.746264+00:00",
+  "frozen_candidates": true
+}

@@ -1,20 +1,19 @@
 # chessity-agent
 
-**Recommended competition upload: v1.42.** [Download ZIP](latest/chessity-agent.zip).
+**Recommended: v1.54.** [Download ZIP](latest/chessity-agent.zip).
 
-The exact archived v1.42 scored **3 wins, 1 draw, 0 losses against exact v1.53**
-in the completed 9 September short comparison at 120s + 0.5s, with both colours
-and no operational failures. Existing code and weights are selected unchanged.
+| Opponent | Wins | Draws | Losses |
+|---|---:|---:|---:|
+| Exact v1.42 | 2 | 0 | 0 |
+| Exact v1.53 | 1 | 1 | 0 |
+| Stockfish nominal 2400 | 0 | 1 | 1 |
+| Stockfish nominal 2600 | 0 | 1 | 1 |
 
-Historical rated results: **2400: 2W/0D/2L; 2600: 1W/2D/1L**. Highest clean setting
-win: 2600 once. There is no calibrated Elo or verified 2800/3000 win. No new rated
-pair ran this morning. All 54 numbered archives remain available.
+No rated-setting win was recorded in this screen.
+No calibrated Elo is claimed. All55numbered versions remain available.
 
-[Morning report](reports/OVERNIGHT_MORNING_REPORT_20260909.md) ·
-[Current results](reports/IMPROVEMENT_RESULTS.md)
-
-Inference is read-only and uses no networking, subprocesses or training. No
-live competition submission or repository permission change was performed.
+[Release report](reports/DAYTIME_PAWN_RELEASE_20260909.md). Source-only, read-only
+inference; existing policy weights retained. Site upload is pending access.
 
 ## Versions
 
@@ -62,7 +61,7 @@ live competition submission or repository permission change was performed.
 | [v1.39](versions/v1.39/chessity-agent-v1.39.zip) | Incremental residual evaluation | numerical and read-only checks passed; no ordinary matches |
 | [v1.40](versions/v1.40/chessity-agent-v1.40.zip) | Efficient quiescence terminal checks | fixed-node parity and read-only checks passed; no ordinary matches |
 | [v1.41](versions/v1.41/chessity-agent-v1.41.zip) | Efficient compiled search with endgame tables | Preserved playing-engine baseline and fallback; selected startup revision is v1.51 |
-| [v1.42](versions/v1.42/chessity-agent-v1.42.zip) | Conservative late quiet move reductions | Recommended after 3W/1D/0L against exact v1.53; historical 2400: 2W/0D/2L, 2600: 1W/2D/1L |
+| [v1.42](versions/v1.42/chessity-agent-v1.42.zip) | Conservative late quiet move reductions | Former selection after 3W/1D/0L against exact v1.53; historical 2400: 2W/0D/2L, 2600: 1W/2D/1L |
 | [v1.43](versions/v1.43/chessity-agent-v1.43.zip) | Verified rook-bishop conversion tables | 3W1D4L versus v1.41; 1W2D1L at nominal2400; 0W2D2L at nominal2600; not promoted |
 | [v1.44](versions/v1.44/chessity-agent-v1.44.zip) | History-safe transposition move ordering | 2W2D4L versus v1.41; 3W1D0L at nominal2400; 0W0D4L at nominal2600; not promoted |
 | [v1.45](versions/v1.45/chessity-agent-v1.45.zip) | Matched score-only residual learning control | six-epoch own-trained control; read-only and model-parity checks passed; experimental |
@@ -74,6 +73,7 @@ live competition submission or repository permission change was performed.
 | [v1.51](versions/v1.51/chessity-agent-v1.51.zip) | Completed warmup with plain compiler diagnostics | Preserved v1.51 startup fallback; provisional tactical recommendation is nowv1.52 |
 | [v1.52](versions/v1.52/chessity-agent-v1.52.zip) | Bounded check search and coordinated king-pressure evaluation | Provisional:1W0D1L vs51; rated2400 0W1D1L and2600 0W0D2L; no Elo established |
 | [v1.53](versions/v1.53/chessity-agent-v1.53.zip) | Bounded forcing checks near the enemy king | Preserved alternative after 0W/1D/3L against exact v1.42; historical 2400: 1W/1D/2L, 2600: 0W/1D/3L |
+| [v1.54](versions/v1.54/chessity-agent-v1.54.zip) | Faster exact passed-pawn evaluation | Selected after 2W/0D/0L vs exactv1.42 and 1W/1D/0L vs exactv1.53; nominal2400 0W/1D/1L, nominal2600 0W/1D/1L. Small development screen; no calibrated Elo. |
 
 All 54 numbered versions are retained chronologically. A higher version number alone is not evidence of strength.
 
