@@ -1,0 +1,2476 @@
+FFFFFF..FFFFFFFFF.
+================================== FAILURES ===================================
+__________________ test_native_leading_zero_semantics[0-64] ___________________
+
+value = 0, expected = 64
+
+    @pytest.mark.parametrize('value,expected', [(0, 64), (1, 63), (1 << 32, 31),
+        (1 << 63, 0), ((1 << 64) - 1, 0)])
+    def test_native_leading_zero_semantics(value, expected):
+>       assert bits.count_leading_zeros(np.uint64(value)) == expected
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_overnight_bitsets.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:441: in _compile_for_args
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:374: in _compile_for_args
+    return_val = self.compile(tuple(argtypes))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:472: in run_pass
+    lower.lower()
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\lowering.py:210: in lower
+    self.library.add_ir_module(self.module)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\codegen.py:738: in add_ir_module
+    ll_module.verify()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <llvmlite.binding.module.ModuleRef object at 0x000001EF9FDFBEF0>
+
+    def verify(self):
+        """
+        Verify the module IR's correctness.  RuntimeError is raised on error.
+        """
+        with ffi.OutputString() as outmsg:
+            if ffi.lib.LLVMPY_VerifyModule(self, outmsg):
+>               raise RuntimeError(str(outmsg))
+E               RuntimeError: immarg operand has non-immediate parameter
+E                 %.5 = icmp ne i64 %arg.value, %arg.value
+E                 %.6 = call i64 @llvm.ctlz.i64(i64 %arg.value, i1 %.5)
+
+..\..\work\chess-fast-venv\Lib\site-packages\llvmlite\binding\module.py:115: RuntimeError
+__________________ test_native_leading_zero_semantics[1-63] ___________________
+
+value = 1, expected = 63
+
+    @pytest.mark.parametrize('value,expected', [(0, 64), (1, 63), (1 << 32, 31),
+        (1 << 63, 0), ((1 << 64) - 1, 0)])
+    def test_native_leading_zero_semantics(value, expected):
+>       assert bits.count_leading_zeros(np.uint64(value)) == expected
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_overnight_bitsets.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:441: in _compile_for_args
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:374: in _compile_for_args
+    return_val = self.compile(tuple(argtypes))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:472: in run_pass
+    lower.lower()
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\lowering.py:210: in lower
+    self.library.add_ir_module(self.module)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\codegen.py:738: in add_ir_module
+    ll_module.verify()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <llvmlite.binding.module.ModuleRef object at 0x000001EF9FF4C500>
+
+    def verify(self):
+        """
+        Verify the module IR's correctness.  RuntimeError is raised on error.
+        """
+        with ffi.OutputString() as outmsg:
+            if ffi.lib.LLVMPY_VerifyModule(self, outmsg):
+>               raise RuntimeError(str(outmsg))
+E               RuntimeError: immarg operand has non-immediate parameter
+E                 %.5 = icmp ne i64 %arg.value, %arg.value
+E                 %.6 = call i64 @llvm.ctlz.i64(i64 %arg.value, i1 %.5)
+
+..\..\work\chess-fast-venv\Lib\site-packages\llvmlite\binding\module.py:115: RuntimeError
+______________ test_native_leading_zero_semantics[4294967296-31] ______________
+
+value = 4294967296, expected = 31
+
+    @pytest.mark.parametrize('value,expected', [(0, 64), (1, 63), (1 << 32, 31),
+        (1 << 63, 0), ((1 << 64) - 1, 0)])
+    def test_native_leading_zero_semantics(value, expected):
+>       assert bits.count_leading_zeros(np.uint64(value)) == expected
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_overnight_bitsets.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:441: in _compile_for_args
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:374: in _compile_for_args
+    return_val = self.compile(tuple(argtypes))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:472: in run_pass
+    lower.lower()
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\lowering.py:210: in lower
+    self.library.add_ir_module(self.module)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\codegen.py:738: in add_ir_module
+    ll_module.verify()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <llvmlite.binding.module.ModuleRef object at 0x000001EF9FFA43B0>
+
+    def verify(self):
+        """
+        Verify the module IR's correctness.  RuntimeError is raised on error.
+        """
+        with ffi.OutputString() as outmsg:
+            if ffi.lib.LLVMPY_VerifyModule(self, outmsg):
+>               raise RuntimeError(str(outmsg))
+E               RuntimeError: immarg operand has non-immediate parameter
+E                 %.5 = icmp ne i64 %arg.value, %arg.value
+E                 %.6 = call i64 @llvm.ctlz.i64(i64 %arg.value, i1 %.5)
+
+..\..\work\chess-fast-venv\Lib\site-packages\llvmlite\binding\module.py:115: RuntimeError
+__________ test_native_leading_zero_semantics[9223372036854775808-0] __________
+
+value = 9223372036854775808, expected = 0
+
+    @pytest.mark.parametrize('value,expected', [(0, 64), (1, 63), (1 << 32, 31),
+        (1 << 63, 0), ((1 << 64) - 1, 0)])
+    def test_native_leading_zero_semantics(value, expected):
+>       assert bits.count_leading_zeros(np.uint64(value)) == expected
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_overnight_bitsets.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:441: in _compile_for_args
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:374: in _compile_for_args
+    return_val = self.compile(tuple(argtypes))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:472: in run_pass
+    lower.lower()
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\lowering.py:210: in lower
+    self.library.add_ir_module(self.module)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\codegen.py:738: in add_ir_module
+    ll_module.verify()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <llvmlite.binding.module.ModuleRef object at 0x000001EF9FFA6420>
+
+    def verify(self):
+        """
+        Verify the module IR's correctness.  RuntimeError is raised on error.
+        """
+        with ffi.OutputString() as outmsg:
+            if ffi.lib.LLVMPY_VerifyModule(self, outmsg):
+>               raise RuntimeError(str(outmsg))
+E               RuntimeError: immarg operand has non-immediate parameter
+E                 %.5 = icmp ne i64 %arg.value, %arg.value
+E                 %.6 = call i64 @llvm.ctlz.i64(i64 %arg.value, i1 %.5)
+
+..\..\work\chess-fast-venv\Lib\site-packages\llvmlite\binding\module.py:115: RuntimeError
+_________ test_native_leading_zero_semantics[18446744073709551615-0] __________
+
+value = 18446744073709551615, expected = 0
+
+    @pytest.mark.parametrize('value,expected', [(0, 64), (1, 63), (1 << 32, 31),
+        (1 << 63, 0), ((1 << 64) - 1, 0)])
+    def test_native_leading_zero_semantics(value, expected):
+>       assert bits.count_leading_zeros(np.uint64(value)) == expected
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_overnight_bitsets.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:441: in _compile_for_args
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:374: in _compile_for_args
+    return_val = self.compile(tuple(argtypes))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:472: in run_pass
+    lower.lower()
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\lowering.py:210: in lower
+    self.library.add_ir_module(self.module)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\codegen.py:738: in add_ir_module
+    ll_module.verify()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <llvmlite.binding.module.ModuleRef object at 0x000001EF9FEA2690>
+
+    def verify(self):
+        """
+        Verify the module IR's correctness.  RuntimeError is raised on error.
+        """
+        with ffi.OutputString() as outmsg:
+            if ffi.lib.LLVMPY_VerifyModule(self, outmsg):
+>               raise RuntimeError(str(outmsg))
+E               RuntimeError: immarg operand has non-immediate parameter
+E                 %.5 = icmp ne i64 %arg.value, %arg.value
+E                 %.6 = call i64 @llvm.ctlz.i64(i64 %arg.value, i1 %.5)
+
+..\..\work\chess-fast-venv\Lib\site-packages\llvmlite\binding\module.py:115: RuntimeError
+___________________ test_legacy_array_is_rejected[attacked] ___________________
+
+operation = 'attacked'
+
+    @pytest.mark.parametrize('operation', ['attacked', 'rebuild_metadata'])
+    def test_legacy_array_is_rejected(operation):
+        board = np.zeros(128, dtype=np.int64)
+        with pytest.raises(ValueError, match='142'):
+            if operation == 'attacked':
+>               bits.attacked(board, 4, 1)
+
+tests\test_overnight_bitsets.py:55: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:441: in _compile_for_args
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:374: in _compile_for_args
+    return_val = self.compile(tuple(argtypes))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:472: in run_pass
+    lower.lower()
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\lowering.py:210: in lower
+    self.library.add_ir_module(self.module)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\codegen.py:738: in add_ir_module
+    ll_module.verify()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <llvmlite.binding.module.ModuleRef object at 0x000001EFA0263B60>
+
+    def verify(self):
+        """
+        Verify the module IR's correctness.  RuntimeError is raised on error.
+        """
+        with ffi.OutputString() as outmsg:
+            if ffi.lib.LLVMPY_VerifyModule(self, outmsg):
+>               raise RuntimeError(str(outmsg))
+E               RuntimeError: immarg operand has non-immediate parameter
+E                 %.1174 = icmp ne i64 %.1173, %.1173
+E                 %.1175 = call i64 @llvm.ctlz.i64(i64 %.1173, i1 %.1174)
+
+..\..\work\chess-fast-venv\Lib\site-packages\llvmlite\binding\module.py:115: RuntimeError
+_____________ test_seeded_all_squares_and_all_legal_child_states ______________
+
+original = <module 'bitsets_original53' from 'C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\candidates\\compiled-near-queen-checks-v1\\engine\\compiled_core.py'>
+
+    def test_seeded_all_squares_and_all_legal_child_states(original):
+        rng = random.Random(202609090034)
+        position = chess.Board()
+        total = 0
+        for _ in range(240):
+            if position.is_game_over(claim_draw=True) or position.ply() >= 180:
+                position = chess.Board()
+>           verify_attacks(position)
+
+tests\test_overnight_bitsets.py:124: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_overnight_bitsets.py:87: in verify_attacks
+    assert bits.attacked(board, index, 1 if color else -1) == position.is_attacked_by(color, square), (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:441: in _compile_for_args
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:374: in _compile_for_args
+    return_val = self.compile(tuple(argtypes))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:472: in run_pass
+    lower.lower()
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\lowering.py:210: in lower
+    self.library.add_ir_module(self.module)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\codegen.py:738: in add_ir_module
+    ll_module.verify()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <llvmlite.binding.module.ModuleRef object at 0x000001EFA02C0CB0>
+
+    def verify(self):
+        """
+        Verify the module IR's correctness.  RuntimeError is raised on error.
+        """
+        with ffi.OutputString() as outmsg:
+            if ffi.lib.LLVMPY_VerifyModule(self, outmsg):
+>               raise RuntimeError(str(outmsg))
+E               RuntimeError: immarg operand has non-immediate parameter
+E                 %.1174 = icmp ne i64 %.1173, %.1173
+E                 %.1175 = call i64 @llvm.ctlz.i64(i64 %.1173, i1 %.1174)
+
+..\..\work\chess-fast-venv\Lib\site-packages\llvmlite\binding\module.py:115: RuntimeError
+_____________ test_special_moves_and_en_passant_hash_restoration ______________
+
+original = <module 'bitsets_original53' from 'C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\candidates\\compiled-near-queen-checks-v1\\engine\\compiled_core.py'>
+
+    def test_special_moves_and_en_passant_hash_restoration(original):
+        flags = set()
+        for fen in SPECIAL_FENS:
+            for position in [chess.Board(fen), chess.Board(fen).mirror()]:
+                assert position.is_valid()
+>               verify_attacks(position)
+
+tests\test_overnight_bitsets.py:137: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_overnight_bitsets.py:87: in verify_attacks
+    assert bits.attacked(board, index, 1 if color else -1) == position.is_attacked_by(color, square), (
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:441: in _compile_for_args
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:374: in _compile_for_args
+    return_val = self.compile(tuple(argtypes))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:472: in run_pass
+    lower.lower()
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\lowering.py:210: in lower
+    self.library.add_ir_module(self.module)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\codegen.py:738: in add_ir_module
+    ll_module.verify()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <llvmlite.binding.module.ModuleRef object at 0x000001EFA04448F0>
+
+    def verify(self):
+        """
+        Verify the module IR's correctness.  RuntimeError is raised on error.
+        """
+        with ffi.OutputString() as outmsg:
+            if ffi.lib.LLVMPY_VerifyModule(self, outmsg):
+>               raise RuntimeError(str(outmsg))
+E               RuntimeError: immarg operand has non-immediate parameter
+E                 %.1174 = icmp ne i64 %.1173, %.1173
+E                 %.1175 = call i64 @llvm.ctlz.i64(i64 %.1173, i1 %.1174)
+
+..\..\work\chess-fast-venv\Lib\site-packages\llvmlite\binding\module.py:115: RuntimeError
+__________ test_long_make_unmake_stack_restores_every_metadata_slot ___________
+
+    def test_long_make_unmake_stack_restores_every_metadata_slot():
+        rng = random.Random(9060909)
+        position = chess.Board()
+        board, state = arrays(position)
+        stack = []
+        for _ in range(180):
+            if position.is_game_over(claim_draw=True):
+                break
+>           moves = core.legal_moves(board, state)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_overnight_bitsets.py:161: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:441: in _compile_for_args
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:374: in _compile_for_args
+    return_val = self.compile(tuple(argtypes))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:114: in run_pass
+    typemap, return_type, calltypes, errs = type_inference_stage(
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:95: in type_inference_stage
+    errs = infer.propagate(raise_errors=raise_errors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1075: in propagate
+    errors = self.constraints.propagate(self)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:160: in propagate
+    constraint(typeinfer)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:572: in __call__
+    self.resolve(typeinfer, typevars, fnty)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:595: in resolve
+    sig = typeinfer.resolve_call(fnty, pos_args, kw_args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1569: in resolve_call
+    return self.context.resolve_function_type(fnty, pos_args, kw_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:279: in resolve_function_type
+    res = self._resolve_user_function_type(func, args, kws)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:335: in _resolve_user_function_type
+    return func.get_call_type(self, args, kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\types\functions.py:542: in get_call_type
+    self.dispatcher.get_call_template(args, kws)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:317: in get_call_template
+    self.compile(tuple(args))
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:114: in run_pass
+    typemap, return_type, calltypes, errs = type_inference_stage(
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:95: in type_inference_stage
+    errs = infer.propagate(raise_errors=raise_errors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1075: in propagate
+    errors = self.constraints.propagate(self)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:160: in propagate
+    constraint(typeinfer)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:572: in __call__
+    self.resolve(typeinfer, typevars, fnty)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:595: in resolve
+    sig = typeinfer.resolve_call(fnty, pos_args, kw_args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1569: in resolve_call
+    return self.context.resolve_function_type(fnty, pos_args, kw_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:279: in resolve_function_type
+    res = self._resolve_user_function_type(func, args, kws)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:335: in _resolve_user_function_type
+    return func.get_call_type(self, args, kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\types\functions.py:542: in get_call_type
+    self.dispatcher.get_call_template(args, kws)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:317: in get_call_template
+    self.compile(tuple(args))
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:472: in run_pass
+    lower.lower()
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\lowering.py:210: in lower
+    self.library.add_ir_module(self.module)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\codegen.py:738: in add_ir_module
+    ll_module.verify()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <llvmlite.binding.module.ModuleRef object at 0x000001EFA01E12B0>
+
+    def verify(self):
+        """
+        Verify the module IR's correctness.  RuntimeError is raised on error.
+        """
+        with ffi.OutputString() as outmsg:
+            if ffi.lib.LLVMPY_VerifyModule(self, outmsg):
+>               raise RuntimeError(str(outmsg))
+E               RuntimeError: immarg operand has non-immediate parameter
+E                 %.1174 = icmp ne i64 %.1173, %.1173
+E                 %.1175 = call i64 @llvm.ctlz.i64(i64 %.1173, i1 %.1174)
+
+..\..\work\chess-fast-venv\Lib\site-packages\llvmlite\binding\module.py:115: RuntimeError
+________________ test_starting_position_perft_four_and_restore ________________
+
+    def test_starting_position_perft_four_and_restore():
+        board, state = arrays(chess.Board())
+        before, before_state = board.copy(), state.copy()
+>       assert core.perft(board, state, 3) == 8902
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_overnight_bitsets.py:180: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:441: in _compile_for_args
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:374: in _compile_for_args
+    return_val = self.compile(tuple(argtypes))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:114: in run_pass
+    typemap, return_type, calltypes, errs = type_inference_stage(
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:95: in type_inference_stage
+    errs = infer.propagate(raise_errors=raise_errors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1075: in propagate
+    errors = self.constraints.propagate(self)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:160: in propagate
+    constraint(typeinfer)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:572: in __call__
+    self.resolve(typeinfer, typevars, fnty)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:595: in resolve
+    sig = typeinfer.resolve_call(fnty, pos_args, kw_args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1569: in resolve_call
+    return self.context.resolve_function_type(fnty, pos_args, kw_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:279: in resolve_function_type
+    res = self._resolve_user_function_type(func, args, kws)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:335: in _resolve_user_function_type
+    return func.get_call_type(self, args, kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\types\functions.py:542: in get_call_type
+    self.dispatcher.get_call_template(args, kws)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:317: in get_call_template
+    self.compile(tuple(args))
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:114: in run_pass
+    typemap, return_type, calltypes, errs = type_inference_stage(
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:95: in type_inference_stage
+    errs = infer.propagate(raise_errors=raise_errors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1075: in propagate
+    errors = self.constraints.propagate(self)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:160: in propagate
+    constraint(typeinfer)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:572: in __call__
+    self.resolve(typeinfer, typevars, fnty)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:595: in resolve
+    sig = typeinfer.resolve_call(fnty, pos_args, kw_args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1569: in resolve_call
+    return self.context.resolve_function_type(fnty, pos_args, kw_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:279: in resolve_function_type
+    res = self._resolve_user_function_type(func, args, kws)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:335: in _resolve_user_function_type
+    return func.get_call_type(self, args, kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\types\functions.py:542: in get_call_type
+    self.dispatcher.get_call_template(args, kws)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:317: in get_call_template
+    self.compile(tuple(args))
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:114: in run_pass
+    typemap, return_type, calltypes, errs = type_inference_stage(
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:95: in type_inference_stage
+    errs = infer.propagate(raise_errors=raise_errors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1075: in propagate
+    errors = self.constraints.propagate(self)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:160: in propagate
+    constraint(typeinfer)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:572: in __call__
+    self.resolve(typeinfer, typevars, fnty)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:595: in resolve
+    sig = typeinfer.resolve_call(fnty, pos_args, kw_args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1569: in resolve_call
+    return self.context.resolve_function_type(fnty, pos_args, kw_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:279: in resolve_function_type
+    res = self._resolve_user_function_type(func, args, kws)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:335: in _resolve_user_function_type
+    return func.get_call_type(self, args, kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\types\functions.py:542: in get_call_type
+    self.dispatcher.get_call_template(args, kws)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:317: in get_call_template
+    self.compile(tuple(args))
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:472: in run_pass
+    lower.lower()
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\lowering.py:210: in lower
+    self.library.add_ir_module(self.module)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\codegen.py:738: in add_ir_module
+    ll_module.verify()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <llvmlite.binding.module.ModuleRef object at 0x000001EFA03B2BA0>
+
+    def verify(self):
+        """
+        Verify the module IR's correctness.  RuntimeError is raised on error.
+        """
+        with ffi.OutputString() as outmsg:
+            if ffi.lib.LLVMPY_VerifyModule(self, outmsg):
+>               raise RuntimeError(str(outmsg))
+E               RuntimeError: immarg operand has non-immediate parameter
+E                 %.1174 = icmp ne i64 %.1173, %.1173
+E                 %.1175 = call i64 @llvm.ctlz.i64(i64 %.1173, i1 %.1174)
+
+..\..\work\chess-fast-venv\Lib\site-packages\llvmlite\binding\module.py:115: RuntimeError
+_ test_special_position_perft_against_independent_rules[r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1] _
+
+fen = 'r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1'
+
+    @pytest.mark.parametrize('fen', SPECIAL_FENS)
+    def test_special_position_perft_against_independent_rules(fen):
+        position = chess.Board(fen)
+        board, state = arrays(position)
+>       assert core.perft(board, state, 2) == python_perft(position, 2)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_overnight_bitsets.py:200: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:441: in _compile_for_args
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:374: in _compile_for_args
+    return_val = self.compile(tuple(argtypes))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:114: in run_pass
+    typemap, return_type, calltypes, errs = type_inference_stage(
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:95: in type_inference_stage
+    errs = infer.propagate(raise_errors=raise_errors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1075: in propagate
+    errors = self.constraints.propagate(self)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:160: in propagate
+    constraint(typeinfer)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:572: in __call__
+    self.resolve(typeinfer, typevars, fnty)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:595: in resolve
+    sig = typeinfer.resolve_call(fnty, pos_args, kw_args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1569: in resolve_call
+    return self.context.resolve_function_type(fnty, pos_args, kw_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:279: in resolve_function_type
+    res = self._resolve_user_function_type(func, args, kws)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:335: in _resolve_user_function_type
+    return func.get_call_type(self, args, kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\types\functions.py:542: in get_call_type
+    self.dispatcher.get_call_template(args, kws)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:317: in get_call_template
+    self.compile(tuple(args))
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:114: in run_pass
+    typemap, return_type, calltypes, errs = type_inference_stage(
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:95: in type_inference_stage
+    errs = infer.propagate(raise_errors=raise_errors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1075: in propagate
+    errors = self.constraints.propagate(self)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:160: in propagate
+    constraint(typeinfer)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:572: in __call__
+    self.resolve(typeinfer, typevars, fnty)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:595: in resolve
+    sig = typeinfer.resolve_call(fnty, pos_args, kw_args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1569: in resolve_call
+    return self.context.resolve_function_type(fnty, pos_args, kw_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:279: in resolve_function_type
+    res = self._resolve_user_function_type(func, args, kws)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:335: in _resolve_user_function_type
+    return func.get_call_type(self, args, kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\types\functions.py:542: in get_call_type
+    self.dispatcher.get_call_template(args, kws)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:317: in get_call_template
+    self.compile(tuple(args))
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:114: in run_pass
+    typemap, return_type, calltypes, errs = type_inference_stage(
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:95: in type_inference_stage
+    errs = infer.propagate(raise_errors=raise_errors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1075: in propagate
+    errors = self.constraints.propagate(self)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:160: in propagate
+    constraint(typeinfer)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:572: in __call__
+    self.resolve(typeinfer, typevars, fnty)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:595: in resolve
+    sig = typeinfer.resolve_call(fnty, pos_args, kw_args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1569: in resolve_call
+    return self.context.resolve_function_type(fnty, pos_args, kw_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:279: in resolve_function_type
+    res = self._resolve_user_function_type(func, args, kws)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:335: in _resolve_user_function_type
+    return func.get_call_type(self, args, kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\types\functions.py:542: in get_call_type
+    self.dispatcher.get_call_template(args, kws)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:317: in get_call_template
+    self.compile(tuple(args))
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:472: in run_pass
+    lower.lower()
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\lowering.py:210: in lower
+    self.library.add_ir_module(self.module)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\codegen.py:738: in add_ir_module
+    ll_module.verify()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <llvmlite.binding.module.ModuleRef object at 0x000001EFA03A9C40>
+
+    def verify(self):
+        """
+        Verify the module IR's correctness.  RuntimeError is raised on error.
+        """
+        with ffi.OutputString() as outmsg:
+            if ffi.lib.LLVMPY_VerifyModule(self, outmsg):
+>               raise RuntimeError(str(outmsg))
+E               RuntimeError: immarg operand has non-immediate parameter
+E                 %.1174 = icmp ne i64 %.1173, %.1173
+E                 %.1175 = call i64 @llvm.ctlz.i64(i64 %.1173, i1 %.1174)
+
+..\..\work\chess-fast-venv\Lib\site-packages\llvmlite\binding\module.py:115: RuntimeError
+_ test_special_position_perft_against_independent_rules[1r2k3/P7/8/8/8/8/1p6/4K3 w - - 0 1] _
+
+fen = '1r2k3/P7/8/8/8/8/1p6/4K3 w - - 0 1'
+
+    @pytest.mark.parametrize('fen', SPECIAL_FENS)
+    def test_special_position_perft_against_independent_rules(fen):
+        position = chess.Board(fen)
+        board, state = arrays(position)
+>       assert core.perft(board, state, 2) == python_perft(position, 2)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_overnight_bitsets.py:200: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:441: in _compile_for_args
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:374: in _compile_for_args
+    return_val = self.compile(tuple(argtypes))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:114: in run_pass
+    typemap, return_type, calltypes, errs = type_inference_stage(
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:95: in type_inference_stage
+    errs = infer.propagate(raise_errors=raise_errors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1075: in propagate
+    errors = self.constraints.propagate(self)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:160: in propagate
+    constraint(typeinfer)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:572: in __call__
+    self.resolve(typeinfer, typevars, fnty)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:595: in resolve
+    sig = typeinfer.resolve_call(fnty, pos_args, kw_args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1569: in resolve_call
+    return self.context.resolve_function_type(fnty, pos_args, kw_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:279: in resolve_function_type
+    res = self._resolve_user_function_type(func, args, kws)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:335: in _resolve_user_function_type
+    return func.get_call_type(self, args, kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\types\functions.py:542: in get_call_type
+    self.dispatcher.get_call_template(args, kws)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:317: in get_call_template
+    self.compile(tuple(args))
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:114: in run_pass
+    typemap, return_type, calltypes, errs = type_inference_stage(
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:95: in type_inference_stage
+    errs = infer.propagate(raise_errors=raise_errors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1075: in propagate
+    errors = self.constraints.propagate(self)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:160: in propagate
+    constraint(typeinfer)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:572: in __call__
+    self.resolve(typeinfer, typevars, fnty)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:595: in resolve
+    sig = typeinfer.resolve_call(fnty, pos_args, kw_args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1569: in resolve_call
+    return self.context.resolve_function_type(fnty, pos_args, kw_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:279: in resolve_function_type
+    res = self._resolve_user_function_type(func, args, kws)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:335: in _resolve_user_function_type
+    return func.get_call_type(self, args, kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\types\functions.py:542: in get_call_type
+    self.dispatcher.get_call_template(args, kws)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:317: in get_call_template
+    self.compile(tuple(args))
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:114: in run_pass
+    typemap, return_type, calltypes, errs = type_inference_stage(
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:95: in type_inference_stage
+    errs = infer.propagate(raise_errors=raise_errors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1075: in propagate
+    errors = self.constraints.propagate(self)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:160: in propagate
+    constraint(typeinfer)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:572: in __call__
+    self.resolve(typeinfer, typevars, fnty)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:595: in resolve
+    sig = typeinfer.resolve_call(fnty, pos_args, kw_args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1569: in resolve_call
+    return self.context.resolve_function_type(fnty, pos_args, kw_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:279: in resolve_function_type
+    res = self._resolve_user_function_type(func, args, kws)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:335: in _resolve_user_function_type
+    return func.get_call_type(self, args, kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\types\functions.py:542: in get_call_type
+    self.dispatcher.get_call_template(args, kws)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:317: in get_call_template
+    self.compile(tuple(args))
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:472: in run_pass
+    lower.lower()
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\lowering.py:210: in lower
+    self.library.add_ir_module(self.module)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\codegen.py:738: in add_ir_module
+    ll_module.verify()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <llvmlite.binding.module.ModuleRef object at 0x000001EFA00D74D0>
+
+    def verify(self):
+        """
+        Verify the module IR's correctness.  RuntimeError is raised on error.
+        """
+        with ffi.OutputString() as outmsg:
+            if ffi.lib.LLVMPY_VerifyModule(self, outmsg):
+>               raise RuntimeError(str(outmsg))
+E               RuntimeError: immarg operand has non-immediate parameter
+E                 %.1174 = icmp ne i64 %.1173, %.1173
+E                 %.1175 = call i64 @llvm.ctlz.i64(i64 %.1173, i1 %.1174)
+
+..\..\work\chess-fast-venv\Lib\site-packages\llvmlite\binding\module.py:115: RuntimeError
+_ test_special_position_perft_against_independent_rules[8/8/8/r4pPK/8/8/8/4k3 w - f6 0 1] _
+
+fen = '8/8/8/r4pPK/8/8/8/4k3 w - f6 0 1'
+
+    @pytest.mark.parametrize('fen', SPECIAL_FENS)
+    def test_special_position_perft_against_independent_rules(fen):
+        position = chess.Board(fen)
+        board, state = arrays(position)
+>       assert core.perft(board, state, 2) == python_perft(position, 2)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_overnight_bitsets.py:200: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:441: in _compile_for_args
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:374: in _compile_for_args
+    return_val = self.compile(tuple(argtypes))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:114: in run_pass
+    typemap, return_type, calltypes, errs = type_inference_stage(
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:95: in type_inference_stage
+    errs = infer.propagate(raise_errors=raise_errors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1075: in propagate
+    errors = self.constraints.propagate(self)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:160: in propagate
+    constraint(typeinfer)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:572: in __call__
+    self.resolve(typeinfer, typevars, fnty)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:595: in resolve
+    sig = typeinfer.resolve_call(fnty, pos_args, kw_args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1569: in resolve_call
+    return self.context.resolve_function_type(fnty, pos_args, kw_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:279: in resolve_function_type
+    res = self._resolve_user_function_type(func, args, kws)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:335: in _resolve_user_function_type
+    return func.get_call_type(self, args, kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\types\functions.py:542: in get_call_type
+    self.dispatcher.get_call_template(args, kws)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:317: in get_call_template
+    self.compile(tuple(args))
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:114: in run_pass
+    typemap, return_type, calltypes, errs = type_inference_stage(
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:95: in type_inference_stage
+    errs = infer.propagate(raise_errors=raise_errors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1075: in propagate
+    errors = self.constraints.propagate(self)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:160: in propagate
+    constraint(typeinfer)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:572: in __call__
+    self.resolve(typeinfer, typevars, fnty)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:595: in resolve
+    sig = typeinfer.resolve_call(fnty, pos_args, kw_args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1569: in resolve_call
+    return self.context.resolve_function_type(fnty, pos_args, kw_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:279: in resolve_function_type
+    res = self._resolve_user_function_type(func, args, kws)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:335: in _resolve_user_function_type
+    return func.get_call_type(self, args, kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\types\functions.py:542: in get_call_type
+    self.dispatcher.get_call_template(args, kws)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:317: in get_call_template
+    self.compile(tuple(args))
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:114: in run_pass
+    typemap, return_type, calltypes, errs = type_inference_stage(
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:95: in type_inference_stage
+    errs = infer.propagate(raise_errors=raise_errors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1075: in propagate
+    errors = self.constraints.propagate(self)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:160: in propagate
+    constraint(typeinfer)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:572: in __call__
+    self.resolve(typeinfer, typevars, fnty)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:595: in resolve
+    sig = typeinfer.resolve_call(fnty, pos_args, kw_args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1569: in resolve_call
+    return self.context.resolve_function_type(fnty, pos_args, kw_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:279: in resolve_function_type
+    res = self._resolve_user_function_type(func, args, kws)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:335: in _resolve_user_function_type
+    return func.get_call_type(self, args, kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\types\functions.py:542: in get_call_type
+    self.dispatcher.get_call_template(args, kws)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:317: in get_call_template
+    self.compile(tuple(args))
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:472: in run_pass
+    lower.lower()
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\lowering.py:210: in lower
+    self.library.add_ir_module(self.module)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\codegen.py:738: in add_ir_module
+    ll_module.verify()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <llvmlite.binding.module.ModuleRef object at 0x000001EFA0698AD0>
+
+    def verify(self):
+        """
+        Verify the module IR's correctness.  RuntimeError is raised on error.
+        """
+        with ffi.OutputString() as outmsg:
+            if ffi.lib.LLVMPY_VerifyModule(self, outmsg):
+>               raise RuntimeError(str(outmsg))
+E               RuntimeError: immarg operand has non-immediate parameter
+E                 %.1174 = icmp ne i64 %.1173, %.1173
+E                 %.1175 = call i64 @llvm.ctlz.i64(i64 %.1173, i1 %.1174)
+
+..\..\work\chess-fast-venv\Lib\site-packages\llvmlite\binding\module.py:115: RuntimeError
+_ test_special_position_perft_against_independent_rules[4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1] _
+
+fen = '4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1'
+
+    @pytest.mark.parametrize('fen', SPECIAL_FENS)
+    def test_special_position_perft_against_independent_rules(fen):
+        position = chess.Board(fen)
+        board, state = arrays(position)
+>       assert core.perft(board, state, 2) == python_perft(position, 2)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_overnight_bitsets.py:200: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:441: in _compile_for_args
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:374: in _compile_for_args
+    return_val = self.compile(tuple(argtypes))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:114: in run_pass
+    typemap, return_type, calltypes, errs = type_inference_stage(
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:95: in type_inference_stage
+    errs = infer.propagate(raise_errors=raise_errors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1075: in propagate
+    errors = self.constraints.propagate(self)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:160: in propagate
+    constraint(typeinfer)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:572: in __call__
+    self.resolve(typeinfer, typevars, fnty)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:595: in resolve
+    sig = typeinfer.resolve_call(fnty, pos_args, kw_args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1569: in resolve_call
+    return self.context.resolve_function_type(fnty, pos_args, kw_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:279: in resolve_function_type
+    res = self._resolve_user_function_type(func, args, kws)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:335: in _resolve_user_function_type
+    return func.get_call_type(self, args, kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\types\functions.py:542: in get_call_type
+    self.dispatcher.get_call_template(args, kws)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:317: in get_call_template
+    self.compile(tuple(args))
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:114: in run_pass
+    typemap, return_type, calltypes, errs = type_inference_stage(
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:95: in type_inference_stage
+    errs = infer.propagate(raise_errors=raise_errors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1075: in propagate
+    errors = self.constraints.propagate(self)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:160: in propagate
+    constraint(typeinfer)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:572: in __call__
+    self.resolve(typeinfer, typevars, fnty)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:595: in resolve
+    sig = typeinfer.resolve_call(fnty, pos_args, kw_args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1569: in resolve_call
+    return self.context.resolve_function_type(fnty, pos_args, kw_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:279: in resolve_function_type
+    res = self._resolve_user_function_type(func, args, kws)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:335: in _resolve_user_function_type
+    return func.get_call_type(self, args, kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\types\functions.py:542: in get_call_type
+    self.dispatcher.get_call_template(args, kws)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:317: in get_call_template
+    self.compile(tuple(args))
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:114: in run_pass
+    typemap, return_type, calltypes, errs = type_inference_stage(
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:95: in type_inference_stage
+    errs = infer.propagate(raise_errors=raise_errors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1075: in propagate
+    errors = self.constraints.propagate(self)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:160: in propagate
+    constraint(typeinfer)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:572: in __call__
+    self.resolve(typeinfer, typevars, fnty)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:595: in resolve
+    sig = typeinfer.resolve_call(fnty, pos_args, kw_args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1569: in resolve_call
+    return self.context.resolve_function_type(fnty, pos_args, kw_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:279: in resolve_function_type
+    res = self._resolve_user_function_type(func, args, kws)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:335: in _resolve_user_function_type
+    return func.get_call_type(self, args, kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\types\functions.py:542: in get_call_type
+    self.dispatcher.get_call_template(args, kws)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:317: in get_call_template
+    self.compile(tuple(args))
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:472: in run_pass
+    lower.lower()
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\lowering.py:210: in lower
+    self.library.add_ir_module(self.module)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\codegen.py:738: in add_ir_module
+    ll_module.verify()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <llvmlite.binding.module.ModuleRef object at 0x000001EFA0A32300>
+
+    def verify(self):
+        """
+        Verify the module IR's correctness.  RuntimeError is raised on error.
+        """
+        with ffi.OutputString() as outmsg:
+            if ffi.lib.LLVMPY_VerifyModule(self, outmsg):
+>               raise RuntimeError(str(outmsg))
+E               RuntimeError: immarg operand has non-immediate parameter
+E                 %.1174 = icmp ne i64 %.1173, %.1173
+E                 %.1175 = call i64 @llvm.ctlz.i64(i64 %.1173, i1 %.1174)
+
+..\..\work\chess-fast-venv\Lib\site-packages\llvmlite\binding\module.py:115: RuntimeError
+_ test_special_position_perft_against_independent_rules[rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq e3 0 1] _
+
+fen = 'rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq e3 0 1'
+
+    @pytest.mark.parametrize('fen', SPECIAL_FENS)
+    def test_special_position_perft_against_independent_rules(fen):
+        position = chess.Board(fen)
+        board, state = arrays(position)
+>       assert core.perft(board, state, 2) == python_perft(position, 2)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_overnight_bitsets.py:200: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:441: in _compile_for_args
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:374: in _compile_for_args
+    return_val = self.compile(tuple(argtypes))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:114: in run_pass
+    typemap, return_type, calltypes, errs = type_inference_stage(
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:95: in type_inference_stage
+    errs = infer.propagate(raise_errors=raise_errors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1075: in propagate
+    errors = self.constraints.propagate(self)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:160: in propagate
+    constraint(typeinfer)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:572: in __call__
+    self.resolve(typeinfer, typevars, fnty)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:595: in resolve
+    sig = typeinfer.resolve_call(fnty, pos_args, kw_args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1569: in resolve_call
+    return self.context.resolve_function_type(fnty, pos_args, kw_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:279: in resolve_function_type
+    res = self._resolve_user_function_type(func, args, kws)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:335: in _resolve_user_function_type
+    return func.get_call_type(self, args, kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\types\functions.py:542: in get_call_type
+    self.dispatcher.get_call_template(args, kws)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:317: in get_call_template
+    self.compile(tuple(args))
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:114: in run_pass
+    typemap, return_type, calltypes, errs = type_inference_stage(
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:95: in type_inference_stage
+    errs = infer.propagate(raise_errors=raise_errors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1075: in propagate
+    errors = self.constraints.propagate(self)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:160: in propagate
+    constraint(typeinfer)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:572: in __call__
+    self.resolve(typeinfer, typevars, fnty)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:595: in resolve
+    sig = typeinfer.resolve_call(fnty, pos_args, kw_args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1569: in resolve_call
+    return self.context.resolve_function_type(fnty, pos_args, kw_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:279: in resolve_function_type
+    res = self._resolve_user_function_type(func, args, kws)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:335: in _resolve_user_function_type
+    return func.get_call_type(self, args, kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\types\functions.py:542: in get_call_type
+    self.dispatcher.get_call_template(args, kws)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:317: in get_call_template
+    self.compile(tuple(args))
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:114: in run_pass
+    typemap, return_type, calltypes, errs = type_inference_stage(
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:95: in type_inference_stage
+    errs = infer.propagate(raise_errors=raise_errors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1075: in propagate
+    errors = self.constraints.propagate(self)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:160: in propagate
+    constraint(typeinfer)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:572: in __call__
+    self.resolve(typeinfer, typevars, fnty)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:595: in resolve
+    sig = typeinfer.resolve_call(fnty, pos_args, kw_args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typeinfer.py:1569: in resolve_call
+    return self.context.resolve_function_type(fnty, pos_args, kw_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:279: in resolve_function_type
+    res = self._resolve_user_function_type(func, args, kws)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typing\context.py:335: in _resolve_user_function_type
+    return func.get_call_type(self, args, kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\types\functions.py:542: in get_call_type
+    self.dispatcher.get_call_template(args, kws)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:317: in get_call_template
+    self.compile(tuple(args))
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:906: in compile
+    cres = self._compiler.compile(args, return_type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:80: in compile
+    status, retval = self._compile_cached(args, return_type)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:94: in _compile_cached
+    retval = self._compile_core(args, return_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\dispatcher.py:107: in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:739: in compile_extra
+    return pipeline.compile_extra(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:439: in compile_extra
+    return self._compile_bytecode()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:505: in _compile_bytecode
+    return self._compile_core()
+           ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:481: in _compile_core
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler.py:473: in _compile_core
+    pm.run(self.state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:363: in run
+    raise e
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:356: in run
+    self._runPass(idx, pass_inst, state)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_lock.py:35: in _acquire_compile_lock
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:311: in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\compiler_machinery.py:272: in check
+    mangled = func(compiler_state)
+              ^^^^^^^^^^^^^^^^^^^^
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\typed_passes.py:472: in run_pass
+    lower.lower()
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\lowering.py:210: in lower
+    self.library.add_ir_module(self.module)
+..\..\work\chess-fast-venv\Lib\site-packages\numba\core\codegen.py:738: in add_ir_module
+    ll_module.verify()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <llvmlite.binding.module.ModuleRef object at 0x000001EFA03883E0>
+
+    def verify(self):
+        """
+        Verify the module IR's correctness.  RuntimeError is raised on error.
+        """
+        with ffi.OutputString() as outmsg:
+            if ffi.lib.LLVMPY_VerifyModule(self, outmsg):
+>               raise RuntimeError(str(outmsg))
+E               RuntimeError: immarg operand has non-immediate parameter
+E                 %.1174 = icmp ne i64 %.1173, %.1173
+E                 %.1175 = call i64 @llvm.ctlz.i64(i64 %.1173, i1 %.1174)
+
+..\..\work\chess-fast-venv\Lib\site-packages\llvmlite\binding\module.py:115: RuntimeError
+=========================== short test summary info ===========================
+FAILED tests/test_overnight_bitsets.py::test_native_leading_zero_semantics[0-64]
+FAILED tests/test_overnight_bitsets.py::test_native_leading_zero_semantics[1-63]
+FAILED tests/test_overnight_bitsets.py::test_native_leading_zero_semantics[4294967296-31]
+FAILED tests/test_overnight_bitsets.py::test_native_leading_zero_semantics[9223372036854775808-0]
+FAILED tests/test_overnight_bitsets.py::test_native_leading_zero_semantics[18446744073709551615-0]
+FAILED tests/test_overnight_bitsets.py::test_legacy_array_is_rejected[attacked]
+FAILED tests/test_overnight_bitsets.py::test_seeded_all_squares_and_all_legal_child_states
+FAILED tests/test_overnight_bitsets.py::test_special_moves_and_en_passant_hash_restoration
+FAILED tests/test_overnight_bitsets.py::test_long_make_unmake_stack_restores_every_metadata_slot
+FAILED tests/test_overnight_bitsets.py::test_starting_position_perft_four_and_restore
+FAILED tests/test_overnight_bitsets.py::test_special_position_perft_against_independent_rules[r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1]
+FAILED tests/test_overnight_bitsets.py::test_special_position_perft_against_independent_rules[1r2k3/P7/8/8/8/8/1p6/4K3 w - - 0 1]
+FAILED tests/test_overnight_bitsets.py::test_special_position_perft_against_independent_rules[8/8/8/r4pPK/8/8/8/4k3 w - f6 0 1]
+FAILED tests/test_overnight_bitsets.py::test_special_position_perft_against_independent_rules[4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1]
+FAILED tests/test_overnight_bitsets.py::test_special_position_perft_against_independent_rules[rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq e3 0 1]
+15 failed, 3 passed in 36.05s

@@ -1,0 +1,39 @@
+{
+  "status": "complete",
+  "candidate": "runs\\overnight-20260909\\coalesced-search-01\\prototype",
+  "baseline": "candidates\\compiled-near-queen-checks-v1",
+  "trial_sha256": "0e2af1099f577bc2612d1cb49a9218ceb284a161c3a518b13f35ad4f0b1f4f1f",
+  "package_sha256": "5812319e52a6d9041185c920153fb84a99b81540e5d1bb898808240e283e6fe8",
+  "source_files": {
+    "scripts\\overnight_candidate_screen.py": "64b8f257def9add667efc13b03fee558301848944f5359f515a73d5d918d84cd",
+    "configs\\overnight-september9-short-openings.json": "778b369e3822cf71129fc024b1324132721035ecfee9b5618e1ab06ba227e302",
+    "scripts\\overnight_clock_quality.py": "92797f1712376c42f21af37f6fb7299dd17de0a1ad2be7d20ce76f38cdc21284",
+    "scripts\\validate_package_staged_fixed.py": "68986b02bb2a5c7b4b63f66ad0df312481201842b62c23323d3c114715334c5c",
+    "scripts\\validate_package.py": "094af1b9bca562ad95715c64d45b524bdddd8bbc1b7e8776d9bc002daa8e6c1b",
+    "scripts\\feedback_matches.py": "64459e542f5056a6f0ab706ebc902d75d3cf45098da85a1ff996266cce05c730",
+    "training\\game_feedback.py": "31642a11dcfc7d242b7bae0d093db885ca100d33a4111307974c6c87d6bff1d1",
+    "training\\reward_policy.py": "80306e181a10f248b247804e28fc64f079a4344b2fe0dac62384f881f6338a88",
+    "scripts\\overnight_game.py": "447adfbbb7b2656b0959f498abc313323a1d4b9d804fb7b76d70b41d0698b4bb"
+  },
+  "stages": [
+    {
+      "stage": "clock-quality",
+      "status": "complete",
+      "args": [
+        "scripts.overnight_clock_quality",
+        "--run",
+        "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\overnight-20260909\\coalesced-search-01"
+      ],
+      "timeout_seconds": 900,
+      "pid": 2376,
+      "elapsed_seconds": 4.51600000000326
+    }
+  ],
+  "matches": [],
+  "provisional_comparison_passed": false,
+  "scope": "Serial screen only. No release selection, automatic competition upload or calibrated Elo.",
+  "quality_sha256": "e586c2fc7c54b0eba1786b12223c1309dcc4292fece7141e86bb9c2645b8069f",
+  "decision": "reject_clock_quality",
+  "completed_utc": "2026-09-09T00:36:18.876378+00:00",
+  "frozen_candidates": true
+}

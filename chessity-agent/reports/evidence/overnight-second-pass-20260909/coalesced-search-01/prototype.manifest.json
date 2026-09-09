@@ -1,0 +1,50 @@
+{
+  "sha256": "5812319e52a6d9041185c920153fb84a99b81540e5d1bb898808240e283e6fe8",
+  "zip_bytes": 272939,
+  "uncompressed_bytes": 330211,
+  "files": [
+    "agent.py",
+    "runtime.json",
+    "tables/KBvK.rtbw",
+    "tables/KNvK.rtbw",
+    "tables/KPvK.rtbw",
+    "tables/KQvK.rtbw",
+    "tables/KRvK.rtbw",
+    "tables/KBvK.rtbz",
+    "tables/KNvK.rtbz",
+    "tables/KPvK.rtbz",
+    "tables/KQvK.rtbz",
+    "tables/KRvK.rtbz",
+    "tables/SOURCE.txt",
+    "tables/manifest.json",
+    "engine/__init__.py",
+    "engine/compiled_core.py",
+    "engine/compiled_driver.py",
+    "engine/elementary_endgames.py",
+    "engine/evaluation.py",
+    "engine/features.py",
+    "engine/openings.py",
+    "engine/player_policy.py",
+    "engine/time_manager.py",
+    "models/player-policy.npz"
+  ],
+  "mode": {
+    "mode": "classical",
+    "style_tolerance": 0,
+    "opening_style": "alien-selective",
+    "player_policy": true,
+    "policy_cp": 10,
+    "alien_cp": 15,
+    "compiled_search": true,
+    "conversion": false,
+    "reductions": false,
+    "residual_value": false,
+    "value_blend": 0.0,
+    "elementary_tables": true
+  },
+  "runtime_dependencies": [
+    "chess==1.11.2",
+    "numpy==2.5.2",
+    "numba==0.67.0"
+  ]
+}
