@@ -1,0 +1,41 @@
+{
+  "status": "complete",
+  "candidate": "runs\\overnight-20260909\\pawn-masks-01\\prototype",
+  "baseline": "runs\\overnight-20260909\\coalesced-search-01\\prototype",
+  "trial_sha256": "fa8d4df4c9bb6c5fb085b48264fe8cba41bae207a15ba65dc71dd8aa0650272e",
+  "package_sha256": "e93bcba800f3bcb7a37c8d6937b1218ac450385b16a2c59c1a893526be3febd4",
+  "source_files": {
+    "scripts\\overnight_portable_screen.py": "f3528d3ee8d2bd71be13fc15337b1f6fc2f0d050f288b758d8b142627effcade",
+    "configs\\overnight-september9-short-openings.json": "778b369e3822cf71129fc024b1324132721035ecfee9b5618e1ab06ba227e302",
+    "scripts\\overnight_clock_quality.py": "92797f1712376c42f21af37f6fb7299dd17de0a1ad2be7d20ce76f38cdc21284",
+    "scripts\\validate_package_staged_fixed.py": "68986b02bb2a5c7b4b63f66ad0df312481201842b62c23323d3c114715334c5c",
+    "scripts\\validate_package.py": "094af1b9bca562ad95715c64d45b524bdddd8bbc1b7e8776d9bc002daa8e6c1b",
+    "scripts\\feedback_matches.py": "64459e542f5056a6f0ab706ebc902d75d3cf45098da85a1ff996266cce05c730",
+    "scripts\\feedback_matches_windows.py": "600243597c52199aa8b27df30938fe4bcec2b61565f8984ada11a72b62ce9c6a",
+    "docs\\OVERNIGHT_PORTABLE_SCREEN_20260909.md": "7ff515995d6b83cea02ac0a3e5efc3ae5c9ce3d612a22a21a4e0ca01b0571d72",
+    "training\\game_feedback.py": "31642a11dcfc7d242b7bae0d093db885ca100d33a4111307974c6c87d6bff1d1",
+    "training\\reward_policy.py": "80306e181a10f248b247804e28fc64f079a4344b2fe0dac62384f881f6338a88",
+    "scripts\\overnight_game.py": "447adfbbb7b2656b0959f498abc313323a1d4b9d804fb7b76d70b41d0698b4bb"
+  },
+  "stages": [
+    {
+      "stage": "clock-quality",
+      "status": "complete",
+      "args": [
+        "scripts.overnight_clock_quality",
+        "--run",
+        "C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\runs\\overnight-20260909\\pawn-masks-01"
+      ],
+      "timeout_seconds": 900,
+      "pid": 19480,
+      "elapsed_seconds": 3.530999999959022
+    }
+  ],
+  "matches": [],
+  "provisional_comparison_passed": false,
+  "scope": "Serial screen versus compiler-repaired v1.53 control, not exact selected v1.53 ZIP. Earlier failures stay recorded. No release selection, automatic competition upload or calibrated Elo.",
+  "quality_sha256": "ebca0637886474b081dcf71600d14ac0d919691dc1f2587eb1156b832909e213",
+  "decision": "reject_clock_quality",
+  "completed_utc": "2026-09-09T02:09:06.000338+00:00",
+  "frozen_candidates": true
+}

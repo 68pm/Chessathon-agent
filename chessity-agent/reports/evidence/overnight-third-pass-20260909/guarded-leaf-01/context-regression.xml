@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.974" timestamp="2026-09-09T03:25:05.809119+01:00" hostname="MSI"><testcase classname="tests.test_guarded_leaf_context_regression" name="test_original_guarded_draft_must_separate_fullmove_context" time="0.002"><failure message="Failed: DID NOT RAISE LookupError">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000001684ECEE450&gt;
+
+    def test_original_guarded_draft_must_separate_fullmove_context(monkeypatch):
+&gt;       check_context(core, monkeypatch, includes_fullmove=False)
+
+tests\test_guarded_leaf_context_regression.py:47: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+module = &lt;module 'experiments.overnight_guarded_leaf_core' from 'C:\\Users\\disea\\Documents\\Codex\\2026-09-05\\he\\outputs\\chess-agent\\experiments\\overnight_guarded_leaf_core.py'&gt;
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000001684ECEE450&gt;
+includes_fullmove = False
+
+    def check_context(module, monkeypatch, includes_fullmove):
+        board = np.zeros(142, dtype=np.int64)
+        board[4], board[116] = 6, -6
+        state = np.asarray([1, 0, -1, 0, 4, 116, 10], dtype=np.int64)
+        key, context = 1234, 123
+        mask = (1 &lt;&lt; 64) - 1
+        cached_context = (context ^ ((2 * 11400714819323198485) &amp; mask)
+                          ^ ((10 * 15485907386658061715) &amp; mask))
+        if includes_fullmove:
+            cached_context ^= (10 * 0xd6e8feb86659fd93) &amp; mask
+        ttkey = np.zeros(16, dtype=np.uint64)
+        ttcontext = np.zeros(16, dtype=np.uint64)
+        ttdata = np.zeros((16, 5), dtype=np.int64)
+        ttkey[key &amp; 15], ttcontext[key &amp; 15] = key, cached_context
+        ttdata[key &amp; 15] = [5, 12345, 0, 0, 0]
+        monkeypatch.setattr(module, 'attacked', lambda *args: False)
+        monkeypatch.setattr(module, 'insufficient', lambda *args: False)
+    
+        def miss(*args):
+            raise LookupError('Fresh search required')
+    
+        monkeypatch.setattr(module, 'generate', miss)
+        args = dict(board=board, state=state, depth=1, alpha=-100, beta=100, ply=1, qdepth=0,
+            hashes=np.asarray([key], dtype=np.uint64), hlen=1, context=np.uint64(context),
+            ttkey=ttkey, ttcontext=ttcontext, ttdata=ttdata, killers=np.zeros((100, 2), dtype=np.int64),
+            history=np.zeros((2, 128, 128), dtype=np.int64), control=np.asarray([0, 0, 100]), deadline=0,
+            weights=np.zeros((768, 64)), bias=np.zeros(64), output=np.zeros(64),
+            rule_weights=np.zeros((13, 64)), blend=.5, conversion=False, reductions=False,
+            accumulator=np.zeros((2, 64)), extensions_left=2, quiet_checks_left=4, quiet_attacker=0)
+        with np.errstate(over='ignore'):
+            assert module.search.py_func(**args) == 12345
+            state[6] = 20
+            args['control'][0] = 0
+&gt;           with pytest.raises(LookupError, match='Fresh search required'):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           Failed: DID NOT RAISE LookupError
+
+tests\test_guarded_leaf_context_regression.py:42: Failed</failure></testcase></testsuite></testsuites>

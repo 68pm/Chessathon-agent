@@ -1,0 +1,151 @@
+{
+  "status": "complete",
+  "source_sha256": "e9e442516aa966cb51c9219581c7bb5ce7582f96b829ce667d079927a9440a75",
+  "script_sha256": "b43dbcecef81a15a7a544112e1bafd93eec330e3026a0b800402ea8bebeb9c5f",
+  "candidate": "runs\\overnight-20260909\\guarded-leaf-02\\prototype",
+  "rows": [
+    {
+      "line": [],
+      "san": [],
+      "fen": "3r4/5pk1/2Q5/p1Np3p/1p1P1qP1/5R1P/PP3PK1/4r3 b - - 7 35",
+      "max_depth": 3,
+      "chosen": "f4d4",
+      "chosen_san": "Qxd4",
+      "score": 89,
+      "depth": 3,
+      "nodes": 6496,
+      "seconds": 0.026035599992610514,
+      "static_classical": 366,
+      "static_guarded": 440
+    },
+    {
+      "line": [],
+      "san": [],
+      "fen": "3r4/5pk1/2Q5/p1Np3p/1p1P1qP1/5R1P/PP3PK1/4r3 b - - 7 35",
+      "max_depth": 5,
+      "chosen": "e1g1",
+      "chosen_san": "Rg1+",
+      "score": 72,
+      "depth": 5,
+      "nodes": 254476,
+      "seconds": 1.2044730000197887,
+      "static_classical": 366,
+      "static_guarded": 440
+    },
+    {
+      "line": [
+        "f4d4"
+      ],
+      "san": [
+        "Qxd4"
+      ],
+      "fen": "3r4/5pk1/2Q5/p1Np3p/1p1q2P1/5R1P/PP3PK1/4r3 w - - 0 36",
+      "max_depth": 3,
+      "chosen": "c6b6",
+      "chosen_san": "Qb6",
+      "score": -19,
+      "depth": 3,
+      "nodes": 84267,
+      "seconds": 0.6275265999720432,
+      "static_classical": -254,
+      "static_guarded": -41
+    },
+    {
+      "line": [
+        "f4d4"
+      ],
+      "san": [
+        "Qxd4"
+      ],
+      "fen": "3r4/5pk1/2Q5/p1Np3p/1p1q2P1/5R1P/PP3PK1/4r3 w - - 0 36",
+      "max_depth": 5,
+      "chosen": "c6b6",
+      "chosen_san": "Qb6",
+      "score": 38,
+      "depth": 4,
+      "nodes": 281600,
+      "seconds": 3.0007311000372283,
+      "static_classical": -254,
+      "static_guarded": -41
+    },
+    {
+      "line": [
+        "f4d4",
+        "c6b6"
+      ],
+      "san": [
+        "Qxd4",
+        "Qb6"
+      ],
+      "fen": "3r4/5pk1/1Q6/p1Np3p/1p1q2P1/5R1P/PP3PK1/4r3 b - - 1 36",
+      "max_depth": 3,
+      "chosen": "d4b2",
+      "chosen_san": "Qxb2",
+      "score": -27,
+      "depth": 3,
+      "nodes": 68248,
+      "seconds": 0.25916349998442456,
+      "static_classical": 259,
+      "static_guarded": 312
+    },
+    {
+      "line": [
+        "f4d4",
+        "c6b6"
+      ],
+      "san": [
+        "Qxd4",
+        "Qb6"
+      ],
+      "fen": "3r4/5pk1/1Q6/p1Np3p/1p1q2P1/5R1P/PP3PK1/4r3 b - - 1 36",
+      "max_depth": 5,
+      "chosen": "d4b2",
+      "chosen_san": "Qxb2",
+      "score": -27,
+      "depth": 3,
+      "nodes": 305152,
+      "seconds": 3.0183492000214756,
+      "static_classical": 259,
+      "static_guarded": 312
+    },
+    {
+      "line": [
+        "f4d6"
+      ],
+      "san": [
+        "Qd6"
+      ],
+      "fen": "3r4/5pk1/2Qq4/p1Np3p/1p1P2P1/5R1P/PP3PK1/4r3 w - - 8 36",
+      "max_depth": 3,
+      "chosen": "c6d6",
+      "chosen_san": "Qxd6",
+      "score": 40,
+      "depth": 3,
+      "nodes": 18058,
+      "seconds": 0.2500368999899365,
+      "static_classical": -366,
+      "static_guarded": -221
+    },
+    {
+      "line": [
+        "f4d6"
+      ],
+      "san": [
+        "Qd6"
+      ],
+      "fen": "3r4/5pk1/2Qq4/p1Np3p/1p1P2P1/5R1P/PP3PK1/4r3 w - - 8 36",
+      "max_depth": 5,
+      "chosen": "c6d6",
+      "chosen_san": "Qxd6",
+      "score": 46,
+      "depth": 5,
+      "nodes": 53454,
+      "seconds": 0.7879215000430122,
+      "static_classical": -366,
+      "static_guarded": -221
+    }
+  ],
+  "init_seconds": 68.18800000002375,
+  "scope": "Exposed development continuation diagnosis; no model or search change, teacher query, game, release or Elo claim.",
+  "frozen_candidate": true
+}

@@ -9,6 +9,10 @@ The user wants rapid competition improvements and small practical checks.
   introducing another game runner. Import downloaded competition PGNs through
   `scripts.feedback_batch` as completed game records with explicit candidate
   colour and honest version attribution.
+  On Windows use `python -m scripts.feedback_matches_windows`; it calls the
+  unchanged feedback entrypoint with extended paths and excludes live snapshots
+  from completed-game scans. This fixes the recorded September9 review path
+  failure while preserving frozen engine and feedback sources.
 - Reviews reinforce independently supported good moves and prefer verified
   alternatives to mistakes. Game result and opponent Elo must not determine
   move rewards. Preserve uncertain/mate scores and replay histories; do not
@@ -29,3 +33,10 @@ The user wants rapid competition improvements and small practical checks.
   memory settings. Preserve frozen sources and failed attempts.
 - Do not resume the cancelled overnight automation or stopped cycle 38. These
   instructions do not create a scheduler or authorise endless background work.
+
+For the explicitly authorised 8–9 September overnight run, follow
+`../../work/overnight-20260909.md`: search efficiency, move selection/defence,
+independent descendant-value learning, then field preparation, in that order.
+Use a new bounded run, small colour-balanced checks, and conditional ascent after
+a clean played win. Prepare the best retained ZIP and exact results for07:20 BST
+on9September; stop starting heavy work at06:40. Earlier cancelled jobs stay stopped.
