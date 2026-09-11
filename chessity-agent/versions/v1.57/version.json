@@ -1,0 +1,75 @@
+{
+  "version": "v1.57",
+  "name": "chessity-agent",
+  "title": "Shared position values with reusable king features",
+  "status": "Selected after 5W/1D/0L versus exact v1.56 and all short rated gates. No calibrated Elo.",
+  "recommended": true,
+  "source_version": "runs\\leader-chase-20260910\\king-reuse-quality-01\\prototype",
+  "sha256": "2e173cb2ccc5a8184e6546296730535d667e6d201ac44d843ad0d339630a786e",
+  "zip_bytes": 1601480,
+  "created_utc": "2026-09-11T01:11:48.844687+00:00",
+  "selection_utc": "2026-09-11T01:11:48.844687+00:00",
+  "archive": "versions/v1.57/chessity-agent-v1.57.zip",
+  "read_only_smoke_calls": 2,
+  "read_only_status": "passed",
+  "archive_json_formatting_differs_from_local_folder": [],
+  "current_results": {
+    "rated2400": {
+      "games": 2,
+      "wins": 0,
+      "draws": 2,
+      "losses": 0,
+      "terminations": {
+        "threefold_repetition": 2
+      }
+    },
+    "rated2600": {
+      "games": 2,
+      "wins": 1,
+      "draws": 0,
+      "losses": 1,
+      "terminations": {
+        "checkmate": 2
+      }
+    },
+    "rated2800": {
+      "games": 2,
+      "wins": 0,
+      "draws": 2,
+      "losses": 0,
+      "terminations": {
+        "threefold_repetition": 2
+      }
+    },
+    "versus56": {
+      "games": 6,
+      "wins": 5,
+      "draws": 1,
+      "losses": 0,
+      "terminations": {
+        "checkmate": 5,
+        "threefold_repetition": 1
+      }
+    }
+  },
+  "highest_nominal_opponent_defeated": 2600,
+  "calibrated_elo": null,
+  "time_control": "120+0.5",
+  "selection_evidence": "reports/SHARED_VALUE_REUSE_RELEASE_20260911.md",
+  "current_comparison_scope": "Fresh games, frozen weights, both colours; small practical gate.",
+  "latest_read_only_check": {
+    "init_ms": 40452.262699996936,
+    "legal_calls": 2,
+    "read_only_checks": {
+      "create_file": "blocked",
+      "delete_file": "blocked",
+      "create_directory": "blocked",
+      "rename_file": "blocked"
+    },
+    "peak_working_set_bytes": 365367296
+  },
+  "architecture": "Original shared king-conditioned neural position evaluator at queen-containing roots; exact v1.56 search at queenless roots, separate state, existing root policy and elementary tables.",
+  "value_model_sha256": "960367feb2313dad9a048bd35600a91e39d77a1360e7fc40db885e53d141aca1",
+  "website_submission_status": "not yet submitted or validated",
+  "goal_achieved": false
+}

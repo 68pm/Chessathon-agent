@@ -1,19 +1,17 @@
 # chessity-agent
 
-**Recommended: v1.56.** [Download ZIP](latest/chessity-agent.zip).
+**Recommended: v1.57.** [Download ZIP](latest/chessity-agent.zip).
 
 | Opponent | Wins | Draws | Losses |
 |---|---:|---:|---:|
-| Exact v1.55 | 2 | 0 | 0 |
-| Exact v1.53 | 2 | 0 | 0 |
-| Stockfish nominal 2400 | 0 | 1 | 1 |
-| Stockfish nominal 2600 | 0 | 1 | 1 |
+| Exact v1.56 | 5 | 1 | 0 |
+| Stockfish nominal 2400 | 0 | 2 | 0 |
+| Stockfish nominal 2600 | 1 | 0 | 1 |
+| Stockfish nominal 2800 | 0 | 2 | 0 |
 
-No rated-setting win was recorded in this screen.
-No calibrated Elo is claimed. All 57 numbered versions remain available.
+Highest nominal setting defeated: **2600**. No calibrated Elo.
 
-[Release report](reports/DAYTIME_MOVE_BUFFERS_RELEASE_20260909.md). Source-only, read-only
-inference; existing policy weights retained. Site upload is pending access.
+[Release report](reports/SHARED_VALUE_REUSE_RELEASE_20260911.md).
 
 ## Versions
 
@@ -76,6 +74,7 @@ inference; existing policy weights retained. Site upload is pending access.
 | [v1.54](versions/v1.54/chessity-agent-v1.54.zip) | Faster exact passed-pawn evaluation | Former selection after 2W/0D/0L vs exactv1.42 and 1W/1D/0L vs exactv1.53; nominal2400 0W/1D/1L, nominal2600 0W/1D/1L. Small development screen; no calibrated Elo. |
 | [v1.55](versions/v1.55/chessity-agent-v1.55.zip) | Faster pawn evaluation | Former selection after 2W/0D/0L vs exact v1.54 and 2W/0D/0L vs exact v1.53; nominal 2400 0W/0D/2L, nominal 2600 1W/1D/0L. Small development screen; no calibrated Elo. |
 | [v1.56](versions/v1.56/chessity-agent-v1.56.zip) | Reusable search buffers | Selected after 2W/0D/0L vs exact v1.55 and 2W/0D/0L vs exact v1.53; nominal 2400 0W/1D/1L, nominal 2600 0W/1D/1L. Small development screen; no calibrated Elo. |
+| [v1.57](versions/v1.57/chessity-agent-v1.57.zip) | Shared position values | Selected after 5W/1D/0L versus exact v1.56 and all short rated gates. No calibrated Elo. |
 
 All 57 numbered versions are retained chronologically. A higher version number alone is not evidence of strength.
 
