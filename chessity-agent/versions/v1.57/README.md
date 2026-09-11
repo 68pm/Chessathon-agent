@@ -23,6 +23,6 @@ A finite six-opening pool was frozen before teacher labels or playing outcomes. 
 
 King-context reuse and a static-value cache achieved 1.107x CPU speedup against the same model using its earlier runtime, with identical fixed-depth moves, scores and nodes. This is not a speed comparison against classical v1.56.
 
-Competition upload and validation remain pending at release preparation. All 57 earlier archives are preserved.
+Competition validation passed at01:18:22UTC on11September. The dashboard shows website submissionv13 (our releasev1.57), hashprefix2e173cb2ccc5, **Active**. Both smoke games played10 moves; initialization took53.2/53.1 seconds within90 seconds. These capped smoke draws are operational checks and are excluded from strength results. All57 earlier archives are preserved.
 
 ZIP SHA256: `2e173cb2ccc5a8184e6546296730535d667e6d201ac44d843ad0d339630a786e`.

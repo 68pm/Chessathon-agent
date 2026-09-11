@@ -13,4 +13,4 @@ Highest nominal setting defeated: **2600**. Short practical screen; no calibrate
 
 [Release report](chessity-agent/reports/SHARED_VALUE_REUSE_RELEASE_20260911.md) · [All 58 versions](chessity-agent/README.md).
 
-Competition submission is pending.
+Competition validation passed; v1.57 is Active (website submission v13).

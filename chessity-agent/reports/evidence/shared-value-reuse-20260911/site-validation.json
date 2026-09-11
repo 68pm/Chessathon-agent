@@ -1,0 +1,30 @@
+{
+  "url": "https://aichessathon.com/dashboard",
+  "observed_utc": "2026-09-11T01:19:12Z",
+  "release": "v1.57",
+  "website_version": 13,
+  "sha256_prefix": "2e173cb2ccc5",
+  "status": "Active",
+  "validation_status": "valid",
+  "validation_finished_utc": "2026-09-11T01:18:22Z",
+  "unpacked_bytes": 1703348,
+  "init_budget_seconds": 90,
+  "smoke_games": [
+    {
+      "colour": "white",
+      "init_seconds": 53.2,
+      "moves_played": 10,
+      "slowest_move_seconds": 6.1,
+      "termination": "draw by ply_cap"
+    },
+    {
+      "colour": "black",
+      "init_seconds": 53.1,
+      "moves_played": 10,
+      "slowest_move_seconds": 5.4,
+      "termination": "draw by ply_cap"
+    }
+  ],
+  "evidence_source": "Authenticated dashboard DOM and the new submission's linked validation log, inspected directly through the browser.",
+  "scope": "Operational validation only. Smoke-test draws are excluded from playing-strength statistics."
+}
